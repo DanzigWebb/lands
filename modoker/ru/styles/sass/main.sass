@@ -1,0 +1,176 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+.main
+  background-image: url(../../img/main_bg.png)
+  padding: .7rem 0
+  bottom: 0.2rem
+.main__top
+  font-size: 0.22rem
+  color: $accent
+  margin-bottom: 0.25rem
+.main__heading
+  color: #fff
+  margin: 0
+  font-size: 0.26rem
+  font-weight: bold
+  line-height: 0.39rem
+  margin-bottom: 0.3rem
+.price
+  width: 1rem
+  height: 0.7rem
+  border: .06rem solid #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  span
+    color: $accent
+    font-weight: bold
+    font-size: 0.34rem
+
+.main__content
+  padding: 0.45rem
+  color: #fff
+  background-image: url(../../img/main_content.png)
+  background-size: contain
+  background-repeat: no-repeat
+  margin-top: 2.85rem
+  p
+    margin-top: 0
+
+.sect2
+  background-image: url(../../img/sect2_bg.png)
+.sect3
+  background-color: #19181e
+
+.sect3
+  padding-bottom: 0.3rem
+.sect3__item
+  color: #fff
+  padding-bottom: 0.4rem
+
+  &:nth-child(odd)
+    span
+      margin-left: auto
+      padding-right: 0.2rem
+  &:nth-child(even)
+    span
+      margin-right: auto
+      padding-left: 0.2rem
+  span
+    max-width: 2.4rem
+    display: block
+    box-sizing: border-box
+.sect3__img
+  padding-bottom: 0.1rem
+
+.sect4
+  background-image: url(../../img/sect4_bg.png)
+  padding-bottom: 1rem
+.video
+  position: relative
+.poster
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 11
+
+.sect5
+  background-image: url(../../img/sect5_bg.png)
+  padding-bottom: 0.4rem
+  p
+    padding-top: 2.9rem
+    color: #fff
+
+.sect6
+  background-image: url(../../img/sect6_bg.png)
+
+.sect6__item
+  width: 50%
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin-top: -0.5rem
+  &:first-child
+    margin-top: 0
+  &:nth-child(even)
+    margin-left: auto
+  img
+    width: 1.3rem
+    flex-shrink: 0
+  span
+    color: #1a191e
+    font-weight: bold
+    text-align: center
+
+.reviews
+  background-image: url(../../img/sect7_bg.png)
+
+.slide__content
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 1.05rem
+    right: 1.05rem
+    height: 0.1rem
+    background-color: #19181e
+    z-index: 1
+.slide__item
+  color: #fff
+  padding: .25rem
+  box-sizing: border-box
+  border: .06rem solid $accent
+  position: relative
+
+  p.name
+    color: $accent
+    text-align: center
+    font-size: 0.18rem
+    font-weight: bold
+  p
+    font-style: italic
+    line-height: 0.24rem
+  
+.sect8
+  background-image: url(../../img/sect8_bg.png)
+.sect8__heading
+  padding: 0 .25rem
+  height: 1rem
+  background-image: url(../../img/sect8_heading.png)
+  background-size: contain
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+  span b
+    display: block
+.sect8__content
+  padding-top: 0.5rem
+.sect8__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.35rem
+  &:last-child
+    margin-bottom: 0
+  .img-wrap
+    flex-shrink: 0
+    width: 0.52rem
+    margin-right: 0.35rem
+
+.footer
+  background-image: url(../../img/footer.png)
+  padding-top: 0.7rem
+.price--footer
+  margin-left: auto
+  margin-top: -0.4rem
+
+
+.form
+  margin-top: 3rem

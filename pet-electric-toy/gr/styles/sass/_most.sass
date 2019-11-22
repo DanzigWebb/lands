@@ -1,0 +1,186 @@
+ 
+
+  
+html
+  font-size: 26.666666666667vw
+  background: #fff
+  @media (min-width: 480px)
+    font-size: 128px
+    overflow-x: hidden
+body
+  font-size: .16rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 400
+  font-family: 'Noto Sans', sans-serif
+  color: $dark
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.play
+  font-family: 'Playfair Display', sans-serif
+section
+  padding: .7rem 0
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+
+.content
+  padding: 0 .33rem
+  p
+    line-height: 0.24rem
+    &:last-child
+      margin-bottom: 0
+.heading
+  padding: .2rem 0
+h2
+  font-size: 0.2rem
+  line-height: 0.44rem
+  font-weight: 400
+  color: $dark
+  margin: 0
+    bottom: .5rem
+  padding: .08rem 0
+    left: .2rem
+  border-left: 3px solid $accent
+  line-height: 1.3
+  max-width: 92%
+  &.right
+    text-align: right
+  &.big
+    font-size: 0.4rem
+  &.black
+    color: #000
+  span
+    font-size: .26rem
+    font-weight: bold
+    display: block
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+  font-weight: 700
+.btn, .btn-offer
+  display: block
+  width: 3.1rem
+  height: 0.8rem
+  margin: auto
+  background-image: url(../../img/btn.png)
+  background-size: cover
+  background-repeat: no-repeat
+  text-transform: uppercase
+  animation: btn 3s linear infinite
+  font-weight: bold
+  font-size: 0.18rem
+  color: $blue
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  background-color: transparent
+  box-sizing: border-box
+  padding-top: 0.05rem
+  &:after
+    content: ''
+    width: 0.34rem
+    height: 0.34rem
+    background-image: url(../../img/but.png)
+    background-repeat: no-repeat
+    background-size: contain
+    margin-left: 0.2rem
+  &.mar
+    margin: .3rem auto
+  span
+    text-align: center
+    display: block
+    width: 100%
+    margin-right: 0.6rem
+.btn-offer
+  position: relative
+  &:after
+    content: ''
+    width: 0.34rem
+    height: 0.34rem
+    background-image: url(../../img/but.png)
+    background-repeat: no-repeat
+    background-size: contain
+    margin-left: 0.2rem
+    position: absolute
+    top: 50%
+    right: .8rem
+    transform: translateY(-50%)
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%
+
+
+.pagination-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 0.2rem
+  .swiper-pagination-bullet
+    width: 0.18rem
+    height: 0.18rem
+    background-color: #fff
+    opacity: 1
+    margin: 0 3px
+    &-active
+      background-color: $accent
