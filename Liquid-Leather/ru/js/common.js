@@ -53,4 +53,4 @@ var swiper = new Swiper('.reviews__slider', {
     document.documentElement.scrollTop + 300 > offer.offsetTop ? btn.classList.add('show') : btn.classList.remove('show')
   })
 
-});
+})();
