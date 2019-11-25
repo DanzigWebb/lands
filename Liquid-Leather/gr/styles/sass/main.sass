@@ -1,0 +1,281 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+
+// ========================>
+// header
+// <=======================
+.main
+  background-image: url(../../img/main_bg.jpg)
+  padding-top: 0.5rem
+.main__top
+  color: #fff
+  font-size: 0.2rem
+  margin-bottom: 0.45rem
+  span
+    color: $accent
+    font-size: 0.26rem
+    font-weight: bold
+
+.main__slogan
+  color: #fff
+  font-weight: bold
+  font-size: 0.26rem
+  max-width: 80%
+  span
+    color: $blue
+
+.price
+  background-image: url(../../img/price.png)
+  background-size: contain
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 1.26rem
+  height: 1.15rem
+  span
+    color: $blue
+    font-size: 0.34rem
+    font-weight: bold
+
+.main__prod
+  margin-top: 0.8rem
+
+.main__builets
+  padding: 0.4rem 0
+
+.main__item
+  color: #fff
+  max-width: 1.8rem
+  padding-left: 0.4rem
+  position: relative
+  margin-bottom: 0.3rem
+  &:last-child
+    margin-bottom: 0
+  &:before
+    content: ''
+    background-image: url(../../img/circles.png)
+    width: 0.22rem
+    height: 0.22rem
+    background-size: contain
+    background-repeat: no-repeat
+    display: inline-block
+    position: absolute
+    left: 0
+    top: .05rem
+  &:nth-child(odd)
+    margin-left: auto
+    
+.sect3
+  background-color: #1c162a
+  color: #fff
+  position: relative
+  h2
+    color: #fff
+
+.sect3__item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &:nth-child(odd)
+    flex-direction: row-reverse
+    .sect3__head
+      padding-left: 0.3rem
+  &:nth-child(even)
+    .sect3__head
+      padding-right: 0.3rem
+    img
+      margin-right: 0.15rem
+  img
+    flex-shrink: 0
+
+.sect3__head
+  b
+    display: block
+    padding-bottom: 0.15rem
+    color: $accent
+
+.sect4
+  background-color: #f7f8fb
+
+.sect4__content
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.sect4__item
+  position: relative
+  width: 50%
+  z-index: 1
+  span
+    position: absolute
+    right: 0.3rem
+    top: 0.2rem
+    color: $accent
+    font-weight: bold
+  &:last-child
+    span
+      width: 100%
+      left: 0
+      top: 0
+      text-align: center
+      top: 50%
+      transform: translateY(-50%)
+
+.sect5
+  background-image: url(../../img/sect5_bg.png)
+  color: #fff
+  padding-bottom: 0
+  h2
+    color: #fff
+    font-size: 0.24rem
+    margin-bottom: 0.6rem
+  .autor
+    position: relative
+    bottom: -.04rem
+    right: -0.04rem
+    width: 3.4rem
+.sect5__content
+  position: relative
+  padding-left: 0.2rem
+  p
+    font-style: italic
+  img
+    position: absolute
+    left: -.15rem
+    top: -.2rem
+    width: 0.4rem
+.sect5__bot
+  position: relative
+  span
+    position: absolute
+    top: 1.47rem
+    z-index: 1
+    color: $blue
+    font-weight: bold
+    left: 0.3rem
+    font-size: 0.14rem
+
+.sect6__content
+
+.sect6__item
+  border-radius: 10px
+  border: 1px solid #ebebeb
+  padding: .2rem .2rem
+  padding-left: 0.66rem
+  margin-bottom: 0.1rem
+  position: relative
+  &:last-child
+    margin-bottom: 0
+  &:before
+    content: ''
+    position: absolute
+    left: 0.2rem
+    top: 50%
+    transform: translateY(-50%)
+    width: 0.26rem
+    height: 0.19rem
+    background-image: url(../../img/tick.png)
+    background-size: contain
+    background-repeat: no-repeat
+
+.reviews
+  background-image: url(../../img/rev_bg.png)
+  background-size: cover
+  color: #fff
+  h2
+    color: #fff
+    span
+      font-style: italic
+.reviews__slide
+  padding-top: 0.45rem
+  position: relative
+  .index
+    position: absolute
+    top: 0
+    right: 0.05rem
+    color: $yellow
+    font-size: 0.6rem
+    font-weight: bold
+.slide__item
+  box-shadow: 0 0 15px rgba(36, 35, 75, 0.5)
+  background: #fff
+  border-radius: 10px
+  color: #1c2039
+  padding: .3rem .25rem
+  p
+    margin-bottom: 0
+  .name
+    font-weight: bold
+    color: $accent
+    margin-top: 0
+
+.pagination-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 0.3rem
+  .swiper-pagination
+    position: static
+    display: flex
+    justify-content: center
+  .swiper-pagination-bullet
+    width: 0.22rem
+    height: 0.22rem
+    border: 1px solid $yellow
+    border-radius: 50%
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 .05rem
+    &-active
+      &:before
+        content: '•'
+        font-size: 0.33rem
+        line-height: 0
+        color: $yellow
+
+.sect8
+  background-color: #f7f8fb
+.sect8__trigger
+  padding: 0.1rem
+  background: #fff
+  border-radius: 10px
+  margin-bottom: 0.4rem
+  .content
+    padding: 0.22rem
+    border-radius: 10px
+    border: 1px solid #ebebeb
+  span
+    display: block
+    &:first-child
+      margin-bottom: 0.2rem
+    b
+      color: $accent
+
+.sect8__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.3rem
+  &:last-child
+    margin-bottom: 0
+.sect8__img-wrap
+  width: 1rem
+  flex-shrink: 0
+  margin-right: 0.1rem
+
+.img__top
+  position: absolute
+  top: -0.16rem
+  left: 50%
+  width: 1.16rem
+  transform: translateX(-50%)
+footer.main
+  position: relative
+  padding-top: 0.7rem
+  background-image: url(../../img/footer_bg.png)
+
+form
+  margin-top: 2.2rem
