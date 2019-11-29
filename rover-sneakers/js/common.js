@@ -1,6 +1,7 @@
+window.onload = function() {
 // ========================>
 // slider for reviews
-// <=======================
+// <=======================swiper.update()
 var swiper = new Swiper('.reviews__slider', {
   pagination: {
     el: '.reviews__pagination',
@@ -53,7 +54,7 @@ var swiper = new Swiper('.reviews__slider', {
     document.documentElement.scrollTop + 300 > offer.offsetTop ? btn.classList.add('show') : btn.classList.remove('show')
   })
 
-});
+})();
 
 
 let mainDots = document.querySelectorAll('.main__dot')
@@ -62,3 +63,7 @@ mainDots.forEach(item => {
   item.style.opacity = count
   count += 0.2
 })
+
+
+  swiper.update()
+}
