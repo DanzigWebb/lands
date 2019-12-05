@@ -58,7 +58,7 @@
   padding-top: 1rem
 
 .sect3-autor__wrap
-  margin-top: -0.3rem
+  margin-top: -0.4rem
   position: relative
   color: #5b5b5f
   margin-bottom: 0.3rem
@@ -107,3 +107,182 @@
   .right-quote
     right: 0
     bottom: 0
+.sect4
+  padding-bottom: 0
+.sect4__list
+  padding-left: 0.12rem
+  position: relative
+  &:before
+    content: ''
+    width: 1px
+    
+    background: #cd9f61
+    position: absolute
+    left: 0
+    top: 0.25rem
+    bottom: -1.5rem
+.sect4__item
+  position: relative
+  margin-bottom: 0.35rem
+  padding-left: 0.35rem
+  &:before
+    position: absolute
+    content: ''
+    display: block
+    width: 0.24rem
+    height: 0.24rem
+    background-image: url(../../img/bal.png)
+    background-size: contain
+    background-repeat: no-repeat
+    left: 0
+    top: 0.2rem
+    transform: translateX(-100%)
+  &:last-child
+    margin-bottom: 0
+  p
+    color: #333
+.sect4__num
+  color: #5b5b5f
+  font-size: 0.4rem
+  font-style: italic
+  margin-bottom: 0.05rem
+  display: inline-block
+  i
+    font-size: 0.2rem
+.sect4__sub-head
+  font-size: 0.2rem
+  color: $accent
+  font-weight: bold
+
+.sect4__bot
+  position: relative
+  z-index: 1
+  padding-top: 0.4rem
+
+.sect4-img__decor
+  position: absolute
+  top: 0
+  right: -0.3rem
+
+.sect5
+  background-image: url(../../img/sect5_bg.png)
+  margin-top: -0.5rem
+  padding-bottom: 1rem
+.sect5__item
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 0.3rem
+  &:last-child
+    margin-bottom: 0
+  img
+    width: 1.7rem 
+.sect5__heading
+  width: 2.2rem
+  background-color: $accent
+  padding: .05rem
+  box-sizing: border-box
+  border-radius: 8px
+  position: relative
+  p
+    padding: .15rem .25rem
+    min-height: 0.6rem
+    text-align: center
+    box-sizing: border-box
+    border-radius: 8px
+    border: 1px solid #e4b56f
+    margin: 0
+    color: #fff
+    line-height: 1.2
+    display: flex
+    align-items: center
+    justify-content: center
+
+.sect5__txt
+  width: 2.6rem
+  box-sizing: border-box
+  box-shadow: 0 5px 20px rgba(39, 39, 39, 0.18)
+  border-radius: 8px
+  background-color: #ffffff
+  text-align: center
+  padding: .2rem .3rem
+    top: 0.5rem
+  margin-top: -0.35rem
+
+.slide__content
+  padding: .3rem .2rem
+  border: 2px solid #cd9f61
+  border-radius: 10px
+  margin-top: -.6rem
+  padding-top: 0.6rem
+  padding-bottom: 0.1rem
+.slider__top
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  padding: 0 .2rem
+  img
+    width: 1.8rem
+.slider__index
+  font-size: 0.4rem
+  color: #5b5b5f
+  font-style: italic
+  span
+    font-size: 0.2rem
+.slider__head
+  p
+    font-weight: bold
+    color: $accent
+.slide__comment
+  font-style: italic
+
+.pagination-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 0.2rem
+  .swiper-pagination
+    position: static
+  .swiper-pagination-bullet
+    width: 0.18rem
+    height: 0.18rem
+    border: 2px solid $accent
+    background-color: transparent
+    box-sizing: border-box
+    border-radius: 50%
+    margin: 0 .03rem
+    &-active
+      background-color: $accent
+.sect6
+  padding-bottom: 0.2rem
+.sect7
+  padding-top: 1rem
+  background-image: url(../../img/sect7_bg.png)
+  h2
+    strong
+      color: $accent
+.sect7__sub-head
+  text-align: center
+  color: #5b5b5f
+  font-size: 0.24rem
+  font-style: italic
+  letter-spacing: -.3px
+
+.sect7__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.2rem
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 0.75rem
+    margin-right: 0.25rem
+footer.padding
+  background-image: url(../../img/footer_bg.png)
+  padding-top: 0
+.form
+  margin-top: 0.4rem
+.price--footer
+  margin-top: 4.7rem
