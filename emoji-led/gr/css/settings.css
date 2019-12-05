@@ -1,0 +1,376 @@
+.m1-form ::-webkit-input-placeholder {
+ color: #000;
+}
+
+.m1-form ::-moz-placeholder {
+ color: #000;
+}
+
+.m1-form :-moz-placeholder {
+ color: #000;
+}
+
+.m1-form :-ms-input-placeholder {
+ color: #000;
+}
+
+.m1-form :focus::-webkit-input-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus::-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-moz-placeholder {
+ color: transparent;
+}
+
+.m1-form :focus:-ms-input-placeholder {
+ color: transparent;
+}
+
+.hidden {
+ display: none;
+}
+
+.center {
+ text-align: center;
+}
+
+.just {
+ text-align: justify;
+ -moz-text-align-last: center;
+ text-align-last: center;
+}
+
+.clrfix:after {
+ content: '';
+ display: block;
+ clear: both;
+}
+
+.clear {
+ clear: both;
+ height: 0;
+}
+
+.ulfix {
+ font-size: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+}
+
+b, strong {
+ font-weight: 700;
+}
+
+body {
+ width: 100%;
+ min-width: 320px;
+ padding: 0;
+ margin: 0 auto;
+ font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 24px;
+ color: #141312;
+ background: #fff;
+}
+
+section {
+ width: 100%;
+ max-width: 1920px;
+ margin: 0 auto;
+ padding: 55px 0;
+}
+
+.wrap {
+ width: 960px;
+ padding: 0 10px;
+ margin: 0 auto;
+ height: 100%;
+ position: relative;
+}
+
+.wrap:after {
+ clear: both;
+ content: "";
+ display: table;
+}
+
+.nopad {
+ padding: 0;
+}
+
+.m1-form input.field {
+ position: relative;
+ display: block;
+ outline: 0;
+ border: 1px solid #dcdbda;
+ background: #faf9f8;
+ width: 100%;
+ height: 60px;
+ margin: 0 auto 10px;
+ padding: 0 20px;
+ font-size: 16px;
+ font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ color: #141312;
+ text-align: center;
+ box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ border-radius: 30px;
+ -webkit-transition: all 0.2s;
+ -moz-transition: all 0.2s;
+ -o-transition: all 0.2s;
+ -ms-transition: all 0.2s;
+ transition: all 0.2s;
+}
+
+.button-m {
+ position: relative;
+ display: block;
+ width: 280px;
+ height: 60px;
+ line-height: 60px;
+ margin: 0 auto;
+ border: none;
+ text-align: center;
+ font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ font-weight: 900;
+ text-transform: uppercase;
+ text-decoration: none;
+ cursor: pointer;
+ color: #141312;
+ letter-spacing: 1.3px;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+ background: #fc0;
+ background: -moz-linear-gradient(top, #fc0 0%, #ff9c00 100%);
+ background: -webkit-linear-gradient(top, #fc0 0%, #ff9c00 100%);
+ background: linear-gradient(to bottom, #fc0 0%, #ff9c00 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc00', endColorstr='#ff9c00', GradientType=0);
+ border-bottom: 3px solid #d98500;
+ box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+ border-radius: 30px;
+ -webkit-transition: all 0.2s;
+ -moz-transition: all 0.2s;
+ -o-transition: all 0.2s;
+ -ms-transition: all 0.2s;
+ transition: all 0.2s;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+}
+
+.button-m:active {
+ top: 1px;
+}
+
+.m1-form {
+ margin: 0 auto;
+}
+
+.m1-form .button-m {
+ width: 100%;
+}
+
+h2.title {
+ font-size: 30px;
+ font-weight: 900;
+ color: #121314;
+ line-height: 1.4em;
+ margin: 0 0 35px;
+ letter-spacing: 1.5px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+h2.title > span {
+ display: block;
+ font-size: 37px;
+ line-height: 1.2em;
+ color: #ff9c00;
+ letter-spacing: 1.8px;
+}
+
+/*   timer   */
+
+.timer {
+ text-align: center;
+ margin-bottom: 15px;
+ padding-bottom: 15px;
+ border-bottom: 2px solid #dcdbda;
+}
+
+.timer .timer-title {
+ font-weight: 700;
+ text-transform: uppercase;
+ padding-bottom: 15px;
+}
+
+.timer .timer-item {
+ display: inline-block;
+ vertical-align: top;
+ width: 60px;
+ margin: 0 13px;
+}
+
+.timer .count {
+ position: relative;
+ height: 42px;
+ line-height: 42px;
+ background: #141312;
+ color: #fff;
+ font-size: 30px;
+ font-weight: 700;
+ border-radius: 5px;
+}
+
+.timer .count:before {
+ position: absolute;
+ right: -26px;
+ top: 0;
+ display: block;
+ width: 26px;
+ font-size: 30px;
+ font-weight: 700;
+ line-height: 40px;
+ color: #141312;
+ text-align: center;
+ content: ':';
+}
+
+.timer .timer-item:last-child .count:before {
+ display: none;
+}
+
+/*   price   */
+
+.price {
+ font-size: 16px;
+ padding-bottom: 15px;
+}
+
+.price:after {
+ display: block;
+ clear: both;
+ content: '';
+}
+
+.price .old {
+ float: left;
+ width: 125px;
+ text-align: right;
+}
+
+.price .old p {
+ padding-bottom: 5px;
+}
+
+.price .old .val span {
+ font-size: 25px;
+ text-decoration: line-through;
+}
+
+.price .old .val i {
+ font-style: normal;
+ font-size: 19px;
+ text-transform: uppercase;
+}
+
+.price .new {
+ margin-left: 140px;
+ color: #68a616;
+ font-size: 35px;
+ font-weight: 700;
+ line-height: 50px;
+}
+
+.price .new i {
+ font-style: normal;
+ font-size: 25px;
+ text-transform: uppercase;
+}
+
+/*   video   */
+
+.video-container {
+ position: relative;
+ padding-bottom: 56.25%;
+ height: 0;
+ overflow: hidden;
+ background: #333;
+ border-radius: 10px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container .youtube {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+
+
+
+
+
+
+.rev-slider .slick-prev,
+.rev-slider .slick-next {
+ font-size: 0;
+ line-height: 0;
+ position: absolute;
+ top: 110px;
+ display: block;
+ width: 50px;
+ height: 50px;
+ padding: 0;
+ cursor: pointer;
+ color: transparent;
+ border: none;
+ outline: none;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+ background: url("../images/slider-arrow.png") 50% 50% no-repeat #ff9c00;
+ border-radius: 50%;
+ z-index: 3;
+}
+
+.rev-slider .slick-prev {
+ left: 0;
+ -moz-transform: rotate(-180deg);
+ -webkit-transform: rotate(-180deg);
+ -o-transform: rotate(-180deg);
+ -ms-transform: rotate(-180deg);
+ transform: rotate(-180deg);
+}
+
+.rev-slider .slick-next {
+ right: 0;
+}
+
+
+@media screen and (max-width: 979px) {
+
+ .wrap {
+  width: 660px;
+ }
+
+}
+
+@media screen and (max-width: 659px) {
+
+ .wrap {
+  width: 320px;
+ }
+
+}
