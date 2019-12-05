@@ -1,15 +1,18 @@
 // ========================>
 // slider for reviews
 // <=======================
-var swiper = new Swiper('.reviews__slider', {
-  pagination: {
-    el: '.reviews__pag',
-    clickable: true,
-  },
-  // loop: true,
-  autoHeight: true,
-  spaceBetween: 40
-});
+window.onload = function() {
+  var swiper = new Swiper('.reviews__slider', {
+    pagination: {
+      el: '.reviews__pag',
+      clickable: true,
+    },
+    // loop: true,
+    autoHeight: true,
+    spaceBetween: 40
+  });
+};
+
 // ========================>
 // animation scroll
 // <=======================
