@@ -28,3 +28,67 @@
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  border-color: #dead66
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  border-color: #dead66
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+input[type="number"] {
+  -moz-appearance: textfield
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+input {
+  height: 76px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f7f7fd;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  font-size: 16px;
+  color: #000
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 30px
+}
+
+
+.input-wrap img {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 240px
+}
+
+button.part-five__button {
+  margin: auto;
+}
