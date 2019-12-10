@@ -28,18 +28,15 @@
   -o-transition: all .5s ease;
 }
 .tabs-leave-active {
-  transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  -webkit-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  -moz-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  -ms-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  -o-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: 0;
+  opacity: 0;
 }
 .tabs-enter  {
-  transform: scale(1.07);
-  -webkit-transform: scale(1.07);
-  -moz-transform: scale(1.07);
-  -ms-transform: scale(1.07);
-  -o-transform: scale(1.07);
+  transform: translateX(25px);
+  -webkit-transform: translateX(25px);
+  -moz-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  -o-transform: translateX(25px);
   opacity: 0;
 }
 .ham {
