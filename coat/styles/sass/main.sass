@@ -153,12 +153,16 @@ section
 // ################################
 // sect2
 // ################################
+.sect2
+  .content
+    padding-left: 0
+    padding-right: 0
 .sect2__heading
   display: flex
   align-items: center
 
 .sect2__img
-  width: 0.6rem
+  width: 0.48rem
   display: flex
   margin-right: 0.05rem
   flex-shrink: 0
@@ -168,9 +172,16 @@ section
 .sect2__content
   padding: .3rem .15rem
 .sect2__item
+  background: linear-gradient(180deg, #FAFAFA 60.78%, #EDE9E9 99.99%, rgba(196, 196, 196, 0) 100%)
+  border: 1px solid #C8C8C8
+  box-sizing: border-box
+  height: 0.54rem
+  padding-left: 0.2rem
+  display: flex
+  align-items: center
   h3
     margin: 0
-    font-size: 0.2rem
+    font-size: 0.18rem
     text-transform: uppercase
   p
     font-size: 0.2rem
@@ -179,6 +190,14 @@ section
     p
       margin-bottom: 0
 
+.sect2__item-content
+  max-height: 0
+  overflow: hidden
+  margin: 0
+  padding: 0 .15rem
+  transition: .4s ease all
+  &.active
+    padding: .15rem
 // ################################
 // sect3 reviews
 // ################################

@@ -22,4 +22,24 @@ var swiper = new Swiper('.menu-carousel', {
   slidesPerView: 'auto',
 });
 
+const collapse = function() {
+  const btns = document.querySelectorAll('.sect2__item');
+  const contents = document.querySelectorAll('.sect2__item-content');
 
+  contents[0].style.maxHeight = contents[0].scrollHeight + 'px'
+  
+  btns.forEach((items, i) => {
+    items.addEventListener('click', () => {
+      btns.forEach((el, i) => {
+        el.classList.remove('active')
+        contents[i].style.maxHeight = 0
+        contents[i].classList.remove('active')
+      })
+      items.classList.add('active')
+      contents[i].style.maxHeight = contents[i].scrollHeight + 'px'
+      contents[i].classList.add('active')
+    })
+  })
+}
+
+collapse()

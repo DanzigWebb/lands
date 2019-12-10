@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>4dlashes</title>
+	<title>Silver Coat</title>
 	<meta property="og:image" content="path/to/image.jpg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon/favicon.ico">
@@ -42,13 +42,19 @@
 			<menu class="header__menu" :class="{ active: menuShow }">
 				<div class="swiper-container menu-carousel">
 					<div class="swiper-wrapper">
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }" @click="activeSection = 1">Главная</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }" @click="activeSection = 2">Плюсы</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }" @click="activeSection = 3">Отзывы</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }" @click="activeSection = 4">Заказать</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }"
+							@click="activeSection = 1">Главная</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }"
+							@click="activeSection = 2">Плюсы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }"
+							@click="activeSection = 3">Отзывы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }"
+							@click="activeSection = 4">Заказать</span>
 						<span class="swiper-slide header__link">Доставка и оплата</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }" @click="activeSection = 6">Характеристики</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }" @click="activeSection = 7">Новинка 2019</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }"
+							@click="activeSection = 6">Характеристики</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }"
+							@click="activeSection = 7">Новинка 2019</span>
 					</div>
 				</div>
 			</menu>
@@ -92,7 +98,7 @@
 			<!-- pluses -->
 			<section v-show="activeSection == 2" class="sect2 pluses">
 				<div class="content">
-					<div class="sect2__item">
+					<div class="sect2__item active">
 						<div class="sect2__heading">
 							<div class="sect2__img">
 								<img style="width: 0.37rem;" src="img/icon_1.svg" alt="">
@@ -100,24 +106,24 @@
 							<h3>МАТЕРИАЛЫ: НА ВЫСОТЕ
 							</h3>
 						</div>
-						<p>Куртки Silver Coat выполнены из высокотехнологичного материала FlexTech™. Он отличается повышенной
-							износостойкостью, отталкивает воду и грязь, не продувается ветром. Не смотря на то что ткань чрезвычайно
-							легкая, практически воздушная, она отлично удерживает тепло.
-						</p>
 					</div>
+					<p class="sect2__item-content active">Куртки Silver Coat выполнены из высокотехнологичного материала FlexTech™. Он отличается повышенной
+						износостойкостью, отталкивает воду и грязь, не продувается ветром. Не смотря на то что ткань чрезвычайно
+						легкая, практически воздушная, она отлично удерживает тепло.
+					</p>
 					<div class="sect2__item">
 						<div class="sect2__heading">
 							<div class="sect2__img">
-								<img style="width: 0.5rem;" src="img/icon_2.svg" alt="">
+								<img style="width: 0.4rem;" src="img/icon_2.svg" alt="">
 							</div>
 							<h3>ФУРНИТУРА: НА ВЕКА
 							</h3>
 						</div>
-						<p>Куртки Silver Coat дополнены высококачественной фурнитурой. Молнии выдерживают до 100 тысяч
-							открытий/закрытий и укреплены от воздействия влаги, люверсы изготовлены из посеребренного металла, все швы
-							усилены специальной тканью.
-						</p>
 					</div>
+					<p class="sect2__item-content">Куртки Silver Coat дополнены высококачественной фурнитурой. Молнии выдерживают до 100 тысяч
+						открытий/закрытий и укреплены от воздействия влаги, люверсы изготовлены из посеребренного металла, все швы
+						усилены специальной тканью.
+					</p>
 					<div class="sect2__item">
 						<div class="sect2__heading">
 							<div class="sect2__img">
@@ -126,11 +132,11 @@
 							<h3>ДИЗАЙН: ЭФФЕКТНЫЙ УРБАНИЗМ
 							</h3>
 						</div>
-						<p>Свободный крой в стиле “унисекс”, контрастная отделка манжет, лаконичный дизайн, строгие линии, модный
-							эффект металлик и светоотражающая ткань - каждая деталь курток Silver Coat служит для создания единого
-							ультрастильного образа.
-						</p>
 					</div>
+					<p class="sect2__item-content">Свободный крой в стиле “унисекс”, контрастная отделка манжет, лаконичный дизайн, строгие линии, модный
+						эффект металлик и светоотражающая ткань - каждая деталь курток Silver Coat служит для создания единого
+						ультрастильного образа.
+					</p>
 					<div class="sect2__item">
 						<div class="sect2__heading">
 							<div class="sect2__img">
@@ -139,11 +145,11 @@
 							<h3>ФУНКЦИОНАЛЬНОСТЬ: ВСЕ, ЧТО НАДО
 							</h3>
 						</div>
-						<p>Куртки Silver Coat дополнены 3 карманами, один из которых на молнии, круговой застежкой-молнией,
-							зауженными манжетами и регулируемым по ширине нижним краем. В этой модели все продумано для вашего
-							удобства!
-						</p>
 					</div>
+					<p class="sect2__item-content">Куртки Silver Coat дополнены 3 карманами, один из которых на молнии, круговой застежкой-молнией,
+						зауженными манжетами и регулируемым по ширине нижним краем. В этой модели все продумано для вашего
+						удобства!
+					</p>
 				</div>
 			</section>
 
