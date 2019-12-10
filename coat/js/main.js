@@ -2,6 +2,11 @@ var app = new Vue({
   el: '#app',
 
   data: {
-    activeSection: 1
+    activeSection: 2
+  },
+
+  updated() {
+    galleryThumbs.update()
+    galleryTop.update()
   },
 })

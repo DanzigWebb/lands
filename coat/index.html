@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="styles/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
 		rel="stylesheet">
-		<script src="libs/vue/vue.min.js"></script>
+	<script src="libs/vue/vue.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
 		</header>
 
 		<main class="main">
-			<section v-if="activeSection == 1" class="sect1 gallery">
+			<section v-show="activeSection == 1" class="sect1 gallery">
 				<!-- Swiper -->
 				<div class="swiper-container gallery-top">
 					<div class="swiper-wrapper">
@@ -58,22 +58,79 @@
 					</div>
 				</div>
 			</section>
+			<section v-show="activeSection == 2" class="sect2 pluses">
+				<div class="sect2__content">
+					<div class="sect2__item">
+						<div class="sect2__heading">
+							<div class="sect2__img">
+								<img style="width: 0.37rem;" src="img/icon_1.svg" alt="">
+							</div>
+							<h3>МАТЕРИАЛЫ: НА ВЫСОТЕ
+							</h3>
+						</div>
+						<p>Куртки Silver Coat выполнены из высокотехнологичного материала FlexTech™. Он отличается повышенной
+							износостойкостью, отталкивает воду и грязь, не продувается ветром. Не смотря на то что ткань чрезвычайно
+							легкая, практически воздушная, она отлично удерживает тепло.
+						</p>
+					</div>
+					<div class="sect2__item">
+						<div class="sect2__heading">
+							<div class="sect2__img">
+								<img style="width: 0.5rem;" src="img/icon_2.svg" alt="">
+							</div>
+							<h3>ФУРНИТУРА: НА ВЕКА
+							</h3>
+						</div>
+						<p>Куртки Silver Coat дополнены высококачественной фурнитурой. Молнии выдерживают до 100 тысяч
+							открытий/закрытий и укреплены от воздействия влаги, люверсы изготовлены из посеребренного металла, все швы
+							усилены специальной тканью.
+						</p>
+					</div>
+					<div class="sect2__item">
+						<div class="sect2__heading">
+							<div class="sect2__img">
+								<img style="width: 0.39rem;" src="img/icon_3.png" alt="">
+							</div>
+							<h3>ДИЗАЙН: ЭФФЕКТНЫЙ УРБАНИЗМ
+							</h3>
+						</div>
+						<p>Свободный крой в стиле “унисекс”, контрастная отделка манжет, лаконичный дизайн, строгие линии, модный
+							эффект металлик и светоотражающая ткань - каждая деталь курток Silver Coat служит для создания единого
+							ультрастильного образа.
+						</p>
+					</div>
+					<div class="sect2__item">
+						<div class="sect2__heading">
+							<div class="sect2__img">
+								<img style="width: 0.34rem;" src="img/icon_4.png" alt="">
+							</div>
+							<h3>ФУНКЦИОНАЛЬНОСТЬ: ВСЕ, ЧТО НАДО
+							</h3>
+						</div>
+						<p>Куртки Silver Coat дополнены 3 карманами, один из которых на молнии, круговой застежкой-молнией,
+							зауженными манжетами и регулируемым по ширине нижним краем. В этой модели все продумано для вашего
+							удобства!
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<menu class="bot-menu">
 			<div class="bot-menu__wrap">
-				<button class="bot-menu__item"><span>Главная</span></button>
-				<button class="bot-menu__item"><span>Плюсы</span></button>
+				<button @click="activeSection = 1" class="bot-menu__item"><span>Главная</span></button>
+				<button @click="activeSection = 2" class="bot-menu__item"><span>Плюсы</span></button>
 				<button class="bot-menu__item"><span>Отзывы</span></button>
 				<button class="bot-menu__item"><span>Заказать</span></button></div>
 		</menu>
 	</div>
 
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+
 	<script src="js/main.js"></script>
+
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="js/common.js"></script>
-	
 
 </body>
 
