@@ -3,10 +3,61 @@
 @import "offer"
 @import "anim"
 
-.header__top
+.header-top
   background-color: $accent
 .header-socials
   align-items: center
-  height: .55rem
+  height: 55px
 .header-socials__item
-  margin-right: 0.15rem
+  margin-right: 15px
+.header-main
+  background-color: #edeae3
+.header-main__content
+  height: 165px
+  @media (max-width: 480px)
+    height: 100px
+.header__link
+  margin: 0 40px
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 3.6px
+  color: #000
+  text-decoration: none
+  position: relative
+  &:after
+    content: ''
+    width: 10px
+    height: 10px
+    background-image: url(../../img/eagle.png)
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    position: absolute
+    right: -20px
+    top: 50%
+    transform: translateY(-50%)
+    text-decoration: none
+  @media (max-width: 1200px)
+    display: none
+.main
+  background-image: url(../../img/bg.png)
+.bred
+  color: #373737
+  font-size: 18px
+  font-weight: 400
+  line-height: 84.43px
+h1
+  color: #373737
+  font-size: 36px
+  font-weight: 700
+  text-transform: uppercase
+.main-content
+  background-color: #fff
+  padding: 40px 30px
+  margin-top: 30px
+  color: #373737
+  .dot
+    width: 10px
+    margin-right: 10px
+    margin-left: 10px
