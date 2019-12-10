@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
 
   data: {
-    activeSection: 5,
+    activeSection: 1,
     menuShow: false
   },
   methods: {
