@@ -10,7 +10,7 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<meta name="theme-color" content="#000">
-
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="styles/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
 		rel="stylesheet">
@@ -24,22 +24,52 @@
 
 	<div id="app">
 		<header class="header">
-			<div class="header__logo"><img src="img/logo.svg" alt=""></div>
-			<div class="header__burger">
-				<svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
-					<path class="line top"
-						d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429">
-					</path>
-					<path class="line middle" d="m 70,50 h -40"></path>
-					<path class="line bottom"
-						d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429">
-					</path>
-				</svg>
+			<div class="header__main">
+				<div class="header__logo" @click="activeSection = 1"><img src="img/logo.svg" alt=""></div>
+				<div class="header__burger">
+					<svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="70" @click="menuShow = !menuShow"
+						:class="{ active: menuShow }">
+						<path class="line top"
+							d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429">
+						</path>
+						<path class="line middle" d="m 70,50 h -40"></path>
+						<path class="line bottom"
+							d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429">
+						</path>
+					</svg>
+				</div>
 			</div>
+			<menu class="header__menu" :class="{ active: menuShow }">
+				<div class="swiper-container menu-carousel">
+					<div class="swiper-wrapper">
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }" @click="activeSection = 1">Главная</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }" @click="activeSection = 2">Плюсы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }" @click="activeSection = 3">Отзывы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }" @click="activeSection = 4">Заказать</span>
+						<span class="swiper-slide header__link">Доставка и оплата</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }" @click="activeSection = 6">Характеристики</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }" @click="activeSection = 7">Новинка 2019</span>
+					</div>
+				</div>
+			</menu>
 		</header>
 
-		<main class="main">
+		<main @click="menuShow = false" class="main">
+
+			<!-- main slider  -->
 			<section v-show="activeSection == 1" class="sect1 gallery">
+
+				<div class="sect1__heading">
+					<h1><span class="underline"><b>Hi-tech</b> <span class="low">одежда</span></span> <br> <span
+							class="underline">нового поколения</span></h1>
+				</div>
+				<div class="price">
+					<div class="top"><b>Скидка</b> <span> -50%</span></div>
+					<div class="main">
+						<span>49€</span>
+						<s>98€</s>
+					</div>
+				</div>
 				<!-- Swiper -->
 				<div class="swiper-container gallery-top">
 					<div class="swiper-wrapper">
@@ -58,8 +88,10 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- pluses -->
 			<section v-show="activeSection == 2" class="sect2 pluses">
-				<div class="sect2__content">
+				<div class="content">
 					<div class="sect2__item">
 						<div class="sect2__heading">
 							<div class="sect2__img">
@@ -114,18 +146,84 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- reviews  -->
+			<section v-show="activeSection == 3" class="sect3 reviews scroll">
+				<div class="content">
+					<h2>отзывы о Silver Coat</h2>
+					<div class="reviews__item">
+						<div class="left"><img src="img/ava1.png" alt=""><span><b>Автор:</b>Саша</span></div>
+						<div class="reviews__content">
+							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
+							<span class="geo"><b>Страна:</b> Россия</span>
+							<span class="main">Отличная куртка! Взял, чтобы кататься на велике в пасмурную погоду - а в итоге ношу и
+								на спорт, и просто так. Ночью светится как фары машины! Можно хоть в темном парке ходить - видно будет
+								издалека. Сшита качественно, смотрится дорого. Покупкой очень доволен!</span>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="left"><img src="img/ava2.png" alt=""><span><b>Автор:</b>Алиса</span></div>
+						<div class="reviews__content">
+							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt=""></span>
+							<span class="geo"><b>Страна:</b> Россия</span>
+							<span class="main">Спасибо за быструю доставку, куртка очень понравилась. Ношу ее с черными леггинсами и
+								серебристыми сникерсами - выглядит очень стильно! </span>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="left"><img src="img/ava3.png" alt=""><span><b>Автор:</b>Юлия</span></div>
+						<div class="reviews__content">
+							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
+							<span class="geo"><b>Страна:</b> Россия</span>
+							<span class="main">Любим с мужем гонять на самокатах по набережной, взяли одинаковые куртки ему и мне, они
+								круууууутые! Можно не только на спорт носить, но и разные модные образы создавать. Качество
+								замечательное, фасон очень удобный. </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- about  -->
+			<section v-show="activeSection == 6" class="sect7 scroll about">
+				<div class="content">
+					<h2>ХАРАКТЕРИСТИКИ</h2>
+					<p>• Светоотражающий эффект</p>
+					<p>• Водо/ветро непроницаемый материал</p>
+					<p>• Капюшон с круговой молнией</p>
+					<p>• Застежка: молния</p>
+					<p>• 2 косых кармана</p>
+					<p>• 1 карман на молнии на груди</p>
+					<p>• Манжеты на резинке</p>
+					<p>• Регулируемый нижний край с фиксатором</p>
+					<p>• Контрастная отделка</p>
+				</div>
+			</section>
+			<!-- new!  -->
+			<section class="sect7 scroll" v-show="activeSection == 7">
+				<div class="content scroll">
+					<h2>ЭКСКЛЮЗИВНАЯ ЛИНИЯ ОДЕЖДЫ</h2>
+					<p>Компания DreamWear™ представляет новую линию одежды - крутки Silver Coat. Модель выполнена из
+						инновационного высокотехнологичного материала, которому не страшны ветер и влага.
+						<br>
+						Дизайн куртки был разработан модным современным модельером, победителем множества международных выставок,
+						Сильвестром Пене.
+					</p>
+					<br>
+					<img src="img/sect7_pic.jpg" alt="">
+				</div>
+			</section>
 		</main>
 
 		<menu class="bot-menu">
 			<div class="bot-menu__wrap">
 				<button @click="activeSection = 1" class="bot-menu__item"><span>Главная</span></button>
 				<button @click="activeSection = 2" class="bot-menu__item"><span>Плюсы</span></button>
-				<button class="bot-menu__item"><span>Отзывы</span></button>
-				<button class="bot-menu__item"><span>Заказать</span></button></div>
+				<button @click="activeSection = 3" class="bot-menu__item"><span>Отзывы</span></button>
+				<button @click="activeSection = 4" class="bot-menu__item"><span>Заказать</span></button></div>
 		</menu>
 	</div>
 
-	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+
 
 	<script src="js/main.js"></script>
 

@@ -1,0 +1,31 @@
+.menu-carousel
+  height: 0.56rem
+  padding: 0 .3rem
+.header__menu
+  position: absolute
+  margin: 0
+  width: 100%
+  background-color: #000000
+  display: flex
+  align-items: center
+  left: 0
+  bottom: .05rem
+  height: 0.56rem 
+  z-index: -1
+  overflow: hidden
+  transition: .4s ease all
+  box-sizing: border-box
+  &.active
+    transform: translateY(100%)
+    color: #949494
+.header__link
+  flex-shrink: 0
+  line-height: 1
+  font-weight: normal
+  display: flex
+  align-items: center
+  justify-content: center
+  width: auto
+  padding: 0 .15rem
+  &.active
+    color: #fff
