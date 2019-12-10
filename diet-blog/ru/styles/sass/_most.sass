@@ -1,0 +1,28 @@
+// html
+//   font-size: 26.666666666667vw
+//   background: #fff
+//   @media (min-width: 480px)
+//     font-size: 128px
+//     overflow-x: hidden
+html
+  font-size: 20.833333vw
+  @media (min-width: 481px)
+    font-size: 100px
+    overflow-x: hidden
+body
+  font-size: .22rem
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Source Sans Pro', sans-serif
+  color: #333
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+.t-center
+  text-align: center
