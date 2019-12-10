@@ -2,7 +2,6 @@
 @import "most"
 @import "offer"
 @import "anim"
-@import "reviews"
 
 .header
   position: relative
@@ -26,7 +25,10 @@ main
   padding: 0
   display: flex
   align-items: flex-end
-  background-color: #222
+  background-color: transparent
+  transition: .4s ease all
+  &.mainscreen
+    background-color: #222
 .bot-menu__wrap
   width: 100%
 .bot-menu__item
@@ -40,6 +42,17 @@ main
   background-repeat: no-repeat
   width: 1.42rem
   margin-right: -.35rem
+  outline: none
+  &.active
+    z-index: 5
+    position: relative
+    background-image: url(../../img/header_menu_2.png)
+    span
+      color: #000
+  &.main
+    background-image: url(../../img/header_menu_3.png)
+    span
+      color: #fff
   span
     font-size: 0.18rem
     color: #8C8C8C
@@ -146,9 +159,20 @@ section
   & .swiper-slide
     height: 100%
     opacity: 0.4
-
+    transition: all ease .4s
   & .swiper-slide-thumb-active
     opacity: 1
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0.03rem
+      left: 0.03rem
+      bottom: 0.03rem
+      right: 0.03rem
+      border: 3px solid #274CCF
+      box-sizing: border-box
+      border-radius: 10px
 
 // ################################
 // sect2
@@ -179,6 +203,7 @@ section
   padding-left: 0.2rem
   display: flex
   align-items: center
+  position: relative
   h3
     margin: 0
     font-size: 0.18rem
@@ -189,7 +214,16 @@ section
   &:last-child
     p
       margin-bottom: 0
-
+  &.active
+    .sect2__arrow
+      transform: translateY(-50%) rotate(0)
+.sect2__arrow
+  position: absolute
+  width: 0.1rem
+  right: 0.15rem
+  top: 50%
+  transform: translateY(-50%) rotate(90deg)
+  transition: .4s ease all
 .sect2__item-content
   max-height: 0
   overflow: hidden
@@ -238,13 +272,25 @@ section
   .geo
     margin-bottom: 0.09rem
 // ################################
-// sect8
+// sect4
 // ################################
-.sect7
+.sect4
   p
-    margin: 0.1rem 0
+    color: #7B7B7B
+    font-size: 0.16rem
+    line-height: 0.19rem
 // ################################
-// sect8
+// sect5
 // ################################
+.sect5
+  p
+    font-size: 0.2rem
+.sect5__item
+  display: flex
+  align-items: center
 
+  img
+    flex-shrink: 0
+    width: 1rem
+    margin-right: 0.15rem
 @import "carousel-manu"

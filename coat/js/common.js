@@ -9,7 +9,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
-  loop:true,
+  loop: true,
   loopedSlides: 5, //looped slides should be the same
   thumbs: {
     swiper: galleryThumbs,
@@ -22,24 +22,27 @@ var swiper = new Swiper('.menu-carousel', {
   slidesPerView: 'auto',
 });
 
-const collapse = function() {
+const collapse = function () {
   const btns = document.querySelectorAll('.sect2__item');
   const contents = document.querySelectorAll('.sect2__item-content');
-
+  closedAll()
   contents[0].style.maxHeight = contents[0].scrollHeight + 'px'
-  
+  contents[0].classList.add('active')
   btns.forEach((items, i) => {
     items.addEventListener('click', () => {
-      btns.forEach((el, i) => {
-        el.classList.remove('active')
-        contents[i].style.maxHeight = 0
-        contents[i].classList.remove('active')
-      })
+      closedAll()
       items.classList.add('active')
       contents[i].style.maxHeight = contents[i].scrollHeight + 'px'
       contents[i].classList.add('active')
     })
   })
+  function closedAll() {
+    btns.forEach((el, i) => {
+      el.classList.remove('active')
+      contents[i].style.maxHeight = 0
+      contents[i].classList.remove('active')
+    })
+  }
 }
 
-collapse()
+

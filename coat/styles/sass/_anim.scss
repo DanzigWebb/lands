@@ -20,7 +20,28 @@
     transform: scale(1);
   }
 }
-
+.tabs-enter-active {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.tabs-leave-active {
+  transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  -webkit-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  -moz-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  -ms-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  -o-transition: all 0 cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.tabs-enter  {
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  opacity: 0;
+}
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;

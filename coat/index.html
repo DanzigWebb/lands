@@ -42,19 +42,13 @@
 			<menu class="header__menu" :class="{ active: menuShow }">
 				<div class="swiper-container menu-carousel">
 					<div class="swiper-wrapper">
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }"
-							@click="activeSection = 1">Главная</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }"
-							@click="activeSection = 2">Плюсы</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }"
-							@click="activeSection = 3">Отзывы</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }"
-							@click="activeSection = 4">Заказать</span>
-						<span class="swiper-slide header__link">Доставка и оплата</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }"
-							@click="activeSection = 6">Характеристики</span>
-						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }"
-							@click="activeSection = 7">Новинка 2019</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }">Главная</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }">Плюсы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }">Отзывы</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }">Заказать</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 5 }">Доставка и оплата</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }">Характеристики</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }">Новинка 2019</span>
 					</div>
 				</div>
 			</menu>
@@ -63,171 +57,234 @@
 		<main @click="menuShow = false" class="main">
 
 			<!-- main slider  -->
-			<section v-show="activeSection == 1" class="sect1 gallery">
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
 
-				<div class="sect1__heading">
-					<h1><span class="underline"><b>Hi-tech</b> <span class="low">одежда</span></span> <br> <span
-							class="underline">нового поколения</span></h1>
-				</div>
-				<div class="price">
-					<div class="top"><b>Скидка</b> <span> -50%</span></div>
-					<div class="main">
-						<span>49€</span>
-						<s>98€</s>
+					<div class="sect1__heading">
+						<h1><span class="underline"><b>Hi-tech</b> <span class="low">одежда</span></span> <br> <span
+								class="underline">нового поколения</span></h1>
 					</div>
-				</div>
-				<!-- Swiper -->
-				<div class="swiper-container gallery-top">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+					<div class="price">
+						<div class="top"><b>Скидка</b> <span> -50%</span></div>
+						<div class="main">
+							<span>49€</span>
+							<s>98€</s>
+						</div>
 					</div>
-				</div>
-				<div class="swiper-container gallery-thumbs">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
-						<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
 					</div>
-				</div>
-			</section>
-
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
 			<!-- pluses -->
-			<section v-show="activeSection == 2" class="sect2 pluses">
-				<div class="content">
-					<div class="sect2__item active">
-						<div class="sect2__heading">
-							<div class="sect2__img">
-								<img style="width: 0.37rem;" src="img/icon_1.svg" alt="">
+			<transition name="tabs">
+				<section v-show="activeSection == 2" class="sect2 pluses">
+					<div class="content">
+						<div class="sect2__item active">
+							<img src="img/arrow.svg" alt="" class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.37rem;" src="img/icon_1.svg" alt="">
+								</div>
+								<h3>МАТЕРИАЛЫ: НА ВЫСОТЕ
+								</h3>
 							</div>
-							<h3>МАТЕРИАЛЫ: НА ВЫСОТЕ
-							</h3>
 						</div>
-					</div>
-					<p class="sect2__item-content active">Куртки Silver Coat выполнены из высокотехнологичного материала FlexTech™. Он отличается повышенной
-						износостойкостью, отталкивает воду и грязь, не продувается ветром. Не смотря на то что ткань чрезвычайно
-						легкая, практически воздушная, она отлично удерживает тепло.
-					</p>
-					<div class="sect2__item">
-						<div class="sect2__heading">
-							<div class="sect2__img">
-								<img style="width: 0.4rem;" src="img/icon_2.svg" alt="">
+						<p class="sect2__item-content active">Куртки Silver Coat выполнены из высокотехнологичного материала
+							FlexTech™. Он отличается повышенной
+							износостойкостью, отталкивает воду и грязь, не продувается ветром. Не смотря на то что ткань чрезвычайно
+							легкая, практически воздушная, она отлично удерживает тепло.
+						</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt="" class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_2.svg" alt="">
+								</div>
+								<h3>ФУРНИТУРА: НА ВЕКА
+								</h3>
 							</div>
-							<h3>ФУРНИТУРА: НА ВЕКА
-							</h3>
 						</div>
-					</div>
-					<p class="sect2__item-content">Куртки Silver Coat дополнены высококачественной фурнитурой. Молнии выдерживают до 100 тысяч
-						открытий/закрытий и укреплены от воздействия влаги, люверсы изготовлены из посеребренного металла, все швы
-						усилены специальной тканью.
-					</p>
-					<div class="sect2__item">
-						<div class="sect2__heading">
-							<div class="sect2__img">
-								<img style="width: 0.39rem;" src="img/icon_3.png" alt="">
+						<p class="sect2__item-content">Куртки Silver Coat дополнены высококачественной фурнитурой. Молнии
+							выдерживают
+							до 100 тысяч
+							открытий/закрытий и укреплены от воздействия влаги, люверсы изготовлены из посеребренного металла, все швы
+							усилены специальной тканью.
+						</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt="" class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.39rem;" src="img/icon_3.png" alt="">
+								</div>
+								<h3>ДИЗАЙН: ЭФФЕКТНЫЙ УРБАНИЗМ
+								</h3>
 							</div>
-							<h3>ДИЗАЙН: ЭФФЕКТНЫЙ УРБАНИЗМ
-							</h3>
 						</div>
-					</div>
-					<p class="sect2__item-content">Свободный крой в стиле “унисекс”, контрастная отделка манжет, лаконичный дизайн, строгие линии, модный
-						эффект металлик и светоотражающая ткань - каждая деталь курток Silver Coat служит для создания единого
-						ультрастильного образа.
-					</p>
-					<div class="sect2__item">
-						<div class="sect2__heading">
-							<div class="sect2__img">
-								<img style="width: 0.34rem;" src="img/icon_4.png" alt="">
+						<p class="sect2__item-content">Свободный крой в стиле “унисекс”, контрастная отделка манжет, лаконичный
+							дизайн, строгие линии, модный
+							эффект металлик и светоотражающая ткань - каждая деталь курток Silver Coat служит для создания единого
+							ультрастильного образа.
+						</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt="" class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.34rem;" src="img/icon_4.png" alt="">
+								</div>
+								<h3>ФУНКЦИОНАЛЬНОСТЬ: ВСЕ, ЧТО НАДО
+								</h3>
 							</div>
-							<h3>ФУНКЦИОНАЛЬНОСТЬ: ВСЕ, ЧТО НАДО
-							</h3>
 						</div>
+						<p class="sect2__item-content">Куртки Silver Coat дополнены 3 карманами, один из которых на молнии, круговой
+							застежкой-молнией,
+							зауженными манжетами и регулируемым по ширине нижним краем. В этой модели все продумано для вашего
+							удобства!
+						</p>
 					</div>
-					<p class="sect2__item-content">Куртки Silver Coat дополнены 3 карманами, один из которых на молнии, круговой застежкой-молнией,
-						зауженными манжетами и регулируемым по ширине нижним краем. В этой модели все продумано для вашего
-						удобства!
-					</p>
-				</div>
-			</section>
-
+				</section>
+			</transition>
 			<!-- reviews  -->
-			<section v-show="activeSection == 3" class="sect3 reviews scroll">
-				<div class="content">
-					<h2>отзывы о Silver Coat</h2>
-					<div class="reviews__item">
-						<div class="left"><img src="img/ava1.png" alt=""><span><b>Автор:</b>Саша</span></div>
-						<div class="reviews__content">
-							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
-							<span class="geo"><b>Страна:</b> Россия</span>
-							<span class="main">Отличная куртка! Взял, чтобы кататься на велике в пасмурную погоду - а в итоге ношу и
-								на спорт, и просто так. Ночью светится как фары машины! Можно хоть в темном парке ходить - видно будет
-								издалека. Сшита качественно, смотрится дорого. Покупкой очень доволен!</span>
+			<transition name="tabs">
+				<section v-show="activeSection == 3" class="sect3 reviews scroll">
+					<div class="content">
+						<h2 class="t-center">отзывы о Silver Coat</h2>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava1.png" alt=""><span><b>Автор:</b>Саша</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Отличная куртка! Взял, чтобы кататься на велике в пасмурную погоду - а в итоге ношу и
+									на спорт, и просто так. Ночью светится как фары машины! Можно хоть в темном парке ходить - видно будет
+									издалека. Сшита качественно, смотрится дорого. Покупкой очень доволен!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava2.png" alt=""><span><b>Автор:</b>Алиса</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Спасибо за быструю доставку, куртка очень понравилась. Ношу ее с черными леггинсами и
+									серебристыми сникерсами - выглядит очень стильно! </span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava3.png" alt=""><span><b>Автор:</b>Юлия</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Любим с мужем гонять на самокатах по набережной, взяли одинаковые куртки ему и мне,
+									они
+									круууууутые! Можно не только на спорт носить, но и разные модные образы создавать. Качество
+									замечательное, фасон очень удобный. </span>
+							</div>
 						</div>
 					</div>
-					<div class="reviews__item">
-						<div class="left"><img src="img/ava2.png" alt=""><span><b>Автор:</b>Алиса</span></div>
-						<div class="reviews__content">
-							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt=""></span>
-							<span class="geo"><b>Страна:</b> Россия</span>
-							<span class="main">Спасибо за быструю доставку, куртка очень понравилась. Ношу ее с черными леггинсами и
-								серебристыми сникерсами - выглядит очень стильно! </span>
-						</div>
+				</section>
+			</transition>
+			<!-- offer  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 4" class="sect4 scroll offer">
+					<div class="content">
+						<h2 class="t-center">Заполните форму</h2>
+						<form action="" method="POST" class="offer">
+							<input type="text" name="name" required="" placeholder="Имя">
+							<input type="tel" name="phone" required="" placeholder="Телефон">
+							<button class="btn" type="submit"><span>ЗАКАЗАТЬ</span></button>
+						</form>
+						<p>Оставьте заявку на нашем сайте</p>
+						<p>Мы перезвоним вам в течение 5 минут для подтверждения заказа</p>
+						<p>Доставим товар курьером за 3-7 дней</p>
 					</div>
-					<div class="reviews__item">
-						<div class="left"><img src="img/ava3.png" alt=""><span><b>Автор:</b>Юлия</span></div>
-						<div class="reviews__content">
-							<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
-							<span class="geo"><b>Страна:</b> Россия</span>
-							<span class="main">Любим с мужем гонять на самокатах по набережной, взяли одинаковые куртки ему и мне, они
-								круууууутые! Можно не только на спорт носить, но и разные модные образы создавать. Качество
-								замечательное, фасон очень удобный. </span>
-						</div>
+					<div class="policy__bot">
+						<div class="policy_wrap"><span>GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Span</span>
+							<a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></div>
 					</div>
-				</div>
-			</section>
 
+				</section>
+			</transition>
+			<!-- how buy -->
+			<transition name="tabs">
+				<section v-show="activeSection == 5" class="sect5 scroll">
+					<div class="content">
+						<h2 class="t-center">СИЯЙТЕ ЯРЧЕ ЗВЕЗД НОЧНОГО НЕБА</h2>
+						<p>Куртки Silver Coat вышли ограниченной серией в 500 экземпляров. Заказать их можно только у нас - на
+							официальном сайте
+							бренда.</p>
+						<div class="sect5__list">
+							<div class="sect5__item"><img src="img/icon1.svg" alt=""><span>Оставьте заявку на нашем сайте</span></div>
+							<div class="sect5__item"><img src="img/icon2.svg" alt=""><span>Мы перезвоним вам в течение 5 минут для
+									подтверждения заказа</span></div>
+							<div class="sect5__item"><img src="img/icon3.svg" alt=""><span>Доставим товар курьером за 3-7 дней</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
 			<!-- about  -->
-			<section v-show="activeSection == 6" class="sect7 scroll about">
-				<div class="content">
-					<h2>ХАРАКТЕРИСТИКИ</h2>
-					<p>• Светоотражающий эффект</p>
-					<p>• Водо/ветро непроницаемый материал</p>
-					<p>• Капюшон с круговой молнией</p>
-					<p>• Застежка: молния</p>
-					<p>• 2 косых кармана</p>
-					<p>• 1 карман на молнии на груди</p>
-					<p>• Манжеты на резинке</p>
-					<p>• Регулируемый нижний край с фиксатором</p>
-					<p>• Контрастная отделка</p>
-				</div>
-			</section>
+			<transition name="tabs">
+				<section v-show="activeSection == 6" class="sect6 scroll about">
+					<div class="content">
+						<h2 class="t-center">ХАРАКТЕРИСТИКИ</h2>
+						<ul>
+							<li>Светоотражающий эффект</li>
+							<li>Водо/ветро непроницаемый материал</li>
+							<li>Капюшон с круговой молнией</li>
+							<li>Застежка: молния</li>
+							<li>2 косых кармана</li>
+							<li>1 карман на молнии на груди</li>
+							<li>Манжеты на резинке</li>
+							<li>Регулируемый нижний край с фиксатором</li>
+							<li>Контрастная отделка</li>
+						</ul>
+					</div>
+				</section>
+			</transition>
 			<!-- new!  -->
-			<section class="sect7 scroll" v-show="activeSection == 7">
-				<div class="content scroll">
-					<h2>ЭКСКЛЮЗИВНАЯ ЛИНИЯ ОДЕЖДЫ</h2>
-					<p>Компания DreamWear™ представляет новую линию одежды - крутки Silver Coat. Модель выполнена из
-						инновационного высокотехнологичного материала, которому не страшны ветер и влага.
+			<transition name="tabs">
+				<section v-show="activeSection == 7" class="sect7 scroll">
+					<div class="content scroll">
+						<h2>ЭКСКЛЮЗИВНАЯ ЛИНИЯ ОДЕЖДЫ</h2>
+						<p>Компания DreamWear™ представляет новую линию одежды - крутки Silver Coat. Модель выполнена из
+							инновационного высокотехнологичного материала, которому не страшны ветер и влага.
+							<br>
+							Дизайн куртки был разработан модным современным модельером, победителем множества международных выставок,
+							Сильвестром Пене.
+						</p>
 						<br>
-						Дизайн куртки был разработан модным современным модельером, победителем множества международных выставок,
-						Сильвестром Пене.
-					</p>
-					<br>
-					<img src="img/sect7_pic.jpg" alt="">
-				</div>
-			</section>
+						<img src="img/sect7_pic.jpg" alt="">
+					</div>
+				</section>
+			</transition>
 		</main>
 
-		<menu class="bot-menu">
+		<menu class="bot-menu" :class="{ mainscreen: activeSection == 1 }">
 			<div class="bot-menu__wrap">
-				<button @click="activeSection = 1" class="bot-menu__item"><span>Главная</span></button>
-				<button @click="activeSection = 2" class="bot-menu__item"><span>Плюсы</span></button>
-				<button @click="activeSection = 3" class="bot-menu__item"><span>Отзывы</span></button>
-				<button @click="activeSection = 4" class="bot-menu__item"><span>Заказать</span></button></div>
+				<button @click="activeSection = 1" class="bot-menu__item"
+					:class="{active: activeSection == 1}"><span>Главная</span></button>
+				<button @click="activeSection = 2" class="bot-menu__item"
+					:class="{active: activeSection == 2}"><span>Плюсы</span></button>
+				<button @click="activeSection = 3" class="bot-menu__item"
+					:class="{active: activeSection == 3}"><span>Отзывы</span></button>
+				<button @click="activeSection = 4" class="bot-menu__item main"
+					:class="{active: activeSection == 4}"><span>Заказать</span></button></div>
 		</menu>
 	</div>
+
 
 
 
