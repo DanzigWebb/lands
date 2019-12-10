@@ -1,0 +1,144 @@
+
+
+  
+html
+  font-size: 26.666666666667vw
+  background: #fff
+  @media (min-width: 480px)
+    font-size: 128px
+    overflow-x: hidden
+body
+  font-size: .16rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 400
+  font-family: 'Noto Sans', sans-serif
+  color: #252424
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: #dead66
+    &:required:valid
+      border-color: #dead66
+
+.bg
+  background-size: cover
+  background-repeat: no-repeat
+
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+.padding
+  padding: .65rem .3rem
+.pad-vert
+  padding: .7rem 0
+.content
+  padding: 0 .3rem
+  p
+    line-height: 0.24rem
+    &:last-child
+      margin-bottom: 0
+.heading
+  padding: .2rem 0
+
+b
+  color: $accent
+h2
+  font-size: 0.22rem
+  line-height: 0.37rem
+  font-weight: 700
+  color: #000
+  margin: 0
+  margin-bottom: .3rem
+  text-align: center
+  &.right
+    text-align: right
+  &.big
+    font-size: 0.4rem
+  &.black
+    color: #000
+  span
+    color: $accent
+    display: block
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+.btn
+  display: block
+  width: 3.1rem
+  height: .76rem
+  margin: auto
+  text-transform: uppercase
+  animation: btn 3s linear infinite
+  font-weight: bold
+  font-size: 0.20rem
+  color: #fff
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  background-color: #11662f
+  box-shadow: 0 6px 0 #054e1f
+  border-radius: 38px
+  span
+    text-align: center
+    display: block
+    width: 100%
+    margin-top: 0.07rem
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%
