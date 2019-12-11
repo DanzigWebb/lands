@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Fai un test di 5 minuti e troverò la strategia migliore per te.</title>
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="app">
+		<img src="img/bg-top.png" alt="" class="bg-top">
+		<img src="img/bg-bot.png" alt="" class="bg-bot">
+		<transition name="poll-next" mode="out-in">
+			<div v-if="active <= polls" key="polls" class="poll__items">
+				<header class="header">
+					<h1>Ehila'!</h1>
+					<p>Fai un test di 5 minuti e troverò la strategia migliore per te.</p>
+					<span><i>*</i> Necessariamente</span>
+				</header>
+
+				<div class="progress">
+
+					<div class="progress__wrapper">
+						<span v-for="n in polls" :key="n" :class="{active: n <= active}"></span>
+					</div>
+
+					<div class="progress__heading">
+						<span>Passaggio <span class="progress__index">{{active}}</span> di <span
+								class="progress__all">{{polls}}</span></span>
+					</div>
+				</div>
+
+				<div class="content">
+					<transition name="poll-next" mode="out-in">
+						<div v-if="active == 1" key="1" class="poll__item block1">
+							<div class="quest">
+								<p>Tu sei: <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<div class="block1__item poll__toggle active">
+									<div class="inner">
+										<img src="img/man.png" alt="">
+										<div class="check active"></div>
+									</div>
+									<span>Uomo</span>
+								</div>
+								<div class="block1__item poll__toggle">
+									<div class="inner">
+										<img src="img/woman.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Donna</span>
+								</div>
+							</div>
+							<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+						</div>
+						<div v-if="active == 2" key="2" class="poll__item block2">
+							<div class="quest">
+								<p>La tua attività fisica: <i>*</i></p>
+							</div>
+							<br>
+							<img src="img/bl2-pic.png" alt="">
+							<div class="quest__content">
+								<div class="block2__item poll__toggle active">
+									<div class="check active"></div>
+									<span>Quasi nessuna attività fisica</span>
+								</div>
+								<div class="block2__item poll__toggle">
+									<div class="check "></div>
+									<span>Vado spesso a fare passeggiate</span>
+								</div>
+								<div class="block2__item poll__toggle">
+									<div class="check "></div>
+									<span>Faccio ginnastica una o due volte alla settimana</span>
+								</div>
+								<div class="block2__item poll__toggle">
+									<div class="check "></div>
+									<span>Faccio esercizio fisico 3-5 volte a settimana</span>
+								</div>
+								<div class="block2__item poll__toggle">
+									<div class="check "></div>
+									<span>Mi esercito da cinque a sette volte alla settimana</span>
+								</div>
+							</div>
+							<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+						</div>
+						<div v-if="active == 3" key="3" class="poll__item block2">
+							<div class="quest">
+								<p>Specifica il tipo <br>
+									di carne che mangi: <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic3-1.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Carne bovina</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic3-2.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Maiale</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic3-3.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Carne volatili</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic3-4.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Frutti di mare</span>
+								</div>
+								<div class="block3__item poll__ckeck clear-all active">
+									<div class="inner">
+										<img src="img/pic3-5.png" alt="">
+										<div class="check active"></div>
+									</div>
+									<span>Non mangio carne</span>
+								</div>
+							</div>
+							<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+						</div>
+						<div v-if="active == 4" key="4" class="poll__item block2">
+							<div class="quest">
+								<p>Per favore specifica <br>
+									quali verdure mangi: <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<div class="block3__item poll__ckeck active">
+									<div class="inner">
+										<img src="img/pic4-1.png" alt="">
+										<div class="check active"></div>
+									</div>
+									<span>Funghi</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic4-2.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Zucchine</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic4-3.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Cavolfiore</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/pic4-4.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Altro</span>
+								</div>
+
+								<div style="display: none;" class="block3__item poll__ckeck clear-all">
+									<div class="check"></div>
+								</div>
+
+							</div>
+							<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+						</div>
+						<div v-if="active == 5" key="5" class="poll__item block2">
+							<div class="quest">
+								<p>Descrivi la tua <br>
+									giornata tipica: <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<br>
+								<img src="img/pic5-1.png" alt="">
+								<div class="quest__content">
+									<div class="block2__item poll__toggle active">
+										<div class="check active"></div>
+										<span>Lavoro in ufficio</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Cammino molto (in bicicletta, monopattino)</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Sto facendo il lavoro fisico</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Passo tempo a casa</span>
+									</div>
+								</div>
+								<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+							</div>
+						</div>
+						<div v-if="active == 6" key="6" class="poll__item block2">
+							<div class="quest">
+								<p>Per favore specifica <br>
+									quali verdure mangi: <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<div class="block3__item poll__ckeck active">
+									<div class="inner">
+										<img src="img/im1.png" alt="">
+										<div class="check active"></div>
+									</div>
+									<span>Funghi</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/im2.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Zucchine</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/im3.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Cavolfiore</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img src="img/im4.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Altro</span>
+								</div>
+								<div class="block3__item poll__ckeck">
+									<div class="inner">
+										<img style="width: 0.75rem;" src="img/im5.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Altro</span>
+								</div>
+
+								<div class="block3__item poll__ckeck clear-all">
+									<div class="inner">
+										<img src="img/im6.png" alt="">
+										<div class="check"></div>
+									</div>
+									<span>Altro</span>
+								</div>
+
+							</div>
+							<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+						</div>
+						<div v-if="active == 7" key="7" class="poll__item block2">
+							<div class="quest">
+								<p>Quale risultato <br>
+									vuoi ottenere? * <i>*</i></p>
+							</div>
+							<div class="quest__content">
+								<br>
+								<img src="img/pic7-1.png" alt="">
+								<div class="quest__content">
+									<div class="block2__item poll__toggle active">
+										<div class="check active"></div>
+										<span>Perdere peso di 1-5kg</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Perdere peso di 10-15kg</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Perdere peso di 15-20kg</span>
+									</div>
+									<div class="block2__item poll__toggle">
+										<div class="check "></div>
+										<span>Perdere 20 kg o più</span>
+									</div>
+								</div>
+								<button @click="nextPoll" class="btn"><span>Ulteriore</span></button>
+							</div>
+						</div>
+					</transition>
+				</div>
+			</div>
+
+			<div v-if="active >= polls" key="total" class="total">
+				<div class="total__ic">
+					<img src="img/total-ic.png" alt="">
+				</div>
+				<h2 class="total__heading">
+					Grazie per le tue risposte!
+				</h2>
+				<p class="sub__head">
+					Sulla base delle quali, ho preparato un articolo per te e ti invito di leggerlo!
+				</p>
+				<a href="" class="btn">vai al sito web</a>
+				<div class="gift">
+					<img src="img/gift.png" alt="">
+					<div class="gift__txt">
+						<b>P. S.</b>
+						Alla fine dell'articolo -
+						otterrai un bel bonus
+						da me - non perderlo!
+					</div>
+				</div>
+			</div>
+		</transition>
+	</div>
+
+	<script src="js/vue.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

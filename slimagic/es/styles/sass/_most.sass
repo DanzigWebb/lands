@@ -1,0 +1,101 @@
+
+
+  
+html
+  font-size: 26.666666666667vw
+  background: #fff
+  @media (min-width: 480px)
+    font-size: 128px
+    overflow-x: hidden
+body
+  font-size: .16rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 400
+  font-family: 'Noto Sans', sans-serif
+  color: #333
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.play
+  font-family: 'Playfair Display', sans-serif
+
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+
+
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%
+
+
+.btn
+  width: 2.41rem
+  height: 0.7rem
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  font-size: 0.16rem
+  color: #fff
+  text-shadow: 0 1px 0 #024f26
+  border: none
+  background-color: transparent
+  margin: auto
+  background-image: url(../../img/btn.png)
+  background-size: cover
+  outline: none
+  text-decoration: none
+  position: relative
+  span
+    width: 100%
+    text-align: center
+  &:after
+    content: ''
+    width: 0.08rem
+    height: 0.14rem
+    background-image: url(../../img/btn-arrow.png)
+    background-size: contain
+    background-repeat: no-repeat
+    position: absolute
+    right: 0.4rem
+    top: 50%
+    transform: translateY(-50%)
