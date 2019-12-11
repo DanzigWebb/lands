@@ -2,6 +2,27 @@
 @import "most"
 @import "offer"
 @import "anim"
+.header
+  position: relative
+.header__left
+  position: absolute
+  left: 0
+  top: 0
+  max-width: 520px
+  width: 35%
+  @media ( max-width: 420px )
+    display: none
+.header__right
+  position: absolute
+  right: 0
+  top: 0
+  max-width: 320px
+  width: 20%
+  @media ( max-width: 1720px )
+    display: none
+    
+
+
 
 .header-top
   background-color: $accent
@@ -10,6 +31,10 @@
   height: 55px
 .header-socials__item
   margin-right: 15px
+  transition: .4s ease
+  cursor: pointer
+  &:hover
+    transform: scale(1.15)
 .header-main
   background-color: #edeae3
 .header-main__content
@@ -25,6 +50,9 @@
   color: #000
   text-decoration: none
   position: relative
+  transition: .4s ease
+  &:hover
+    opacity: 0.4
   &:after
     content: ''
     width: 10px
@@ -40,13 +68,29 @@
     text-decoration: none
   @media (max-width: 1200px)
     display: none
+  &.active
+    &:before
+      content: ''
+      position: absolute
+      bottom: -15px
+      left: -35px
+      right: -35px
+      background: $accent
+      height: 2px
+      display: block
+    &:after
+      background-image: url(../../img/eagle2.png)
 .main
   background-image: url(../../img/bg.png)
+  padding-bottom: 40px
 .bred
   color: #373737
   font-size: 18px
   font-weight: 400
   line-height: 84.43px
+  a
+    text-decoration: none
+    color: #373737
 h1
   color: #373737
   font-size: 36px
@@ -61,6 +105,10 @@ h1
   @media (max-width: 1000px)
     padding-bottom: 200px
   @media (max-width: 770px)
+    padding-bottom: 250px
+  @media (max-width: 480px)
+    padding: 30px 15px
+    text-align: justify
     padding-bottom: 250px
   p
     text-indent: 40px
@@ -83,6 +131,8 @@ h1
   font-family: inherit
   padding-top: 40px
   color: #69696a
+  position: relative
+  z-index: 5
   .top
     display: flex
     max-width: 570px
@@ -122,6 +172,10 @@ h1
   text-transform: uppercase
   margin-top: 25px
   transition: .4s ease all
+  cursor: pointer
+  @media (max-width: 480px)
+    width: 270px
+    height: 75px
   &:hover
     transform: scale(1.05)
   span
@@ -131,6 +185,22 @@ h1
     justify-content: center
     margin-bottom: 10px
 
+.main-content__top
+  position: absolute
+  top: -30px
+  right: 20px
+  z-index: 1
+  width: 80px
+
+    
+.main-content__top2
+  position: absolute
+  top: 12%
+  left: -20px
+  z-index: 1
+  width: 80px
+  @media ( max-width: 500px )
+    width: 40px
 .main-content__bot
   position: absolute
   bottom: 0
@@ -139,3 +209,85 @@ h1
   max-width: 500px
   @media (max-width: 1200px)
     max-width: 400px
+.main-content__bot2
+  position: absolute
+  bottom: -90px
+  left: 60px
+  width: 230px
+  @media (max-width: 1000px)
+    bottom: -130px
+  @media (max-width: 480px)
+    bottom: -150px
+.comments
+  padding: 20px 40px
+  margin-top: 90px
+  background-color: #fff
+  h3
+    color: $accent
+    font-size: 30px
+    margin-bottom: 10px
+.comment
+  display: flex
+  align-items: center
+  padding: 30px 0
+  border-bottom: 1px solid #c8c8c8
+  @media (max-width: 420px)
+    flex-direction: column
+  img
+    width: 90px
+    margin-right: 20px
+    flex-shrink: 0
+    @media (max-width: 420px)
+      margin-right: 0
+      margin-bottom: 30px
+  p
+    font-size: 18px
+    margin: 0
+  .green
+    color: $accent
+.btn-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+.btn--comment
+  border: 3px solid #dbd5c6
+  background-color: #ffffff
+  padding: 20px 60px
+  text-decoration: none
+  color: #333
+  display: inline-flex
+  margin-top: 40px
+  text-align: center
+  transition: .4s ease all
+  @media (max-width: 440px)
+    padding: 20px 40px
+  &:hover
+    transform: scale(1.05)
+
+.btn--sidebar
+  border: 3px solid #dbd5c6
+  background-color: #ffffff
+  padding: 10px 20px
+  text-decoration: none
+  color: #333
+  display: inline-flex
+  width: 100%
+  margin-top: 40px
+  text-align: center
+  transition: .4s ease all
+  text-transform: uppercase
+  justify-content: center
+  align-items: center
+  font-size: 18px
+  letter-spacing: 3.6px
+  &:hover
+    transform: scale(1.05)
+
+.side_sub
+  font-size: 22px
+  font-weight: bold
+  color: $accent
+
+.sidebar
+  @media ( max-width: 1015px )
+    display: none
