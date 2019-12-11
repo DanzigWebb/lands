@@ -3,7 +3,7 @@ var app = new Vue({
 
   data: {
     activeSection: 1,
-    menuShow: false
+    menuShow: true
   },
   methods: {
     headerMenu() {
@@ -11,10 +11,12 @@ var app = new Vue({
       links.forEach((link, i) => {
         link.addEventListener('click', () => {
           this.activeSection = i + 1;
-          this.menuShow = false
         })
       })
     }
+  },
+  mounted() {
+    this.headerMenu()
   },
   updated() {
     collapse()
