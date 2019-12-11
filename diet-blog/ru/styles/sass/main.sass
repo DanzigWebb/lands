@@ -57,6 +57,11 @@ h1
   padding: 50px 40px
   margin-top: 30px
   color: #373737
+  position: relative
+  @media (max-width: 1000px)
+    padding-bottom: 200px
+  @media (max-width: 770px)
+    padding-bottom: 250px
   p
     text-indent: 40px
     position: relative
@@ -69,3 +74,68 @@ h1
     position: absolute
     left: 10px
     top: 10px
+
+.form-group
+  display: flex
+  flex-direction: column
+
+.blog-offer
+  font-family: inherit
+  padding-top: 40px
+  color: #69696a
+  .top
+    display: flex
+    max-width: 570px
+    justify-content: space-between
+    @media (max-width: 1200px)
+      flex-direction: column
+    .form-group
+      margin-right: 20px
+      width: 100%
+  input, select
+    height: 44px
+    border: 1px solid #c8c8c8
+    max-width: 270px
+    padding-left: 15px
+    box-sizing: border-box
+    font-size: 16px
+  label
+    color: #69696a
+    font-family: inherit
+    font-size: 18px
+    font-weight: 400
+    display: inline-block
+    margin-bottom: 5px
+
+.btn
+  background-image: url(../../img/btn.png)
+  background-size: cover
+  background-color: transparent
+  border: none
+  display: block
+  width: 100%
+  max-width: 300px
+  height: 85px
+  color: #fff
+  font-size: 25px
+  font-weight: bold
+  text-transform: uppercase
+  margin-top: 25px
+  transition: .4s ease all
+  &:hover
+    transform: scale(1.05)
+  span
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+
+.main-content__bot
+  position: absolute
+  bottom: 0
+  right: 0
+  z-index: 1
+  max-width: 500px
+  @media (max-width: 1200px)
+    max-width: 400px
