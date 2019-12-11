@@ -46,5 +46,6 @@ const collapse = function () {
     })
   }
 }
-document.querySelector('#app').style.height = window.innerHeight + 'px'
-console.log(window.innerHeight);
+setInterval(() => {
+  document.querySelector('#app').style.height = window.innerHeight + 'px'
+}, 200);
