@@ -6,7 +6,7 @@ var app = new Vue({
   },
   methods: {
     nextPoll() {
-      this.active++
+      this.active ++
     }
   },
   mounted() {
