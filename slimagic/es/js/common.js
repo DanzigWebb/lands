@@ -21,7 +21,7 @@ var app = new Vue({
       })
     } else {
       window.scrollTo({
-        top: 150,
+        top: 100,
         behavior: "smooth"
       })
     }

@@ -4,9 +4,9 @@
 @import "anim"
 
 #app
-  padding: .7rem .3rem
+  padding: .2rem .3rem
   position: relative
-
+  min-height: 100vh
 .bg-top,
 .bg-bot
   position: absolute
@@ -31,7 +31,7 @@
     &.active
       background-color: $accent
 .header
-  padding-bottom: 0.4rem
+  padding-bottom: 0.2rem
   h1
     font-size: 0.4rem
     font-weight: bold
@@ -70,7 +70,7 @@
   font-size: 0.2rem
   font-weight: bold
   color: #333
-  margin-bottom: 0.2rem
+  margin-bottom: 0.1rem
 .quest
   font-size: 0.22rem
   text-align: center
@@ -83,7 +83,7 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  padding: .3rem 0
+  padding: .2rem 0
 .poll__toggle,
 .poll__ckeck
   transition: .5s ease all
@@ -179,7 +179,6 @@
   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0)
 
 .poll-next-enter, .poll-next-leave-to
-  transform: translateX(10%)
   opacity: 0
 
 .total__ic
