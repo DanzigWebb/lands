@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     polls: 7,
-    active: 1
+    active: 1,
   },
   methods: {
     nextPoll() {
@@ -30,7 +30,11 @@ var app = new Vue({
       toggleCheck()
       multiCheck()
     }, 444);
-
+    if (this.active === 8) {
+      setTimeout(() => {
+        this.active++
+      }, 3000);
+    }
   }
 })
 
