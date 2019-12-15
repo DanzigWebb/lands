@@ -1,0 +1,223 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.main
+  background-color: $light
+  padding-bottom: 0.5rem
+.main-top__main
+  background-color: $accent
+  height: 0.6rem
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  text-align: center
+  color: #fff
+  font-size: 0.25rem
+.main-top__bot
+  text-align: center
+  padding: 0 .1rem
+  font-weight: 500
+  margin: 0
+  min-height: 0.85rem
+  display: flex
+  align-items: center
+  font-size: 0.22rem
+.main-bg
+  min-height: 4.2rem
+  background-image: url(../../img/main_bg.jpg)
+  background-size: cover
+  position: relative
+  overflow: hidden
+.main-bg__sale
+  position: absolute
+  top: 0.3rem
+  right: -.7rem
+  background: linear-gradient(98.76deg, #FFC147 15.72%, #FF930B 101.98%)
+  transform: rotate(45deg)
+  width: 2.4rem
+  height: .45rem
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  font-size: 0.2rem
+  font-weight: bold
+
+.sale
+  display: flex
+  width: 100%
+  height: 0.87rem
+  align-items: center
+  background-color: #fff
+  background-image: url(../../img/sale.jpg)
+  background-size: cover
+  &>div
+    width: 50%
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 0.67rem
+  s
+    font-style: normal
+    font-weight: 600
+    font-size: 30px
+    color: #B0B0B0
+    line-height: 1
+  .new
+    color: #fff
+    span
+      font-weight: 600
+      font-size: 40px
+      line-height: 0.9
+.main__builets
+  padding: .4rem .2rem
+.main__bul
+  min-height: 1.25rem
+  background: #FFFFFF
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15)
+  border-radius: 20px
+  margin-bottom: 0.2rem
+  display: flex
+  align-items: center
+  padding: 0 .3rem
+  &:last-child
+    margin-bottom: 0
+.main__bul-img
+  flex-shrink: 0
+  width: 0.7rem
+  margin-right: 0.35rem
+
+.sect2
+  h2
+    color: #FF0000
+
+.accent-bg
+  background-color: $accent
+  color: #fff
+  margin-left: -0.13rem
+  margin-right: -0.13rem
+  padding: .13rem
+  font-weight: 500
+
+.sect3
+  background-color: #FFEEE6
+  h3
+    color: #7C667F
+.sect3__img
+  max-width: 2.6rem
+  margin: auto
+.sect3__title
+  text-align: center
+  font-weight: 500
+
+.sect4__item
+  display: flex
+  margin-bottom: 0.2rem
+  &:last-child
+    margin-bottom: 0
+  .num
+    flex-shrink: 0
+    margin-right: 0.1rem
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 0.31rem
+    width: 0.31rem
+    border-radius: 50%
+    background-color: $accent
+    color: #fff
+    font-weight: 500
+
+.sect5
+  padding-bottom: 0.3rem
+  background-color: $light
+  video
+    width: 100%
+.sect6
+  position: relative
+  padding-bottom: 0.2rem
+.swiper__nav
+  position: absolute
+  bottom: .2rem
+  z-index: 10
+  outline: none
+  width: 0.4rem
+.swiper__nav--left
+  left: .35rem
+.swiper__nav--right
+  right: .35rem
+
+.sect7
+  background-color: $light
+  padding-bottom: 0.6rem
+.sect7__item
+  display: flex
+  align-items: center
+  p
+    margin: 0
+    margin-top: 0.45rem
+    font-weight: 500
+  &:nth-child(even)
+    flex-direction: row-reverse
+    img
+      margin-right: 0
+      margin-left: 0.2rem
+  img
+    flex-shrink: 0
+    width: 2.3rem
+    margin-right: 0.2rem
+.products
+  margin: .2rem 0
+  text-align: center
+  font-weight: bold
+  color: #000
+  span
+    background-color: #FF440A
+    padding: .05rem
+    color: #fff
+.timer
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-pack: distribute
+  justify-content: space-around
+  font-family: sans-serif
+  font-size: .44rem
+  padding: .4rem .2rem
+  padding-top: 0.2rem
+  max-width: 4rem
+  margin: auto
+
+.timer__title
+  text-align: center
+  margin-top: 0.4rem
+  font-size: 0.2rem
+  color: #000
+  text-transform: uppercase
+  font-weight: 500
+.num span
+  width: 30px
+  background: #FF8E6A
+  margin: 0 2px
+  padding: 5px
+  font-weight: 500
+  color: #fff
+
+.timer__item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+
+.timer__sub
+  font-size: 0.15rem
+  font-weight: normal
+  text-align: center
+  padding: .1rem 0
