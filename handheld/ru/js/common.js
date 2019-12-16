@@ -26,11 +26,6 @@ class minTimer {
   }
   start() {
     // время таймера
-    let timerPar = {
-      hour: 14,
-      min: 45,
-      sec: 4,
-    }
     const update = () => {
       let date = new Date
       let tz = date.getTimezoneOffset()
@@ -70,7 +65,6 @@ const timer = new minTimer({
   sec: 't-sec',
   separation: true
 }).start();
-
 // ========================>
 // animation scroll
 // <=======================
@@ -99,7 +93,6 @@ const timer = new minTimer({
     }, false);
   }
 })();
-
 // ========================>
 // pulse btn
 // <=======================
@@ -113,7 +106,6 @@ const timer = new minTimer({
 // ========================>
 // review modal
 // <=======================
-
 const reviewModal = function() {
   const btn = document.querySelector('#modal-btn');
   const modal = document.querySelector('.rev-modal')
