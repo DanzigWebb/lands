@@ -295,8 +295,24 @@
 					</transition>
 				</div>
 			</div>
-
-			<div v-if="active >= polls" key="total" class="total">
+			<div v-if="active == 8" key="preloader" class="preloader">
+				<div class="lds-default">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="preloader__heading">Attenda, perfavore</div>
+			</div>
+			<div v-if="active == 9" key="total" class="total">
 				<div class="total__ic">
 					<img src="img/total-ic.png" alt="">
 				</div>

@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title> Silver Coat </title>
+	<title>Silver Coat</title>
 	<meta property="og:image" content="path/to/image.jpg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon/favicon.ico">
@@ -23,18 +23,6 @@
 		<header class="header">
 			<div class="header__main">
 				<div class="header__logo" @click="activeSection = 1"><img src="img/logo.svg" alt=""></div>
-				<!-- <div class="header__burger">
-					<svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="70" @click="menuShow = !menuShow"
-						:class="{ active: menuShow }">
-						<path class="line top"
-							d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429">
-						</path>
-						<path class="line middle" d="m 70,50 h -40"></path>
-						<path class="line bottom"
-							d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429">
-						</path>
-					</svg>
-				</div> -->
 			</div>
 			<menu class="header__menu" :class="{ active: menuShow }">
 				<div class="swiper-container menu-carousel">
@@ -71,7 +59,12 @@
 					<!-- Swiper -->
 					<div class="swiper-container gallery-top">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+								<div class="slide-on-slider">
+									<span>Ткань обладает светоотражающим эффектом</span>
+									<img src="img/slide.png" alt="">
+								</div>
+								</div>
 							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
 							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
 							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
@@ -79,7 +72,8 @@
 					</div>
 					<div class="swiper-container gallery-thumbs">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
 							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
 							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
 							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
@@ -188,6 +182,44 @@
 									они
 									круууууутые! Можно не только на спорт носить, но и разные модные образы создавать. Качество
 									замечательное, фасон очень удобный. </span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava4.png" alt=""><span><b>Автор:</b>Михаил</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_3.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Недавно получил куртку, очень жаль, что на улице уже холодно. Отличная и качественная вещь, смотрится стильно. Удобная.
+								Ткань плотная, но легкая. Через 2 недели поеду на юг и опробую куртку в деле!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava5.png" alt=""><span><b>Автор:</b>Оксана</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Спасибо за быструю доставку! Менеджер перезвонил сразу после того как оставила заявку. Очень вежливая девушка. Куртка
+								пришла в упаковке. Размер соответствует. ООООЧЕНЬ круто смотрится. Ночью прям сияет, чувствую себя в ней звездой!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava6.png" alt=""><span><b>Автор:</b>Марина</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Красивая куртка! Швы ровные, ткань качественная, очень удачный фасон - все на высоте, впрочем как и всегда у этой фирмы.
+								Хорошо смотрится с джинсами, леггинасами и джоггерами. Легкая, почти воздушная! Сидит хорошо, удобная. Ткань приятная
+								наощупь, в общем - довольна все 100 и всем рекомендую!!!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava7.png" alt=""><span><b>Автор:</b>Кирилл</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b>Рейтинг:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt=""></span>
+								<span class="geo"><b>Страна:</b> Россия</span>
+								<span class="main">Брал еще осенью как ветровку для спорта. По вечерам катаюсь на велике, хотел быть заметным на дороге. Куртка отражает
+								свет очень ярко - видно издалека. Комфортная, не жарко и не холодно в ней, дизайн прикольный. Удобная молния, которая
+								застегивается до верхнего края капюшона - если на улице дождь, то помогает спрятаться. Рекомендую!</span>
 							</div>
 						</div>
 					</div>
