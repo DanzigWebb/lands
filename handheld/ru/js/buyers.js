@@ -29,7 +29,7 @@ function metaBuyers() {
     metaElems[1].innerHTML = data.now;
     metaElems[2].innerHTML = data.buyers;
     balanceElems.forEach(el => {
-      el.innerHTML = data.balance 
+      el.innerHTML = data.balance
     })
   }
   SetMetaData()
@@ -37,23 +37,24 @@ function metaBuyers() {
   function updateShop() {
     const comment = document.querySelector('.buyers__comment')
 
-    // посетители
-    setInterval(() => {
-      updateVisits()
-      SetMetaData()
-    }, random(10,20) * 1000);
+    function interval() {
+      // посетители
+      setInterval(() => {
+        updateVisits()
+        SetMetaData()
+      }, random(10, 20) * 1000)
+      // посетители сейчас
+      setInterval(() => {
+        updateNowVisits()
+        SetMetaData()
+      }, random(15, 35) * 1000)
+      // новые покупки
+      setInterval(() => {
+        commentsShow()
+      }, random(30, 45) * 1000)
+    }
+      interval()
 
-    // посетители сейчас
-    setInterval(() => {
-      updateNowVisits()
-      SetMetaData()
-    }, random(15,35) * 1000);
-
-    // новые покупки
-    setInterval(() => {
-      commentsShow()
-    }, random(17, 25) * 1000);
-    
     // уведомление о покупке
     function commentsShow() {
       comment.classList.add('active')
@@ -64,6 +65,10 @@ function metaBuyers() {
       SetMetaData()
     };
 
+    // быстрая стартовое появление коммента
+    setTimeout(() => {
+      commentsShow()
+    }, random(2, 4) * 1000 );
     // покупка при скролле до формы
     let firstScrollToForm = true;
     const offer = document.querySelector('#offer')
@@ -90,21 +95,19 @@ function metaBuyers() {
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
   // обновление посетителей
-  function updateVisits () {
+  function updateVisits() {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
     data.visits = data.visits += random(4, 10)
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
   // обновление "сейчас на сайте"
-  function updateNowVisits () {
+  function updateNowVisits() {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
     data.now = data.now += random(-2, 2)
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
 
-  setTimeout(() => {
-    updateShop()
-  }, 1000);
+  updateShop()
 }
 metaBuyers()
 
