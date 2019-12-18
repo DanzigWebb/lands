@@ -2,18 +2,22 @@
   position: fixed
   top: 0
   bottom: 0
-  right: .15rem
-  left: .15rem
-  max-height: 80vh
+  max-height: 90vh
+  left: 0
+  right: 0
   background-color: rgba(255, 255, 255, 0.9)
   border-radius: 10px
   z-index: 15
-  margin: auto .1rem
+  max-width: 4.8rem
+  padding: .15rem
+  margin: auto
   display: none
   align-items: center
   justify-content: center
   transition: .4s ease all
   animation: modal ease .4s backwards
+  border: 1px solid $accent
+  box-sizing: border-box
   h3
     text-align: center
   button
@@ -24,6 +28,7 @@
     font-family: 'Montserrat', sans-serif
     font-size: 0.22rem
     margin-bottom: 0.15rem
+    border: 1px solid $accent
   textarea
     height: auto
   &.active
@@ -52,7 +57,10 @@
       transform: rotate(45deg)
     &:after
       transform: rotate(-45deg)
-
+.rev-modal__content
+  max-width: 4.8rem
+  margin: .15rem
+  box-sizing: border-box
 #rev-file
   visibility: hidden
   opacity: 0
@@ -74,7 +82,6 @@
     margin-right: 0.2rem
   &.active
 
-
 .rev-succes
   position: fixed
   top: 0
@@ -89,6 +96,22 @@
   transform: translateY(-100%)
   &.active
     transform: translateY(0)
+
+.rev-modal--overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 14
+  background-color: rgba(0, 0, 0, 0.55)
+  display: none
+  animation: modal ease .4s backwards
+  transition: .4s ease all
+  &.active
+    display: block
+  &.before-close
+    opacity: 0
 @keyframes modal
   0%
     transform: scale(1.1)
