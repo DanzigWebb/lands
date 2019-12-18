@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Silver Coat</title>
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
+		rel="stylesheet">
+	<script src="libs/vue/vue.min.js"></script>
+</head>
+
+<body>
+
+	<div id="app">
+		<header class="header">
+			<div class="header__main">
+				<div class="header__logo" @click="activeSection = 1"><img src="img/logo.svg" alt></div>
+			</div>
+			<menu class="header__menu" :class="{ active: menuShow }">
+				<div class="swiper-container menu-carousel">
+					<div class="swiper-wrapper">
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }"> Κεντρική</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }"> Θετικά</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }"> Κριτικές
+						</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }"> Παραγγελία
+						</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 5 }"> Αποστολή και
+							παράδοση</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }"> Χαρακτηριστικά</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }"> Καινούργιο του 2019</span>
+					</div>
+				</div>
+			</menu>
+		</header>
+
+		<main @click="menuShow = false" class="main">
+
+			<!-- main slider  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
+
+					<div class="sect1__heading">
+						<h1><span class="underline"><b> Hi-tech</b> <span class="low"> ρούχο</span></span> <br> <span
+								class="underline"> ΝΕΑΣ ΓΕΝΙΑΣ</span></h1>
+					</div>
+					<div class="price">
+						<div class="top"><b> Έκπτωση
+							</b> <span> -50%</span></div>
+						<div class="main">
+							<span> 49€</span>
+							<s> 98€</s>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+								<div class="slide-on-slider">
+									<span> Το ύφασμα έχει ανακλαστικό εφέ</span>
+									<img src="img/slide.png" alt>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- pluses -->
+			<transition name="tabs">
+				<section v-show="activeSection == 2" class="sect2 pluses">
+					<div class="content">
+						<div class="sect2__item active">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.37rem;" src="img/icon_1.svg" alt>
+								</div>
+								<h3> ΥΛΙΚΑ: ΣΤΗΝ ΚΟΡΥΦΗ</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content active"> Τα μπουφάν Silver Coat είναι κατασκευασμένα από υψηλής τεχνολογίας
+							υλικό FlexTech ™. Φημίζονται για την αυξημένη τους αντοχή στη φθορά, απωθούν το νερό και τη βρωμιά, δεν
+							διαπερνάει ο αέρας. Παρά το γεγονός ότι το ύφασμα είναι εξαιρετικά ελαφρύ, σχεδόν αέρινο, διατηρεί τέλεια
+							τη θερμότητα.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_2.svg" alt>
+								</div>
+								<h3> ΑΞΕΣΟΥΑΡ: ΓΙΑ ΧΡΟΝΙΑ</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Τα μπουφάν Silver Coat κατασκευάζονται από εξαρτήματα υψηλής ποιότητας. Τα
+							φερμουάρ αντέχουν έως και 100 χιλιάδες ανοίγματα / πώματα και προστατεύονται από την υγρασία, οι θυλιές
+							είναι κατασκευασμένες από επαργυρωμένο μέταλλο, όλες οι ραφές είναι ενισχυμένες με ειδικό ύφασμα.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.39rem;" src="img/icon_3.png" alt>
+								</div>
+								<h3> ΣΧΕΔΙΑΣΜΟΣ: ΑΠΟΤΕΛΕΣΜΑΤΙΚΟΣ ΑΠΟΘΗΚΕΥΤΙΚΌΣ ΧΩΡΟΣ</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Μια χαλαρή εφαρμογή σε στυλ unisex, αντίθετες μανσέτες, κομψή σχεδίαση,
+							αυστηρές γραμμές, μοντέρνα μεταλλική επίδραση και αντανακλαστικό ύφασμα - κάθε λεπτομέρεια από τα σακάκια
+							Silver Coat χρησιμεύει για τη δημιουργία μιας μοναδικής υπερ-κομψής εμφάνισης.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.34rem;" src="img/icon_4.png" alt>
+								</div>
+								<h3> ΧΡΗΣΗ: ΕΙΝΑΙ ΟΤΙ ΧΡΕΙΑΖΕΣΤΕ</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Τα μπουφάν Silver Coat συμπληρώνουν 3 επιπλέον τσέπες, οι οποίες είναι με
+							φερμουάρ, μία είναι με κυκλικό φερμουάρ, μια με στενές μανσέτες και μία ρυθμιζόμενη κατα πλάτος στο κάτω
+							άκρο. Για αύτο το μοντέλο, έχουν επινοηθεί πάντα για την δικιά σας ευκολία!</p>
+					</div>
+				</section>
+			</transition>
+			<!-- reviews  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 3" class="sect3 reviews scroll">
+					<div class="content">
+						<h2 class="t-center"> ΚΡΙΤΙΚΕΣ ΓΙΑ ΤΟ SILVER COAT</h2>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava1.png" alt><span><b> Δημοσίευσε:</b> Αλέξανδρος</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Χώρα:</b> Ελλάδα
+								</span>
+								<span class="main"> Τέλειο μπουφάν! Το πήρα για να κάνω ποδήλατο με συννεφιασμένο καιρό - αλλά τελικά το
+									φοράω και όταν κάνω βόλτα και έτσι απλά. Το βράδυ έχει ανακλαστικό εφέ όπως τα αυτοκινήτα! Μπορείτε
+									ακόμη να περπατήσετε σε ένα σκοτεινό πάρκο - θα είναι ορατό από μακριά. Φτιαγμένο από υψηλής ποιότητας
+									υλικά, φαίνεται ακριβό. Πολύ ευχαριστημένος με αυτήν την αγορά!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava2.png" alt><span><b> Δημισίευσε:</b> Μαρία</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Χωρα:</b> Ελλάδα</span>
+								<span class="main"> Ευχαριστώ για τη γρήγορη παράδοση, μου άρεσε πολύ το μπουφάν. Το φορώ με μαύρες
+									γκέτες και ασημένια αθλητικά παπούτσια - φαίνεται πολύ κομψό!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava3.png" alt><span><b> Δημισίευσε:</b> Χριστίνα</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Χωρα:</b> Ελλαδα</span>
+								<span class="main"> Μας αρέσει να κάνουμε σκούτερ μαζί με τον σύζυγό μου κατά μήκος του παραλιακού
+									δρόμου, πήρα τα ίδια μπουφάν σε αυτόν και σε μένα, είναι πολύ άνετα! Δεν είναι μόνο για σπορ, αλλά και
+									για επίσημες βόλτες με τους φίλους σας. Η ποιότητα είναι υπέροχη, το στυλ είναι πολύ ωραίο.</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava4.png" alt><span><b> Δημισίευσε:</b> Μιχάλης</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_3.svg" alt></span>
+								<span class="geo"><b> Χωρα:</b> Ελλάδα</span>
+								<span class="main"> Πρόσφατα έλαβα ένα μπουφάν, αντέχει ακόμα και στον δυνατό άνεμο. Μεγάλη και υψηλής
+									ποιότητας υλικό, φαίνεται κομψό και βολικό. Το ύφασμα είναι πυκνό αλλά ελαφρύ. Σε 2 εβδομάδες θα πάω
+									για διακοπές και φυσικά θα πάρω μαζί μου το κομψό μπουφάν!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava5.png" alt><span><b> Δημισίευσε:</b> Μαργαρίτα</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Χώρα:</b> Ελλάδα
+								</span>
+								<span class="main"> Ευχαριστώ για την γρήγορη παράδοση! Ο εκπρόσωπος της εταιρείας με πήρε τηλέφωνο
+									αμέσως αφότου άφησα ένα αίτημα. Πολύ ευγενικό κορίτσι. Το μπουφάν ήρθε σε μια όμορφη συσκευασία. Το
+									μέγεθος είναι εντάξει. Φαίνεται πολύ κομψό. Τη νύχτα φωτίζει πολύ έντονα, νιώθω πολυ άνετα με
+									αυτό!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava6.png" alt><span><b> Δημισίευσε:</b> Δέσποινα</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Ελλάδα:</b>
+								</span>
+								<span class="main"> Όμορφο μπουφάν! Οι ραφές είναι ομοιόμορφες, το ύφασμα υψηλής ποιότητας, ένα πολύ
+									επιτυχημένο υλικό - όλα είναι στην κορυφή, όπως πάντα με την συγκεκριμένη μάρκα. Φαίνεται κομψό με ένα
+									τζιν, με γκέτες και με μια αθλητική φόρμα. Είναι αρκετά ελαφρύ! Άνετο στο περπάτημα. Το ύφασμα είναι
+									ευχάριστο στην αφή, γενικά είμαι πολύ χαρούμενος και το συνιστώ σε όλους!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava7.png" alt><span><b> Δημοσίευσε:</b> Βαγγέλης
+								</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Χώρα:</b> Ελλάδα
+								</span>
+								<span class="main"> Το είχα πάρει το φθινόπωρο για τις αθλητικές μου δραστηριότητες. Τα βράδια κάνω
+									βόλτα με το ποδήλατο, διότι θέλω να είμαι αισθητός στο δρόμο. Το μπουφάν αντανακλά το φως πράγμα που
+									είναι πολύ βολικό και ορατό από μακριά. Άνετο, μέσα σε αυτήν ούτε θα ζεσταίνεστε ούτε θα κρυώνετε, ο
+									σχεδιασμός είναι υπέροχος. Ένα άνετο φερμουάρ που στερεώνεται στην κορυφή της κουκούλας - εάν βρέχει
+									έξω, θα σας βοηθήσει πραγματικά. Σας το συνιστώ!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- offer  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 4" class="sect4 scroll offer">
+					<div class="content">
+						<h2 class="t-center"> ΣΥΜΠΛΗΡΩΣΤΕ ΤΗ ΦΟΡΜΑ</h2>
+						<form action method="POST" class="offer">
+							<input type="text" name="name" required placeholder="Ονοματεπώνυμο">
+							<input type="tel" name="phone" required placeholder="Τηλέφωνο">
+							<button class="btn" type="submit"><span> ΠΑΡΑΓΓΕΛΙΑ</span></button>
+						</form>
+						<p> Αφήστε ένα αίτημα στην ιστοσελίδα μας</p>
+						<p> Θα σας καλέσουμε πίσω μέσα σε 5 λεπτά για να επιβεβαιώσουμε τα στοιχεία της παραγγελίας.</p>
+						<p> Η παράδοση πραγματοποιείται με courier εντος 3-7 εργάσιμων ημερών</p>
+					</div>
+					<div class="policy__bot">
+						<div class="policy_wrap"><span> E-OUTLET LLP, Iasonos 19, Athina 104 36, Greece</span>
+							<a href="/privacypolicy" target="_blank"> Πολιτική απορρήτου</a></div>
+					</div>
+
+				</section>
+			</transition>
+			<!-- how buy -->
+			<transition name="tabs">
+				<section v-show="activeSection == 5" class="sect5 scroll">
+					<div class="content">
+						<h2 class="t-center"> ΤΗ ΝΥΧΤΑ ΘΑ ΛΑΜΠΕΤΕ ΠΕΡΙΣΣΟΤΕΡΟ ΑΠΟ ΟΤΙ ΤΑ ΑΣΤΕΡΙΑ</h2>
+						<p> Τα μπουφάν Silver Coat βγήκαν σε περιορισμένη έκδοση 500 τεμαχίων. Μπορείτε να τα παραγγείλετε μόνο από
+							εμάς - στην επίσημη ιστοσελίδα της μάρκας.</p>
+						<div class="sect5__list">
+							<div class="sect5__item"><img src="img/icon1.svg" alt><span> Αφήστε ένα αίτημα στην ιστοσελίδα μας</span>
+							</div>
+							<div class="sect5__item"><img src="img/icon2.svg" alt><span> Θα σας καλέσουμε πίσω μέσα σε 5 λεπτά για να
+									επιβεβαιώσουμε τα στοιχεία της παραγγελίας.</span></div>
+							<div class="sect5__item"><img src="img/icon3.svg" alt><span> Η παράδοση πραγματοποιείται με courier εντος
+									3-7 εργάσιμων ημερών</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- about  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 6" class="sect6 scroll about">
+					<div class="content">
+						<h2 class="t-center"> ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ</h2>
+						<ul>
+							<li> Ανακλαστικό εφέ</li>
+							<li> Πρώτες ύλες νερού / ανέμου</li>
+							<li> Κουκούλα με κυκλικο φερμουάρ</li>
+							<li> Κουμπωμα: με φερμουάρ</li>
+							<li> 2 λόξες τσέπες</li>
+							<li> 1 τσέπη με φερμουάρ στο στήθος</li>
+							<li> Ελαστικές μανσέτες</li>
+							<li> Ρυθμιζόμενη κάτω άκρη με ασφάλεια</li>
+							<li> Φινίρισμα αντίθεσης</li>
+						</ul>
+					</div>
+				</section>
+			</transition>
+			<!-- new!  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 7" class="sect7 scroll">
+					<div class="content scroll">
+						<h2> ΑΠΟΚΛΕΙΣΤΙΚΗ ΓΡΑΜΜΗ ΕΝΔΥΣΗΣ</h2>
+						<p> Το DreamWear ™ εισάγει μια νέα σειρά ενδυμάτων - Silver Coat Twist. Το μοντέλο είναι κατασκευασμένο από
+							καινοτόμο υλικό υψηλής τεχνολογίας, το οποίο δεν επιρεάζεται από τον άνεμο και την υγρασία.<br> Το σχέδιο
+							του μπουφάν αναπτύχθηκε από μοντέρνο, σύγχρονο σχεδιαστή μόδας, που κέρδισε πολλές διεθνείς εκθέσεις, το
+							Sylvester Penet.</p>
+						<br>
+						<img src="img/sect7_pic.jpg" alt>
+					</div>
+				</section>
+			</transition>
+		</main>
+
+		<menu class="bot-menu" :class="{ mainscreen: activeSection == 1 }">
+			<div class="bot-menu__wrap">
+				<button @click="activeSection = 1" class="bot-menu__item" :class="{active: activeSection == 1}"><span>
+						Κεντρική</span></button>
+				<button @click="activeSection = 2" class="bot-menu__item" :class="{active: activeSection == 2}"><span> Θετικά
+					</span></button>
+				<button @click="activeSection = 3" class="bot-menu__item" :class="{active: activeSection == 3}"><span>
+						Κριτικές</span></button>
+				<button @click="activeSection = 4" class="bot-menu__item main" :class="{active: activeSection == 4}"><span>
+						Παραγγελία
+					</span></button></div>
+		</menu>
+	</div>
+
+
+
+
+	<script src="js/main.js"></script>
+
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+
+</body>
+
+</html>

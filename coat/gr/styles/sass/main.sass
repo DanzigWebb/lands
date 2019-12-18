@@ -1,0 +1,322 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+
+#app
+  transition: .4s ease all
+.header
+  position: relative
+  z-index: 10
+.header__main
+  height: 0.5rem
+  padding: 0 .15rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+  background: #fff
+.header__logo
+  width: 1.3rem
+  display: flex
+  align-items: center
+  justify-content: center
+main
+  height: calc(100% - 1.6rem)
+  overflow: hidden
+.bot-menu
+  height: 0.6rem
+  margin: 0
+  padding: 0
+  display: flex
+  align-items: flex-end
+  background-color: transparent
+  transition: .4s ease all
+  &.mainscreen
+    background-color: #222
+.bot-menu__wrap
+  width: 100%
+.bot-menu__item
+  display: inline-block
+  height: 0.48rem
+  padding: 0
+  background-color: transparent
+  border: none
+  background-image: url(../../img/header_menu_1.png)
+  background-size: cover
+  background-repeat: no-repeat
+  width: 1.42rem
+  margin-right: -.35rem
+  outline: none
+  span
+    margin-left: 0.04rem
+  &.active
+    z-index: 5
+    position: relative
+    background-image: url(../../img/header_menu_2.png)
+    span
+      color: #000
+  &.main
+    background-image: url(../../img/header_menu_3.png)
+    span
+      color: #fff
+  span
+    font-size: 0.18rem
+    color: #8C8C8C
+    position: relative
+    top: 0.05rem
+section
+  height: 100%
+  &.scroll
+    overflow: scroll
+// ################################
+// sect1
+// ################################
+
+.sect1
+  position: relative
+.sect1__heading
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 4
+  h1
+    color: #fff
+    text-transform: uppercase
+    font-size: 0.28rem
+    font-weight: normal
+    position: relative
+    margin: 0
+    .low
+      text-transform: lowercase
+      font-weight: normal
+    .underline
+      position: relative
+      padding-left: 0.2rem
+      padding-right: 0.15rem
+    .underline:before
+      content: ''
+      display: inline-block
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 0.21rem
+      width: 100%
+      background-color: #274CCF
+      z-index: -1
+.price
+  position: absolute
+  left: 0
+  top: 1rem
+  z-index: 4
+  .top
+    background: #FFB800
+    border-radius: 0px 10px 0px 0px
+    font-weight: 900
+    font-size: 0.11rem
+    width: 1.05rem
+    height: 0.22rem
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    b
+      line-height: .2
+    span
+      font-size: 0.12rem
+      margin-left: 0.04rem
+  .main
+    height: 0.7rem
+    width: 1.05rem
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 0px 0 10px 0px
+    span
+      font-weight: 900
+      font-size: 0.35rem
+      line-height: 0.9
+      color: #000
+    s
+      color: #969696
+      font-size: 0.2rem
+      line-height: 0.9
+      font-weight: normal
+.swiper-container
+  width: 100%
+  // height: 300px
+  margin-left: auto
+  margin-right: auto
+
+.swiper-slide
+  background-size: cover
+  background-position: center
+.slide-on-slider
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 1.25rem
+  img
+    width: 100%
+  span
+    position: absolute
+    top: 0.1rem
+    font-size: 0.15rem
+    font-weight: bold
+    color: #000
+    left: 0
+    right: 0
+    text-align: center
+.gallery-top
+  height: 80%
+  width: 100%
+
+.gallery-thumbs
+  height: 20%
+  box-sizing: border-box
+  padding: 0
+
+  & .swiper-slide
+    height: 100%
+    opacity: 0.4
+    transition: all ease .4s
+    position: relative
+
+  & .swiper-slide-thumb-active
+    opacity: 1
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0.03rem
+      left: 0.03rem
+      bottom: 0.03rem
+      right: 0.03rem
+      border: 3px solid #274CCF
+      box-sizing: border-box
+      border-radius: 10px
+
+// ################################
+// sect2
+// ################################
+.sect2
+  .content
+    padding-left: 0
+    padding-right: 0
+.sect2__heading
+  display: flex
+  align-items: center
+
+.sect2__img
+  width: 0.48rem
+  display: flex
+  margin-right: 0.05rem
+  flex-shrink: 0
+
+.pluses
+  overflow: scroll
+.sect2__content
+  padding: .3rem .15rem
+.sect2__item
+  background: linear-gradient(180deg, #FAFAFA 60.78%, #EDE9E9 99.99%, rgba(196, 196, 196, 0) 100%)
+  border: 1px solid #C8C8C8
+  box-sizing: border-box
+  height: 0.54rem
+  padding-left: 0.2rem
+  display: flex
+  align-items: center
+  position: relative
+  h3
+    margin: 0
+    font-size: 0.18rem
+    text-transform: uppercase
+  p
+    font-size: 0.2rem
+    font-weight: 300
+  &:last-child
+    p
+      margin-bottom: 0
+  &.active
+    .sect2__arrow
+      transform: translateY(-50%) rotate(0)
+.sect2__arrow
+  position: absolute
+  width: 0.1rem
+  right: 0.15rem
+  top: 50%
+  transform: translateY(-50%) rotate(90deg)
+  transition: .4s ease all
+.sect2__item-content
+  max-height: 0
+  overflow: hidden
+  margin: 0
+  padding: 0 .15rem
+  transition: .4s ease all
+  &.active
+    padding: .15rem
+// ################################
+// sect3 reviews
+// ################################
+.sect3
+  .content
+    padding-bottom: 0.2rem
+.reviews__item
+  display: flex
+  padding: .10rem
+  background: linear-gradient(180deg, #FAFAFA 60.78%, #EDE9E9 99.99%, rgba(196, 196, 196, 0) 100%)
+  border: 1px solid #E1E1E1
+  box-sizing: border-box
+  border-radius: 10px
+  margin-bottom: 0.05rem
+  &:last-child
+    margin-bottom: 0
+  .left
+    flex-shrink: 0
+    width: 0.86rem
+    margin-right: 0.15rem
+    font-size: 0.14rem
+    img
+      margin-bottom: 0.1rem
+    span
+      display: flex
+      flex-direction: column
+      justify-content: center
+      line-height: 1.1
+.reviews__content
+  display: flex
+  flex-direction: column
+  font-size: 0.16rem
+  .rate
+    display: flex
+    align-items: center
+    img
+      margin-left: 0.15rem
+  .geo
+    margin-bottom: 0.09rem
+// ################################
+// sect4
+// ################################
+.sect4
+  p
+    color: #7B7B7B
+    font-size: 0.16rem
+    line-height: 0.19rem
+// ################################
+// sect5
+// ################################
+.sect5
+  p
+    font-size: 0.2rem
+.sect5__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.2rem
+  img
+    flex-shrink: 0
+    width: 1rem
+    margin-right: 0.15rem
+@import "carousel-manu"
