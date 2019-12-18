@@ -51,6 +51,7 @@ function metaBuyers() {
       commentsShow()
       SetMetaData()
     }, interval);
+    
     // уведомление о покупке
     function commentsShow() {
       comment.classList.add('active')
