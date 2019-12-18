@@ -1,19 +1,3 @@
-// ========================>
-// slider for reviews
-// <=======================
-var swiper = new Swiper('.reviews__slider', {
-  // pagination: {
-  //   el: '.reviews__pag',
-  //   clickable: true,
-  // },
-  navigation: {
-    nextEl: '.swiper__nav--right',
-    prevEl: '.swiper__nav--left',
-  },
-  // loop: true,
-  autoHeight: true,
-  spaceBetween: 40
-});
 
 
 // timer
@@ -103,3 +87,20 @@ const timer = new minTimer({
     document.documentElement.scrollTop + 300 > offer.offsetTop ? btn.classList.add('show') : btn.classList.remove('show')
   })
 })();
+
+
+
+window.onload = function () {
+  // ========================>
+  // slider for reviews
+  // <=======================
+  var swiper = new Swiper('.reviews__slider', {
+    navigation: {
+      nextEl: '.swiper__nav--right',
+      prevEl: '.swiper__nav--left',
+    },
+    loop: true,
+    autoHeight: true,
+    spaceBetween: 40
+  });
+}

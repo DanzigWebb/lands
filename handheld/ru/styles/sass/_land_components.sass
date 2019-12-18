@@ -88,13 +88,18 @@
   right: 0
   z-index: 15
   padding: .15rem
-  background-color: rgba(0, 0, 0, 0.9)
+  background-color: $accent
   color: #fff
-  text-align: center
+  display: flex
+  align-items: center
   transition: .4s ease
   transform: translateY(-100%)
   &.active
     transform: translateY(0)
+  img
+    flex-shrink: 0
+    margin-right: 0.2rem
+    width: 0.5rem
 
 .rev-modal--overlay
   position: fixed

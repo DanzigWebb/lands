@@ -10,47 +10,49 @@ fixedBuyers()
 
 function metaBuyers() {
 
-  // проверка на первое пощесение
+  // проверка на первое посещение
   if (!localStorage.getItem('lands-meta')) {
     let meta = {
       buyers: 87,
       visits: 2130,
-      now: 34
+      now: 34,
+      balance: 148
     }
     localStorage.setItem('lands-meta', JSON.stringify(meta))
   }
 
   const metaElems = document.querySelectorAll('.buyers__meta');
+  const balanceElems = document.querySelectorAll('.buyers__balance');
   function SetMetaData() {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
     metaElems[0].innerHTML = data.visits;
     metaElems[1].innerHTML = data.now;
     metaElems[2].innerHTML = data.buyers;
+    balanceElems.forEach(el => {
+      el.innerHTML = data.balance 
+    })
   }
   SetMetaData()
 
   function updateShop() {
     const comment = document.querySelector('.buyers__comment')
-    let interval = random(10, 25) * 1000
 
     // посетители
     setInterval(() => {
       updateVisits()
       SetMetaData()
-    }, random(4,20) * 1000);
+    }, random(10,20) * 1000);
 
     // посетители сейчас
     setInterval(() => {
       updateNowVisits()
       SetMetaData()
-    }, random(5,15) * 1000);
+    }, random(15,35) * 1000);
 
     // новые покупки
     setInterval(() => {
-      setNewBuyers()
       commentsShow()
-      SetMetaData()
-    }, interval);
+    }, random(17, 25) * 1000);
     
     // уведомление о покупке
     function commentsShow() {
@@ -58,7 +60,21 @@ function metaBuyers() {
       setTimeout(() => {
         comment.classList.remove('active')
       }, 3500);
+      setNewBuyers()
+      SetMetaData()
     };
+
+    // покупка при скролле до формы
+    let firstScrollToForm = true;
+    const offer = document.querySelector('#offer')
+    window.addEventListener('scroll', (e) => {
+      if (firstScrollToForm) {
+        if (document.documentElement.scrollTop + 300 > offer.offsetTop) {
+          firstScrollToForm = false
+          commentsShow()
+        }
+      }
+    })
   }
   // служебные функции
   //
@@ -70,18 +86,19 @@ function metaBuyers() {
   function setNewBuyers() {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
     data.buyers = data.buyers + 1
+    data.balance = data.balance - 1
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
   // обновление посетителей
   function updateVisits () {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
-    data.visits = data.visits += random(4, 20)
+    data.visits = data.visits += random(4, 10)
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
   // обновление "сейчас на сайте"
   function updateNowVisits () {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
-    data.now = data.now += random(-5, 5)
+    data.now = data.now += random(-2, 2)
     localStorage.setItem('lands-meta', JSON.stringify(data))
   }
 
