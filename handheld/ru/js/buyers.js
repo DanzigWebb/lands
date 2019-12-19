@@ -20,9 +20,9 @@ function metaBuyers() {
     }
     localStorage.setItem('lands-meta', JSON.stringify(meta))
   }
-
   const metaElems = document.querySelectorAll('.buyers__meta');
   const balanceElems = document.querySelectorAll('.buyers__balance');
+
   function SetMetaData() {
     let data = JSON.parse(localStorage.getItem('lands-meta'))
     metaElems[0].innerHTML = data.visits;
@@ -36,6 +36,7 @@ function metaBuyers() {
 
   function updateShop() {
     const comment = document.querySelector('.buyers__comment')
+    const commentInnerText = comment.querySelector('p')
 
     function interval() {
       // посетители
@@ -53,22 +54,42 @@ function metaBuyers() {
         commentsShow()
       }, random(30, 45) * 1000)
     }
-      interval()
+    interval()
 
+
+    const names = [
+      'Игорь, Санкт-Петербург',
+      'Светлана, Иваново',
+      'Иван, Новгород',
+      'Наталья, Ставрополь',
+      'Дмитрий, Нижневартовск',
+      'Николай, Москва',
+      'Евгения, Екатеринбург',
+      'Денис, Владивосток',
+      'Петр, Рязань',
+      'Сергей, Санкт-Петербург',
+      'Анна, Выборг',
+    ]
+    const price = '2554р'
+    let commentShowCount = 0
     // уведомление о покупке
     function commentsShow() {
-      comment.classList.add('active')
-      setTimeout(() => {
-        comment.classList.remove('active')
-      }, 3500);
-      setNewBuyers()
-      SetMetaData()
+      if (commentShowCount <= names.length - 1) {
+        commentInnerText.innerHTML = `${names[commentShowCount]}, сделал(a) заказ на сумму ${price}, 1 шт`
+        comment.classList.add('active')
+        setTimeout(() => {
+          comment.classList.remove('active')
+        }, 3500);
+        setNewBuyers()
+        SetMetaData()
+        commentShowCount += 1
+      }
     };
 
     // быстрая стартовое появление коммента
     setTimeout(() => {
       commentsShow()
-    }, random(2, 4) * 1000 );
+    }, random(2, 4) * 1000);
     // покупка при скролле до формы
     let firstScrollToForm = true;
     const offer = document.querySelector('#offer')

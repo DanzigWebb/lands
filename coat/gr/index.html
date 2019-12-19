@@ -153,7 +153,8 @@
 								<span class="geo"><b> Χώρα:</b> Ελλάδα
 								</span>
 								<span class="main"> Τέλειο μπουφάν! Το πήρα για να κάνω ποδήλατο με συννεφιασμένο καιρό - αλλά τελικά το
-									φοράω και όταν κάνω βόλτα με τους φίλους μου και έτσι απλά. Το βράδυ έχει ανακλαστικό εφέ όπως τα αυτοκινήτα! Μπορείτε
+									φοράω και όταν κάνω βόλτα με τους φίλους μου και έτσι απλά. Το βράδυ έχει ανακλαστικό εφέ όπως τα
+									αυτοκινήτα! Μπορείτε
 									ακόμη να περπατήσετε σε ένα σκοτεινό πάρκο - θα είναι ορατό από μακριά. Φτιαγμένο από υψηλής ποιότητας
 									υλικά, φαίνεται ακριβό. Πολύ ευχαριστημένος με αυτήν την αγορά!</span>
 							</div>
@@ -325,6 +326,24 @@
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 
+	<script>
+		const toUpperCase = (str) => str.toUpperCase();
+		
+		const toUpperChars = (str) => {
+			const splitWorlds = str.split('');
+			splitWorlds.forEach((world, i) => {
+				if (splitWorlds[0] !== ' ') {
+					splitWorlds[0] =  toUpperCase(splitWorlds[0])
+				}
+				if (world == " ") {
+					splitWorlds[i + 1] = toUpperCase(splitWorlds[i + 1])
+				}
+			});
+			return splitWorlds.join('')
+		}
+		console.log(toUpperChars('hello, world!'));
+				
+	</script>
 
 
 </body>
