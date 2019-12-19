@@ -9,7 +9,6 @@ fixedBuyers()
 
 
 function metaBuyers() {
-
   // проверка на первое посещение
   if (!localStorage.getItem('lands-meta')) {
     let meta = {
@@ -70,7 +69,7 @@ function metaBuyers() {
       'Сергей, Санкт-Петербург',
       'Анна, Выборг',
     ]
-    const price = '2554р'
+    const price = '49€'
     let commentShowCount = 0
     // уведомление о покупке
     function commentsShow() {
