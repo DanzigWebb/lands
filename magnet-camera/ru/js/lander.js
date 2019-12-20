@@ -115,7 +115,7 @@ class Lander {
 }
 
 const lander = new Lander({
-  price: '49 euro',
+  price: '49€',
   meta: {
     buyers: 87,
     visits: 2130,
