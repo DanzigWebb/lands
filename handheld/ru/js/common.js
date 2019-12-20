@@ -16,8 +16,12 @@ class minTimer {
       let now = Math.floor(date / 1000 - tz * 60)
       let next = Math.ceil((date / 1000 / 60 - tz) / 60 / 24) * 60 * 60 * 24
       let left = next - now;
-      let hourString = ("0" + ~~(left / 60 / 60)).slice(-2)
+      let hour = 2
+      let hourString = ("0" + hour).slice(-2)
       let minString = ("0" + ~~(left / 60 % 60)).slice(-2)
+      if (~~(left / 60 % 60) == 59) {
+        hour -= 1
+      }
       let secString = ("0" + ~~(left % 60)).slice(-2)
       // каждая цифра в отдельном элементе
       const separation = () => {

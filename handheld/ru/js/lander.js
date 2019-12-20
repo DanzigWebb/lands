@@ -59,11 +59,9 @@ class Lander {
       const names = self.names
       const price = self.price
 
-      let commentShowCount = 0
       // уведомление о покупке
       function commentsShow() {
-
-        const random = self.random(0, names.length)
+        const random = self.random(0, names.length - 1)
         commentInnerText.innerHTML = `${names[random]}, сделал(a) заказ на сумму ${price}, 1 шт`;
         names.splice(random, 1)
         comment.classList.add('active')
@@ -72,12 +70,11 @@ class Lander {
         }, self.commentDuration * 1000);
         setNewBuyers()
         SetMetaData()
-        commentShowCount += 1
       };
       // быстрое стартовое появление коммента
       setTimeout(() => {
         commentsShow()
-      }, self.random(2, 4) * 1000);
+      }, self.random(10, 15) * 1000);
 
       // покупка при скролле до формы
       const offer = document.querySelector('#offer')
