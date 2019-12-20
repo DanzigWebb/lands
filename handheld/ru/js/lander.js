@@ -62,14 +62,16 @@ class Lander {
       // уведомление о покупке
       function commentsShow() {
         const random = self.random(0, names.length - 1)
-        commentInnerText.innerHTML = `${names[random]}, сделал(a) заказ на сумму ${price}, 1 шт`;
-        names.splice(random, 1)
-        comment.classList.add('active')
-        setTimeout(() => {
-          comment.classList.remove('active')
-        }, self.commentDuration * 1000);
-        setNewBuyers()
-        SetMetaData()
+        if (names.length > 1) {
+          commentInnerText.innerHTML = `${names[random]}, сделал(a) заказ на сумму ${price}, 1 шт`;
+          names.splice(random, 1)
+          comment.classList.add('active')
+          setTimeout(() => {
+            comment.classList.remove('active')
+          }, self.commentDuration * 1000);
+          setNewBuyers()
+          SetMetaData()
+        }
       };
       // быстрое стартовое появление коммента
       setTimeout(() => {
