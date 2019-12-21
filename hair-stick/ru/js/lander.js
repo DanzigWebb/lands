@@ -14,7 +14,7 @@ class Lander {
   metaBuyers() {
     const self = this
     // проверка на первое посещение
-    if (!localStorage.getItem('lands-meta')) {
+    if (!localStorage.getItem('lands-meta2')) {
       let meta = {
         buyers: 87,
         visits: 2130,
@@ -22,14 +22,14 @@ class Lander {
         balance: 148,
         firstShowOnOffer: false
       }
-      localStorage.setItem('lands-meta', JSON.stringify(meta))
+      localStorage.setItem('lands-meta2', JSON.stringify(meta))
     }
 
     const metaElems = document.querySelectorAll('.buyers__meta');
     const balanceElems = document.querySelectorAll('.buyers__balance');
 
     function SetMetaData() {
-      let data = JSON.parse(localStorage.getItem('lands-meta'))
+      let data = JSON.parse(localStorage.getItem('lands-meta2'))
       metaElems[0].innerHTML = data.visits;
       metaElems[1].innerHTML = data.now;
       metaElems[2].innerHTML = data.buyers;
@@ -81,11 +81,11 @@ class Lander {
       // покупка при скролле до формы
       const offer = document.querySelector('#offer')
       window.addEventListener('scroll', (e) => {
-        let data = JSON.parse(localStorage.getItem('lands-meta'))
+        let data = JSON.parse(localStorage.getItem('lands-meta2'))
         if (!data.firstShowOnOffer) {
           if (document.documentElement.scrollTop + 300 > offer.offsetTop) {
             data.firstShowOnOffer = true
-            localStorage.setItem('lands-meta', JSON.stringify(data))
+            localStorage.setItem('lands-meta2', JSON.stringify(data))
             commentsShow()
           }
         }
@@ -95,20 +95,20 @@ class Lander {
     //
     // обновление кол-во покупок
     function setNewBuyers() {
-      let data = JSON.parse(localStorage.getItem('lands-meta'))
+      let data = JSON.parse(localStorage.getItem('lands-meta2'))
       data.buyers = data.buyers + 1
       data.balance = data.balance - 1
-      localStorage.setItem('lands-meta', JSON.stringify(data))
+      localStorage.setItem('lands-meta2', JSON.stringify(data))
     }
     // обновление посетителей
     function updateVisits() {
-      let data = JSON.parse(localStorage.getItem('lands-meta'));
+      let data = JSON.parse(localStorage.getItem('lands-meta2'));
       let random = self.random(-2, 2);
       data.now = data.now += random;
       if (random > 0) {
         data.visits = data.visits += random;
       }
-      localStorage.setItem('lands-meta', JSON.stringify(data));
+      localStorage.setItem('lands-meta2', JSON.stringify(data));
     };
     updateShop();
   }
