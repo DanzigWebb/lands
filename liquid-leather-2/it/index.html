@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="ru"><head>
+
+	<meta charset="utf-8">
+	<title>Leather Kit PRO</title>
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<script src="libs/vue/vue.min.js"></script>
+</head>
+
+<body>
+
+	<div id="app">
+		<header class="header">
+			<div class="header__main">
+				<div class="header__logo" @click="activeSection = 1"><span> Leather Kit PRO</span></div>
+			</div>
+			<menu class="header__menu" :class="{ active: menuShow }">
+				<div class="swiper-container menu-carousel">
+					<div class="swiper-wrapper">
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 1 }"> Home</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 2 }"> Vantaggi</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 3 }"> Recensioni</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 4 }"> Ordina</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 5 }"> Consegna e pagamento</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 6 }"> Caratteristiche</span>
+						<span class="swiper-slide header__link" :class="{ active: activeSection == 7 }"> NOVITÀ 2019</span>
+					</div>
+				</div>
+			</menu>
+		</header>
+
+		<main @click="menuShow = false" class="main">
+
+			<!-- main slider  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
+
+					<div class="sect1__heading">
+						<h1><span class="underline"> Kit riparazione per oggetti in pelle</span> <br> <span class="underline"> e similpelle Leather Kit PRO</span></h1>
+					</div>
+					<div class="price">
+						<div class="top"><b> Sconto</b> <span> -50%</span></div>
+						<div class="main">
+							<span> 49€</span>
+							<s> 98€</s>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- pluses -->
+			<transition name="tabs">
+				<section v-show="activeSection == 2" class="sect2 pluses">
+					<div class="content">
+						<h2 style="padding: .15rem;"> Leather Kit PRO funziona su ogni tipo di pelle e similpelle.</h2>
+						<div class="sect2__item active">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.37rem;" src="img/icon_1.svg" alt>
+								</div>
+								<h3> Arredi in pelle</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content active"> Divani, poltrone, abbigliamento</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_2.svg" alt>
+								</div>
+								<h3> Sedili dell'auto</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Cruscotto in pelle e similpelle</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.39rem;" src="img/icon_3.png" alt>
+								</div>
+								<h3> Scarpe</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> stivali, stivaletti, sneakers e qualsiasi altra calzatura</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.34rem;" src="img/icon_4.png" alt>
+								</div>
+								<h3> Capispalla</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Cappotti, giubbotti, giacche, pantaloni e gonne</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_5.png" alt>
+								</div>
+								<h3> Borse e accessori</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Compresi portafogli, porta biglietti da visita e portamonete.</p>
+					</div>
+				</section>
+			</transition>
+			<!-- reviews  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 3" class="sect3 reviews scroll">
+					<div class="content">
+						<h2 class="t-center"> Recensioni dei consumatori</h2>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava1.png" alt><span><b> Autore:</b> Angelo</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Paese:</b> Italia</span>
+								<span class="main"> Il gatto ha strappato il divano. Avevo voglia di ucciderlo! La pelle ciondolava dai braccioli. Un divano da 5.000 Euro! Mia moglie era disperata, io ero fuori di me. Ho cercato su Internet un modo per aggiustarlo - Ho trovato il sito di Leather Kit PRO. Ieri ce l'hanno consegnato e abbiamo iniziato subito a riparare il divano. Adesso è tutto a posto: il divano è salvo. E anche la vita del gatto!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava2.png" alt><span><b> Autore:</b> Elena</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Paese:</b> Italia</span>
+								<span class="main"> Voglio ringraziarvi per avermi fatto conoscere Leather Kit PRO. Quando ho fatto l'ordine il consulente è stato molto professionale. Mi ha spiegato tutto chiaramente: i tempi di consegna, l'imballaggio, le promozioni, la composizione... Mi ha anche dato molti consigli utili. Leather Kit PRO funziona alla perfezione. Ho riparato la mia vecchia borsa e i sedili dell'auto. Tutto è tornato come nuovo.</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava3.png" alt><span><b> Autore:</b> Margarita</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Paese:</b> Italia</span>
+								<span class="main"> L'ho usato per riparare un sacco di cose: il divano, una giacca in pelle, scarpe, borse... Erano tutto di colori diversi, ma Leather Kit PRO ha funzionato benissimo! Ho trovato la tonalità perfetta per ogni cosa e usando i campioni di tessuto ho potuto mantenere l'aspetto originale della superficie: liscia, a coste, a trama. Le riparazioni non si vedono per niente. Leather Kit PRO ha dato una seconda vita alle mie cose!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava4.png" alt><span><b> Autore:</b> Nicola</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Rating:</b> <img style="width: 1rem;" src="img/stars_3.svg" alt></span>
+								<span class="geo"><b> Paese:</b> Italia</span>
+								<span class="main"> L'ho comprato per riparare gli interni in pelle della mia auto. Il colore avorio non è uno dei più comuni, ma sono riuscito comunque a trovare la gradazione giusta. I sedili adesso sembrano nuovi. Se non avessi saputo che c'erano dei tagli (li aveva fatti mio nipote con una chiave) non mi sarei mai accorto delle riparazioni. Leather Kit PRO è un prodotto di alta qualità. Lo raccomando assolutamente.</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- offer  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 4" class="sect4 scroll offer">
+					<div class="content">
+						<h2 class="t-center"> Compila il modulo</h2>
+						<form action method="POST" class="offer">
+							<input type="text" name="name" required placeholder="Nome">
+							<input type="tel" name="phone" required placeholder="Telefono">
+							<button class="btn" type="submit"><span> ORDINA</span></button>
+						</form>
+						<p> Lascia una richiesta sul nostro sito web</p>
+						<p> Vi richiamaremo entro 5 minuti per confermare l'ordine</p>
+						<p> Consegna tramite corriere in 3-7 giorni lavorativi</p>
+					</div>
+					<div class="policy__bot">
+						<div class="policy_wrap"><span> GADGET SHOP, Roma, via dei Prati dei Papa 51</span>
+							<a href="/privacypolicy" target="_blank"> Informativa sulla privacy</a></div>
+					</div>
+
+				</section>
+			</transition>
+			<!-- how buy -->
+			<transition name="tabs">
+				<section v-show="activeSection == 5" class="sect5 scroll">
+					<div class="content">
+						<h2 class="t-center"> E' ora di dare nuova vita alle vostre cose in pelle!</h2>
+						<p> Ordinate Leather Kit PRO e ridategli l'aspetto che avevano quando erano nuove! Attenzione, la disponibilità del prodotto è limitata.</p>
+						<div class="sect5__list">
+							<div class="sect5__item"><img src="img/icon1.svg" alt><span> Lasciate una richiesta sul nostro sito ufficiale.</span></div>
+							<div class="sect5__item"><img src="img/icon2.svg" alt><span> Vi richiamaremo entro 5 minuti per confermare l'ordine</span></div>
+							<div class="sect5__item"><img src="img/icon3.svg" alt><span> Consegna tramite corriere in 3-7 giorni lavorativi</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- about  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 6" class="sect6 scroll about">
+					<div class="content">
+						<h2 class="t-center"> caratteristica</h2>
+						<ul>
+							<li> È sicuro per la salute delle persone e degli animali domestici</li>
+							<li> Contiene componenti naturali</li>
+							<li> Ha una ricca gamma di colori e poi ci sono le istruzioni per la diluizione. Non è difficile trovare la tonalità di cui si ha bisogno.</li>
+							<li> È facile da applicare e non richiede competenze particolari</li>
+							<li> Si asciuga rapidamente e non lascia segni sulla superficia trattata</li>
+							<li> È adatto a qualsiasi tipo di pelle e similpelle</li>
+
+						</ul>
+					</div>
+				</section>
+			</transition>
+			<!-- new!  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 7" class="sect7 scroll">
+					<div class="content scroll">
+						<h2> Leather Kit PRO Salva i tuoi oggetti in pelle!</h2>
+						<p> Cuoio liquido Leather Kit PRO è un prodotto innovativo a base di acqua, resina e coloranti. Ha un effetto "rigenerante" ed è stato studiato per riparare qualsiasi tipo di pelle e similpelle. Applicazione di Leather Kit PRO non richiede competenze o abilità particolari: basta scegliere il colore giusto e applicare il prodotto sull'area danneggiata. In pochi minuti tornerà come nuova!</p>
+						<br>
+						<img src="img/sect7_pic.png" alt>
+					</div>
+				</section>
+			</transition>
+		</main>
+
+		<menu class="bot-menu" :class="{ mainscreen: activeSection == 1 }">
+			<div class="bot-menu__wrap">
+				<button @click="activeSection = 1" class="bot-menu__item" :class="{active: activeSection == 1}"><span> Home</span></button>
+				<button @click="activeSection = 2" class="bot-menu__item" :class="{active: activeSection == 2}"><span> Vantaggi</span></button>
+				<button @click="activeSection = 3" class="bot-menu__item" :class="{active: activeSection == 3}"><span> Recensioni</span></button>
+				<button @click="activeSection = 4" class="bot-menu__item main" :class="{active: activeSection == 4}"><span> Ordina</span></button></div>
+		</menu>
+	</div>
+
+
+
+	<script src="js/main.js"></script>
+
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+
+</body></html>
