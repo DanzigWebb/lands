@@ -18,7 +18,29 @@
 </head>
 
 <body>
+	<div class="buyers">
+		<div class="buyers__item">
+			<img src="img/buyers/buy-1.svg" alt>
+			<p> Επισκέπτες σήμερα:<span class="buyers__meta"></span></p>
+		</div>
+		<div class="buyers__item">
+			<img src="img/buyers/buy-2.svg" alt>
+			<p> Τώρα στο διαδίκτυο:<span class="buyers__meta"></span></p>
+		</div>
+		<div class="buyers__item">
+			<img src="img/buyers/buy-3.svg" alt>
+			<p> Αγορές σήμερα:<span class="buyers__meta buyers__meta-buers"></span></p>
+		</div>
+	</div>
 
+	<div class="buyers__comment">
+		<img src="img/buyers/bag.svg" alt>
+		<p></p>
+	</div>
+
+	<a href="#offer" class="pulse__btn">
+		<img src="img/button.png" alt>
+	</a>
 	<header class="header">
 		<div class="header__main">
 			<div class="header__logo"><img src="img/logo.svg" alt></div>
@@ -221,7 +243,11 @@
 				</div>
 			</div>
 		</section>
-
+		<br>
+		<div class="fl-wrapper">
+			<button id="modal-btn" class="btn"><span> ΑΦΗΣΤΕ ΤΟ ΔΙΚΟ ΣΑΣ ΣΧΟΛΙΟ</span></button>
+		</div>
+		<br>
 		<!-- how buy -->
 
 		<section class="sect5 scroll">
@@ -305,8 +331,11 @@
 		<!-- offer  -->
 
 		<section class="sect4 scroll offer">
+
 			<div class="content">
 				<h2 class="t-center"> ΣΥΜΠΛΗΡΩΣΤΕ ΤΗ ΦΟΡΜΑ</h2>
+				<div class="products"> Απεμειναν <span class="buyers__balance"> 137</span> τμχ.</div>
+
 				<form action method="POST" class="offer">
 					<input type="text" name="name" required placeholder="Κεντρική">
 					<input type="tel" name="phone" required placeholder="Θετικά">
@@ -323,7 +352,31 @@
 		</section>
 	</main>
 
+	<div class="rev-modal">
+		<span class="close"></span>
+		<div class="rev-modal__content">
+			<h3> Αφήστε το σχολιο σας</h3>
+			<form action method="POST" class="rev-modal__form">
+				<input type="text" name="name" required placeholder="Το όνομά σας">
+				<input id="rev-file" type="file">
+				<label class="input-file" for="rev-file">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+						<path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z">
+						</path>
+					</svg>
+					<span> Επιλέξτε μια φωτογραφία ...</span>
+				</label>
+				<textarea name id cols="10" rows="5" placeholder="Η δικη σας γνωμη"></textarea>
+				<button class="btn" type="submit"><span> ΑΠΟΣΤΟΛΗ</span></button>
+			</form>
+		</div>
+	</div>
+	<div class="rev-modal--overlay"></div>
 
+	<div class="rev-succes">
+		<img src="img/buyers/man.svg" alt>
+		<span> Σας ευχαριστώ! Η κριτική σας θα εξεταστεί από τον συντονιστή.</span>
+	</div>
 
 
 	<script src="js/main.js"></script>
