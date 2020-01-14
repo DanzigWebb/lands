@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" style="scroll-behavior: smooth">
+<html lang="ru" scroll-behavior="smooth">
 
 <head>
 
@@ -15,6 +15,21 @@
 	<link rel="stylesheet" href="styles/css/main.css">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css">
+	<!-- Any polyfill to enable smoothscroll for the JavaScript APIs -->
+	<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+
+	<!-- This package, to apply the smoothscroll to anchor links -->
+	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+	<style>
+		html {
+			/* CSS custom property for the polyfill */
+			--scroll-behavior: smooth;
+
+			/* Normal CSS property for browsers with native support */
+			scroll-behavior: smooth;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -417,7 +432,7 @@
 	</footer>
 
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-	<script src="js/smooth-polifil.js"></script>
+
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 
