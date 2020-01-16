@@ -19,18 +19,28 @@
   display: flex
   align-items: center
   justify-content: center
+  @media (max-width: 650px)
+    height: 240px
+    background-attachment: inherit
+  @media (max-width: 480px)
+    height: 185px
   h1
     font-family: Roboto
     font-style: normal
     font-weight: bold
     font-size: 80px
     color: #fff
-
+    @media (max-width: 650px)
+      font-size: 40px
+    @media (max-width: 400px)
+      font-size: 34px
 .post-wrapper
   max-width: 940px
   margin: auto
   display: grid
   padding: 40px 0
+  @media (max-width: 440px)
+    padding: 40px 5px
 article.post
   display: grid
   grid-template-columns: 1fr 1fr
@@ -39,13 +49,25 @@ article.post
   min-height: 370px
   border: 1px solid #E4E4E4
   box-sizing: border-box
+  @media (max-width: 800px)
+    max-width: 400px
+    margin: auto
+    grid-auto-flow: column-reverse
+    grid-template-rows: 1fr 300px
+    grid-template-columns: 1fr
+    margin-bottom: 40px
 .post__section--preview
   background-image: url(../../img/post-prev.jpg)
   background-size: cover
   margin-right: 15px
+  @media (max-width: 800px)
+    margin-right: 0
+    grid-row-start: 2
 .post__section--heading
   padding: 15px
   padding-right: 55px
+  @media (max-width: 800px)
+    padding-right: 15px
 .post-heading
   margin-left: 0
   box-sizing: border-box
@@ -60,7 +82,8 @@ article.post
   padding-bottom: 20px
 .post-heading__likes
   border-top: 1px solid #E5E5E5
-
+  .index
+    font-size: 13px
 .post-heading__likes
   display: flex
   justify-content: flex-end
@@ -74,8 +97,12 @@ article.post
 .footer
   min-height: 484px
   display: flex
+  @media (max-width: 620px)
+    flex-direction: column-reverse
 .footer__section
   width: 50%
+  @media (max-width: 620px)
+    width: 100%
 .footer__section--form
   background-color: #396732
   color: #fff
@@ -83,12 +110,54 @@ article.post
   align-items: center
   justify-content: center
   flex-direction: column
+  @media (max-width: 800px)
+    padding: 40px 10px
+    box-sizing: border-box
   h2
     color: #fff
-  .form
-    display: flex
-    flex-direction: column
-    display: grid
-    max-width: 460px
-    width: 100%
-  
+    font-weight: bold
+    font-size: 45px
+    margin-top: 0
+.form
+  display: flex
+  flex-direction: column
+  display: grid
+  width: 100%
+.form--footer
+  max-width: 480px
+  width: 100%
+  padding: 10px
+  box-sizing: border-box
+  input
+    height: 35px
+    background-color: transparent
+    border: none
+    padding-left: 20px
+    box-sizing: border-box
+    border-bottom: 1px solid #fff
+    margin-bottom: 25px
+    color: #fff
+    font-size: 18px
+    &::placeholder
+      color: #fff
+.footer__section--decor
+  background-image: url(../../img/footer_bg.jpg)
+  background-size: cover
+  @media (max-width: 620px)
+    height: 400px
+.nav-socials
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 64px
+.social-list
+  display: flex
+  align-items: center
+  list-style: none
+  margin: 0
+  padding: 0
+.social-list__item
+  margin: 0 4px
+  transition: .4s ease all
+  &:hover
+    transform: scale(1.1)
