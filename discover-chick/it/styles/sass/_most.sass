@@ -1,0 +1,79 @@
+html
+  overflow-x: hidden
+body
+  font-size: 16px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Roboto', sans-serif
+  color: #2C4D25
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  overflow-x: hidden
+  @media (max-width: 480px)
+    font-size: 16px
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+.t-center
+  text-align: center
+img
+  width: 100%
+
+
+.btn
+  border-radius: 35px
+  filter: drop-shadow(0px 4px 0px #c34000)
+  background-image: linear-gradient(0deg, #ff4800 0%, #fcc93d 100%)
+  border: none
+  height: 70px
+  background-color: #F18101
+  text-decoration: none
+  transition: .4s ease all
+  font-size: 16px
+  text-transform: uppercase
+  color: #fff
+  cursor: pointer
+  display: block
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    transform: scale(1.05)
+.btn-wrap
+  margin: 20px 0
+  margin-bottom: 0
+  @media (min-width: 576px)
+    display: none
+.fl-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+
+.list
+  list-style: none
+  margin: 0
+  padding: 0
+.list__item
+  margin-bottom: 20px
+  padding-left: 45px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 15px
+    height: 10px
+    position: absolute
+    top: 5px
+    left: 0
+    background-image: url(../../img/tick.png)
+    background-repeat: no-repeat
+    background-size: contain
+
+.padding
+  padding: 40px 0
+  @media (min-width: 992px)
+    padding: 100px 0

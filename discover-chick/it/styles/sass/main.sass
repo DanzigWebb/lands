@@ -1,0 +1,94 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "anim"
+
+.header
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 50px
+  background-color: #fff
+
+
+.block1
+  height: 640px
+  background-image: url(../../img/main_bg.jpg)
+  background-size: cover
+  background-attachment: fixed
+  display: flex
+  align-items: center
+  justify-content: center
+  h1
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 80px
+    color: #fff
+
+.post-wrapper
+  max-width: 940px
+  margin: auto
+  display: grid
+  padding: 40px 0
+article.post
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px
+  margin-bottom: 40px
+  min-height: 370px
+  border: 1px solid #E4E4E4
+  box-sizing: border-box
+.post__section--preview
+  background-image: url(../../img/post-prev.jpg)
+  background-size: cover
+  margin-right: 15px
+.post__section--heading
+  padding: 15px
+  padding-right: 55px
+.post-heading
+  margin-left: 0
+  box-sizing: border-box
+  
+.post-heading__title
+  font-size: 23px
+  margin-top: 10px
+  color: #2C4D25
+.post-heading__content
+  font-size: 15px
+  color: #396732
+  padding-bottom: 20px
+.post-heading__likes
+  border-top: 1px solid #E5E5E5
+
+.post-heading__likes
+  display: flex
+  justify-content: flex-end
+  padding-top: 5px
+  .like
+    border: none
+    background-color: transparent
+    cursor: pointer
+    outline: none
+
+.footer
+  min-height: 484px
+  display: flex
+.footer__section
+  width: 50%
+.footer__section--form
+  background-color: #396732
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  h2
+    color: #fff
+  .form
+    display: flex
+    flex-direction: column
+    display: grid
+    max-width: 460px
+    width: 100%
+  
