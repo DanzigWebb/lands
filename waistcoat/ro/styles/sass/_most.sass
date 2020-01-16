@@ -1,0 +1,114 @@
+html
+  overflow-x: hidden
+body
+  font-size: 16px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Noto Sans', sans-serif
+  color: #373737
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  overflow-x: hidden
+  @media (max-width: 480px)
+    font-size: 16px
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+.t-center
+  text-align: center
+img
+  width: 100%
+
+.img-wrap
+  margin: auto
+  position: relative
+  &.big
+    max-width: 880px
+  &.med
+    max-width: 600px
+  &.small
+    max-width: 330px
+  .bottom_txt
+    color: #93a559
+    font-size: 18px
+    font-weight: 400
+    font-style: italic
+    line-height: 0.6
+  a
+    position: absolute
+    bottom: 30px
+    left: 0
+
+.h-100
+  height: 100%
+
+.btn
+  border-radius: 35px
+  filter: drop-shadow(0px 4px 0px #c34000)
+  background-image: linear-gradient(0deg, #ff4800 0%, #fcc93d 100%)
+  border: none
+  height: 70px
+  background-color: #F18101
+  text-decoration: none
+  transition: .4s ease all
+  font-size: 16px
+  text-transform: uppercase
+  color: #fff
+  cursor: pointer
+  display: block
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    transform: scale(1.05)
+.btn-wrap
+  margin: 20px 0
+  margin-bottom: 0
+  @media (min-width: 576px)
+    display: none
+.fl-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+
+.list
+  list-style: none
+  margin: 0
+  padding: 0
+.list__item
+  margin-bottom: 20px
+  padding-left: 45px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 15px
+    height: 10px
+    position: absolute
+    top: 5px
+    left: 0
+    background-image: url(../../img/tick.png)
+    background-repeat: no-repeat
+    background-size: contain
+
+.padding
+  padding: 40px 0
+  @media (min-width: 992px)
+    padding: 100px 0
+  
+section
+  position: relative
+.sect__decor
+  position: absolute
+  width: 320px
+
+.decor__right-top
+  right: 5%
+  top: 5%
+.decor__left-bot
+  left: 5%
+  bottom: -5%
