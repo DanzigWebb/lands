@@ -42,6 +42,9 @@
   @media (max-width: 440px)
     padding: 40px 5px
     
+.blog
+  position: relative
+  overflow: hidden
 .blog__control
   padding: 30px 0
 .blog__all-posts
@@ -172,3 +175,35 @@ article.post
   &:hover
     transform: scale(1.1)
 
+.post__content
+  width: 100%
+  padding: 30px 25px
+  border: 1px solid #E4E4E4
+  box-sizing: border-box
+  margin-bottom: 40px
+  display: none
+  &.active
+    display: block
+
+.preloader
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background-color: #fff
+  opacity: 1
+  display: none
+  z-index: 10
+  .lds-ellipsis
+    z-index: 12
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translateX(-50%) translateY(-50%)
+    
+.post-heading__title,
+.post__section--preview,
+  cursor: pointer
+
+@import "preloader"
