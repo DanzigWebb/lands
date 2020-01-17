@@ -54,7 +54,10 @@ const showPost = () => {
         $(post).show()
         preloader.fadeOut();
       }, 500);
-      window.scrollTo(0, blog.offset().top)
+      window.scrollTo({
+        top: 1000,
+    behavior: "smooth"
+      })
     }
   })
 }
