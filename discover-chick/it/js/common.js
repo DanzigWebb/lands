@@ -48,10 +48,11 @@ const showPost = () => {
 
   posts.on('click', function (e) {
     const { target } = e;
+    
     const validTarget = target.matches('.post-heading__title') || target.matches('.post__section--preview') ? true : false
     if (validTarget) {
       const [post] = $(this).children();
-      preloader.fadeIn()
+      preloader.fadeIn();
       hideAllElements($('article.post'));
       setTimeout(() => {
         $(post).show()
