@@ -23,7 +23,6 @@ likeControl()
 const showPost = () => {
   const posts = $('.post-and-preview');
   const showAllBtn = $('.blog__all-posts');
-  const toTop = $('.blog__top');
   const preloader = $('.preloader')
   const blog = $('.blog');
 
@@ -42,7 +41,7 @@ const showPost = () => {
 
   // listeners
   showAllBtn.on('click', () => showAllPosts())
-  toTop.on('click', () => window.scrollTo(0, blog.offset().top))
+  $('.blog__top').on('click', () => window.scrollTo(0, blog.offset().top))
 
   posts.on('click', function (e) {
     const { target } = e;
