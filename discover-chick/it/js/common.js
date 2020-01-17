@@ -41,7 +41,10 @@ const showPost = () => {
 
   // listeners
   showAllBtn.on('click', () => showAllPosts())
-  $('.blog__top').on('click', () => window.scrollTo(0, blog.offset().top))
+  $('.blog__top').on('click', () => window.scrollTo({
+    top: blog.offset().top,
+    behavior: "smooth"
+  }));
 
   posts.on('click', function (e) {
     const { target } = e;
@@ -55,8 +58,8 @@ const showPost = () => {
         preloader.fadeOut();
       }, 500);
       window.scrollTo({
-        top: 1000,
-    behavior: "smooth"
+        top: blog.offset().top,
+        behavior: "smooth"
       })
     }
   })
