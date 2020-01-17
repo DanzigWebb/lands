@@ -19,6 +19,7 @@
 
 	<!-- This package, to apply the smoothscroll to anchor links -->
 	<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<style>
 		html {
 			/* CSS custom property for the polyfill */
@@ -32,92 +33,99 @@
 </head>
 
 <body>
+	<div id="app">
+		<header class="header">
+			<div class="header__logo"><img src="img/logo.svg" alt=""></div>
+		</header>
+		<main class="main">
+			<section class="block1">
+				<h1>DISCOVER CHICK</h1>
+			</section>
+			<section class="blog">
 
-	<header class="header">
-		<div class="header__logo"><img src="img/logo.svg" alt=""></div>
-	</header>
-	<main class="main">
-		<section class="block1">
-			<h1>DISCOVER CHICK</h1>
-		</section>
-		<section class="blog">
-
-			<div class="post-wrapper">
-				<article class="post">
-					<div class="post__section post__section--preview"></div>
-					<div class="post__section post__section--heading">
-						<div class="post-heading">
-							<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
-							<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
-								il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso. È
-								necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
-								metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
-								nel nostro materiale. Cocktail alla cannella e al miele...</p>
-							<div class="post-heading__likes">
-								<span class="index"></span>
-								<button class="like"><img src="img/heart.svg" alt=""></button>
+				<div class="post-wrapper">
+					<nav class="blog__control">
+						<button class="blog__all-posts">All Posts</button>
+					</nav>
+					<article class="post">
+						<div class="post__section post__section--preview"></div>
+						<div class="post__section post__section--heading">
+							<div class="post-heading">
+								<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
+								<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
+									il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso.
+									È
+									necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
+									metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
+									nel nostro materiale. Cocktail alla cannella e al miele...</p>
+								<div class="post-heading__likes">
+									<span class="index"></span>
+									<button class="like"><img src="img/heart.svg" alt=""></button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</article>
-				<article class="post">
-					<div class="post__section post__section--preview"></div>
-					<div class="post__section post__section--heading">
-						<div class="post-heading">
-							<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
-							<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
-								il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso. È
-								necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
-								metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
-								nel nostro materiale. Cocktail alla cannella e al miele...</p>
-							<div class="post-heading__likes">
-								<span class="index"></span>
-								<button class="like"><img src="img/heart.svg" alt=""></button>
+					</article>
+					<article class="post">
+						<div class="post__section post__section--preview"></div>
+						<div class="post__section post__section--heading">
+							<div class="post-heading">
+								<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
+								<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
+									il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso.
+									È
+									necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
+									metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
+									nel nostro materiale. Cocktail alla cannella e al miele...</p>
+								<div class="post-heading__likes">
+									<span class="index"></span>
+									<button class="like"><img src="img/heart.svg" alt=""></button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</article>
-				<article class="post">
-					<div class="post__section post__section--preview"></div>
-					<div class="post__section post__section--heading">
-						<div class="post-heading">
-							<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
-							<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
-								il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso. È
-								necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
-								metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
-								nel nostro materiale. Cocktail alla cannella e al miele...</p>
-							<div class="post-heading__likes">
-								<span class="index"></span>
-								<button class="like"><img src="img/heart.svg" alt=""></button>
+					</article>
+					<article class="post">
+						<div class="post__section post__section--preview"></div>
+						<div class="post__section post__section--heading">
+							<div class="post-heading">
+								<h4 class="post-heading__title">Come preparare cocktail a casa</h4>
+								<p class="post-heading__content">I cocktail sono un valido aiuto per perdere peso. Aiutano ad accelerare
+									il metabolismo, migliorare le condizioni della pelle e anche stimolare la rottura dello strato grasso.
+									È
+									necessario avvicinarsi in modo completo: praticare sport, mangiare bene e utilizzare tutti i tipi di
+									metodi aggiuntivi, comprese le bevande salutari. Come preparare cocktail brucia grassi a casa – leggi
+									nel nostro materiale. Cocktail alla cannella e al miele...</p>
+								<div class="post-heading__likes">
+									<span class="index"></span>
+									<button class="like"><img src="img/heart.svg" alt=""></button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</article>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		<section class="footer__section footer__section--form">
-			<h2>CONTACT</h2>
-			<form action="" method="POST" class="form form--footer">
-				<label for="name">Name</label>
-				<input type="text" placeholder="Name" name="name" id="name">
-				<label for="email">Email</label>
-				<input type="text" placeholder="Email*" name="email" id="email">
-				<button type="submit" class="btn">Presentare</button>
-			</form>
-		</section>
-		<section class="footer__section footer__section--decor">
-		</section>
-	</footer>
-	<nav class="nav-socials">
-		<ul class="social-list">
-			<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc1.svg" alt=""></a></li>
-			<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc2.svg" alt=""></a></li>
-			<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc3.svg" alt=""></a></li>
-		</ul>
-	</nav>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="footer__section footer__section--form">
+				<h2>CONTACT</h2>
+				<form action="" method="POST" class="form form--footer">
+					<label for="name">Name</label>
+					<input type="text" placeholder="Name" name="name" id="name">
+					<label for="email">Email</label>
+					<input type="text" placeholder="Email*" name="email" id="email">
+					<button type="submit" class="btn">Presentare</button>
+				</form>
+			</section>
+			<section class="footer__section footer__section--decor">
+			</section>
+		</footer>
+		<nav class="nav-socials">
+			<ul class="social-list">
+				<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc1.svg" alt=""></a></li>
+				<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc2.svg" alt=""></a></li>
+				<li class="social-list__item"><a href="" class="social-list__link"><img src="img/soc3.svg" alt=""></a></li>
+			</ul>
+		</nav>
+	</div>
 	<script src="js/common.js"></script>
 
 </body>
