@@ -1,0 +1,78 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+  -moz-appearance: number-input
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+form
+  box-sizing: border-box
+  margin: auto
+  display: flex
+  align-items: center
+  flex-direction: column
+input, textarea
+  height: .75rem
+  width: 3.1rem
+  border: 1px solid #e1e1e1
+  border-radius: 10px
+  padding-left: 0.3rem
+  box-sizing: border-box
+  font-size: 0.16rem
+  color: #000
+  background: rgba(255, 255, 255, 1)
+  border: none
+  margin-bottom: 0.4rem
+input::placeholder
+  font-size: 0.2rem
+  font-family: inherit
+// ========================>
+// policy
+// <=======================
+.policy_wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  min-height: 1rem
+  background-color: #3b3c3d
+  font-size: 0.16rem
+  color: #fff
+  text-align: center
+  a
+    color: #7c7e86
+
+.input__wrap
+  position: relative
+  input
+    padding-left: 0.6rem
+    font-size: 0.18rem
+  &:before
+    content: ''
+    background-size: cover
+    position: absolute
+    left: 0.2rem
+    top: 0.2rem
+  &.man
+    &:before
+      background-image: url(../../img/man.png)
+      display: block
+      width: 0.22rem
+      height: 0.29rem
+  &.phone
+    &:before
+      background-image: url(../../img/phone.png)
+      display: block
+      width: 0.25rem
+      height: 0.25rem
+      top: 0.24rem
