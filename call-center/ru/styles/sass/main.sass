@@ -3,11 +3,16 @@
 @import "most"
 @import "offer"
 @import "anim"
+@import "slick"
+@import "slick-theme"
 @import "reviews"
 
 
 .block1
   padding-top: 0.4rem
+  padding-bottom: 0
+  background-image: url(../../img/bl1_bg.png)
+  background-size: cover
 .block1__list
   display: grid
   grid-template-rows: repeat(5, 1fr)
@@ -17,4 +22,175 @@
   padding: 0
 .block1__item
   margin-bottom: 0.07rem
-  padding-left: 0.3rem
+  padding-left: 0.25rem
+  position: relative
+  &:before
+    content: ''
+    width: 0.1rem
+    height: 0.1rem
+    background-image: url(../../img/tick.svg)
+    background-size: cover
+    display: block
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+.block1__balance
+  display: flex
+  align-items: center 
+  justify-content: center
+  width: 100%
+  height: 0.8rem
+  filter: drop-shadow(0px 10px 15px rgba(152,152,152,0.2))
+  border-radius: 8px
+  background-color: #fff
+  margin-top: 2.8rem
+  position: relative
+  b
+    display: inline-block
+    padding: 0.1rem
+    line-height: .9
+    background: linear-gradient(0deg, #1484cb 1%, #7cccff 100%)
+    color: #fff
+    border-radius: 6px
+.border
+  position: absolute
+  top: 0.05rem
+  bottom: 0.05rem
+  right: 0.05rem
+  left: 0.05rem
+  border: 1px dashed #ebebeb
+  border-radius: 8px
+
+.builets
+  padding-top: 0.35rem
+.builets__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.15rem
+  img
+    flex-shrink: 0
+    width: 0.25rem
+    margin-right: 0.2rem
+.block3
+  background-color: #f0f5ff
+.block3__item
+  position: relative
+  border-radius: 8px
+  padding: .2rem
+  padding-top: 0.6rem
+  background-color: #fff
+  margin-bottom: 0.6rem
+  img
+    position: absolute
+    width: 0.6rem
+.block3__title
+  display: block
+  margin-bottom: 0.1rem
+.block3__img-item
+  position: absolute
+  top: 0
+  left: 0.22rem
+  transform: translateY(-50%)
+.block4
+  padding-top: 0.2rem
+  padding-bottom: 0
+.block4__item
+  p
+    padding: .3rem
+    padding-bottom: 0
+    margin: 0
+    max-width: 70%
+  img
+    width: 0.2rem
+    margin-bottom: -0.35rem
+
+.block5
+  background-color: #f0f5ff
+.review__body
+  position: relative
+  padding: 0.2rem
+  padding-top: 0.4rem
+  outline: none
+  background-color: #fff
+  margin: 0 .05rem
+  border-radius: 8px
+.review__title
+  display: block
+  margin-bottom: 0.25rem
+.review__main
+  margin: 0
+.slick-list
+  overflow: inherit
+.slick-dots
+  margin-top: 0.2rem
+  position: static
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    width: 0.14rem
+    height: 0.14rem
+    background: transparent
+    border: 2px solid $accent
+    border-radius: 50%
+    &.slick-active
+      background-image: linear-gradient(0.0deg, #1585cb 6%, #9dd9ff 100%)
+      border: none
+      width: 0.17rem
+      height: 0.17rem
+    button
+      opacity: 0
+.review__ava
+  width: 0.7rem
+  position: absolute
+  right: 0.2rem
+  top: 0
+  transform: translateY(-50%)
+
+.block6
+  background-image: url(../../img/bl6_bg.jpg)
+  background-size: cover
+  height: 5.2rem
+  box-sizing: border-box
+.block6__title
+  margin: 0
+  padding: 0 .3rem
+  color: #fff
+  font-size: 0.22rem
+  font-weight: normal
+  max-width: 70%
+  b
+    font-size: 0.26rem
+.block7
+  h2
+    margin-bottom: 0.4rem
+.block7__item
+  margin-bottom: 0.3rem
+  img
+    height: 0.39rem
+    width: auto
+  p
+    margin-top: 0.05rem
+
+.block8
+  background-color: #f0f5ff
+
+.block8__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.25rem
+  &.top
+    align-items: flex-start
+  .icon
+    flex-shrink: 0
+    width: 0.6rem
+    height: 0.6rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background-image: linear-gradient(0.0deg, #1585cb 1%, #9dd9ff 100%)
+    margin-right: 0.25rem
+  p
+    margin: 0
