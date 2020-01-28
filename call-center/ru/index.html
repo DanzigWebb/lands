@@ -15,6 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap&amp;subset=cyrillic"
 		rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -188,7 +189,8 @@
 			</h2>
 			<div class="block8__item top">
 				<div class="icon"><img src="img/icon1.png" style="width: .32rem;" alt=""></div>
-				<p>Свободное владение одним из иностранных языком, указанным выше, хорошая дикция, наличие коммуникативных навыков: приветливость, доброжелательность, вежливость и тактичность</p>
+				<p>Свободное владение одним из иностранных языком, указанным выше, хорошая дикция, наличие коммуникативных
+					навыков: приветливость, доброжелательность, вежливость и тактичность</p>
 			</div>
 			<div class="block8__item">
 				<div class="icon"><img src="img/icon2.png" style="width: .32rem;" alt=""></div>
@@ -196,17 +198,109 @@
 			</div>
 			<div class="block8__item">
 				<div class="icon"><img src="img/icon3.png" style="width: .32rem;" alt=""></div>
-				<p><b>Возраст:</b>  от 18  лет</p>
+				<p><b>Возраст:</b> от 18 лет</p>
 			</div>
 			<div class="block8__item">
 				<div class="icon"><img src="img/icon4.png" style="width: .24rem;" alt=""></div>
 				<p><b>Страна проживания:</b> Россия (Москва), возможность удаленной работы</p>
 			</div>
+			<div class="trigger">
+				<div class="border"></div>
+				<img src="img/trigger.png" alt="">
+				<p>Если Вы энергичны, амбициозны, позитивно настроены, желаете зарабатывать и развиваться в сфере продаж,
+					значит,
+					<b>мы ждем
+						именно Вас!</b></p>
+				<br>
+				<a href="#offer" class="btn">Подать анкету</a>
+			</div>
+		</section>
+		<section class="block9 pad">
+			<h2 class="title">
+				<b> Ответы</b> на вопросы
+			</h2>
+			<div class="block9__content">
+				<div class="block9__item">
+					<p>Почему требуются новые сотрудники?</p>
+					<span class="ticket">&#x207A;</span>
+					<div class="hidden-content">На данный момент в Call - центре работает более 200 операторов, но поток заказов
+						и стран с каждым днем увеличивается, в
+						связи с этим мы расширяем штат.
+						Ежедневно наш Call - центр обрабатывает до 5000 заказов.
+					</div>
+				</div>
+				<!-- <div class="block9__item">
+					<p>Почему требуются новые сотрудники?</p>
+					<span class="ticket">&#x207A;</span>
+					<div class="hidden-content">На данный момент в Call - центре работает более 200 операторов, но поток заказов
+						и стран с каждым днем увеличивается, в
+						связи с этим мы расширяем штат.
+						Ежедневно наш Call - центр обрабатывает до 5000 заказов.
+					</div>
+				</div> -->
+			</div>
 		</section>
 
+		<section class="block10 pad">
+			<h2 class="title"><span>Готовы работать?</span> Осталась всего пара шагов!</h2>
+			<div class="block10__content">
+				<div class="block10__item">
+					<img src="img/step1.png" alt="">
+					<div class="block10__heading">
+						<span class="head">Шаг 1</span>
+						<span>Заполните анкету ниже</span>
+					</div>
+				</div>
+				<div class="block10__item">
+					<img src="img/step2.png" alt="">
+					<div class="block10__heading">
+						<span class="head">Шаг 2</span>
+						<span>Наш тренер свяжется с вами в течение одного дня</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section id="offer" class="offer pad">
+			<div class="offer__content">
+				<div class="border"></div>
+				<h3 class="offer__title">Заполните анкету</h3>
+				<div class="quest">
+					<div class="quest__head">Вопрос <span class="now">1</span> из <span class="all">6</span></div>
+					<div class="progress"><span class="line"></span></div>
+				</div>
+				<form action="" method="POST">
+					<div class="form__item">
+						<h4 class="form__lable">Укажите свое имя и фамилию:</h4>
+						<input type="text" required placeholder="Введите Имя и Фамилию">
+						<button class="btn next">следующий вопрос</button>
+					</div>
+					<div class="form__item">
+						<h4 class="form__lable">Укажите свой номер телефона:</h4>
+						<input type="text" required placeholder="Введите телефон">
+						<button class="btn next">следующий вопрос</button>
+					</div>
+					<div class="form__item">
+						<h4 class="form__lable">Каким иностранным языком вы владеете, какой уровень?</h4>
+						<input type="text" required placeholder="Введите ответ">
+						<button class="btn next">следующий вопрос</button>
+					</div>
+					<div class="form__item">
+						<h4 class="form__lable">Опыт работы в колл-центре:</h4>
+						<input type="text" required placeholder="Введите ответ">
+						<button class="btn next">следующий вопрос</button>
+					</div>
+					<div class="form__item">
+						<h4 class="form__lable">Ваши вопросы:</h4>
+						<input type="text" required placeholder="Введите ответ">
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</form>
+
+			</div>
+		</section>
 	</main>
-
+	
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
