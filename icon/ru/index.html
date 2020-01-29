@@ -40,6 +40,7 @@
 					</div>
 					<div class="trigger__text">хранительница семьи</div>
 				</div>
+				<img src="img/prod.png" alt="" class="intro__prod">
 			</div>
 			<div class="intro__bot">
 				<div class="price price--right">
@@ -194,6 +195,7 @@
 					</div>
 					<div class="trigger__text">хранительница семьи</div>
 				</div>
+				<img src="img/prod.png" alt="" class="intro__prod">
 			</div>
 			<div class="intro__bot" id="offer">
 				<div class="price price--right">
@@ -201,11 +203,20 @@
 					<b class="new">49€</b>
 				</div>
 				<br>
-				<div class="timer"></div>
+				<div class="timer">
+					<div class="timer__txt">
+						<span>До конца акции <br>осталось:</span>
+					</div>
+					<div class="timer__main">
+						<span class="t-hour"></span> :
+						<span class="t-min"></span> :
+						<span class="t-sec"></span>
+					</div>
+				</div>
 				<form action="" method="POST" class="form">
 					<p class="form__title">Заполните форму</p>
-					<input type="text" name="name" placeholder="Имя">
-					<input type="text" name="phone" placeholder="Телефон">
+					<input type="text" name="name" required placeholder="Имя">
+					<input type="text" name="phone" required placeholder="Телефон">
 					<button class="btn">ЗАКАЗАТЬ</button>
 				</form>
 			</div>
@@ -220,6 +231,7 @@
 		</div>
 	</div>
 
+	<script src="js/timer.js"></script>
 	<script src="js/common.js"></script>
 
 
