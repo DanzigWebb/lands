@@ -725,3 +725,22 @@ section>img{
 	color: #222;
 	display: block;
 }
+.image_block {
+	position: relative;
+}
+.image_block h1 {
+	position: absolute;
+	font-size: 25px;
+	max-width: 40%;
+	top: 50%;
+	left: 40%;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	color: #004595;
+	transform: translateY(-30%);
+	-webkit-transform: translateY(-30%);
+	-moz-transform: translateY(-30%);
+	-ms-transform: translateY(-30%);
+	-o-transform: translateY(-30%);
+}

@@ -1,459 +1,345 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="utf-8">
-	<title>Чистящее средство CleanUp</title>
-	    <!-- Favicon -->
+    <meta charset="utf-8">
+    <title>Чистящее средство CleanUp</title>
+    <!-- Favicon -->
     <link rel="icon" href="/img/products_new/4177.png" type="image/png">
     <link rel="shortcut icon" href="/img/products_new/4177.png" type="image/png">
 
-    <!-- OG -->
-    <meta property="og:url" content="https://ma-clean-up.special-sales.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Чистящее средство CleanUp">
-    <meta property="og:image" content="https://ma-clean-up.special-sales.com/img/products_new/4177.png">
-    <meta property="og:image:width" content="150">
-    <meta property="og:image:height" content="150">
-    <meta property="og:site_name" content="Чистящее средство CleanUp">
-    <meta property="og:description" content="Чистящее средство CleanUp">
 
-    
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=480">
-	
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="css/reset.css">
-	<link type="text/css" rel="stylesheet" href="css/fonts.css">
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
-	<link type="text/css" rel="stylesheet" href="css/style_1.css">
-	
-	<!-- JS -->
-	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/validation.js"></script>
-	<script type="text/javascript" src="js/ab.min.js"></script>
-	<script type="text/javascript" src="js/lastpack.js"></script>
-  	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript">$jsonData = {"product":{"id":4177,"name":"Чистящее средство CleanUp","title":"Чистящее средство CleanUp","short_description":"Чистящее средство CleanUp","full_description":"Чистящее средство CleanUp"},"prices":{"270":{"price":499,"old_price":998,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"UA","name":"Україна","currency":"грн.","rate":0.37,"phone_template":"+38 067 927 25 74","address_template":"01024, г. Кiев, ул. Богомольца, д.5, кв.9","name_template":"Карпенко Ярослав Федорович","active":false},"271":{"price":1290,"old_price":2580,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"RU","name":"Россия","currency":"руб.","rate":1,"phone_template":"+7 911 999-88-77","address_template":"135999, Москва, ул. Ленина, д.10, кв.5","name_template":"Петров Петр Петрович","active":true},"272":{"price":6990,"old_price":13980,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"KZ","name":"Қазақстан","currency":"тг","rate":5.3,"phone_template":"+7 705 1301111","address_template":"ул. Майлина, д.3, кв. 6, г. Костанай, 110003","name_template":"Алтынбаев Азат Тюлегенович","active":false},"291":{"price":59,"old_price":118,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"GE","name":"საქართველო","currency":"GEL","rate":0.054,"phone_template":"+99 559 824 83 23","address_template":"0105, Тбилиси, ул. Джорджадзе, д.2, кв.15","name_template":"Николоз Бараташвили","active":false},"357":{"price":59,"old_price":118,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"BY","name":"Беларусь","currency":"бел. руб.","rate":0.032,"phone_template":"+37 529 186 24 65","address_template":"220035, г. Минск, пр-т Машерова, д. 76, кв. 17","name_template":"Матвеев Евгений Алексеевич","active":false},"481":{"price":280000,"old_price":560000,"delivery_price":0,"tax_price":0,"upsale_price":0,"geo_key":"UZ","name":"Ўзбекистон","currency":"UZS","rate":46.62,"phone_template":"+998","address_template":"","name_template":"","active":false}},"lowPrice":{"year":"2020","month":"01","day":"31"}};</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=480">
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style_1.css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </head>
+
 <body>
 
-<script type="text/javascript">
-    var landing_notifiers = new Object(),
-            price, currency, delivery_price;
-
-	for (key in $jsonData.prices) {
-		if ($jsonData.prices[key].active) {
-			price = $jsonData.prices[key].price;
-			currency = $jsonData.prices[key].currency;
-			delivery_price = $jsonData.prices[key].price + $jsonData.prices[key].delivery_price;
-		}
-	}
-
-	landing_notifiers.params = { 
-		city			: "Санкт-Петербург",
-		landDir			: "clean_up_mobile_2",
-		sex				: "",
-		multiply		: "" || 0,
-		no_price		: "" || false,
-		delay			: ("" * 1000) || 12000,
-		price			: price || 0,
-		currency		: currency || "руб.",
-		delivery_price	: delivery_price,
-		geoKey			: "RU" || "RU",
-		zdorov			: "" || false
-	};
-</script>
-
-<script type="text/javascript" src="js/func.js"></script>
-
-<script>
-	var formIsSubmitted = false;
-</script>
-
-<script type="text/javascript" src="js/unload_submit.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                                                                                                                                                                                               
-                             
-
-<div class="main_wrapper">
-    <!-- header 3 -->
-    <header class="offer_section offer3">
-        <h1 class="main_title">СleanUP</h1>
-        <div class="info_block">
-            <p class="subtitle">Инновационное чистящее средство</p>
-            <div class="discount"><b>50% скидка</b></div>
-            <img src="img/offer3__image.jpg" alt="">
-        </div>
-        <div class="price_block">
-            <div class="price_item old">
-                <div class="text">Обычная цена:</div>
-                <div class="value"><span class="price_land_s2">2580</span><span class="price_land_curr">руб.</span></div>
+    <div class="main_wrapper">
+        <!-- header 3 -->
+        <header class="offer_section offer3">
+            <h1 class="main_title">СleanUP</h1>
+            <div class="info_block">
+                <p class="subtitle">Инновационное чистящее средство</p>
+                <div class="discount"><b>50% скидка</b></div>
+                <img src="img/offer3__image.jpg" alt="">
             </div>
-            <div class="price_item new">
-                <div class="text">Цена сегодня:</div>
-                <div class="value"><span class="price_land_s1">1290</span><span class="price_land_curr">руб.</span></div>
-            </div>
-        </div>
-        <div class="benefits_block clearfix">
-            <h3>Активный кислород пены моментально растворяет молекулы въевшейся грязи</h3>
-            <div class="benefit_item">
-                <img src="img/offer3__benefit1_image.jpg" alt="">
-                <p>От налета и ржавчины</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/offer3__benefit2_image.jpg" alt="">
-                <p>Антигрибковый эффект</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/offer3__benefit3_image.jpg" alt="">
-                <p>Удаляет грязь и&nbsp;жир</p>
-            </div>
-        </div>
-        <div class="timer_block">
-            <p>Предложение действует:</p>
-            <div class="timer clearfix">
-                <div class="timer_item">
-                    <div class="count hours"></div>
-                    <div class="text">часов</div>
+            <div class="price_block">
+                <div class="price_item old">
+                    <div class="text">Обычная цена:</div>
+                    <div class="value"><span class="price_land_s2">2580</span><span class="price_land_curr">руб.</span>
+                    </div>
                 </div>
-                <div class="timer_item">
-                    <div class="count minutes"></div>
-                    <div class="text">минут</div>
-                </div>
-                <div class="timer_item">
-                    <div class="count seconds"></div>
-                    <div class="text">секунд</div>
-                </div>
-            </div>
-        </div>
-        <a href="#order_form" class="button">Оформить заказ</a>
-        <div class="products_count">Осталось <b class="lastpack">10</b> упаковок по акции</div>
-    </header>
-    <!-- /video -->
-    <!-- benefits -->
-    <section class="benefits_section">
-        <h2 class="title"><span>Эффективное удаление</span> любых пятен</h2>
-        <!-- benefits 2 -->
-        <div class="benefits_list2">
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit1_image.jpg" alt="">
-                <p>Ослепительный блеск в вашей ванной</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit2_image.jpg" alt="">
-                <p>Чистая кухня в одно мгновение</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit3_image.jpg" alt="">
-                <p>Салон вашего <br>автомобиля будет сиять как новый</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit4_image.jpg" alt="">
-                <p>Ваша мебель преобразится до неузнаваемости</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit5_image.jpg" alt="">
-                <p>Удалит даже самые въевшиеся пятна с вашего ковра</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit6_image.jpg" alt="">
-                <p>Одна минута перед выходом - и ваша обувь сияет</p>
-            </div>
-        </div>
-    </section>
-    <section class="description_section">
-        <h2 class="title"><span>СleanUp заменит</span> все ваши средства</h2>
-        <p class="description_text"><b>СleanUp – это универсальное средство для уборки, способное эффективно очистить поверхность даже от самой въевшейся грязи.</b> Оно деликатно удаляет загрязнения со всех типов поверхностей, оставаясь при этом абсолютно безопасным для здоровья.</p>
-        <img class="image" src="img/1.jpg" alt="">
-        <p>Благодаря высокой концентрации активных веществ в пене CleanUp, она сводит к минимуму абразивные свойства грязи. Исключает вероятность повреждения очищаемого покрытия, а также образования на нем царапин и потертостей.</p>
-        <!-- benefits 2 -->
-        <div class="benefits_list2">
-            <div class="benefit_item">
-                <img src="img/gif_1.gif" alt="">
-                <h4>Гарантия результата</h4>
-                СleanUp отмывает даже самые застарелые пятна с любых поверхностей
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit1_2_image.jpg" alt="">
-                <h4>Универсальность</h4>
-                Одно средство для полноценной уборки всего дома
-            </div>
-            <div class="benefit_item">
-                <img src="img/benefits2__benefit1_3_image.jpg" alt="">
-                <h4>Экологически чистое</h4>
-                Безопасное средство с экологически чистым составом
-            </div>
-            <div class="benefit_item">
-                <img src="img/gif_2.gif" alt="">
-                <h4>Практичность</h4>
-                Для идеальной уборки просто нанесите пену на грязную поверхность
-            </div>
-        </div>
-        <!-- benefits 2 -->
-        <a href="#order_form" class="button">Оформить заказ</a>
-    </section>
-    <!-- /description -->
-    <section class="benefits_section dark_theme padd">
-        <h2 class="title"><span>3 шага</span> к идеальной чистоте</h2>
-        <!-- benefits 3 -->
-        <div class="benefits_list3 va_middle">
-            <div class="benefit_item">
-                <div class="image_block">
-                    <img src="img/benefits3__benefit1_image.jpg" alt="">
-                </div>
-                <div class="text_block">
-                    <h4>Шаг 1</h4>
-                    Распылите пену на грязную поверхность.
-                </div>
-            </div>
-            <div class="benefit_item">
-                <div class="image_block">
-                    <img src="img/benefits3__benefit2_image.jpg" alt="">
-                </div>
-                <div class="text_block">
-                    <h4>Шаг 2</h4>
-                    Подождите, пока пена впитает в себя грязь.
-                </div>
-            </div>
-            <div class="benefit_item">
-                <div class="image_block">
-                    <img src="img/benefits3__benefit3_image.jpg" alt="">
-                </div>
-                <div class="text_block">
-                    <h4>Шаг 3</h4>
-                    Смойте водой или протрите полотенцем, для блистательной чистоты.
-                </div>
-            </div>
-        </div>
-        <img class="benefits_list3_img" src="img/three_step.jpg" alt="3 шага">
-        <!-- /benefits 3 -->
-    </section>
-    <!-- /benefits -->
-    <!-- reviews 2 -->
-    <section class="reviews2_section gray_theme">
-        <h2 class="title">Отзывы <span>покупателей</span></h2>
-        <div class="reviews_list owl-carousel">
-            <div class="review_item">
-                <img class="photo" src="img/slider_img1.jpg" alt="">
-                <div class="review_item_text">Пользуюсь данным средством на протяжении месяца и пока сложилось только положительное впечатление. Отлично справляется с загрязнениями на всех керамических поверхностях, плите, а также все краны в доме и металлические изделия теперь блестят словно новые. Я очень довольна пеной CleanUp. В доме стало невероятно чисто, а самое главное, для этого потребовалось минимум усилий.</div>
-                <div class="author_block clearfix">
-                    <img src="img/slider_person1.jpg" alt="">
-                    <div class="author_info">
-                        <div class="name">Виктория Т.</div>
-                        <div class="text">41 год</div>
+                <div class="price_item new">
+                    <div class="text">Цена сегодня:</div>
+                    <div class="value"><span class="price_land_s1">1290</span><span class="price_land_curr">руб.</span>
                     </div>
                 </div>
             </div>
-            <div class="review_item">
-                <img class="photo" src="img/slider_img2.jpg" alt="">
-                <div class="review_item_text">Эта пена меня поразила своей эффективностью! Действительно безупречно очищает всю мебель в доме, а самое главное не оставляет разводов. Также хотелось бы отметить приятный легкий запах от всех обработанных поверхностях. Получилось даже отчистить старый матрас, на котором было куча въевшихся пятен. Даже мой диван, который довольно сильно “устал” за 10 лет использования, теперь выглядит как новенький.</div>
-                <div class="author_block clearfix">
-                    <img src="img/slider_person2.jpg" alt="">
-                    <div class="author_info">
-                        <div class="name">Валерия С.</div>
-                        <div class="text">29 лет</div>
+            <div class="benefits_block clearfix">
+                <h3>Активный кислород пены моментально растворяет молекулы въевшейся грязи</h3>
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit1_image.jpg" alt="">
+                    <p>От налета и ржавчины</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit2_image.jpg" alt="">
+                    <p>Антигрибковый эффект</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit3_image.jpg" alt="">
+                    <p>Удаляет грязь и&nbsp;жир</p>
+                </div>
+            </div>
+            <div class="timer_block">
+                <p>Предложение действует:</p>
+                <div class="timer clearfix">
+                    <div class="timer_item">
+                        <div class="count hours"></div>
+                        <div class="text">часов</div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="count minutes"></div>
+                        <div class="text">минут</div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="count seconds"></div>
+                        <div class="text">секунд</div>
                     </div>
                 </div>
             </div>
-            <div class="review_item">
-                <img class="photo" src="img/slider_img3.jpg" alt="">
-                <div class="review_item_text">CleanUp помог мне отмыть множество предметов в доме. Старая сковородка теперь блестит как новая, вся кухня теперь благоухает чистотой. Даже плита, на которой я уже 2 года не могла оттереть въевшиеся пятна, теперь идеально белая и чистая. Также порадовало то, что в составе отсутствуют вредные вещества. Я жуткий аллергик, но с CleanUp работаю без перчаток, так как средство абсолютно безопасное.</div>
-                <div class="author_block clearfix">
-                    <img src="img/slider_person3.jpg" alt="">
-                    <div class="author_info">
-                        <div class="name">Анна В.</div>
-                        <div class="text">35 лет</div>
+            <a href="#order_form" class="button">Оформить заказ</a>
+            <div class="products_count">Осталось <b class="lastpack">10</b> упаковок по акции</div>
+        </header>
+        <!-- /video -->
+        <!-- benefits -->
+        <section class="benefits_section">
+            <h2 class="title"><span>Эффективное удаление</span> любых пятен</h2>
+            <!-- benefits 2 -->
+            <div class="benefits_list2">
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit1_image.jpg" alt="">
+                    <p>Ослепительный блеск в вашей ванной</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit2_image.jpg" alt="">
+                    <p>Чистая кухня в одно мгновение</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit3_image.jpg" alt="">
+                    <p>Салон вашего <br>автомобиля будет сиять как новый</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit4_image.jpg" alt="">
+                    <p>Ваша мебель преобразится до неузнаваемости</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit5_image.jpg" alt="">
+                    <p>Удалит даже самые въевшиеся пятна с вашего ковра</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit6_image.jpg" alt="">
+                    <p>Одна минута перед выходом - и ваша обувь сияет</p>
+                </div>
+            </div>
+        </section>
+        <section class="description_section">
+            <h2 class="title"><span>СleanUp заменит</span> все ваши средства</h2>
+            <p class="description_text"><b>СleanUp – это универсальное средство для уборки, способное эффективно
+                    очистить поверхность даже от самой въевшейся грязи.</b> Оно деликатно удаляет загрязнения со всех
+                типов поверхностей, оставаясь при этом абсолютно безопасным для здоровья.</p>
+            <img class="image" src="img/1.jpg" alt="">
+            <p>Благодаря высокой концентрации активных веществ в пене CleanUp, она сводит к минимуму абразивные свойства
+                грязи. Исключает вероятность повреждения очищаемого покрытия, а также образования на нем царапин и
+                потертостей.</p>
+            <!-- benefits 2 -->
+            <div class="benefits_list2">
+                <div class="benefit_item">
+                    <img src="img/gif_1.gif" alt="">
+                    <h4>Гарантия результата</h4>
+                    СleanUp отмывает даже самые застарелые пятна с любых поверхностей
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit1_2_image.jpg" alt="">
+                    <h4>Универсальность</h4>
+                    Одно средство для полноценной уборки всего дома
+                </div>
+                <div class="benefit_item">
+                    <img src="img/benefits2__benefit1_3_image.jpg" alt="">
+                    <h4>Экологически чистое</h4>
+                    Безопасное средство с экологически чистым составом
+                </div>
+                <div class="benefit_item">
+                    <img src="img/gif_2.gif" alt="">
+                    <h4>Практичность</h4>
+                    Для идеальной уборки просто нанесите пену на грязную поверхность
+                </div>
+            </div>
+            <!-- benefits 2 -->
+            <a href="#order_form" class="button">Оформить заказ</a>
+        </section>
+        <!-- /description -->
+        <section class="benefits_section dark_theme padd">
+            <h2 class="title"><span>3 шага</span> к идеальной чистоте</h2>
+            <!-- benefits 3 -->
+            <div class="benefits_list3 va_middle">
+                <div class="benefit_item">
+                    <div class="image_block">
+                        <img src="img/benefits3__benefit1_image.jpg" alt="">
+                    </div>
+                    <div class="text_block">
+                        <h4>Шаг 1</h4>
+                        Распылите пену на грязную поверхность.
+                    </div>
+                </div>
+                <div class="benefit_item">
+                    <div class="image_block">
+                        <img src="img/benefits3__benefit2_image.jpg" alt="">
+                    </div>
+                    <div class="text_block">
+                        <h4>Шаг 2</h4>
+                        Подождите, пока пена впитает в себя грязь.
+                    </div>
+                </div>
+                <div class="benefit_item">
+                    <div class="image_block">
+                        <img src="img/benefits3__benefit3_image.jpg" alt="">
+                    </div>
+                    <div class="text_block">
+                        <h4>Шаг 3</h4>
+                        Смойте водой или протрите полотенцем, для блистательной чистоты.
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- /reviews 2 -->
-    <section class="benefits_section">
-        <h2 class="title"><span>Как сделать</span> <br>заказ?</h2>
-        <div class="order_steps2 clearfix">
-            <div class="step_item">
-                <img src="img/order_steps__step1_icon.png" alt="">
-                <div class="separator"></div>
-                <p>Заявка</p>
-                Оставляете заявку на сайте
-            </div>
-            <div class="step_item">
-                <img src="img/order_steps__step2_icon.png" alt="">
-                <div class="separator"></div>
-                <p>Звонок</p>
-                Наш менеджер уточняет детали заказа
-            </div>
-            <div class="step_item">
-                <img src="img/order_steps__step3_icon.png" alt="">
-                <div class="separator"></div>
-                <p>Отправка</p>
-                Доставляем ваш товар в течение 3‑10 дней
-            </div>
-            <div class="step_item">
-                <img src="img/order_steps__step4_icon.png" alt="">
-                <div class="separator"></div>
-                <p>Получение</p>
-                Оплачиваете при получении на почте
-            </div>
-        </div>
-    </section>
-    <!-- order steps 2 -->
-    <!-- /order steps 2 -->
-    <!-- order 3 -->
-    <section class="offer_section offer3 order">
-        <h3 class="main_title">СleanUP</h3>
-        <div class="info_block">
-            <p class="subtitle">Инновационное чистящее средство</p>
-            <div class="discount"><b>50% скидка</b></div>
-            <img src="img/offer3__image.jpg" alt="">
-        </div>
-        <div class="price_block">
-            <div class="price_item old">
-                <div class="text">Обычная цена:</div>
-                <div class="value"><span class="price_land_s2">2580</span><span class="price_land_curr">руб.</span></div>
-            </div>
-            <div class="price_item new">
-                <div class="text">Цена сегодня:</div>
-                <div class="value"><span class="price_land_s1">1290</span><span class="price_land_curr">руб.</span></div>
-            </div>
-        </div>
-        <div class="benefits_block clearfix">
-            <div class="benefit_item">
-                <img src="img/offer3__benefit1_image.jpg" alt="">
-                <p>От налета и ржавчины</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/offer3__benefit2_image.jpg" alt="">
-                <p>Антигрибковый эффект</p>
-            </div>
-            <div class="benefit_item">
-                <img src="img/offer3__benefit3_image.jpg" alt="">
-                <p>Удаляет грязь и&nbsp;жир</p>
-            </div>
-        </div>
-        <div class="timer_block">
-            <p>Предложение действует:</p>
-            <div class="timer clearfix">
-                <div class="timer_item">
-                    <div class="count hours"></div>
-                    <div class="text">часов</div>
+            <img class="benefits_list3_img" src="img/three_step.jpg" alt="3 шага">
+            <!-- /benefits 3 -->
+        </section>
+        <!-- /benefits -->
+        <!-- reviews 2 -->
+        <section class="reviews2_section gray_theme">
+            <h2 class="title">Отзывы <span>покупателей</span></h2>
+            <div class="reviews_list owl-carousel">
+                <div class="review_item">
+                    <img class="photo" src="img/slider_img1.jpg" alt="">
+                    <div class="review_item_text">Пользуюсь данным средством на протяжении месяца и пока сложилось
+                        только положительное впечатление. Отлично справляется с загрязнениями на всех керамических
+                        поверхностях, плите, а также все краны в доме и металлические изделия теперь блестят словно
+                        новые. Я очень довольна пеной CleanUp. В доме стало невероятно чисто, а самое главное, для этого
+                        потребовалось минимум усилий.</div>
+                    <div class="author_block clearfix">
+                        <img src="img/slider_person1.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Виктория Т.</div>
+                            <div class="text">41 год</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="timer_item">
-                    <div class="count minutes"></div>
-                    <div class="text">минут</div>
+                <div class="review_item">
+                    <img class="photo" src="img/slider_img2.jpg" alt="">
+                    <div class="review_item_text">Эта пена меня поразила своей эффективностью! Действительно безупречно
+                        очищает всю мебель в доме, а самое главное не оставляет разводов. Также хотелось бы отметить
+                        приятный легкий запах от всех обработанных поверхностях. Получилось даже отчистить старый
+                        матрас, на котором было куча въевшихся пятен. Даже мой диван, который довольно сильно “устал” за
+                        10 лет использования, теперь выглядит как новенький.</div>
+                    <div class="author_block clearfix">
+                        <img src="img/slider_person2.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Валерия С.</div>
+                            <div class="text">29 лет</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="timer_item">
-                    <div class="count seconds"></div>
-                    <div class="text">секунд</div>
+                <div class="review_item">
+                    <img class="photo" src="img/slider_img3.jpg" alt="">
+                    <div class="review_item_text">CleanUp помог мне отмыть множество предметов в доме. Старая сковородка
+                        теперь блестит как новая, вся кухня теперь благоухает чистотой. Даже плита, на которой я уже 2
+                        года не могла оттереть въевшиеся пятна, теперь идеально белая и чистая. Также порадовало то, что
+                        в составе отсутствуют вредные вещества. Я жуткий аллергик, но с CleanUp работаю без перчаток,
+                        так как средство абсолютно безопасное.</div>
+                    <div class="author_block clearfix">
+                        <img src="img/slider_person3.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Анна В.</div>
+                            <div class="text">35 лет</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <form id="order_form" class="order_form orderformcdn" action="/order" method="post">
-                            <input type="hidden" name="country" value="0">
-                        <input class="field" type="text" name="name" placeholder="Введите Ваше имя" required value="">
-            <input class="field" type="text" name="phone" placeholder="Введите Ваш телефон" required value="">
-            <input type="hidden" name="dop_params[color]" value="">
-            <input type="hidden" name="address" value="">
-            <input type="hidden" name="product_count" id="product_count" value="1">
-            <input type="hidden" name="number_product" value="4177">
-            
-<input type="hidden" name="split_test_id" value="0">
-<input type="hidden" name="split_test" value="0">
-<input type="hidden" name="split_test_host" value="ma-clean-up.special-sales.com">
-<input type="hidden" name="fchck" value="b39e36ea3157ba672478125accaeb304a074ceda">
-<input type="hidden" name="ucfi" id="ucfi" value="0">
-            <button class="button">Оформить заказ</button>
-        </form>
-        <div class="products_count">Осталось <b class="lastpack">10</b> упаковок по акции</div>
-    </section>
-    <!-- /order 3 -->
-    <!-- footer -->
-    <footer class="footer_section copyright">
-                    <img src="img/rekv.png" style="display:block;margin:0 auto">
-
-<div style="text-align: right"><img src="img/1001transits.png" style="display: inline-block !important;"></div>
-                <p><a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></p>
-    </footer>
-    <!-- /footer -->
-</div>
-
-
-<script>
-	var videoHostingURL;
-			videoHostingURL = '/videotube/'
-	</script>
-
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script_1.js"></script>
-
-	
-<!--{-->
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter22765945 = new Ya.Metrika({id:22765945,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
- 
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
- 
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/22765945" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!--||-->
-<script async src="js/mtrk.js"></script>
-<!--}-->
+        </section>
+        <!-- /reviews 2 -->
+        <section class="benefits_section">
+            <h2 class="title"><span>Как сделать</span> <br>заказ?</h2>
+            <div class="order_steps2 clearfix">
+                <div class="step_item">
+                    <img src="img/order_steps__step1_icon.png" alt="">
+                    <div class="separator"></div>
+                    <p>Заявка</p>
+                    Оставляете заявку на сайте
+                </div>
+                <div class="step_item">
+                    <img src="img/order_steps__step2_icon.png" alt="">
+                    <div class="separator"></div>
+                    <p>Звонок</p>
+                    Наш менеджер уточняет детали заказа
+                </div>
+                <div class="step_item">
+                    <img src="img/order_steps__step3_icon.png" alt="">
+                    <div class="separator"></div>
+                    <p>Отправка</p>
+                    Доставляем ваш товар в течение 3‑10 дней
+                </div>
+                <div class="step_item">
+                    <img src="img/order_steps__step4_icon.png" alt="">
+                    <div class="separator"></div>
+                    <p>Получение</p>
+                    Оплачиваете при получении на почте
+                </div>
+            </div>
+        </section>
+        <!-- order steps 2 -->
+        <!-- /order steps 2 -->
+        <!-- order 3 -->
+        <section class="offer_section offer3 order">
+            <h3 class="main_title">СleanUP</h3>
+            <div class="info_block">
+                <p class="subtitle">Инновационное чистящее средство</p>
+                <div class="discount"><b>50% скидка</b></div>
+                <img src="img/offer3__image.jpg" alt="">
+            </div>
+            <div class="price_block">
+                <div class="price_item old">
+                    <div class="text">Обычная цена:</div>
+                    <div class="value"><span class="price_land_s2">2580</span><span class="price_land_curr">руб.</span>
+                    </div>
+                </div>
+                <div class="price_item new">
+                    <div class="text">Цена сегодня:</div>
+                    <div class="value"><span class="price_land_s1">1290</span><span class="price_land_curr">руб.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits_block clearfix">
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit1_image.jpg" alt="">
+                    <p>От налета и ржавчины</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit2_image.jpg" alt="">
+                    <p>Антигрибковый эффект</p>
+                </div>
+                <div class="benefit_item">
+                    <img src="img/offer3__benefit3_image.jpg" alt="">
+                    <p>Удаляет грязь и&nbsp;жир</p>
+                </div>
+            </div>
+            <div class="timer_block">
+                <p>Предложение действует:</p>
+                <div class="timer clearfix">
+                    <div class="timer_item">
+                        <div class="count hours"></div>
+                        <div class="text">часов</div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="count minutes"></div>
+                        <div class="text">минут</div>
+                    </div>
+                    <div class="timer_item">
+                        <div class="count seconds"></div>
+                        <div class="text">секунд</div>
+                    </div>
+                </div>
+            </div>
+            <form id="order_form" class="order_form orderformcdn" action="" method="post">
+                <input class="field" type="text" required name="name" placeholder="Введите Ваше имя" required>
+                <input class="field" type="text" required name="phone" placeholder="Введите Ваш телефон" required>
+                <button class="button">Оформить заказ</button>
+            </form>
+            <div class="products_count">Осталось <b class="lastpack">10</b> упаковок по акции</div>
+        </section>
+        <!-- /order 3 -->
+        <!-- footer -->
+        <footer class="footer_section copyright">
+            <p>GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Span</p>
+            <p><a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></p>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </body>
+
 </html>
-
-
-
-
-
-
