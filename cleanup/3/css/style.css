@@ -114,6 +114,7 @@ body {
  line-height: 24px;
  color: #222;
  background: #0c1d40;
+ overflow-x: hidden;
 }
 
 .wrap {
@@ -945,3 +946,24 @@ footer a:hover {
 .errField { display:none; font-size: 14px; background: #f00; color: #fff; text-align: center; padding: 10px; margin-bottom:10px; }
 
 .errorMessage {font-size: 11px;background: rgba(255, 0, 0, 0.64);color: #fff;text-align: center;padding: 5px 10px;position: absolute;margin: 55px 0 0; z-index: 99999; }
+
+
+.img-wrap {
+	position: relative;
+}
+
+.img-wrap .before {
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	text-transform: uppercase;
+	color: #fff;;
+}
+
+.img-wrap .after {
+	position: absolute;
+	right: 5px;
+	bottom: 8px;
+	text-transform: uppercase;
+	color: #fff;;
+}

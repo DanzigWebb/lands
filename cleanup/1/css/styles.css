@@ -52,6 +52,7 @@ body {
 	line-height: 1.5em;
 	color: #333;
 	cursor: default;
+	overflow-x: hidden;
 }
 
 .main_wrapper {
@@ -743,4 +744,5 @@ section>img{
 	-moz-transform: translateY(-30%);
 	-ms-transform: translateY(-30%);
 	-o-transform: translateY(-30%);
+	opacity: 0;
 }
