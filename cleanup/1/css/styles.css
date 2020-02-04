@@ -42,7 +42,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+html {
+	overflow-x: hidden;
+}
 body {
 	min-width: 480px;
 	background: #84acb3;
@@ -732,17 +734,20 @@ section>img{
 .image_block h1 {
 	position: absolute;
 	font-size: 25px;
-	max-width: 40%;
-	top: 50%;
-	left: 40%;
+	max-width: 60%;
+	margin: auto;
+	text-align: center;
+	top: 70px;
+	left: 0;
+	right: 0;
 	font-weight: bold;
 	line-height: 1.2;
 	letter-spacing: 1px;
-	color: #004595;
+	color: #fff;
 	transform: translateY(-30%);
 	-webkit-transform: translateY(-30%);
 	-moz-transform: translateY(-30%);
 	-ms-transform: translateY(-30%);
 	-o-transform: translateY(-30%);
-	opacity: 0;
+	opacity: 1;
 }
