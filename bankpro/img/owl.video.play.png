@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+<meta name="keywords" content="онлайн займ, онлайн кредит, займ онлайн, кредит онлайн, оформить онлайн займ, оформить 
+            онлайн кредит, оформить онлайн займ на карту, оформить онлайн кредит на карту, срочный онлайн займ, 
+            срочный онлайн кредит, займ онлайн на карту, кредит онлайн на карту, потребительские кредиты, 
+            микрокредиты, срочные онлайн займы на карту">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/fontawesome-stars.css">
+<link rel="stylesheet" type="text/css" href="../css/flexboxgrid.min.css">
+<link rel="stylesheet" type="text/css" href="../css/new-main.css">
+<link rel="stylesheet" type="text/css" href="../js/c2a4147fc3b80452d7a22315ffc300f1_1.js">
+<link rel="stylesheet" type="text/css" href="../js/sp-push-worker-fb.js">
+<link rel="stylesheet" type="text/css" href="../sp-push-manifest.json">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<title>Leads.su</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/assets/feed/bankspro/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MQMPDTJ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<style>
+    .wrapper-bankspro {
+        min-height: calc(100vh - 80px);
+    }
+</style>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMPDTJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="header-bankspro">
+    <div class="header-bankspro__wrapper">
+        <div class="header-bankspro__mobile_click"></div>
+        <a class="header-bankspro__logo" href="/"></a>
+                <a class="header-bankspro__nav not-small" href="/category/14-mikrokrediti">Микрокредиты</a>        <a class="header-bankspro__nav not-small" href="/category/16-potrebitelskie-krediti">Потребительские кредиты</a>        <a class="header-bankspro__nav not-small" href="/category/4-kreditnie-karti">Кредитные карты</a>
+        <a class="header-bankspro__select" href="/favorites">
+            <span class="header-bankspro__select_item not-mobile-sm">Избранное</span><span id="favorites-counter" class="header-bankspro__select_quantity quantity_counter">0</span></a>
+        <a class="header-bankspro__compare" href="/compare">
+            <span class="header-bankspro__compare_item not-mobile-sm">Сравнение</span><span id="compares-counter" class="header-bankspro__compare_quantity quantity_counter">0</span></a>
+
+        <a class="header-bankspro__city not-mobile" href="#" data-popover="popover__city_item">
+    <span class="header-bankspro__city_item">Санкт-Петербург</span>
+    <div class="gpopover" id="popover__city_item">
+        <input class="header-bankspro__city_input select-header" type="text">
+        <ul class="header-bankspro__popap-city_ul">
+        </ul>
+    </div>
+</a>
+    </div>
+    <div class="header-bankspro__mobile">
+        <div class="header-bankspro__mobile_menu">
+                    <a class="header-bankspro__nav " href="/category/14-mikrokrediti">Микрокредиты</a>        <a class="header-bankspro__nav " href="/category/16-potrebitelskie-krediti">Потребительские кредиты</a>        <a class="header-bankspro__nav " href="/category/4-kreditnie-karti">Кредитные карты</a>
+            <div class="header-bankspro__city"><span class="header-bankspro__city_item">Санкт-Петербург</span></div>
+<div class="header-bankspro__city header-bankspro__popap"><span class="header-bankspro__city_item select-popap-item">Выбрать город</span>
+</div>
+<div class="header-bankspro__mobile_close"></div>
+        </div>
+    </div>
+    <div class="header-bankspro__popap-city">
+    <div class="header-bankspro__popap-city_menu">
+        <div class="header-bankspro__popap-city_back"></div>
+        <div class="header-bankspro__popap-city_title">Выбор города</div>
+        <div class="header-bankspro__popap-city_close"></div>
+    </div>
+    <div class="header-bankspro__popap-city_select">
+        <input class="header-bankspro__city_input select-popap" type="text">
+        <ul class="header-bankspro__popap-city_ul">
+        </ul>
+    </div>
+</div>
+<style>
+    .header-bankspro__popap-city_ul li {
+        width: 100%;
+        color: black;
+        padding: 10px 0 10px 10px;
+        text-align: center;
+    }
+
+    .header-bankspro__popap-city_ul li a {
+        color: black;
+        text-decoration: none;
+        border: none;
+    }
+</style></div>
+
+
+<div class="wrapper-bankspro">
+    <style>
+    .card-bankspro__item {
+        flex: 1 1 7em;
+        margin: 0 1em 0 0;
+        padding: 1em;
+        display: block;
+        width: 80%;
+        max-width: 550px;
+        box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);;
+    }
+
+</style>
+<div class="card-bankspro container">
+    <div class="card-bankspro__wrapper">
+        <div class="title-bankspro error-title">Возникла ошибка!</div> <div class="badge badge-important"> Код: 404</div>
+        <div class="">
+            Невозможно обработать запрос "assets/feed/bankspro/css/owl.video.play.png".        </div>
+        <br><hr>
+        <div class="title-bankspro__small">
+            Для выбора доступны следующие категории кредитных направлений:<br>
+        </div>
+        <div class="row" id="box">
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/2-avtokreditovanie">Автокредитование</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/6-vkladi">Вклады</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/27-debetovie-karti">Дебетовые карты</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/33-denezhnie-perevodi">Денежные переводы</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/23-investicii">Инвестиции</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/8-ipoteka">Ипотека</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/31-kreditnaja-istorija">Кредитная история</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/4-kreditnie-karti">Кредитные карты</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/28-kreditnie-servisi">Кредитные сервисы</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/10-krediti-dlja-biznesa">Кредиты для бизнеса</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/14-mikrokrediti">Микрокредиты</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/16-potrebitelskie-krediti">Потребительские кредиты</a>            </div>
+                    <div class="card-bankspro__item col-md-3 col-lg-4 col-sm-6 item">
+                <a style="text-decoration: none" href="/category/26-strahovanie">Страхование</a>            </div>
+                </div>
+    </div>
+</div>
+</div>
+<div class="bankspro-copyright">
+    © 2010-2020 «Супермаркет кредитов». Все права защищены. Сайт не осуществляет выдачу<br> кредитов и
+    займов, носит чисто информационный характер.
+</div>
+
+
+<script type="text/javascript" src="../js/notify.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/jquery.barrating.min.js"></script>
+<script type="text/javascript" src="../js/bankspro.js"></script>
+<script type="text/javascript" src="../js/city-widget.js"></script>
+</body>
+</html>
+

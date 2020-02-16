@@ -1,0 +1,181 @@
+@import "vars"
+@import "most"
+@import "offer"
+@import "reviews"
+@import "timer"
+.intro
+  background-color: #457BE4
+  padding-bottom: 0.45rem
+.intro__top
+  background-color: $blue
+  color: #fff
+  padding: 0.2rem
+  h3
+    margin: 0
+    text-align: center
+    line-height: 1.4
+    font-size: 0.34rem
+    font-weight: normal
+    span
+      padding: .05rem
+      border-radius: 10px
+      background-color: $accent
+      font-weight: bold
+.intro__main
+  background-color: #457BE4
+
+.price
+  background-image: url(../../img/price.svg)
+  background-size: cover
+  width: 4.4rem
+  height: 1.3rem
+  padding: 0 .2rem
+  box-sizing: border-box
+  margin: auto
+  display: flex
+  align-items: center
+  justify-content: space-around
+  color:  #01154E
+  &>*
+    width: 1.4rem
+    text-align: center
+  s
+    font-size: 0.36rem
+
+  span
+    font-size: 0.48rem
+  .sale
+    display: flex
+    flex-direction: column
+    color: #fff
+    padding-top: 0.1rem
+    b
+      font-size: 0.5rem
+      line-height: 1
+
+.sect1
+  h4
+    color: $accent
+    text-align: center
+    font-weight: bold
+    font-size: 0.26rem
+  img
+    width: 3.2rem
+    display: block
+    margin: auto
+    margin-bottom: 0.3rem
+
+.sect2
+  background: #12369C
+.sect2__items
+  padding: .4rem 0
+.sect2__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.3rem
+  &:nth-child(even)
+    flex-direction: row-reverse
+    
+  img
+    flex-shrink: 0
+    width: 1.4rem
+
+.sect2__content
+  color: #fff
+  padding: 0 .2rem
+  h4
+    margin-top: 0
+    color: $accent
+    font-size: 0.24rem
+  p
+    font-size: 0.18rem
+
+.sect3
+  background-color: #457BE4
+.sect3__content
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.sect3__item
+  display: flex
+  flex-direction: column
+  text-align: center
+  width: calc(50% - 0.1rem)
+  margin-bottom: 0.2rem
+  p
+    color: #fff
+    margin: 0
+    padding-top: 0.1rem
+    font-size: 0.24rem
+.sect4
+  padding-bottom: 0.6rem
+.sect4__item
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #707070
+  margin: 0
+  padding: .15rem
+  &:nth-child(odd)
+    background: #EBF2FF
+  span
+    color: #000
+
+.sect5
+  padding-top: 0.6rem
+  background: #12369C
+
+.reviews__item
+  background-color: #fff
+  border-radius: 10px
+  padding: .35rem
+
+  .head
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    img
+      width: 1.14rem
+      margin-right: 0.25rem
+    &__info
+      display: flex
+      flex-direction: column
+      b
+        color: $accent
+        font-size: 0.24rem
+      span
+        font-size: 0.22rem
+        margin-bottom: 0.1rem
+
+.reviews
+  .owl-dots
+    display: flex
+    justify-content: center
+    margin-top: 0.3rem
+  button.owl-dot
+    width: 0.7rem
+    height: 0.16rem
+    display: block
+    background-color: #fff
+    border-radius: 10px
+    margin: 0 4px
+    &.active
+      background-color: $accent
+
+.sect6__grid
+  display: flex
+  flex-wrap: wrap
+
+.sect6__item
+  width: 50%
+  padding: 0 .1rem
+  box-sizing: border-box
+  margin-bottom: 0.3rem
+  p
+    margin: 0
+    padding-top: 0.2rem
+
+  img 
+    flex-shrink: 0
+    width: 1.1rem

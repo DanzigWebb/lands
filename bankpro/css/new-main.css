@@ -1,0 +1,69 @@
+.quantity_counter {
+    line-height: 16px;
+}
+.title-bankspro > a {
+    color: #46638b;
+    text-decoration: none;
+}
+.card-bankspro__item > a {
+    color: #46638b;
+}
+.title-bankspro > a:hover {
+    text-decoration: underline;
+}
+.header-bankspro__logo {
+    margin-top: 12px;
+}
+
+.compare-bankspro {
+    min-height: 400px;
+}
+
+.title-bankspro > a {
+    color: #46638b;
+    text-decoration: none;
+}
+.card-bankspro__block-title_titles > a {
+    color: #46638b;
+    text-decoration: none;
+}
+
+.gpopover > span {
+    font-size: smaller;
+}
+
+.breadcrumbs {
+    padding: 5px 0 17px 0;
+    font-size: 14px;
+
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #6198cc;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.error-title {
+    color: red;
+}
+#box {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.title-bankspro > a {
+    color: #46638b;
+    text-decoration: none;
+}
+.card-bankspro__block-title_titles > a {
+    color: #46638b;
+    text-decoration: none;
+}
+
+.compare-bankspro .compare-bankspro__slider_wrapper_none {
+    margin-top: 5%;
+    border: none;
+}
