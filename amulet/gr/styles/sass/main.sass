@@ -1,0 +1,223 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro
+  padding-bottom: 0.4rem
+.intro__main
+  background-image: url(../../img/header_1.jpg)
+  background-size: cover
+  background-position: center bottom
+  height: 6.65rem
+  position: relative
+  padding: 0.1rem 0
+  padding-bottom: 0.2rem
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.sale
+  color: #fff
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  line-height: 0.9
+  height: 1.5rem
+  width: 1.5rem
+  background-image: url(../../img/sale.svg)
+  background-repeat: no-repeat
+  background-size: cover
+  position: absolute
+  right: 0.5rem
+  bottom: 1.2rem
+  b
+    font-size: 0.27rem
+  b:first-child
+    font-size: 0.17rem
+    font-weight: 600
+    margin-bottom: .05rem
+  span
+    margin-top: 0.05rem
+    font-size: 0.15rem
+    font-weight: 600
+  
+.price
+  margin-top: auto
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  s
+    color: #767676
+    font-weight: 500
+    font-size: 0.35rem
+  b
+    color: #fff
+    font-size: 0.6rem
+
+.intro__top
+  text-align: center
+  h3
+    margin: 0
+    color: $accent
+    font-size: 0.24rem
+  p
+    margin: 0
+    color: #fff
+    line-height: 1
+    font-weight: 500
+
+.intro__builets
+  display: flex
+  justify-content: space-around
+  padding: .35rem .2rem
+.intro__bull
+  width: 30%
+  text-align: center
+  font-size: 0.18rem
+  font-weight: 600
+
+  img
+    height: 0.6rem
+
+.timer
+  margin: 0 .15rem
+  box-sizing: border-box
+  height: 3.05rem
+  background-image: url(../../img/timer.png)
+  background-size: cover
+  h3
+    font-weight: normal
+    text-align: center
+    font-size: 0.19rem
+.timer__content
+  padding: .3rem .4rem
+  color: #fff
+.timer__wrapper
+  display: flex
+  justify-content: space-around
+  font-size: .5rem
+  font-weight: bold
+  margin-bottom: 0.35rem
+  div
+    display: flex
+  span
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 0.5rem
+    height: .7rem
+    background-color: $accent
+    margin: 0 .03rem
+    border-radius: 5px
+
+.sect2
+  background-color: #000
+.sect2__main
+  position: relative
+  margin-bottom: 0.4rem
+.sect2__about
+  margin: 0
+  padding: .1rem .2rem
+  background-color: rgba(255, 146, 38, 0.85)
+  color: #fff
+  font-weight: 500
+  position: absolute
+  border-radius: 10px
+  &.top
+    top: 0
+    right: 0.2rem
+  &.bot
+    bottom: 0
+    left: 0.2rem
+
+.sect3
+
+.sect3__content
+  display: flex
+  flex-wrap: wrap
+  padding: .35rem 0
+  background-image: url(../../img/sect3.png)
+  background-size: cover
+.sect3__item
+  width: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin-bottom: 0.4rem
+  p
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+  img
+    flex-shrink: 0
+    width: 1.15rem
+
+video
+  width: 100%
+
+.sect4
+  background-color: #000
+.sect4__items
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+.sect4__item
+  color: #fff
+  width: 40%
+  text-align: center
+  margin-bottom: 0.4rem
+  p
+    margin: 0
+  b
+    margin-bottom: 4px
+  hr
+    background-color: $accent
+    height: 1px
+    border: none
+    width: 1.3rem
+    margin: auto
+    display: block
+    margin-bottom: 0.15rem
+.reviews
+  .owl-nav
+    display: flex
+    justify-content: space-between
+    padding: 0 .4rem
+    transform: translateY(-80%)
+    button
+      outline: none
+.review
+  p
+    margin-bottom: 0.5rem
+  b
+    text-align: center
+    width: 100%
+    display: flex
+    justify-content: center
+.sect6
+  background-color: #000
+  color: #fff
+.sect6__items
+  display: flex
+  flex-wrap: wrap
+.sect6__item
+  width: 50%
+  padding: .2rem
+  box-sizing: border-box
+  font-size: 0.18rem
+  text-align: center
+  img
+    flex-shrink: 0
+    width: 1.15rem
+
+.timer.offer
+  height: 5.4rem
+  background-image: url(../../img/form.png)
