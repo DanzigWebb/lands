@@ -413,7 +413,15 @@ section>img{
 	border-radius: 4px;
 }
 
-
+.trigger__line {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 130px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
 /*sect2*/
 .sect2{
 	padding-bottom: 0;
