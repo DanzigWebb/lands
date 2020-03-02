@@ -418,7 +418,7 @@ section>img{
 	left: 0;
 	right: 0;
 	top: 130px;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
 	color: #fff;
 }
@@ -741,7 +741,7 @@ section>img{
 }
 .image_block h1 {
 	position: absolute;
-	font-size: 25px;
+	font-size: 55px;
 	max-width: 60%;
 	margin: auto;
 	text-align: center;
@@ -751,7 +751,7 @@ section>img{
 	font-weight: bold;
 	line-height: 1.2;
 	letter-spacing: 1px;
-	color: #fff;
+	color: yellow;
 	transform: translateY(-30%);
 	-webkit-transform: translateY(-30%);
 	-moz-transform: translateY(-30%);

@@ -1,0 +1,228 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro__top
+  p
+    margin: 0
+    text-transform: uppercase
+    font-size: 0.25rem
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    &:first-child
+      height: 0.5rem
+      background: $accent
+    &:last-child
+      height: 0.88rem
+      background: $dark
+
+.intro__main
+  background-image: url(../../img/intro.png)
+  background-size: cover
+  height: 4.5rem
+  position: relative
+
+.intro__item
+  position: absolute
+  background-color: #fff
+  color: $dark
+  text-transform: uppercase
+  font-size: 0.18rem
+  padding: .08rem .2rem
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  box-sizing: border-box
+  p
+    margin: 0
+    font-weight: 500
+  &:first-child
+    top: 0.1rem
+    left: 0
+    right: 0
+    margin: auto
+    max-width: 2.1rem
+    span
+      left: 0
+      top: 45%
+      transform: translateX(-50%)
+  &:nth-child(2)
+    top: 2.6rem
+    left: 0.3rem
+    span
+      top: -.05rem
+      left: 50%
+      transform: translateX(-50%) translateY(-50%)
+  &:nth-child(3)
+    bottom: .3rem
+    right: 0.55rem
+    span
+      left: -.1rem
+      top: -.1rem
+  span
+    position: absolute
+    display: inline-block
+    background: #B47D59
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: #fff
+    width: 0.25rem
+    height: 0.25rem
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: bold
+
+.intro__price
+  height: 1.15rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-around
+  background-image: url(../../img/price.png)
+  margin-top: -0.2rem
+  position: relative
+  .sale
+    display: flex
+    flex-direction: column
+    color: #fff
+    text-align: center
+    line-height: 0.9
+    b
+      font-size: 0.3rem
+      font-weight: 500
+  .old
+    color: #767676
+    font-weight: 500
+    font-size: 0.25rem
+    width: 1.4rem
+    text-align: right
+  .new
+    font-size: 0.3rem
+    font-weight: bold
+    color: #000
+    width: 1.4rem
+
+.timer__wrapper
+  max-width: 3.7rem
+  margin: auto
+  display: flex
+  align-items: center
+  font-size: 0.5rem
+  color: $accent
+  font-weight: bold
+  div
+    display: flex
+  span
+    display: inline-block
+    height: .7rem
+    width: 0.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: inset 0px 3.58049px 8.95122px rgba(0, 0, 0, 0.25)
+    border-radius: 4.47561px
+
+    margin: 0 3px
+
+.intro__offer
+  margin-top: 0.3rem
+  background-color: $accent
+  padding: .3rem 0
+
+.sale-end
+  color: #fff
+  text-align: center
+  padding: 0 .4rem
+  box-sizing: border-box
+  h3
+    margin: 0
+    margin-bottom: 0.1rem
+
+.sect1
+  background-color: #2F2F2F
+  color: #fff
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 3.4rem
+    background-color: #1B1B1B
+    top: 2.6rem
+    bottom: 3.6rem
+    left: 0
+  .content
+    position: relative
+
+.sect2
+  h3
+    text-transform: uppercase
+    font-weight: normal
+    text-align: center
+.sect2__item
+  margin-top: 0
+  margin-bottom: 0
+  padding: .2rem
+  box-sizing: border-box
+  &:nth-child(odd)
+    background-color: #F4F4F4
+
+.video
+  video
+    width: 100%
+
+.sect4
+  background-color: $accent
+
+.review__item
+  background-color: #fff
+  border-radius: 5px
+  padding: 0.3rem
+  .ava
+    width: 1.36rem
+    margin: auto
+  .name
+    text-align: center
+    font-size: 0.22rem
+    margin-bottom: 0.15rem
+  .rating
+    display: flex
+    align-items: center
+    img
+      width: 1.45rem
+      margin-left: 0.15rem
+.owl-carousel
+  .owl-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 0.4rem
+    button
+      border-radius: 10px
+      width: 0.6rem
+      height: 0.16rem
+      background-color: #fff
+      margin: 0 4px
+      &.active
+        background-color: #FFF72F
+.sect5
+  background: #2F2F2F
+  color: #fff
+
+.sect5__content
+  display: grid
+  grid-template-columns: 1fr 1fr
+  text-align: center
+  padding: .4rem 0
+  padding-bottom: 0.3rem
+  grid-gap: 30px
+.sect5__item
+  img
+    width: 1.16rem
+  
