@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="ru"><head>
+
+	<meta charset="utf-8">
+	<title>Silver Coat</title>
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<script src="libs/vue/vue.min.js"></script>
+</head>
+
+<body>
+
+	<div id="app">
+		<header class="header">
+			<div class="header__main">
+				<div class="header__logo" @click="activeSection = 1"><img src="img/logo.svg" alt></div>
+			</div>
+			<menu class="header__menu":class="{ active: menuShow }">
+				<div class="swiper-container menu-carousel">
+					<div class="swiper-wrapper">
+						<span class="swiper-slide header__link":class="{ active: activeSection == 1 }"> Inicio</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 2 }"> Cualidades</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 3 }"> Opiñones</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 4 }"> Hacer un pedido</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 5 }"> Entrega y pago</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 6 }"> Caracteristicas</span>
+						<span class="swiper-slide header__link":class="{ active: activeSection == 7 }"> Novedad 2020</span>
+					</div>
+				</div>
+			</menu>
+		</header>
+
+		<main @click="menuShow = false" class="main">
+
+			<!-- main slider  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
+
+					<div class="sect1__heading">
+						<h1><span class="underline"><b> Hi-tech</b> <span class="low"> ropa</span></span> <br> <span class="underline"> de nueva generacion</span></h1>
+					</div>
+					<div class="price">
+						<div class="top"><b> Descuento</b> <span> de 50%</span></div>
+						<div class="main">
+							<span> 49€</span>
+							<s> 98€</s>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+								<div class="slide-on-slider">
+									<span> Tejido con efecto reflectante.</span>
+									<img src="img/slide.png" alt>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- pluses -->
+			<transition name="tabs">
+				<section v-show="activeSection == 2" class="sect2 pluses">
+					<div class="content">
+						<div class="sect2__item active">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.37rem;" src="img/icon_1.svg" alt>
+								</div>
+								<h3> Tela de alta calidad:</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content active"> Las chaquetas Silver Coat estan fabricadas con material de alta tecnologia FlexTech™.Se diferencia por su alta resistencia,repela agua y suciedad,proteje del viento.A pesar de que la tela es extremadamente ligera,practicamente como el aire,mantiene parfectamente el calor.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_2.svg" alt>
+								</div>
+								<h3> Acabados duraderos:</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Las chaquetas Silver Coat tienen acabados de alta calidad. Las cremalleras resisten hasta 100 mil aperturas/cierres y estan reforzadas contra los efectos de la humedad,detalles realizados en metal plateado,todas las costuras estan reforzadas con tela especial.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.39rem;" src="img/icon_3.png" alt>
+								</div>
+								<h3> DISEÑO: URBANO SOFISTICADO</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Corte holgado tipo unisex,puños de contraste,sobrio diseño,lineas laconicas,moderno efecto metalizado y tela reflectante - cada detalle de las chaquetas Silver Coat sirve para la creacion de una imagen ultra estilosa.</p>
+						<div class="sect2__item">
+							<img src="img/arrow.svg" alt class="sect2__arrow">
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.34rem;" src="img/icon_4.png" alt>
+								</div>
+								<h3> FUNCIONALIDAD:TODO LO QUE NECESITAS</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Las chaquetas Silver Coat estan dotadas de 3 bolsillos,uno de ellos con cremallera,cierre-cremallera circular,puños estrechados y anchura del borde inferior ajustable. En este diseño todo esta pensado para su comodidad!</p>
+					</div>
+				</section>
+			</transition>
+			<!-- reviews  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 3" class="sect3 reviews scroll">
+					<div class="content">
+						<h2 class="t-center"> opiñones sobre Silver Coat</h2>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava1.png" alt><span><b> Autor:</b> Alex</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> Una chaqueta exelente! La compre para montar en bici cuando hace mal tiempo, y ahora me la pongo para hacer deporte y en dia a dia . De noche brilla como los faros de un coche!Incluso se puede pasear en un parque oscuro - se vera de lejos. Fabricacion de calidad y aspecto sofisticado.Estoy muy contento con la compra!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava2.png" alt><span><b> Autor:</b> Alicia</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> Gracias por la entrega rapida, me ha gustado mucho la chaqueta.Me la pongo con unas mallas negras y bambas plateadas - queda muy moderno!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava3.png" alt><span><b> Autor:</b> Julia</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> A mi marido y a mi nos gusta patinar por el paseo maritimo, hemos comprado dos chaquetas iguales, para el y para mi, son chulisimas! Y no solo para hacer deporte, tambien para crear un look moderno.Muy buena calidad, corte comodisimo.</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava4.png" alt><span><b> Autor:</b> Miguel</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_3.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> He recibido la chaqueta hace poco, es una pena que ya no hace frio en la calle. Una prenda exelente y de calidad, tiene un aspecto moderno. Es comoda. La tela es gruesa pero ligera. En dos semanas me voy al sur, alli probare la chaqueta en accion!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava5.png" alt><span><b> Autor:</b> Paula</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> Gracias por el reparto rapido!La encargada me llamo en cuando deje la solicitud. Una chica muy amable. La chaqueta llego bien embalada. La talla coincide. Se ve MUUUY chula. De noche brilla muchisimo, me siento como una estrella con ella!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava6.png" alt><span><b> Autor:</b> Maria</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Pais:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> España</b>
+								</span>
+								<span class="main"> Una chaqueta muy bonita! Costuras perfectas, tejido de calidad, diseño muy conseguido - todo ideal, como siempre con esta marca. Queda bien con tejanos, mallas o chandal. Ligera,casi como el aire! Se ajusta bien y es comoda. El tejido es muy agradable al tacto, en fin, estoy satisfecha al 100% y se la recomiendo a todos!!!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava7.png" alt><span><b> Autor:</b> Sergio</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Calificacion:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Pais:</b> España</span>
+								<span class="main"> La compre en otoño como prenda de entretiempo para hacer deporte.Por las tardes monto en bici, quieria que se me vea en la carretera. La chaqueta refleja la luz - se ve desde lejos. Comoda,no se pasa ni calor ni frio,tiene un diseño chulo. La cremallera se abrocha hasta el borde superior de la capucha - lo que ayuda a protegerse de la lluvia. La recomiendo!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- offer  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 4" class="sect4 scroll offer">
+					<div class="content">
+						<h2 class="t-center"> Rellene la solicitud</h2>
+						<form action method="POST" class="offer">
+							<input type="text" name="name" required placeholder="Nombre">
+							<input type="tel" name="phone" required placeholder="Telefono">
+							<button class="btn" type="submit"><span> Hacer pedido</span></button>
+						</form>
+						<p> Deje su solicitud en nuestra pagina-web</p>
+						<p> Le llamaremos en 5 minutos para formalizar el pedido</p>
+						<p> Entrega por mensajeria en 3-5 dias</p>
+					</div>
+					<div class="policy__bot">
+						<div class="policy_wrap"><span> E-OUTLET LLP, Calle de Boldano, 33, 28027 Madrid, Span</span>
+							<a href="/privacypolicy" target="_blank"> Politica de privacidad</a></div>
+					</div>
+
+				</section>
+			</transition>
+			<!-- how buy -->
+			<transition name="tabs">
+				<section v-show="activeSection == 5" class="sect5 scroll">
+					<div class="content">
+						<h2 class="t-center"> BRILLE MAS QUE LAS ESTRELLAS DEL CIELO NOCTURNO</h2>
+						<p> Las chaquetas Silver Coat se han fabricado en una serie limitada de 500 unidades. Solo se pude adquirir aqui - en la pagina-web oficial de la marca.</p>
+						<div class="sect5__list">
+							<div class="sect5__item"><img src="img/icon1.svg" alt><span> Deje su solicitud en nuestra pagina-web</span>
+							</div>
+							<div class="sect5__item"><img src="img/icon2.svg" alt><span> Le llamaremos en 5 minutos para formalizar el pedido</span></div>
+							<div class="sect5__item"><img src="img/icon3.svg" alt><span> Entrega por mensajeria en 3-5 dias</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- about  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 6" class="sect6 scroll about">
+					<div class="content">
+						<h2 class="t-center"> Caracteristicas</h2>
+						<ul>
+							<li> Efecto reflectante</li>
+							<li> Tela impermeable</li>
+							<li> Capucha con cremallera circular</li>
+							<li> Cierre:cremallera</li>
+							<li> 2 bolsillos inclinados</li>
+							<li> 1 bolsillo con cremallera en el pecho</li>
+							<li> Puños elasticos</li>
+							<li> Borde inferior ajustable</li>
+							<li> Acabado de contraste</li>
+						</ul>
+					</div>
+				</section>
+			</transition>
+			<!-- new!  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 7" class="sect7 scroll">
+					<div class="content scroll">
+						<h2> LINEA DE ROPA EXLUSIVA</h2>
+						<p> La empresa DreamWear™ presenta una nueva linea de ropa - chaquetas Silver Coat. La prenda esta fabricada con un tejido ennovador de alta tecnologia,resistente al viento y humedad.<br> El diseño de la chaqueta fue desarrollado por un diseñador moderno, ganador de multiples exposiciones internacionales, Silvester Pen.</p>
+						<br>
+						<img src="img/sect7_pic.jpg" alt>
+					</div>
+				</section>
+			</transition>
+		</main>
+
+		<menu class="bot-menu":class="{ mainscreen: activeSection == 1 }">
+			<div class="bot-menu__wrap">
+				<button @click="activeSection = 1" class="bot-menu__item":class="{active: activeSection == 1}"><span> Inicio</span></button>
+				<button @click="activeSection = 2" class="bot-menu__item":class="{active: activeSection == 2}"><span> Cualidades</span></button>
+				<button @click="activeSection = 3" class="bot-menu__item":class="{active: activeSection == 3}"><span> Opiñones</span></button>
+				<button @click="activeSection = 4" class="bot-menu__item main":class="{active: activeSection == 4}"><span> Hacer un pedido</span></button></div>
+		</menu>
+	</div>
+
+
+
+
+	<script src="js/main.js"></script>
+
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body></html>
