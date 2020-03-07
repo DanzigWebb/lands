@@ -37,6 +37,7 @@
     @include flex(column, center)
     padding-left: 0.2rem
     background-image: url(../../img/sale.svg)
+    background-size: cover
     width: 2.62rem
     height: 0.67rem
     background-repeat: no-repeat
@@ -129,3 +130,86 @@
       display: block
       background-image: url(../../img/tick.svg)
       background-size: contain
+
+.sect3__item
+  @include flex(row, $item: center)
+  margin-bottom: 0.2rem
+  &:nth-child(even)
+    flex-direction: row-reverse
+    
+  p
+    margin: 0
+    padding: 0 .15rem
+    font-size: 0.18rem
+  img
+    flex-shrink: 0
+    width: 1.46rem
+
+
+.sect4
+  height: 3.2rem
+  background-image: url(../../img/sect4.jpg)
+  background-size: cover
+  @include flex(column, center)
+  h2
+    color: #fff
+    margin-bottom: 0.4rem
+    font-weight: 700
+    font-size: 0.35rem
+
+.sect5
+  background-color: #EFEFEF
+.sect5__item
+  margin: 0
+  padding: 0.1rem 0
+  margin-left: -0.15rem
+  padding-left: 0.15rem
+  &:nth-child(odd)
+    background-color: #fff
+    
+.sect6
+  color: #fff
+  background-color: #524741
+  h2
+    color: #fff
+  h3
+    font-weight: 600
+    font-size: 0.25rem
+  img
+    max-width: 0.8rem
+    display: block
+    margin: 0 auto
+  b
+    font-weight: 500
+  p
+    font-weight: 300
+.sect7
+  .reviews__item
+    img
+      width: 2.6rem
+      display: block
+      margin: 0 auto
+  .reviews__name
+    font-weight: 500
+    text-align: center
+    font-size: 0.23rem
+
+
+
+.sect8__grid
+  @include flex(row, center, $wrap: wrap)
+.sect8__item
+  width: 49%
+  text-align: center
+  padding: .2rem
+  box-sizing: border-box
+  img
+    width: 1.56rem
+  p
+    margin: 0
+  b
+    display: block
+    text-transform: uppercase
+
+.offer
+  padding-bottom: 0.3rem

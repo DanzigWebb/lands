@@ -97,14 +97,16 @@ span.accent
 .btn
   @include flex(row, center, center)
   width: 3.28rem
-  height: .78rem
-  margin: auto
+  height: .775rem
+  margin: 0 auto
   background-image: url(../../img/button.png)
   background-size: cover
   color: #fff
   font-weight: bold
   text-decoration: none
   font-size: 0.25rem
+  border: none
+  background-color: transparent
   span
     position: relative
 .border__top
@@ -147,16 +149,17 @@ span.accent
 img
   width: 100%
 
-.pagination-wrap
-  display: flex
-  align-items: center
-  justify-content: center
-  .swiper-pagination-bullet
-    width: 0.45rem
-    height: 0.11rem
-    border-radius: 20px
-    background-color: #F2F2F2
-    opacity: 1
-    margin: 0 3px
-    &-active
-      background-color: #EB8B8B
+.owl-carousel
+  .owl-dots
+    padding: .2rem 0
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+      width: 0.2rem
+      height: 0.2rem
+      border-radius: 50%
+      background-color: #E7E7E7
+      margin: 0 3px
+      &.active
+        background-color: #FFF500
