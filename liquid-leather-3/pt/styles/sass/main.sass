@@ -1,0 +1,204 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro
+  background-image: url(../../img/intro.jpg)
+  background-size: cover
+  padding-bottom: 0.3rem
+.intro__title
+  text-align: center
+  font-weight: 900
+  color: #fff
+  font-size: 0.32rem
+  text-transform: uppercase
+  margin: 0
+  padding: .1rem 0
+  b
+    display: block
+    color: #FFC700
+    font-size: 0.25rem
+    line-height: 1.2
+.intro__prod
+  width: 2rem
+  margin-left: auto
+  display: block
+  margin-right: 0.3rem
+
+
+.intro__price
+  position: relative
+  width: 3.94rem
+  height: .78rem
+
+  z-index: 1
+  margin: auto
+  margin-top: 1.8rem
+  s
+    color: #555
+.price__wrap
+  position: relative
+  background-image: url(../../img/price.svg)
+  background-size: cover
+  font-size: 0.35rem
+  @include flex(row, space-around, center)
+  width: 100%
+  height: 100%
+.intro__sale
+  position: absolute
+  font-size: 0.35rem
+  width: 1rem
+  height: 0.75rem
+  background: #D80000
+  border-radius: 10px
+  text-align: center
+  color: #fff
+  font-weight: bold
+  left: 0
+  right: 0
+  margin: auto
+  top: 0
+  transform: translateY(-70%)
+  z-index: -1
+
+.intro__builets
+  background: #FFFFFF
+  border-radius: 10px
+  width: 4rem
+  margin: 0 auto
+  padding: .3rem .2rem
+  font-size: 0.22rem
+  border-bottom: .08rem #D0D0D0 solid
+.intro__bull
+  position: relative
+  padding-left: 0.35rem
+  font-weight: 500
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 0.24rem
+    height: 0.24rem
+    background-image: url(../../img/check.svg)
+    background-size: contain
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.sect1__bot
+  position: relative
+  margin-top: 0.4rem
+  p
+    font-weight: bold
+    background: #FFC700
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+    border-radius: 10px
+    display: inline-block
+    padding: .05rem
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    white-space: nowrap
+    margin: 0 auto
+    top: -.2rem
+    font-weight: 600
+
+.sect2
+  background-color: #282828
+  color: #fff
+.sect2__item
+  @include flex(row, $item: center)
+  &:nth-child(even)
+    flex-direction: row-reverse
+    
+  img
+    flex-shrink: 0
+    width: 2.1rem
+  p
+    margin: 0
+    margin-top: 0.3rem
+    font-weight: 500
+    padding: 0 .2rem
+
+.sect3
+  @include flex(row, center, center)
+  height: 2.88rem
+  background-image: url(../../img/sect3.jpg)
+  background-size: cover
+  box-sizing: border-box
+
+.sect4__item
+  @include flex(row, $item: center)
+  margin-bottom: 0.3rem
+  &:last-child
+    0
+  p
+    margin: 0
+    b
+      display: block
+      font-weight: 900
+      font-size: 0.23rem
+  img
+    flex-shrink: 0
+    width: 1.14rem
+    margin-right: 0.25rem
+
+.sect5
+  background-color: #1F1F1F
+  color: #fff
+.sect5__item
+  @include flex(row, $item: center)
+  margin-bottom: 0.3rem
+  &:last-child
+    margin-bottom: 0
+  &:nth-child(odd)
+    flex-direction: row-reverse
+    
+  img
+    flex-shrink: 0
+    width: 1.72rem
+  p
+    padding: 0 .2rem
+    margin: 0
+
+.sect6__item
+  margin: 0
+  padding: .07rem 0
+  padding-left: 0.2rem
+  &:nth-child(even)
+    background: rgba(255, 199, 0, 0.2)
+    
+.sect7
+  background-color: #282828
+  
+.owl-carousel
+  .reviews__item
+    background: #FFFFFF
+    border-radius: 20px
+    padding: .3rem 
+    box-sizing: border-box
+    p
+      line-height: 1.2
+  .reviews__head
+    @include flex(row, $item: center)
+    .ava
+      width: 1.1rem
+    .name
+      margin-left: 0.3rem
+      img
+        width: 1.55rem
+
+.sect8__item
+  @include flex(row, $item: center)
+  margin-bottom: 0.3rem
+  &:last-child
+    margin-bottom: 0
+  img
+    width: 1.22rem
+    margin-right: 0.3rem
+  p
+    margin: 0
+    font-weight: 500
