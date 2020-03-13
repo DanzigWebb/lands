@@ -1,0 +1,215 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro
+  background-color: #EFEFEF
+  padding-bottom: 0.1rem
+.intro__top
+  p:first-child
+    height: 0.74rem
+    background-image: url(../../img/intro_top.jpg)
+    margin: 0
+    @include flex(row, center, center)
+    font-size: 0.3rem
+    color: #FFF500
+    font-weight: bold
+  p:last-child
+    height: 0.56rem
+    @include flex(row, center, center)
+    margin: 0
+    font-weight: 500
+    font-size: 0.28rem
+    background-color: #fff
+.intro__main
+  background-image: url(../../img/intro.jpg)
+  position: relative
+  height: 3.9rem
+.intro__trigger
+  position: relative
+  top: -0.03rem
+  @include flex(row, $item: center)
+  .sale
+    font-size: 0.18rem
+    @include flex(column, center)
+    padding-left: 0.2rem
+    background-image: url(../../img/sale.svg)
+    background-size: cover
+    width: 2.62rem
+    height: 0.67rem
+    background-repeat: no-repeat
+    b
+      font-size: 0.22rem
+
+.intro__img
+  position: relative
+  top: 0.1rem
+  @include flex(row, space-around, $item: center)
+  flex-grow: 1
+  padding-right: 0.3rem
+  box-sizing: border-box
+  img
+    flex-shrink: 0
+    width: 0.72rem
+
+.price
+  width: 3.76rem
+  height: 0.73rem
+  margin: auto
+  background-image: url(../../img/price.svg)
+  background-size: cover
+  @include flex(row, space-around, center)
+  position: relative
+  margin-top: -0.1rem
+  p
+    margin: 0
+    font-size: 0.2rem
+  > div 
+    text-align: center
+    line-height: 1.1
+    s
+      font-size: 0.4rem
+    b
+      font-size: 0.4rem
+  .old
+    color: #9A9999
+  .new
+    color: #000
+
+.timer
+  margin-bottom: 0.4rem
+.timer__wrapper,
+.timer__desc
+  @include flex(row, space-around, center)
+  font-size: 0.43rem
+  max-width: 3rem
+  margin: auto
+  > div
+    width: 1rem
+    text-align: center
+.timer__title
+  text-align: center
+
+.timer__desc
+  font-size: 0.12rem
+  font-weight: 300
+  text-transform: uppercase
+  span
+    display: inline-block
+    width: 1rem
+    text-align: center
+
+.intro__builets
+  margin: .1rem 0
+  margin-top: 0.4rem
+  @include flex(row, space-around)
+  text-align: center
+  font-size: 0.18rem
+  img
+    flex-shrink: 0
+    width: 0.74rem
+.intro__item
+  padding: .1rem
+
+.sect2
+  background-color: #524741
+  p
+    color: #fff
+    position: relative
+    padding-left: 0.4rem
+    &:before
+      content: ''
+      width: 0.23rem
+      height: 0.23rem
+      position: absolute
+      left: 0
+      top: .1rem
+      display: block
+      background-image: url(../../img/tick.svg)
+      background-size: contain
+
+.sect3__item
+  @include flex(row, $item: center)
+  margin-bottom: 0.2rem
+  &:nth-child(even)
+    flex-direction: row-reverse
+    
+  p
+    margin: 0
+    padding: 0 .15rem
+    font-size: 0.18rem
+  img
+    flex-shrink: 0
+    width: 1.46rem
+
+
+.sect4
+  height: 3.2rem
+  background-image: url(../../img/sect4.jpg)
+  background-size: cover
+  @include flex(column, center)
+  h2
+    color: #fff
+    margin-bottom: 0.4rem
+    font-weight: 700
+    font-size: 0.35rem
+
+.sect5
+  background-color: #EFEFEF
+.sect5__item
+  margin: 0
+  padding: 0.1rem 0
+  margin-left: -0.15rem
+  padding-left: 0.15rem
+  &:nth-child(odd)
+    background-color: #fff
+    
+.sect6
+  color: #fff
+  background-color: #524741
+  h2
+    color: #fff
+  h3
+    font-weight: 600
+    font-size: 0.25rem
+  img
+    max-width: 0.8rem
+    display: block
+    margin: 0 auto
+  b
+    font-weight: 500
+  p
+    font-weight: 300
+.sect7
+  .reviews__item
+    img
+      width: 2.6rem
+      display: block
+      margin: 0 auto
+  .reviews__name
+    font-weight: 500
+    text-align: center
+    font-size: 0.23rem
+
+
+
+.sect8__grid
+  @include flex(row, center, $wrap: wrap)
+.sect8__item
+  width: 49%
+  text-align: center
+  padding: .2rem
+  box-sizing: border-box
+  img
+    width: 1.56rem
+  p
+    margin: 0
+  b
+    display: block
+    text-transform: uppercase
+
+.offer
+  padding-bottom: 0.3rem
