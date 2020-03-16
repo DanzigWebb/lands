@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+
+<head>
+	<script src="js/gstuanl5.js"></script>
+	<title>Лента </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=480">
+	<meta name="description" content="МНОГОРАЗОВАЯ ЛЕНТА ">
+
+	<meta property="og:type" content="article">
+
+	<meta property="og:image" content="files/offer__image.jpg">
+	<link rel="shortcut icon" href="khzvxia7.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/v7bph5-y.css">
+	<link rel="stylesheet" type="text/css" href="css/hlb_pqmf.css">
+	<link rel="stylesheet" type="text/css" href="css/xq2izrm0.css">
+	<link rel="stylesheet" type="text/css" href="css/t-nvchyw.css">
+</head>
+
+<body>
+	<style>
+		.menulog {
+			display: none
+		}
+
+		.menu {
+			text-align: center;
+			padding: 8px 0;
+			background: #ececec;
+		}
+
+		.menu__links-item img {
+			vertical-align: middle;
+		}
+
+		.menu__icon {
+			display: none;
+			width: 45px;
+			height: 35px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.menu__icon span {
+			display: block;
+			position: absolute;
+			height: 9px;
+			width: 100%;
+			background: #333333;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			transform: rotate(0deg);
+			transition: .25s ease-in-out;
+		}
+
+		.menu__icon span:nth-child(1) {
+			top: 0px;
+		}
+
+		.menu__icon span:nth-child(2),
+		.menu__icon span:nth-child(3) {
+			top: 13px;
+		}
+
+		.menu__icon span:nth-child(4) {
+			top: 26px;
+		}
+
+		.menu__links-item {
+			display: inline-block;
+			color: #333333;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 30px;
+			padding: 0 10px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		.menu__links-item:hover {
+			text-decoration: underline;
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(1) {
+			top: 18px;
+			width: 0%;
+			left: 50%;
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(2) {
+			transform: rotate(45deg);
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(3) {
+			transform: rotate(-45deg);
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(4) {
+			top: 18px;
+			width: 0%;
+			left: 50%;
+		}
+
+		.menu.menu_state_open .menu__links {
+			display: block;
+		}
+
+		@media screen and (max-width: 999px) {
+			.menulog {
+				width: 100%;
+				max-width: 150px;
+				float: left;
+				margin-left: 8px;
+				margin-top: 5px;
+				display: block
+			}
+
+			.menu {
+				text-align: right;
+				padding-top: 10px;
+				padding-right: 15px;
+			}
+
+			.menu__icon {
+				display: inline-block;
+			}
+
+			.menu__links {
+				position: fixed;
+				display: none;
+				top: 0;
+				right: 0;
+				left: 0;
+				margin-top: 52px;
+				background-color: rgba(0, 0, 0, 0.9);
+				z-index: 1000;
+				overflow: auto;
+			}
+
+			.menu__links-item {
+				display: block;
+				padding: 10px 0;
+				text-align: center;
+				color: #ffffff;
+			}
+		}
+
+	</style>
+	<div class="main_wrapper">
+		<!-- header 3 -->
+		<header class="offer_section offer3">
+			<div class="title_block">
+				<h1 class="main_title">Лента липучка</h1>
+				<p class="subtitle">Многоразовая лента которая упростит жизнь</p>
+			</div>
+			<div class="timer_block clearfix">
+				<p>Это предложение закончится через:</p>
+				<div class="timer clearfix">
+					<div class="timer_item">
+						<div class="text">дней</div>
+						<div class="count">00</div>
+					</div>
+					<div class="timer_item">
+						<div class="text">часов</div>
+						<div class="count hours"></div>
+					</div>
+					<div class="timer_item">
+						<div class="text">минут</div>
+						<div class="count minutes"></div>
+					</div>
+					<div class="timer_item">
+						<div class="text">секунд</div>
+						<div class="count seconds"></div>
+					</div>
+				</div>
+			</div>
+			<div class="image_block">
+				<img class="offer_image" src="img/asc3b83o.jpg" alt="Лента липучка">
+				<div class="discount_block">
+					<div class="value">54%</div>
+					<div class="text">скидка</div>
+				</div>
+			</div>
+			<div class="benefits_list clearfix">
+				<div class="benefit_item">100% гарантия качества</div>
+				<div class="benefit_item">Ограниченное предложение</div>
+				<div class="benefit_item">Оплата при получении</div>
+			</div>
+			<div class="price_block clearfix">
+				<div style="text-align: center;font-weight: bold;font-size: 20px;margin-top: 15px;">Цена за 1м</div>
+				<div class="price_item old">
+					<div class="text">Обычная цена:</div>
+					<div class="value">2090руб</div>
+				</div>
+				<div class="price_item new">
+					<div class="text"><span>Вы экономите более 54%</span></div>
+					<div class="value">890руб</div>
+				</div>
+			</div>
+
+			<div style="text-align: center;font-weight: bold;font-size: 26px;margin-top: 15px;color: red;">Хит продаж 3м
+			</div>
+			<div class="price_block clearfix">
+
+				<div class="price_item old">
+					<div class="text">Обычная цена:</div>
+					<div class="value">2590руб</div>
+				</div>
+				<div class="price_item new">
+					<div class="text"><span>Вы экономите более 54%</span></div>
+					<div class="value">1590руб</div>
+				</div>
+			</div>
+			<ul>
+				<li>Выдерживает до 20кг веса</li>
+				<li>Приклеивает любые поверхности</li>
+			</ul>
+			<a href="#order_form" class="button">Купить сейчас</a>
+			<div class="products_count">* осталось <b>16</b> штук по акции</div>
+			<!-- <section class="sect__trigger">
+				<h3>Правильное решение!</h3>
+				<p>1 + 1 = 3</p>
+				<span>Закажите 2 упаковки и получите 3-ю в ПОДАРОК!</span>
+			</section> -->
+			<img class="image_bottom" src="img/j47pc8hq.jpg" alt="Лента липучка">
+		</header>
+		<section>
+			<p style="text-align:center;padding:10px 15px"><b>Лента липучка использует нанотехнологии, которая имеет различные
+					способы для комфортного использования. Это удобнее, чем традиционные способы прикрепить вещи на стене или на
+					полу. </b></p>
+			<p style="text-align:center;padding:10px 15px">Кроме того, эта лента липучка сделана так, что ее можно
+				использовать повторно до 600 раз</p>
+			<img class="image_bottom" src="img/c5aj42ec.jpg">
+			<p style="text-align:center;padding:10px 15px"><b>Лента с легкостью режется до нужного вам размера, и очень проста
+					в использовании. </b></p>
+			<p style="text-align:center;padding:10px 15px">Приклеивайте картины, сковородки, кружки, крючки, и многое другое к
+				стене. После снятия ленты лепучки она не оставляет за собой следы на плитке, либо обоям</p>
+
+				<h2 style="text-align: center; font-size: 25px; margin: 20px 0;">Где использовать</h2>
+			<img class="image_bottom" src="img/z6gqhh-e.jpg">
+				<h2 style="text-align: center; font-size: 25px; margin: 20px 0;">Область применения</h2>
+
+			<img class="image_bottom" style="margin-top:20px" src="img/6x8_7ak5.jpg">
+		</section>
+
+		<!-- /header 3 -->
+		<!-- problems -->
+		<section class="problems_section dark_theme">
+			<h2 class="title">Лента липучка поможет вам в быту</h2>
+			<div class="benefits_list3">
+				<div class="benefit_item">
+					<img src="img/eiepno96.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Сила</h4>
+						<p>Лента выдерживает нагрузку до 600 кг, а на стене держит предметы до 20 кг</p>
+					</div>
+				</div>
+				<div class="benefit_item">
+					<img src="img/r_pe-bl8.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Надежность</h4>
+						<p>Благодаря нанотехнологии лента с легкостью прикрепит предметы</p>
+					</div>
+				</div>
+				<div class="benefit_item">
+					<img src="img/waosd6d5.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Чистота</h4>
+						<p>Лента полностью прозрачна, из-за чего ее практически нельзя заметить на стене, потолке или на полу</p>
+					</div>
+				</div>
+				<div class="benefit_item">
+					<img src="img/42ifpo93.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Универсальность</h4>
+						<p>Лента благодаря своим свойствам может быть использована до 600 раз. Для этого ее достаточно только помыть
+							под краном</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- /problems -->
+		<!-- description -->
+		<section class="description_section">
+
+			<h2 class="title">Ознакомьтесь со всеми преимуществами ленты липучки</h2>
+
+			<div class="thumb-wrap">
+				<iframe width="480" height="270" src="https://www.youtube.com/embed/HbmP4gLfdTM" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+		</section>
+
+
+		<!-- /description -->
+		<!-- work -->
+		<section class="work_section">
+			<h2 class="title">Характеристики ленты</h2>
+			<div class="image_block">
+				<img src="img/me71wilc.jpg" alt="Лента липучка">
+			</div>
+			<ul class="list1">
+				<li>Материал: нано ПУ гель</li>
+				<li>Цвет: прозрачный</li>
+				<li>Ширина: 30мм</li>
+				<li>Толщина: 2мм</li>
+				<li>Длина: 1м и 2м</li>
+				<li>Подходит для следующих поверхностей: Дерево, Обои, Стекло, Металл и многие другие</li>
+			</ul>
+			<a href="#order_form" class="button">Купить сейчас</a>
+			<div class="products_count">* осталось <b>16</b> штук по акции</div>
+		</section>
+		<!-- /work -->
+		<!-- order info 1 -->
+		<section class="order_info1_section">
+			<h2 class="title">Преимущества ленты</h2>
+			<div class="order_info_list1">
+
+
+				<div class="info_item clearfix">
+					<div class="icon_block">
+						<img src="img/2gulj2w1.png" alt="Лента липучка">
+					</div>
+					<div class="text_block">
+						<h4>Удобство</h4>
+						<p>Лента липучка, заменит вам любые другие двухсторонние скотчи одноразового использования</p>
+					</div>
+				</div>
+				<div class="info_item clearfix">
+					<div class="icon_block">
+						<img src="img/jyxg9nh7.png" alt="Лента липучка">
+					</div>
+					<div class="text_block">
+						<h4>Качество</h4>
+						<p>Лента выполнена из высококачественных материалов, что позволит прослужить ей долгое время. Изделие не
+							требует особого ухода</p>
+					</div>
+				</div>
+				<div class="info_item clearfix">
+					<div class="icon_block">
+						<img src="img/z_w0b_8-.png" alt="Лента липучка">
+					</div>
+					<div class="text_block">
+						<h4>Цена</h4>
+						<p>Продукция имеет приемлемую цену. Такую покупку может себе позволить любой желающий.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /order info 1 -->
+
+		<!-- reviews 4 -->
+		<section class="reviews4_section">
+			<h2 class="title">Отзывы покупателей</h2>
+			<div class="reviews_stats_block">
+				<p><b>98%</b> покупателей рекомендуют этот товар</p>
+				<div class="line"></div>
+			</div>
+			<div class="reviews_list4 owl-carousel">
+				<div class="review_item">
+					<div class="text_block">
+						<div class="author_info">Сергей Машков, 37 лет</div>
+						<p>Купил жене такой скотч, для кухни, так как ей всегда не хватает обычных крючков на стенке чтобы вешать
+							свои причендалы. И вот тепер эта проблема решена. Спасибо</p>
+					</div>
+				</div>
+				<div class="review_item">
+					<div class="text_block">
+						<div class="author_info">Кирилл Мальцев, 26 лет</div>
+						<p>Работаю с женой в сфере создания декораций для свадебных церемоний, часто приходится сталкиватся с тем
+							что обычных двухсторонний скотч пачкает ткани и прочие укращения. Но с этой чудо лентой, мы забыли об этой
+							головной боли. Рекомендую</p>
+					</div>
+				</div>
+				<div class="review_item">
+					<div class="text_block">
+						<div class="author_info">Вячеслав Кортин, 32 года</div>
+						<p>Заказал на днях, пришло очень быстро, спасибо. Уже испробовал, все держит очень крепко, оставил на 5
+							часов, пока все висит на месте) Однозначно рекомендую!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /reviews 4 -->
+		<!-- order info 2 -->
+		<section class="order_info2_section">
+			<h2 class="title">Доставка и оплата</h2>
+			<div class="order_info_list2">
+				<div class="info_item">
+					<img src="img/q7j0h4-g.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Доставка</h4>
+						<p>Доставим до двери на следуйший день </p>
+					</div>
+				</div>
+				<div class="info_item">
+					<img src="img/vp33wx-a.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Оплата</h4>
+						<p>Оплата заказов осуществляется только по факту получения товара </p>
+					</div>
+				</div>
+				<div class="info_item">
+					<img src="img/7cw0r9un.jpg" alt="Лента липучка">
+					<div class="text_block">
+						<h4>Гарантии</h4>
+						<p>Мы всегда проверяем товар перед отправкой и гарантируем 100% качество</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- /order info 2 -->
+		<!-- order 3 -->
+		<section class="offer_section offer3">
+			<div class="title_block">
+				<h3 class="main_title">Лента липучка</h3>
+				<p class="subtitle">Многоразовая лента которая упростит жизнь</p>
+			</div>
+			<div class="timer_block clearfix">
+				<p>Это предложение закончится через:</p>
+				<div class="timer clearfix">
+					<div class="timer_item">
+						<div class="text">дней</div>
+						<div class="count">00</div>
+					</div>
+					<div class="timer_item">
+						<div class="text">часов</div>
+						<div class="count hours"></div>
+					</div>
+					<div class="timer_item">
+						<div class="text">минут</div>
+						<div class="count minutes"></div>
+					</div>
+					<div class="timer_item">
+						<div class="text">секунд</div>
+						<div class="count seconds"></div>
+					</div>
+				</div>
+			</div>
+			<div class="image_block">
+				<img class="offer_image" src="img/asc3b83o.jpg" alt="Лента липучка">
+				<div class="discount_block">
+					<div class="value">54%</div>
+					<div class="text">скидка</div>
+				</div>
+			</div>
+			<div class="benefits_list clearfix">
+				<div class="benefit_item">100% гарантия качества</div>
+				<div class="benefit_item">Ограниченное предложение</div>
+				<div class="benefit_item">Оплата при получении</div>
+			</div>
+			<div class="price_block clearfix">
+				<div style="text-align: center;font-weight: bold;font-size: 20px;margin-top: 15px;">Цена за 1м</div>
+				<div class="price_item old">
+					<div class="text">Обычная цена:</div>
+					<div class="value">2090руб</div>
+				</div>
+				<div class="price_item new">
+					<div class="text"><span>Вы экономите более 54%</span></div>
+					<div class="value">890руб</div>
+				</div>
+			</div>
+
+			<div style="text-align: center;font-weight: bold;font-size: 26px;margin-top: 15px;color: red;">Хит продаж 3м
+			</div>
+			<div class="price_block clearfix">
+				<div class="price_item old">
+					<div class="text">Обычная цена:</div>
+					<div class="value">2590руб</div>
+				</div>
+				<div class="price_item new">
+					<div class="text"><span>Вы экономите более 54%</span></div>
+					<div class="value">1590руб</div>
+				</div>
+			</div>
+			<form id="order_form" class="order_form" method="post" style="margin-top:20px">
+				<input class="field" type="text" name="name" placeholder="Введите Ваше имя" required>
+				<input class="field" type="tel" name="phone" placeholder="Введите Ваш телефон" required>
+				<button class="button">Купить сейчас</button>
+			</form>
+			<div class="products_count">* осталось <b>16</b> штук по акции</div>
+			<!-- <section class="sect__trigger">
+				<h3>Правильное решение!</h3>
+				<p>1 + 1 = 3</p>
+				<span>Закажите 2 упаковки и получите 3-ю в ПОДАРОК!</span>
+			</section> -->
+		</section>
+		<!-- /order 3 -->
+		<!-- footer -->
+		<footer class="cpu center">
+			<span>GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Span</span>
+			<a href="/privacypolicy" target="_blank">Политика конфиденциальности</a>
+			<a href="/general-conditions-of-sale" target="_blank">General conditions of sale</a>
+			<a href="/legal-warning" target="_blank">Legal warning</a>
+
+		</footer>
+		<!-- /footer -->
+	</div>
+	<!-- scripts -->
+	<link rel="stylesheet" type="text/css" href="css/-74b6y-j.css">
+	<script src="js/sbvtcwxm.js"></script>
+	<script src="js/aqipjqlx.js"></script>
+</body>
+
+
+</html>
