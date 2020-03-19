@@ -1,0 +1,189 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro__top
+  p
+    @include flex(row, center, center)
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    margin: 0
+    text-align: center
+  p:first-child
+    font-size: 0.36rem
+    font-weight: bold
+    color: #FFD600
+    text-transform: uppercase
+    background: #2D6700
+    height: 0.7rem
+  p:last-child
+    height: 0.8rem
+    background: #49A600
+    font-size: 0.2rem
+    color: #fff
+.sect7
+  .reviews__item
+    img
+      width: 2.6rem
+      display: block
+      margin: 0 auto
+  .reviews__name
+    font-weight: 500
+    text-align: center
+    font-size: 0.23rem
+
+.intro__main
+  height: 4.5rem
+  background-image: url(../../img/intro.jpg)
+  background-size: cover
+  position: relative
+.intro__num
+  @include flex(row, center, center)
+  width: 1.91rem
+  height: 1.23rem
+  background-image: url(../../img/intro_num.svg)
+  background-size: contain
+  background-repeat: no-repeat
+  position: absolute
+  bottom: -0.47rem
+  left: 0
+  color: #fff
+  font-weight: bold
+  span
+    margin-left: -0.1rem
+
+.intro__title
+  text-align: center
+  padding-top: 0.2rem
+
+.intro__price
+  background-image: url(../../img/price.svg)
+  background-size: cover
+  height: 1rem
+  font-size: 0.18rem
+  @include flex(row, space-around, center)
+  > div
+    @include flex(column, center, center)
+    &.old
+      color: #fff
+  s
+    font-weight: bold
+    color: #fff
+    font-size: 0.34rem
+  b
+    color: #000
+    font-size: 0.34rem
+
+
+.intro__builets
+  padding: .2rem 0
+.intro__pull
+  margin-bottom: 0.2rem
+  @include flex(row, $item: center)
+
+  img
+    width: 0.42rem
+    margin-right: 0.2rem
+  p
+    margin: 0
+  
+.intro__balance
+  padding: .3rem 0
+  text-align: center
+  span
+    display: inline-block
+    padding: .05rem .1rem
+    background-color: #2D6700
+    border-radius: 4px
+    color: #fff
+
+.sect1
+  background-color: #F2F2F2
+
+.sect1__grid
+  @include flex(row, space-around, $wrap: wrap)
+  padding-top: 0.3rem
+.sect1__item
+  width: 50%
+  padding: .15rem
+  box-sizing: border-box
+  text-align: center
+
+.sect3
+  background-color: #F2F2F2
+
+.sect3__trigger
+  background: #49A600
+  border-radius: 4px
+  text-align: center
+  color: #fff
+  padding: .2rem
+
+.sect4__builet
+  margin-bottom: 0.35rem
+  &:last-child
+    margin-bottom: 0
+  @include flex(row, $item: start)
+  b
+    display: block
+    font-size: 0.24rem
+    margin-bottom: 0.2rem
+  p
+    margin: 0
+  img
+    width: 0.9rem
+    flex-shrink: 0
+    margin-right: 0.3rem
+
+.sect5
+  background-color: #F2F2F2
+.sect5__content
+  padding-top: .35rem
+.sect5__item
+  border: 1px dashed #767676
+  box-sizing: border-box
+  @include flex(row, $item: center)
+  margin-bottom: 0.15rem
+  &:nth-child(even)
+    flex-direction: row-reverse
+    
+  img
+    width: 2rem
+  p
+    padding: 0 .25rem
+.reviews
+  padding-top: .4rem
+.reviews__head
+  @include flex(row, $item: center)
+.owl-carousel
+  img.reviews__ava
+    width: 0.8rem
+    margin-right: 0.2rem
+  img.reviews__stars
+    width: 1.2rem
+    margin-left: auto
+.reviews__name
+  @include flex(column)
+
+
+.sect7
+  background-color: #F2F2F2
+
+.sect7__content
+  padding-top: 0.3rem
+  @include flex(row, $wrap: wrap)
+.sect7__item
+  width: 50%
+  padding: .2rem
+  padding-bottom: 0
+  box-sizing: border-box
+  p
+    margin-top: 0.1rem
+
+  b
+    display: block
+    font-size: 0.24rem
+  img
+    width: 0.7rem
