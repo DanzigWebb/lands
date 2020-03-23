@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Silver Coat</title>
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
+		rel="stylesheet">
+	<script src="libs/vue/vue.min.js"></script>
+</head>
+
+<body>
+
+	<div id="app">
+		<header class="header">
+			<div class="header__main">
+				<div class="header__logo" @click="activeSection = 1"><img src="img/logo.svg" alt></div>
+			</div>
+
+		</header>
+
+		<main @click="menuShow = false" class="main">
+
+			<!-- main slider  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
+
+					<div class="sect1__heading">
+						<h1><span class="underline"><b> Abbigliamento</b> <span class="low"> hi-tech</span></span> <br> <span
+								class="underline"> di nuova generazione</span></h1>
+					</div>
+					<div class="price">
+						<div class="top"><b> Sconto</b> <span> -50%</span></div>
+						<div class="main">
+							<span> 49€</span>
+							<s> 98€</s>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+								<div class="slide-on-slider">
+									<span> Il tessuto ha un effetto retroriflettente</span>
+									<img src="img/slide.png" alt>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- new!  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 7" class="sect7 scroll">
+					<div class="content scroll">
+						<h2> LINEA DI ABBIGLIAMENTO ESCLUSIVA</h2>
+						<p> L'azienda DreamWear™ presenta una nuova linea di abbigliamento - giacca Silver Coat. Il modello è
+							realizzato
+							in un materiale innovativo ad alta tecnologia, che non teme il vento e l'umidità.<br> Il design della
+							giacca è
+							stato sviluppato da uno stilista moderno e alla moda, vincitore di molte mostre internazionali, Sylvester
+							Pene.
+						</p>
+						<br>
+						<img src="img/sect7_pic.jpg" alt>
+					</div>
+				</section>
+			</transition>
+			<!-- pluses -->
+			<transition name="tabs">
+				<section v-show="activeSection == 2" class="sect2 pluses">
+					<div class="content">
+						<div class="sect2__item active">
+
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.37rem;" src="img/icon_1.svg" alt>
+								</div>
+								<h3> MATERIALI: AD ALTEZZA</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content active"> Le giacche Silver Coat sono realizzate in materiale high-tech
+							FlexTech™. È altamente resistente all'usura, respinge l'acqua e lo sporco e non subisce il vento. Sebbene
+							il tessuto sia estremamente leggero, quasi arioso, trattiene perfettamente il calore.</p>
+						<div class="sect2__item">
+
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.4rem;" src="img/icon_2.svg" alt>
+								</div>
+								<h3> ALLESTIMENTI: PER ANNI</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Le giacche Silver Coat sono equipaggiate con accessori di alta qualità. Le
+							cerniere possono resistere fino a 100 mila aperture/chiusure e rinforzate contro l'umidità, tutte le
+							cuciture sono rinforzate con un tessuto speciale.</p>
+						<div class="sect2__item">
+
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.39rem;" src="img/icon_3.png" alt>
+								</div>
+								<h3> DESIGN: URBANO</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Taglio unisex libero, polsini a contrasto, design laconico, linee rigorose,
+							effetto metallico alla moda e tessuto riflettente - ogni dettaglio della giacca Silver Coat serve a creare
+							un'immagine ultra-stylish.</p>
+						<div class="sect2__item">
+
+							<div class="sect2__heading">
+								<div class="sect2__img">
+									<img style="width: 0.34rem;" src="img/icon_4.png" alt>
+								</div>
+								<h3> FUNZIONALITÀ: TUTTO CIÒ CHE SERVE</h3>
+							</div>
+						</div>
+						<p class="sect2__item-content"> Le giacche Silver Coat sono dotate di 3 tasche.Cerniera con chiusura a
+							cerniera circolare, polsini stretti e un bordo inferiore regolabile in larghezza. Questo modello è stato
+							progettato per la vostra comodità!</p>
+					</div>
+				</section>
+			</transition>
+			<!-- reviews  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 3" class="sect3 reviews scroll">
+					<div class="content">
+						<h2 class="t-center"> Recensioni Silver Coat</h2>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava1.png" alt><span><b> Nome:</b> Renato</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Che bella giacca! L'ho presa per andare in bicicletta nelle giornate nuvolose - e
+									alla fine l'ho indossata per sport e anche per divertimento. Si può passeggiare in un parco a buio - e
+									si vede da lontano. Cucitura di qualità, sembra costosa. Sono molto soddisfatto!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava2.png" alt><span><b> Nome:</b> Alice</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Grazie per la consegna rapida, la giacca è molto bella. Lo indosso con leggings neri
+									e scarpe da ginnastica color argento - sembra molto fashion!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava3.png" alt><span><b> Nome:</b> Daniela</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Ci piace andare con mio marito in bicicletta sul lungomare, abbiamo preso le stesse
+									giacche per lui e per me. Sono fighe! E si possono indossare non solo per lo sport, ma anche per
+									creare diverse immagini alla moda. La qualità è meravigliosa, lo stile è molto pratico.</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava4.png" alt><span><b> Nome:</b> Roberto</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_3.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Prodotto eccellente e di qualità, ha un aspetto molto elegante. Il tessuto è spesso,
+									ma leggero. Tra 2 settimane andrò a sud e proverò la mia giacca!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava5.png" alt><span><b> Nome:</b> Rosalba</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Grazie per la consegna rapida! Il responsabile ha richiamato subito dopo aver
+									lasciato la richiesta. La giacca è arrivata in un pacchetto. La dimensione corrisponde. Molto bella.
+									Brilla di notte, mi sento come una stella!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava6.png" alt><span><b> Nome:</b> Marina</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_2.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> Bellissima giacca! Le cuciture sono uniformi, tessuto di alta qualità, stile di
+									grande successo - tuttavia, come sempre con questa azienda. Sembra buono con jeans, leggings e jogger.
+									Leggera, quasi ariosa! Si siede bene, comodo. Il tessuto è piacevole al tatto. Sono felice e lo
+									consiglio a tutti!!!</span>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="left"><img src="img/ava7.png" alt><span><b> Nome:</b> Raffaele</span></div>
+							<div class="reviews__content">
+								<span class="rate"><b> Voto:</b> <img style="width: 1rem;" src="img/stars_1.svg" alt></span>
+								<span class="geo"><b> Il paese:</b> Italia</span>
+								<span class="main"> L'ho ripresa in autunno come giacca per lo sport. Ogni sera vado in bicicletta,
+									volevo essere visibile sulla strada. La giacca riflette la luce in modo molto luminoso - la si può
+									vedere da lontano. Confortevole, non è calda e non è fredda, il design è divertente. Comoda cerniera,
+									che si chiude sul bordo superiore del cappuccio - se fuori piove, aiuta a nascondersi. Lo
+									consiglio!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+
+			<!-- how buy -->
+			<transition name="tabs">
+				<section v-show="activeSection == 5" class="sect5 scroll">
+					<div class="content">
+						<h2 class="t-center"> Risplendere più delle stelle del cielo notturno</h2>
+						<p> Le giacche Silver Coat sono disponibili in un'edizione limitata di 500 unità. Potete ordinarli solo da
+							noi - sul sito ufficiale del produttore.</p>
+						<div class="sect5__list">
+							<div class="sect5__item"><img src="img/icon1.svg" alt><span> Lascia una richiesta sul nostro sito
+									web</span></div>
+							<div class="sect5__item"><img src="img/icon2.svg" alt><span> Vi richiameremo entro 5 minuti per confermare
+									l'ordine.</span></div>
+							<div class="sect5__item"><img src="img/icon3.svg" alt><span> Consegneremo la merce tramite corriere entro
+									3-5 giorni.</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<!-- about  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 6" class="sect6 scroll about">
+					<div class="content">
+						<h2 class="t-center"> CARATTERISTICHE</h2>
+						<ul>
+							<li> Effetto riflettente</li>
+							<li> Materiale impermeabile all'acqua e al vento</li>
+							<li> Cappuccio con cerniera circolare</li>
+							<li> Chiusura: a cerniera</li>
+							<li> 2 tasche oblique</li>
+							<li> 1 tasca con cerniera sul petto</li>
+							<li> Manette in gomma</li>
+							<li> Bordo inferiore con chiusura regolabile</li>
+							<li> Finitura in contrasto</li>
+						</ul>
+					</div>
+				</section>
+			</transition>
+			<!-- offer  -->
+			<!-- main slider  -->
+			<transition name="tabs">
+				<section v-show="activeSection == 1" class="sect1 gallery">
+
+					<div class="sect1__heading">
+						<h1><span class="underline"><b> Abbigliamento</b> <span class="low"> hi-tech</span></span> <br> <span
+								class="underline"> di nuova generazione</span></h1>
+					</div>
+					<div class="price">
+						<div class="top"><b> Sconto</b> <span> -50%</span></div>
+						<div class="main">
+							<span> 49€</span>
+							<s> 98€</s>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+								<div class="slide-on-slider">
+									<span> Il tessuto ha un effetto retroriflettente</span>
+									<img src="img/slide.png" alt>
+								</div>
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+					<div class="swiper-container gallery-thumbs2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(./img/header_1.png)">
+							</div>
+							<div class="swiper-slide" style="background-image:url(./img/header_2.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_3.png)"></div>
+							<div class="swiper-slide" style="background-image:url(./img/header_4.png)"></div>
+						</div>
+					</div>
+				</section>
+			</transition>
+			<transition name="tabs">
+				<section v-show="activeSection == 4" class="sect4 scroll offer">
+					<div class="content">
+						<h2 class="t-center"> Compila il modulo.</h2>
+						<form action method="POST" class="offer">
+							<input type="text" name="name" required placeholder="Nome:">
+							<input type="tel" name="phone" required placeholder="Telefono:">
+							<button class="btn" type="submit"><span> ORDINA</span></button>
+						</form>
+						<p> Lascia una richiesta sul nostro sito web</p>
+						<p> Vi richiameremo entro 5 minuti per confermare l'ordine.</p>
+						<p> Consegneremo la merce tramite corriere entro 3-5 giorni.</p>
+					</div>
+					<div class="policy__bot">
+						<div class="policy_wrap"><span> E-OUTLET LLP, Piazza Pio XI, 82, 00165 Roma RM, Italy</span>
+								<a href="/privacypolicy" target="_blank">Privacy&nbsp;policy</a>
+								<a href="/general-conditions-of-sale" target="_blank">General&nbsp;conditions&nbsp;of&nbsp;sale</a>
+								<a href="/legal-warning" target="_blank">Legal&nbsp;warning</a></div>
+					</div>
+
+				</section>
+			</transition>
+		</main>
+
+	</div>
+
+
+
+
+	<!-- <script src="js/main.js"></script> -->
+
+	<script src="libs/swiper/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+
+</body>
+
+</html>
