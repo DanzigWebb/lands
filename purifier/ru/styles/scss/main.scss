@@ -317,6 +317,7 @@
     &:before {
       content: "";
       background-image: url(../../img/list.svg);
+      background-size: contain;
       display: block;
       width: 0.24rem;
       height: 0.24rem;
