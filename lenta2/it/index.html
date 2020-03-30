@@ -274,22 +274,6 @@
                 <img class="product__slide " src="img/Magic_Tape7IT.png" data-slider-index="7" alt="Produit">
 
                 <img class="product__slide " src="img/Magic_Tape8IT.png" data-slider-index="8" alt="Produit">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               </div>
               <div class="product__thumbs wow fadeIn" data-slider-thumbs="data-slider-thumbs" data-wow-delay="0.2s">
                 <img class="product__thumb product__thumb--active" src="img/Magic_Tape1IT.png" data-slider-index="1"
@@ -947,8 +931,7 @@
     </footer>
   </div>
   <script src="js/coommon.js"></script>
-  <script>function validateForm(e, t) { if (t.preventDefault(), IS_PREVIEW) return void alert("Order creation is not available in preview mode!"); var i = e.querySelectorAll("select[name='target_geo_hash'] option:checked")[0], n = e.querySelectorAll("input[name='phone']")[0]; return n.value.length < 5 || "string" != typeof n.value ? alert(INCORRECT_PHONE_NUMBER_MSG) : i.value === NOT_SELECTED_TARGET_GEO ? alert(INCORRECT_TARGET_GEO_MSG) : void $.ajax({ type: "POST", url: e.action, data: $(e).serialize(), beforeSend: function () { LeadCreator.disableSubmitBtns() }, success: function (e) { location.href = e.redirect_to }, error: function (e) { var t = JSON.parse(e.responseText).errors, i = void 0, n = ""; for (i in t) { var r = void 0; for (r in t[i]) n += "- " + t[i][r] + "\n" } alert(n), LeadCreator.enableSubmitBtns() } }) } function createTempLead(e) { if (!(IS_PREVIEW || e.value.length < 7)) { var t = e.closest("form"), i = new FormData(t), n = i.get("target_geo_hash"); n !== NOT_SELECTED_TARGET_GEO && "" !== n && void 0 !== n && $.ajax({ type: "POST", url: location.origin + "/temp_lead/create" + location.search, data: $(t).serialize() }) } } function debounce(e, t, i) { var n; return function () { var r = this, a = arguments, o = function () { n = null, i || e.apply(r, a) }, _ = i && !n; clearTimeout(n), n = setTimeout(o, t), _ && e.apply(r, a) } } var TARGET_GEO_LIST = [{ "country_title": "Scegliere la nazione", "country_id": 0, "country_code": "Italia", "target_geo_hash": "00000000", "price": "39\u20ac", "old_price": "78\u20ac" }, { "country_title": "Italia", "country_id": 19, "country_code": "IT", "target_geo_hash": "XQvorrLJ", "price": "39\u20ac", "old_price": "78\u20ac", "discount": "50%", "is_default": 1 }], VISITOR_COUNTRY_ID = 1, VISITOR_COUNTRY_CODE = "{VISITOR_COUNTRY_CODE}", INCORRECT_PHONE_NUMBER_MSG = "Si prega di inserire un numero di telefono attivo", INCORRECT_TARGET_GEO_MSG = "Si prega di selezionare una nazione di destinazione", NOT_SELECTED_TARGET_GEO = "00000000", CREATE_TEMP_LEADS = true, IS_PREVIEW = true, SELECTED_COUNTRY_CODE = null, LeadCreator = { flow: { hash: 'Q4kvoF6w', is_hide_target_geo_list: 0 }, has_fallback_county: !1, initCountriesSelect: function () { var e, t = $(".js-select"), i = $(".target_list_wrap"), n = ""; if (TARGET_GEO_LIST.length > 0) for (var r in TARGET_GEO_LIST) e = VISITOR_COUNTRY_ID === TARGET_GEO_LIST[r].country_id, TARGET_GEO_LIST[r].target_geo_hash === NOT_SELECTED_TARGET_GEO && (this.has_fallback_county = !0), n += '<option value="' + TARGET_GEO_LIST[r].target_geo_hash + '" data-price="' + TARGET_GEO_LIST[r].price + '" data-old_price="' + TARGET_GEO_LIST[r].old_price + '" data-country_code="' + TARGET_GEO_LIST[r].country_code + '" data-discount="' + TARGET_GEO_LIST[r].discount + '"' + (e ? " selected" : "") + ">" + TARGET_GEO_LIST[r].country_title + "</option>", e && (SELECTED_COUNTRY_CODE = TARGET_GEO_LIST[r].country_code); null === SELECTED_COUNTRY_CODE && (SELECTED_COUNTRY_CODE = TARGET_GEO_LIST[0].country_code), t.html(n), t.on("change", function () { var e = $(this).find("option:selected"); SELECTED_COUNTRY_CODE = e.data("country_code"), LeadCreator.changePrices(e.data("price"), e.data("old_price"), e.data("discount")) }), !this.flow.is_hide_target_geo_list && 1 !== TARGET_GEO_LIST.length || this.has_fallback_county || i.hide() }, changePrices: function (e, t, i) { $(".x_currency").text(e), $(".x_currency_old").text(t), $(".x_discount").text(i) }, processFormAttrs: function () { var e = document.querySelectorAll("form.form_order"); if (e.length < 1) return !1; for (var t = 0; t < e.length; t++)e[t].setAttribute("action", ORDER_PAGE_URL), e[t].setAttribute("onsubmit", "return validateForm(this, event);"), e[t].className += " -visor-no-click", "" !== this.flow.hash && e[t].insertAdjacentHTML("afterbegin", '<input type="hidden" name="flow_hash" value="' + this.flow.hash + '">') }, setPhoneFieldsAttrs: function () { var e = document.querySelectorAll("input[name='phone']"); if (e.length < 1) return !1; for (var t = 0; t < e.length; t++)e[t].setAttribute("required", "true"), e[t].setAttribute("pattern", "[+0-9]{6,}"), e[t].className += " -metrika-nokeys", CREATE_TEMP_LEADS && e[t].setAttribute("oninput", "createTempLead(this)") }, setNameFieldsAttrs: function () { var e = document.querySelectorAll("input[name='client']"); if (e.length < 1) return !1; for (var t = 0; t < e.length; t++)-1 !== e[t].className.indexOf("set_required") ? e[t].setAttribute("required", !0) : e[t].removeAttribute("required"), e[t].className += " -metrika-nokeys" }, getDefaultCountyOption: function () { return $(".js-select").first().find("option:selected") }, disableSubmitBtns: function () { $(".submit_btn, [type=submit]").attr("disabled", "disabled").css("opacity", .5).css("pointer-events", "none") }, enableSubmitBtns: function () { $(".submit_btn, [type=submit]").attr("disabled", !1).css("opacity", 1).css("pointer-events", "auto") } }; $(document).ready(function () { App.init() }); var IS_X_PREVIEW = false, App = { init: function () { this.initFbEvents(), LeadCreator.initCountriesSelect(); var e = LeadCreator.getDefaultCountyOption(); LeadCreator.changePrices(e.data("price"), e.data("old_price"), e.data("discount")), LeadCreator.processFormAttrs(), LeadCreator.setPhoneFieldsAttrs(), LeadCreator.setNameFieldsAttrs(), this.initSwipe() }, initFbEvents: function () { try { FBEvents.init(), FBEvents.ViewContent() } catch (e) { console.info(e) } }, initSwipe: function () { if (IS_X_PREVIEW && -1 !== location.href.indexOf("test_swipe")) { $("body").prepend('<img src="/zeusfiles/images/swipe.gif" id="aff_swipe" alt="swipe">'); var e = $(window).height(), t = debounce(function () { 100 - e / $(window).height() * 100 > 40 && ($("#aff_swipe").remove(), $(window).off("resize", t)) }, 100); $(window).resize(t) } } };
-  </script>
+
 </body>
 
 </html>
