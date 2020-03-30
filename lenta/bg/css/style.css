@@ -534,7 +534,8 @@ h2 {
 .use_section .use_item img {
     display: block;
     margin: 0 auto 15px;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     border: 4px solid #f1f1f1;
 
 }
@@ -904,7 +905,7 @@ h2 {
 .order_section .timer_block p {
     margin: 0 0 5px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 14px;
     text-transform: uppercase;
 }
@@ -1299,7 +1300,7 @@ h2 {
     }
 
     .offer_section .subtitle {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 26px;
         letter-spacing: normal;
     }
