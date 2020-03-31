@@ -1,0 +1,45 @@
+.timer {
+    padding-bottom: 0.3rem;
+}
+.timer__wrapper,.timer__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size: 0.8rem;
+    max-width: 3.8rem;
+    font-weight: bold;
+    margin: auto
+}
+
+.timer__wrapper>div,.timer__desc>div {
+    width: 1rem;
+    text-align: center
+}
+
+.timer__title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.timer__desc {
+    font-size: 0.12rem;
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center
+}
