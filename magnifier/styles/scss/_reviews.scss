@@ -1,0 +1,55 @@
+.reviews {
+
+  &__item {
+    padding: .2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    margin: 0.1rem;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.22rem;
+      height: 0.5rem;
+      width: 4px;
+      background: #306EC7;
+    }
+    &:after {
+      content: url(../../img/que.png);
+      width: 0.3rem;
+      position: absolute;
+      top: 0.3rem;
+      right: 0.4rem;
+    }
+
+    .name {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+}
+.owl-carousel {
+  .owl-dots {
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 0.46rem;
+      height: 0.1rem;
+      border-radius: 20px;
+      outline: none;
+      background-color: #fff;
+      margin: 0 3px;
+      &.active {
+        background-color: #306EC7;
+      }
+    }
+  }
+}
