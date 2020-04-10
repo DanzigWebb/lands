@@ -1,0 +1,54 @@
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.32rem;
+    max-width: 3.8rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    text-align: center;
+    font-weight: bold;
+    @include flex(row)
+}
+
+.timer {
+    padding-bottom: 0.3rem;
+    &__wrapper {
+        span {
+            display: inline-flex;
+            width: 0.49rem;
+            height: 0.59rem;
+            background: #ffffff;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            color: #3F3F3F;
+            margin: 0 .03rem;
+            @include flex(row, center, center)
+        }
+    }
+}
+
+.timer__title {
+    text-align: center;
+    margin: 0 0 0.23rem;
+}
+
+.timer__desc {
+    padding-top: 0.1rem;
+    font-size: 0.16rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
