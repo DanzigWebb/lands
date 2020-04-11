@@ -289,7 +289,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .25rem;
     text-align: center;
-
+    b {
+      display: block;
+    }
     img {
       width: 1.16rem;
     }
