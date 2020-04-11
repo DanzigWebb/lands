@@ -45,6 +45,7 @@
       color: #fff;
       @include flex(column, center);
       margin-bottom: 0.1rem;
+      font-size: 0.16rem;
     }
     h2 {
       font-size: 0.46rem;
@@ -245,8 +246,9 @@
     box-sizing: border-box;
   }
   &__item {
-    @include flex(row);
+    @include flex(row, $item: center);
     margin-bottom: 0.39rem;
+
     img {
       width: 27%;
       margin-right: 0.3rem;

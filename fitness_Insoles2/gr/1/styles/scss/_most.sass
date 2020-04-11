@@ -1,0 +1,163 @@
+
+html
+  font-size: 20.833333vw
+  overflow-x: hidden
+  @media (min-width: 481px)
+    font-size: 100px
+
+body
+  font-size: .20rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Noto Sans', sans-serif
+  color: #063060
+  overflow-x: hidden
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.play
+  font-family: 'Playfair Display', sans-serif
+section
+  padding: .3rem 0
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+
+.content
+  padding: 0 .13rem
+  p
+    line-height: 1.5
+    &:last-child
+      margin-bottom: 0
+
+.bg-light
+  background-color: $light
+
+.no-pad
+  margin-left: -0.13rem
+  margin-right: -0.13rem
+  display: block
+  width: 4.8rem
+
+.heading
+  padding: .2rem 0
+
+h2
+  text-align: left
+  font-size: 0.36rem
+  font-weight: bold
+  margin: 0 0 0.2rem 0
+  bottom: .5rem
+  line-height: 1.3
+  text-transform: uppercase
+  b
+    color: #2EE3F7
+
+
+  &.right
+    text-align: right
+  &.big
+    font-size: 0.4rem
+  &.black
+    color: #000
+  &.vait
+    color: vait
+  span
+    color: $accent
+  &.upp
+    text-transform: uppercase
+  b.prod
+    text-transform: uppercase
+    font-weight: bold
+  .offer
+    text-transform: uppercase
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+
+h2 + p
+  margin-top: 0
+
+.btn
+  @include flex(row, center, center)
+  border-radius: 0px 0px 5px 5px
+  background-image: url(../../img/button.png)
+  background-color: transparent
+  background-size: cover
+  color: #fff
+  text-transform: uppercase
+  font-weight: bold
+  text-decoration: none
+  font-size: 0.25rem
+  border: none
+  height: 1.32rem
+  width: 4.4rem
+  margin: 0 auto
+  position: relative
+  margin-top: 0.1rem
+  span
+    top: -0.09rem
+    position: relative
+
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%

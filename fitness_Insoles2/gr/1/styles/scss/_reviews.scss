@@ -1,0 +1,49 @@
+.reviews {
+  &.owl-carousel .owl-item .ava {
+    width: 1.1rem;
+    display: block;
+    margin-right: 0.4rem;
+  }
+
+  &__item {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0.39rem;
+    box-sizing: border-box;
+  }
+  &__header {
+    @include flex(row);
+    p {
+      @include flex(column);
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+
+    b {
+      font-size: 0.26rem;
+    }
+  }
+}
+.owl-carousel {
+  .owl-dots {
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 50%;
+      outline: none;
+      background-color: #CEEDFF;
+      box-shadow: inset 0px 4px 4px rgba(162, 210, 255, 0.5);
+      margin: 0 3px;
+      &.active {
+        background: linear-gradient(180deg, #20aefa 0%, #0078ff 94.79%, #0078ff 94.8%);
+        box-shadow: inset 0px 4px 4px rgba(162, 210, 255, 0.5);
+      }
+    }
+  }
+}
