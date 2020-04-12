@@ -29,7 +29,6 @@
     box-sizing: border-box;
     padding: 0 .4rem;
     text-align: center;
-    text-transform: uppercase;
     padding-bottom: 0.5rem;
     @include flex(row, $item: flex-end);
   }
@@ -182,6 +181,35 @@
   }
   &__after {
     margin-top: -0.8rem;
+  }
+  &__footer {
+    width: 4.8rem;
+    height: 5.92rem;
+    background-image: url(../../img/sect2_footer.png);
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: -0.3rem;
+    margin-bottom: -0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    position: relative;
+    @include flex(row, $item: flex-end);
+    b,
+    p {
+      position: absolute;
+      color: #fff;
+    }
+    p {
+      top: 1.23rem;
+      left: 2.64rem;
+      font-size: 0.26rem;
+    }
+    b {
+      top: 1.92rem;
+      left: 3.03rem;
+      font-size: 0.42rem ;
+    }
   }
 }
 .sect3 {
