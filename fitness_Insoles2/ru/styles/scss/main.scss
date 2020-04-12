@@ -27,7 +27,7 @@
     background-image: url(../../img/intro_2.png);
     background-size: cover;
     box-sizing: border-box;
-    padding: 0 .4rem;
+    padding: 0 0.4rem;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
@@ -89,7 +89,7 @@
     @include flex(row, center, center);
     font-weight: normal;
     span {
-      color: #9D9D9D;
+      color: #9d9d9d;
     }
     p {
       margin: 0 0 0 0.2rem;
@@ -133,10 +133,10 @@
       width: 3.7rem;
     }
   }
-  &__main{
+  &__main {
     padding-top: 0.3rem;
   }
-  &__header{
+  &__header {
     background-color: #fff;
     width: 0.54rem;
     height: 0.54rem;
@@ -144,7 +144,7 @@
     margin: 0 auto;
     border-radius: 100%;
     transform: translateY(-50%);
-    img{
+    img {
       width: 0.54rem;
     }
   }
@@ -173,6 +173,35 @@
     font-size: 0.22rem;
     img {
       width: 1.4rem;
+    }
+  }
+  &__footer {
+    width: 4.8rem;
+    height: 5.92rem;
+    background-image: url(../../img/sect2_footer.png);
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: -0.3rem;
+    margin-bottom: -0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    position: relative;
+    @include flex(row, $item: flex-end);
+    b,
+    p {
+      position: absolute;
+      color: #fff;
+    }
+    p {
+      top: 1.23rem;
+      left: 2.64rem;
+      font-size: 0.26rem;
+    }
+    b {
+      top: 1.92rem;
+      left: 3.03rem;
+      font-size: 0.42rem ;
     }
   }
   &__img {
