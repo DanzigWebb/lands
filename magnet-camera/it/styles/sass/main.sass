@@ -1,0 +1,204 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+@import "land_components"
+
+
+.main__top
+  height: .6rem
+  background-color: $dark
+  color: #fff
+  font-size: 0.3rem
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.main__bg
+  height: 4.3rem
+  background-image: url(../../img/main_bg.png)
+  background-size: cover
+  position: relative
+.main__hit
+  width: 2.04rem
+  height: 0.48rem
+  background-color: $accent
+  font-weight: bold
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 0.18rem
+  position: absolute
+  top: 0.4rem
+  left: 0
+
+.price
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 .4rem
+  height: 0.74rem
+  background-color: $yellow
+  position: relative
+  margin-top: -.5rem
+  s
+    font-size: 0.4rem
+  b
+    font-size: 0.5rem
+  .percent
+    background-image: url(../../img/percent.svg)
+    background-size: cover
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 1.2rem
+    height: 1.05rem
+    top: -0.07rem
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    font-size: 0.5rem
+    font-weight: bold
+.main__bot
+  background-color: $dark
+  padding: .4rem .2rem
+.main__builets
+  margin-bottom: 0.4rem
+.main__bull
+  display: flex
+  font-size: 0.25rem
+  color: #fff
+  margin-bottom: 0.2rem
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 0.2rem
+    margin-right: 0.15rem
+
+.sect2__title
+  text-align: center
+  margin-top: 0.2rem
+  display: block
+  padding: 0 .4rem
+  font-size: 0.25rem
+.sect3
+  background-color: $dark
+  h2
+    color: $yellow
+.sect3__item
+  display: flex
+  margin-bottom: 0.2rem
+  color: #fff
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 0.43rem
+    margin-right: 0.15rem
+
+.sect4__content
+  padding: .4rem 0
+.sect4__item
+  display: flex
+  align-items: center
+  margin-bottom: 0.35rem
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 2.4rem
+  &:nth-child(even)
+    flex-direction: row-reverse
+  p
+    font-weight: 500
+    padding: 0 .15rem
+    margin: 0
+    
+.sect5
+  background-color: $dark
+  color: #fff
+  h2
+    color: #fff
+.video__wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  video
+    max-width: 100%
+.sect6
+  position: relative
+
+.slide-content
+  .avatar
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 0.2rem
+    img
+      width: 1.11rem
+  .rating
+    display: flex
+    align-items: center
+    p
+      margin: 0
+      font-weight: 500
+      padding-right: 0.1rem
+    img
+      flex-shrink: 0
+      width: 1.13rem
+.swiper__nav
+  position: absolute
+  bottom: 7%
+  z-index: 3
+  outline: none
+  img
+    width: 0.3rem
+  &--left
+    left: 0.7rem
+  &--right
+    right: 0.7rem
+
+.sect7
+  background-color: $dark
+  h2
+    color: #fff
+
+.sect7__item
+  display: flex
+  align-items: center
+  color: #fff
+  margin-bottom: 0.25rem
+  &:last-child
+    margin-bottom: 0
+  img
+    flex-shrink: 0
+    width: 1.16rem
+    margin-right: 0.2rem
+  p
+    margin: 0
+.sect7__bot
+  color: #fff
+  text-align: center
+  font-size: 0.27rem
+  display: block
+  padding-top: 0.15rem
+
+footer
+  .main__top
+    background-color: $yellow
+    color: #000
+
+.offer
+  background-color: $dark
+  padding-bottom: 0.4rem
+
+
+#modal-btn
+  margin: .3rem auto
+  font-size: 0.26rem
