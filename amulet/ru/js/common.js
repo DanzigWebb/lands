@@ -23,3 +23,17 @@ $(document).ready(function () {
     navText: ['<img src="img/left.svg" alt="">', '<img src="img/right.svg" alt="">']
   });
 });
+
+const url = 'https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc'
+const githubRequest = async () => fetch(url)
+  .then(res => res.json())
+  // .map(res => res.)
+// const log = res => console.log(res);
+const log = async () => {
+  const res = await githubRequest();
+  const extract = res.items;
+  const maped = extract.map(item => item.id)
+  return maped.reduce((acc, item) => acc + item, 0)
+}
+
+log().then(console.log)
