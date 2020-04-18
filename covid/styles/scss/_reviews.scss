@@ -6,13 +6,38 @@
 }
 
 .owl-carousel .owl-dots button {
-	width: 0.56rem;
-	height: 0.08rem;
-	border-radius: 5px;
-	background-color: #E7E7E7;
+	width: 0.2rem;
+	height: 0.2rem;
+	border: .05rem solid #FFF;
+	box-sizing: border-box;
+	border-radius: 100%;
+	background-color: #E0E0E0;
 	margin: 0 3px;
+	transition: .4s ease all;
+	outline: none;
 }
 
 .owl-carousel .owl-dots button.active {
-	background-color: #6CED90;
+	background: linear-gradient(180deg, #9EFCFF 0%, #1DBBFF 100%);
+	border: none
+}
+
+.owl-carousel .owl-nav {
+	position: absolute;
+	top: 40%;
+	left: .2rem;
+	right: .2rem;
+	@include flex(row, space-between);
+	outline: none;
+
+	@media (max-width: 480px) {
+		left: 0;
+		right: 0;
+	  }
+
+	& button {
+		outline: none;
+		width: 0.4rem;
+		height: 0.4rem;
+	}
 }

@@ -23,16 +23,3 @@ $(document).ready(function () {
     animateOut: 'fadeOut',
   });
 });
-
-
-$(document).ready(function () {
-  $(".slider").owlCarousel({
-    margin: 20,
-    items: 1,
-    dots: true,
-    nav: true,
-    loop: true,
-    navText: ['<img src="img/left.svg"></img>', '<img src="img/right.svg"></img>'],
-    autoHeight: true,
-  });
-});
