@@ -55,6 +55,9 @@ body {
 	text-decoration: none;
 	box-sizing: border-box;
 	transition: 0.8s ease all;
+	border: none;
+	font-family: inherit;
+	cursor: pointer;
 
 	span + span {
 		color: rgba(255, 255, 255, 0.7);
@@ -167,4 +170,9 @@ img {
 			top: 0;
 		}
 	}
+}
+
+
+h1, h2, h3, h4, h5 {
+	font-family: "Roboto", sans-serif;
 }

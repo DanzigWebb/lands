@@ -15,6 +15,7 @@
 	<!-- <link
 		href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;display=swap&amp;subset=cyrillic-ext"
 		rel="stylesheet" /> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -30,12 +31,12 @@
 					</div>
 				</div>
 				<nav class="header__nav">
-					<a href="" class="header__link active">Главная</a>
-					<a href="" class="header__link">Продукция</a>
-					<a href="" class="header__link">Технология</a>
-					<a href="" class="header__link">Covid-19</a>
-					<a href="" class="header__link">Доставка</a>
-					<a href="" class="header__link">Купить</a>
+					<a href="#main" class="header__link">Главная</a>
+					<a href="#prod" class="header__link">Продукция</a>
+					<a href="#tech" class="header__link">Технология</a>
+					<a href="#faq" class="header__link">Covid-19</a>
+					<a href="#schema" class="header__link">Доставка</a>
+					<a href="#offer" class="header__link">Купить</a>
 				</nav>
 				<button class="header__btn">
 					<img src="img/menu.svg" alt="">
@@ -44,25 +45,28 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main" id="main">
 		<section class="intro">
 			<div class="container">
 				<div class="intro__wrapper">
 					<div class="heading">
 						<h1 class="title">Ультрафиолетовые <br> облучатели открытого типа</h1>
 						<h3 class="subtitle subtitle--intro">для борьбы с вирусами и болезнетворными бактериями </h3>
+						<div class="intro__prod mob">
+							<img src="img/prod.png" alt="">
+						</div>
 						<p class="intro__txt">Наши облучатели помогут избавиться от патогенов в воздухе и на
 							поверхностях всего <b class="accent">за 30 минут.</b> </p>
 						<a href="#offer" class="intro__btn btn"><span>купить за 6 500₽</span><span>9300₽</span></a>
 					</div>
-					<div class="intro__prod">
+					<div class="intro__prod desc">
 						<img src="img/prod.png" alt="">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" id="prod">
 			<div class="container">
 				<h2 class="title">УФ облучатель 15W</h2>
 
@@ -116,7 +120,7 @@
 			</div>
 		</section>
 
-		<section class="tech">
+		<section class="tech" id="tech">
 			<div class="container">
 				<div class="tech__wrapper">
 					<div class="tech__item beforeafter">
@@ -153,25 +157,170 @@
 			</div>
 		</section>
 
-		<section class="faq">
+		<section class="faq" id="faq">
+
+			<img src="img/covid.png" alt="" class="faq__covid">
+
 			<div class="container">
 				<div class="faq__wrapper">
 					<div class="faq__item">
 						<h2 class="title">COVID-19 вопросы и ответы</h2>
-						<p class="faq__bed">Узнайте больше о COVID-19 здесь:</p>
-						<nav class="faq__links">
-							<a href="" class="faq__link">
-								<img src="img/brand1.png" alt="">
-							</a>
-							<a href="" class="faq__link">
-								<img src="img/brand2.png" alt="">
-							</a>
-						</nav>
+						<div class="fq__design-colapse desc">
+							<p class="faq__bed">Узнайте больше о COVID-19 здесь:</p>
+							<nav class="faq__links">
+								<a href="" class="faq__link">
+									<img src="img/brand1.png" alt="">
+								</a>
+								<a href="" class="faq__link">
+									<img src="img/brand2.png" alt="">
+								</a>
+							</nav>
+						</div>
+					</div>
+					<div class="faq__item">
+						<div class="acca">
+							<div class="acca__item">
+								<p><span class="ticket"><img src="img/plus.svg" alt=""></span>Эффективен ли
+									ультрафиолетовый свет против коронавируса?</p>
+								<div class="hidden-content">УФ-дезинфекция губительна для большинства известных
+									коронавирусов, однако какая доза ультрафиолета будет эффективна против штамма
+									2019-nCov, сказать сложно, поскольку он малоизучен. Тем не менее, по регламенту
+									борьбы с COVID-19 во многих странах активно используются ультрафиолетовые лампы
+									открытого типа для кварцевания помещений и дезинфекции спецодежды медперсонала. Так,
+									Роспотребнадзор опубликовал на своем официальном сайте рекомендации для
+									работодателей по профилактике коронавирусной инфекции на рабочих местах. Среди них –
+									обеззараживание воздуха в рабочих помещениях с помощью бактерицидных УФ-ламп.
+								</div>
+							</div>
+							<div class="acca__item">
+								<p><span class="ticket"><img src="img/plus.svg" alt=""></span>Можно ли дезинфицировать
+									воздух с помощью УФ-излучателей?</p>
+								<div class="hidden-content">Ультрафиолетовые облучатели открытого типа, которые вы
+									можете заказать на нашем сайте, эффективно обеззараживают воздух в помещениях
+									площадью 20м2 за <b>30 минут</b> кварцевания.
+									<br><br>
+									<b>Важно!</b> Во время сеанса рекомендуется покидать комнату.</div>
+							</div>
+							<div class="acca__item">
+								<p><span class="ticket"><img src="img/plus.svg" alt=""></span>Можно ли дезинфицировать
+									поверхности с помощью УФ-излучателей?</p>
+								<div class="hidden-content">Облучатели открытого типа идеально подходят для
+									обеззараживания поверхностей. Расположите в прихожей предметы, которые хотите
+									продезинфицировать, так, чтобы излучение лампы было направлено на них. Покиньте
+									помещение на 30 минут. За это время патогенные организмы, которые могли попасть на
+									поверхность предметов, погибнут.</div>
+							</div>
+						</div>
+						<div class="fq__design-colapse mob">
+							<p class="faq__bed">Узнайте больше о COVID-19 здесь:</p>
+							<nav class="faq__links">
+								<a href="" class="faq__link">
+									<img src="img/brand1.png" alt="">
+								</a>
+								<a href="" class="faq__link">
+									<img src="img/brand2.png" alt="">
+								</a>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<section class="schema" id="schema">
+			<div class="container">
+				<h2 class="schema__title">Схема оформления заказа</h2>
+				<div class="schema__grid">
+					<div class="schema__item">
+						<img src="img/ic1.png" alt="">
+						<p>Оставьте заявку</p>
+					</div>
+					<div class="schema__item">
+						<img src="img/ic2.png" alt="">
+						<p>Подтвердите заказ</p>
+					</div>
+					<div class="schema__item">
+						<img src="img/ic3.png" alt="">
+						<p>Ожидайте доставку на следующий день</p>
+					</div>
+					<div class="schema__item">
+						<img src="img/ic4.png" alt="">
+						<p>Оплатите заказ курьеру при получении</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer" id="offer">
+			<div class="container">
+				<div class="offer__content">
+					<p class="offer__title">С нашими УФ-облучателями ваш дом будет <span class="accent">под надежной
+							защитой</span> от вирусов и бактерий!</p>
+
+					<form action="" method="POST" class="offer__form">
+						<div class="offer__input name">
+							<input type="text" required name="name" placeholder="Ваще имя">
+						</div>
+						<div class="offer__input phone">
+							<input type="text" required placeholder="Ваш телефон">
+						</div>
+						<button href="#offer" class="btn"><span>купить за 6 500₽</span><span>9300₽</span></button>
+						<div class="offer__checkbox">
+							<input type="checkbox"> <span>Вы соглашаетесь <a href="#">с условиями</a> на обработку <br>
+								персональных данных</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<img src="img/offer_mob.png" alt="" class="offer_bg-mob">
+		</section>
+		<div class="container">
+			<div class="quest">
+				<h2 class="title quest__title">Остались вопросы?</h2>
+				<p>Закажите обратный звонок, <br>
+					и мы перезвоним вам через 10 минут!</p>
+				<form action="" class="quest__form">
+					<div class="offer__input name">
+						<input type="text" required name="name" placeholder="Ваще имя">
+					</div>
+					<div class="offer__input phone">
+						<input type="text" required placeholder="Ваш телефон">
+					</div>
+					<button href="#offer" class="btn"><span>Перезвоните мне</span></button>
+				</form>
+			</div>
+		</div>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<p>Все права защищены</p>
+				<div class="footer__channels">
+					<a href="mailto:Ulamp@mail.ru" class="footer__email">
+						<img src="img/f-mail.svg" alt=""> Ulamp@mail.ru
+					</a>
+					<a href="tel:88001006605" class="footer__email">
+						<img src="img/f-phone.svg" alt="">8&nbsp;(800)&nbsp;100-66-05
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<nav class="mob__nav">
+		<div class="mob__nav-close">
+			<img src="img/close.svg" alt="">
+		</div>
+		<div class="mob__wrapper">
+			<a href="#main" class="mob__link">Главная</a>
+			<a href="#prod" class="mob__link">Продукция</a>
+			<a href="#tech" class="mob__link">Технология</a>
+			<a href="#faq" class="mob__link">Covid-19</a>
+			<a href="#schema" class="mob__link">Доставка</a>
+			<a href="#offer" class="mob__link">Купить</a>
+		</div>
+	</nav>
 
 	<script src="libs/carousel/owl.carousel.min.js"></script>
 	<script src="js/timer.js"></script>
