@@ -79,6 +79,9 @@ p {margin-bottom: 20px;}
 
 h1,h2,h3,h4,h5,h6{font-family: 'AvenirNextCyr', sans-serif; font-weight: 700; text-transform: uppercase;line-height: 1.2em;}
 b,strong{font-weight: 700;}
+html {
+    overflow-x: hidden;
+}
 body{
     width: 100%;
     min-width: 320px;
@@ -90,6 +93,7 @@ body{
     line-height: 1.5em;
     color: #333333;
     background: #fff;
+    overflow-x: hidden;
 }
 section{
     width: 100%;
