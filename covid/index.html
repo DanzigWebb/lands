@@ -17,6 +17,7 @@
 		rel="stylesheet" /> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
 <body>
@@ -168,10 +169,13 @@
 						<div class="fq__design-colapse desc">
 							<p class="faq__bed">Узнайте больше о COVID-19 здесь:</p>
 							<nav class="faq__links">
-								<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="faq__link">
+								<a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+									class="faq__link">
 									<img src="img/brand1.png" alt="">
 								</a>
-								<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="faq__link">
+								<a target="_blank"
+									href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+									class="faq__link">
 									<img src="img/brand2.png" alt="">
 								</a>
 							</nav>
@@ -257,16 +261,16 @@
 					<p class="offer__title">С нашими УФ-облучателями ваш дом будет <span class="accent">под надежной
 							защитой</span> от вирусов и бактерий!</p>
 
-					<form action="" method="POST" class="offer__form">
+					<form action="order.php" method="POST" class="offer__form">
 						<div class="offer__input name">
 							<input type="text" required name="name" placeholder="Ваще имя">
 						</div>
 						<div class="offer__input phone">
-							<input type="text" required placeholder="Ваш телефон">
+							<input type="text" name="phone" required placeholder="Ваш телефон">
 						</div>
 						<button href="#offer" class="btn"><span>купить за 6 500₽</span><span>9300₽</span></button>
 						<div class="offer__checkbox">
-							<input type="checkbox"> <span>Вы соглашаетесь <a href="#">с условиями</a> на обработку <br>
+							<input type="checkbox" checked> <span>Вы соглашаетесь <a href="#">с условиями</a> на обработку <br>
 								персональных данных</span>
 						</div>
 					</form>
@@ -279,12 +283,12 @@
 				<h2 class="title quest__title">Остались вопросы?</h2>
 				<p>Закажите обратный звонок, <br>
 					и мы перезвоним вам через 10 минут!</p>
-				<form action="" class="quest__form">
+				<form action="order.php" method="POST" class="quest__form">
 					<div class="offer__input name">
 						<input type="text" required name="name" placeholder="Ваще имя">
 					</div>
 					<div class="offer__input phone">
-						<input type="text" required placeholder="Ваш телефон">
+						<input type="text" name="phone" required placeholder="Ваш телефон">
 					</div>
 					<button href="#offer" class="btn"><span>Перезвоните мне</span></button>
 				</form>
@@ -323,9 +327,10 @@
 	</nav>
 
 	<script src="libs/carousel/owl.carousel.min.js"></script>
+	<script src="js/mask.js"></script>
 	<script src="js/timer.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/slider.js"></script>
+
 </body>
 
 </html>
