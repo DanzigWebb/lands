@@ -14,10 +14,11 @@
     box-sizing: border-box;
     font-size: 0.28rem;
     font-weight: bold;
-    padding-top: 0.14rem;
+    @include flex(row, center, center);
     &--header {
       border-radius: 0px 14px 14px 0px;
       width: 2.49rem;
+      font-size: 0.2rem;
     }
     &--footer {
       width: 100%;
