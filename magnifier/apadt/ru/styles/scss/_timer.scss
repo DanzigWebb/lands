@@ -21,7 +21,10 @@
 
 .timer__title {
     text-align: center;
-    margin:0 0 0.23rem ;
+    margin:0 0 0.23rem;
+    @media (min-width: 772px) {
+        margin-bottom: 0.1rem;
+    }
 }
 
 .timer__desc {

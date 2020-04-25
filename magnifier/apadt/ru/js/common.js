@@ -19,6 +19,13 @@ $(document).ready(function () {
     items: 1,
     dots: true,
     nav: false,
-    autoHeight: true
+    autoHeight: true,
+    responsive: {
+
+      // breakpoint from 768 up
+      900: {
+        items: 3
+      }
+    }
   });
 });

@@ -5,15 +5,32 @@
 @import "reviews";
 @import "timer";
 
+
 // ###############################
 // dashas code
 // ###############################
 .intro {
   background: #efefef;
   padding-bottom: 0.1rem;
+  @media (min-width: 772px) {
+    background-image: url(../../img/header_desc.png);
+    background-size: cover;
+    background-position: -4rem;
+    @include flex(column, center, center);
+    position: relative;
 
+    &:before {
+      content: url(../../img/prod.png);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+  }
   &__top {
-    p {
+    @media (min-width: 772px) {
+      width: 100%;
+    }
+    p:first-child {
       height: 0.78rem;
       text-align: center;
       margin: 0;
@@ -25,11 +42,32 @@
       text-align: center;
       text-transform: uppercase;
     }
-  }
+    p:last-child {
+      width: 100%;
+      margin: 0;
+      background-color: #fff;
+      width: 100%;
+      padding: .1rem;
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  } 
   &__main {
     position: relative;
     background-image: url(../../img/intro.jpg);
     height: 3.9rem;
+    background-size: cover;
+    @media (min-width: 481px) {
+      height: 6rem;
+    }
+    @media (min-width: 772px) {
+      background-image: none;
+      height: 0;
+      width: 100%;
+    }
+
   }
   &__trigger {
     .sale {
@@ -43,7 +81,15 @@
       height: 0.84rem;
       background-repeat: no-repeat;
       @include flex(column, center, center);
-
+      @media (min-width: 772px) {
+        background-image: url(../../img/plank.png);
+        position: absolute;
+        top: 0;
+        left: 10%;
+      }
+      @media (max-width: 480px) {
+        right: 0;
+      }
       b {
         font-size: 0.13rem;
         font-weight: bold;
@@ -61,6 +107,17 @@
     margin: 0 0.3rem;
     color: #000;
     font-weight: bold;
+    @media (min-width: 772px) {
+      max-width: 4.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 .3rem;
+      box-sizing: border-box;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    
   }
   &__item {
     margin: 0 0.15rem;
@@ -74,8 +131,36 @@
       margin: 0;
     }
   }
+
+  &__wrapper {
+    position: relative;
+    @media (min-width: 772px) {
+      margin-left: auto;
+      margin-right: 10%;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+      
+      width: 4.8rem;
+      margin-left: auto;
+      background-color: #F1F1F1;
+      @include flex(column, center, center);
+      border-radius: 20px;
+      box-sizing: border-box;
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 4rem;
+      }
+    }
+  }
+  &__bottom {
+    box-sizing: border-box;
+    padding-bottom: 0.2rem;
+  }
 }
 .price {
+  max-width: 4.8rem;
+
   background-image: url(../../img/sale.png);
   background-size: cover;
   @include flex(row, space-around, center);
@@ -87,6 +172,11 @@
   line-height: 0.32rem;
   font-weight: bold;
   color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 772px) {
+    
+  }
   div {
     width: 1.6rem;
   }
@@ -128,6 +218,9 @@
     grid-gap: 0.19rem;
     padding-top: 0.35rem;
     font-size: 0.22rem;
+    max-width: 800px;
+    margin: 0 auto;
+
     b {
       display: block;
     }
@@ -135,6 +228,13 @@
       margin-top: 0;
       font-weight: 400;
       line-height: 0.26rem;
+    }
+  }
+
+  &__row {
+    @media (min-width: 772px) {
+      max-width: 50%;
+      justify-self: center;
     }
   }
 
@@ -146,8 +246,15 @@
 
 .builets {
   margin-top: 0.6rem;
+  max-width: 4.8rem;
+  margin-left: auto;
+  margin-right: auto;
   @include flex(row, space-around, center);
-
+  @media (min-width: 772px) {
+    padding: 0 .15rem;
+    box-sizing: border-box;
+    width: 4.8rem;
+  }
   &__item {
     @include flex(row, center, flex-end);
     background-color: #ffffff;
@@ -179,6 +286,10 @@
 .sect1 {
   background: linear-gradient(180deg, #ba1a5d 0%, #306ec7 99.39%);
   padding-bottom: 0;
+  @media (min-width: 1200px) {
+    padding: .4rem 0;
+    padding-top: 1rem;
+  }
   p {
     margin: 0 0 0.34rem 0;
     font-weight: normal;
@@ -186,6 +297,15 @@
   &__list {
     @include flex(column);
     padding-top: 0.3rem;
+    @media (min-width: 481px) {
+      margin: 0 auto;
+      max-width: 4.8rem;
+    }
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+    }
   }
   &__item {
     margin-bottom: 0.3rem;
@@ -201,6 +321,24 @@
       margin: 0;
     }
   }
+
+  @media (min-width: 481px) {
+    .no-pad {
+      margin: 0 auto;
+      flex-shrink: 0;
+
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .content {
+      @include flex(row, $item: flex-start);
+      .no-pad {
+        margin-right: 0.2rem;
+        width: 50%;
+      }
+    }
+  }
 }
 
 .sect2 {
@@ -211,8 +349,39 @@
 
   &__content {
     padding: 0 0.2rem;
+    @media (max-width: 1100px) {
+      .man {
+        display: none;
+      }
+    }
+    @media (min-width: 481px) {
+      @include flex(column, center, center)
+    }
+    @media (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: repeat(2, 4.8rem);
+      justify-content: center;
+      max-width: 8rem;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+      img.another {
+        width: 100%;
+      }
+    }
+    
   }
-
+  img {
+    max-width: 4.8rem;
+    &.another {
+      width: 4.8rem; display: block;
+      @media (max-width: 480px) {
+        width: 4.2rem;
+        margin: 0 auto;
+      }
+    }
+  }
   &__item {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -223,7 +392,11 @@
     margin-right: 0.2rem;
     position: relative;
     z-index: 2;
-
+    max-width: 4.6rem;
+    box-sizing: border-box;
+    @media (min-width: 1400px) {
+      flex-shrink: 0;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -252,6 +425,17 @@
 .sect3 {
   background: linear-gradient(180deg, #ba1a5d 0%, #306ec7 99.39%);
 
+  &__wrapper {
+    @media (min-width: 480px) {
+      max-width: 4.8rem;
+      margin: 0 auto;
+    }
+    @media (min-width: 980px) {
+      @include flex(row, center, center);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
   &__content {
     padding: .35rem 0;
   }
@@ -308,5 +492,18 @@
       left: 0;
       top: 0;
     }
+  }
+}
+
+.desc {
+  display: none;
+  @media (min-width: 772px) {
+    display: block;
+  }
+}
+.mob {
+  display: block;
+  @media (min-width: 772px) {
+    display: none;
   }
 }
