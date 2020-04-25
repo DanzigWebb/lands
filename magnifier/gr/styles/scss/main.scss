@@ -86,6 +86,7 @@
   text-align: center;
   line-height: 0.32rem;
   font-weight: bold;
+  color: #000;
   div {
     width: 1.6rem;
   }
@@ -98,9 +99,12 @@
   p {
     margin: 0;
     font-size: 0.15rem;
+    padding-bottom: 0.1rem;
   }
   .discount {
     padding-right: 0.1rem;
+    padding-top: 0.3rem;
+    color: #fff;
     p {
       font-weight: normal;
 
@@ -112,7 +116,7 @@
   }
   b,
   s {
-    font-size: 0.3rem;
+    font-size: 0.6rem;
   }
 }
 .sect5 {
@@ -194,7 +198,7 @@
       font-weight: bold;
       padding-left: 0.1rem;
       align-self: center;
-      margin-top: 0;
+      margin: 0;
     }
   }
 }
