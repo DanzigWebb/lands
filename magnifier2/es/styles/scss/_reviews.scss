@@ -1,0 +1,63 @@
+.reviews {
+  .ava {
+    width: 0.7rem;
+    margin-right: 0.16rem;
+  }
+  &__name{
+    font-weight: 800;
+    font-size: 0.18rem;
+    margin-top:0;
+    margin-bottom: 0.07rem;
+
+  }
+  &__comment{
+    margin-top: 0;
+  }
+  &__img {
+    width: 2.45rem;
+  }
+  &__comment {
+    font-size: 0.18rem;
+  }
+  &__img{
+    margin-bottom: 0.18rem;
+  }
+  &__top {
+    @include flex(row, left, start);
+    background: #f8f8f8;
+    width: 4.2rem;
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 0;
+    padding: 0.2rem;
+    font-size: 0.15rem;
+    margin-bottom: 0.2rem;
+    &--date {
+      margin-left: 2.6rem;
+      
+    }
+  }
+  &__bot {
+    @include flex (row,space-between,start);
+    background: #3667C6;
+    color: #fff;
+    width: 4.2rem;
+    
+    box-sizing: border-box;
+     border-radius: 20px 20px 0px 20px;
+     padding: 0.2rem;
+     img{
+       margin-left: 0.18rem;
+       
+     }
+   &--date{
+     margin-right:3rem;
+     font-size: 0.15rem;
+   }
+.box{
+  text-align: right;
+}
+  }
+}
+.box{
+  width: 3.02rem;
+}
