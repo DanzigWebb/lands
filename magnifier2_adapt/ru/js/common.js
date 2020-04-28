@@ -18,9 +18,8 @@ $(document).ready(function () {
     margin: 20,
     items: 1,
     dots: true,
-    autoHeight: true
+    nav: false,
+    autoHeight: true,
+    animateOut: 'fadeOut',
   });
 });
-
-const b = document.querySelector('.sect2 p b');
-b.style.cssText = 'display: block; margin-bottom: 0.1rem';
