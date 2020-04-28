@@ -21,3 +21,7 @@ $(document).ready(function () {
     autoHeight: true
   });
 });
+
+
+const b = document.querySelector('.sect2 p b');
+b.style.cssText = 'display: block; margin-bottom: 0.1rem';
