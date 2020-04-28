@@ -1,0 +1,43 @@
+.timer {
+    padding: 0.11rem;
+    border: 2px solid #00a499;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 3.38rem;
+    margin: 0 auto;
+
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.35rem;
+    max-width: 2rem;
+    margin: auto;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 1rem;
+    text-align: center;
+}
+
+.timer__title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.timer__desc {
+    font-size: 0.12rem;
+    font-weight: 300;
+    
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
