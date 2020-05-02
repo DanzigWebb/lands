@@ -1,5 +1,8 @@
 .timer {
   color: #fff;
+  @media (max-width: 480px) {
+    padding: .2rem;
+  }
 }
 .timer__wrapper,
 .timer__desc {
@@ -43,6 +46,9 @@
   color: #fff;
   font-weight: bold;
   padding-right: 0.2rem;
+  @media (max-width: 480px) {
+    margin-bottom: 0.15rem;
+  }
 }
 
 .timer__desc {
