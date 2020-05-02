@@ -527,6 +527,7 @@
     @media (max-width: 840px) {
       height: auto;
       @include flex(row);
+      align-items: center;
       flex-wrap: wrap;
       width: 100%;
     }
