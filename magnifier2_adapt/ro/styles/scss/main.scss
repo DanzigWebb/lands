@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: 3fr 5fr;
     grid-gap: 0.3rem;
+    margin-bottom: 0.35rem;
     @media (max-width: 1200px) {
       margin-bottom: 0.3rem;
     }
@@ -40,13 +41,13 @@
       background-image: url(../../img/sale.png);
       background-size: contain;
       @include flex(row, center, center);
-      font-size: 0.3rem;
+      font-size: 0.2rem;
       font-weight: bold;
       text-align: center;
       color: #fff;
-      line-height: 0.8;
+      line-height: 1.2;
       span {
-        font-size: 0.16rem;
+        font-size: 0.36rem;
         text-transform: uppercase;
         font-weight: bold;
       }
