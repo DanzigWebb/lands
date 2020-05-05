@@ -41,13 +41,13 @@
       background-image: url(../../img/sale.png);
       background-size: contain;
       @include flex(row, center, center);
-      font-size: 0.2rem;
+      font-size: 0.36rem;
       font-weight: bold;
       text-align: center;
       color: #fff;
-      line-height: 1.2;
+      line-height: .7;
       span {
-        font-size: 0.36rem;
+        font-size: 0.16rem;
         text-transform: uppercase;
         font-weight: bold;
       }
@@ -193,7 +193,7 @@
         font-size: 0.3rem;
         font-weight: bold;
         @media (max-width: 481px) {
-          font-size: 0.4rem;
+          font-size: 0.35rem;
         }
       }
     }
@@ -202,7 +202,7 @@
       font-weight: bold;
       font-size: 0.18rem;
       b {
-        font-size: 0.4rem;
+        font-size: 0.35rem;
       }
     }
   }
