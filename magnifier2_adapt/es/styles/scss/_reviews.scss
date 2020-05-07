@@ -1,0 +1,18 @@
+.owl-carousel .owl-dots {
+	padding: .2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.owl-carousel .owl-dots button {
+	width: 0.56rem;
+	height: 0.08rem;
+	border-radius: 5px;
+	background-color: #E7E7E7;
+	margin: 0 3px;
+}
+
+.owl-carousel .owl-dots button.active {
+	background-color: #6CED90;
+}
