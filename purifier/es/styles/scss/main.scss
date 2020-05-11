@@ -1,0 +1,329 @@
+@import "vars";
+@import "buyers";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+
+.intro__top {
+  p {
+    padding: 0.1rem 0.18rem;
+    margin: 0;
+    &:first-child {
+      text-align: center;
+      font-size: 0.25rem;
+      & b {
+        display: block;
+      }
+    }
+    &:last-child {
+      background-color: #0077c0;
+      color: #fff;
+      font-size: 0.2rem;
+      text-align: center;
+    }
+  }
+}
+
+.builets {
+  width: 100%;
+  max-width: 4.55rem;
+  height: 3.1rem;
+  margin: 0 auto;
+  background-image: url(../../img/builets_bg.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 0.2rem;
+  padding-right: 0.35rem;
+  box-sizing: border-box;
+  margin-top: -0.65rem;
+  position: relative;
+  @include flex(row, center, center);
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    margin-top: 0.4rem;
+    padding: 0;
+  }
+  &__item {
+    margin-bottom: 0.15rem;
+    position: relative;
+    padding-left: 0.55rem;
+    &:before {
+      content: url(../../img/tick.svg);
+      position: absolute;
+      left: 0.15rem;
+      top: 0;
+      width: 0.24rem;
+    }
+  }
+}
+
+.price {
+  height: 0.9rem;
+  background-color: $accent;
+  color: #fff;
+  font-weight: bold;
+  @include flex(row, space-around, center);
+
+  &__item {
+    @include flex(column, center, center);
+    width: 50%;
+    &:first-child {
+      opacity: 0.7;
+      border-right: 1px solid #fff;
+    }
+    & s,
+    & b {
+      font-size: 0.3rem;
+    }
+  }
+}
+
+.sect1 {
+  background-color: #f8f8f8;
+  &__content {
+    @include flex(row, $item: center);
+    & p {
+      margin: 0;
+    }
+    & img {
+      flex-shrink: 0;
+      width: 1.77rem;
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+.sect2 {
+  padding-bottom: 0;
+  &__btn-area {
+    background-color: #0077c0;
+    padding-bottom: 1px;
+  }
+  &__row {
+    @include flex(row);
+    height: 2.4rem;
+    overflow: hidden;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      & .sect2__txt {
+        background-color: #00588e;
+      }
+    }
+    & article {
+      width: 50%;
+    }
+  }
+  &__img {
+    & img {
+      width: 2.4rem;
+      flex-shrink: 0;
+    }
+  }
+  &__txt {
+    background-color: $accent;
+    color: #fff;
+    font-weight: bold;
+    @include flex(column, center, center);
+    box-sizing: border-box;
+    padding: 0 0.35rem;
+    text-align: center;
+  }
+  &__check {
+    width: 0.37rem;
+  }
+}
+
+.sect3 {
+  background-image: url(../../img/s3_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  &__content {
+    padding: 0 0.25rem;
+  }
+  &__item {
+    @include flex(row, space-between, center);
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      & img {
+        margin-right: 0;
+        margin-left: 0.2rem;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    & img {
+      width: 1.8rem;
+      flex-shrink: 0;
+      margin-right: 0.2rem;
+    }
+    & .txt {
+      & img {
+        width: 0.42rem;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.sect4 {
+  background-color: #f8f8f8;
+  &__item {
+    @include flex(row, space-between, center);
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      & img {
+        margin-left: 0;
+        margin-right: 0.4rem;
+      }
+    }
+    & img {
+      margin-left: 0.4rem;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+}
+
+.sect5 {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 0.25rem;
+    padding-top: 0.35rem;
+    & img {
+      display: block;
+      width: 0.9rem;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.sect6 {
+  background: $accent;
+  color: #fff;
+}
+
+.sect7 {
+  &__content {
+    padding-top: 0.3rem;
+  }
+  &__item {
+    @include flex(row, $item: center);
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    p {
+      margin: 0;
+    }
+    & img {
+      width: 0.7rem;
+      margin-right: 0.3rem;
+    }
+  }
+}
+
+.sect8 {
+  background-color: #f8f8f8;
+
+  & p {
+    margin: 0.1rem 0;
+  }
+}
+
+.reviews {
+  & b {
+    display: block;
+  }
+}
+
+.owl-carousel .owl-item img.ava {
+  display: block;
+  width: 1.64rem;
+  margin: 0 auto;
+  margin-bottom: 0.35rem;
+}
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: .7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  outline: none;
+}
+
+.sect10 {
+  background-color: $accent;
+  color: #fff;
+
+  &__grid {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 1.3rem;
+
+    }
+  }
+  &__item {
+    margin-bottom: 0.25rem;
+    b {
+      display: block;
+    }
+  }
+}
+
+.timer {
+  color: $accent;
+  &__title {
+    text-align: center;
+  }
+}
+// ##########
+// main
+// ##########
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0.2rem 0;
+  &__item {
+    position: relative;
+    padding-left: 0.35rem;
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    &:before {
+      content: "";
+      background-image: url(../../img/list.svg);
+      background-size: contain;
+      display: block;
+      width: 0.24rem;
+      height: 0.24rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
