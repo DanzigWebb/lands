@@ -1,0 +1,55 @@
+.reviews {
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 0 0.3rem 0.27rem;
+  }
+  &__main{
+@include flex (column,center,center);
+margin-top: -0.8rem;
+  }
+  &__top {
+    background: #ff6c36;
+    border-radius: 8px 8px 0px 0px;
+    height: 1.08rem;
+    margin: 0 -0.3rem;
+  }
+  &__ava{
+    width: 1.6rem;
+  }
+  &__neme{
+    margin-top: 0.15rem;
+    @include flex (row,center,center);
+    b{
+      font-size: 0.3rem;
+      color: #333333;
+      margin-right: 0.34rem;
+    }
+  }
+}
+.owl-carousel {
+  .owl-dots {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1.28rem;
+    margin: 0.35rem auto;
+    margin-bottom: 0;
+    button {
+      width: 0.26rem;
+      height: 0.26rem;
+      border-radius: 100%;
+      outline: none;
+    
+background: #9EA4FF;
+      &.active {
+       background: #000FF0;
+       width: 0.28rem;
+       height: 0.28rem;
+
+      }
+    }
+  }
+}

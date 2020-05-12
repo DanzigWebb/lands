@@ -1,0 +1,415 @@
+@import "vars";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+.intro {
+  &--header{
+    padding-bottom:0.9rem ;
+  }
+  &__top {
+    height: 0.6rem;
+    width: 100%;
+    background: #000ff0;
+    text-align: center;
+    @include flex(row, center, center);
+    font-size: 0.24rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  &__title {
+    font-size: 0.44rem;
+    text-align: left;
+    padding-bottom: 0.2rem;
+    color: #4f4f4f;
+  }
+  &__subtitle {
+    font-size: 0.28rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000ff0;
+  }
+  &__main {
+    background-image: url(../../img/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 7.48rem;
+    padding: 0.36rem 0.2rem 0;
+  }
+  &__prod {
+    background-image: url(../../img/prod.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 0.2rem;
+    text-align: center;
+    @include flex(row, center, center);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.24rem;
+    color: #ffffff;
+    b {
+      font-size: 0.3rem;
+    }
+  }
+  &__bottom {
+    text-align: center;
+    margin: 0;
+    &--foorm{
+      margin-top: 0.2rem;
+    }
+    b {
+      background: #ff6c36;
+      border-radius: 4px;
+      padding: 0.06rem 0.1rem;
+      color: #fff;
+      margin-left: 0.05rem;
+    }
+  }
+}
+.sect1 {
+  background-color: #060e8c;
+  padding-top: 0.9rem;
+  &__item {
+    position: relative;
+    @include flex(row, center, center);
+    padding-bottom: 0.1rem;
+    p {
+      position: absolute;
+      left: 2rem;
+      width: 2.09rem;
+      margin-top: 0;
+      color: #000;
+    }
+  }
+}
+.sect2 {
+  &__text {
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    b {
+      text-transform: uppercase;
+      color: #ff6c36;
+    }
+    &__item {
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      @include flex(column, center, center);
+    }
+  }
+  &__top {
+    text-align: center;
+    background: #060e8c;
+    padding: 0.14rem 0;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    p {
+      margin-top: 0;
+    }
+  }
+}
+.sect3 {
+  background: #060e8c;
+  &__item {
+    position: relative;
+    @include flex(row, center, center);
+
+    text-align: center;
+    z-index: 0;
+    margin-top: -0.05rem;
+    &::before {
+      content: "";
+      background-image: url(../../img/sect3.svg);
+      background-size: contain;
+      display: block;
+      width: 0.68rem;
+      height: 0.68rem;
+      position: absolute;
+      left: 0.98rem;
+      bottom: -0.2rem;
+      z-index: 9999;
+    }
+    p {
+      position: absolute;
+      width: 1.68rem;
+      margin-top: 0;
+      font-weight: 800;
+      left: 0.48rem;
+      font-size: 0.18rem;
+    }
+  }
+  &__bottom {
+    background-image: url(../../img/sect3__bottom.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4.9rem;
+    margin-top: -0.05rem;
+    padding-top: 0.42rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000ff0;
+    b {
+      color: #ff6c36;
+    }
+  }
+}
+
+.price {
+  max-width: 4.4rem;
+  width: 100%;
+  height: 1.35rem;
+  margin: 0 auto;
+  margin-top: -0.6rem;
+  background: #f7f6f7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 0.36rem;
+  @include flex(row, space-around, center);
+  &__item {
+    @include flex(column, flex-start, center);
+    s,
+    b {
+      font-size: 0.5rem;
+    }
+    s {
+      color: #9a9feb;
+    }
+    b {
+      color: #000ff0;
+    }
+    &--old {
+      width: 50%;
+      border-right: 2px solid #bdbdbd;
+    }
+    &--new {
+      width: 50%;
+    }
+  }
+}
+.sect4 {
+  &__main {
+    padding-bottom: 0.4rem;
+  }
+  &__inner {
+    background: #f5faff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    @include flex(column, center, center);
+    margin-bottom: 0.3rem;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    border-radius: 8px;
+    display: inline-block;
+    width: 3.8rem;
+    height: 0.6rem;
+    text-align: center;
+    @include flex(row, center, center);
+    margin-top: -0.3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    &--no {
+      background: #c4c4c4;
+    }
+    &--yes {
+      background: #ff6c36;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 0.45rem 0;
+  }
+  &__item {
+    position: relative;
+    padding-left: 0.7rem;
+    width: 3.49rem;
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    &--no {
+      position: relative;
+      &:before {
+        content: "";
+        background-image: url(../../img/no.png);
+        background-size: contain;
+        display: block;
+        width: 0.24rem;
+        height: 0.24rem;
+        position: absolute;
+        margin-left: 0.3rem;
+        left: 0;
+        top: 0;
+      }
+    }
+    &--yes {
+      position: relative;
+      &:before {
+        content: "";
+        background-image: url(../../img/yes.png);
+        background-size: contain;
+        display: block;
+        width: 0.24rem;
+        height: 0.24rem;
+        position: absolute;
+        margin-left: 0.3rem;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+.sect5 {
+  background-color: #060e8c;
+  &__grid {
+    padding: 0 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-gap: 0.56rem;
+    color: #fff;
+    img {
+      height: 1.7rem;
+    }
+  }
+}
+.sect6 {
+  background: #e6f0ff;
+  img {
+    width: 2rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-gap: 0.3rem;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    width: 1.2rem;
+    height: 0.5rem;
+    margin-top: -0.4rem;
+    background: #ff6c36;
+    border-radius: 4px;
+    position: relative;
+    @include flex(row, center, center);
+    font-size: 0.26rem;
+    color: #fff;
+  }
+  &__item:last-child {
+    align-self: center;
+    p {
+      margin: 0;
+    }
+  }
+}
+.sect7 {
+  &__item {
+    @include flex(row, left, center);
+    margin: 0 -0.13rem;
+    padding:0.15rem 0.2rem ;
+    position: relative;
+    &:nth-child(odd) {
+      background: #f5f5f5;
+    }
+    img{
+      margin-right: 0.3rem;
+    }
+    span{
+      position: absolute;
+      left: 2.9rem;
+    }
+  }
+  &__ico{
+    width: 0.3rem;
+  }
+  &__main{
+    padding-top: 0.3rem;
+  }
+}
+.sect8{
+  background: #E5F0FF;
+}
+.sect9{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    padding: 0 0.22rem;
+    grid-gap: 0.4rem;
+  }
+  &__item{
+    text-align: center;
+    img{
+      width: 1.5rem;
+    }
+    b{
+      color: #000FF0;
+      font-size: 0.24rem;
+    }
+  }
+}
+.builets {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 0.2rem 0;
+  }
+  &__item {
+    position: relative;
+    padding-left: 0.6rem;
+    width: 3.71rem;
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    &:before {
+      content: "";
+      background-image: url(../../img/list.svg);
+      background-size: contain;
+      display: block;
+      margin-left: 0.19rem;
+      width: 0.35rem;
+
+      height: 0.35rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0.2rem 0;
+  &__item {
+    position: relative;
+    padding-left: 0.35rem;
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    &:before {
+      content: "";
+      background-image: url(../../img/list.svg);
+      background-size: contain;
+      display: block;
+      width: 0.24rem;
+      height: 0.24rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
