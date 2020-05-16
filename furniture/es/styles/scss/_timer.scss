@@ -1,0 +1,58 @@
+.timer {
+    
+    border-radius: 16px;
+    color: #000;
+    background-image: url(../../img/tit.png);
+   
+    padding: 0.24rem 0;
+    
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    max-width: 3.2rem;
+    margin: auto;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 1rem;
+    text-align: center;
+}
+
+.timer__title {
+    text-align: center;
+    margin-bottom: 0.15rem;
+    margin-top: 0;
+}
+
+.timer__desc {
+    color: #9F9F9F;
+    font-size: 0.2rem;
+    font-weight: 300;
+    
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
+
+.t-hour,
+.t-min,
+.t-sec {
+    
+   width: 0.96rem;
+   text-align: center;
+   height: 0.96rem;
+   background: #FFFFFF;
+box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+    color:$accent ;
+}
