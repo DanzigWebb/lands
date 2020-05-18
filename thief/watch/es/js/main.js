@@ -23,17 +23,17 @@ $(document).ready(function(){
                 "show": false
             },
             "Hours": {
-                "text": "ώρες",
+                "text": "horas",
                 "color": "#ffffff",
                 "show": true
             },
             "Minutes": {
-                "text": "λεπτά",
+                "text": "minutos",
                 "color": "#ffffff",
                 "show": true
             },
             "Seconds": {
-                "text": "δευτερολέπτων",
+                "text": "segundos",
                 "color": "#ffffff",
                 "show": true
             }
