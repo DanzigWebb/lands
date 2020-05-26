@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Персональный фитнес тренер - Tatiana Fit</title>
+
+	<link rel="stylesheet" id="sydney-bootstrap-css" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_font_style-css" href="css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_front_end_style-css" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_templates_style-css" href="css/templates.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_select2_style-css" href="css/select2.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="responsive-lightbox-swipebox-css" href="css/swipebox.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="siteorigin-panels-front-css" href="css/front-flex.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-image-default-ad2c8d41f7a1-css" href="css/sow-image-default-ad2c8d41f7a1.css"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-base-css" href="css/style_1.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-wire-e2a64f23e6c9-css" href="css/sow-button-wire-e2a64f23e6c9.css"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-45d62ae015ac-css"
+		href="css/sow-social-media-buttons-wire-45d62ae015ac.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-image-default-7794f43373bf-css" href="css/sow-image-default-7794f43373bf.css"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-wire-df548bc124bd-css" href="css/sow-button-wire-df548bc124bd.css"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-496431254d88-css"
+		href="css/sow-social-media-buttons-wire-496431254d88.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sydney-fonts-css" href="css/css.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sydney-style-css" href="css/style_3.css" type="text/css" media="all">
+	<style id="sydney-style-inline-css" type="text/css">
+		body,
+		#mainnav ul ul a {
+			font-family: 'Cuprum', sans-serif !important;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		#mainnav ul li a,
+		.portfolio-info,
+		.roll-testimonials .name,
+		.roll-team .team-content .name,
+		.roll-team .team-item .team-pop .name,
+		.roll-tabs .menu-tab li a,
+		.roll-testimonials .name,
+		.roll-project .project-filter li a,
+		.roll-button,
+		.roll-counter .name-count,
+		.roll-counter .numb-count button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			font-family: 'Fira Sans Condensed', sans-serif;
+		}
+
+		.site-title {
+			font-size: 32px;
+		}
+
+		.site-description {
+			font-size: 16px;
+		}
+
+		#mainnav ul li a {
+			font-size: 19px;
+		}
+
+		h1 {
+			font-size: 34px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 26px;
+		}
+
+		h4 {
+			font-size: 24px;
+		}
+
+		h5 {
+			font-size: 22px;
+		}
+
+		h6 {
+			font-size: 20px;
+		}
+
+		body {
+			font-size: 18px;
+		}
+
+		.single .hentry .title-post {
+			font-size: 36px;
+		}
+
+		.header-image {
+			background-size: cover;
+			background-image: url(img/cropped-WhatsApp-Image-2017-09-27-at-15.55.47-1.jpeg);
+			display: block;
+		}
+
+		.header-image {
+			height: 300px;
+		}
+
+		.site-header.fixed {
+			position: absolute;
+		}
+
+		.header-wrap .col-md-4,
+		.header-wrap .col-md-8 {
+			width: 100%;
+			text-align: center;
+		}
+
+		#mainnav {
+			float: none;
+		}
+
+		#mainnav li {
+			float: none;
+			display: inline-block;
+		}
+
+		#mainnav ul ul li {
+			display: block;
+			text-align: left;
+			float: left;
+		}
+
+		.site-logo,
+		.header-wrap .col-md-4 {
+			margin-bottom: 15px;
+		}
+
+		.btn-menu {
+			margin: 0 auto;
+			float: none;
+		}
+
+		.header-wrap .container>.row {
+			display: block;
+		}
+
+		.site-header.float-header {
+			background-color: rgba(0, 0, 0, 0.9);
+		}
+
+		@media only screen and (max-width: 1024px) {
+			.site-header {
+				background-color: #000000;
+			}
+		}
+
+		.site-title a,
+		.site-title a:hover {
+			color: #ffffff
+		}
+
+		.site-description {
+			color: #ffffff
+		}
+
+		#mainnav ul li a,
+		#mainnav ul li::before {
+			color: #ffffff
+		}
+
+		#mainnav .sub-menu li a {
+			color: #ffffff
+		}
+
+		#mainnav .sub-menu li a {
+			background: #1c1c1c
+		}
+
+		.text-slider .maintitle,
+		.text-slider .subtitle {
+			color: #ffffff
+		}
+
+		body {
+			color: #47425d
+		}
+
+		#secondary {
+			background-color: #ffffff
+		}
+
+		#secondary,
+		#secondary a,
+		#secondary .widget-title {
+			color: #767676
+		}
+
+		.footer-widgets {
+			background-color: #252525
+		}
+
+		.btn-menu {
+			color: #ffffff
+		}
+
+		#mainnav ul li a:hover {
+			color: #d65050
+		}
+
+		.site-footer {
+			background-color: #1c1c1c
+		}
+
+		.site-footer,
+		.site-footer a {
+			color: #666666
+		}
+
+		.overlay {
+			background-color: #000000
+		}
+
+		.page-wrap {
+			padding-top: 30px;
+		}
+
+		.page-wrap {
+			padding-bottom: 100px;
+		}
+
+		@media only screen and (max-width: 1025px) {
+			.mobile-slide {
+				display: block;
+			}
+
+			.slide-item {
+				background-image: none !important;
+			}
+
+			.header-slider {}
+
+			.slide-item {
+				height: auto !important;
+			}
+
+			.slide-inner {
+				min-height: initial;
+			}
+		}
+
+		@media only screen and (max-width: 780px) {
+			h1 {
+				font-size: 32px;
+			}
+
+			h2 {
+				font-size: 28px;
+			}
+
+			h3 {
+				font-size: 22px;
+			}
+
+			h4 {
+				font-size: 18px;
+			}
+
+			h5 {
+				font-size: 16px;
+			}
+
+			h6 {
+				font-size: 14px;
+			}
+		}
+	</style>
+	<link rel="stylesheet" id="sydney-font-awesome-css" href="css/font-awesome.min.css" type="text/css" media="all">
+	<!--[if lte IE 9]>
+<link rel='stylesheet' id='sydney-ie9-css'  href='https://tatiana.fit/wp-content/themes/sydney/css/ie9.css' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="fancybox-css" href="css/jquery.fancybox.min.css" type="text/css" media="screen">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/printThis.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript" src="js/infinite-scroll.pkgd.min.js"></script>
+
+
+	<style>
+		.pseudo-clearfy-link {
+			color: #008acf;
+			cursor: pointer;
+		}
+
+		.pseudo-clearfy-link:hover {
+			text-decoration: none;
+		}
+	</style>
+
+	<style type="text/css" media="all" id="siteorigin-panels-layouts-head">
+		/* Layout 12 */
+		#pgc-12-0-0,
+		#pgc-12-2-0,
+		#pgc-12-4-0,
+		#pgc-12-5-0 {
+			width: 100%;
+			width: calc(100% - (0 * 30px))
+		}
+
+		#pg-12-0,
+		#pg-12-1,
+		#pg-12-2,
+		#pg-12-3,
+		#pg-12-4,
+		#pl-12 .so-panel,
+		#pl-12 .so-panel:last-child {
+			margin-bottom: 0px
+		}
+
+		#pgc-12-1-0 {
+			width: 61.8034%;
+			width: calc(61.8034% - (0.38196600790794 * 30px))
+		}
+
+		#pgc-12-1-1 {
+			width: 38.1966%;
+			width: calc(38.1966% - (0.61803399209206 * 30px))
+		}
+
+		#pgc-12-3-0 {
+			width: 100%
+		}
+
+		#pl-12 #panel-12-5-0-0 {
+			margin: 0px 0px 0px 0px
+		}
+
+		#pg-12-0>.panel-row-style {
+			padding: 10px
+		}
+
+		#panel-12-0-0-0>.panel-widget-style {
+			padding: 25px 10px 10px 10px
+		}
+
+		#pg-12-1>.panel-row-style {
+			background-color: #dcdfe4;
+			padding: 0px
+		}
+
+		#panel-12-1-0-0>.panel-widget-style {
+			padding: 50px 20px 10px 50px
+		}
+
+		#panel-12-1-1-0>.panel-widget-style,
+		#panel-12-3-0-0>.panel-widget-style {
+			padding: 0px 0px 0px 0px
+		}
+
+		#pg-12-2>.panel-row-style {
+			background-color: #d65050;
+			padding: 20px
+		}
+
+		#pg-12-3>.panel-row-style {
+			padding: 0px
+		}
+
+		#panel-12-4-0-0>.panel-widget-style {
+			color: #ffffff
+		}
+
+		#pg-12-5>.panel-row-style {
+			background-color: #d65050;
+			padding: 30px
+		}
+
+		#panel-12-5-0-0>.panel-widget-style {
+			color: #ffffff;
+			padding: 0px 0px 0px 0px
+		}
+
+		@media (max-width:780px) {
+
+			#pg-12-0.panel-no-style,
+			#pg-12-0.panel-has-style>.panel-row-style,
+			#pg-12-1.panel-no-style,
+			#pg-12-1.panel-has-style>.panel-row-style,
+			#pg-12-2.panel-no-style,
+			#pg-12-2.panel-has-style>.panel-row-style,
+			#pg-12-3.panel-no-style,
+			#pg-12-3.panel-has-style>.panel-row-style,
+			#pg-12-4.panel-no-style,
+			#pg-12-4.panel-has-style>.panel-row-style,
+			#pg-12-5.panel-no-style,
+			#pg-12-5.panel-has-style>.panel-row-style {
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column
+			}
+
+			#pg-12-0>.panel-grid-cell,
+			#pg-12-0>.panel-row-style>.panel-grid-cell,
+			#pg-12-1>.panel-grid-cell,
+			#pg-12-1>.panel-row-style>.panel-grid-cell,
+			#pg-12-2>.panel-grid-cell,
+			#pg-12-2>.panel-row-style>.panel-grid-cell,
+			#pg-12-3>.panel-grid-cell,
+			#pg-12-3>.panel-row-style>.panel-grid-cell,
+			#pg-12-4>.panel-grid-cell,
+			#pg-12-4>.panel-row-style>.panel-grid-cell,
+			#pg-12-5>.panel-grid-cell,
+			#pg-12-5>.panel-row-style>.panel-grid-cell {
+				width: 100%;
+				margin-right: 0
+			}
+
+			#pgc-12-1-0,
+			#pl-12 .panel-grid .panel-grid-cell-mobile-last {
+				margin-bottom: 0px
+			}
+
+			#pl-12 .panel-grid-cell {
+				padding: 0
+			}
+
+			#pl-12 .panel-grid .panel-grid-cell-empty {
+				display: none
+			}
+		}
+	</style>
+	<style type="text/css" id="wp-custom-css">
+		.hentry .title-post {
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+
+<body data-rsssl=1
+	class="page-template page-template-page-templates page-template-page_fullwidth page-template-page-templatespage_fullwidth-php page page-id-20 siteorigin-panels siteorigin-panels-before-js">
+
+	<div class="preloader">
+		<div class="spinner">
+			<div class="pre-bounce1"></div>
+			<div class="pre-bounce2"></div>
+		</div>
+	</div>
+
+	<div id="page" class="hfeed site">
+		<a class="skip-link screen-reader-text" href="#content">Перейти к содержимому</a>
+
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="header-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-8 col-xs-12">
+							<a href="/" title=""><img class="site-logo" src="img/%C3%90%C2%BB%C3%90%C2%BE%C3%90%C2%B3%C3%90%C2%BE.png"
+									alt="" /></a>
+						</div>
+						<div class="col-md-8 col-sm-4 col-xs-12">
+							<div class="btn-menu"></div>
+							<nav id="mainnav" class="mainnav" role="navigation">
+								<div class="menu-osnovnoe-menyu-container">
+									<ul id="menu-osnovnoe-menyu" class="menu">
+
+										<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+											<a href="./about.html">ОБО МНЕ</a></li>
+										<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+											<a href="./reviews">ОТЗЫВЫ</a></li>
+
+
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+
+		<div class="sydney-hero-area">
+			<div class="header-image" style="display: block;">
+				<div class="overlay"></div> <img class="header-inner"
+					src="https://tatiana.fit/wp-content/uploads/2017/09/cropped-WhatsApp-Image-2017-09-27-at-15.55.47-1.jpeg"
+					width="1920" alt="" title="">
+			</div>
+
+		</div>
+
+
+		<div id="content" class="page-wrap">
+			<div class="container content-wrapper">
+				<main id="main" class="site-main" role="main">
+
+
+
+					<article id="post-22" class="post-22 page type-page status-publish hentry">
+						<header class="entry-header">
+							<h1 class="title-post entry-title">Отзывы</h1>
+						</header><!-- .entry-header -->
+
+						<div class="entry-content">
+							<div>
+								<p style="text-align: justify; padding-left: 30px; font-size: 20px;">Результат любой деятельности -это
+									благодарность
+									людей, с которыми трудишься над одной идеей, ради единой цели. Мной проделано много работы и сейчас я
+									с радостью и гордостью представляю&nbsp;отзывы о фитнес проекте, целью которого является современная,
+									успешная и уверенная в себе женщина. Этот проект помог множеству женщин поверить в себя, в свои силы
+									измениться к лучшему, обрести желанные формы, научится правильно и вкусно питаться.</p>
+								<p>&nbsp;</p>
+								<h3 style="text-align: center;"><span style="color: #d65050; text-align: center; width: 100%;">Отзывы о финтес программе.<p></p>
+										<p></p>
+									</span></h3>
+									<br>
+									<br>
+								<h4>Анна,Winnipeg,Canada</h4>
+								<blockquote>
+									<p>Только что закончила очередной проект. Давно искала что то подобное и наконец то, спасибо Моей
+										подруге Наталье за настойчивость и рекомендацию.<span class="Apple-converted-space">&nbsp;</span>
+									</p>
+									<p>Таня – супер. Строгая, но справедливая 🙂</p>
+									<p>Все вопросы, корректировки мгновенно. Еда, тренировки – объяснены детально. Мобилилизует и
+										вдохновляет необычайно.</p>
+									<p>Втягиваешься в в ритм, стеная и жалуясь, и вдруг – вуаля! – видишь и чувствуешь результат. Супер,
+										рекомендую, буду продолжать!</p>
+								</blockquote>
+								<h4>Мила,Торонто,Канада</h4>
+								<blockquote>
+									<p style="padding-left: 30px;">Тренировка “НУ” (начальный уровень)очень понравилась. Приятная
+										усталость в мышцах. Самое главное что появилась приятная боль в glutes mussels, никогда раньше не
+										могла этого добиться. Завтра на работу пойду на трясушихся ножках.</p>
+								</blockquote>
+								<h4>Марина,Victoria,British Columbia</h4>
+								<blockquote>
+									<p>100 берпи с прыжком за 15 мин. 2 года назад я б и 5 не сделала. И даже в начале проекта дико их не
+										любила😄</p>
+								</blockquote>
+								<h4>Анна,Канада</h4>
+								<blockquote>
+									<p>Это первый марафон!<br>
+										Ощущение в первый день были …. Если матерные слова пропустить то сказать нечего 😑🙄 за то вчера я
+										сама с себя прозрела 🙄😏 намного легче было уже , я даже где то себя почувствовала спортсменом
+										Упражнения оказались не сильно сложными ( но это только спустя неделю <span
+											style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span>&nbsp;меню вообще супер сижу и
+										думаю как это все скушать.<br>
+										Таня спасибо вам за терпение &nbsp;оч рада что к вам попала ! Говорю уверенно что я свами надолго!
+									</p>
+								</blockquote>
+								<h4>Инна,Монреаль,Quebec</h4>
+								<blockquote>
+									<p>Тань если честно я с вами уже год 🙂 но порой все снова как в первый раз 😂🤔<br>
+										Слава Богу теперь у меня уже нет того ощущения что я катаюсь по полу как гусеница, за то иногда руки
+										трясутся как у алкоголика и ещё я при поздних тренировках, отдыхая между подходами могу уснуть на
+										ковре 😴😂<br>
+										А в остальном СПАСИБИЩЕ тебе большое что ты так внезапно появилась в моей жизни и даже если я смогла
+										бы при большом желании продолжить сама то мне комфортнее и приятнее с тобой и девочками 💐🎈</p>
+								</blockquote>
+								<h4>Наталья,Oakville,Канада</h4>
+								<blockquote>
+									<p>Я просмотрев видео самой первой тренировки НУ, подумала, что очень легко. И мне- «спортсменке»
+										нужен как минимум средний уровень.👌Но как же я ошибалась. Первую неделю еле выжила. Смена диеты и
+										порции+ все мышцы болели<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span>И это
+										от начального уровня. В общем я в шоке от своей физической подготовки. Сейчас уже третья неделя,
+										намного легче, жду даже момента, когда начну тренировку. Да и с питанием понемногу втягиваюсь. Все-
+										таки «секта» стимулирует<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span>&nbsp;И
+										да, после набранных за отпуск килограммов, я уже потеряла 2 килограмма. Ура!!!<br>
+										Спасибо, Таня, что ты это делаешь😍</p>
+								</blockquote>
+								<h4>Ольга,Торонто,Канада</h4>
+								<blockquote>
+									<p>Раз пришло время думать о регистрации на новый курс, то видимо время подвести итог. Я не знала
+										совершенно что ожидать, мое решение присоединиться было более чем спонтанным. Чтобы не попробовать…
+										Первые дни были ошеломляюще тяжелыми. Поддерживала мысль, что это всего 28 дней . Но уже во вторую
+										неделю начала зарождаться мысль, а может быть еще месяцок потом взять… уж больно приятные ощущения в
+										теле появились. И реально ведь, всего 30 минут в день, дома… Не смертельно, но очень результативно.
+										И хочется еще!<br>
+										И еще, мне было бы интересно услышать мнения девочек, которые в программе уже не один месяц. Их
+										мысли, ощущения, успехи. Да,</p>
+								</blockquote>
+								<h4>Ирина,Канада,Торонто</h4>
+							</div>
+
+							<div>
+								<h4>Ольга,Канада,Торонто</h4>
+							</div>
+							<p>Немного юмора нам в ленту.</p>
+							<blockquote>
+								<p>И настал день третий! Армагеддон. Больно просто держать ноги прямо. Наклонятся могу только с
+									согнутыми ногами, кряхтя как старуха. Хотя сами упражнения вначале показались ну уж очень простым.
+									Понедельник сделала ну, но добавила полюбившийся подход + кардио 6 мин из хитов прошлого месяца.
+									Перерывы с негодованием отменила, слишком маленькой показалась нагрузка. Вторник- СУ, , хотя ноги уже
+									дрожали, опять + кардио. И зачем мне кажется во время тренировки что я могу все? Снимаю шляпу перед
+									Таней, это не упражнение&nbsp;, это замаскированнаябомба с отсроченным сроком действия.</p>
+							</blockquote>
+							<div>
+								<h4>Евгения,Израиль</h4>
+							</div>
+							<blockquote>
+								<p>Вспоминаю как на первой недели чуть не умерла, спасибо девочки поддержали. Сейчас с удовольствием
+									делаю упражнения и дети со мной подключились и кот всегда тут как тут и даже бабушка приносит коврик и
+									что то там на полу делает<span
+										style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span>&nbsp;Все стало в удовольствие и
+									после упражнений легче дышать. Через день с мужем хожу в зал и уже веса больше могу тянуть что тоже
+									радует. Уже приятнее смотреть в зеркало тк все подтянулось и доже бока уже не как гусеничка ура
+									👍.<br>
+									Да здравствует Таня. С удовольствием буду продолжать.</p>
+							</blockquote>
+							<div>
+
+								<h4>Светлана, Russia</h4>
+								<blockquote>
+									<p style="text-align: justify;">Мой фитнесс проект – это замечательная идея. Главное это хороший
+										тренер! Татьяна – это взрыв &nbsp;энергии и море хорошего настроения каждую тренировку. Татьяна,
+										умеет вдохновить на подвиг. Проект &nbsp;очень хороший, результаты есть. За первый месяц 3,5 кг
+										объем ушел. Питание доступно, считать ничего не надо, за нас это сделал &nbsp;тренер. Специальные
+										упражнения плюс правильное питание – это хорошее настроение и легкость в теле.</p>
+								</blockquote>
+								<h4>Ирина, Оттава, Канада</h4>
+								<blockquote>
+									<p style="text-align: justify;">Я в проекте шестую неделю. Сказать что я в восторге – это ничего не
+										сказать. Результат превысил самые смелые ожидания. Я за 5 недель потеряла по 8 см с талии и бедер.
+										При этом я не голодаю и не трачу много времени на тренировки. Проект идеально вписался в мою жизнь.
+										В дополнение ко всему я себя отлично чувствую, у меня почистилась кожа на лице и отличное
+										настроение!!!</p>
+								</blockquote>
+								<h4>Светлана,Russia</h4>
+								<blockquote>
+									<p style="text-align: justify;">Пока не стала заниматься персонально с тренером, никогда не думала,
+										что это вообще нужно. Представление о спорте было стандартным, пришел в зал побегал по дорожке
+										что-нибудь поделал на тренажерах и с полной уверенностью и гордостью, что сделал максимально
+										полезную программу пошел домой. При чем вроде устала и даже вспотела…но приняв для себя решение
+										все-таки попробовать заниматься под контролем тренера, выбрала тренера, как показывают в кино,
+										молодого и красивого))) который отлично выглядят и имеет множество регалий. И думала что все идет по
+										плану…..пока не поняла, что результата нет никакого, и даже немного вреда. Я думаю что многие могли
+										сталкиваться с проблемами по здоровью. Но мне очень повезло!!! Прошу заметить, что слово «ПОВЕЗЛО»,
+										я выделила… т.к. неизвестно что было бы, если бы я продолжала тренироваться и дальше с тем тренером.
+										Но в наш клуб приехала профессионал своего дела!!! Татьяна , Она перевернула мое представление о
+										персональных тренировках, о том что это может быть не только полезно для тела и здоровья, но и
+										интересно. Каждое занятие это всегда что то новое, совершенно не стандартно. Мы не занимаемся
+										перекачкой моего тела, чтобы я была похожа на мужчину, а наоборот, оттачиваем мою женскую фигуру.
+										Доводим ее до совершенства. И что самое главное это есть возможность поучаствовать в ее онлайн
+										проекте. Это очень сильно дисциплинирует. Мое меню расписано, все максимально доступно. Хотя и
+										тяжело. Но я себя ощущаю настоящим спортсменом, и уже чувствую ответственность перед Татьяной. т.к.
+										она истинный тренер, которая может собрать мои мысли в кучу и настроить на настоящий результат.
+										Поэтому призываю всех девушек. Не откладывайте на завтра, то что можно начать уже сегодня.</p>
+								</blockquote>
+								<h4>Наталья ,Russia</h4>
+								<blockquote>
+									<p style="text-align: justify;">Я занимаюсь с Татьяной вторую неделю и у меня уже минус 2 кг, чему я
+										очень рада 👏ни с одним тренером у меня не было такого результата! Впереди ещё много работы. Татьяна
+										очень большой профессионал в своём деле я ей полностью доверяю! Она очень строго нас контролирует
+										все объясняет как и что кушать, рассказывает про все упражнения на что и как они работают, для нас
+										все очень доходчиво и понятно! Для меня ещё очень важно ☝что она сама составила для нас меню, не
+										надо думать каждый раз что покушать и перекусить все уже придумано. Мне очень очень очень нравиться
+										заниматься с Татьяной! Я очень рада что попала к ней в проект, вот она то точно сделает из нас
+										стройняшек!</p>
+								</blockquote>
+								<h4>Елена ,Russia</h4>
+								<blockquote>
+									<div>
+										<div>
+											<div style="text-align: justify;">В проект &nbsp;к Татьяне Рогожиной &nbsp;я попала 6 февраля 2017
+												г., &nbsp;поставила себе цель скинуть &nbsp;8 кг , до этого я уже скинула 30 кг и вес
+												остановился, а после новогодних праздников даже прибавился на 3 кг, занималась до этого я только
+												в тренажерном зале &nbsp;и проходя мима кабинета, где вела свои тренировки Татьяна боялась даже
+												туда смотреть, думала я так никогда не смогу. &nbsp;И вот я переборола страх и записалась к ней.
+												На первую тренировку шла и внутри все дрожало, но после я получила такой кайф, что не описать
+												словами: щеки горели, дышать не могла, все тряслось, но при этом хотелось испытать это чувство
+												еще раз. &nbsp;Я не очень люблю готовить, но меню которое нам дала Татьяна очень вкусное,
+												полезное и легкое в приготовлении (готовлю сразу на неделю). За первую неделю тренировок и ПП
+												скинула 2,5 кг – это круто, а впереди еще 7 недель, может даже скину больше чем запланировала.
+												Татьяна Рогожина очень хороший, веселый человек, отличный тренер и наш вдохновитель, мне
+												нравиться что если у меня что то не получается она не заставляет это делать, а заменяет
+												упражнение на то, которое я могу сделать на этом этапе. &nbsp;Она показала мне, на что способен
+												мой организм и тело. Надеюсь &nbsp;за время проекта мы узнаем друг друга лучше и будем друзьями,
+												ведь у нее не только групповые тренировки, но и онлайн проекты, так что не буду останавливаться
+												на достигнутом, следите за моими комментариями, 30 марта напишу отчет о том как прошли эти 7
+												недель в компании 9 чудесных девчат &nbsp;и нашего гуру &nbsp;по лепке нашего тела.</div>
+										</div>
+									</div>
+								</blockquote>
+							</div>
+
+							<h4 dir="ltr" style="text-align: justify;">Александра Russia</h4>
+							<blockquote>
+								<p dir="ltr" style="text-align: justify;">“Мне очень нравится фитнес марафон 👯 и я обязательно останусь
+									на следующий марафон 😊&nbsp;Таня, все настолько четко, понятно и доступно расписано для нас, что у
+									меня мало возникало дополнительных вопросов, если только в самом начале. Отзывы только положительные,
+									всем рекомендую) Я Стала более дисциплинированной 😊, приучилась планировать своё питание, а не
+									перекусывать то , что есть дома или на работе )) тренировки дома, в реформе стали чаще) дома совсем
+									немного времени, но зато есть результат. У каждого он будет свой, главное придерживаться рекомендаций
+									и ничего не придумывать 😊&nbsp;Очень хочется привить и оставить на долго все приобретенное☺&nbsp;P.S.
+									Иногда хочется ещё очень сладенького ))”</p>
+							</blockquote>
+						</div><!-- .entry-content -->
+
+						<footer class="entry-footer">
+						</footer><!-- .entry-footer -->
+					</article><!-- #post-## -->
+
+
+
+
+				</main>
+			</div>
+		</div><!-- #content -->
+
+
+
+
+
+		<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+			<div class="container">
+				<div class="sidebar-column col-md-4">
+					<aside id="sow-image-2" class="widget widget_sow-image">
+						<div class="so-widget-sow-image so-widget-sow-image-default-ad2c8d41f7a1">
+
+							<div class="sow-image-container">
+								<img src="https://tatiana.fit/wp-content/uploads/2017/04/IMG_9492-550x400.jpg" width="550" height="400"
+									sizes="(max-width: 550px) 100vw, 550px" alt="фитнес тренер" class="so-widget-image" />
+							</div>
+
+						</div>
+					</aside>
+				</div>
+
+				<div class="sidebar-column col-md-4">
+					<aside id="sow-editor-2" class="widget widget_sow-editor">
+						<div class="so-widget-sow-editor so-widget-sow-editor-base">
+							<h3 class="widget-title">Начать никогда не поздно..</h3>
+							<div class="siteorigin-widget-tinymce textwidget">
+								<p style="text-align: justify;">..Но не стоит откладывать, ведь через год Вы можете пожалеть, что не
+									начали заниматься фитнесом сегодня. Фитнес - это то, как выглядит современная успешная женщина!
+									Начните сейчас!</p>
+							</div>
+						</div>
+					</aside>
+
+				</div>
+
+
+
+			</div>
+		</div>
+		<a class="go-top"><i class="fa fa-angle-up"></i></a>
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info container">
+				Copyright © 2019 | Фитнес-тренер Татьяна Рогожина </div><!-- .site-info -->
+		</footer><!-- #colophon -->
+
+
+	</div><!-- #page -->
+
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-1bf22ff0e4a2-css"
+		href="css/sow-social-media-buttons-wire-1bf22ff0e4a2.css" type="text/css" media="all">
+	<link rel="stylesheet" id="siteorigin-widget-icon-font-fontawesome-css" href="css/style_2.css" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-9c8a24e56f7e-css"
+		href="css/sow-social-media-buttons-wire-9c8a24e56f7e.css" type="text/css" media="all">
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/core.min.js"></script>
+	<script type="text/javascript" src="js/datepicker.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+	<script type="text/javascript" src="js/scripts_1.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+	<script type="text/javascript" src="js/skip-link-focus-fix.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jscripts-ftr-min.js"></script>
+	<script type="text/javascript" src="js/wp-embed.min.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var panelsStyles = { "fullContainer": "body" };
+/* ]]> */
+	</script>
+	<script type="text/javascript" src="js/styling-2105.min.js"></script>
+
+</body>
+
+</html>
