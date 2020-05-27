@@ -1,0 +1,112 @@
+.reviews {
+  &__header {
+    height: 0.88rem;
+    @include flex(row, space-between, center);
+    padding: 0 0.22rem;
+    background: #fafafa;
+    font-size: 0.21rem;
+    color: #1c1c1c;
+    font-weight: 800;
+  }
+  &__lef {
+    @include flex(row, left, center);
+    .ava {
+      width: 0.48rem;
+      height: 0.48rem;
+      margin-right: 0.14rem;
+    }
+    .arrow{
+      width: 0.11rem;
+      height: 0.2082rem;
+      margin-right: 0.14rem;
+    }
+  }
+  &__righ {
+    @include flex(row, left, center);
+  }
+  &__video {
+    width: 0.28rem;
+    height: 0.22rem;
+  }
+  &__info {
+    width: 0.27rem;
+    height: 0.27rem;
+    margin-left: 0.15rem;
+  }
+  &__main {
+    margin-top: 0.18rem;
+  }
+  &__comment {
+    max-width: 3.45rem;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 0.08rem 0;
+    padding-left: 0.31rem;
+    padding-right: 0.31rem;
+    margin: 0;
+    width: max-content;
+    margin-bottom: 0.1rem;
+    font-size: 0.19rem;
+    font-weight: 500;
+
+    &--left {
+      border: 1px solid #d0d0d0;
+    }
+    &--righ {
+      background: #efefef;
+      position: relative;
+      margin-left: auto;
+      margin-right: 0.1rem;
+    }
+    &--img {
+      width: 3.45rem;
+    }
+  }
+  &__user {
+    @include flex(row, left, flex-end);
+    position: relative;
+    left: 0.1rem;
+  }
+  &__img {
+    width: 0.38rem;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+  }
+  &__bottom {
+    background-image: url(../../img/bottom.png);
+    height: 0.52rem;
+    background-size: cover;
+    padding-left: 0.65rem;
+    margin-top: 0.2rem;
+    @include flex(row, left, center);
+    p {
+      margin: 0;
+      font-size: 0.18rem;
+      color: rgba(141, 141, 141, 0.6);
+    }
+  }
+}
+.owl-carousel {
+  .owl-dots {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.93rem;
+    
+   
+    margin: 0.2rem auto;
+    button {
+      width: 0.21rem;
+      height: 0.21rem;
+      border-radius: 100%;
+      outline: none;
+      background: #C4C4C4;
+      margin: 0.03rem;
+
+      &.active {
+       background: #FF444F;
+      }
+    }
+  }
+}
