@@ -1,0 +1,45 @@
+.timer {
+    padding-bottom: 0.3rem;
+    &__span {
+        font-size: 0.42rem;
+        color: #ffd929;
+        font-weight: 200;
+    }
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    max-width: 3rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 100%;
+    text-align: center;
+}
+
+.timer__title {
+    text-align: center;
+    margin: 0.2rem 0;
+    color: #ffd200;
+}
+
+.timer__desc {
+    font-size: 0.12rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    @include flex(row, space-between, center);
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 0.7rem;
+    text-align: center;
+}
