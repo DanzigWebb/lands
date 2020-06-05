@@ -1,10 +1,14 @@
-<!DOCTYPE html><html class="supports-no-js " lang="en"><head><script>
-  var curLan = "en";
-  var curLanLo = null;
+<!DOCTYPE html>
+<html class="supports-no-js " lang="en">
 
-  var curLanLo = "en-default";
+<head>
+  <script>
+    var curLan = "en";
+    var curLanLo = null;
 
-</script>
+    var curLanLo = "en-default";
+
+  </script>
 
 
 
@@ -93,17 +97,20 @@
   <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
   <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/20658833/digital_wallets/dialog">
   <meta name="shopify-checkout-api-token" content="07a6fd911a8dfac8166d0c9d5b632d44">
-  <meta id="in-context-paypal-metadata" data-shop-id="20658833" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+  <meta id="in-context-paypal-metadata" data-shop-id="20658833" data-venmo-supported="true"
+    data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-  <script id="apple-pay-shop-capabilities" type="application/json">{"shopId":20658833,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/20658833","merchantName":"Pivo","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Pivo","amount":"1.00"}}</script>
-  <script id="shopify-features" type="application/json">{"accessToken":"07a6fd911a8dfac8166d0c9d5b632d44","betas":["rich-media-storefront-analytics"],"domain":"getpivo.com","predictiveSearch":true,"shopId":20658833,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
+  <script id="apple-pay-shop-capabilities"
+    type="application/json">{"shopId":20658833,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/20658833","merchantName":"Pivo","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Pivo","amount":"1.00"}}</script>
+  <script id="shopify-features"
+    type="application/json">{"accessToken":"07a6fd911a8dfac8166d0c9d5b632d44","betas":["rich-media-storefront-analytics"],"domain":"getpivo.com","predictiveSearch":true,"shopId":20658833,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}</script>
   <script>var Shopify = Shopify || {};
     Shopify.shop = "youvr.myshopify.com";
     Shopify.locale = "en";
     Shopify.currency = { "active": "USD", "rate": "1.0" };
     Shopify.theme = { "name": "Pivo(new design, Pivorama, 5.29  )", "id": 82972344402, "theme_store_id": 829, "role": "main" };
     Shopify.cdnHost = "cdn.shopify.com";</script>
-  <script type="module">!function (o) { (o.Shopify = o.Shopify || {}).modules =!0 }(window);</script>
+  <script type="module">!function (o) { (o.Shopify = o.Shopify || {}).modules = !0 }(window);</script>
   <script>!function (o) { function n() { var o = []; function n() { o.push(Array.prototype.slice.apply(arguments)) } return n.q = o, n } var t = o.Shopify = o.Shopify || {}; t.loadFeatures = n(), t.autoloadFeatures = n() }(window);</script>
   <script>window.ShopifyPay = window.ShopifyPay || {};
     window.ShopifyPay.apiHost = "pay.shopify.com";</script>
@@ -125,7 +132,8 @@
         window.addEventListener('load', asyncLoad, false);
       }
     })();</script>
-  <script id="__st">var __st = { "a": 20658833, "offset": 32400, "reqid": "0f7ec1c6-94f2-4136-b859-b1cf8b886f61", "pageurl": "getpivo.com\/", "u": "770e06789c3a", "p": "home" };</script>
+  <script
+    id="__st">var __st = { "a": 20658833, "offset": 32400, "reqid": "0f7ec1c6-94f2-4136-b859-b1cf8b886f61", "pageurl": "getpivo.com\/", "u": "770e06789c3a", "p": "home" };</script>
   <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
   <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
     window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -166,12 +174,12 @@
       };
 
       var isDuplicatedThankYouPageView = function () {
-        return document.cookie.indexOf('loggedConversion=' + window.location.pathname)!== -1;
+        return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
       }
 
       var setCookieIfThankYouPage = function () {
-        if (window.location.pathname.indexOf('/checkouts')!== -1 &&
-          window.location.pathname.indexOf('/thank_you')!== -1) {
+        if (window.location.pathname.indexOf('/checkouts') !== -1 &&
+          window.location.pathname.indexOf('/thank_you') !== -1) {
 
           var twoMonthsFromNow = new Date(Date.now());
           twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
@@ -299,7 +307,7 @@
             var dom, bootstrap, iframe, iframeStyle;
             var doc = document;
             var win = window;
-            window.BOOMR.snippetMethod = wasFallback? "if": "i";
+            window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
             bootstrap = function (parent, scriptId) {
               var script = doc.createElement("script");
               script.id = scriptId || "boomr-if-as";
@@ -430,9 +438,13 @@
       document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 
     })();</script>
-  <script crossorigin="anonymous" data-source-attribution="shopify.loadfeatures" defer="defer" src="js/load_feature-589ff3342d639ed23c94f5fc11e03d64e0788e2a4a687391ebeeeef20eaf2f50.js"></script>
-  <script crossorigin="anonymous" defer="defer" src="js/storefront-21b5dddfc8b64c1ad68cee3ba7448d1ffa15c24e969ebc1fbccf1a3784b659ad.js"></script>
-  <script data-source-attribution="shopify.dynamic-checkout" defer="defer" src="js/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+  <script crossorigin="anonymous" data-source-attribution="shopify.loadfeatures" defer="defer"
+    src="js/load_feature-589ff3342d639ed23c94f5fc11e03d64e0788e2a4a687391ebeeeef20eaf2f50.js"></script>
+  <script crossorigin="anonymous" defer="defer"
+    src="js/storefront-21b5dddfc8b64c1ad68cee3ba7448d1ffa15c24e969ebc1fbccf1a3784b659ad.js"></script>
+  <script data-source-attribution="shopify.dynamic-checkout" defer="defer"
+    src="js/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js"
+    crossorigin="anonymous"></script>
 
 
   <style id="shopify-dynamic-checkout-cart">
@@ -508,7 +520,7 @@
 
     @media screen and (max-width: 1024px) and (min-width: 768px) and (max-aspect-ratio: 3/4) {
       .main-content-container-box .main-content-paragraph {
-        margin-top: 0!important;
+        margin-top: 0 !important;
         margin-bottom: 29vh;
       }
     }
@@ -581,9 +593,9 @@
     body {
       margin: 0;
       font-size: 1.6rem;
-      font-family:,;
-      font-style:;
-      font-weight:;
+      font-family: , ;
+      font-style: ;
+      font-weight: ;
       color: #4a4a4a;
       line-height: 1.625;
     }
@@ -597,7 +609,7 @@
     /* ---------------------------- Helper Classes ------------------------------ */
     .visually-hidden,
     .icon__fallback-text {
-      position: absolute!important;
+      position: absolute !important;
       overflow: hidden;
       clip: rect(0 0 0 0);
       height: 1px;
@@ -687,7 +699,7 @@
 
     .btn--clear:hover::after,
     .btn--clear::after {
-      outline: 0!important;
+      outline: 0 !important;
     }
 
     .btn::after,
@@ -1060,14 +1072,16 @@
 
 
 
-  <link title="theme" rel="preload" href="//cdn.shopify.com/s/files/1/2065/8833/t/308/assets/theme.scss.css?v=8221659769997418919" as="style">
-  <noscript><span data-translate="2"><link rel="stylesheet" href="css/theme.scss.css"></span></noscript>
+  <link title="theme" rel="preload"
+    href="//cdn.shopify.com/s/files/1/2065/8833/t/308/assets/theme.scss.css?v=8221659769997418919" as="style">
+  <noscript><span data-translate="2">
+      <link rel="stylesheet" href="css/theme.scss.css"></span></noscript>
 
   <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-   !function (a) { "use strict"; var b = function (b, c, d) { function e(a) { return h.body? a(): void setTimeout(function () { e(a) }) } function f() { i.addEventListener && i.removeEventListener("load", f); if (!Shopify.designMode) i.media = d || "all" } var g, h = a.document, i = h.createElement("link"); if (c) g = c; else { var j = (h.body || h.getElementsByTagName("head")[0]).childNodes; g = j[j.length - 1] } var k = h.styleSheets; i.rel = "stylesheet", i.href = b, i.media = Shopify.designMode? d || "all": "only x", e(function () { g.parentNode.insertBefore(i, c? g: g.nextSibling) }); var l = function (a) { for (var b = i.href, c = k.length; c--;)if (k[c].href === b) return a(); setTimeout(function () { l(a) }) }; return i.addEventListener && i.addEventListener("load", f), i.onloadcssdefined = l, l(f), i }; "undefined"!= typeof exports? exports.loadCSS = b: a.loadCSS = b }("undefined"!= typeof global? global: this);
+    !function (a) { "use strict"; var b = function (b, c, d) { function e(a) { return h.body ? a() : void setTimeout(function () { e(a) }) } function f() { i.addEventListener && i.removeEventListener("load", f); if (!Shopify.designMode) i.media = d || "all" } var g, h = a.document, i = h.createElement("link"); if (c) g = c; else { var j = (h.body || h.getElementsByTagName("head")[0]).childNodes; g = j[j.length - 1] } var k = h.styleSheets; i.rel = "stylesheet", i.href = b, i.media = Shopify.designMode ? d || "all" : "only x", e(function () { g.parentNode.insertBefore(i, c ? g : g.nextSibling) }); var l = function (a) { for (var b = i.href, c = k.length; c--;)if (k[c].href === b) return a(); setTimeout(function () { l(a) }) }; return i.addEventListener && i.addEventListener("load", f), i.onloadcssdefined = l, l(f), i }; "undefined" != typeof exports ? exports.loadCSS = b : a.loadCSS = b }("undefined" != typeof global ? global : this);
     /*! onloadCSS. (onload callback for loadCSS) [c]2017 Filament Group, Inc. MIT License */
-    function onloadCSS(a, b) { function c() {!d && b && (d =!0, b.call(a)) } var d; a.addEventListener && a.addEventListener("load", c), a.attachEvent && a.attachEvent("onload", c), "isApplicationInstalled" in navigator && "onloadcssdefined" in a && a.onloadcssdefined(c) }
+    function onloadCSS(a, b) { function c() { !d && b && (d = !0, b.call(a)) } var d; a.addEventListener && a.addEventListener("load", c), a.attachEvent && a.attachEvent("onload", c), "isApplicationInstalled" in navigator && "onloadcssdefined" in a && a.onloadcssdefined(c) }
 
     // Insert our stylesheet before our preload <link> tag
     var preload = document.querySelector('link[href="//cdn.shopify.com/s/files/1/2065/8833/t/308/assets/theme.scss.css?v=8221659769997418919"]');
@@ -1123,7 +1137,7 @@
       }
 
       .no-flex-footer__item li a {
-        font-size: 1.9rem!important;
+        font-size: 1.9rem !important;
       }
     }
   </style>
@@ -1153,16 +1167,16 @@
   <!-- start Mixpanel -->
   <script type="text/javascript">(function (c, a) {
       if (!a.__SV) {
-        var b = window; try { var d, m, j, k = b.location, f = k.hash; d = function (a, b) { return (m = a.match(RegExp(b + "=([^&]*)")))? m[1]: null }; f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b.sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k.pathname + k.search))) } catch (n) { } var l, h; window.mixpanel = a; a._i = []; a.init = function (b, d, g) {
+        var b = window; try { var d, m, j, k = b.location, f = k.hash; d = function (a, b) { return (m = a.match(RegExp(b + "=([^&]*)"))) ? m[1] : null }; f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b.sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k.pathname + k.search))) } catch (n) { } var l, h; window.mixpanel = a; a._i = []; a.init = function (b, d, g) {
           function c(b, i) {
             var a = i.split("."); 2 == a.length && (b = b[a[0]], i = a[1]); b[i] = function () {
               b.push([i].concat(Array.prototype.slice.call(arguments,
                 0)))
             }
-          } var e = a; "undefined"!== typeof g? e = a[g] = []: g = "mixpanel"; e.people = e.people || []; e.toString = function (b) { var a = "mixpanel"; "mixpanel"!== g && (a += "." + g); b || (a += " (stub)"); return a }; e.people.toString = function () { return e.toString(1) + ".people (stub)" }; l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+          } var e = a; "undefined" !== typeof g ? e = a[g] = [] : g = "mixpanel"; e.people = e.people || []; e.toString = function (b) { var a = "mixpanel"; "mixpanel" !== g && (a += "." + g); b || (a += " (stub)"); return a }; e.people.toString = function () { return e.toString(1) + ".people (stub)" }; l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
           for (h = 0; h < l.length; h++)c(e, l[h]); var f = "set set_once union unset remove delete".split(" "); e.get_group = function () { function a(c) { b[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); e.push([d, call2]) } } for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f.length; c++)a(f[c]); return b }; a._i.push([b, d, g])
-        }; a.__SV = 1.2; b = c.createElement("script"); b.type = "text/javascript"; b.async =!0; b.src = "undefined"!== typeof MIXPANEL_CUSTOM_LIB_URL?
-          MIXPANEL_CUSTOM_LIB_URL: "file:" === c.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js": "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js"; d = c.getElementsByTagName("script")[0]; d.parentNode.insertBefore(b, d)
+        }; a.__SV = 1.2; b = c.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+          MIXPANEL_CUSTOM_LIB_URL : "file:" === c.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js"; d = c.getElementsByTagName("script")[0]; d.parentNode.insertBefore(b, d)
       }
     })(document, window.mixpanel || []);
     mixpanel.init("79921e39baa461bc7b6310e750a1fc69");
@@ -1273,22 +1287,23 @@
 
   <!-- Start of Judge.me Core -->
   <link rel="dns-prefetch" href="https://cdn.judge.me/">
-  <script data-cfasync="false" class="jdgm-settings-script">window.jdgmSettings = { "pagination": 5, "hide_badge_preview_if_no_reviews": true, "verified_badge_placement": "left-of-reviewer-name", "widget_location_format": "country_iso_code", "all_reviews_include_out_of_store_products": true, "add_json_ld_snippet_on_all_reviews_page": true, "platform": "shopify", "reply_name": "Pivo", "footer": true, "autopublish": true, "review_dates": true, "enable_custom_form": false };</script>
+  <script data-cfasync="false"
+    class="jdgm-settings-script">window.jdgmSettings = { "pagination": 5, "hide_badge_preview_if_no_reviews": true, "verified_badge_placement": "left-of-reviewer-name", "widget_location_format": "country_iso_code", "all_reviews_include_out_of_store_products": true, "add_json_ld_snippet_on_all_reviews_page": true, "platform": "shopify", "reply_name": "Pivo", "footer": true, "autopublish": true, "review_dates": true, "enable_custom_form": false };</script>
   <style class="jdgm-settings-style">
     .jdgm-xx {
       left: 0
     }
 
     .jdgm-prev-badge[data-average-rating='0.00'] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-author-all-initials {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-author-last-initial {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-rev__replier:before {
@@ -1320,31 +1335,31 @@
     }
 
     .jdgm-preview-badge[data-template="product"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-preview-badge[data-template="collection"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-preview-badge[data-template="index"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-review-widget[data-from-snippet="true"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-verified-count-badget[data-from-snippet="true"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-carousel-wrapper[data-from-snippet="true"] {
-      display: none!important
+      display: none !important
     }
 
     .jdgm-all-reviews-text[data-from-snippet="true"] {
-      display: none!important
+      display: none !important
     }
   </style>
 
@@ -1389,10 +1404,10 @@
 
     .jdgm-star {
       font-family: 'JudgemeStar';
-      display: inline!important;
-      text-decoration: none!important;
-      padding: 0 4px 0 0!important;
-      margin: 0!important;
+      display: inline !important;
+      text-decoration: none !important;
+      padding: 0 4px 0 0 !important;
+      margin: 0 !important;
       font-weight: bold;
       opacity: 1;
       -webkit-font-smoothing: antialiased;
@@ -1404,7 +1419,7 @@
     }
 
     .jdgm-star:last-of-type {
-      padding: 0!important
+      padding: 0 !important
     }
 
     .jdgm-star.jdgm--on:before {
@@ -1429,8 +1444,8 @@
     }
 
     .jdgm-hidden {
-      display: none!important;
-      visibility: hidden!important
+      display: none !important;
+      visibility: hidden !important
     }
 
     .jdgm-temp-hidden {
@@ -1451,7 +1466,7 @@
     }
 
     .jdgm-prev-badge {
-      display: block!important
+      display: block !important
     }
   </style>
 
@@ -1460,14 +1475,18 @@
 
 
   <script data-cfasync="false" type="text/javascript" async src="js/shopify_v2.js"></script>
-  <link rel="stylesheet" type="text/css" media="nope!" href="css/shopify_v2.css" onload="this.media='all',function(){var d=document,e=d.createEvent('Event');e.initEvent('jdgm.doneLoadingCss',!0,!0),d.dispatchEvent(e)}();">
-  <noscript><span data-translate="3"><link rel="stylesheet" type="text/css" media="all" href="css/shopify_v2.css"></span></noscript>
+  <link rel="stylesheet" type="text/css" media="nope!" href="css/shopify_v2.css"
+    onload="this.media='all',function(){var d=document,e=d.createEvent('Event');e.initEvent('jdgm.doneLoadingCss',!0,!0),d.dispatchEvent(e)}();">
+  <noscript><span data-translate="3">
+      <link rel="stylesheet" type="text/css" media="all" href="css/shopify_v2.css"></span></noscript>
   <!-- End of Judge.me Core -->
 
 
-<script>
-  var currencyCode = "USD";
-</script><script src="js/currency.js"></script></head>
+  <script>
+    var currencyCode = "USD";
+  </script>
+  <script src="js/currency.js"></script>
+</head>
 
 
 
@@ -1498,7 +1517,8 @@
 
 
 
-    <div class="site-header site-header--homepage" data-section-id="header" data-section-type="header-section" data-drawer-push>
+    <div class="site-header site-header--homepage" data-section-id="header" data-section-type="header-section"
+      data-drawer-push>
 
     </div>
 
@@ -1584,7 +1604,8 @@
 
 
         <!-- main hero container -->
-        <div class="main-content-first-block" style="width: 100%; height: 100vh; min-height: 100vh; background: #e8ac04; position: relative;">
+        <div class="main-content-first-block"
+          style="width: 100%; height: 100vh; min-height: 100vh; background: #e8ac04; position: relative;">
           <div class="pageWidthFakeBox">
 
             <div class="main-content-container-box">
@@ -1627,10 +1648,14 @@
                   </div>
                 </div>
 
-                <a href="#offer" class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link" id="header-link" data-ga-label="data-theme-editor-setting=">
+                <a href="#offer"
+                  class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link"
+                  id="header-link" data-ga-label="data-theme-editor-setting=">
                   <ly-as-18196401> Скачать Pivo</ly-as-18196401>
                 </a>
-                <a href="#offer" class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link" data-ga-label="data-theme-editor-setting=">
+                <a href="#offer"
+                  class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link"
+                  data-ga-label="data-theme-editor-setting=">
                   <ly-as-18196401> Скачать Pivo</ly-as-18196401>
                 </a>
               </div>
@@ -1638,11 +1663,13 @@
 
           </div>
           <div id="banner-video">
-            <video class="new-banner--video desktop-tablet" style="max-width: 100%;" autoplay="true" muted loop="true" id="hero-video" playsinline>
+            <video class="new-banner--video desktop-tablet" style="max-width: 100%;" autoplay="true" muted loop="true"
+              id="hero-video" playsinline>
               <source src="Hero_Banner_e8df1ad8-68f0-415b-8bcc-69fea2d4ebf0.mp4">
             </video>
 
-            <video class="new-banner--video smartphone" style="display:none;" autoplay="true" muted loop="true" id="hero-video" playsinline>
+            <video class="new-banner--video smartphone" style="display:none;" autoplay="true" muted loop="true"
+              id="hero-video" playsinline>
               <source src="Hero_Mobile.mp4">
             </video>
           </div>
@@ -1662,12 +1689,15 @@
               </div>
 
               <div id="pivo-main-video" class="page-width custom__item custom__item-margin_vertical-40">
-                <div class="wistia_embed videoFoam=true" style="height:100%;position:relative;width:100%" id="pivo-full-video"></div>
+                <div class="wistia_embed videoFoam=true" style="height:100%;position:relative;width:100%"
+                  id="pivo-full-video"></div>
               </div>
 
               <div class="custom__item-margin_vertical-40">
                 <div class="text-center app-stores">
-                  <img class=" galaxy lazyload" data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/store-icon-03-02.svg?43260" alt="ios android icon">
+                  <img class=" galaxy lazyload"
+                    data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/store-icon-03-02.svg?43260"
+                    alt="ios android icon">
                   <div class="icon-ios"></div>
                   <div class="icon-android"></div>
                 </div>
@@ -1679,7 +1709,9 @@
                     <ly-as-18196403> Превратите свой смартфон в персонального оператора.</ly-as-18196403>
                   </div>
                   <p class="custom__block-body-text maximize-camera" data-i18n="maximize_camera">
-                    <ly-as-18196404> Максимизируйте возможности камеры вашего смартфона с помощью режимов Авто трекинг, умная съемка и 9 режимов быстрого создания. Больше не нужно умолять и подкупать друзей, чтобы они сделали вашу фотографию или снимали ваше видео. </ly-as-18196404>
+                    <ly-as-18196404> Максимизируйте возможности камеры вашего смартфона с помощью режимов Авто трекинг,
+                      умная съемка и 9 режимов быстрого создания. Больше не нужно умолять и подкупать друзей, чтобы они
+                      сделали вашу фотографию или снимали ваше видео. </ly-as-18196404>
                   </p>
                 </div>
               </div>
@@ -1756,7 +1788,7 @@
             }
 
             .custom-content-wrapper--1570752002898 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -1771,19 +1803,25 @@
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1570752002898 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1570752002898" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1570752002898 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1570752002898" data-section-type="custom-content">
             <div class="page-width full-size">
               <div class="page-width-header custom-content">
 
                 <div class="custom__item section-logo--size">
-                  <img data-src="//cdn.shopify.com/s/files/1/2065/8833/files/auto-tracking-icon_1024x1024.png?v=1581381485" alt="auto tracking img" class="lazyload">
+                  <img
+                    data-src="//cdn.shopify.com/s/files/1/2065/8833/files/auto-tracking-icon_1024x1024.png?v=1581381485"
+                    alt="auto tracking img" class="lazyload">
                 </div>
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="auto_tracking_cap"> Авто Трекинг</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="auto_tracking_cap"> Авто Трекинг</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="auto_tracking_title"> В центре внимания.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="auto_tracking_title">
+                  В центре внимания.</p>
 
 
               </div>
@@ -1791,7 +1829,8 @@
 
 
 
-                <div id class="  pivo-slider auto-tracking-slider custom__item custom__item--1570752150932 small--one-whole one-whole align--center">
+                <div id
+                  class="  pivo-slider auto-tracking-slider custom__item custom__item--1570752150932 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
@@ -1802,7 +1841,9 @@
                         <div>
 
 
-                          <div class="desktop wistia_async_rnvujdxdth  load_wistia wistia_embed autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="rnvujdxdth">
+                          <div
+                            class="desktop wistia_async_rnvujdxdth  load_wistia wistia_embed autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%" data-id="rnvujdxdth">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/rnvujdxdth/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
@@ -1810,7 +1851,8 @@
 
 
                           <div class="mobile wistia_async_txhkfkqmfg  load_wistia wistia_embed  autoplay_wistia 
-videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="txhkfkqmfg">
+videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"
+                            data-id="txhkfkqmfg">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/txhkfkqmfg/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
@@ -1819,21 +1861,27 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
                           <div class="mode-desc">
                             <h2 data-i18n="smart_tracking"> Куда бы вы не направились, Pivo последует за вами</h2>
-                            <p data-i18n="smart_tracking_desc"> Face Tracking всегда держит вас в поле зрения, так что вы никогда не уйдете с экрана и не испортите еще один почти идеальный дубль. Работает как в портретном, так и в пейзажном режиме </p>
+                            <p data-i18n="smart_tracking_desc"> Face Tracking всегда держит вас в поле зрения, так что
+                              вы никогда не уйдете с экрана и не испортите еще один почти идеальный дубль. Работает как
+                              в портретном, так и в пейзажном режиме </p>
                           </div>
                         </div>
 
                         <div>
 
 
-                          <div class="desktop wistia_async_lw26fsjd4k  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%">
+                          <div
+                            class="desktop wistia_async_lw26fsjd4k  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/lw26fsjd4k/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
 
 
 
-                          <div class="mobile wistia_async_3dvscrfnop  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%">
+                          <div
+                            class="mobile wistia_async_3dvscrfnop  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/3dvscrfnop/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
@@ -1842,7 +1890,9 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
                           <div class="mode-desc">
                             <h2 data-i18n="action_tracking"> Выберите цель для слежения.</h2>
-                            <p data-i18n="focus_on_part"> Если вы хотите, чтобы Pivo сосредоточилась на определенной части действия, просто выберите желаемую цель, а Pivo сделает все остальное. Работает как на передней, так и на задней камере.</p>
+                            <p data-i18n="focus_on_part"> Если вы хотите, чтобы Pivo сосредоточилась на определенной
+                              части действия, просто выберите желаемую цель, а Pivo сделает все остальное. Работает как
+                              на передней, так и на задней камере.</p>
                           </div>
                         </div>
 
@@ -1875,7 +1925,7 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
             }
 
             .custom-content-wrapper--1558999154788 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -1890,15 +1940,19 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1558999154788 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1558999154788" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1558999154788 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1558999154788" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="smart_capture"> УМНАЯ СЪЕМКА</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="smart_capture"> УМНАЯ СЪЕМКА</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="smart_cature_title"> Потому что иногда твои руки заняты.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="smart_cature_title">
+                  Потому что иногда твои руки заняты.</p>
 
 
               </div>
@@ -1910,11 +1964,15 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
                   <div class="custom__item-inner custom__item-inner--html">
 
 
-                    <div class="desktop wistia_async_isqsjj7ni7  load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="isqsjj7ni7">
+                    <div
+                      class="desktop wistia_async_isqsjj7ni7  load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none"
+                      style="height:100%;position:relative;width:100%" data-id="isqsjj7ni7">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
 <img src="https://fast.wistia.com/embed/medias/isqsjj7ni7/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;">-->
                     </div>
-                    <div class="mobile wistia_async_tx9331vux0  load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="tx9331vux0">
+                    <div
+                      class="mobile wistia_async_tx9331vux0  load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none"
+                      style="height:100%;position:relative;width:100%" data-id="tx9331vux0">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/tx9331vux0/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
@@ -1926,7 +1984,8 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
 
-                <div id class="  homepage--text custom__item custom__item--1558999154788-0 small--one-whole one-whole align--center">
+                <div id
+                  class="  homepage--text custom__item custom__item--1558999154788-0 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--text">
 
 
@@ -1947,7 +2006,8 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
                       <div class="custom__block-body-text rte-setting" data-i18n="bye_weird_selfie">
-                        <p> Прощайте неуклюжие, с расплющенным лицом селфи. Теперь снимать себя для фото и видео так же просто, как щелкать пальцами или просто говорить "сыр".</p>
+                        <p> Прощайте неуклюжие, с расплющенным лицом селфи. Теперь снимать себя для фото и видео так же
+                          просто, как щелкать пальцами или просто говорить "сыр".</p>
                       </div>
 
                     </div>
@@ -1976,7 +2036,7 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
             }
 
             .custom-content-wrapper--1558999863000 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -1991,17 +2051,21 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1558999863000 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1558999863000" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1558999863000 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1558999863000" data-section-type="custom-content">
             <div class="page-width full-size">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="multi_stream_live">  РЕЖИМ МУЛЬТИ- СТРИМ В ПРЯМОМ ЭФИРЕ</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="multi_stream_live"> РЕЖИМ МУЛЬТИ- СТРИМ В ПРЯМОМ ЭФИРЕ</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="multi_stream_title"> Вызываем все стримеры.
-  
-</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="multi_stream_title">
+                  Вызываем все стримеры.
+
+                </p>
 
 
               </div>
@@ -2014,12 +2078,14 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
                     <div class="desktop wistia_async_xu2ctw8xwd load_wistia wistia_embed autoplay_wistia 
- videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="xu2ctw8xwd">
+ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"
+                      data-id="xu2ctw8xwd">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/xu2ctw8xwd/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
                     <div class="mobile wistia_async_6llji8sa8k load_wistia wistia_embed autoplay_wistia 
- videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="6llji8sa8k">
+ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"
+                      data-id="6llji8sa8k">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/6llji8sa8k/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
@@ -2031,7 +2097,8 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
 
-                <div id class="  homepage--text multi-stream__text custom__item custom__item--1558999863000-0 small--one-whole medium-up--one-half align--center">
+                <div id
+                  class="  homepage--text multi-stream__text custom__item custom__item--1558999863000-0 small--one-whole medium-up--one-half align--center">
                   <div class="custom__item-inner custom__item-inner--text">
 
 
@@ -2052,7 +2119,9 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
                       <div class="custom__block-body-text rte-setting" data-i18n="auto_tracking_live">
-                        <p> Воспользуйтесь преимуществами режимов автоматического слежения Pivo во время трансляции в прямом эфире на всех ваших любимых платформах одновременно. Работает на Restream. <br> <br> </p>
+                        <p> Воспользуйтесь преимуществами режимов автоматического слежения Pivo во время трансляции в
+                          прямом эфире на всех ваших любимых платформах одновременно. Работает на Restream. <br> <br>
+                        </p>
                       </div>
 
                     </div>
@@ -2064,7 +2133,8 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
 
-                <div id class="   custom__item custom__item--1558999901047 small--one-whole medium-up--one-half align--center">
+                <div id
+                  class="   custom__item custom__item--1558999901047 small--one-whole medium-up--one-half align--center">
                   <div class="custom__item-inner custom__item-inner--image">
 
 
@@ -2078,17 +2148,21 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
                       .custom__item--1579486037741 {
-                        margin-left: 0!important;
+                        margin-left: 0 !important;
                       }
                     </style>
 
 
                     <div class="custom__block-image-container" style="padding-top:12.612035851472472%">
 
-                      <img class="custom__block-image lazyload" data-src="//cdn.shopify.com/s/files/1/2065/8833/files/multiple_platforms_{width}x.png?v=1581381230" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="7.928934010152284" data-sizes="auto" alt="sns collection">
+                      <img class="custom__block-image lazyload"
+                        data-src="//cdn.shopify.com/s/files/1/2065/8833/files/multiple_platforms_{width}x.png?v=1581381230"
+                        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                        data-aspectratio="7.928934010152284" data-sizes="auto" alt="sns collection">
 
-                      <noscript><span data-translate="34"><img src="img/multiple_platforms_1024x1024.png" alt="sns collection" class="custom__block-image">
-                      </span></noscript>
+                      <noscript><span data-translate="34"><img src="img/multiple_platforms_1024x1024.png"
+                            alt="sns collection" class="custom__block-image">
+                        </span></noscript>
                     </div>
 
 
@@ -2117,7 +2191,7 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
             }
 
             .custom-content-wrapper--1558999999655 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2132,15 +2206,19 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1558999999655 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1558999999655" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1558999999655 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1558999999655" data-section-type="custom-content">
             <div class="page-width full-size">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="many_me"> MANY ME</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="many_me"> MANY ME</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="many_me_title"> Ещё веселее.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="many_me_title"> Ещё
+                  веселее.</p>
 
 
               </div>
@@ -2148,15 +2226,18 @@ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;posi
 
 
 
-                <div id class="  pivo-slider manyme-slider custom__item custom__item--1559000046370 small--one-whole one-whole align--center">
+                <div id
+                  class="  pivo-slider manyme-slider custom__item custom__item--1559000046370 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
                     <div class="video-slider carousel type-one-carousel">
                       <div class>
-                        <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Many-Me-web.jpg?v=1590022411" class="lazyload desktop" alt="manyme web" style>
+                        <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Many-Me-web.jpg?v=1590022411"
+                          class="lazyload desktop" alt="manyme web" style>
 
-                        <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/ManyMe-Mobile.jpg?v=1590020006" class="lazyload mobile" alt="manyme mobile" style>
+                        <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/ManyMe-Mobile.jpg?v=1590020006"
+                          class="lazyload mobile" alt="manyme mobile" style>
                       </div>
 
                       <div class style>
@@ -2182,7 +2263,8 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                     </div>
 
                     <div class="mode-desc" style="padding:0 5%;">
-                      <p data-i18n="many_me_desc"> Умножьте себя до 15 раз и создайте столько разных версий себя, сколько вы хотите, в одном и том же месте, в одной и той же картине.</p>
+                      <p data-i18n="many_me_desc"> Умножьте себя до 15 раз и создайте столько разных версий себя,
+                        сколько вы хотите, в одном и том же месте, в одной и той же картине.</p>
                     </div>
 
 
@@ -2225,15 +2307,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1559000137865 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1559000137865" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1559000137865 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1559000137865" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="motion_time_lapse"> ВРЕМЕННОЙ ИНТЕРВАЛ ДВИЖЕНИЯ</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="motion_time_lapse"> ВРЕМЕННОЙ ИНТЕРВАЛ ДВИЖЕНИЯ</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="time_lapse_title"> Более иммерсивный. Всегда широкомасштабный.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="time_lapse_title">
+                  Более иммерсивный. Всегда широкомасштабный.</p>
 
 
               </div>
@@ -2245,12 +2331,15 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
-                    <div class="desktop wistia_async_om2ehdhm1e load_wistia wistia_embed autoplay_wistia   videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="om2ehdhm1e">
+                    <div
+                      class="desktop wistia_async_om2ehdhm1e load_wistia wistia_embed autoplay_wistia   videoFoam=true playsuspendedoffscreen=true preload=none"
+                      style="height:100%;position:relative;width:100%" data-id="om2ehdhm1e">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/om2ehdhm1e/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
                     <div class="mobile wistia_async_rjcdmrghzp load_wistia wistia_embed autoplay_wistia 
- videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="rjcdmrghzp">
+ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"
+                      data-id="rjcdmrghzp">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/rjcdmrghzp/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
@@ -2262,7 +2351,8 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
 
-                <div id class="  homepage--text custom__item custom__item--1559213644911 small--one-whole one-whole align--center">
+                <div id
+                  class="  homepage--text custom__item custom__item--1559213644911 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--text">
 
 
@@ -2283,7 +2373,9 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
                       <div class="custom__block-body-text rte-setting" data-i18n="timelap_desc">
-                        <p> Съемка с помощью Pivo Motion Time Lapse переводит традиционные фотографии с временным отставанием на другой уровень динамики. В чем секрет? Плавное 360-градусное горизонтальное панорамирование камеры.</p>
+                        <p> Съемка с помощью Pivo Motion Time Lapse переводит традиционные фотографии с временным
+                          отставанием на другой уровень динамики. В чем секрет? Плавное 360-градусное горизонтальное
+                          панорамирование камеры.</p>
                       </div>
 
                     </div>
@@ -2312,7 +2404,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1589945912443 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2323,15 +2415,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" latest custom-content-wrapper custom-content-wrapper--1589945912443 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1589945912443" data-section-type="custom-content">
+          <div data-bgset id
+            class=" latest custom-content-wrapper custom-content-wrapper--1589945912443 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1589945912443" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="pivorama"> PIVORAMA</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="pivorama"> PIVORAMA</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="pivorama_title"> Идеальная панорама и Миниатюрная планета.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="pivorama_title">
+                  Идеальная панорама и Миниатюрная планета.</p>
 
 
               </div>
@@ -2343,11 +2439,14 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
-                    <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Mexied_section_1600x.png" class="lazyload">
+                    <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Mexied_section_1600x.png"
+                      class="lazyload">
 
 
                     <div class="mode-desc mode-desc mode-desc--top">
-                      <p data-i18n="pivorama_desc"> Запечатлейте мир вокруг вас в бесконечно разнообразных ракурсах. Снимайте захватывающие панорамы без помощи рук или превращайте окружающий мир в невероятно креативные снимки. И самое лучшее: теперь вы можете присутствовать на них!</p>
+                      <p data-i18n="pivorama_desc"> Запечатлейте мир вокруг вас в бесконечно разнообразных ракурсах.
+                        Снимайте захватывающие панорамы без помощи рук или превращайте окружающий мир в невероятно
+                        креативные снимки. И самое лучшее: теперь вы можете присутствовать на них!</p>
                     </div>
 
 
@@ -2375,7 +2474,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1571029054276 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2390,15 +2489,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" prev custom-content-wrapper custom-content-wrapper--1571029054276 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1571029054276" data-section-type="custom-content">
+          <div data-bgset id
+            class=" prev custom-content-wrapper custom-content-wrapper--1571029054276 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1571029054276" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="tiny_planet"> МИНИАТЮРНАЯ ПЛАНЕТА</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="tiny_planet"> МИНИАТЮРНАЯ ПЛАНЕТА</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="tiny_planet_title"> Выворачивай свой мир наизнанку.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="tiny_planet_title">
+                  Выворачивай свой мир наизнанку.</p>
 
 
               </div>
@@ -2406,15 +2509,18 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
 
-                <div id class="  pivo-slider wide-angle-slider custom__item custom__item--1571029155455 small--one-whole one-whole align--center">
+                <div id
+                  class="  pivo-slider wide-angle-slider custom__item custom__item--1571029155455 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
-                    <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Tinyplanets.jpg?v=1583740002" alt="tiny planet" class="lazyload">
+                    <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Tinyplanets.jpg?v=1583740002"
+                      alt="tiny planet" class="lazyload">
 
 
                     <div class="mode-desc">
-                      <p data-i18n="tiny_planet_desc"> Заставь мир вращаться вокруг тебя! Идеально подходит для совместного использования в любимых социальных сетях.</p>
+                      <p data-i18n="tiny_planet_desc"> Заставь мир вращаться вокруг тебя! Идеально подходит для
+                        совместного использования в любимых социальных сетях.</p>
                     </div>
 
 
@@ -2442,7 +2548,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1571028767618 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2457,15 +2563,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" prev custom-content-wrapper custom-content-wrapper--1571028767618 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1571028767618" data-section-type="custom-content">
+          <div data-bgset id
+            class=" prev custom-content-wrapper custom-content-wrapper--1571028767618 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1571028767618" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="perfect_panorama"> ВЕЛИКОЛЕПНАЯ ПАНОРАМА</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="perfect_panorama"> ВЕЛИКОЛЕПНАЯ ПАНОРАМА</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="perfect_panorama_title"> Красивые панорамы легким способом</p>
+                <p class="custom__item text-center custom-content__section-header-desc"
+                  data-i18n="perfect_panorama_title"> Красивые панорамы легким способом</p>
 
 
               </div>
@@ -2478,12 +2588,15 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
                     <div class="full-img-container">
-                      <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/2.jpg?v=1583740002" style="width:100%;" alt="pano compressed web" class="desktop lazyload">
-                      <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/pano-mobile.jpg?v=1560908510" alt="pano compressed mobile" class="lazyload mobile">
+                      <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/2.jpg?v=1583740002"
+                        style="width:100%;" alt="pano compressed web" class="desktop lazyload">
+                      <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/pano-mobile.jpg?v=1560908510"
+                        alt="pano compressed mobile" class="lazyload mobile">
 
 
                       <div class="mode-desc mode-desc--top">
-                        <p data-i18n="perfect_panorama_desc"> Снимайте красивые, цельные панорамы в режиме hands-free. О, и теперь вы тоже можете быть внутри них!</p>
+                        <p data-i18n="perfect_panorama_desc"> Снимайте красивые, цельные панорамы в режиме hands-free.
+                          О, и теперь вы тоже можете быть внутри них!</p>
 
                       </div>
                     </div>
@@ -2513,7 +2626,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1589946164634 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2524,15 +2637,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1589946164634 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1589946164634" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1589946164634 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1589946164634" data-section-type="custom-content">
             <div class="page-width full-size">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="fifty_fifty"> 50/50</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="fifty_fifty"> 50/50</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="50_title"> Быстро, легко, киношно</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="50_title"> Быстро,
+                  легко, киношно</p>
 
 
               </div>
@@ -2547,19 +2664,26 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                     <div class="video-slider carousel type-two-carousel">
                       <div class>
 
-                        <div class="desktop wistia_async_7hgvts3cre load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="7hgvts3cre">
+                        <div
+                          class="desktop wistia_async_7hgvts3cre load_wistia wistia_embed  autoplay_wistia videoFoam=true playsuspendedoffscreen=true preload=none"
+                          style="height:100%;position:relative;width:100%" data-id="7hgvts3cre">
                           <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/7hgvts3cre/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                         </div>
 
                         <div class="mobile wistia_async_21yhcrress load_wistia wistia_embed autoplay_wistia 
- videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="21yhcrress">
+ videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"
+                          data-id="21yhcrress">
                           <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/21yhcrress/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                         </div>
                       </div>
 
                       <div class style>
-                        <div class="desktop  wistia_async_wxupvcz648 load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"> </div>
-                        <div class="mobile  wistia_async_pc8t7dpbew load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"> </div>
+                        <div
+                          class="desktop  wistia_async_wxupvcz648 load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                          style="height:100%;position:relative;width:100%"> </div>
+                        <div
+                          class="mobile  wistia_async_pc8t7dpbew load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                          style="height:100%;position:relative;width:100%"> </div>
 
 
                       </div>
@@ -2574,7 +2698,8 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
 
-                <div id class="  homepage--text custom__item custom__item--1589946347701 small--one-whole one-whole align--center">
+                <div id
+                  class="  homepage--text custom__item custom__item--1589946347701 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--text">
 
 
@@ -2639,15 +2764,19 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class="  custom-content-wrapper custom-content-wrapper--1572228880285 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1572228880285" data-section-type="custom-content">
+          <div data-bgset id
+            class="  custom-content-wrapper custom-content-wrapper--1572228880285 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1572228880285" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="special_effect"> ЛЁГКИЙ СПЕЦИАЛЬНЫЙ ФОКУС</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="special_effect"> ЛЁГКИЙ СПЕЦИАЛЬНЫЙ ФОКУС</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="special_effect_title"> Готовые эффекты.</p>
+                <p class="custom__item text-center custom-content__section-header-desc"
+                  data-i18n="special_effect_title"> Готовые эффекты.</p>
 
 
               </div>
@@ -2659,17 +2788,24 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
-                    <div class="desktop wistia_async_fos69o1qpw load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="fos69o1qpw">
+                    <div
+                      class="desktop wistia_async_fos69o1qpw load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none"
+                      style="height:100%;position:relative;width:100%" data-id="fos69o1qpw">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/fos69o1qpw/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
-                    <div class="mobile wistia_async_scseu1w4o4 load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="scseu1w4o4">
+                    <div
+                      class="mobile wistia_async_scseu1w4o4 load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none"
+                      style="height:100%;position:relative;width:100%" data-id="scseu1w4o4">
                       <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/scseu1w4o4/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                     </div>
 
                     <div class="mode-desc custom__block-body-text mode-desc--top">
-                      <h2 style="color:white; margin-bottom:10px;" data-i18n="special_effect_subtitle"> Double Take, Flash, Versus</h2>
-                      <p style="color:white;" data-i18n="special_effect_desc"> Соберите вместе отдельные мероприятия для классических рассказов "до и после". Или бросьте вызов своим друзьям на захватывающий танцевальный вечер, соревнование по синхронизации губ или рэп-баттл.</p>
+                      <h2 style="color:white; margin-bottom:10px;" data-i18n="special_effect_subtitle"> Double Take,
+                        Flash, Versus</h2>
+                      <p style="color:white;" data-i18n="special_effect_desc"> Соберите вместе отдельные мероприятия для
+                        классических рассказов "до и после". Или бросьте вызов своим друзьям на захватывающий
+                        танцевальный вечер, соревнование по синхронизации губ или рэп-баттл.</p>
                     </div>
 
 
@@ -2697,7 +2833,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1559000796350 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2712,19 +2848,24 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" pivo-pod custom-content-wrapper custom-content-wrapper--1559000796350 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1559000796350" data-section-type="custom-content">
+          <div data-bgset id
+            class=" pivo-pod custom-content-wrapper custom-content-wrapper--1559000796350 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1559000796350" data-section-type="custom-content">
             <div class="page-width full-size">
               <div class="page-width-header custom-content">
 
                 <div class="custom__item section-logo--size">
-                  <img data-src="//cdn.shopify.com/s/files/1/2065/8833/files/pivo-icon_1024x1024.png?v=1581381635" alt="pivo symbol icon" class="lazyload">
+                  <img data-src="//cdn.shopify.com/s/files/1/2065/8833/files/pivo-icon_1024x1024.png?v=1581381635"
+                    alt="pivo symbol icon" class="lazyload">
                 </div>
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n> PIVO</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n> PIVO</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="pivo_pod_title"> Один гениальный маленький кубик. Бесконечное творчество.</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="pivo_pod_title"> Один
+                  гениальный маленький кубик. Бесконечное творчество.</p>
 
 
               </div>
@@ -2732,7 +2873,8 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
 
 
-                <div id class="  pivo-slider pivo-pod-slider custom__item custom__item--1559000807084 small--one-whole one-whole align--center">
+                <div id
+                  class="  pivo-slider pivo-pod-slider custom__item custom__item--1559000807084 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
@@ -2741,11 +2883,15 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                       </div>
                       <div class="video-slider carousel type-two-carousel pivo-pod-slider">
                         <div>
-                          <div class="desktop wistia_async_rehnmfmzv2 load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="rehnmfmzv2">
+                          <div
+                            class="desktop wistia_async_rehnmfmzv2 load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%" data-id="rehnmfmzv2">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/rehnmfmzv2/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
-                          <div class="mobile wistia_async_17coepxxeh load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%" data-id="17coepxxeh">
+                          <div
+                            class="mobile wistia_async_17coepxxeh load_wistia wistia_embed autoplay_wistia  videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%" data-id="17coepxxeh">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/17coepxxeh/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
@@ -2755,7 +2901,8 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 
                           <div class="mode-desc">
                             <h2 data-i18n="portable"> Идеально портативный</h2>
-                            <p data-i18n="portable_desc"> Возьмите Pivo to-go с автоматическим вращением на 360°, выдвижными стабилизирующими ножками и поддержкой стандартных штативов камеры.</p>
+                            <p data-i18n="portable_desc"> Возьмите Pivo to-go с автоматическим вращением на 360°,
+                              выдвижными стабилизирующими ножками и поддержкой стандартных штативов камеры.</p>
                           </div>
                         </div>
                         <!-- not seeling
@@ -2773,25 +2920,33 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
 </div> -->
 
                         <div>
-                          <div class="desktop wistia_async_y1q8v58m7h  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%">
+                          <div
+                            class="desktop wistia_async_y1q8v58m7h  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/y1q8v58m7h/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
-                          <div class="mobile wistia_async_7u8j0swuhk  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%">
+                          <div
+                            class="mobile wistia_async_7u8j0swuhk  load_wistia wistia_embed videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%">
                             <!--<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/7u8j0swuhk/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;"></div>-->
                           </div>
 
                           <div class="mode-desc">
                             <h2 data-i18n="steady_footing"> Устойчивая основа</h2>
-                            <p data-i18n="steady_footing_desc"> Вытяните ножки Pivo для дополнительной устойчивости или просто прикрепите их к любому стандартному штативу с резьбой ¼".</p>
+                            <p data-i18n="steady_footing_desc"> Вытяните ножки Pivo для дополнительной устойчивости или
+                              просто прикрепите их к любому стандартному штативу с резьбой ¼".</p>
                           </div>
                         </div>
 
                         <div>
-                          <img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/1_2_remote_edit_1024x1024_64aa1399-b2ee-421b-8b1a-3a36eff74085_1024x1024.jpg?v=1560940888" style="width:100%;" alt="remote control">
+                          <img class="lazyload"
+                            data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/1_2_remote_edit_1024x1024_64aa1399-b2ee-421b-8b1a-3a36eff74085_1024x1024.jpg?v=1560940888"
+                            style="width:100%;" alt="remote control">
                           <div class="mode-desc">
                             <h2 data-i18n="precise_remote"> Точный управление</h2>
-                            <p data-i18n="precise_remote_desc"> Исключительное удобство. Каждый Pivo поставляется с пультом дистанционного управления, что позволяет делать снимки с легкостью.</p>
+                            <p data-i18n="precise_remote_desc"> Исключительное удобство. Каждый Pivo поставляется с
+                              пультом дистанционного управления, что позволяет делать снимки с легкостью.</p>
                           </div>
                         </div>
 
@@ -2824,7 +2979,7 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
             }
 
             .custom-content-wrapper--1559000863269 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2839,14 +2994,17 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" current-version-acc current-version custom-content-wrapper custom-content-wrapper--1559000863269 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1559000863269" data-section-type="custom-content">
+          <div data-bgset id
+            class=" current-version-acc current-version custom-content-wrapper custom-content-wrapper--1559000863269 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1559000863269" data-section-type="custom-content">
             <div class="page-width full-size">
 
               <div class="custom-content main-contents custom-content--1559000863269">
 
 
 
-                <div id class="  pivo-slider add-ons-slider custom__item custom__item--1559000876733 small--one-whole one-whole align--center">
+                <div id
+                  class="  pivo-slider add-ons-slider custom__item custom__item--1559000876733 small--one-whole one-whole align--center">
                   <div class="custom__item-inner custom__item-inner--html">
 
 
@@ -2855,33 +3013,46 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
                       </div>
                       <div class="video-slider carousel type-two-carousel">
                         <div>
-                          <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Turntable_web.jpg?51280" alt="Turntable web" class="lazyload desktop">
-                          <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Turntable_Mobile.jpg?51280" alt="Turntable mobile" class="lazyload mobile">
+                          <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Turntable_web.jpg?51280"
+                            alt="Turntable web" class="lazyload desktop">
+                          <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Turntable_Mobile.jpg?51280"
+                            alt="Turntable mobile" class="lazyload mobile">
 
                           <div class="mode-desc">
                             <h2 data-i18n="turntable"> Вертушка</h2>
-                            <p data-i18n="turntable_desc"> Захватите все углы - спереди, сзади и из стороны в сторону. Идеально подходит для съемки 360-градусных снимков, которые можно встраивать и загружать в блоги, веб-сайты и другие социальные сети.</p>
+                            <p data-i18n="turntable_desc"> Захватите все углы - спереди, сзади и из стороны в сторону.
+                              Идеально подходит для съемки 360-градусных снимков, которые можно встраивать и загружать в
+                              блоги, веб-сайты и другие социальные сети.</p>
                           </div>
                         </div>
 
                         <div>
-                          <img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Copy_of_Compact_studio-webjpg@2x.jpg" style="width:100%;" alt="lightbox web" class="lazyload desktop"><img data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Compact_studio-Mobile_96784c34-87d7-4f70-8c9a-2bebea9d7b0c.jpg?v=1560926784" style="width:100%;" alt="lightbox mobile" class="lazyload mobile">
+                          <img
+                            data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Copy_of_Compact_studio-webjpg@2x.jpg"
+                            style="width:100%;" alt="lightbox web" class="lazyload desktop"><img
+                            data-src="https://cdn.shopify.com/s/files/1/2065/8833/files/Compact_studio-Mobile_96784c34-87d7-4f70-8c9a-2bebea9d7b0c.jpg?v=1560926784"
+                            style="width:100%;" alt="lightbox mobile" class="lazyload mobile">
                           <div class="mode-desc">
                             <h2 data-i18n="lightbox"> Лайтбокс</h2>
-                            <p data-i18n="lightbox_desc"> Дайте своей продукции профессиональную среду освещения, которую они заслуживают. Идеально сочетаются с вертушкой.</p>
+                            <p data-i18n="lightbox_desc"> Дайте своей продукции профессиональную среду освещения,
+                              которую они заслуживают. Идеально сочетаются с вертушкой.</p>
                           </div>
                         </div>
 
 
                         <div>
                           <div class="desktop 
-wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"> </div>
+wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%"> </div>
 
-                          <div class="mobile wistia_async_12uzp2z3o1 load_wistia wistia_embed  videoFoam=true playsuspendedoffscreen=true preload=none" style="height:100%;position:relative;width:100%"> </div>
+                          <div
+                            class="mobile wistia_async_12uzp2z3o1 load_wistia wistia_embed  videoFoam=true playsuspendedoffscreen=true preload=none"
+                            style="height:100%;position:relative;width:100%"> </div>
 
                           <div class="mode-desc">
                             <h2 data-i18n="gopro_mount"> GoPro Mount</h2>
-                            <p data-i18n="gopro_mount_desc"> Расширьте возможности Pivo по автоматическому отслеживанию и вращению в GoPro.</p>
+                            <p data-i18n="gopro_mount_desc"> Расширьте возможности Pivo по автоматическому отслеживанию
+                              и вращению в GoPro.</p>
                           </div>
                         </div>
 
@@ -2914,7 +3085,7 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
             }
 
             .custom-content-wrapper--1577342158977 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2925,7 +3096,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" new-release-acc new-release custom-content-wrapper custom-content-wrapper--1577342158977 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1577342158977" data-section-type="custom-content">
+          <div data-bgset id
+            class=" new-release-acc new-release custom-content-wrapper custom-content-wrapper--1577342158977 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1577342158977" data-section-type="custom-content">
             <div class="page-width ">
 
               <div class="custom-content main-contents custom-content--1577342158977">
@@ -2952,7 +3125,7 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
             }
 
             .custom-content-wrapper--1571008651045 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -2967,15 +3140,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id="insta-container" class="  custom-content-wrapper custom-content-wrapper--1571008651045 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole" data-section-id="1571008651045" data-section-type="custom-content">
+          <div data-bgset id="insta-container"
+            class="  custom-content-wrapper custom-content-wrapper--1571008651045 custom-content-wrapper--top-margin custom-content-wrapper--bottom-margin one-whole"
+            data-section-id="1571008651045" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="instagram"> ИНСТАГРАМ</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="instagram"> ИНСТАГРАМ</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="instagram_title"> Наше сообщество</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="instagram_title">
+                  Наше сообщество</p>
 
 
               </div>
@@ -2987,7 +3164,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-              <div class="placeholder-noblocks"> В настоящее время этот раздел не содержит никакого материала. Добавляйте содержимое в этот раздел с помощью боковой панели. </div>
+              <div class="placeholder-noblocks"> В настоящее время этот раздел не содержит никакого материала.
+                Добавляйте содержимое в этот раздел с помощью боковой панели. </div>
 
 
             </div>
@@ -3032,7 +3210,7 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
             }
 
             .custom-content-wrapper--1571031458664 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -3047,15 +3225,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id="product-slider" class=" new_release current-version current-version-product non-promotion product-card-slider custom-content-wrapper custom-content-wrapper--1571031458664 custom-content-wrapper--top-margin  one-whole" data-section-id="1571031458664" data-section-type="custom-content">
+          <div data-bgset id="product-slider"
+            class=" new_release current-version current-version-product non-promotion product-card-slider custom-content-wrapper custom-content-wrapper--1571031458664 custom-content-wrapper--top-margin  one-whole"
+            data-section-id="1571031458664" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
 
-                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center" data-i18n="SHOP"> МАГАЗИН</h2>
+                <h2 class="custom__item custom-content__section-header custom-content__section-header--cap  text-center"
+                  data-i18n="SHOP"> МАГАЗИН</h2>
 
 
-                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="shop_title"> Выберите свой Pivo</p>
+                <p class="custom__item text-center custom-content__section-header-desc" data-i18n="shop_title"> Выберите
+                  свой Pivo</p>
 
 
               </div>
@@ -3063,7 +3245,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-                <div id class="  additional-products-trigger  product-container--home custom__item custom__item--1571031534512 small--one-whole medium-up--one-quarter align--center">
+                <div id
+                  class="  additional-products-trigger  product-container--home custom__item custom__item--1571031534512 small--one-whole medium-up--one-quarter align--center">
                   <div class="custom__item-inner custom__item-inner--product">
 
 
@@ -3109,10 +3292,15 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-                        <img class="card__image lazyload fade-in product__img" data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242_{width}x.jpg?v=1582526379" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="Pivo">
+                        <img class="card__image lazyload fade-in product__img"
+                          data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242_{width}x.jpg?v=1582526379"
+                          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0"
+                          data-sizes="auto" alt="Pivo">
 
-                        <noscript><span data-translate="77"><img src="img/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242_1024x1024.jpg" alt="Pivo" class="card__image product__img">
-                        </span></noscript>
+                        <noscript><span data-translate="77"><img
+                              src="img/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242_1024x1024.jpg" alt="Pivo"
+                              class="card__image product__img">
+                          </span></noscript>
                       </div>
 
 
@@ -3122,7 +3310,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                       </div>
 
 
-                      </a><div class="card__info"><a href="/products/pivo" class="card__wrapper text-center card__wrapper--padding">
+                    </a>
+                    <div class="card__info"><a href="/products/pivo"
+                        class="card__wrapper text-center card__wrapper--padding">
 
 
                         <div class="card__price">
@@ -3155,18 +3345,24 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
                         </div>
 
-                        </a><div class="text-center add-product-box"><a href="/products/pivo" class="card__wrapper text-center card__wrapper--padding">
-                          </a><a class="add-product btn pivo-btn btn--to-secondary  add-to-cart-btn product__add-to-cart-button" product-id="4047623225426" id="29909705293906" data-i18n="add_to_cart_btn"></a>
-                        </div>
-
-
-
-                        <a href="/products/pivo" class="shop-link product-card--link" style="color:#4a4a4a; text-decoration:none; display:block; text-align:Center;"><span data-i18n="learn_more" class="origin-price triangle-right-arrow--red triangle-right-arrow">
-                            <ly-as-18193614> узнать больше</ly-as-18193614>
-                          </span></a>
-
+                      </a>
+                      <div class="text-center add-product-box"><a href="/products/pivo"
+                          class="card__wrapper text-center card__wrapper--padding">
+                        </a><a
+                          class="add-product btn pivo-btn btn--to-secondary  add-to-cart-btn product__add-to-cart-button"
+                          product-id="4047623225426" id="29909705293906" data-i18n="add_to_cart_btn"></a>
                       </div>
-                    
+
+
+
+                      <a href="/products/pivo" class="shop-link product-card--link"
+                        style="color:#4a4a4a; text-decoration:none; display:block; text-align:Center;"><span
+                          data-i18n="learn_more" class="origin-price triangle-right-arrow--red triangle-right-arrow">
+                          <ly-as-18193614> узнать больше</ly-as-18193614>
+                        </span></a>
+
+                    </div>
+
 
 
 
@@ -3193,15 +3389,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                         <a class="close additional-product-popup-close" id>×</a>
 
                         <div class="content flex purchased-product">
-                          <div class="text-center h4 medium-up--hide sub-title flex-small--one-whole"><span class="added-quantity"></span><span data-i18n="item_added">
+                          <div class="text-center h4 medium-up--hide sub-title flex-small--one-whole"><span
+                              class="added-quantity"></span><span data-i18n="item_added">
                               <ly-as-18193889> добавленные товары</ly-as-18193889><br>
                               <ly-as-18193890> в корзину</ly-as-18193890>
                             </span></div>
                           <div class="flex-medium-up--one-quarter flex-small--one-third">
-                            <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242.jpg?v=1582526379" alt="Pivo" class="lazyload">
+                            <img
+                              data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_4fe5c144-fa23-4fdb-8c26-475fb6a27242.jpg?v=1582526379"
+                              alt="Pivo" class="lazyload">
                           </div>
                           <div class="flex-medium-up--three-quarters flex--self-middle flex flex-small--two-thirds">
-                            <div class=" h4 small--hide medium-up--one-whole sub-title"><span class="added-quantity"></span><span data-i18n="item_added">
+                            <div class=" h4 small--hide medium-up--one-whole sub-title"><span
+                                class="added-quantity"></span><span data-i18n="item_added">
                                 <ly-as-18193891> товар(ы), добавленный(ые) в корзину.</ly-as-18193891>
                               </span></div>
                             <div class=" flex-medium-up--one-quarter flex-small--two-thirds desc ">
@@ -3214,12 +3414,14 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                             </div>
                             <div class=" flex-medium-up--one-quarter flex-small--one-third product-price--popup">
 
-                              <div class=" h6  card__name font-eng  " data-18n--disabled="pivo_discount_price" data-regular-price>
+                              <div class=" h6  card__name font-eng  " data-18n--disabled="pivo_discount_price"
+                                data-regular-price>
 
 
                                 <span class="money"> $109</span>
                               </div>
-                              <span class="origin-price h5 " data-regular-price data-18n--disabled="pivo_original_price">
+                              <span class="origin-price h5 " data-regular-price
+                                data-18n--disabled="pivo_original_price">
 
 
 
@@ -3229,11 +3431,13 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                             </div>
-                            <div class="text-center flex-medium-up--one-half flex-small--one-whole"><a class="btn pivo-btn" href="/cart" data-i18n="checkout"></a> </div>
+                            <div class="text-center flex-medium-up--one-half flex-small--one-whole"><a
+                                class="btn pivo-btn" href="/cart" data-i18n="checkout"></a> </div>
                           </div>
                         </div>
 
-                        <div class="h4 sub-title upgrade-text flex-medium-up--one-whole" data-i18n="upgrade_and_save" style=" ">
+                        <div class="h4 sub-title upgrade-text flex-medium-up--one-whole" data-i18n="upgrade_and_save"
+                          style=" ">
                           <ly-as-18193893> Обновление и сохранение</ly-as-18193893>
                         </div>
 
@@ -3254,7 +3458,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                           <div class="reco-product content flex-popup-box flex-medium-up--one-quarter none ">
-                            <div class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
+                            <div
+                              class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
 
 
 
@@ -3265,7 +3470,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </span>
 
 
-                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_262475ae-5c75-4b18-adec-2d954e603955.jpg?v=1586753652" alt="Pivo" class="lazyload">
+                              <img
+                                data-src="//cdn.shopify.com/s/files/1/2065/8833/products/pivo_1_262475ae-5c75-4b18-adec-2d954e603955.jpg?v=1586753652"
+                                alt="Pivo" class="lazyload">
                             </div>
                             <div class="flex-medium-up--one-whole flex flex-small--two-thirds">
                               <div class="flex-medium-up--one-whole flex-small--two-thirds">
@@ -3275,7 +3482,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </div>
                               <div class="flex-medium-up--one-whole flex-small--one-third product-price--popup ">
 
-                                <div class=" h6 font-eng discounted-price " data-18n--disabled="pivo_discount_price" data-regular-price>
+                                <div class=" h6 font-eng discounted-price " data-18n--disabled="pivo_discount_price"
+                                  data-regular-price>
                                   <span class="money"> $109</span>
                                 </div>
                                 <span class="origin-price " data-18n--disabled="pivo_original_price" data-regular-price>
@@ -3284,7 +3492,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
                               </div>
                               <div class="text-center additional-btn-box flex-small--one-whole">
-                                <a id="31824096690258" class="btn pivo-btn add-additional-product" data-i18n="add_to_cart_btn"></a>
+                                <a id="31824096690258" class="btn pivo-btn add-additional-product"
+                                  data-i18n="add_to_cart_btn"></a>
                               </div>
                             </div>
                           </div>
@@ -3322,7 +3531,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                           <div class="reco-product content flex-popup-box flex-medium-up--one-quarter ">
-                            <div class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
+                            <div
+                              class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
 
 
 
@@ -3333,7 +3543,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </span>
 
 
-                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Starter-Pack.jpg?v=1584083388" alt="Pivo" class="lazyload">
+                              <img
+                                data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Starter-Pack.jpg?v=1584083388"
+                                alt="Pivo" class="lazyload">
                             </div>
                             <div class="flex-medium-up--one-whole flex flex-small--two-thirds">
                               <div class="flex-medium-up--one-whole flex-small--two-thirds">
@@ -3343,16 +3555,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </div>
                               <div class="flex-medium-up--one-whole flex-small--one-third product-price--popup ">
 
-                                <div class=" h6 font-eng discounted-price " data-18n--disabled="starter_pack_discount_price" data-regular-price>
+                                <div class=" h6 font-eng discounted-price "
+                                  data-18n--disabled="starter_pack_discount_price" data-regular-price>
                                   <span class="money"> $129 </span>
                                 </div>
-                                <span class="origin-price " data-18n--disabled="starter_pack_original_price" data-regular-price>
+                                <span class="origin-price " data-18n--disabled="starter_pack_original_price"
+                                  data-regular-price>
                                   <span class="money"> $219</span>
                                 </span>
 
                               </div>
                               <div class="text-center additional-btn-box flex-small--one-whole">
-                                <a id="31844823203922" class="btn pivo-btn add-additional-product" data-i18n="add_to_cart_btn"></a>
+                                <a id="31844823203922" class="btn pivo-btn add-additional-product"
+                                  data-i18n="add_to_cart_btn"></a>
                               </div>
                             </div>
                           </div>
@@ -3380,7 +3595,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                           <div class="reco-product content flex-popup-box flex-medium-up--one-quarter ">
-                            <div class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
+                            <div
+                              class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
 
 
 
@@ -3391,7 +3607,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </span>
 
 
-                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Starter-Pack-Silver.jpg?v=1588741088" alt="Pivo" class="lazyload">
+                              <img
+                                data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Starter-Pack-Silver.jpg?v=1588741088"
+                                alt="Pivo" class="lazyload">
                             </div>
                             <div class="flex-medium-up--one-whole flex flex-small--two-thirds">
                               <div class="flex-medium-up--one-whole flex-small--two-thirds">
@@ -3401,16 +3619,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </div>
                               <div class="flex-medium-up--one-whole flex-small--one-third product-price--popup ">
 
-                                <div class=" h6 font-eng discounted-price " data-18n--disabled="starter_pack_s_discount_price" data-regular-price>
+                                <div class=" h6 font-eng discounted-price "
+                                  data-18n--disabled="starter_pack_s_discount_price" data-regular-price>
                                   <span class="money"> $159</span>
                                 </div>
-                                <span class="origin-price " data-18n--disabled="starter_pack_s_original_price" data-regular-price>
+                                <span class="origin-price " data-18n--disabled="starter_pack_s_original_price"
+                                  data-regular-price>
                                   <span class="money"> $249</span>
                                 </span>
 
                               </div>
                               <div class="text-center additional-btn-box flex-small--one-whole">
-                                <a id="32315863171154" class="btn pivo-btn add-additional-product" data-i18n="add_to_cart_btn"></a>
+                                <a id="32315863171154" class="btn pivo-btn add-additional-product"
+                                  data-i18n="add_to_cart_btn"></a>
                               </div>
                             </div>
                           </div>
@@ -3438,7 +3659,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                           <div class="reco-product content flex-popup-box flex-medium-up--one-quarter ">
-                            <div class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
+                            <div
+                              class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
 
 
 
@@ -3449,7 +3671,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </span>
 
 
-                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/ProPack.jpg?v=1588815786" alt="Pivo" class="lazyload">
+                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/ProPack.jpg?v=1588815786"
+                                alt="Pivo" class="lazyload">
                             </div>
                             <div class="flex-medium-up--one-whole flex flex-small--two-thirds">
                               <div class="flex-medium-up--one-whole flex-small--two-thirds">
@@ -3459,16 +3682,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </div>
                               <div class="flex-medium-up--one-whole flex-small--one-third product-price--popup ">
 
-                                <div class=" h6 font-eng discounted-price " data-18n--disabled="pro_pack_discount_price" data-regular-price>
+                                <div class=" h6 font-eng discounted-price " data-18n--disabled="pro_pack_discount_price"
+                                  data-regular-price>
                                   <span class="money"> $169</span>
                                 </div>
-                                <span class="origin-price " data-18n--disabled="pro_pack_original_price" data-regular-price>
+                                <span class="origin-price " data-18n--disabled="pro_pack_original_price"
+                                  data-regular-price>
                                   <span class="money"> $299</span>
                                 </span>
 
                               </div>
                               <div class="text-center additional-btn-box flex-small--one-whole">
-                                <a id="31824103047250" class="btn pivo-btn add-additional-product" data-i18n="add_to_cart_btn"></a>
+                                <a id="31824103047250" class="btn pivo-btn add-additional-product"
+                                  data-i18n="add_to_cart_btn"></a>
                               </div>
                             </div>
                           </div>
@@ -3602,7 +3828,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
                           <div class="reco-product content flex-popup-box flex-medium-up--one-quarter ">
-                            <div class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
+                            <div
+                              class="flex-medium-up--one-whole flex-large-up--three-fifths flex-small--one-third product-image">
 
 
 
@@ -3613,7 +3840,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </span>
 
 
-                              <img data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Pro-pack-Silver.jpg?v=1588815825" alt="Pivo" class="lazyload">
+                              <img
+                                data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Pro-pack-Silver.jpg?v=1588815825"
+                                alt="Pivo" class="lazyload">
                             </div>
                             <div class="flex-medium-up--one-whole flex flex-small--two-thirds">
                               <div class="flex-medium-up--one-whole flex-small--two-thirds">
@@ -3623,16 +3852,19 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                               </div>
                               <div class="flex-medium-up--one-whole flex-small--one-third product-price--popup ">
 
-                                <div class=" h6 font-eng discounted-price " data-18n--disabled="pro_pack_s_discount_price" data-regular-price>
+                                <div class=" h6 font-eng discounted-price "
+                                  data-18n--disabled="pro_pack_s_discount_price" data-regular-price>
                                   <span class="money"> $199</span>
                                 </div>
-                                <span class="origin-price " data-18n--disabled="pro_pack_s_original_price" data-regular-price>
+                                <span class="origin-price " data-18n--disabled="pro_pack_s_original_price"
+                                  data-regular-price>
                                   <span class="money"> $349</span>
                                 </span>
 
                               </div>
                               <div class="text-center additional-btn-box flex-small--one-whole">
-                                <a id="32173520355410" class="btn pivo-btn add-additional-product" data-i18n="add_to_cart_btn"></a>
+                                <a id="32173520355410" class="btn pivo-btn add-additional-product"
+                                  data-i18n="add_to_cart_btn"></a>
                               </div>
                             </div>
                           </div>
@@ -3665,7 +3897,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-                <div id class="  additional-products-trigger  product-container--home custom__item custom__item--1571031537853 small--one-whole medium-up--one-quarter align--center">
+                <div id
+                  class="  additional-products-trigger  product-container--home custom__item custom__item--1571031537853 small--one-whole medium-up--one-quarter align--center">
                   <div class="custom__item-inner custom__item-inner--product">
 
 
@@ -3711,10 +3944,14 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-                        <img class="card__image lazyload fade-in product__img" data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Pivo-full-feb-krnew_{width}x.jpg?v=1587703971" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="Pivo Full Pack">
+                        <img class="card__image lazyload fade-in product__img"
+                          data-src="//cdn.shopify.com/s/files/1/2065/8833/products/Pivo-full-feb-krnew_{width}x.jpg?v=1587703971"
+                          data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.0"
+                          data-sizes="auto" alt="Pivo Full Pack">
 
-                        <noscript><span data-translate="116"><img src="img/Pivo-full-feb-krnew_1024x1024.jpg" alt="Pivo Full Pack" class="card__image product__img">
-                        </span></noscript>
+                        <noscript><span data-translate="116"><img src="img/Pivo-full-feb-krnew_1024x1024.jpg"
+                              alt="Pivo Full Pack" class="card__image product__img">
+                          </span></noscript>
                       </div>
 
 
@@ -3724,7 +3961,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                       </div>
 
 
-                      </a><div class="card__info"><a href="/products/pivo-full-pack" class="card__wrapper text-center card__wrapper--padding">
+                    </a>
+                    <div class="card__info"><a href="/products/pivo-full-pack"
+                        class="card__wrapper text-center card__wrapper--padding">
 
 
                         <div class="card__price">
@@ -3757,18 +3996,24 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
                         </div>
 
-                        </a><div class="text-center add-product-box"><a href="/products/pivo-full-pack" class="card__wrapper text-center card__wrapper--padding">
-                          </a><a class="add-product btn pivo-btn btn--to-secondary  add-to-cart-btn product__add-to-cart-button" product-id="4047658713170" id="29909795864658" data-i18n="add_to_cart_btn"></a>
-                        </div>
-
-
-
-                        <a href="/products/pivo-full-pack" class="shop-link product-card--link" style="color:#4a4a4a; text-decoration:none; display:block; text-align:Center;"><span data-i18n="learn_more" class="origin-price triangle-right-arrow--red triangle-right-arrow">
-                            <ly-as-18193614> узнать больше</ly-as-18193614>
-                          </span></a>
-
+                      </a>
+                      <div class="text-center add-product-box"><a href="/products/pivo-full-pack"
+                          class="card__wrapper text-center card__wrapper--padding">
+                        </a><a
+                          class="add-product btn pivo-btn btn--to-secondary  add-to-cart-btn product__add-to-cart-button"
+                          product-id="4047658713170" id="29909795864658" data-i18n="add_to_cart_btn"></a>
                       </div>
-                    
+
+
+
+                      <a href="/products/pivo-full-pack" class="shop-link product-card--link"
+                        style="color:#4a4a4a; text-decoration:none; display:block; text-align:Center;"><span
+                          data-i18n="learn_more" class="origin-price triangle-right-arrow--red triangle-right-arrow">
+                          <ly-as-18193614> узнать больше</ly-as-18193614>
+                        </span></a>
+
+                    </div>
+
 
 
 
@@ -3811,7 +4056,7 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
             }
 
             .custom-content-wrapper--1571046462449 .custom-content__section-header-desc {
-              color:;
+              color: ;
             }
 
 
@@ -3826,7 +4071,9 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
               margin-bottom: 15px;
             }
           </style>
-          <div data-bgset id class=" new_release non-promotion custom-content-wrapper custom-content-wrapper--1571046462449   one-whole" data-section-id="1571046462449" data-section-type="custom-content">
+          <div data-bgset id
+            class=" new_release non-promotion custom-content-wrapper custom-content-wrapper--1571046462449   one-whole"
+            data-section-id="1571046462449" data-section-type="custom-content">
             <div class="page-width ">
               <div class="page-width-header custom-content">
 
@@ -3844,7 +4091,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
                     <div class="text-center">
                     </div>
 
-                    <div style="display:flex; background-color:transparent;" class="product-card collection-item-container-list card__wrapper">
+                    <div style="display:flex; background-color:transparent;"
+                      class="product-card collection-item-container-list card__wrapper">
                       <div class="contain-item">
                         <div class="item-image icon-delivery"></div>
                         <div class="item-desc" data-i18n="reduced_shipping"> Worldwide<br> Доставка</div>
@@ -3887,7 +4135,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-        <div class="elfsight-sapp-1e725760-ebf1-11e9-a561-f33e9dbc8794 insta-feed " style="display: flex; justify-content: center;"></div>
+        <div class="elfsight-sapp-1e725760-ebf1-11e9-a561-f33e9dbc8794 insta-feed "
+          style="display: flex; justify-content: center;"></div>
 
 
 
@@ -3905,6 +4154,7 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
         #insta-container {
           display: none;
         }
+
         #header-link {
           display: none;
         }
@@ -3934,7 +4184,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
         <input type="text" required placeholder="Ваше имя">
         <input type="text" required placeholder="Ваш номер">
-        <button class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link" type="submit"> Купить сейчас</button>
+        <button class="btn--medium btn preload_header-btn pivo-btn hero__btn pivo-btn--header pivo-buy-link shop-link"
+          type="submit"> Купить сейчас</button>
       </form>
 
       <div id="shopify-section-footer" class="shopify-section">
@@ -3948,7 +4199,8 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
 
 
 
-        <footer class="site-footer" id="footer" role="contentinfo" data-section-type="footer" data-section-id="footer" data-footer-parallax>
+        <footer class="site-footer" id="footer" role="contentinfo" data-section-type="footer" data-section-id="footer"
+          data-footer-parallax>
 
           <div class="page-width footer--bottom-border">
 
@@ -3978,9 +4230,11 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
           <div class="page-width pivo-footer site-footer__bottom">
 
 
-            <div class="flex-footer flex-footer--info flex-medium-up--one-third flex-small--one-whole flex-footer--left ">
+            <div
+              class="flex-footer flex-footer--info flex-medium-up--one-third flex-small--one-whole flex-footer--left ">
 
-              <span data-i18n="company_info"></span> ⓒ2020 GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Spain (поменять в соответствии с гео)<br>
+              <span data-i18n="company_info"></span> ⓒ2020 GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Spain
+              (поменять в соответствии с гео)<br>
               <div style="display: grid"><a href="/privacypolicy" target="_blank"> Privacy policy</a>
                 <a href="/general-conditions-of-sale" target="_blank"> General conditions of sale</a>
                 <a href="/legal-warning" target="_blank"> Legal warning</a></div>
@@ -4374,4 +4628,6 @@ wistia_async_glwuzkl3tw  load_wistia wistia_embed  videoFoam=true playsuspendedo
   </style>
 
 
-</body></html>
+</body>
+
+</html>
