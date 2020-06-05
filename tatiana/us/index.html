@@ -1,0 +1,837 @@
+<!DOCTYPE html><html lang="ru-RU"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Personal fitness trainer - Jennifer Teagan</title>
+
+	<link rel="stylesheet" id="sydney-bootstrap-css" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_font_style-css" href="css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_front_end_style-css" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_templates_style-css" href="css/templates.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ihc_select2_style-css" href="css/select2.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="responsive-lightbox-swipebox-css" href="css/swipebox.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="siteorigin-panels-front-css" href="css/front-flex.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-image-default-ad2c8d41f7a1-css" href="css/sow-image-default-ad2c8d41f7a1.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-base-css" href="css/style_1.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-wire-e2a64f23e6c9-css" href="css/sow-button-wire-e2a64f23e6c9.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-45d62ae015ac-css" href="css/sow-social-media-buttons-wire-45d62ae015ac.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-image-default-7794f43373bf-css" href="css/sow-image-default-7794f43373bf.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-button-wire-df548bc124bd-css" href="css/sow-button-wire-df548bc124bd.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-496431254d88-css" href="css/sow-social-media-buttons-wire-496431254d88.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sydney-fonts-css" href="css/css.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sydney-style-css" href="css/style_3.css" type="text/css" media="all">
+	<style id="sydney-style-inline-css" type="text/css">
+		body,
+		#mainnav ul ul a {
+			font-family: 'Cuprum', sans-serif!important;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		#mainnav ul li a,
+		.portfolio-info,
+		.roll-testimonials .name,
+		.roll-team .team-content .name,
+		.roll-team .team-item .team-pop .name,
+		.roll-tabs .menu-tab li a,
+		.roll-testimonials .name,
+		.roll-project .project-filter li a,
+		.roll-button,
+		.roll-counter .name-count,
+		.roll-counter .numb-count button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			font-family: 'Fira Sans Condensed', sans-serif;
+		}
+
+		.site-title {
+			font-size: 32px;
+		}
+
+		.site-description {
+			font-size: 16px;
+		}
+
+		#mainnav ul li a {
+			font-size: 19px;
+		}
+
+		h1 {
+			font-size: 34px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 26px;
+		}
+
+		h4 {
+			font-size: 24px;
+		}
+
+		h5 {
+			font-size: 22px;
+		}
+
+		h6 {
+			font-size: 20px;
+		}
+
+		body {
+			font-size: 18px;
+		}
+
+		.single .hentry .title-post {
+			font-size: 36px;
+		}
+
+		.header-image {
+			background-size: cover;
+		}
+
+		.header-image {
+			height: 300px;
+		}
+
+		.site-header.fixed {
+			position: absolute;
+		}
+
+		.header-wrap .col-md-4,
+		.header-wrap .col-md-8 {
+			width: 100%;
+			text-align: center;
+		}
+
+		#mainnav {
+			float: none;
+		}
+
+		#mainnav li {
+			float: none;
+			display: inline-block;
+		}
+
+		#mainnav ul ul li {
+			display: block;
+			text-align: left;
+			float: left;
+		}
+
+		.site-logo,
+		.header-wrap .col-md-4 {
+			margin-bottom: 15px;
+		}
+
+		.btn-menu {
+			margin: 0 auto;
+			float: none;
+		}
+
+		.header-wrap .container>.row {
+			display: block;
+		}
+
+		.site-header.float-header {
+			background-color: rgba(0, 0, 0, 0.9);
+		}
+
+		@media only screen and (max-width: 1024px) {
+			.site-header {
+				background-color: #000000;
+			}
+		}
+
+		.site-title a,
+		.site-title a:hover {
+			color: #ffffff
+		}
+
+		.site-description {
+			color: #ffffff
+		}
+
+		#mainnav ul li a,
+		#mainnav ul li::before {
+			color: #ffffff
+		}
+
+		#mainnav .sub-menu li a {
+			color: #ffffff
+		}
+
+		#mainnav .sub-menu li a {
+			background: #1c1c1c
+		}
+
+		.text-slider .maintitle,
+		.text-slider .subtitle {
+			color: #ffffff
+		}
+
+		body {
+			color: #47425d
+		}
+
+		#secondary {
+			background-color: #ffffff
+		}
+
+		#secondary,
+		#secondary a,
+		#secondary .widget-title {
+			color: #767676
+		}
+
+		.footer-widgets {
+			background-color: #252525
+		}
+
+		.btn-menu {
+			color: #ffffff
+		}
+
+		#mainnav ul li a:hover {
+			color: #d65050
+		}
+
+		.site-footer {
+			background-color: #1c1c1c
+		}
+
+		.site-footer,
+		.site-footer a {
+			color: #666666
+		}
+
+		.overlay {
+			background-color: #000000
+		}
+
+		.page-wrap {
+			padding-top: 30px;
+		}
+
+		.page-wrap {
+			padding-bottom: 100px;
+		}
+
+		@media only screen and (max-width: 1025px) {
+			.mobile-slide {
+				display: block;
+			}
+
+			.slide-item {
+				background-image: none!important;
+			}
+
+			.header-slider {}
+
+			.slide-item {
+				height: auto!important;
+			}
+
+			.slide-inner {
+				min-height: initial;
+			}
+		}
+
+		@media only screen and (max-width: 780px) {
+			h1 {
+				font-size: 32px;
+			}
+
+			h2 {
+				font-size: 28px;
+			}
+
+			h3 {
+				font-size: 22px;
+			}
+
+			h4 {
+				font-size: 18px;
+			}
+
+			h5 {
+				font-size: 16px;
+			}
+
+			h6 {
+				font-size: 14px;
+			}
+		}
+	</style>
+	<link rel="stylesheet" id="sydney-font-awesome-css" href="css/font-awesome.min.css" type="text/css" media="all">
+	<!--[if lte IE 9]>
+<link rel='stylesheet' id='sydney-ie9-css'  href='https://tatiana.fit/wp-content/themes/sydney/css/ie9.css' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="fancybox-css" href="css/jquery.fancybox.min.css" type="text/css" media="screen">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/printThis.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript" src="js/infinite-scroll.pkgd.min.js"></script>
+
+
+	<style>
+		.pseudo-clearfy-link {
+			color: #008acf;
+			cursor: pointer;
+		}
+
+		.pseudo-clearfy-link:hover {
+			text-decoration: none;
+		}
+	</style>
+
+	<style type="text/css" media="all" id="siteorigin-panels-layouts-head">
+		/* Layout 12 */
+		#pgc-12-0-0,
+		#pgc-12-2-0,
+		#pgc-12-4-0,
+		#pgc-12-5-0 {
+			width: 100%;
+			width: calc(100% - (0 * 30px))
+		}
+
+		#pg-12-0,
+		#pg-12-1,
+		#pg-12-2,
+		#pg-12-3,
+		#pg-12-4,
+		#pl-12 .so-panel,
+		#pl-12 .so-panel:last-child {
+			margin-bottom: 0px
+		}
+
+		#pgc-12-1-0 {
+			width: 61.8034%;
+			width: calc(61.8034% - (0.38196600790794 * 30px))
+		}
+
+		#pgc-12-1-1 {
+			width: 38.1966%;
+			width: calc(38.1966% - (0.61803399209206 * 30px))
+		}
+
+		#pgc-12-3-0 {
+			width: 100%
+		}
+
+		#pl-12 #panel-12-5-0-0 {
+			margin: 0px 0px 0px 0px
+		}
+
+		#pg-12-0>.panel-row-style {
+			padding: 10px
+		}
+
+		#panel-12-0-0-0>.panel-widget-style {
+			padding: 25px 10px 10px 10px
+		}
+
+		#pg-12-1>.panel-row-style {
+			background-color: #dcdfe4;
+			padding: 0px
+		}
+
+		#panel-12-1-0-0>.panel-widget-style {
+			padding: 50px 20px 10px 50px
+		}
+
+		#panel-12-1-1-0>.panel-widget-style,
+		#panel-12-3-0-0>.panel-widget-style {
+			padding: 0px 0px 0px 0px
+		}
+
+		#pg-12-2>.panel-row-style {
+			background-color: #d65050;
+			padding: 20px
+		}
+
+		#pg-12-3>.panel-row-style {
+			padding: 0px
+		}
+
+		#panel-12-4-0-0>.panel-widget-style {
+			color: #ffffff
+		}
+
+		#pg-12-5>.panel-row-style {
+			background-color: #d65050;
+			padding: 30px
+		}
+
+		#panel-12-5-0-0>.panel-widget-style {
+			color: #ffffff;
+			padding: 0px 0px 0px 0px
+		}
+
+		@media (max-width:780px) {
+
+			#pg-12-0.panel-no-style,
+			#pg-12-0.panel-has-style>.panel-row-style,
+			#pg-12-1.panel-no-style,
+			#pg-12-1.panel-has-style>.panel-row-style,
+			#pg-12-2.panel-no-style,
+			#pg-12-2.panel-has-style>.panel-row-style,
+			#pg-12-3.panel-no-style,
+			#pg-12-3.panel-has-style>.panel-row-style,
+			#pg-12-4.panel-no-style,
+			#pg-12-4.panel-has-style>.panel-row-style,
+			#pg-12-5.panel-no-style,
+			#pg-12-5.panel-has-style>.panel-row-style {
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column
+			}
+
+			#pg-12-0>.panel-grid-cell,
+			#pg-12-0>.panel-row-style>.panel-grid-cell,
+			#pg-12-1>.panel-grid-cell,
+			#pg-12-1>.panel-row-style>.panel-grid-cell,
+			#pg-12-2>.panel-grid-cell,
+			#pg-12-2>.panel-row-style>.panel-grid-cell,
+			#pg-12-3>.panel-grid-cell,
+			#pg-12-3>.panel-row-style>.panel-grid-cell,
+			#pg-12-4>.panel-grid-cell,
+			#pg-12-4>.panel-row-style>.panel-grid-cell,
+			#pg-12-5>.panel-grid-cell,
+			#pg-12-5>.panel-row-style>.panel-grid-cell {
+				width: 100%;
+				margin-right: 0
+			}
+
+			#pgc-12-1-0,
+			#pl-12 .panel-grid .panel-grid-cell-mobile-last {
+				margin-bottom: 0px
+			}
+
+			#pl-12 .panel-grid-cell {
+				padding: 0
+			}
+
+			#pl-12 .panel-grid .panel-grid-cell-empty {
+				display: none
+			}
+		}
+	</style>
+	<style type="text/css" id="wp-custom-css">
+		.hentry .title-post {
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body data-rsssl="1" class="home page-template page-template-page-templates page-template-page_front-page page-template-page-templatespage_front-page-php page page-id-12 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home">
+
+	<div class="preloader">
+		<div class="spinner">
+			<div class="pre-bounce1"></div>
+			<div class="pre-bounce2"></div>
+		</div>
+	</div>
+
+	<div id="page" class="hfeed site">
+		<a class="skip-link screen-reader-text" href="#content"> Go to content</a>
+
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="header-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-8 col-xs-12">
+							<a href="./index.html" title><img class="site-logo" src="img/%C3%90%C2%BB%C3%90%C2%BE%C3%90%C2%B3%C3%90%C2%BE.png" alt></a>
+									<div class="btn-menu"></div>
+						</div>
+						<div class="col-md-8 col-sm-4 col-xs-12">
+
+							<nav id="mainnav" class="mainnav" role="navigation">
+								<div class="menu-osnovnoe-menyu-container">
+									<ul id="menu-osnovnoe-menyu" class="menu">
+
+										<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+											<a href="./about.html"> ABOUT ME</a></li>
+										<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+											<a href="./reviews.html"> FEEDBACK</a></li>
+
+
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+
+		<div class="sydney-hero-area">
+
+			<div id="slideshow" class="header-slider" data-speed="5000" data-mobileslider="responsive">
+				<div class="slides-container">
+
+					<div class="slide-item slide-item-1" style="background-image:url('img/%C3%90%C2%A0%C3%90%C2%B8%C3%91%C2%81%C3%91%C2%83%C3%90%C2%BD%C3%90%C2%BE%C3%90%C2%BA1.jpg');">
+						<img class="mobile-slide preserve" src="img/%C3%90%C2%A0%C3%90%C2%B8%C3%91%C2%81%C3%91%C2%83%C3%90%C2%BD%C3%90%C2%BE%C3%90%C2%BA1.jpg" alt>
+						<div class="slide-inner">
+							<div class="contain animated fadeInRightBig text-slider">
+								<h2 class="maintitle"> Jennifer Teagan</h2>
+								<p class="subtitle"> Your personal fitness trainer	</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="slide-item slide-item-2" style="background-image:url('img/IMG_9253.jpg');">
+						<img class="mobile-slide preserve" src="img/IMG_9253.jpg" alt>
+						<div class="slide-inner">
+							<div class="contain animated fadeInRightBig text-slider">
+								<h2 class="maintitle"> International online fitness project	</h2>
+								<p class="subtitle"> Fitness... Lifestyle... Energy... Result .	</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="header-image">
+				<div class="overlay"></div> <img class="header-inner" src="img/cropped-WhatsApp-Image-2017-09-27-at-15.55.47-1.jpeg" width="1920" alt title>
+			</div>
+
+		</div>
+
+
+		<div id="content" class="page-wrap">
+			<div class="container content-wrapper">
+				<div class="row">
+					<div id="primary" class="fp-content-area">
+						<main id="main" class="site-main" role="main">
+
+							<div class="entry-content">
+								<div id="pl-12" class="panel-layout">
+									<div id="pg-12-0" class="panel-grid panel-has-style">
+										<div style="padding: 10px 0; " data-overlay="true" data-overlay-color="#000000" class="panel-row-style panel-row-style-for-12-0">
+											<div id="pgc-12-0-0" class="panel-grid-cell">
+												<div id="panel-12-0-0-0" class="so-panel widget widget_sydney_services_type_b sydney_services_b_widget panel-first-child panel-last-child" data-index="0">
+													<div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-12-0-0-0">
+														<div class="roll-icon-list">
+															<div class="service clearfix col-md-4">
+																<div class="list-item clearfix">
+
+																	<div class="icon">
+																		<i class="fa fa-female"></i> </div>
+																	<div class="content">
+																		<h3> Pilates</h3>
+
+																		<p> Specially composed basic ballet exercises</p>
+																	</div>
+																	<!--.info-->
+																</div>
+															</div>
+															<div class="service clearfix col-md-4">
+																<div class="list-item clearfix">
+
+																	<div class="icon">
+																		<i class="fa fa-apple"></i> </div>
+																	<div class="content">
+																		<h3> Good nutrition</h3>
+
+																		<p> Balanced menu for the right power supply</p>
+																	</div>
+																	<!--.info-->
+																</div>
+															</div>
+															<div class="service clearfix col-md-4">
+																<div class="list-item clearfix">
+
+																	<div class="icon">
+																		<i class="fa fa-leaf"></i> </div>
+																	<div class="content">
+																		<h3> Fitness training	</h3>
+
+																		<p> Training programs at home and in the gym</p>
+																	</div>
+																	<!--.info-->
+																</div>
+															</div>
+														</div>
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="pg-12-1" class="panel-grid panel-has-style">
+										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-12-1" style="padding: 0px 0; " data-stretch-type="full-stretched" data-overlay="true" data-overlay-color="#000000">
+											<div id="pgc-12-1-0" class="panel-grid-cell">
+												<div id="panel-12-1-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="1">
+													<div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-12-1-0-0">
+														<div class="so-widget-sow-editor so-widget-sow-editor-base">
+															<h3 class="widget-title"> About me.</h3>
+															<div class="siteorigin-widget-tinymce textwidget">
+																<h6> My name is Jennifer Teagan. I'm the coach.</h6>
+																<p> After 15 years of sports acrobatics and becoming a master of sports in this discipline, I knew for sure that my life would be connected to sports and a healthy lifestyle.								</p>
+																<p> After graduating from the Academy of Physical Education in Monreal in 1997 and receiving a diploma in acrobatics and fitness instructor, my career began quickly in the field of sports and fitness.</p>
+																<p> I love what I do.</p>
+																<p> I can and I know how to help women find a beautiful and healthy body.</p>
+																<p> I hear the positive<a href="./reviews.html" rel="noopener"> feedback</a> from my clients.</p>
+																<p> I see my body changing through exercise and proper nutrition.</p>
+																<p> A smile on the client's face is the main reward!</p>
+																<p> It's not hard to be in great shape.</p>
+																<p> I know how and I will show you the way to it!</p>
+																<h6> I'm waiting for you to join my team!</h6>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="pgc-12-1-1" class="panel-grid-cell">
+												<div id="panel-12-1-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="2">
+													<div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-12-1-1-0">
+														<div class="so-widget-sow-image so-widget-sow-image-default-7794f43373bf">
+
+															<div class="sow-image-container">
+																<img src="img/image3-480x684.jpg" width="480" height="684" srcset="img/image3-480x684.jpg 480w, img/image3-211x300.jpg 211w, img/image3-719x1024.jpg 719w, img/image3-230x328.jpg 230w, img/image3-350x499.jpg 350w, img/image3.jpg 747w" sizes="(max-width: 480px) 100vw, 480px" alt="фитнес тренер" class="so-widget-image">
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="pg-12-2" class="panel-grid panel-has-style">
+										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-12-2" style="padding: 20px 0; " data-stretch-type="full-stretched" data-overlay="true" data-overlay-color="#000000">
+											<div id="pgc-12-2-0" class="panel-grid-cell">
+												<div id="panel-12-2-0-0" class="so-panel widget widget_sow-button panel-first-child panel-last-child" data-index="3">
+													<div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-12-2-0-0">
+														<div class="so-widget-sow-button so-widget-sow-button-wire-df548bc124bd">
+															<div class="ow-button-base ow-button-align-center">
+																<a href="./about.html" class="ow-icon-placement-left ow-button-hover" rel="noopener noreferrer">
+																	<span> MORE ABOUT ME</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="pg-12-3" class="panel-grid panel-has-style">
+										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-12-3" style="padding: 0px 0; " data-stretch-type="full-stretched" data-overlay="true" data-overlay-color="#000000">
+											<div id="pgc-12-3-0" class="panel-grid-cell">
+												<div id="panel-12-3-0-0" class="so-panel widget panel-first-child panel-last-child" data-index="4">
+													<div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-12-3-0-0"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="pg-12-4" class="panel-grid panel-has-style">
+										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-12-4" style="background-image: url(img/IMG_9301.jpg);padding: 100px 0; " data-stretch-type="full" data-hasbg="hasbg" data-overlay="true" data-overlay-color="#000000">
+											<div id="pgc-12-4-0" class="panel-grid-cell">
+												<div id="panel-12-4-0-0" class="so-panel widget widget_sydney_testimonials sydney_testimonials_widget panel-first-child panel-last-child" data-index="5">
+													<div style="text-align: center;" data-title-color="#ffffff" data-headings-color="#ffffff" class="panel-widget-style panel-widget-style-for-12-4-0-0">
+														<h3 class="widget-title"> What my clients say.</h3>
+														<div class="col-md-12">
+															<div class="roll-testimonials" data-autoplay="5000">
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p class="p1"><span class="s1"> -11lb for 2 months in the program, in fact, the results are amazing, you will see how your waist shrinks and melts the lifeline on its sides, learn to eat what you need and taste, sin if you will, the right products and not to the detriment of the body. Try the girls, guaranteed iron: Slimness, Elasticity and Self Satisfaction. By the way, I found Jennifer in this group, and it's a pity that it hasn't happened before.</span></p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Feedback<span> Helen USA</span>
+																	</div>
+																</div>
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p class="p1"> -11lb for 2 months in the program, in fact, the results are amazing, you will see how your waist shrinks and melts the lifeline on its sides, learn to eat what you need and taste, sin if you will, the right products and not to the detriment of the body. Try the girls, guaranteed iron: Slimness, Elasticity and Self Satisfaction. By the way, I found Jennifer in this group, and it's a pity that it hasn't happened before.</p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Reviews<span> Helen USA</span>
+																	</div>
+																</div>
+
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p> Interestingly, in just a month, taste and habits change cardinally. I've never abused food, but I liked sweets and all kinds of sauces. And I ate usually in a hurry, on TV or in a book or a computer. Now, knowing that the portions have at least halved, I get such a high from a healthy meal, each piece I chew with such pleasure, slowly, feeling all the shades of taste ...</p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Marina, Tampa, Florida.<span> Marina, Tampa, Florida.</span>
+																	</div>
+																</div>
+
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p> Wonderful project, thank you, Jennifer! Just what I need! Everything is organized: training, menu, reporting time, support, adjustments and tips from the coach in an individual mode. For me it's the first month and the hardest thing for me personally is to train every day. The menu is great, eaten in the same mode before the holidays, but tips on the portions opened my eyes. I will continue with Jennifer as I am sure that my love for fitness will wake up while everything is through strength, but I try very hard and the results of the girls in the group are inspiring.</p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Ivanka. Toronto, Canada.<span> Ivanka. Toronto, Canada.</span>
+																	</div>
+																</div>
+
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p> I've been in this program for six months now. I didn't originally have a goal to lose weight, but I was just wondering if I could. And yes, I could. The body really pulls up, and the muscles start to show up. You just start to feel different, you get more confident. I specifically got into this program. You can't fool the coach for sure! Even though he's not physically around, his presence is always felt. I definitely recommend it!</p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Anna. Ottawa, Canada<span> Anna. Ottawa, Canada</span>
+																	</div>
+																</div>
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<blockquote>
+																			<p> This program has also helped me revise my diet and cooking methods. I have followed other programs before, but there was no significant weight loss. It was difficult to start, but interesting. And the results do not keep me waiting. Someone says that laziness or a coach can be deceived... But you exercise for yourself. You're the one who needs a flat belly and an ass. Coach won't lose weight or get fat from your deception... I've lost 10 kg already, but I thought I'd never lose weight.</p>
+																		</blockquote>
+																	</blockquote>
+
+																	<div class="name"> Jenna. 31 years old. Ottawa, Canada<span></span>
+																	</div>
+																</div>
+
+																<div class="customer">
+																	<blockquote class="whisper">
+																		<p> This project really works, I'm involved in 2 projects. There's no health excuse, it's really just our excuse...</p>
+																		<p> It wasn't hard...</p>
+																	</blockquote>
+
+																	<div class="name"> Rachel Smith<span></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<a href="./reviews.html" class="roll-button more-button"> ALL FEEDBACK</a>
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- .entry-content -->
+
+						</main><!-- #main -->
+					</div><!-- #primary -->
+
+				</div>
+			</div>
+		</div><!-- #content -->
+
+
+
+
+
+		<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+			<div class="container">
+				<div class="sidebar-column col-md-4">
+					<aside id="sow-image-2" class="widget widget_sow-image">
+						<div class="so-widget-sow-image so-widget-sow-image-default-ad2c8d41f7a1">
+
+							<div class="sow-image-container">
+								<img src="img/IMG_9492-550x400.jpg" width="550" height="400" sizes="(max-width: 550px) 100vw, 550px" alt="фитнес тренер" class="so-widget-image">
+							</div>
+
+						</div>
+					</aside>
+				</div>
+
+				<div class="sidebar-column col-md-4">
+					<aside id="sow-editor-2" class="widget widget_sow-editor">
+						<div class="so-widget-sow-editor so-widget-sow-editor-base">
+							<h3 class="widget-title"> It's never too late to start.</h3>
+							<div class="siteorigin-widget-tinymce textwidget">
+								<p style="text-align: justify;"> .But don't put it off, because a year from now you might wish you'd started fitness today. Fitness is what a modern, successful woman looks like! Start now!</p>
+							</div>
+						</div>
+					</aside>
+					<aside id="sow-button-2" class="widget widget_sow-button">
+						<div class="so-widget-sow-button so-widget-sow-button-wire-e2a64f23e6c9">
+							<div class="ow-button-base ow-button-align-center">
+
+							</div>
+						</div>
+					</aside>
+				</div>
+
+
+			</div>
+		</div>
+		<a class="go-top"><i class="fa fa-angle-up"></i></a>
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info container">
+
+				<span class="sep"> </span> Copyright © 2020 | Fitness trainer Jennifer Teagan</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+
+
+	</div><!-- #page -->
+
+	<script type="text/javascript">var pseudo_links = document.querySelectorAll(".pseudo-clearfy-link"); for (var i = 0; i < pseudo_links.length; i++) { pseudo_links[i].addEventListener("click", function (e) { window.open(e.target.getAttribute("data-uri")); }); }</script>
+
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-1bf22ff0e4a2-css" href="css/sow-social-media-buttons-wire-1bf22ff0e4a2.css" type="text/css" media="all">
+	<link rel="stylesheet" id="siteorigin-widget-icon-font-fontawesome-css" href="css/style_2.css" type="text/css" media="all">
+	<link rel="stylesheet" id="sow-social-media-buttons-wire-9c8a24e56f7e-css" href="css/sow-social-media-buttons-wire-9c8a24e56f7e.css" type="text/css" media="all">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var wpcf7 = { "apiSettings": { "root": "https:\/\/tatiana.fit\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+	</script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/core.min.js"></script>
+	<script type="text/javascript" src="js/datepicker.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c", "currentText": "\u0421\u0435\u0433\u043e\u0434\u043d\u044f", "monthNames": ["\u042f\u043d\u0432\u0430\u0440\u044c", "\u0424\u0435\u0432\u0440\u0430\u043b\u044c", "\u041c\u0430\u0440\u0442", "\u0410\u043f\u0440\u0435\u043b\u044c", "\u041c\u0430\u0439", "\u0418\u044e\u043d\u044c", "\u0418\u044e\u043b\u044c", "\u0410\u0432\u0433\u0443\u0441\u0442", "\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c", "\u041e\u043a\u0442\u044f\u0431\u0440\u044c", "\u041d\u043e\u044f\u0431\u0440\u044c", "\u0414\u0435\u043a\u0430\u0431\u0440\u044c"], "monthNamesShort": ["\u042f\u043d\u0432", "\u0424\u0435\u0432", "\u041c\u0430\u0440", "\u0410\u043f\u0440", "\u041c\u0430\u0439", "\u0418\u044e\u043d", "\u0418\u044e\u043b", "\u0410\u0432\u0433", "\u0421\u0435\u043d", "\u041e\u043a\u0442", "\u041d\u043e\u044f", "\u0414\u0435\u043a"], "nextText": "\u0414\u0430\u043b\u0435\u0435", "prevText": "\u041d\u0430\u0437\u0430\u0434", "dayNames": ["\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435", "\u041f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a", "\u0412\u0442\u043e\u0440\u043d\u0438\u043a", "\u0421\u0440\u0435\u0434\u0430", "\u0427\u0435\u0442\u0432\u0435\u0440\u0433", "\u041f\u044f\u0442\u043d\u0438\u0446\u0430", "\u0421\u0443\u0431\u0431\u043e\u0442\u0430"], "dayNamesShort": ["\u0412\u0441", "\u041f\u043d", "\u0412\u0442", "\u0421\u0440", "\u0427\u0442", "\u041f\u0442", "\u0421\u0431"], "dayNamesMin": ["\u0412\u0441", "\u041f\u043d", "\u0412\u0442", "\u0421\u0440", "\u0427\u0442", "\u041f\u0442", "\u0421\u0431"], "dateFormat": "dd.mm.yy", "firstDay": 1, "isRTL": false }); });
+	</script>
+	<script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+	<script type="text/javascript" src="js/scripts_1.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+	<script type="text/javascript" src="js/skip-link-focus-fix.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jscripts-ftr-min.js"></script>
+	<script type="text/javascript" src="js/wp-embed.min.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var panelsStyles = { "fullContainer": "body" };
+/* ]]> */
+	</script>
+	<script type="text/javascript" src="js/styling-2105.min.js"></script>
+	<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js", "");</script>
+
+
+</body></html>
