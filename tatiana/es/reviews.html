@@ -1,0 +1,939 @@
+<!DOCTYPE html><html lang="ru-RU"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ 
+
+  <title>Entrenador personal de fitness - Ana Fit</title>
+  
+ 
+
+  <link rel="stylesheet" id="sydney-bootstrap-css" href="css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+  <link rel="stylesheet" id="ihc_font_style-css" href="css/font-awesome.css" type="text/css" media="all">
+  <link rel="stylesheet" id="ihc_front_end_style-css" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="ihc_templates_style-css" href="css/templates.css" type="text/css" media="all">
+  <link rel="stylesheet" id="ihc_select2_style-css" href="css/select2.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="responsive-lightbox-swipebox-css" href="css/swipebox.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="siteorigin-panels-front-css" href="css/front-flex.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-image-default-ad2c8d41f7a1-css" href="css/sow-image-default-ad2c8d41f7a1.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-button-base-css" href="css/style_1.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-button-wire-e2a64f23e6c9-css" href="css/sow-button-wire-e2a64f23e6c9.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-social-media-buttons-wire-45d62ae015ac-css" href="css/sow-social-media-buttons-wire-45d62ae015ac.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-image-default-7794f43373bf-css" href="css/sow-image-default-7794f43373bf.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-button-wire-df548bc124bd-css" href="css/sow-button-wire-df548bc124bd.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-social-media-buttons-wire-496431254d88-css" href="css/sow-social-media-buttons-wire-496431254d88.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sydney-fonts-css" href="css/css.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sydney-style-css" href="css/style_3.css" type="text/css" media="all">
+  <style id="sydney-style-inline-css" type="text/css">
+  body,
+  #mainnav ul ul a {
+  font-family: 'Cuprum', sans-serif!important;
+  }
+  
+ 
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #mainnav ul li a,
+  .portfolio-info,
+  .roll-testimonials .name,
+  .roll-team .team-content .name,
+  .roll-team .team-item .team-pop .name,
+  .roll-tabs .menu-tab li a,
+  .roll-testimonials .name,
+  .roll-project .project-filter li a,
+  .roll-button,
+  .roll-counter .name-count,
+  .roll-counter .numb-count button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  }
+  
+ 
+
+  .site-title {
+  font-size: 32px;
+  }
+  
+ 
+
+  .site-description {
+  font-size: 16px;
+  }
+  
+ 
+
+  #mainnav ul li a {
+  font-size: 19px;
+  }
+  
+ 
+
+  h1 {
+  font-size: 34px;
+  }
+  
+ 
+
+  h2 {
+  font-size: 30px;
+  }
+  
+ 
+
+  h3 {
+  font-size: 26px;
+  }
+  
+ 
+
+  h4 {
+  font-size: 24px;
+  }
+  
+ 
+
+  h5 {
+  font-size: 22px;
+  }
+  
+ 
+
+  h6 {
+  font-size: 20px;
+  }
+  
+ 
+
+  body {
+  font-size: 18px;
+  }
+  
+ 
+
+  .single .hentry .title-post {
+  font-size: 36px;
+  }
+  
+ 
+
+  .header-image {
+  background-size: cover;
+  background-image: url(img/cropped-WhatsApp-Image-2017-09-27-at-15.55.47-1.jpeg);
+  display: block;
+  }
+  
+ 
+
+  .header-image {
+  height: 300px;
+  }
+  
+ 
+
+  .site-header.fixed {
+  position: absolute;
+  }
+  
+ 
+
+  .header-wrap .col-md-4,
+  .header-wrap .col-md-8 {
+  width: 100%;
+  text-align: center;
+  }
+  
+ 
+
+  #mainnav {
+  float: none;
+  }
+  
+ 
+
+  #mainnav li {
+  float: none;
+  display: inline-block;
+  }
+  
+ 
+
+  #mainnav ul ul li {
+  display: block;
+  text-align: left;
+  float: left;
+  }
+  
+ 
+
+  .site-logo,
+  .header-wrap .col-md-4 {
+  margin-bottom: 15px;
+  }
+  
+ 
+
+  .btn-menu {
+  margin: 0 auto;
+  float: none;
+  }
+  
+ 
+
+  .header-wrap .container>.row {
+  display: block;
+  }
+  
+ 
+
+  .site-header.float-header {
+  background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+ 
+
+  @media only screen and (max-width: 1024px) {
+  .site-header {
+  background-color: #000000;
+  }
+  }
+  
+ 
+
+  .site-title a,
+  .site-title a:hover {
+  color: #ffffff
+  }
+  
+ 
+
+  .site-description {
+  color: #ffffff
+  }
+  
+ 
+
+  #mainnav ul li a,
+  #mainnav ul li::before {
+  color: #ffffff
+  }
+  
+ 
+
+  #mainnav .sub-menu li a {
+  color: #ffffff
+  }
+  
+ 
+
+  #mainnav .sub-menu li a {
+  background: #1c1c1c
+  }
+  
+ 
+
+  .text-slider .maintitle,
+  .text-slider .subtitle {
+  color: #ffffff
+  }
+  
+ 
+
+  body {
+  color: #47425d
+  }
+  
+ 
+
+  #secondary {
+  background-color: #ffffff
+  }
+  
+ 
+
+  #secondary,
+  #secondary a,
+  #secondary .widget-title {
+  color: #767676
+  }
+  
+ 
+
+  .footer-widgets {
+  background-color: #252525
+  }
+  
+ 
+
+  .btn-menu {
+  color: #ffffff
+  }
+  
+ 
+
+  #mainnav ul li a:hover {
+  color: #d65050
+  }
+  
+ 
+
+  .site-footer {
+  background-color: #1c1c1c
+  }
+  
+ 
+
+  .site-footer,
+  .site-footer a {
+  color: #666666
+  }
+  
+ 
+
+  .overlay {
+  background-color: #000000
+  }
+  
+ 
+
+  .page-wrap {
+  padding-top: 30px;
+  }
+  
+ 
+
+  .page-wrap {
+  padding-bottom: 100px;
+  }
+  
+ 
+
+  @media only screen and (max-width: 1025px) {
+  .mobile-slide {
+  display: block;
+  }
+  
+ 
+
+  .slide-item {
+  background-image: none!important;
+  }
+  
+ 
+
+  .header-slider {}
+  
+ 
+
+  .slide-item {
+  height: auto!important;
+  }
+  
+ 
+
+  .slide-inner {
+  min-height: initial;
+  }
+  }
+  
+ 
+
+  @media only screen and (max-width: 780px) {
+  h1 {
+  font-size: 32px;
+  }
+  
+ 
+
+  h2 {
+  font-size: 28px;
+  }
+  
+ 
+
+  h3 {
+  font-size: 22px;
+  }
+  
+ 
+
+  h4 {
+  font-size: 18px;
+  }
+  
+ 
+
+  h5 {
+  font-size: 16px;
+  }
+  
+ 
+
+  h6 {
+  font-size: 14px;
+  }
+  }
+  </style>
+  <link rel="stylesheet" id="sydney-font-awesome-css" href="css/font-awesome.min.css" type="text/css" media="all">
+  <!--[if lte IE 9]>
+  <link rel='stylesheet' id='sydney-ie9-css' href='https://tatiana.fit/wp-content/themes/sydney/css/ie9.css' type='text/css' media='all' />
+  <![endif]-->
+  <link rel="stylesheet" id="fancybox-css" href="css/jquery.fancybox.min.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="js/select2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.form.js"></script>
+  <script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+  
+ 
+
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/printThis.js"></script>
+  <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+  <script type="text/javascript" src="js/infinite-scroll.pkgd.min.js"></script>
+  
+ 
+
+  
+ 
+
+  <style>
+  .pseudo-clearfy-link {
+  color: #008acf;
+  cursor: pointer;
+  }
+  
+ 
+
+  .pseudo-clearfy-link:hover {
+  text-decoration: none;
+  }
+  </style>
+  
+ 
+
+  <style type="text/css" media="all" id="siteorigin-panels-layouts-head">
+  /* Layout 12 */
+  #pgc-12-0-0,
+  #pgc-12-2-0,
+  #pgc-12-4-0,
+  #pgc-12-5-0 {
+  width: 100%;
+  width: calc(100% - (0 * 30px))
+  }
+  
+ 
+
+  #pg-12-0,
+  #pg-12-1,
+  #pg-12-2,
+  #pg-12-3,
+  #pg-12-4,
+  #pl-12 .so-panel,
+  #pl-12 .so-panel:last-child {
+  margin-bottom: 0px
+  }
+  
+ 
+
+  #pgc-12-1-0 {
+  width: 61.8034%;
+  width: calc(61.8034% - (0.38196600790794 * 30px))
+  }
+  
+ 
+
+  #pgc-12-1-1 {
+  width: 38.1966%;
+  width: calc(38.1966% - (0.61803399209206 * 30px))
+  }
+  
+ 
+
+  #pgc-12-3-0 {
+  width: 100%
+  }
+  
+ 
+
+  #pl-12 #panel-12-5-0-0 {
+  margin: 0px 0px 0px 0px
+  }
+  
+ 
+
+  #pg-12-0>.panel-row-style {
+  padding: 10px
+  }
+  
+ 
+
+  #panel-12-0-0-0>.panel-widget-style {
+  padding: 25px 10px 10px 10px
+  }
+  
+ 
+
+  #pg-12-1>.panel-row-style {
+  background-color: #dcdfe4;
+  padding: 0px
+  }
+  
+ 
+
+  #panel-12-1-0-0>.panel-widget-style {
+  padding: 50px 20px 10px 50px
+  }
+  
+ 
+
+  #panel-12-1-1-0>.panel-widget-style,
+  #panel-12-3-0-0>.panel-widget-style {
+  padding: 0px 0px 0px 0px
+  }
+  
+ 
+
+  #pg-12-2>.panel-row-style {
+  background-color: #d65050;
+  padding: 20px
+  }
+  
+ 
+
+  #pg-12-3>.panel-row-style {
+  padding: 0px
+  }
+  
+ 
+
+  #panel-12-4-0-0>.panel-widget-style {
+  color: #ffffff
+  }
+  
+ 
+
+  #pg-12-5>.panel-row-style {
+  background-color: #d65050;
+  padding: 30px
+  }
+  
+ 
+
+  #panel-12-5-0-0>.panel-widget-style {
+  color: #ffffff;
+  padding: 0px 0px 0px 0px
+  }
+  
+ 
+
+  @media (max-width:780px) {
+  
+ 
+
+  #pg-12-0.panel-no-style,
+  #pg-12-0.panel-has-style>.panel-row-style,
+  #pg-12-1.panel-no-style,
+  #pg-12-1.panel-has-style>.panel-row-style,
+  #pg-12-2.panel-no-style,
+  #pg-12-2.panel-has-style>.panel-row-style,
+  #pg-12-3.panel-no-style,
+  #pg-12-3.panel-has-style>.panel-row-style,
+  #pg-12-4.panel-no-style,
+  #pg-12-4.panel-has-style>.panel-row-style,
+  #pg-12-5.panel-no-style,
+  #pg-12-5.panel-has-style>.panel-row-style {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+  }
+  
+ 
+
+  #pg-12-0>.panel-grid-cell,
+  #pg-12-0>.panel-row-style>.panel-grid-cell,
+  #pg-12-1>.panel-grid-cell,
+  #pg-12-1>.panel-row-style>.panel-grid-cell,
+  #pg-12-2>.panel-grid-cell,
+  #pg-12-2>.panel-row-style>.panel-grid-cell,
+  #pg-12-3>.panel-grid-cell,
+  #pg-12-3>.panel-row-style>.panel-grid-cell,
+  #pg-12-4>.panel-grid-cell,
+  #pg-12-4>.panel-row-style>.panel-grid-cell,
+  #pg-12-5>.panel-grid-cell,
+  #pg-12-5>.panel-row-style>.panel-grid-cell {
+  width: 100%;
+  margin-right: 0
+  }
+  
+ 
+
+  #pgc-12-1-0,
+  #pl-12 .panel-grid .panel-grid-cell-mobile-last {
+  margin-bottom: 0px
+  }
+  
+ 
+
+  #pl-12 .panel-grid-cell {
+  padding: 0
+  }
+  
+ 
+
+  #pl-12 .panel-grid .panel-grid-cell-empty {
+  display: none
+  }
+  }
+  </style>
+  <style type="text/css" id="wp-custom-css">
+  .hentry .title-post {
+  font-size: 30px;
+  text-align: center;
+  }
+  </style>
+  
+ 
+
+  </head>
+  
+ 
+
+  
+ 
+
+  <body data-rsssl="1" class="page-template page-template-page-templates page-template-page_fullwidth page-template-page-templatespage_fullwidth-php page page-id-20 siteorigin-panels siteorigin-panels-before-js">
+  
+ 
+
+  <div class="preloader">
+  <div class="spinner">
+  <div class="pre-bounce1"></div>
+  <div class="pre-bounce2"></div>
+  </div>
+  </div>
+  
+ 
+
+  <div id="page" class="hfeed site">
+  <a class="skip-link screen-reader-text" href="#content"> Al contenido</a>
+  
+ 
+
+  
+ 
+
+  <header id="masthead" class="site-header" role="banner">
+  <div class="header-wrap">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-4 col-sm-8 col-xs-12">
+  <a href="./index.html" title><img class="site-logo" src="img/%C3%90%C2%BB%C3%90%C2%BE%C3%90%C2%B3%C3%90%C2%BE.png" alt></a>
+  <div class="btn-menu"></div>
+  </div>
+  <div class="col-md-8 col-sm-4 col-xs-12">
+  
+  <nav id="mainnav" class="mainnav" role="navigation">
+  <div class="menu-osnovnoe-menyu-container">
+  <ul id="menu-osnovnoe-menyu" class="menu">
+  
+ 
+
+  <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+  <a href="./about.html"> SOBRE MÍ</a></li>
+  <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+  <a href="./reviews.html"> OPINIONES</a></li>
+  
+ 
+
+  
+ 
+
+  </ul>
+  </div>
+  </nav><!-- #site-navigation -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </header><!-- #masthead -->
+  
+ 
+
+  
+ 
+
+  <div class="sydney-hero-area">
+  <div class="header-image" style="display: block;">
+  <div class="overlay"></div> <img class="header-inner" src="https://tatiana.fit/wp-content/uploads/2017/09/cropped-WhatsApp-Image-2017-09-27-at-15.55.47-1.jpeg" width="1920" alt title>
+  </div>
+  
+ 
+
+  </div>
+  
+ 
+
+  
+ 
+
+  <div id="content" class="page-wrap">
+  <div class="container content-wrapper">
+  <main id="main" class="site-main" role="main">
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  <article id="post-22" class="post-22 page type-page status-publish hentry">
+  <header class="entry-header">
+  <h1 class="title-post entry-title"> Opiniones</h1>
+  </header><!-- .entry-header -->
+  
+ 
+
+  <div class="entry-content">
+  <div>
+  <p style="text-align: justify; padding-left: 30px; font-size: 20px;"> El resultado de cualquier actividad es la gratitud de las personas con las que trabajas en una idea, por un solo propósito. He hecho mucho trabajo y ahora estoy feliz y orgullosa de presentarles comentarios sobre el proyecto de fitness, cuyo objetivo es una mujer moderna, exitosa y segura de sí misma. Este proyecto ha ayudado a muchas mujeres a creer en sí mismas, en sus propias fuerzas, a cambiar para mejor, a encontrar las formas deseadas, a aprender a comer de manera apropiada y saludable.</p>
+  <p> </p>
+  <h3 style="text-align: center;"><span style="color: #d65050; text-align: center; width: 100%;"> Comentarios sobre el programa de fitness.<p></p>
+  <p></p>
+  </span></h3>
+  <br>
+  <br>
+  <h4> Amanda, Winnipeg, Canadá</h4>
+  <blockquote>
+  <p> Acabo de terminar un proyecto. Durante mucho tiempo busqué algo similar y finalmente, gracias a mi amiga Natalia por la perseverancia y la recomendación.<span class="Apple-converted-space"> </span>
+  </p>
+  <p> Ana es genial. Estricta pero justa 🙂</p>
+  <p> Todas las preguntas y asesoramiento al instante. Comida, entrenamiento - detalladamente explicado. Moviliza e inspira de manera extraordinaria.</p>
+  <p> Te entras al ritmo, te quejas, y de repente, ¡wow! - ves y sientes el resultado. Super, lo recomiendo, voy a seguir entrenandome!</p>
+  </blockquote>
+  <h4> Alicia, Santander, España</h4>
+  <blockquote>
+  <p style="padding-left: 30px;"> El entrenamiento " NI "(nivel inicial) me gustó mucho. Cansancio agradable en los glúteos. Lo más importante es que apareció un dolor agradable en los glúteos, nunca antes había podido lograrlo. Mañana iré a trabajar con las piernas temblorosas.</p>
+  </blockquote>
+  <h4> Mónica, Alicante, España</h4>
+  <blockquote>
+  <p> 100 burpees con un salto en 15 min. Hace 2 años no hubiera hecho ni 5. E incluso al comienzo del proyectono no me gustaba este tipo de ejercicio😄 ...</p>
+  </blockquote>
+  <h4> Raquel, España</h4>
+  <blockquote>
+  <p> ¡Es el primer maratón!<br> La sensación en el primer día fue .... Si las palabras obscenas no se aplican, entonces no hay nada que decir 😑 🙄 pero ayer me llego la iluminación 🙄 😏 fue mucho más fácil, incluso me sentí como una atleta en algún aspecto. El ejercicio no fue muy difícil ( así me pareció una semana después<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span> el menú es excelente, estoy pensando cómo comerlo todo.<br> Ana, gracias por tu paciencia, me alegro de haberte contactado. ¡Digo con confianza que estare contigo por mucho tiempo!</p>
+  </blockquote>
+  <h4> Carla, Barcelona, España</h4>
+  <blockquote>
+  <p> Ana, para ser honesta, he estado contigo durante un año🙂 pero a veces es como la primera vez😂🤔<br> Gracias a Dios, ya no tengo la sensación de que estoy rodando por el suelo como una oruga, por lo que a veces las manos tiemblan como a un alcohólico y también me entreno por las noches, descansando entre series puedo quedarme dormida en la alfombra 😴  😂<br> Y por el resto, GRACIAS por aparecer en mi vida e incluso si pudiera continuar entrenandome sola, me siento más emocionada y motivada contigo y con las chicas 💐🎈</p>
+  </blockquote>
+  <h4> Julia, Jaen, España</h4>
+  <blockquote>
+  <p> Yo, viendo un video del primer entrenamiento de NI, pensé que era muy fácil. Y soy, una "atleta", necesito al menos un nivel medio. 👌 Pero qué equivocada estaba. Apenas sobrevivi la primera semana. Dieta y raciones + dolor muscular.<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span> Y esto es de un nivel de inicio. Sinceramnte, estoy en shock por mi condición física. Ahora es la tercera semana que entreno, es mucho más fácil, incluso estoy esperando el momento para empiezar a entrenar. Sí, y con la comida me estoy involucrando gradualmente. Aún así, la "secta" me estimula.<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span> Y sí, después de ganar kilos de vacaciones, ya he perdido 2 kilos. Hurra!!!<br> Gracias, Ana, por hacer esto😍</p>
+  </blockquote>
+  <h4> Victoria, Málaga España</h4>
+  <blockquote>
+  <p> Dado que es hora de pensar en inscribirse en un nuevo curso, probablemente es hora de resumir. No sabía en absoluto qué esperar, mi decisión fue tomada de manera espontánea y voy a intentar ... Los primeros días fueron terriblemente difíciles. Me mantuve de la idea de que solo eran 28 días. Pero ya en la segunda semana comence a pensar que si tal vez seguire un mes mas ... sensaciones dolorosamente agradables aparecieron en el cuerpo. Y realmente, solo 30 minutos al día, en casa ... No es mortal, pero muy productivo. ¡Y quiero aun más!<br> Y, sin embargo, me interesa escuchar las opiniones de las chicas que han participado en el programa de entrenemiento durante más de un mes. Sus pensamientos, sensaciones, logros. Si,</p>
+  </blockquote>
+  <h4> Irene, Tenerife, España</h4>
+  </div>
+  
+ 
+
+  <div>
+  <h4> Irene, Tenerife, España</h4>
+  </div>
+  <p> Un poco de humor a nuestra conversación.</p>
+  <blockquote>
+  <p> ¡Y llegó el tercer día! Armagedón. Duele simplemente mantener las piernas rectas. Solo puedo inclinarme con las piernas dobladas, quejándome como una anciana. Aunque los ejercicios en sí al principio parecían muy simples. El lunes hice NI, pero agrege la serie favorita +  6 min los cardio de los mejores del mes pasado. Cancelé los descansos con indignación, la carga parecía insuficiente. Martes-NM, aunque las piernas ya temblaban agregue los cardio de nuevo. ¿Y por qué me parece durante el entrenamiento que puedo hacerlo todo? Quitándome el sombrero frente a Ana, no es un ejercicio, es una bomba de efecto retardado.</p>
+  </blockquote>
+  <div>
+  <h4> Fabiola, Cantabria</h4>
+  </div>
+  <blockquote>
+  <p> Recuerdo cómo casi me muero en la primera semana, gracias a las chicas por el apoyo . Ahora estoy haciendo ejercicios con placer y los niños se han entrenado conmigo y el gato siempre está ahí e incluso mi abuela trae una alfombra y hace alguito en el piso<span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">.</span> Todo se convirtió en un placer y después del entrenamiento respiro con gran alivio. Un día sí y otro no con mi esposo voy al gimnasio y ya puedo levantar más peso, lo que también me agrada. Miro con satisfacción en el espejo ya que el cuerpo se reafirmado y los costados disminuyeronahora no me veo como una oruga.<br> Gracias, Ana. Continuaré con mucho gusto.</p>
+  </blockquote>
+  <div>
+  
+ 
+
+  <h4> Sandra, Alicante</h4>
+  <blockquote>
+  <p style="text-align: justify;"> Mi proyecto de fitness es una gran idea. ¡Lo principal es un buen entrenador! Ana es una explosión de energía y un mar de buen humor en cada momento. Ella sabe cómo inspirar para una hazaña. El proyecto es muy bueno, hay resultados. El primer mes he perdido 3,5 kg. Alimetos completos, no hay nada que considerar, la entrenadora lo hizo por nosotros. Ejercicios especiales, además de una nutrición adecuada: este es un buen estado de ánimo y ligereza en el cuerpo. * 9 + *</p>
+  </blockquote>
+  <h4> Valentina, Santander, Espana</h4>
+  <blockquote>
+  <p style="text-align: justify;"> Estoy en el proyecto por sexta semana. Decir que estoy encantada es no decir nada. El resultado superó las expectativas más audaces. Durante 5 semanas perdí 8 cm de la cintura y las caderas. Sin embargo, no me muero de hambre y no paso mucho tiempo entrenando. El proyecto encaja perfectamente en mi vida. ¡Además de todo, me siento genial, ha mejorado el cutis y ando de buen humor!!!</p>
+  </blockquote>
+  <h4> Elena, Valencia</h4>
+  <blockquote>
+  <p style="text-align: justify;"> Hasta que comencé a ejercitarme personalmente con un entrenador, nunca pensé que esto fuera necesario en absoluto. La idea del deporte era estándar, llegué al gimnasio, trote un poco, hice algo en los simuladores y, con total confianza y orgullo, hice el programa más útil y me fui a casa. Parecia que estaba cansada e incluso sudada ... pero después de haber decidido por sí misma hacer ejercicio bajo la supervisión de un entrenador, seleccione a un entrenador, como se muestra en las películas, joven y guapo))) que se ve muy bien y tiene muchos certificados. Y pensé que todo iba según el plan ... hasta que me di cuenta de que no había resultado, e incluso un poco de daño. Creo que muchos podrían enfrentar problemas de salud. ¡Pero tuve mucha suerte! Tenga en cuenta que la palabra "SUERTE", destaqué ... porque no se sabe qué pasaría si continuara entrenando más con ese entrenador. ¡Pero un profesional llego a nuestro club! Ana, me dio la vuelta a mi idea de entrenamiento personal, que puede ser no solo útil para el cuerpo y la salud, sino también interesante. Cada lección es siempre algo nuevo, completamente no estándar. No bombeamos mi cuerpo para que parezca un hombre, sino que perfeccionamos mi figura femenina. Lo llevamos a la perfección. Y lo más importante, es una oportunidad para participar en su proyecto en línea. Esto es muy disciplinario. Mi menú está programado, todo es lo más accesible posible. Aunque es dificil. Pero me siento como una verdadera atleta, y ya me veo responsable ante Ana porque ella es una verdadera entrenadora que puede juntar mis pensamientos y sintonizar con un resultado real. Por lo tanto, insto a todas las chicas. No postergue hasta mañana, lo que puede comenzar hoy.</p>
+  </blockquote>
+  <h4> Natalia, España</h4>
+  <blockquote>
+  <p style="text-align: justify;"> He estado entrenando con Ana la segunda semana y ya tengo menos 2 kg, con lo que estoy muy contenta👏 ¡con ningún entrenador he tenido este resultado!  Todavía hay mucho trabajo por delante. Ana es una gran profesional en el campo, ¡confío completamente en ella! Ella nos controla muy estrictamente, explica todo cómo y qué comer, habla sobre todos los ejercicios sobre qué y cómo funcionan, ¡para nosotros todo es muy inteligible y comprensible! Todavía es muy importante para mí que ella misma hizo un menú para nosotros, no tenemos que pensar cada vez qué comer y merendar, todo ya esta inventado. ¡Realmente me gusta mucho entrenar con Ana! Estoy muy contenta de haberme metido en su proyecto, ¡así que definitivamente nos hará adelgaditas!</p>
+  </blockquote>
+  <h4> Elena, España</h4>
+  <blockquote>
+  <div>
+  <div>
+  <div style="text-align: justify;"> Entré en el proyecto de Ana García el 6 de febrero de 2017, me propuse el objetivo de perder 8 kg, antes de eso ya había bajado 30 kg y el peso se había detenido, y después de las vacaciones de Año Nuevo incluso aumenté 3 kg, antes de eso solo estaba practicando el gimnasio y al pasar al lado de la oficina, donde Ana daba clases de  entrenamiento, tenía miedo de mirar allí, pensé que nunca podría hacer eso. Pero superé el miedo y me inscribí en sus clases. Fui a la primera sesión de entrenamiento y todo el cuerpo tembló por dentro, pero después tuve un zumbido que no pude describir con palabras: me ardían las mejillas, no podía respirar, todo el cuerpo me temblaba, pero al mismo tiempo quería volver a experimentar esta sensacion. Realmente no me gusta cocinar, pero el menú que Ana nos enseño es muy sabroso, saludable y fácil de preparar (cocino una vez a la semana). Durante la primera semana de entrenamiento y PP, perdi 2.5 kg, esto es genial, y aún quedan 7 semanas por delante, tal vez incluso bajare mas de peso. Ana García es una persona muy buena y alegre, una excelente entrenadora y nuestra inspiradora me gusta que si tengo algo que no funciona,ella no me obliga a hacerlo, sino que reemplaza el ejercicio con el que puedo hacer en esta etapa. Ella me mostró de lo que mi cuerpo es capaz. Espero que durante el proyecto nos conozcamos mejor y seamos amigas, porque no solo tiene capacitación grupal, sino también proyectos en línea, por lo que no me detendré allí, siga mis comentarios, el 30 de marzo escribiré un informe sobre cómo fueron estas 7 semanas en compañía de 9 chicas maravillosas y nuestro gurú para esculpir nuestro cuerpo.</div>
+  </div>
+  </div>
+  </blockquote>
+  </div>
+  
+ 
+
+  <h4 dir="ltr" style="text-align: justify;"> Lucía España</h4>
+  <blockquote>
+  <p dir="ltr" style="text-align: justify;"> Me gusta mucho el maratón de fitness 👯 y definitivamente me quedaré para el próximo maratón con Ana todo está tan claro, comprensible y accesible para nosotras que tuve pocas preguntas adicionales, aunque solo fue al principio. Los comentarios son solo positivos, recomiendo a todas) Me volví más disciplinada😊, aprendí a planificar mi comida y no a merendar con cualquier cosa en casa o en el trabajo )) entrenamientos en casa, es una reforma) en casa hay un poco de tiempo, pero hay un resultado. Cada uno tendrá su propio resultado, lo principal es seguir las recomendaciones y no inventar nada 😊 Realmente quiero implantar y dejar durante mucho tiempo todo lo adquirido☺ P. S. a veces quiero comer algo muy dulce ))”</p>
+  </blockquote>
+  </div><!-- .entry-content -->
+  
+ 
+
+  <footer class="entry-footer">
+  </footer><!-- .entry-footer -->
+  </article><!-- #post-## -->
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  </main>
+  </div>
+  </div><!-- #content -->
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  <div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+  <div class="container">
+  <div class="sidebar-column col-md-4">
+  <aside id="sow-image-2" class="widget widget_sow-image">
+  <div class="so-widget-sow-image so-widget-sow-image-default-ad2c8d41f7a1">
+  
+ 
+
+  <div class="sow-image-container">
+  <img src="https://tatiana.fit/wp-content/uploads/2017/04/IMG_9492-550x400.jpg" width="550" height="400" sizes="(max-width: 550px) 100vw, 550px" alt="фитнес тренер" class="so-widget-image">
+  </div>
+  
+ 
+
+  </div>
+  </aside>
+  </div>
+  
+ 
+
+  <div class="sidebar-column col-md-4">
+  <aside id="sow-editor-2" class="widget widget_sow-editor">
+  <div class="so-widget-sow-editor so-widget-sow-editor-base">
+  <h3 class="widget-title"> Nunca es tarde para empezar ..</h3>
+  <div class="siteorigin-widget-tinymce textwidget">
+  <p style="text-align: justify;"> .. Pero no debe posponerlo, porque después de un año puede lamentar no haber comenzado a hacer ejercicio hoy. ¡Fitness es a lo que parece una mujer moderna y exitosa! ¡Empieza ahora!</p>
+  </div>
+  </div>
+  </aside>
+  
+ 
+
+  </div>
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  </div>
+  </div>
+  <a class="go-top"><i class="fa fa-angle-up"></i></a>
+  
+ 
+
+  <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info container"> Copyright © 2020 | Entrenadora de fitness - Ana García</div><!-- .site-info -->
+  </footer><!-- #colophon -->
+  
+ 
+
+  
+ 
+
+  </div><!-- #page -->
+  
+ 
+
+  <link rel="stylesheet" id="sow-social-media-buttons-wire-1bf22ff0e4a2-css" href="css/sow-social-media-buttons-wire-1bf22ff0e4a2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="siteorigin-widget-icon-font-fontawesome-css" href="css/style_2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sow-social-media-buttons-wire-9c8a24e56f7e-css" href="css/sow-social-media-buttons-wire-9c8a24e56f7e.css" type="text/css" media="all">
+  
+ 
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/core.min.js"></script>
+  <script type="text/javascript" src="js/datepicker.min.js"></script>
+  
+ 
+
+  <script type="text/javascript" src="js/jquery.uploadfile.min.js"></script>
+  <script type="text/javascript" src="js/scripts_1.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <script type="text/javascript" src="js/skip-link-focus-fix.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  
+ 
+
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="js/jscripts-ftr-min.js"></script>
+  <script type="text/javascript" src="js/wp-embed.min.js"></script>
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var panelsStyles = { "fullContainer": "body" };
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="js/styling-2105.min.js"></script>
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  </body></html>
