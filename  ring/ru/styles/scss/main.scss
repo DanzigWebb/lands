@@ -286,8 +286,7 @@
   padding-top: 0.55rem;
   padding-bottom: 0.7rem;
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid(2);
     margin-bottom: 0.16rem;
     margin-top: 0.22rem;
     padding-left: 0.3rem;
@@ -329,7 +328,7 @@ padding-top: 1.2rem;
   &__grid{
     padding-left: 0.2rem;
     display: grid;
-    grid-template-columns: repeat(2,1.63rem 2rem);
+    grid-template-columns: repeat(1, 1.63rem 2rem);
     grid-column-gap:0.17rem;
     margin-bottom: 0.25rem;
     img{
@@ -354,4 +353,16 @@ padding-top: 1.2rem;
 }
 footer{
   padding-bottom: 0.9rem;
+}
+
+
+.sect7__item--left {
+  position: relative;
+  span {
+    position: absolute;
+    left: .26rem;
+    top: .6rem;
+    font-weight: 700;
+    font-size: 0.16rem;
+  }
 }
