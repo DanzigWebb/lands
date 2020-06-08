@@ -1,0 +1,110 @@
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .social-media-button-container {
+  zoom: 1;
+  text-align: justify;
+  /*
+    &:after {
+        content:"";
+        display:inline-block;
+        width:100%;
+    }
+    */
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .social-media-button-container:before {
+  content: '';
+  display: block;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .social-media-button-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (max-width: 780) {
+  .so-widget-sow-social-media-buttons-wire-45d62ae015ac .social-media-button-container {
+    text-align: left;
+  }
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook {
+  background: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #d65050 !important;
+  border: 2px solid #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook:visited,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook:active,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook:hover {
+  color: #d65050 !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook.ow-button-hover:hover {
+  background: #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-facebook.ow-button-hover:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram {
+  background: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #d65050 !important;
+  border: 2px solid #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:visited,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:active,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:hover {
+  color: #d65050 !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram.ow-button-hover:hover {
+  background: #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram.ow-button-hover:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube {
+  background: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #d65050 !important;
+  border: 2px solid #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube:visited,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube:active,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube:hover {
+  color: #d65050 !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube.ow-button-hover:hover {
+  background: #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-youtube.ow-button-hover:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram {
+  background: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #d65050 !important;
+  border: 2px solid #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:visited,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:active,
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram:hover {
+  color: #d65050 !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram.ow-button-hover:hover {
+  background: #d65050;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button-instagram.ow-button-hover:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button {
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em 0.1em 0.1em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+.so-widget-sow-social-media-buttons-wire-45d62ae015ac .sow-social-media-button .sow-icon-fontawesome {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
