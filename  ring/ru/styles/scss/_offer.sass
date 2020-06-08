@@ -18,27 +18,24 @@ input[type=number]::-webkit-outer-spin-button
 form
   box-sizing: border-box
   margin: auto
-  margin-top: 0.5rem
   display: flex
   align-items: center
   flex-direction: column
-  padding-bottom: 0.4rem
 input, textarea
-  height: .84rem
-  width: 4.14rem
-  padding-left: 0.3rem
+  height: 1rem
+  width: 4.4rem
+  padding-left: 1.16rem
   box-sizing: border-box
   border-radius: 4px
-  font-size: 0.16rem
+  font-size: 0.26rem
   color: #000
-  background: rgba(255, 255, 255, 1)
   border: none
-  background: #F1F0F0
-  margin: 0 0 0.32rem
-  color: rgba(0, 0, 0, 0.5)
-  border-radius: 5px
+  margin-bottom: 0.4rem
+  background: #FFFFFF
+  box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25)
+  border-radius: 20px
 input::placeholder
-  font-size: 0.25rem
+  font-size: 0.26rem
   font-family: inherit
 // ========================>
 // policy
@@ -55,3 +52,21 @@ input::placeholder
   text-align: center
   a
     color: #7c7e86
+.input-wrap
+  position: relative
+
+.input-wrap img 
+    position: absolute
+    left: 0.3rem
+    top: 50%
+    transform: translateY(-110%)
+    width: 0.3rem
+
+.input-wrap::before
+    content: ''
+    position: absolute
+    right: 3.45rem
+    top: 0.25rem
+    height: 0.5rem
+    width: 1px
+    background: #CFCFCF

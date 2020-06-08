@@ -6,7 +6,7 @@
 @import "timer";
 
 .intro {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   &__top {
     width: 3.6rem;
     height: 1.3rem;
@@ -64,7 +64,7 @@
       color: $accent;
       font-size: 0.6rem;
       line-height: 1;
-      padding: 0 .08rem;
+      padding: 0 0.08rem;
     }
   }
 }
@@ -131,4 +131,227 @@
       color: $accent;
     }
   }
+}
+.sect1 {
+  background: #ffdd78;
+  padding-top: 0.8rem;
+  padding-bottom: 0;
+
+  &__top {
+    width: 2.2rem;
+    margin: 0 auto;
+    transform: translateY(0.5rem);
+  }
+  &__bot {
+    transform: translateY(0.08rem);
+  }
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 10px 10px rgba(183, 158, 86, 0.3);
+    border-radius: 70px 10px 10px 10px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0.99rem;
+    }
+    img {
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+      width: 4.4rem;
+    }
+    p {
+      margin-top: 0.4rem;
+    }
+    b {
+      color: $accent;
+      font-size: 0.24rem;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+.sect2 {
+  background-color: #f7f7f7;
+  padding-top: 0.9rem;
+  padding-bottom: 0;
+  &__img {
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__bottom {
+    margin-bottom: -0.1rem;
+    z-index: 0;
+  }
+  .btn {
+    transform: translateY(0.49rem);
+    z-index: 9999;
+  }
+}
+.sect3 {
+  background: #ffdd78;
+  padding-top: 1.09rem;
+  padding-bottom: 0;
+  &__img {
+    width: 1rem;
+  }
+  &__main {
+    margin-bottom: -0.26rem;
+    margin-left: -0.2rem;
+    padding-top: 0.59rem;
+    padding-bottom: 0.23rem;
+    padding-left: 0.2rem;
+    background-image: url(../../img/sect3_main.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__item {
+    @include flex(row, flex-start, flex-start);
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    p {
+      margin-left: 0.26rem;
+      margin-top: 0;
+    }
+    b {
+      display: block;
+      margin-bottom: 0.1rem;
+      font-size: 0.24rem;
+      color: #333333;
+    }
+  }
+  &__bottom {
+    width: 3.02rem;
+    margin: auto;
+    transform: translateY(0.9rem);
+  }
+}
+.sect4 {
+  padding-top: 1.38rem;
+  padding-bottom: 0;
+  background-color: #fff;
+  .btn {
+    margin-bottom: 1.1rem;
+  }
+  &__main {
+    @include flex(row, space-between);
+    width: 100%;
+    margin-bottom: 0.48rem;
+    margin-top: 1rem;
+  }
+  &__box {
+    width: 49.8%;
+  }
+  &__top {
+    background: #ffdd78;
+    @include flex(column, center, center);
+    padding-bottom: 0.25rem;
+
+    p {
+      margin-top: 0.13rem;
+    }
+    img {
+      width: 0.92rem;
+      margin-top: -0.46rem;
+    }
+  }
+  .left {
+    border-radius: 14px 0px 0px 0px;
+  }
+  .ring {
+    border-radius: 0px 14px 0px 0px;
+  }
+  &__item {
+    background: #f3f1ff;
+    text-align: center;
+    padding: 0.22rem 0;
+    &:nth-child(odd) {
+      background: #fafafa;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &__bot {
+    margin-bottom: -0.1rem;
+  }
+}
+.sect5 {
+  background: #ffdd78;
+  padding-top: 0.55rem;
+  padding-bottom: 0.7rem;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0.16rem;
+    margin-top: 0.22rem;
+    padding-left: 0.3rem;
+    p {
+      margin-top: 0.15rem;
+    }
+    b {
+      display: block;
+      font-size: 0.24rem;
+    }
+    img {
+      width: 0.42rem;
+    }
+  }
+  &__bot {
+    width: 0.84rem;
+    transform: translateY(0.29rem);
+    margin-left: 0.48rem;
+  }
+}
+.sect6{
+ background: #F6F6F6;
+border-radius: 60px;
+transform: translateY(-0.5rem);
+margin-bottom: -1.1rem;
+position: relative;
+padding-top: 1.2rem;
+&__absol{
+  position: absolute;
+  top:2.52rem ;
+  width: 1.52rem;
+  right: 0;
+}
+}
+.sect7{
+  padding-top: 1.5rem;
+   background: #ffdd78;
+   padding-bottom: 0.95rem;
+  &__grid{
+    padding-left: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1.63rem 2rem);
+    grid-column-gap:0.17rem;
+    margin-bottom: 0.25rem;
+    img{
+      width: 1.4rem;
+    }
+  }
+  &__title{
+    margin-bottom: 0.3rem;
+  }
+  &__item {
+    align-self: center;
+    p{
+      margin-top: 0;
+    }
+    b{
+      display: block;
+      font-size: 0.24rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+  
+}
+footer{
+  padding-bottom: 0.9rem;
 }

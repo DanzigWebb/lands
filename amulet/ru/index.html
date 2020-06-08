@@ -14,51 +14,318 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=cyrillic-ext" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'body'});</script>
 </head>
 
-<body>
-<!-- Простой попап диалог с формой -->
-<dialog id="favDialog">
-  <form method="dialog">
-    <section>
-      <p><label for="favAnimal">Favorite animal:</label>
-      <select id="favAnimal">
-        <option></option>
-        <option>Brine shrimp</option>
-        <option>Red panda</option>
-        <option>Spider monkey</option>
-      </select></p>
-    </section>
-    <menu>
-      <button id="cancel" type="reset">Cancel</button>
-      <button type="submit">Confirm</button>
-    </menu>
-  </form>
-</dialog>
+<body contenteditable>
 
-<menu>
-  <button id="updateDetails">Update details</button>
-</menu>
+	<main class="main">
+		<header class="intro">
 
-<script>
-  (function() {
-    var updateButton = document.getElementById('updateDetails');
-    var cancelButton = document.getElementById('cancel');
-    var favDialog = document.getElementById('favDialog');
+			<div class="intro__main">
+				<div class="intro__top">
+					<h3 class="pt">АМУЛЕТ “СИЛА ЗОДИАКА”</h3>
+					<p>Амулет дающий силу всех <br>
+						12-ти знаков зодиака!!!</p>
+				</div>
+				<div class="sale">
+					<b>АКЦИЯ!</b>
+					<b>50%</b>
+					<span>СКИДКА!</span>
+				</div>
+				<div class="price">
+					<s>98€</s>
+					<b>49€</b>
+				</div>
+			</div>
+			<div class="intro__builets">
+				<div class="intro__bull">
+					<img src="img/bull1.svg" style="width: 0.6rem;" alt="">
+					<p>Дает силу <br> 12-ти знаков зодиака</p>
+				</div>
+				<div class="intro__bull">
+					<img src="img/bull2.svg" style="width: 0.54rem;" alt="">
+					<p>Можно носить как подвеску и как кольцо</p>
+				</div>
+				<div class="intro__bull">
+					<img src="img/bull3.svg" style="width: 0.54rem;" alt="">
+					<p>Представлен в двух цветах</p>
+				</div>
+			</div>
 
-    // Update button opens a modal dialog
-    updateButton.addEventListener('click', function() {
-      favDialog.showModal();
-    });
+			<div class="timer">
+				<div class="timer__content">
+					<h3>До конца акции осталось:</h3>
+					<div class="timer__wrapper">
+						<div class="t-hour"></div> : <div class="t-min"></div> : <div class="t-sec"></div>
+					</div>
+					<a class="btn" href="#offer">Заказать</a>
+				</div>
+			</div>
+		</header>
 
-    // Form cancel button closes the dialog box
-    cancelButton.addEventListener('click', function() {
-      favDialog.close();
-    });
+		<section class="sect1">
+			<div class="content">
+				<h2>Уникальное украшение <br>
+					с невиданной силой</h2>
+				<img src="img/photo_1.jpg" alt="" class="no-pad">
+				<p>Этому древнейшему и чрезвычайно красивому символу более двух тысячелетий. Его родина – древний Вавилон.
+					<b>Амулет “Сила
+						зодиака”</b> напрямую связан с энергией человека, он активируют ее потоки, а также защищает от негативной
+					энергии. У него
+					есть ещё одно удивительное свойство, Амулет <b>дает силу и лучшие качества от всех 12-ти знаков зодиака.</b>
+					<br>
+					<br>
+					И сегодня, с помощью опытных мастеров, таинственный амулет древнего Вавилона превратился в элегантный кулон,
+					но сохранил
+					все свои силы.</p>
+			</div>
+		</section>
 
-  })();
-</script>
+		<section class="sect2">
+			<div class="content">
+				<h2 class="t-white">
+					Носите амулет двумя <br> способами!
+				</h2>
+				<div class="sect2__main">
+					<p class="sect2__about top">
+						Носите его <br> как подвеску
+					</p>
+					<p class="sect2__about bot">
+						или как <br> кольцо
+					</p>
+					<img src="img/photo_2.png" alt="">
+				</div>
+				<a class="btn" href="#offer">Заказать со скидкой</a>
+			</div>
+		</section>
+
+		<section class="sect3">
+			<div class="content">
+				<h2>Возьми лучшие качества <br>
+					от 12-ти знаков зодиака!</h2>
+				<p class="w-500">В древнем Вавилоне верили, что люди носящие такой амулет приобретают лучшие качества всех
+					знаков
+					зодиака.</p>
+			</div>
+			<div class="sect3__content">
+				<div class="sect3__item">
+					<img src="img/icon_1.svg" alt="">
+					<p><b>Овен
+						</b>смелость</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_2.svg" alt="">
+					<p><b>Телец </b>чувственность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_3.svg" alt="">
+					<p><b>Близнецы </b>подвижность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_4.svg" alt="">
+					<p><b>Рак
+						</b>отзывчивость</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_5.svg" alt="">
+					<p><b>Лев
+						</b>харизматичность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_6.svg" alt="">
+					<p><b>Дева
+						</b>ум</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_7.svg" alt="">
+					<p><b>Весы
+						</b>верность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_8.svg" alt="">
+					<p><b>Скорпион
+						</b>страстность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_9.svg" alt="">
+					<p><b>Стрелец
+						</b>жизнерадостность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_10.svg" alt="">
+					<p><b>Козерог </b>надежность</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_11.svg" alt="">
+					<p><b>Водолей </b>любопытство</p>
+				</div>
+				<div class="sect3__item">
+					<img src="img/icon_12.svg" alt="">
+					<p><b>Рыбы
+						</b>романтичность</p>
+				</div>
+			</div>
+			<div class="content">
+				<video controls
+					src="https://cloud.video.taobao.com/play/u/2200739521357/p/1/e/6/t/10301/227996823508.mp4"></video>
+			</div>
+		</section>
+		<section class="sect4">
+			<div class="content">
+				<h2 class="t-white">Характеристики амулета</h2>
+				<br>
+				<div class="sect4__items">
+					<div class="sect4__item">
+						<b>Тип:</b>
+						<hr>
+						<p>подвеска, <br>
+							кольцо</p>
+					</div>
+					<div class="sect4__item">
+						<b>Цвет:</b>
+						<hr>
+						<p>золотой, <br>
+							серебряный</p>
+					</div>
+					<div class="sect4__item">
+						<b>Материал:</b>
+						<hr>
+						<p>металл</p>
+					</div>
+					<div class="sect4__item">
+						<b>Вес:</b>
+						<hr>
+						<p>15 гр</p>
+					</div>
+				</div>
+				<img class="no-pad" src="img/photo_3.png" alt="">
+			</div>
+		</section>
+		<section class="sect5">
+			<div class="content">
+				<h2>Отзывы покупателей</h2>
+
+				<div class="reviews owl-carousel">
+					<div class="review">
+						<img src="img/comm1.png" alt="">
+						<p>Этот Амулет невероятно красивый!!! Мне подарил его муж, он знает как я увлекаюсь астрологией. Ношу не
+							снимая уже месяц,
+							он работает!!! Характер мой стал меняться в лучшую сторону, появились качества которых раньше не было, со
+							слов мужа)))
+							но я сама это вижу. Спасибо!!!</p>
+						<b>Ольга, 35 лет</b>
+					</div>
+					<div class="review">
+						<img src="img/comm2.png" alt="">
+						<p>Я не верю во всю эту эзотерику, заказала потому что понравился и не прогадала. Он очень красивый! Ношу
+							его и как кулон в
+							раскрытом виде и в сложенном в виде кольца-подвески и как кольцо на пальце. Смотрится в любом виде очень
+							стильно.
+							Рекомендую!!!</p>
+						<b>Татьяна 25 лет</b>
+					</div>
+					<div class="review">
+						<img src="img/comm3.png" alt="">
+						<p>Искал сестре оригинальный подарок, увидел этот Амулет “Сила зодиака” и понял что нашел идеальный подарок.
+							Во-первых она
+							очень любит необычные украшения, во-вторых она увлекается изотерикой. Она в полном восторге!!! Доставка
+							очень быстрая 3
+							дня с момента заказа, оператор вежливый, помог определиться с цветом. Сам шар очень красивый, все элементы
+							сделаны очень
+							качественно. Спасибо вам!</p>
+						<b>Анатолий, 32 года</b>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect6">
+			<div class="content">
+				<h2 class="upp t-white">КАК СДЕЛАТЬ ЗАКАЗ?</h2>
+				<br>
+				<div class="sect6__items">
+					<div class="sect6__item">
+						<img src="img/icon_13.svg" alt="">
+						<p>Оставьте заявку на нашем сайте, заполнив форму заказа</p>
+					</div>
+					<div class="sect6__item">
+						<img src="img/icon_14.svg" alt="">
+						<p>Наш менеджер перезвонит вам для оформления заказа</p>
+					</div>
+					<div class="sect6__item">
+						<img src="img/icon_15.svg" alt="">
+						<p>Доставка курьером в течении 3-7 дней</p>
+					</div>
+					<div class="sect6__item">
+						<img src="img/icon_16.svg" alt="">
+						<p>Мы не принимаем предоплату. Оплата производится только при получении товара!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="intro">
+
+			<div class="intro__main">
+				<div class="intro__top">
+					<h3 class="pt">АМУЛЕТ “СИЛА ЗОДИАКА”</h3>
+					<p>Амулет дающий силу всех <br>
+						12-ти знаков зодиака!!!</p>
+				</div>
+				<div class="sale">
+					<b>АКЦИЯ!</b>
+					<b>50%</b>
+					<span>СКИДКА!</span>
+				</div>
+				<div class="price">
+					<s>98€</s>
+					<b>49€</b>
+				</div>
+			</div>
+			<div class="intro__builets">
+				<div class="intro__bull">
+					<img src="img/bull1.svg" style="width: 0.6rem;" alt="">
+					<p>Дает силу <br> 12-ти знаков зодиака</p>
+				</div>
+				<div class="intro__bull">
+					<img src="img/bull2.svg" style="width: 0.54rem;" alt="">
+					<p>Можно носить как подвеску и как кольцо</p>
+				</div>
+				<div class="intro__bull">
+					<img src="img/bull3.svg" style="width: 0.54rem;" alt="">
+					<p>Представлен в двух цветах</p>
+				</div>
+			</div>
+
+			<div class="timer offer" id="offer">
+				<div class="timer__content">
+					<h3>До конца акции осталось:</h3>
+					<div class="timer__wrapper">
+						<div class="t-hour"></div> : <div class="t-min"></div> : <div class="t-sec"></div>
+					</div>
+					<form action="" method="POST" class="form">
+						<input type="text" name="name" required placeholder="Имя">
+						<input type="text" name="phone" required placeholder="Телефон">
+						<button class="btn">ЗАКАЗАТЬ</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<div class="policy__bot">
+		<div class="policy_wrap">
+			<span>GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Span</span>
+			<a href="/privacypolicy" target="_blank">Политика конфиденциальности</a>
+		</div>
+	</div>
+	<script src="libs/carousel/owl.carousel.min.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
