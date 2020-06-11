@@ -1,0 +1,41 @@
+.reviews {
+ padding-top: 0.5rem;
+  .ava{
+    width: 1.64rem;
+  }
+  &__item{
+    padding: 0 0.4rem;
+  }
+  .name{
+    margin-left:0.23rem ;
+   b{
+     display: block;
+     font-size: 0.26rem;
+     margin-bottom: 0.03rem;
+   }
+  }
+  &__header{
+    @include flex(row);
+    align-items: center;
+  }
+  &__comment{
+    p{
+      margin: 0.25rem 0 ;
+    }
+  }
+}
+.owl-carousel
+  .owl-dots
+   { padding: .4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button
+     { width: 0.8rem;
+      height: 0.1rem;
+      border-radius: 14px;
+      background: #FFD2D2;
+        outline: none;
+      margin: 0 0.1rem;
+      &.active
+     { background: #FE5757}}}
