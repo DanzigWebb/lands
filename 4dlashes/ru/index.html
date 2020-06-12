@@ -14,9 +14,11 @@
 	<link rel="stylesheet" href="styles/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
 		rel="stylesheet">
+
+
 </head>
 
-<body>
+<body data-editable data-name="article-body">
 	<!-- <a href="#offer" class="pulse__btn">
 		<img src="img/button.png" alt="">
 	</a> -->
@@ -202,39 +204,41 @@
 	<section class="sect7">
 		<h2>Как заказать <br>
 			<b class="prod">CHARMING LASH?</b></h2>
-			<div class="content">
-				<p>Легко! Но стоит поторопиться - в наличие осталось всего 12 штук, а новогодние праздники уже близко.</p>
-				<div class="sect7__builets">
-					<div class="sect7__item"><img src="img/block_7_1.svg" alt=""><span>Оставьте заявку на нашем сайте</span></div>
-					<div class="sect7__item"><img src="img/block_7_2.svg" alt=""><span>Мы перезвоним вам в течение 5 минут для подтверждения заказа</span></div>
-					<div class="sect7__item"><img src="img/block_7_3.svg" alt=""><span>Доставим товар курьером за 3-7 дней</span></div>
+		<div class="content">
+			<p>Легко! Но стоит поторопиться - в наличие осталось всего 12 штук, а новогодние праздники уже близко.</p>
+			<div class="sect7__builets">
+				<div class="sect7__item"><img src="img/block_7_1.svg" alt=""><span>Оставьте заявку на нашем сайте</span></div>
+				<div class="sect7__item"><img src="img/block_7_2.svg" alt=""><span>Мы перезвоним вам в течение 5 минут для
+						подтверждения заказа</span></div>
+				<div class="sect7__item"><img src="img/block_7_3.svg" alt=""><span>Доставим товар курьером за 3-7 дней</span>
 				</div>
 			</div>
+		</div>
 	</section>
 
-		<footer class="main">
-			<div class="main__top"><span>Тушь для ресниц</span><img src="img/logo.svg" alt=""></div>
-			<div class="main__center">
-				<img src="img/main_1.png" alt="">
-				<div class="main__price"><span>39€</span><s>78€</s></div>
-			</div>
-			<h3 class="main__heading">Пленяй всех своим взглядом!</h3>
-			<div class="main__builets">
-				<div class="main__item"><img src="img/header_icon_1.png" alt=""><span>Удлиняет</span></div>
-				<div class="main__item"><img src="img/header_icon_2.png" alt=""><span>Придает объем</span></div>
-				<div class="main__item"><img src="img/header_icon_3.png" alt=""><span>Подкручивает</span></div>
-			</div>
-			<div class="main__offer">
-				<form action="" class="offer">
-					<h3>Заполните форму</h2>
-						<!-- <label for="name">Например, Ева</label> -->
-						<input type="text" name="name" required="" placeholder="Имя">
-						<!-- <label for="phone">Например, +79994563421</label> -->
-						<input type="tel" name="phone" required="" placeholder="Телефон">
-						<button class="btn" type="submit"><span>ЗАКАЗАТЬ</span></button>
-				</form>
-			</div>
-		</footer>
+	<footer class="main">
+		<div class="main__top"><span>Тушь для ресниц</span><img src="img/logo.svg" alt=""></div>
+		<div class="main__center">
+			<img src="img/main_1.png" alt="">
+			<div class="main__price"><span>39€</span><s>78€</s></div>
+		</div>
+		<h3 class="main__heading">Пленяй всех своим взглядом!</h3>
+		<div class="main__builets">
+			<div class="main__item"><img src="img/header_icon_1.png" alt=""><span>Удлиняет</span></div>
+			<div class="main__item"><img src="img/header_icon_2.png" alt=""><span>Придает объем</span></div>
+			<div class="main__item"><img src="img/header_icon_3.png" alt=""><span>Подкручивает</span></div>
+		</div>
+		<div class="main__offer">
+			<form action="" class="offer">
+				<h3>Заполните форму</h2>
+					<!-- <label for="name">Например, Ева</label> -->
+					<input type="text" name="name" required="" placeholder="Имя">
+					<!-- <label for="phone">Например, +79994563421</label> -->
+					<input type="tel" name="phone" required="" placeholder="Телефон">
+					<button class="btn" type="submit"><span>ЗАКАЗАТЬ</span></button>
+			</form>
+		</div>
+	</footer>
 	<div class="policy__bot">
 		<div class="policy_wrap"><span>GADGET SHOP, Calle de Boldano, 33, 28027 Madrid, Span</span>
 			<a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></div>
@@ -243,6 +247,14 @@
 	<script src="libs/swiper/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/ContentTools@1.6.1/build/content-tools.min.js" referrerpolicy="origin"></script>
+
+<script>
+var editor = ContentTools.EditorApp.get();
+editor.init('[data-editable]', 'data-name')
+</script>
 
 </html>
