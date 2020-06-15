@@ -1,0 +1,88 @@
+// html
+//   font-size: 26.666666666667vw
+//   background: #fff
+//   @media (min-width: 480px)
+//     font-size: 128px
+//     overflow-x: hidden
+html
+  font-size: 20.833333vw
+  @media (min-width: 481px)
+    font-size: 100px
+    overflow-x: hidden
+body
+  font-size: 16px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  color: #000
+  overflow-x: hidden
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  @media (max-width: 480px)
+    font-size: 16px
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+.t-center
+  text-align: center
+img
+  width: 100%
+
+.img-wrap
+  margin: auto
+  position: relative
+  &.big
+    max-width: 880px
+  &.med
+    max-width: 600px
+  &.small
+    max-width: 330px
+  .bottom_txt
+    color: #93a559
+    font-size: 18px
+    font-weight: 400
+    font-style: italic
+    line-height: 0.6
+  a
+    position: absolute
+    bottom: 30px
+    left: 0
+
+.h-100
+  height: 100%
+
+.btn
+  text-align: center
+  font-weight: bold
+  font-size: 16px
+  text-transform: uppercase
+  background: #cc39a2
+  color: #fff
+  border-radius: 30px
+  padding: 11px 13px
+  text-decoration: none
+  transition: .4s ease all
+  &:hover
+    transform: scale(1.1)
+.fl-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  
+.owl-carousel
+  .owl-dots
+    padding: .2rem 0
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+      width: 0.2rem
+      height: 0.2rem
+      border-radius: 50%
+      background-color: #E7E7E7
+      margin: 0 3px
+      &.active
+        background-color: #FFF500
