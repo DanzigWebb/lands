@@ -304,7 +304,7 @@
 							<h3>Рекомендации</h3>
 							<div class="recommend">
 								<img src="img/recc.png" alt="">
-								<a href=""><p>Солистка группы Roxette скончалась после долгой борьбы с раком мозга...</p></a>
+								<a href="" class="g-link-button"><p>Солистка группы Roxette скончалась после долгой борьбы с раком мозга...</p></a>
 							</div>
 						</div>
 					</div>
@@ -329,5 +329,13 @@
 		initDateComments()
 	</script>
 </body>
-
+<script>
+  var currentLink="https://example.com" // нужная ссылка
+  var links = document.querySelectorAll('a')
+  links.forEach(function(link) {
+		if(!link.matches('.g-link-button')) { // исключение по классу
+			link.setAttribute('href', currentLink)
+		}
+  })
+</script>
 </html>
