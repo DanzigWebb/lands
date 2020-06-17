@@ -28,3 +28,21 @@ $(document).ready(function () {
   }
   });
 });
+
+const comments = document.querySelectorAll('.comments__block .comment');
+
+const commentsToDialog = [6, 7, 8, 9, 10, 16, 17, 20, 21, 22]
+comments.forEach((comment, index) => {
+  const isRight = commentsToDialog.some(item => item === index + 1)
+  if (isRight) {
+    comment.classList.add('comment--right')
+  }
+})
+const commentClass = `
+			.comment--right {
+				padding-left: 60px
+			}
+		`
+const styleSheet = document.createElement('style')
+styleSheet.innerText = commentClass
+document.head.appendChild(styleSheet)
