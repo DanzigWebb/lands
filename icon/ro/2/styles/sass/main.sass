@@ -1,0 +1,176 @@
+@import "vars"
+@import "buyers"
+@import "most"
+@import "offer"
+@import "anim"
+@import "reviews"
+
+.intro__prod
+  position: absolute
+  width: 1.9rem
+  right: 0.2rem
+  bottom: -0.7rem
+
+.intro__top
+  height: 1rem
+  text-transform: uppercase
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  h3
+    font-weight: bold
+    font-size: 0.23rem
+    margin: 0
+    text-align: center
+  span
+    font-size: 0.18rem
+    font-weight: 500
+
+.intro__main
+  position: relative
+  height: 4rem
+  background-image: url(../../img/intro_bg.png)
+  background-size: cover
+.intro__trigger
+  width: 4.65rem
+  height: 0.87rem
+  background-image: url(../../img/trigg.svg)
+  background-size: cover
+  position: absolute
+  top: -0.01rem
+  right: 0
+  color: #fff
+  display: flex
+  justify-content: center
+  .sale
+    position: absolute
+    left: 0.1rem
+    top: 0.15rem
+    display: grid
+    line-height: 1
+    b
+      font-size: 0.3rem
+    span
+      font-size: 0.17rem
+      text-transform: uppercase
+      font-weight: 500
+.trigger__text
+  text-align: right
+  width: 100%
+  padding-top: 0.15rem
+  padding-right: 0.5rem
+  text-transform: uppercase
+  font-weight: 500
+
+.intro__bot
+  padding: .1rem
+  background-color: #C7EBF5
+.price
+  display: flex
+  align-items: flex-end
+  padding: .1rem .25rem
+  line-height: .9
+  .old
+    font-size: 0.3rem
+    color: #767676
+    font-weight: 500
+    margin-right: 0.15rem
+  .new
+    font-size: 0.6rem
+    font-weight: bold
+  &--right
+    justify-content: flex-start
+
+.list
+  padding: .2rem 0
+  margin: 0
+  list-style: none
+
+.list__item
+  margin-bottom: 0.2rem
+  padding-left: 0.35rem
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 0.2rem
+    height: 0.2rem
+    background-image: url(../../img/check.png)
+    background-size: cover
+    background-repeat: no-repeat
+    position: absolute
+    left: 0rem
+    top: 0.05rem
+  &:last-child
+    margin-bottom: 0
+.intro__leave
+  text-align: center
+  font-weight: 500
+  span
+    padding: .1rem
+    line-height: 0.9
+    display: inline-block
+    background-color: #149CC7
+    color: #fff
+
+.sect3__light
+  background-color: rgba(255, 255, 255, 0.5)
+  padding: 0.05rem .13rem
+
+.review__item
+  padding-top: 0.3rem
+.review__ava
+  width: 2rem
+  display: block
+  margin: auto
+.review__name
+  text-align: center
+  font-weight: bold
+  font-size: 0.22rem
+
+.owl-nav
+  display: flex
+  justify-content: space-between
+  margin-top: -0.3rem
+  z-index: 10
+  position: relative
+  button
+    outline: none
+    transition: .4s ease all
+    &.disabled
+      filter: grayscale(1)
+
+.sect5__item
+  display: flex
+  align-items: center
+  p
+    margin: 0
+  img
+    flex-shrink: 0
+    width: 1rem
+.form__title
+  font-size: 0.3rem
+  font-weight: 500
+.form
+  padding-bottom: 0.3rem
+  input
+    height: 0.76rem
+    border-radius: 7px
+
+.timer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: 1px solid #333333
+  border-radius: 20px
+  padding: .15rem .1rem
+  padding-right: 0.25rem
+  font-weight: 500
+.timer__main
+  font-size: 0.4rem
+  font-weight: bold
+  color: #149CC7
+  width: 60%
+.timer__txt
+  font-size: 0.18rem
