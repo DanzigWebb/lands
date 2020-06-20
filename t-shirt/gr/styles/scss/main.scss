@@ -70,6 +70,7 @@
     text-align: center;
     @include flex(column, center, center);
     box-sizing: border-box;
+    padding: 0.25rem;
     p {
       margin-top: 0;
       font-size: 0.22rem;
@@ -303,7 +304,6 @@
 .price {
   margin: 0 auto;
   margin-top: 4.16rem;
-  z-index: 999999;
   width: 3.9rem;
   height: 1.34rem;
   position: relative;
@@ -312,7 +312,7 @@
   background-image: url(../../img/price.svg);
   background-size: cover;
   @include flex(row, space-between, center);
-  padding: 0 0.55rem;
+  padding: 0 0.45rem;
   padding-right: 0.66rem;
   b {
     display: block;
