@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
 	<meta charset="utf-8">
-	<title>Perfect Hair</title>
+	<title>Вакансия оператор колл-центра</title>
 	<meta property="og:image" content="path/to/image.jpg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon/favicon.ico">
@@ -32,6 +32,15 @@
 				<li class="block1__item">португальский</li>
 				<li class="block1__item">французский</li>
 				<li class="block1__item">чешский</li>
+				<li class="block1__item">польский</li>
+				<li class="block1__item">сербский</li>
+				<li class="block1__item">словенский</li>
+			</ul>
+			<ul class="block1__list extend">
+
+				<li class="block1__item">венгерский</li>
+				<li class="block1__item">словацкий</li>
+				<li class="block1__item">албанский</li>
 			</ul>
 			<div class="block1__balance">
 				<div class="border"></div>
@@ -61,7 +70,7 @@
 			</div>
 			<div class="builets__item">
 				<img src="img/bull6.png" alt="">
-				<span>Работа с клиентами в более чем 8 европейских странах</span>
+				<span>Работа с клиентами в более чем 15 европейских странах</span>
 			</div>
 			<br>
 			<a href="#offer" class="btn">Подать анкету</a>
@@ -120,7 +129,7 @@
 		<section class="block4 pad">
 			<div class="block4__item">
 				<img src="img/raduga.png" alt="">
-				<p><b>Прямой рекламодатель</b> с колл-центром в более чем 8 странах</p>
+				<p><b>Прямой рекламодатель</b> с колл-центром в более чем 15 странах</p>
 			</div>
 			<div class="block4__item">
 				<img src="img/raduga.png" alt="">
@@ -132,7 +141,7 @@
 			</div>
 			<div class="block4__item">
 				<img src="img/raduga.png" alt="">
-				<p>Более <b>200 сотрудников</b> из 8 стран</p>
+				<p>Более <b>200 сотрудников</b> из 15 стран</p>
 			</div>
 			<img class="no-pad" src="img/bl4.png" alt="">
 		</section>
@@ -260,7 +269,8 @@
 				<div class="block9__item">
 					<p>Будет ли очное собеседование?</p>
 					<span class="ticket">&#x207A;</span>
-					<div class="hidden-content">Да. Заполните анкету и наш сотрудник свяжется с вами в течении дня для уточнения деталей.
+					<div class="hidden-content">Да. Заполните анкету и наш сотрудник свяжется с вами в течении дня для уточнения
+						деталей.
 					</div>
 				</div>
 				<div class="block9__item">
@@ -324,31 +334,31 @@
 					<div class="quest__head">Вопрос <span class="now">1</span> из <span class="all">6</span></div>
 					<div class="progress"><span class="line"></span></div>
 				</div>
-				<form action="" method="POST">
+				<form id="offerForm" action="" method="POST">
 					<div class="form__item">
 						<h4 class="form__lable">Укажите свое имя и фамилию:</h4>
 						<input type="text" name="name" required placeholder="Введите Имя и Фамилию">
-						<button class="btn next">следующий вопрос</button>
+						<button class="btn next" type="button">следующий вопрос</button>
 					</div>
 					<div class="form__item">
 						<h4 class="form__lable">Укажите свой номер телефона:</h4>
 						<input type="text" name="phone" required placeholder="Введите телефон">
-						<button class="btn next">следующий вопрос</button>
+						<button class="btn next" type="button">следующий вопрос</button>
 					</div>
 					<div class="form__item">
 						<h4 class="form__lable">Каким иностранным языком вы владеете, какой уровень?</h4>
 						<input name="lang" type="text" required placeholder="Введите ответ">
-						<button class="btn next">следующий вопрос</button>
+						<button class="btn next" type="button">следующий вопрос</button>
 					</div>
 					<div class="form__item">
 						<h4 class="form__lable">Опыт работы в колл-центре:</h4>
 						<input name="experience" type="text" required placeholder="Введите ответ">
-						<button class="btn next">следующий вопрос</button>
+						<button class="btn next" type="button">следующий вопрос</button>
 					</div>
 					<div class="form__item">
 						<h4 class="form__lable">Город проживания:</h4>
 						<input name="city" type="text" required placeholder="Введите ответ">
-						<button class="btn next">следующий вопрос</button>
+						<button class="btn next" type="button">следующий вопрос</button>
 					</div>
 					<div class="form__item">
 						<h4 class="form__lable">Ваши вопросы:</h4>
@@ -363,6 +373,11 @@
 
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/common.js"></script>
+
+	<div class="hide-for-translate" style="display: none;">
+		<div id="translate1">Ошибка</div>
+		<div id="translate2">Введите корректное значение</div>
+	</div>
 
 </body>
 

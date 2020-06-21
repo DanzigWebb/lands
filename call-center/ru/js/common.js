@@ -45,7 +45,9 @@ function formPoller() {
   formItem.not(':first').hide();
   nextBtn.on('click', function (e) {
     e.preventDefault();
-    if ($(inputs[count - 1]).val().length <= 2) swal("Ошибка!", "Введите корректное значение", "error")
+    if ($(inputs[count - 1]).val().length <= 2) {
+      swal("Ошибка!", "Введите корректное значение", "error")
+    }
     else {
       nextPoll(count);
       progress.css('width', 100 / (formItem.length - 1) * count + '%');
