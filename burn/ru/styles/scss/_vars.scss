@@ -1,0 +1,18 @@
+$accent: #F93684;
+$yellow: #ffe500;
+$dark: #2f2f2f;
+$blue: #29CCF5;
+
+$light: #c7ebf5;
+$grey: #f2f2f2;
+$txt-light: #fee7e4;
+$anim: all 0.5s ease;
+
+// Mixins
+@mixin flex($direction, $content: flex-start, $item: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}
