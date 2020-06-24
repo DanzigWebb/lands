@@ -271,7 +271,6 @@
                 font-size: 13px;
             }
         }
-      
     }
     &__img {
         &--1 {
@@ -287,11 +286,10 @@
             max-width: 645px;
         }
     }
-      &__source{
-            margin-top: 30px;
-font-weight: bold;
-        }
-  
+    &__source {
+        margin-top: 30px;
+        font-weight: bold;
+    }
 }
 
 .offer {
@@ -313,12 +311,13 @@ font-weight: bold;
     margin-bottom: 29px;
     box-sizing: border-box;
     border-radius: 10px;
+    position: relative;
     font-size: 20px;
     @include flex(column, flex-start);
 
     &::after {
         content: "";
-        margin-top: 24px;
+        margin-top: 27px;
         max-width: 243px;
         height: 1px;
         background-color: #dbdbdb;
@@ -341,11 +340,11 @@ font-weight: bold;
     p {
         margin-top: 0;
         margin-bottom: 0;
-         a{
-        color: #000000;
+        a {
+            color: #000000;
+        }
     }
-    }
-   
+
     .arrow {
         box-sizing: border-box;
         text-decoration: none;
@@ -354,13 +353,24 @@ font-weight: bold;
             color: #000000;
         }
     }
-    img{
+    img {
         width: 100%;
     }
     &__img {
-       max-width: 308px;
-       margin-bottom: 12px;
-       margin-top: 8px;
+        max-width: 308px;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+    &--vetc {
+        margin-left: 30px;
+        border-left: 1px solid #bbbbbb;
+        padding-left: 20px;
+        border-radius: 0;
+        margin-bottom: 35px;
+&::after{
+content: '';
+display: none;
+}
     }
 }
 
@@ -373,11 +383,10 @@ font-weight: bold;
     &__main {
         margin-top: 120px;
         margin-bottom: 108px;
-         @media (max-width: 991px) {
-       margin-top: 80px;
-       margin-bottom: 30px;
-    }
-
+        @media (max-width: 991px) {
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
     }
 
     &__bord {
@@ -389,14 +398,14 @@ font-weight: bold;
         text-align: left;
         border: 1px solid #000000;
         box-sizing: border-box;
-         @media (max-width: 991px) {
-              padding-left: 10px;
-        padding-right: 10px;
-             &--top{
-                 margin-top: 30px;
-             }
-        text-align: center;
-    }
+        @media (max-width: 991px) {
+            padding-left: 10px;
+            padding-right: 10px;
+            &--top {
+                margin-top: 30px;
+            }
+            text-align: center;
+        }
         img {
             max-width: 102px;
             margin-left: -3px;
@@ -411,12 +420,11 @@ font-weight: bold;
             color: #000000;
             font-weight: 600;
             font-size: 18px;
-          
         }
         a {
             text-decoration: none;
             margin-bottom: 17px;
-              &:last-child {
+            &:last-child {
                 margin-bottom: 0;
             }
         }
@@ -437,10 +445,10 @@ font-weight: bold;
         img {
             max-width: 96px;
         }
-         @media (max-width: 991px) {
-        @include flex(column,content,center);
-        text-align: center;
-    }
+        @media (max-width: 991px) {
+            @include flex(column, content, center);
+            text-align: center;
+        }
     }
     &__times {
         @include flex(row, $item: center);
