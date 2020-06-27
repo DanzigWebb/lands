@@ -1,0 +1,63 @@
+@import "var";
+@import "most";
+// components
+@import "components/header";
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: $content__width;
+  margin: 0 auto;
+  position: relative;
+  grid-template-areas: "content sidebar";
+  @media (max-width: 1180px) {
+    grid-template-areas:
+      "content content"
+      "sidebar sidebar";
+  }
+}
+
+.content {
+  grid-area: content;
+  @include content
+}
+
+.sidebar {
+  grid-area: sidebar;
+  max-width: 480px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.doctor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 23px;
+  color: #fff;
+  background: rgba(6, 16, 113, 0.6);
+  margin: 0;
+  font-style: italic;
+}
+
+.img-bg {
+  background-image: url(../../img/bg.png);
+  background-size: cover;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  @include flex(row, center, center);
+
+  p {
+    padding: 3rem;
+    text-align: center;
+    font-size: 22px;
+    
+  }
+}
