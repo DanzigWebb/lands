@@ -1,0 +1,72 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+  -moz-appearance: number-input
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+form
+  box-sizing: border-box
+  margin: auto
+  display: flex
+  align-items: center
+  flex-direction: column
+input, textarea
+  height: 1rem
+  width: 4.4rem
+  padding-left: 1.16rem
+  box-sizing: border-box
+  border-radius: 4px
+  font-size: 0.26rem
+  color: #000
+  border: none
+  margin-bottom: 0.4rem
+  background: #F8F8F8
+  box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25)
+  border-radius: 20px
+input::placeholder
+  font-size: 0.26rem
+  font-family: inherit
+// ========================>
+// policy
+// <=======================
+.policy_wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  min-height: 1rem
+  background-color: #3b3c3d
+  font-size: 0.16rem
+  color: #fff
+  text-align: center
+  a
+    color: #7c7e86
+.input-wrap
+  position: relative
+
+.input-wrap img 
+    position: absolute
+    left: 0.3rem
+    top: 50%
+    transform: translateY(-110%)
+    width: 0.3rem
+
+.input-wrap::before
+    content: ''
+    position: absolute
+    right: 3.45rem
+    top: 0.25rem
+    height: 0.5rem
+    width: 1px
+    background: #CFCFCF
