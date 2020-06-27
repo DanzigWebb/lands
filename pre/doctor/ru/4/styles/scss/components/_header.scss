@@ -1,0 +1,60 @@
+.header {
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  &__wrapper {
+    @include flex(row, space-between, center);
+    max-width: $content__width;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    @include flex(row);
+    margin-right: 6rem;
+    @media (max-width: 950px) {
+      margin-right: 1rem;
+    }
+    img {
+      margin-right: 1rem;
+    }
+    p {
+      @include flex(column);
+      font-size: 16px;
+      line-height: 1.1;
+      b {
+        color: #051071;
+      }
+    }
+  }
+
+  &__menu {
+    @include flex(row, space-around, center);
+    width: 100%;
+
+    @media (max-width: 825px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    @include flex(row, center, center);
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    @include transition;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__mob-menu {
+    @media (min-width: 826px) {
+      display: none;
+    }
+  }
+}
