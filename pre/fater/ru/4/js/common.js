@@ -6,6 +6,7 @@ window.onload = function () {
 }
 
 
+
 function initDateComments() {
   const getDay = (num) => {
     let now = new Date();
@@ -23,7 +24,8 @@ function autoImage() {
   const images = document.querySelectorAll('.img img')
   images.forEach(img => {
     img.style.width = '100%'
-    img.parentNode.style.maxWidth = img.naturalWidth + 'px'
+    const width = img.naturalWidth || ' '
+    img.parentNode.style.maxWidth = width + 'px'
   })
 }
 
@@ -33,8 +35,8 @@ function navbar() {
   const overlay = document.querySelector('.overlay')
 
   btn.addEventListener('click', () => {
-    
-    
+
+
     (navbarRef.matches('.active'))
       ? hide()
       : show()
@@ -44,7 +46,7 @@ function navbar() {
   function show() {
     overlay.classList.add('active')
     navbarRef.classList.add('active')
-    overlay.addEventListener('click', () => hide(), {once: true})
+    overlay.addEventListener('click', () => hide(), { once: true })
   }
 
   function hide() {

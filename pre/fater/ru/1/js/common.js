@@ -6,6 +6,7 @@ window.onload = function () {
 }
 
 
+
 function initDateComments() {
   const getDay = (num) => {
     let now = new Date();
@@ -22,10 +23,9 @@ function initDateComments() {
 function autoImage() {
   const images = document.querySelectorAll('.img img')
   images.forEach(img => {
-    img.addEventListener('load', () => {
-      img.style.width = '100%'
-      img.parentNode.style.maxWidth = img.naturalWidth + 'px'
-    }, { once: true })
+    img.style.width = '100%'
+    const width = img.naturalWidth || ' '
+    img.parentNode.style.maxWidth = width + 'px'
   })
 }
 
@@ -35,7 +35,7 @@ function navbar() {
   const overlay = document.querySelector('.overlay')
 
   btn.addEventListener('click', () => {
-    
+
 
     (navbarRef.matches('.active'))
       ? hide()
