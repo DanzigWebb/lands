@@ -22,8 +22,10 @@ function initDateComments() {
 function autoImage() {
   const images = document.querySelectorAll('.img img')
   images.forEach(img => {
-    img.style.width = '100%'
-    img.parentNode.style.maxWidth = img.naturalWidth + 'px'
+    img.addEventListener('load', () => {
+      img.style.width = '100%'
+      img.parentNode.style.maxWidth = img.naturalWidth + 'px'
+    }, { once: true })
   })
 }
 
@@ -34,7 +36,7 @@ function navbar() {
 
   btn.addEventListener('click', () => {
     console.log((navbarRef.matches('.active')));
-    
+
     (navbarRef.matches('.active'))
       ? hide()
       : show()
@@ -44,7 +46,7 @@ function navbar() {
   function show() {
     overlay.classList.add('active')
     navbarRef.classList.add('active')
-    overlay.addEventListener('click', () => hide(), {once: true})
+    overlay.addEventListener('click', () => hide(), { once: true })
   }
 
   function hide() {
