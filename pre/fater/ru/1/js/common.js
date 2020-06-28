@@ -35,7 +35,7 @@ function navbar() {
   const overlay = document.querySelector('.overlay')
 
   btn.addEventListener('click', () => {
-    console.log((navbarRef.matches('.active')));
+    
 
     (navbarRef.matches('.active'))
       ? hide()
