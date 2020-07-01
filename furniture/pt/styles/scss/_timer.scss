@@ -1,11 +1,9 @@
 .timer {
-    
     border-radius: 16px;
     color: #000;
     background-image: url(../../img/tit.png);
-   
+    background-size: cover;
     padding: 0.24rem 0;
-    
 }
 .timer__wrapper,
 .timer__desc {
@@ -23,6 +21,9 @@
 .timer__desc > div {
     width: 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .timer__title {
@@ -32,10 +33,9 @@
 }
 
 .timer__desc {
-    color: #9F9F9F;
+    color: #9f9f9f;
     font-size: 0.2rem;
     font-weight: 300;
-    
 }
 
 .timer__desc span {
@@ -47,12 +47,11 @@
 .t-hour,
 .t-min,
 .t-sec {
-    
-   width: 0.96rem;
-   text-align: center;
-   height: 0.96rem;
-   background: #FFFFFF;
-box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2);
-border-radius: 16px;
-    color:$accent ;
+    width: 0.96rem;
+    text-align: center;
+    height: 0.96rem;
+    background: #ffffff;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    color: $accent;
 }
