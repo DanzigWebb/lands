@@ -31,7 +31,7 @@
   &__bottom {
     @include flex(row, center, center);
     span {
-      width: 0.96rem;
+      width: 1.5rem;
       margin-right: 0.24rem;
       font-size: 0.16rem;
     }
@@ -147,13 +147,12 @@
       text-align: center;
       bottom: 0.34rem;
     }
-
   }
   &__bottom {
     margin-top: 0.5rem;
     margin-bottom: -0.7rem;
   }
-  &__img{
+  &__img {
     width: 2.1rem;
   }
 }
@@ -184,64 +183,64 @@
     text-transform: uppercase;
     color: #e88b00;
   }
-  &__item{
+  &__item {
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  &__step{
+  &__step {
     color: $accent;
     margin-top: -0.2rem;
     font-size: 0.24rem;
   }
-  &__inner{
+  &__inner {
     position: relative;
-    @include flex (column,center,center);
-    
+    @include flex(column, center, center);
+
     color: #fff;
     box-sizing: border-box;
-    
-    p{
+
+    p {
       text-align: center;
       position: absolute;
       font-size: 0.24rem;
       width: 3.86rem;
     }
-    b{
+    b {
       display: block;
       font-size: 0.32rem;
     }
   }
-  &__bottom{
+  &__bottom {
     transform: translateY(45%);
   }
 }
 .sect7 {
-  background: linear-gradient(180deg, #241C15 0%, #432000 100%);
-  &__title{
+  background: linear-gradient(180deg, #241c15 0%, #432000 100%);
+  &__title {
     color: $accent;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
-  &__bottom{
+  &__bottom {
     transform: translateY(50%);
   }
 }
-.sect8{
-  &__title{
-    color: #E88B00;
+.sect8 {
+  &__title {
+    color: #e88b00;
   }
-  &__grid{
+  &__grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     color: #000000;
     text-align: center;
     grid-gap: 0.5rem;
   }
-  &__item{
-    img{
+  &__item {
+    img {
       width: 1.2rem;
     }
-    b{
+    b {
       display: block;
     }
   }
@@ -258,19 +257,23 @@
     margin-top: -0.2rem;
 
     b {
-      font-size: 0.48rem;
+      font-size: 0.5rem;
       color: $accent;
     }
     s {
       color: #aeaeae;
       font-weight: bold;
-      font-size: 0.22rem;
+      font-size: 0.3rem;
       margin-bottom: 0.1rem;
     }
   }
+  p {
+    margin: 0;
+    margin-bottom: 0.15rem;
+  }
   &__box {
     margin-left: 0.17rem;
-    @include flex(column);
+    @include flex(column, center);
     color: #000;
   }
   &__img {
