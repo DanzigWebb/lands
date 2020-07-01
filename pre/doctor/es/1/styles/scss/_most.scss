@@ -1,0 +1,70 @@
+bhtml {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @include content();
+  @media (max-width: 400px) {
+    padding: 0 .6rem;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.35;
+
+  & a {
+    color: #000;
+  }
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  background-color: $accent;
+  color: #fff;
+  height: 62px;
+  max-width: 350px;
+  @include flex(row, center, center);
+  margin: 2rem 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .4s ease all;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.img {
+  position: relative;
+  @include flex(column, center, center);
+  &.center {
+    margin: 0 auto;
+  }
+
+  p {
+    color: #707070;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 0;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+  }
+}
