@@ -50,9 +50,11 @@
   }
   .bottom {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "lef righ";
     grid-column-gap: 1rem;
+    align-items: center;
+    padding-top: 2rem;
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -63,17 +65,31 @@
   }
   &__lef {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: .9fr 240px;
     grid-template-areas: "prod rating";
     align-items: center;
-    padding-top: 2rem;
+
     img {
       max-width: 287px;
-      width: 100%;
+      max-height: 260px;
     }
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+      img {
+        justify-self: center;
+      }
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 3fr 2fr;
+      img {
+        max-width: 120px;
+      }
+    }
+
   }
   &__righ {
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
       justify-self: center;
     }
     span {
