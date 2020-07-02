@@ -1,0 +1,66 @@
+.header {
+  padding: 0 2rem;
+  height: 100px;
+  background-color: #1C1C1C;
+  @include flex(row, center);
+
+  &__wrap {
+    width: 100%;
+    @include flex(row, space-between, center);
+
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 100px;
+    flex-shrink: 0;
+  }
+
+  &__nav {
+    @include flex(row, space-around);
+    width: 100%;
+    max-width: 1000px;
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+
+    @media (max-width: 900px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__auth {
+    @include flex(row, $item: center);
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 240px;
+
+    @media (max-width: 900px) {
+      max-width: fit-content;
+      margin: 0 2rem;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+    
+    img {
+      margin-right: 1rem;
+    }
+  }
+
+  &__mob {
+    display: block;
+    @media (min-width: 750px) {
+      display: none;
+    }
+  }
+
+}
