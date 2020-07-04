@@ -15,7 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   font-size: 16px;
-  background-color: #F4F4F4;
+  background-color: #fcfcfc;
   height: 100%;
 }
 
@@ -32,20 +32,28 @@ body {
 
 h1 {
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 40px;
   line-height: 1.25;
-
+  max-width: 80%;
   & a {
     color: #000;
   }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 .btn {
   width: 100%;
   text-align: center;
-  background-color: $accent;
-  color: #fff;
+  background-color: #EDD500;
+  color: #000;
   height: 54px;
   max-width: 380px;
   @include flex(row, center, center);
@@ -54,18 +62,38 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   transition: .4s ease all;
-  border-radius: 10px;
   &:hover {
     opacity: 0.8;
   }
 }
 
+span.accent {
+  color: $accent;
+}
+
+.t-center {
+  text-align: center;
+}
 
 .img {
   position: relative;
   @include flex(column, center, center);
   &.center {
     margin: .8rem auto;
+  }
+
+  &-btn {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    background-color: $accent;
+    display: inline-block;
+    padding: .7rem 1rem;
+    padding-right: 3rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
   }
 
   p {
