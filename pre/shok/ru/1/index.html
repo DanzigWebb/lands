@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/main.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="">
+      </div>
+
+      <nav class="header__nav">
+        <a href="" class="header__link news"><img src="img/new.svg" alt=""> Новое</a>
+        <a href="" class="header__link pop"><img src="img/pop.svg" alt=""> Популярное</a>
+        <a href="" class="header__link">Творчество</a>
+        <a href="" class="header__link">Статьи</a>
+        <a href="" class="header__link">Жизнь</a>
+      </nav>
+
+      <div class="header__profile">
+        <a href=""><img src="img/search.svg" alt=""></a>
+        <a href=""><img src="img/notify.svg" alt=""></a>
+        <a href=""><img src="img/profile.svg" alt=""></a>
+      </div>
+
+      <div class="header__mob">
+        <a href="">
+          <img src="img/mob.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+</body>
+
+<script>
+  const currentLink = 'https://google.com'
+  const link = document.querySelectorAll('a');
+  link.forEach(link => {
+    link.setAttribute('href', currentLink)
+  })
+</script>
+<script src="js/common.js"></script>
+
+</html>
