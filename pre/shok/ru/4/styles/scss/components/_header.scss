@@ -1,0 +1,72 @@
+.header {
+  background-color: $accent;
+  padding: 0.4rem 1rem;
+  @include flex(row, center, center);
+  &__wrapper {
+    max-width: $content__width;
+    width: 100%;
+    @include flex(row, space-around, center);
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    min-width: 200px;
+    @media (max-width: 1145px) {
+      min-width: auto;
+    }
+  }
+
+  &__nav {
+    @include flex(row, space-around, center);
+    width: 100%;
+  }
+  &__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    @include flex(row, center, center);
+
+    @media (max-width: 1145px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 830px) {
+      display: none;
+    }
+
+    &.news {
+      color: #0500ff;
+      img {
+        margin-bottom: 10px;
+      }
+    }
+    &.pop {
+      color: #b900b1;
+    }
+  }
+
+  &__profile {
+    min-width: 260px;
+    margin-left: 6rem;
+    @include flex(row, space-between, center);
+
+    @media (max-width: 1145px) {
+      min-width: auto;
+      margin-left: inherit;
+      a {
+        margin-left: 3rem;
+      }
+    }
+
+    @media (max-width: 830px) {
+      display: none;
+    }
+  }
+
+  &__mob {
+    display: block;
+    @media (min-width: 830px) {
+      display: none;
+    }
+  }
+}
