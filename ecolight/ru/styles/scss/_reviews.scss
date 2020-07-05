@@ -44,15 +44,22 @@
 
   &__control {
     @include flex(row, space-between, center);
-    position: absolute;
-    left: 0.25rem;
-    right: 0.25rem;
-    top: 50%;
-    z-index: 2;
     outline: none;
     cursor: pointer;
     img {
       width: 0.5rem;
+      position: absolute;
+      z-index: 2;
+      &:first-child {
+        left: 0.25rem;
+        right: 0.25rem;
+        top: 50%;
+      }
+      &:last-child {
+        right: 0.25rem;
+        right: 0.25rem;
+        top: 50%;
+      }
     }
   }
 }
