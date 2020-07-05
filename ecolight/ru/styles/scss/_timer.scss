@@ -1,0 +1,47 @@
+.timer {
+    @include flex(column, center, center)
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.64rem;
+    max-width: 2.6rem;
+    font-weight: normal;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 3.31rem;
+    text-align: center;
+}
+
+.timer__wrapper span {
+    font-weight: normal;
+    line-height: .8;
+}
+
+.timer__title {
+    text-align: center;
+    font-size: 0.16rem;
+    font-weight: 300;
+    margin-bottom: -0.06rem;
+}
+
+.timer__desc {
+    font-size: 0.14rem;
+    font-weight: 300;
+    width: 100%;
+    @include flex(row, sp);
+    justify-content: space-between;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
