@@ -1,0 +1,36 @@
+$accent: #EDD500;
+$yellow: #ffe500;
+$dark: #2f2f2f;
+$blue: #3d4770;
+
+$light: #c7ebf5;
+$grey: #f2f2f2;
+$txt-light: #fee7e4;
+$anim: all 0.5s ease;
+
+// content
+$content__width: 1440px;
+$content__padding: 1rem;
+
+@mixin content {
+  padding: 0 $content__padding;
+}
+
+// position
+@mixin flex($direction, $content: flex-start, $item: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}
+
+@mixin grid($cols: 2, $gap: 0.2rem) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin transition() {
+  transition: .3s ease all;
+}
