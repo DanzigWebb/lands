@@ -1,0 +1,65 @@
+.buyers
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 0.5rem
+  padding: 0.05rem 0
+  background-color: #fff
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  max-width: 4.8rem
+  margin: auto
+  z-index: 11
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.35)
+  transform: translateY(-100%)
+  transition: .4s ease all
+  &.active
+    transform: translateY(0)
+.buyers__item
+  display: flex
+  align-items: center
+  height: 100%
+  width: 33.333%
+  padding: 0 .06rem
+  border-right: 1px solid #dedede
+  box-sizing: border-box
+  font-size: 0.15rem
+  font-weight: 500
+  line-height: 1.1
+  span
+    font-weight: bold
+  &:last-child
+    border-right: none
+  img
+    flex-shrink: 0
+    width: 0.27rem
+    margin-right: 0.1rem
+
+.buyers__comment
+  width: 3.44rem
+  height: 1rem
+  padding: .13rem .25rem
+  background: rgba(237, 237, 237, .95)
+  border-radius: 20px 0px 20px 20px
+  border: 2px solid #000000
+  display: flex
+  align-items: center
+  position: fixed
+  top: 0.65rem
+  right: 0.1rem
+  z-index: 11
+  font-size: 0.18rem
+  font-weight: 500
+  transition: .5s ease all
+  transform: scale(0) translateX(-100%)
+  opacity: 0
+  &.active
+    transform: scale(1) translateX(0)
+    opacity: 1
+  img
+    width: 0.9rem
+    flex-shrink: 0
+    margin-right: 0.2rem
