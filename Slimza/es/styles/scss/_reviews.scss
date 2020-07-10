@@ -1,0 +1,91 @@
+.reviews {
+  position: relative;
+  &__item {
+    @include flex(row, space-between, flex-start);
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    .ava {
+      width: 0.65rem;
+      height: 0.65rem;
+    }
+  }
+  &__main {
+    @include flex(column);
+  }
+  &__comment {
+    width: 3.75rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 0.16rem;
+
+    p {
+      margin: 0;
+    }
+    &--1 {
+      margin-bottom: 0.2rem;
+      padding: 0.17rem 0.2rem;
+      background: #ecedef;
+      .name {
+        margin-bottom: 0.14rem;
+      }
+    }
+    &--2 {
+      .nav {
+        @include flex(row, flex-start);
+        padding-top: 0.1rem;
+        color: #b5b5b5;
+        p {
+          margin-right: 0.2rem;
+          &:nth-child(1) {
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  .box {
+    position: relative;
+    box-sizing: border-box;
+    .like {
+      position: absolute;
+      width: 0.8rem;
+      bottom: -0.3rem;
+      right: -0.15rem;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .45rem;
+    letter-spacing: -.02rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    @include flex(row, center, center)
+  }
+}
+.owl-carousel {
+  .reviews__item {
+    .ava {
+      width: 0.65rem;
+      height: 0.65rem;
+    }
+  }
+}
+.owl-carousel {
+  .owl-nav {
+    padding-top: 0.3rem;
+    width: 2.89rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      img {
+        width: 0.7rem;
+      }
+    }
+  }
+}
