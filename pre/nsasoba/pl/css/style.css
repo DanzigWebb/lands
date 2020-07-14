@@ -1,0 +1,227 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+   
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+}
+a {
+    color: rgb(10, 120, 194);
+    outline: medium none;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    margin: 0px 0px 11px;
+}
+strong,
+b {
+    font-weight: bolder;
+}
+img {
+    border: medium none;
+}
+h1 {
+    margin: 10px 0px;
+    font-size: 21px;
+}
+h2 {
+    margin: 10px 0px;
+    font-size: 22px;
+}
+h3 {
+    margin: 2px 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.container {
+    width: 580px;
+    margin: 0px auto;
+}
+.left-column {
+    margin: 0 auto;
+    width: 520px;
+    background: none repeat scroll 0% 0% white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.sidebar {
+    float: left;
+    width: 309px;
+    font-size: 12px;
+}
+.sidebar-last-posts {
+    background: none repeat scroll 0% 0% white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.sidebar-last-post {
+    margin-bottom: 0px;
+}
+.sidebar-last-post a {
+    color: rgb(72, 155, 31);
+}
+.sidebar-last-post-info {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+.sidebar-last-post-info-login {
+    color: rgb(187, 34, 92);
+    margin-right: 5px;
+}
+.sidebar-last-post-info-date {
+    margin-right: 5px;
+    color: rgb(119, 119, 119);
+}
+.sidebar-last-post-info-comments {
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
+}
+.sidebar-bloggers {
+    background: none repeat scroll 0% 0% white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.sidebar-bloggers-avatar {
+    display: inline-block;
+}
+.sidebar-bloggers img {
+    margin: 5px;
+}
+.footer {
+    clear: both;
+    /*margin-left: 220px;*/
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+.photo {
+    width: 100%;
+    height: auto;
+}
+.vk-container {
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    line-height: 17px;
+    color: black;
+    text-decoration: none;
+}
+.vk-link {
+    text-decoration: none ! important;
+    cursor: default ! important;
+}
+.vk-header {
+    background: none repeat scroll 0% 0% rgb(218, 226, 232);
+    padding: 4px 4px 4px 6px;
+    margin-bottom: 10px;
+}
+.vk-logo {
+
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: -1px;
+}
+.vk-header-text {
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: rgb(69, 104, 142);
+    font-weight: bold;
+}
+.vk-avatar img {
+    float: left;
+    margin-right: 10px;
+}
+.vk-comment,
+.vk-comment-load {
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+.vk-comment:last-child {
+    border-bottom: 0px none;
+}
+.vk-comment-name {
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+}
+.vk-comment-text {
+    margin-left: 60px;
+}
+.vk-comment-date {
+    margin-left: 60px;
+    color: rgb(153, 153, 153);
+}
+.vk-comment-like {
+    position: absolute;
+    right: -5px;
+    bottom: 10px;
+ 
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+}
+.vk-comment-like:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.vk-comment-like-count {
+    padding-left: 14px;
+    font-weight: bold;
+    color: rgb(114, 149, 178);
+    font-size: 10px;
+}
+.vk-comment-answer {
+    color: rgb(43, 88, 122);
+}
+.vk-comment-answer:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/**{
+    outline: 1px dashed red;
+}*/
+img{
+    max-width: 100%;
+}
+@media screen and (max-width: 580px){
+    .container{
+        width: 320px;
+    }
+    .header{
+        width: auto;
+        background-size: contain;
+        height: 73px;
+    }
+    .left-column{
+        width: auto;
+    }
+    .footer{
+        margin-left:0;
+        text-align: center;
+    }
+
+
+    .left-column > img {
+        float: none !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+}
+a.ankor_lp{
+    color: rgb(11, 113, 241);
+    text-decoration: none;
+
+}
