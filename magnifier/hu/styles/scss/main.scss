@@ -45,11 +45,11 @@
       @include flex(column, center, center);
 
       b {
-        font-size: 0.13rem;
+        font-size: 0.18rem;
         font-weight: bold;
         display: block;
         &:last-child {
-          font-size: 0.18rem;
+          font-size: 0.22rem;
           text-align: center;
         }
       }
@@ -99,7 +99,7 @@
   }
   p {
     margin: 0;
-    font-size: 0.15rem;
+    font-size: 0.25rem;
     padding-bottom: 0.1rem;
   }
   .discount {
@@ -108,7 +108,7 @@
     color: #fff;
     p {
       font-weight: normal;
-
+      font-size: 0.15rem;
     }
     b {
       font-weight: 800;
@@ -117,7 +117,7 @@
   }
   b,
   s {
-    font-size: 0.35rem;
+    font-size: 0.29rem;
   }
 }
 .sect5 {
@@ -255,6 +255,7 @@
 
   &__content {
     padding: .35rem 0;
+    padding-bottom: 0.1rem;
   }
   &__item {
     @include flex(row, $item: center);

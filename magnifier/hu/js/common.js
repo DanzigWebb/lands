@@ -19,7 +19,6 @@ $(document).ready(function () {
     items: 1,
     dots: true,
     nav: false,
-    navText: ['<img src="img/arl.svg"></img>', '<img src="img/arr.svg"></img>'],
     autoHeight: true
   });
 });
