@@ -208,7 +208,7 @@
   -webkit-animation-name: super-rotation;
   animation-name: super-rotation;
   -webkit-animation-duration: 7s;
-  animation-duration: 7s;
+  animation-duration: 7.2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-transition-timing-function: ease-in-out;
@@ -224,8 +224,8 @@
   }
 
   100% {
-      -webkit-transform: rotate(1774deg);
-      transform: rotate(1774deg)
+      -webkit-transform: rotate(1784deg);
+      transform: rotate(1784deg)
   }
 }
 
@@ -236,7 +236,7 @@
   }
 
   100% {
-      -webkit-transform: rotate(1934deg);
-      transform: rotate(1934deg)
+      -webkit-transform: rotate(1944deg);
+      transform: rotate(1944deg)
   }
 }
