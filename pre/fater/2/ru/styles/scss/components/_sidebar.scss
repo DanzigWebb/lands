@@ -1,0 +1,39 @@
+.sidebar {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 3rem .4rem;
+
+
+  &__item {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.8rem;
+    font-family: 'Times New Roman';
+
+    &:hover {
+      p {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  &__head {
+    @include flex(row, $item: center);
+    margin-bottom: 0.8rem;
+
+    i {
+      font-weight: 300;
+      
+    }
+
+    img {
+      margin-right: 0.4rem;
+    }
+  }
+}
