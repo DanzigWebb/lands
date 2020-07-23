@@ -217,26 +217,24 @@
 
 
 
-@-webkit-keyframes super-rotation {
-  70% {
-      -webkit-transform: rotate(1783deg);
-      transform: rotate(1783deg)
-  }
+// @-webkit-keyframes super-rotation {
+//   70% {
+//       -webkit-transform: rotate(1783deg);
+//       transform: rotate(1783deg)
+//   }
 
-  100% {
-      -webkit-transform: rotate(1784deg);
-      transform: rotate(1784deg)
-  }
-}
+//   100% {
+//       -webkit-transform: rotate(1784deg);
+//       transform: rotate(1884deg)
+//   }
+// }
 
 @keyframes super-rotation {
   70% {
-      -webkit-transform: rotate(1953deg);
-      transform: rotate(1953deg)
+      transform: rotate(1993deg)
   }
 
   100% {
-      -webkit-transform: rotate(1944deg);
       transform: rotate(1944deg)
   }
 }
