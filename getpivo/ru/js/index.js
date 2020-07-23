@@ -95,7 +95,7 @@ $(window).on("scroll", function() {
 });
 
 var parentRemoveChild = function(child) {
-  child.parentNode.removeChild(child);
+  // child.parentNode.removeChild(child);
 };
 
 //returning ads video (need to improve)
@@ -295,37 +295,14 @@ if (curLanLo != "en-gs") {
     // $(".current-version")
     //   .parent()
     //   .remove("");
-    var children = document.getElementsByClassName("current-version-product");
-    for (var i = children.length - 1; 0 <= i; i--) {
-      parentRemoveChild(children[i]);
-    }
 
-    var children = document.getElementsByClassName("current-version-acc");
-    for (var i = children.length - 1; 0 <= i; i--) {
-      parentRemoveChild(children[i]);
-    }
   } else {
     var $productContainer = $(".product-container--home");
     var $productCardSlider = $(".product-card-slider");
 
-    if (curLan == "ko") {
-      var children = document.getElementsByClassName("current-version-acc");
-      for (var i = children.length - 1; 0 <= i; i--) {
-        parentRemoveChild(children[i]);
-      }
-    } else {
-      var children = document.getElementsByClassName("new-release-acc");
-      for (var i = children.length - 1; 0 <= i; i--) {
-        parentRemoveChild(children[i]);
-      }
-
-      $productContainer.find("div").css("margin-right", "16px");
-    }
 
     var children = document.getElementsByClassName("new-release-product");
-    for (var i = children.length - 1; 0 <= i; i--) {
-      parentRemoveChild(children[i]);
-    }
+
 
     // var productContainer = getElementsByClassName('product-container--home');
     // var productCardSlider = getElementsByClassName('product-card-slider');
@@ -359,7 +336,7 @@ if (curLanLo != "en-gs") {
     .querySelector(".main-content-first-block")
     .classList.add("gs-promotion");
 
-  $("#banner-video").remove();
+  // $("#banner-video").remove();
   document.getElementById("header-link").href = "/collections/promotion";
 
   $("#ph-ch-2").append(
