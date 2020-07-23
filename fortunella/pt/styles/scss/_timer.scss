@@ -1,0 +1,72 @@
+.timer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 4.48rem;
+    height: 3.1rem;
+    @include flex(column, flex-end, center);
+    background: #eeeeee;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+    border-radius: 20px;
+    color: #000a5a;
+    &.chin {
+        &::after {
+            content: "";
+            border-radius: 1rem;
+            box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+            height: 0.5rem;
+            width: 4rem;
+            z-index: -1;
+            background: #ebebeb;
+            transform: translateY(0.15rem);
+        }
+    }
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    max-width: 3.31rem;
+    font-weight: normal;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 3.31rem;
+    text-align: center;
+}
+
+.timer__wrapper span {
+    font-size: 0.6rem;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.timer__title {
+    text-align: center;
+    font-size: 0.22rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.timer__desc {
+    font-size: 0.2rem;
+    font-weight: 300;
+    width: 100%;
+    @include flex(row, sp);
+    justify-content: space-between;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
