@@ -1,0 +1,115 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  height: 100%;
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  background-color: #F4F4F4;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @include content();
+  @media (max-width: 400px) {
+    padding: 0 .6rem;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.25;
+
+  & a {
+    color: #000;
+  }
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  background-color: $accent;
+  color: #fff;
+  height: 54px;
+  max-width: 380px;
+  @include flex(row, center, center);
+  margin: 2rem 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .4s ease all;
+  border-radius: 10px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.img {
+  position: relative;
+  @include flex(column, center, center);
+  &.center {
+    margin: .8rem auto;
+  }
+
+  p {
+    color: #707070;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    max-width: 390px;
+    text-align: center;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: none;
+  animation: show .4s ease;
+
+  &.active {
+    display: block;
+  }
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+
+  li {
+    font-style: italic;
+  }
+}

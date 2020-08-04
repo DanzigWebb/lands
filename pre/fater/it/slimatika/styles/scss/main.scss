@@ -1,0 +1,134 @@
+@import "var";
+@import "most";
+// components
+@import "components/header";
+@import "components/navbar";
+@import "components/sidebar";
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-areas: "navbar content sidebar";
+
+  grid-gap: 1rem;
+  max-width: $content__width;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "sidebar";
+  }
+}
+
+.content {
+  background-color: #fff;
+  padding: 3rem 2.8rem;
+
+  @media (max-width: 460px) {
+    padding: 3rem 1rem;
+  }
+
+  &__author {
+    @include flex(row, space-around, center);
+    margin-bottom: 2rem;
+
+    @media (max-width: 460px) {
+      @include flex(column, flex-start, flex-start);
+    }
+
+    > .item {
+      @include flex(row, center, center);
+
+      @media (max-width: 460px) {
+        margin-bottom: 0.8rem;
+      }
+      img {
+        margin-right: 0.4rem;
+      }
+
+      &.grey {
+        color: #a7a7a7;
+      }
+    }
+  }
+}
+
+.blog {
+  font-family: "Times New Roman";
+  font-size: 1.2rem;
+
+  a:not(.btn) {
+    color: #000;
+  }
+
+  & > .sub {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  &__actions {
+    @include flex(row, $item: center);
+    > div {
+      margin-right: 0.6rem;
+      font-size: 1.2rem;
+      color: #bdbdd2;
+
+      img {
+        margin-right: 0.6rem;
+      }
+      @include flex(row, center, center);
+    }
+  }
+}
+
+.comments {
+  margin-top: 3rem;
+  &__form {
+    @include flex(column);
+
+    input,
+    textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      background: #f5f5f5;
+      border: 1px solid #848484;
+      box-sizing: border-box;
+      min-height: 2.2rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+    textarea {
+      padding-top: 0.8rem;
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
+}
+
+.comment {
+  margin-bottom: 2rem;
+
+  &__head {
+    @include flex(row, flex-start, center);
+    span {
+      font-size: 1rem;
+    }
+    img {
+      margin-right: 0.6rem;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  &.right {
+    padding-left: 3rem;
+  }
+}
