@@ -110,53 +110,53 @@
   }
 }
 .wheel {
-    width: 380px;
-    margin: 0 auto;
-    position: relative
+  width: 380px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .wheel img {
-    max-width: 100%;
-    margin-bottom: 0
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
 .wheel-img {
-    -webkit-transition: 4s;
-    transition: 4s
+  -webkit-transition: 4s;
+  transition: 4s;
 }
 
 .wheel-cursor {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .cursor-text {
-    position: absolute;
-    z-index: 2;
-    display: inline-block;
-    width: 50% !important;
-    height: 50%;
-    font: 18px Arial !important;
-    line-height: 61px !important;
-    cursor: pointer;
-    border-radius: 50%;
-    vertical-align: middle;
-    text-align: center;
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 40% !important;
+  height: 46%;
+  font: 18px Arial !important;
+  line-height: 61px !important;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
 
-    top: 49%;
-    left: 50%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transform: translate(-75%, -50%);
+  top: 49%;
+  left: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transform: translate(-75%, -50%);
+  font-size: 14px;
+  i {
     font-size: 14px;
-   i {
-     font-size: 14px;
-     padding-left: 4px;
-   }
+    padding-left: 4px;
+  }
 }
 
 .comment {
@@ -190,10 +190,8 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out
+  transition-timing-function: ease-in-out;
 }
-
-
 
 // @-webkit-keyframes super-rotation {
 //   70% {
@@ -209,14 +207,13 @@
 
 @keyframes super-rotation {
   70% {
-      transform: rotate(1993deg)
+    transform: rotate(1993deg);
   }
 
   100% {
-      transform: rotate(1944deg)
+    transform: rotate(1944deg);
   }
 }
-
 
 @media (max-width: 480px) {
   .wheel {
@@ -229,5 +226,4 @@
     top: 54%;
     left: 54%;
   }
-
 }
