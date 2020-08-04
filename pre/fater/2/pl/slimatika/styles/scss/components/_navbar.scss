@@ -1,0 +1,40 @@
+.navbar {
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+&__item{
+  margin-bottom: 1.5rem;
+  img{
+    width: 100%;
+  }
+  h2{
+    font-family: "Times New Roman";
+    font-size: 1.1rem;
+   margin-bottom: 0.3rem;
+  }
+  p{
+    color: #898989;
+        font-size: 1rem;
+        margin: 0;
+  }
+}
+}
+
+
+.navbar {
+  @media (max-width: 900px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    transform: translateX(-100%);
+    width: 240px;
+    @include transition;
+    z-index: 2;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
