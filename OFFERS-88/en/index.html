@@ -67,8 +67,6 @@
 							placeholder="Name" id="name" required>
 						<input type="text" class="text-field w-input" minlength="10" name="phone" data-name="phone"
 							placeholder="971 55 555 55 55" id="phone" required>
-						<input type="text" class="text-field w-input" maxlength="256" name="address" data-name="address"
-							placeholder="Your address exmpl. Town, Area, Bulding name or Nr. and unit Nr." id="address" required>
 
 						<button type="submit" class="submit-button w-button">ORDER NOW</button>
 					</form>
@@ -242,8 +240,6 @@
 							placeholder="Name" id="name" required>
 						<input type="text" class="text-field w-input" minlength="10" name="phone" data-name="phone"
 							placeholder="971 55 555 55 55" id="phone" required>
-						<input type="text" class="text-field w-input" maxlength="256" name="address" data-name="address"
-							placeholder="Your address exmpl. Town, Area, Bulding name or Nr. and unit Nr." id="address" required>
 						<button type="submit" class="submit-button w-button">ORDER NOW</button>
 					</form>
 					<div class="w-form-done">
@@ -260,6 +256,14 @@
 	<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 	<script
 		type="text/javascript">$(document).ready(function () { $('[href*="brandjs"]').attr('style', 'display:none !important'); $('a[href="' + window.location.href + '"]').addClass('w--current'); });</script>
+
+	<script>
+		$("body").on('click', '[href*="#"]', function (e) {
+			e.preventDefault();
+			var fixed_offset = 100;
+			$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+		});
+	</script>
 </body>
 
 </html>
