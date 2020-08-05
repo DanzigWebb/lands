@@ -1,0 +1,157 @@
+@import "var";
+@import "most";
+
+.main {
+  max-width: $content__width;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  @media (max-width: 900px) {
+  }
+}
+
+.content {
+  padding: 1rem 1.3rem;
+
+  @media (max-width: 460px) {
+    padding: 1rem 1rem;
+  }
+  &__header {
+    @include flex(row, left, center);
+    margin: 0;
+    a {
+      color: #000000;
+      transition: 0.4s ease all;
+      text-decoration: none;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      margin-right: 1.2rem;
+    }
+    p {
+      i {
+        font-weight: bold;
+      }
+    }
+    @media (max-width: 500px) {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.blog {
+  font-size: 1.2rem;
+
+  a:not(.btn) {
+    color: #2b587a;
+  }
+
+  & > .sub {
+    color: #7d7d7d;
+    a{
+     color: #7d7d7d;
+     text-decoration: none; 
+    }
+    @media (max-width: 500px) {
+      font-size: 13px;
+    }
+  }
+
+  .cent {
+    @include flex(row, center, center);
+    max-width: 60rem;
+    margin: auto;
+    img {
+      &:last-child {
+        margin-left: 1.5rem;
+      }
+    }
+    @media (max-width: 910px) {
+      max-width: 20rem;
+      margin: auto;
+      @include flex(column, center, center);
+      img {
+        width: 100%;
+        &:last-child {
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.comments {
+  margin-top: 3rem;
+  &__top {
+    margin: 0 -1.3rem;
+    padding: 0.6rem;
+    padding-left: 1.3rem;
+
+    background: #dae2e8;
+    p {
+      margin: 0;
+      font-weight: bold;
+      color: #2b587a;
+    }
+  }
+}
+
+.comment {
+  margin-bottom: 65px;
+  padding: 0 20px;
+  display: grid;
+  a {
+    color: #000;
+    transition: 0.4s ease all;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  grid-gap: 19px;
+  grid-template-columns: 77px 1fr;
+  @media (max-width: 600px) {
+    grid-gap: 5px;
+    padding: 0;
+    margin: -0.8rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  &__ava {
+    max-width: 77px;
+    @media (max-width: 600px) {
+      max-width: 66px;
+    }
+  }
+  &__name {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2b587a;
+  }
+  &__text {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.35;
+  }
+  span {
+    margin-top: 21px;
+    color: #a2a2a3;
+    a {
+      text-decoration: none;
+    }
+    b {
+      color: #2b587a;
+    }
+    @media (max-width: 450px) {
+      font-size: 13px;
+    }
+  }
+}
