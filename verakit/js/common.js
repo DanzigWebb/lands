@@ -1,6 +1,6 @@
 $(document).ready(function () {
   lazyScroll()
-  
+
   $(".reviews").owlCarousel({
     margin: 20,
     items: 1,
@@ -19,3 +19,18 @@ function lazyScroll() {
 }
 
 
+const firstElement = $('.sect3 h2')
+const lastElement = $('.sect3__img1')
+const bgRef = $('.sect3__mob-bg')
+
+function setBgBetweenElements() {
+  const offsetHeight = lastElement.offset().top - firstElement.offset().top
+  bgRef.css('height', offsetHeight)
+}
+
+
+setBgBetweenElements()
+
+$(window).on('resize', () => {
+  setBgBetweenElements()
+})

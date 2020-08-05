@@ -253,17 +253,18 @@
     line-height: 1.5;
     color: #383939;
   }
+}
 
-  .btn-wrap {
-    @include flex(row, center, center);
-    margin-top: 50px;
-  }
+.btn-wrap {
+  @include flex(row, center, center);
+  margin-top: 50px;
 }
 
 .sect3 {
   background-image: url(../../img/sect3.png);
   background-size: cover;
   background-position: center top;
+  position: relative;
   min-height: 1050px;
   padding: 100px 0;
   padding-top: 200px;
@@ -275,7 +276,8 @@
 
   @include tablet {
     background-image: url(../../img/sect3-mob.png);
-    
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   h2 {
@@ -313,18 +315,11 @@
     }
 
     @include tablet {
-      grid-template-areas:
-        "f f f f"
-        "f f f f"
-        "t t t t"
-        "s s s s"
-        ". . . .";
-      grid-template-rows: repeat(5, auto);
+      display: block;
     }
   }
 
   &__item {
-    grid-area: f;
     max-width: 490px;
     height: 50%;
     align-self: center;
@@ -332,22 +327,406 @@
     padding: 2rem;
     line-height: 150%;
 
+    &.first {
+      grid-area: f;
+    }
+
     @include tablet {
       align-self: stretch;
       justify-self: stretch;
       max-width: 100%;
     }
 
-    &:last-child {
+    &.last {
       grid-area: s;
-      height: 50%;
     }
   }
 
   &__img1 {
     display: none;
+
     @include tablet {
       grid-area: t;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__img2 {
+    display: none;
+    @include tablet {
+      grid-area: b;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.sect3__mob-bg {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: -1;
+  @include tablet {
+    display: block;
+    background-color: #fbf1ef;
+  }
+}
+
+.sect4 {
+  &__heading {
+    @include flex(row, center, center);
+    b {
+      color: #0fddd3;
+      font-size: 200px;
+      line-height: 130%;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 50px;
+      color: #000;
+      text-align: left;
+      font-weight: lighter;
+      text-transform: uppercase;
+
+      @include mob {
+        font-size: 40px;
+      }
+
+      span {
+        color: #0fddd3;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__items {
+    max-width: 1040px;
+    margin: 0 auto;
+    @include flex(row, $item: center);
+    box-shadow: 0px 10px 40px #e1f4f7;
+    border-radius: 20px;
+    padding: 10px;
+
+    @include mob {
+      @include flex(column);
+    }
+  }
+
+  &__item {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+
+    height: 340px;
+    width: 33.333%;
+    padding-bottom: 30px;
+
+    @include tablet {
+      height: 300px;
+    }
+
+    @include mob {
+      width: 100%;
+      height: auto;
+    }
+
+    &:nth-child(1) {
+      background: #e8fbff;
+      border-radius: 20px 0px 0px 20px;
+
+      @include mob {
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+    &:nth-child(2) {
+      background: #ebefff;
+    }
+    &:nth-child(3) {
+      background: #ffffd8;
+      border-radius: 0px 20px 20px 0px;
+
+      @include mob {
+        border-radius: 0px 0px 20px 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      @include mob {
+        padding-bottom: 50px;
+      }
+    }
+
+    img {
+      margin-bottom: 1.4rem;
+      margin-top: -40px;
+
+      @include tablet {
+        max-width: 140px;
+      }
+      @include mob {
+        max-width: 270px;
+      }
+    }
+
+    span {
+      color: #717171;
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+    h3 {
+      color: #fc7000;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 150%;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sect5 {
+  background-image: url(../../img/sect5.png);
+  background-size: cover;
+  background-position: top center;
+  min-height: 1600px;
+  margin-top: -600px;
+  padding-top: 600px;
+
+  @include flex(column, space-between);
+
+  @include tablet {
+    min-height: 1750px;
+  }
+
+  @include mob {
+    background-image: url(../../img/sect5_mob.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: -500px;
+    padding-top: 500px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-areas:
+      "a . . d"
+      "a b c d"
+      ". b c .";
+
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: auto;
+    grid-gap: 1rem;
+    padding: 10px;
+
+    @include tablet {
+      grid-template-areas:
+        "a b"
+        "a b"
+        "c d"
+        "c d";
+    }
+
+    @include mob {
+      display: block;
+      margin-top: 500px;
+    }
+  }
+
+  &__card {
+    max-width: 270px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px #eaeaea;
+    border-radius: 20px;
+    padding: 20px;
+    align-self: flex-start;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      border-radius: 10px;
+      border: 1px solid #efeeed;
+    }
+
+    &:nth-child(1) {
+      grid-area: a;
+    }
+    &:nth-child(2) {
+      grid-area: b;
+    }
+    &:nth-child(3) {
+      grid-area: c;
+    }
+    &:nth-child(4) {
+      grid-area: d;
+    }
+
+    &:not(:last-child) {
+      @include mob {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.sect6 {
+
+  background-image: url(../../img/sect6.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  @include desctop {
+    background-position: 10% center;
+  }
+
+  @include tablet {
+    background-image: none;
+  }
+
+  &__heading {
+    @include flex(row, flex-start, center);
+    text-align: left;
+
+    b {
+      color: #0fddd3;
+      font-weight: normal;
+      font-size: 260px;
+      line-height: 130%;
+      margin-right: 10px;
+
+      @include tablet {
+        font-size: 130px;
+      }
+
+      @include min {
+        font-size: 90px;
+      }
+    }
+
+    h2 {
+      max-width: 410px;
+      color: #717171;
+      font-weight: lighter;
+      text-align: left;
+
+      @include tablet {
+        font-size: 30px;
+      }
+
+      @include min {
+        font-size: 27px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 130%;
+        color: #0fddd3;
+
+        @include tablet {
+          font-size: 35px;
+        }
+
+        @include min {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mob {
+      display: block;
+    }
+  }
+
+  &__card {
+    box-shadow: 0px 10px 30px #eaeaea;
+    background-color: #fff;
+    border-radius: 20px;
+    align-self: flex-start;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px;
+
+
+    &:not(:last-child) {
+      @include mob {
+        margin-bottom: 30px;
+      }
+    }
+
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      font-weight: 300;
+      font-size: 90px;
+      color: #fff;
+      line-height: 0.7;
+    }
+
+    p {
+      margin: 0;
+      padding: 25px;
+      border-radius: 15px;
+      font-size: 14px;
+      padding-bottom: 60px;
+      line-height: 150%;
+    }
+
+    &:nth-child(1) {
+      p {
+        background: #e8fbff;
+      }
+    }
+    &:nth-child(2) {
+      p {
+        background: #ebefff;
+      }
+    }
+    &:nth-child(3) {
+      p {
+        background: #ffffd8;
+      }
+    }
+    &:nth-child(4) {
+      p {
+        background: #e8fbff;
+      }
+    }
+    &:nth-child(5) {
+      p {
+        background: #e8fbff;
+      }
+    }
+  }
+
+  &__img-mob {
+    display: none;
+    @include tablet {
       display: block;
       width: 100%;
     }
