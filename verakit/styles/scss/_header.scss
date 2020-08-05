@@ -1,0 +1,56 @@
+.header {
+
+  &__logo {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 180px;
+    height: 105px;
+    border-radius: 15px;
+    @include flex(row, center, center);
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    z-index: 1;
+    isolation: isolate;
+    margin-bottom: -105px;
+    box-shadow: 0px 4px 15px #F2F2F2;
+
+    @include desctop {
+      margin: 0 auto;
+      margin-bottom: -105px;
+    }
+
+    img {
+      max-width: 125px;
+      margin-bottom: 1rem;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      top: 0;
+      left: 10px;
+      right: 10px;
+      border-radius: 0 0 15px 15px;
+      border: 1px solid #EFEEED;
+
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      mix-blend-mode: screen;
+      top: 0;
+      left: 1rem;
+      right: 1rem;
+      bottom: -10px;
+      border-radius: 0 0 15px 15px;
+      z-index: -1;
+      box-shadow: 0px 4px 15px #F2F2F2;
+      background-color: #fff;
+      opacity: 0.5;
+    }
+  }
+}

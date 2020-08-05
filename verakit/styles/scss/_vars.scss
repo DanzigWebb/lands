@@ -1,0 +1,44 @@
+$accent: #0FDDD3;
+$primary: #FC7000;
+
+// Mixins
+@mixin flex($direction, $content: flex-start, $item: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}
+
+// media
+$lg-width: 1030px;
+
+@mixin desctop {
+  @media (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+$tb-width: 768px;
+
+@mixin tablet {
+  @media (max-width: #{$tb-width}) {
+    @content;
+  }
+}
+
+$mb-width: 480px;
+
+@mixin mob {
+  @media (max-width: #{$mb-width}) {
+    @content;
+  }
+}
+
+$mn-width: 370px;
+
+@mixin min {
+  @media (max-width: #{$mn-width}) {
+    @content;
+  }
+}

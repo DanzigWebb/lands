@@ -1,0 +1,355 @@
+@import "vars";
+@import "common";
+@import "header";
+
+.sect1 {
+  min-height: 700px;
+  background-image: url(../../img/bg-main.png);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: stretch;
+  margin-bottom: 100px;
+
+  @include desctop {
+    padding-top: 120px;
+  }
+
+  @include mob {
+    background-image: url(../../img/bg-mob.png);
+    background-position: top center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    color: $accent;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    @include tablet {
+      font-size: 44px;
+    }
+
+    @include mob {
+      margin-bottom: 10px;
+    }
+
+    @include min {
+      font-size: 38px;
+    }
+
+    &-sub {
+      color: #717171;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 150%;
+      margin: 0;
+
+      @include desctop {
+        margin-bottom: 2rem;
+      }
+
+      @include tablet {
+        font-size: 22px;
+      }
+
+      span {
+        background-image: url(../../img/sub-head.svg);
+        background-size: cover;
+        padding: 4px 15px;
+        color: #fff;
+
+        @include mob {
+          @include flex(row, center, center);
+          width: 190px;
+          height: 44px;
+          margin-left: auto;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &__offer {
+    display: grid;
+    grid-template-areas:
+      "p p p p"
+      "b l l l";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.6rem;
+
+    @include desctop {
+      grid-template-areas:
+        "l l l l"
+        ". p p p"
+        "b b b b";
+    }
+
+    @include mob {
+      grid-template-areas:
+        "l l l l"
+        "p p p p"
+        "b b b b";
+      grid-gap: 0;
+    }
+  }
+
+  &__price {
+    font-size: 20px;
+    margin: 2rem 1rem;
+    grid-area: p;
+    position: relative;
+
+    @include desctop {
+      margin: 1rem;
+    }
+
+    @include mob {
+      margin-bottom: 40px;
+    }
+
+    .arrow {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-100%) translateY(80%);
+
+      @include mob {
+        right: 0;
+        left: initial;
+        transform: translateX(0) translateY(50%) scaleX(-1);
+      }
+    }
+
+    .new {
+      font-size: 30px;
+      font-weight: bold;
+      color: #fc7000;
+      padding-right: 1rem;
+      font-style: italic;
+
+      @include mob {
+        font-size: 25px;
+      }
+    }
+
+    .old {
+      color: #ffa257;
+      font-weight: bold;
+      font-size: 20px;
+      font-style: italic;
+      @include mob {
+        font-size: 17px;
+        position: relative;
+        bottom: 10px;
+      }
+    }
+  }
+
+  &__list {
+    grid-area: l;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-left: 3rem;
+
+    @include desctop {
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    @include mob {
+      margin-top: 400px;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+    @include flex(row);
+
+    &:before {
+      content: url(../../img/check.svg);
+      margin-right: 1rem;
+      max-width: 29px;
+      display: block;
+    }
+  }
+
+  .btn {
+    grid-area: b;
+    align-self: center;
+    @include desctop {
+      justify-self: center;
+    }
+
+    @include mob {
+      justify-self: start;
+    }
+  }
+}
+
+.sect2 {
+  margin-bottom: -160px;
+  &__heading {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    p {
+      font-size: 16px;
+      color: #717171;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    padding: 0 15px;
+
+    @include tablet {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .top {
+      color: #dfdfdf;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+
+    > div {
+      height: 145px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: $primary;
+      max-width: 70%;
+      margin: 20px auto;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #383939;
+  }
+
+  .btn-wrap {
+    @include flex(row, center, center);
+    margin-top: 50px;
+  }
+}
+
+.sect3 {
+  background-image: url(../../img/sect3.png);
+  background-size: cover;
+  background-position: center top;
+  min-height: 1050px;
+  padding: 100px 0;
+  padding-top: 200px;
+
+  @include desctop {
+    padding: 0;
+    margin-top: 220px;
+  }
+
+  @include tablet {
+    background-image: url(../../img/sect3-mob.png);
+    
+  }
+
+  h2 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .container {
+    height: 100%;
+    min-height: inherit;
+  }
+
+  &__content {
+    height: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    min-height: inherit;
+    display: grid;
+    grid-template-areas:
+      "f f . ."
+      "f f . ."
+      ". . . ."
+      ". . s s"
+      ". . s s";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    @include desctop {
+      grid-template-areas:
+        "f f . ."
+        "f f . ."
+        ". . s s"
+        ". . s s";
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    @include tablet {
+      grid-template-areas:
+        "f f f f"
+        "f f f f"
+        "t t t t"
+        "s s s s"
+        ". . . .";
+      grid-template-rows: repeat(5, auto);
+    }
+  }
+
+  &__item {
+    grid-area: f;
+    max-width: 490px;
+    height: 50%;
+    align-self: center;
+    justify-self: start;
+    padding: 2rem;
+    line-height: 150%;
+
+    @include tablet {
+      align-self: stretch;
+      justify-self: stretch;
+      max-width: 100%;
+    }
+
+    &:last-child {
+      grid-area: s;
+      height: 50%;
+    }
+  }
+
+  &__img1 {
+    display: none;
+    @include tablet {
+      grid-area: t;
+      display: block;
+      width: 100%;
+    }
+  }
+}
