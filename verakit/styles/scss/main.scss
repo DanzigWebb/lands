@@ -95,6 +95,22 @@
         "b b b b";
       grid-gap: 0;
     }
+
+    &.footer {
+      display: grid;
+      grid-template-areas:
+        "p p p p"
+        "f f f f";
+      grid-gap: 1.6rem;
+
+      @include mob {
+        grid-template-areas:
+        "p p p p"
+        "f f f f";
+        grid-gap: 0;
+        grid-template-rows: repeat(2fr auto);
+      }
+    }
   }
 
   &__price {
@@ -102,6 +118,13 @@
     margin: 2rem 1rem;
     grid-area: p;
     position: relative;
+
+    &.footer {
+      @include mob {
+        margin-top: 400px;
+        margin-bottom: 80px;
+      }
+    }
 
     @include desctop {
       margin: 1rem;
@@ -167,6 +190,44 @@
 
     @include mob {
       margin-top: 400px;
+    }
+
+    &.footer-form {
+      margin-top: 0;
+      grid-area: f;
+      @include flex(row, center, center);
+
+      padding: 40px 50px;
+      background-color: #fff;
+      box-shadow: 0px 10px 30px #eaeaea;
+      border-radius: 20px;
+      @include botBorder(14px, 0px 10px 30px #888585);
+
+      @include desctop {
+        flex-direction: column;
+      }
+
+      @include mob {
+        padding: 30px 20px;
+      }
+
+      input {
+        background: #f8f8f8;
+        box-shadow: inset 0px 4px 5px rgba(190, 190, 190, 0.1);
+        border-radius: 10px;
+        height: 80px;
+        color: #333;
+        padding-left: 20px;
+        border: none;
+        font-size: 18px;
+      }
+
+      > * {
+        width: 33%;
+        @include desctop {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -584,7 +645,6 @@
 }
 
 .sect6 {
-
   background-image: url(../../img/sect6.png);
   background-position: right center;
   background-repeat: no-repeat;
@@ -671,7 +731,6 @@
     position: relative;
     padding: 10px;
 
-
     &:not(:last-child) {
       @include mob {
         margin-bottom: 30px;
@@ -728,7 +787,213 @@
     display: none;
     @include tablet {
       display: block;
+    }
+
+    img {
       width: 100%;
+    }
+  }
+}
+
+.sect7 {
+  background-image: url(../../img/sect7.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 60%;
+
+  padding-bottom: 200px;
+
+  @include desctop {
+    padding-bottom: 50px;
+  }
+
+  @include tablet {
+    background-image: none;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    max-width: 1070px;
+    margin: 0 auto;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__mob-img {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    max-width: 450px;
+
+    @include tablet {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    h3 {
+      background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0) 12.37%, #ffffff 118.1%), #f5f5f5;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: linear-gradient(180deg, rgba(255, 255, 255, 0) 12.37%, #ffffff 118.1%), #f5f5f5;
+      font-size: 70px;
+      line-height: 150%;
+      margin: 0;
+
+      @include desctop {
+        font-size: 55px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      color: #1b1b1b;
+
+      @include mob {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.sect8 {
+  background-image: url(../../img/reviews.png);
+  background-size: cover;
+  &__reviews {
+    padding-bottom: 30px;
+  }
+}
+
+.owl-carousel {
+  .reviews {
+    &__head {
+      @include flex(row, $item: center);
+
+      h4 {
+        color: $primary;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: lighter;
+      }
+
+      img {
+        width: 70px;
+        padding-right: 30px;
+      }
+    }
+
+    &__wrapper {
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: 0px 10px 30px #eaeaea;
+      border-radius: 20px;
+      position: relative;
+      z-index: 1;
+
+      @include botBorder(10px, 0px 10px 30px #eaeaea);
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        border: 1px solid #efeeed;
+        border-radius: 15px;
+      }
+    }
+
+    &__item {
+      padding: 10px 20px;
+      margin: 10px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+
+      p {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-dots {
+    width: 100%;
+    @include flex(row, center, center);
+
+    button {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid $primary;
+      margin: 0 4px;
+      transition: 0.4s ease all;
+      &.active {
+        background: linear-gradient(180deg, #fef180 0%, #ffdb5a 21.35%, #f86c1a 100%);
+        height: 30px;
+        width: 30px;
+        border: none;
+      }
+    }
+  }
+}
+
+.sect9 {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.4rem;
+
+    @include desctop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mob {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    span {
+      color: #c8c8c8;
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 150%;
+      color: $primary;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      color: #1b1b1b;
+    }
+
+    div {
+      height: 180px;
+      margin-bottom: 1.5rem;
+      @include flex(row, $item: center);
     }
   }
 }

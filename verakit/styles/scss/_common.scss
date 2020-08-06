@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 1240px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 $padd;
   margin: 0 auto;
 }
 
@@ -37,6 +37,14 @@ body {
   display: inline-block;
   padding: 26px 90px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: .4s ease all;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 
   @include mob {
     padding: 14px 60px;
@@ -93,4 +101,12 @@ section {
     z-index: -1;
     mix-blend-mode: screen;
   }
+}
+
+.padless {
+  @include padless
+}
+
+input, textarea, select {
+  font-family: inherit;
 }

@@ -1,11 +1,31 @@
+const Media = {
+  dk: 1030,
+  tb: 768,
+  mb: 480,
+  mn: 370,
+  'dsd': ''
+}
+
 $(document).ready(function () {
   lazyScroll()
 
   $(".reviews").owlCarousel({
     margin: 20,
     items: 1,
-    dots: true,
-    autoHeight: true
+    dots: false,
+    autoHeight: true,
+    responsive: {
+      0: {
+        dots: true
+      },
+      768: {
+        items: 2
+      },
+      1030: {
+        items: 3,
+        margin: 0
+      }
+    }
   });
 });
 
