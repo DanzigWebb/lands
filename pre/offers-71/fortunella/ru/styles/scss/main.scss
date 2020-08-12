@@ -1,0 +1,173 @@
+@import "var";
+@import "most";
+// components
+@import "components/header";
+@import "components/sidebar";
+
+.main {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  grid-template-columns: 1fr minmax(200px, 309px);
+  grid-template-areas: "content sidebar";
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content {
+  background-color: #fff;
+  padding: 3rem 2.8rem;
+  grid-area: content;
+  @media (max-width: 460px) {
+    padding: 3rem 1rem;
+  }
+
+  &__author {
+    @include flex(row, space-around, center);
+    margin-bottom: 2rem;
+
+    @media (max-width: 460px) {
+      @include flex(column, flex-start, flex-start);
+    }
+
+    > .item {
+      @include flex(row, center, center);
+
+      @media (max-width: 460px) {
+        margin-bottom: 0.8rem;
+      }
+      img {
+        margin-right: 0.4rem;
+      }
+
+      &.grey {
+        color: #a7a7a7;
+      }
+    }
+  }
+}
+
+.blog {
+  font-size: 1.2rem;
+  h1 {
+    font-size: 35px;
+    color: $accent;
+  }
+  a {
+    color: $accent;
+  }
+
+  .center {
+    position: relative;
+    &__subtitle {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      max-width: 257px;
+      padding: 2rem 1rem;
+      width: 100%;
+      position: absolute;
+      right: -0.4rem;
+      bottom: 1.5rem;
+      margin-top: -5rem;
+      border-radius: 20px;
+      @media (max-width: 910px) {
+        position: relative;
+        max-width: 400px;
+        text-align: center;
+        right: 0;
+        font-size: 20px;
+      }
+    }
+  }
+  & > .sub {
+    font-size: 20px;
+    font-style: italic;
+  }
+  h2 {
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+    background: #f8f0f0;
+    margin-bottom: 1rem;
+    padding: 19px 16px 30px;
+    a {
+      color: #000;
+    }
+    b {
+      display: block;
+    }
+  }
+}
+
+.comments {
+  margin-top: 3rem;
+  &__form {
+    @include flex(column);
+
+    input,
+    textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      background: #fff;
+      border: 1px solid #d3d3d3;
+      box-sizing: border-box;
+      min-height: 2.2rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+    textarea {
+      padding-top: 0.8rem;
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
+}
+
+.comment {
+  margin-bottom: 2.5rem;
+  @include flex(row);
+  &__text {
+    span {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+    b {
+      font-weight: normal;
+
+      a {
+        color: #b8b8b8;
+        text-decoration: none;
+      }
+    }
+    img {
+      margin-top: 0.4rem;
+    }
+  }
+  &__head {
+    img {
+      margin-right: 0.6rem;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  &.right {
+    padding-left: 3rem;
+  }
+  a {
+    color: #000;
+  }
+}
