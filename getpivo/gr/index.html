@@ -7,68 +7,9 @@
 
   </script>
 
-
-
-
-
-
-
-
-
-
-
-  <script>
-    (function () {
-      var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
-      ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=BPTGUH7C2JVVVND7OB00';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ta, s);
-    })();
-  </script>
-
-
-  <!-- SEO -->
-  <meta name="robots" content="noindex">
-  <meta name="google-site-verification" content="6cWUAb-ncXOVyL60Hrp-c0Pjx-Cic0E0WoAkpGFA6X8">
-  <meta name="naver-site-verification" content="fa6597d56a86971a0af2654d222f5c78c7effec1">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#df0f4f">
-  <link rel="canonical" href="https://getpivo.com/">
-  <meta http-equiv="content-language" content="en-default">
-  <link rel="alternate" href="https://getpivo.com/" hreflang="x-default">
-  <link rel="alternate" href="https://kr.getpivo.com/" hreflang="ko">
-  <link rel="alternate" href="https://nl.getpivo.com/" hreflang="nl">
-  <link rel="alternate" href="https://jp.getpivo.com/" hreflang="ja">
-  <link rel="alternate" href="https://de.getpivo.com/" hreflang="de">
-  <link rel="alternate" href="https://ca.getpivo.com/" hreflang="en-ca">
-  <link rel="alternate" href="https://uk.getpivo.com/" hreflang="en-gb">
-  <link rel="alternate" href="https://au.getpivo.com/" hreflang="en-au">
-  <link rel="alternate" href="https://spa.getpivo.com/" hreflang="es">
-  <link rel="alternate" href="https://es.getpivo.com/" hreflang="es-es">
-  <link rel="alternate" href="https://mx.getpivo.com/" hreflang="es-mx">
-  <link rel="alternate" href="https://fr.getpivo.com/" hreflang="fr">
-  <link rel="alternate" href="https://zh.getpivo.com/" hreflang="zh">
-  <link rel="alternate" href="https://ru.getpivo.com/" hreflang="ru">
-  <link rel="alternate" href="https://it.getpivo.com/" hreflang="it">
-  <link rel="alternate" href="https://br.getpivo.com/" hreflang="br">
-
-
-  <meta name="description" content="Cube is a Smart Interactive Pod for Your Smartphone Photography.">
-
-
-
-
   <link rel="shortcut icon" href="img/pivo_favicon_32px_32x32.png" type="image/png">
 
-
-
   <!-- /snippets/social-meta-tags.liquid -->
-
-
-
 
   <meta property="og:site_name" content="Pivo">
   <meta property="og:url" content="https://getpivo.com/">
@@ -1346,8 +1287,19 @@
               </div>
 
               <div id="pivo-main-video" class="page-width custom__item custom__item-margin_vertical-40">
-                <div class="wistia_embed videoFoam=true" style="height:100%;position:relative;width:100%" id="pivo-full-video"></div>
+                <video preload="auto" playsinline src="./cube2.mp4" type='video/mp4' controls></video>
+                <!-- <div class="wistia_embed videoFoam=true" style="height:100%;position:relative;width:100%" id="pivo-full-video"></div> -->
               </div>
+
+              <style>
+                #pivo-main-video {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  z-index: 999;
+                  position: relative;
+                }
+              </style>
 
               <div class="custom__item-margin_vertical-40">
                 <div class="text-center app-stores">
@@ -3256,8 +3208,6 @@ videoFoam=true" style="height:100%;position:relative;width:100%">
       font-family: sans-serif!important;
     }
   </style>
-
-
 
 
 </body></html>

@@ -228,6 +228,7 @@ request.send();
 
 var pivoFullVideo = document.getElementById("pivo-full-video");
 if (pivoFullVideo) {
+  alert(getVideoLink())
   pivoFullVideo.classList.add(getVideoLink());
 }
 // document.getElementById("pivo-full-video").classList.add(getVideoLink());
