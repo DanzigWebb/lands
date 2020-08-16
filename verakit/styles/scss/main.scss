@@ -3,13 +3,30 @@
 @import "header";
 
 .sect1 {
-  min-height: 700px;
+  min-height: 890px;
   background-image: url(../../img/bg-main.png);
   background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: stretch;
   margin-bottom: 100px;
+
+
+  &__heading {
+    margin-bottom: 40px;
+  }
+
+  &__prod {
+    margin: -60px 0;
+    margin-bottom: -40px;
+    position: relative;
+    bottom: 30px;
+    left: -60px;
+
+    @include mob {
+      display: none;
+    }
+  }
 
   @include desctop {
     padding-top: 120px;
@@ -84,7 +101,7 @@
     @include desctop {
       grid-template-areas:
         "l l l l"
-        ". p p p"
+        "p p p p"
         "b b b b";
     }
 
@@ -118,10 +135,23 @@
     margin: 2rem 1rem;
     grid-area: p;
     position: relative;
+    @include flex(row, $item: flex-end);
+
+    .present {
+      font-weight: bold;
+      margin-top: 50px;
+      line-height: 1.5;
+      font-size: 20px;
+
+      b {
+        text-transform: uppercase;
+        color: $accent;
+      }
+    }
 
     &.footer {
       @include mob {
-        margin-top: 400px;
+        margin-top: 560px;
         margin-bottom: 80px;
       }
     }
@@ -189,7 +219,7 @@
     }
 
     @include mob {
-      margin-top: 400px;
+      margin-top: 620px;
     }
 
     &.footer-form {
