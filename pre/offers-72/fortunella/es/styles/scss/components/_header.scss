@@ -1,0 +1,155 @@
+.header {
+  @include flex(column, center);
+  padding: 0.8rem 0;
+
+  z-index: 1;
+
+  &__wrap {
+    @include flex(column);
+    margin: 0 auto;
+    max-width: $content__width;
+    padding: 0 2rem;
+    width: 100%;
+  }
+  &__triger {
+    background: #f4f4f4;
+  }
+  &__conent {
+    margin: 0 auto;
+    max-width: 730px;
+    @include flex(row, space-between);
+    padding: 0.7rem 0;
+    a {
+      color: #868686;
+    }
+  }
+  &__autho {
+    @include flex(row);
+    a {
+      @include flex(row);
+      color: #acacac;
+
+      margin-right: 1rem;
+      &:hover {
+        opacity: 0.7;
+      }
+      img {
+        margin-right: 0.7rem;
+      }
+      p {
+        margin: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__top {
+    width: 100%;
+    padding: 0.8rem 0;
+    @include flex(column);
+    border-bottom: 3px solid #be007f;
+  }
+  &__logo {
+    margin: auto;
+    transform: translateY(1.3rem);
+    @include flex(column, center, flex-end);
+    transition: 0.4s ease all;
+  }
+
+  &__nav {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    .humb {
+      margin-right: 1rem;
+    }
+    @include flex(row, flex-start, center);
+    .nav {
+      padding: 0 0.5rem;
+      a {
+        text-transform: uppercase;
+
+        color: #000;
+      }
+      width: 100%;
+      @include flex(row, space-between);
+    }
+  }
+  &__mob {
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    display: none;
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  @include tablet {
+    &__autho,
+    &__btn,
+    &__subtitle,
+    &__nav,
+    &__triger {
+      display: none;
+    }
+    &__top {
+      @include flex(row, flex-start, center);
+    }
+    &__logo {
+      transform: none;
+    }
+    &__wrap {
+      padding: 0;
+    }
+  }
+  a {
+    transition: 0.4s ease all;
+    text-decoration: none;
+    &:hover {
+      &:not(.header__btn) {
+        color: $accent;
+      }
+    }
+  }
+  @include mob {
+    &__logo {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+  @include min {
+    &__logo {
+      img {
+        max-width: 260px;
+      }
+    }
+  }
+  &__btn {
+    margin-left: auto;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    background: #be007f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 102px;
+    padding: 0.4rem 1.3rem;
+    transition: 0.4s ease all;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  a.activ {
+    color: $accent;
+  }
+}
