@@ -23,17 +23,17 @@ $(document).ready(function () {
                 "show": false
             },
             "Hours": {
-                "text": "Часов",
+                "text": "Ω",
                 "color": "#fff600",
                 "show": true
             },
             "Minutes": {
-                "text": "Минут",
+                "text": "Λ",
                 "color": "#fff600",
                 "show": true
             },
             "Seconds": {
-                "text": "Секунд",
+                "text": "Δ",
                 "color": "#fff600",
                 "show": true
             }
