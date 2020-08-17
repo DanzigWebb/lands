@@ -11,7 +11,6 @@
   justify-content: stretch;
   margin-bottom: 100px;
 
-
   &__heading {
     margin-bottom: 40px;
   }
@@ -122,8 +121,8 @@
 
       @include mob {
         grid-template-areas:
-        "p p p p"
-        "f f f f";
+          "p p p p"
+          "f f f f";
         grid-gap: 0;
         grid-template-rows: repeat(2fr auto);
       }
@@ -350,7 +349,7 @@ footer {
   .sect1__heading {
     padding-top: 140px;
     @include tablet {
-    padding-top: 0;
+      padding-top: 0;
     }
   }
 }
@@ -1033,6 +1032,41 @@ footer {
       height: 180px;
       margin-bottom: 1.5rem;
       @include flex(row, $item: center);
+    }
+  }
+}
+
+.bottom {
+  border-top: 1px solid #e3e1e1;
+  padding: 1.6rem;
+
+  &__content {
+    @include flex(row, $item: center);
+  }
+
+  &__socials {
+    @include flex(row, center, center);
+    width: 100%;
+  }
+
+  .logo {
+    margin-right: auto;
+    display: contents;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    transition: .4s ease all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
     }
   }
 }
