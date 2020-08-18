@@ -1051,16 +1051,29 @@ footer {
 
   &__content {
     @include flex(row, $item: center);
+    @include mob {
+      @include flex(column, center, center);
+    }
   }
 
   &__socials {
     @include flex(row, center, center);
     width: 100%;
+
+    span {
+      padding-right: 2rem;
+    }
   }
 
   .logo {
     margin-right: auto;
     display: contents;
+
+    @include mob {
+      img {
+        margin-bottom: 1.4rem;
+      }
+    }
   }
 
   &__link {
