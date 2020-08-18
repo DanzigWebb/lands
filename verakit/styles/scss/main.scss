@@ -365,6 +365,7 @@ footer {
 .btn-wrap {
   @include flex(row, center, center);
   margin-top: 50px;
+  padding: 30px;
 }
 
 .sect3 {
