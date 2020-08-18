@@ -11,6 +11,14 @@
   justify-content: stretch;
   margin-bottom: 100px;
 
+  @include desctop-big {
+    background-position: center left 36%;
+  }
+
+  @include desctop {
+    background-position: center left 40%;
+  }
+
   &__heading {
     margin-bottom: 40px;
   }
@@ -962,7 +970,7 @@ footer {
       border-radius: 20px;
 
       p {
-        font-style: italic;
+        // font-style: italic;
         font-size: 14px;
         line-height: 150%;
       }

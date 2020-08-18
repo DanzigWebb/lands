@@ -45,6 +45,14 @@ $padd: 1rem;
 }
 
 // media
+$lg-big: 1400px;
+
+@mixin desctop-big {
+  @media (max-width: #{$lg-big}) {
+    @content;
+  }
+}
+
 $lg-width: 1030px;
 
 @mixin desctop {
