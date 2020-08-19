@@ -1013,7 +1013,10 @@ footer {
     }
 
     @include mob {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
+      img {
+        max-width: 100%;
+      }
     }
   }
 
@@ -1089,6 +1092,48 @@ footer {
     }
     img {
       width: 100%;
+    }
+  }
+}
+
+.sect75 {
+  background-image: url(../../img/sect75.png);
+  background-position: center bottom;
+  background-size: cover;
+  padding: 70px 0;
+  padding-bottom: 200px;
+
+  @include desctop {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 360px;
+  }
+
+  @include tablet {
+    padding-bottom: 70px;
+  }
+
+  &__mob-img {
+    display: none;
+    @include tablet {
+      @include padless;
+    }
+  }
+
+  h2 {
+    span {
+      display: block;
+      color: #717171;
+      font-weight: lighter;
+    }
+  }
+
+  &__content {
+    padding: 40px 0;
+    max-width: 450px;
+
+    @include desctop {
+      max-width: 100%;
     }
   }
 }
