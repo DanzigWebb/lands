@@ -1,0 +1,91 @@
+.t-body_popupshowed {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden
+}
+
+.t-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 9999999;
+    display: none
+}
+
+.t-popup.t-popup_show {
+    opacity: 1
+}
+
+.t-popup__container {
+    background: #fff;
+    margin: 0 auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: default;
+    transform: translateY(-30%) scale(.9)
+}
+
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
+    .t-popup__container {
+        width: 100%
+    }
+}
+
+.t-popup__container-animated {
+    transition: transform ease-in-out .3s
+}
+
+.t-popup_show .t-popup__container {
+    transform: translateY(-50%)
+}
+
+.t-popup__container.t-popup__container-static {
+    margin: 5px auto;
+    top: 0;
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 100%;
+    transform: translateY(30%) scale(.9)
+}
+
+.t-popup_show .t-popup__container.t-popup__container-static {
+    transform: translateY(0)
+}
+
+.t-popup__close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    transition: opacity ease-in-out .3s;
+    z-index: 9
+}
+
+.t-popup__close:hover {
+    opacity: .7
+}
+
+.t-body_scroll-locked {
+    position: fixed;
+    left: 0;
+    width: 100%
+}

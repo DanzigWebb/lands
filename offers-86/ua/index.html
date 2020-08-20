@@ -1,0 +1,4266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="js/jquery.min_1.js"></script>
+
+  <script>
+    function set_validator_errors() {
+      orderValidator.errorTitle = 'Пожалуйста, исправьте следующие ошибки';
+
+      orderValidator.errorNameField = 'Имя';
+      orderValidator.errorNameMess = 'Укажите своё имя';
+
+      orderValidator.errorPhoneField = 'Телефон для связи';
+      orderValidator.errorPhoneMess = 'Введите правильный телефон';
+
+      orderValidator.errorAddress = 'Введите правильный адрес';
+      orderValidator.errorRequired = 'обязательное поле';
+      orderValidator.errorMaxLength = 'допустимо максимум {1} символа';
+      orderValidator.errorMinLength = 'допустимо минимум {1} символа';
+      orderValidator.errorEmailField = 'E-mail';
+      orderValidator.errorEmail = 'указан не корректный email';
+    }
+  </script>
+
+  <script>
+
+
+    window.app = {
+      timestamp: parseInt((new Date()).getTime() / 1000),
+      jq: jQuery,
+      formAction: window.location.href,
+      leadToken: '5f3d86fc86bde7.51249535',
+      offers: { "18231": { "price": "159", "id": 18231, "delivery_price": "", "discount": "", "country": { "name": "\u0420\u0443\u043c\u044b\u043d\u0438\u044f", "code": "RO" }, "link": "", "product_sku": "", "prepaid_info_html": "", "price2": "318", "currency": { "name": "RON", "code": "RON" } }, "17096": { "price": "990", "id": 17096, "delivery_price": "", "discount": "", "country": { "name": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430", "code": "UA" }, "link": "", "product_sku": "", "prepaid_info_html": "", "price2": "1590", "currency": { "name": "\u0433\u0440\u043d", "code": "UAH" } } },
+      currentOffer: { "price": "990", "id": 17096, "delivery_price": "", "discount": "", "country": { "name": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430", "code": "UA" }, "link": "", "product_sku": "", "prepaid_info_html": "", "price2": "1590", "currency": { "name": "\u0433\u0440\u043d", "code": "UAH" } },
+      allowedCountries: ["RO", "UA"],
+      _setOfferId: false,
+
+      setOffer: function (offerId) {
+        if (offerId == this._setOfferId) {
+          return;
+        }
+        this._setOfferId = offerId;
+        if (offerId) {
+          var offer = app.offers[offerId];
+          var previousOffer = app.currentOffer;
+          app.currentOffer = offer;
+          var event = this.jq.Event("offerchange");
+          event.previousOffer = previousOffer;
+          event.currentOffer = app.currentOffer;
+          this.jq(document).trigger(event);
+          this.updatePage(offer);
+        } else {
+          $('input[name=country]').val('');
+        }
+      },
+
+      updatePage: function (offer) {
+        $('x-newprice').html(offer.price);
+        $('x-oldprice').html(offer.price2);
+        $('x-currency').html(offer.currency.name);
+        $('input[name=offer], select[name=offer]').val(offer.id);
+        $('input[name=country]').val(offer.country.code);
+      },
+
+      blockForm: function () {
+        // Блокируем кнопки при отправке формы
+        $('input[type=submit]', $(this)).prop('disabled', true).attr('disabled', true);
+        $('button', $(this)).prop('disabled', true).attr('disabled', true);
+        app.incompleteOrder.lock = true;
+        clearTimeout(app.incompleteOrder.timer);
+      },
+
+      unblockForm: function () {
+        $('input[type=submit]', $(this)).prop('disabled', false).attr('disabled', false);
+        $('button[type=submit]', $(this)).prop('disabled', false).attr('disabled', false);
+        app.incompleteOrder.lock = false;
+        clearTimeout(app.incompleteOrder.timer);
+      }
+
+    };
+
+
+  </script>
+  <script src="js/form.validate.js"></script>
+  <script src="js/form.incomplete.js"></script>
+  <script src="js/main2.js"></script>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--metatextblock-->
+  <title>Пульсоксиметр HC50D на палец, прибор для измерения уровня кислорода в крови</title>
+  <meta name="description"
+    content="Портативный пульсоксиметр на мини-пальчиковых батарейках. За 8 секунд измеряет уровень сатурации, а так же в режиме онлайн мониторит пульс. Есть индикатор батарейки. Прост в использовании.">
+  <link rel="canonical" href="pls">
+
+  <meta property="og:title" content="Пульсоксиметр HC50D на палец, прибор для измерения уровня кислорода в крови">
+  <meta property="og:description"
+    content="Портативный пульсоксиметр на мини-пальчиковых батарейках. За 8 секунд измеряет уровень сатурации, а так же в режиме онлайн мониторит пульс. Есть индикатор батарейки. Прост в использовании.">
+  <meta property="og:type" content>
+  <meta property="og:image" content="img/450-px-pulsoksimetr_1.png">
+
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/tilda-blocks-2.12.css" type="text/css" media="all">
+
+  <link rel="stylesheet" href="css/tilda-animation-1.0.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/tilda-menusub-1.0.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/tilda-slds-1.4.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/tilda-zoom-2.0.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/tilda-popup-1.1.min.css" type="text/css" media="all">
+
+
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/tilda-scripts-2.8.min.js"></script>
+  <script src="js/tilda-blocks-2.7.js"></script>
+
+  <script src="js/tilda-animation-1.0.min.js" charset="utf-8"></script>
+  <script src="js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
+  <script src="js/tilda-slds-1.4.min.js" charset="utf-8"></script>
+  <script src="js/hammer.min.js" charset="utf-8"></script>
+  <script src="js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
+  <!-- <script src="js/tilda-video-1.0.min.js" charset="utf-8"></script> -->
+  <script src="js/tilda-forms-1.0.min.js" charset="utf-8"></script>
+  <script src="js/tilda-products-1.0.min.js" charset="utf-8"></script>
+  <script src="js/tilda-catalog-1.1.min.js" charset="utf-8"></script>
+  <script src="js/tilda-cart-1.0.min.js" charset="utf-8"></script>
+
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+  </script>
+
+
+</head>
+
+<body class="t-body" style="margin:0;">
+
+  <!--allrecords-->
+  <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="2247139"
+    data-tilda-page-id="11797065" data-tilda-page-alias="pls" data-tilda-formskey="1eff7f0e1145545da30aed7c8df07d18">
+
+    <div id="rec198648826" class="r t-rec" style=" " data-animationappear="off" data-record-type="481">
+
+      <!-- T481 -->
+      <div id="nav198648826marker"></div>
+      <div class="t481__mobile">
+        <div class="t481__mobile_container">
+          <div class="t481__mobile_text t-name t-name_md" field="text">&nbsp;</div>
+          <div class="t481__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="nav198648826" class="t481 t-col_12 t481__hidden t481__positionstatic "
+        style="border-radius: 3px;border-top-left-radius: 0; border-top-right-radius: 0;background-color: rgba(243,243,243,0.0); height:65px; "
+        data-bgcolor-hex="#f3f3f3" data-bgcolor-rgba="rgba(243,243,243,0.0)" data-navmarker="nav198648826marker"
+        data-appearoffset data-bgopacity-two data-menushadow data-bgopacity="0.0" data-menu-items-align="right"
+        data-menu="yes">
+        <div class="t481__maincontainer " style="height:65px;">
+          <div class="t481__padding40px"></div>
+
+          <div class="t481__leftside">
+            <div class="t481__leftcontainer" style="display: block;">
+              <img src="img/logo-zahist-6.png" class="t481__imglogo " imgfield="img" alt> </div>
+          </div>
+
+          <div class="t481__centerside t481__menualign_right">
+            <div class="t481__centercontainer">
+              <ul class="t481__list">
+                <li class="t481__list_item"><a class="t-menu__link-item" href="#rec199467292" data-menu-submenu-hook
+                    style="color:#000000;" data-menu-item-number="1">О пульсоксиметре</a>
+                </li>
+                <li class="t481__list_item"><a class="t-menu__link-item" href="#rec198312753" data-menu-submenu-hook
+                    style="color:#000000;" data-menu-item-number="2">Купить пульсоксиметр</a>
+                </li>
+                <li class="t481__list_item"><a class="t-menu__link-item" href="#rec198751396" data-menu-submenu-hook
+                    style="color:#000000;" data-menu-item-number="3">Отзывы</a>
+                </li>
+                <li class="t481__list_item"><a class="t-menu__link-item" href="#rec199137101" data-menu-submenu-hook
+                    style="color:#000000;" data-menu-item-number="4">Доставка и оплата</a>
+                </li>
+                <li class="t481__list_item"><a class="t-menu__link-item" href="#rec198675030" data-menu-submenu-hook
+                    style="color:#000000;" data-menu-item-number="5">Контакты</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="t481__rightside">
+          </div>
+
+          <div class="t481__padding40px"></div>
+        </div>
+      </div>
+
+
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          t481_highlight();
+
+
+        });
+
+
+
+
+
+        $(window).resize(function () {
+          t481_setBg('198648826');
+        });
+        $(document).ready(function () {
+          t481_setBg('198648826');
+        });
+      </script>
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          t481_createMobileMenu('198648826');
+        });
+      </script>
+
+
+
+
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          setTimeout(function () {
+            t_menusub_init('198648826');
+          }, 500);
+        });
+      </script>
+
+
+      <style>
+        @media screen and (max-width: 980px) {
+          #rec198648826 .t-menusub__menu .t-menusub__link-item {
+            color: #000000 !important;
+          }
+
+          #rec198648826 .t-menusub__menu .t-menusub__link-item.t-active {
+            color: #000000 !important;
+          }
+        }
+      </style>
+
+
+    </div>
+
+
+    <div id="rec198126942" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
+      <!-- T396 -->
+      <style>
+        #rec198126942 .t396__artboard {
+          height: 670px;
+        }
+
+        #rec198126942 .t396__filter {
+          height: 670px;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+          background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        }
+
+        #rec198126942 .t396__carrier {
+          height: 670px;
+          background-position: center center;
+          background-attachment: scroll;
+          background-image: url('img/FDS_463308.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .t396__artboard {
+            height: 550px;
+          }
+
+          #rec198126942 .t396__filter {
+            height: 550px;
+          }
+
+          #rec198126942 .t396__carrier {
+            height: 550px;
+            background-attachment: scroll;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .t396__artboard {
+            height: 950px;
+          }
+
+          #rec198126942 .t396__filter {
+            height: 950px;
+          }
+
+          #rec198126942 .t396__carrier {
+            height: 950px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .t396__artboard {
+            height: 840px;
+          }
+
+          #rec198126942 .t396__filter {
+            height: 840px;
+          }
+
+          #rec198126942 .t396__carrier {
+            height: 840px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .t396__artboard {
+            height: 560px;
+          }
+
+          #rec198126942 .t396__filter {
+            height: 560px;
+          }
+
+          #rec198126942 .t396__carrier {
+            height: 560px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+          color: #000000;
+          z-index: 3;
+          top: calc(335px - 0px + -228px);
+          left: calc(50% - 390px + -194px);
+          width: 780px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+          color: #000000;
+          font-size: 61px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.2;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            top: calc(275px - 0px + -215px);
+            left: calc(50% - 330px + -142px);
+            width: 660px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 58px;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            top: 30px;
+            left: calc(50% - 300px + -10px);
+            width: 600px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            text-align: left;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 52px;
+            line-height: 1.25;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            top: 20px;
+            left: calc(50% - 230px + 0px);
+            width: 460px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 38px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            top: 10px;
+            left: calc(50% - 155px + 5px);
+            width: 310px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] {
+            text-align: left;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 27px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+          color: #000000;
+          z-index: 6;
+          top: calc(335px - 0px + -107px);
+          left: calc(50% - 345px + -236px);
+          width: 690px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+          color: #000000;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.5;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+            top: calc(275px - 0px + -21px);
+            left: calc(50% - 250px + -220px);
+            width: 500px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 19px;
+            line-height: 1.55;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+            top: 240px;
+            left: calc(50% - 310px + 0px);
+            width: 620px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+            text-align: left;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 25px;
+            letter-spacing: 0px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+            top: 170px;
+            left: calc(50% - 170px + -60px);
+            width: 340px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 18px;
+            letter-spacing: 0px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] {
+            top: 110px;
+            left: calc(50% - 160px + 10px);
+            width: 320px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 16px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1473865771202"] {
+          z-index: 2;
+          top: 15px;
+          left: calc(50% - 215px + 355px);
+          width: 430px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1473865771202"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1473865771202"] {
+            top: 75px;
+            left: calc(50% - 152px + 282px);
+            width: 304px;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1473865771202"] {
+            top: 460px;
+            left: calc(50% - 160px + 10px);
+            width: 320px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1473865771202"] {
+            top: 390px;
+            left: calc(50% - 135px + -5px);
+            width: 270px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1473865771202"] {
+            top: 185px;
+            left: calc(50% - 75px + -5px);
+            width: 150px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591086184047"] {
+          color: #ffffff;
+          text-align: center;
+          z-index: 9;
+          top: 455px;
+          left: calc(50% - 600px + 20px);
+          width: 270px;
+          height: 54px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591086184047"] .tn-atom {
+          color: #ffffff;
+          font-size: 22px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 1px;
+          border-radius: 0px;
+          background-color: #4ab05e;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591086184047"] {
+            top: 410px;
+            left: calc(50% - 480px + 90px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591086184047"] {
+            top: 345px;
+            left: calc(50% - 320px + 190px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591086184047"] {
+            top: 260px;
+            left: calc(50% - 240px + 110px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591086184047"] {
+            top: 430px;
+            left: calc(50% - 160px + 20px);
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109176009"] {
+          z-index: 10;
+          top: 435px;
+          left: calc(50% - 600px + 550px);
+          width: 200px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109176009"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109176009"] {
+            top: 385px;
+            left: calc(50% - 480px + 440px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109176009"] {
+            top: 795px;
+            left: calc(50% - 320px + 430px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109176009"] {
+            top: 680px;
+            left: calc(50% - 240px + 320px);
+            width: 140px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109176009"] {
+            top: 353px;
+            left: calc(50% - 160px + 204px);
+            width: 100px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109239929"] {
+          color: #ffffff;
+          text-align: center;
+          z-index: 11;
+          top: 435px;
+          left: calc(50% - 600px + 570px);
+          width: 160px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109239929"] .tn-atom {
+          color: #ffffff;
+          font-size: 43px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] {
+            top: 385px;
+            left: calc(50% - 480px + 460px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] {
+            top: 795px;
+            left: calc(50% - 320px + 450px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] {
+            top: 680px;
+            left: calc(50% - 240px + 310px);
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] .tn-atom {
+            font-size: 30px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] {
+            top: 355px;
+            left: calc(50% - 160px + 210px);
+            width: 90px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591109239929"] .tn-atom {
+            font-size: 20px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109315684"] {
+          color: #e00000;
+          text-align: center;
+          z-index: 12;
+          top: 500px;
+          left: calc(50% - 600px + 570px);
+          width: 160px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591109315684"] .tn-atom {
+          color: #e00000;
+          font-size: 36px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] {
+            top: 450px;
+            left: calc(50% - 480px + 460px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] {
+            top: 860px;
+            left: calc(50% - 320px + 450px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] {
+            top: 725px;
+            left: calc(50% - 240px + 310px);
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] .tn-atom {
+            font-size: 20px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] {
+            top: 388px;
+            left: calc(50% - 160px + 214px);
+            width: 80px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591109315684"] .tn-atom {
+            font-size: 18px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591285827771"] {
+          color: #000000;
+          z-index: 13;
+          top: 520px;
+          left: calc(50% - 600px + 99px);
+          width: 140px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591285827771"] .tn-atom {
+          color: #000000;
+          font-size: 20px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591285827771"] {
+            top: 470px;
+            left: calc(50% - 480px + 170px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591285827771"] {
+            top: 415px;
+            left: calc(50% - 320px + 280px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591285827771"] {
+            top: 330px;
+            left: calc(50% - 240px + 190px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591285827771"] {
+            top: 485px;
+            left: calc(50% - 160px + 100px);
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+          color: #000000;
+          z-index: 14;
+          top: calc(335px - 0px + -157px);
+          left: calc(50% - 370px + -211px);
+          width: 740px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1591352714406"] .tn-atom {
+          color: #000000;
+          font-size: 24px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.2;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            top: calc(275px - 0px + -118px);
+            left: calc(50% - 295px + -176px);
+            width: 590px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] .tn-atom {
+            font-size: 33px;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            top: 125px;
+            left: calc(50% - 305px + -5px);
+            width: 610px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            text-align: left;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] .tn-atom {
+            font-size: 32px;
+            line-height: 1.25;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            top: 80px;
+            left: calc(50% - 250px + 20px);
+            width: 500px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] .tn-atom {
+            font-size: 30px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            top: 55px;
+            left: calc(50% - 150px + 0px);
+            width: 300px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] {
+            text-align: left;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1591352714406"] .tn-atom {
+            font-size: 18px;
+          }
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1592229914520"] {
+          color: #ff0000;
+          text-align: center;
+          z-index: 15;
+          top: 410px;
+          left: calc(50% - 600px + 560px);
+          width: 180px;
+        }
+
+        #rec198126942 .tn-elem[data-elem-id="1592229914520"] .tn-atom {
+          color: #ff0000;
+          font-size: 14px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] {
+            top: 360px;
+            left: calc(50% - 480px + 450px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] {
+            top: 765px;
+            left: calc(50% - 320px + 440px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] {
+            top: 660px;
+            left: calc(50% - 240px + 320px);
+            width: 140px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] .tn-atom {
+            font-size: 12px;
+            line-height: 1;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] {
+            top: 320px;
+            left: calc(50% - 160px + 210px);
+            width: 100px;
+          }
+
+          #rec198126942 .tn-elem[data-elem-id="1592229914520"] .tn-atom {
+            line-height: 1;
+          }
+        }
+      </style>
+
+
+
+
+      <div class="t396">
+
+        <div class="t396__artboard" data-artboard-recid="198126942" data-artboard-height="670"
+          data-artboard-height-res-960="550" data-artboard-height-res-640="950" data-artboard-height-res-480="840"
+          data-artboard-height-res-320="560" data-artboard-height_vh data-artboard-valign="center" data-artboard-ovrflw>
+
+          <div class="t396__carrier" data-artboard-recid="198126942"></div>
+
+          <div class="t396__filter" data-artboard-recid="198126942"></div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421470209944682" data-elem-id="1470209944682"
+            data-elem-type="text" data-field-top-value="-228" data-field-top-res-960-value="-215"
+            data-field-top-res-640-value="30" data-field-top-res-480-value="20" data-field-top-res-320-value="10"
+            data-field-left-value="-194" data-field-left-res-960-value="-142" data-field-left-res-640-value="-10"
+            data-field-left-res-480-value="0" data-field-left-res-320-value="5" data-field-width-value="780"
+            data-field-width-res-960-value="660" data-field-width-res-640-value="600"
+            data-field-width-res-480-value="460" data-field-width-res-320-value="310" data-field-axisy-value="center"
+            data-field-axisy-res-640-value="top" data-field-axisx-value="center" data-field-container-value="grid"
+            data-field-container-res-640-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1470209944682">Пульсоксиметр HC50D<br></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421470210011265" data-elem-id="1470210011265"
+            data-elem-type="text" data-field-top-value="-107" data-field-top-res-960-value="-21"
+            data-field-top-res-640-value="240" data-field-top-res-480-value="170" data-field-top-res-320-value="110"
+            data-field-left-value="-236" data-field-left-res-960-value="-220" data-field-left-res-640-value="0"
+            data-field-left-res-480-value="-60" data-field-left-res-320-value="10" data-field-width-value="690"
+            data-field-width-res-960-value="500" data-field-width-res-640-value="620"
+            data-field-width-res-480-value="340" data-field-width-res-320-value="320" data-field-axisy-value="center"
+            data-field-axisy-res-640-value="top" data-field-axisx-value="center" data-field-container-value="grid"
+            data-field-container-res-640-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1470210011265">Портативный прибор, который сможет спасти жизнь вам или
+              вашим близким</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421473865771202 t-animate" data-elem-id="1473865771202"
+            data-elem-type="image" data-field-top-value="15" data-field-top-res-960-value="75"
+            data-field-top-res-640-value="460" data-field-top-res-480-value="390" data-field-top-res-320-value="185"
+            data-field-left-value="355" data-field-left-res-960-value="282" data-field-left-res-640-value="10"
+            data-field-left-res-480-value="-5" data-field-left-res-320-value="-5" data-field-width-value="430"
+            data-field-width-res-960-value="304" data-field-width-res-640-value="320"
+            data-field-width-res-480-value="270" data-field-width-res-320-value="150" data-field-axisy-value="top"
+            data-field-axisy-res-640-value="top" data-field-axisy-res-320-value="top" data-field-axisx-value="center"
+            data-field-axisx-res-320-value="center" data-field-container-value="grid"
+            data-field-container-res-320-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value data-animate-style="zoomin"
+            data-animate-duration="1" data-animate-scale="0.9" data-animate-mobile="y">
+
+
+
+
+
+
+
+            <div class="tn-atom">
+              <img class="tn-atom__img" src="img/450-px-pulsoksimetr.png" imgfield="tn_img_1473865771202">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591086184047" data-elem-id="1591086184047"
+            data-elem-type="button" data-field-top-value="455" data-field-top-res-960-value="410"
+            data-field-top-res-640-value="345" data-field-top-res-480-value="260" data-field-top-res-320-value="430"
+            data-field-left-value="20" data-field-left-res-960-value="90" data-field-left-res-640-value="190"
+            data-field-left-res-480-value="110" data-field-left-res-320-value="20" data-field-height-value="54"
+            data-field-width-value="270" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+
+
+
+
+
+            <a class="tn-atom" href="#popup:pls1">Купить пульсоксиметр</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591109176009 t-animate" data-elem-id="1591109176009"
+            data-elem-type="image" data-field-top-value="435" data-field-top-res-960-value="385"
+            data-field-top-res-640-value="795" data-field-top-res-480-value="680" data-field-top-res-320-value="353"
+            data-field-left-value="550" data-field-left-res-960-value="440" data-field-left-res-640-value="430"
+            data-field-left-res-480-value="320" data-field-left-res-320-value="204" data-field-width-value="200"
+            data-field-width-res-480-value="140" data-field-width-res-320-value="100" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value
+            data-field-leftunits-value data-field-heightunits-value data-field-widthunits-value
+            data-animate-style="zoomin" data-animate-duration="1" data-animate-delay="0.5" data-animate-scale="0.9"
+            data-animate-mobile="y">
+
+
+
+
+
+
+
+            <div class="tn-atom">
+              <img class="tn-atom__img" src="img/plashka-dlja-skidki.png" imgfield="tn_img_1591109176009">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591109239929 t-animate" data-elem-id="1591109239929"
+            data-elem-type="text" data-field-top-value="435" data-field-top-res-960-value="385"
+            data-field-top-res-640-value="795" data-field-top-res-480-value="680" data-field-top-res-320-value="355"
+            data-field-left-value="570" data-field-left-res-960-value="460" data-field-left-res-640-value="450"
+            data-field-left-res-480-value="310" data-field-left-res-320-value="210" data-field-width-value="160"
+            data-field-width-res-320-value="90" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value data-animate-style="zoomin"
+            data-animate-duration="1" data-animate-delay="1" data-animate-scale="0.9" data-animate-mobile="y">
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591109239929">
+              <x-newprice>990</x-newprice>
+              <x-currency>грн</x-currency>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591109315684 t-animate" data-elem-id="1591109315684"
+            data-elem-type="text" data-field-top-value="500" data-field-top-res-960-value="450"
+            data-field-top-res-640-value="860" data-field-top-res-480-value="725" data-field-top-res-320-value="388"
+            data-field-left-value="570" data-field-left-res-960-value="460" data-field-left-res-640-value="450"
+            data-field-left-res-480-value="310" data-field-left-res-320-value="214" data-field-width-value="160"
+            data-field-width-res-320-value="80" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value data-animate-style="zoomin"
+            data-animate-duration="1" data-animate-delay="1" data-animate-scale="0.9" data-animate-mobile="y">
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591109315684"><del>
+                <x-oldprice>1590</x-oldprice>
+                <x-currency>грн</x-currency>
+              </del></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591285827771" data-elem-id="1591285827771"
+            data-elem-type="text" data-field-top-value="520" data-field-top-res-960-value="470"
+            data-field-top-res-640-value="415" data-field-top-res-480-value="330" data-field-top-res-320-value="485"
+            data-field-left-value="99" data-field-left-res-960-value="170" data-field-left-res-640-value="280"
+            data-field-left-res-480-value="190" data-field-left-res-320-value="100" data-field-width-value="140"
+            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
+            data-field-topunits-value data-field-leftunits-value data-field-heightunits-value
+            data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591285827771"><a href="#rec199467292"
+                style="color:#000000 !important;text-decoration: none;border-bottom: 1px solid rgb(0, 0, 0);box-shadow: inset 0px -0px 0px 0px rgb(0, 0, 0);-webkit-box-shadow: inset 0px -0px 0px 0px rgb(0, 0, 0);-moz-box-shadow: inset 0px -0px 0px 0px rgb(0, 0, 0);">Подробнее</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421591352714406" data-elem-id="1591352714406"
+            data-elem-type="text" data-field-top-value="-157" data-field-top-res-960-value="-118"
+            data-field-top-res-640-value="125" data-field-top-res-480-value="80" data-field-top-res-320-value="55"
+            data-field-left-value="-211" data-field-left-res-960-value="-176" data-field-left-res-640-value="-5"
+            data-field-left-res-480-value="20" data-field-left-res-320-value="0" data-field-width-value="740"
+            data-field-width-res-960-value="590" data-field-width-res-640-value="610"
+            data-field-width-res-480-value="500" data-field-width-res-320-value="300" data-field-axisy-value="center"
+            data-field-axisy-res-640-value="top" data-field-axisx-value="center" data-field-container-value="grid"
+            data-field-container-res-640-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591352714406">Предназначен для
+              измерения уровня кислорода в крови</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1981269421592229914520" data-elem-id="1592229914520"
+            data-elem-type="text" data-field-top-value="410" data-field-top-res-960-value="360"
+            data-field-top-res-640-value="765" data-field-top-res-480-value="660" data-field-top-res-320-value="320"
+            data-field-left-value="560" data-field-left-res-960-value="450" data-field-left-res-640-value="440"
+            data-field-left-res-480-value="320" data-field-left-res-320-value="210" data-field-width-value="180"
+            data-field-width-res-480-value="140" data-field-width-res-320-value="100" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value
+            data-field-leftunits-value data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1592229914520">Бесплатная доставка</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <script>
+        $(document).ready(function () {
+          t396_init('198126942');
+        });
+      </script>
+
+
+
+      <!-- /T396 -->
+    </div>
+
+
+    <div id="rec199467292" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+      style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="60"
+      data-bg-color="#f3f3f3">
+      <!-- T050 -->
+      <div class="t050">
+        <div class="t-container t-align_center">
+          <div class="t-col t-col_10 t-prefix_1">
+            <div class="t050__title t-title t-title_xxl" field="title" style="font-size:40px;">Что такое "тихая"
+              пневмония и зачем нужен пульсоксиметр?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="rec199477227" class="r t-rec t-rec_pt_0 t-rec_pb_0"
+      style="padding-top:0px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="106"
+      data-bg-color="#f3f3f3">
+      <!-- T004 -->
+      <div class="t004">
+        <div class="t-container ">
+          <div class="t-col t-col_8 t-prefix_2">
+            <div field="text" class="t-text t-text_md  " style><strong>К сожалению, мало кто знает, что коронавирус
+                также может вызывать "тихую" пневмонию и как вовремя ее распознать? </strong><br> Коронавирусную
+              пневмонию случайно выявляют у пациентов с травмами после падений, так же у пожилых людей, которые теряют
+              сознание по непонятной причине и так далее. <br><br> Обычно при пневмонии пациенты испытывают
+              дискомфорт в груди, боль во время дыхания, другие дыхательные проблемы. Но <strong>при коронавирусной
+                пневмонии человек может даже не испытывать одышку</strong>, даже если уровень кислорода упал до
+              критического уровня. <br><br><strong>Простой способ выявить "тихую" пневмонию</strong><br>По словам
+              доктора скорой помощи с 30-летним стажем Ричарда Левитана, работающего в эпицентре коронавируса в
+              Нью-Йорке, есть способ выявить больше пациентов с коронавирусной пневмонией раньше и лечить их более
+              эффективно. <br> "Для этого не нужно даже тестов на COVID-19. "Тихую" гипоксию на ранней стадии можно
+              выявить <strong>с помощью обычного пульсоксиметра</strong>" - рассказывает Левитан. <br></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="rec199468814" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+      style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-animationappear="off"
+      data-record-type="396" data-bg-color="#f3f3f3">
+      <!-- T396 -->
+      <style>
+        #rec199468814 .t396__artboard {
+          height: 230px;
+          background-color: #f3f3f3;
+        }
+
+        #rec199468814 .t396__filter {
+          height: 230px;
+        }
+
+        #rec199468814 .t396__carrier {
+          height: 230px;
+          background-position: center center;
+          background-attachment: scroll;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .t396__artboard {}
+
+          #rec199468814 .t396__filter {}
+
+          #rec199468814 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+
+        @media screen and (max-width: 959px) {}
+
+        @media screen and (max-width: 639px) {}
+
+        @media screen and (max-width: 479px) {}
+
+        #rec199468814 .tn-elem[data-elem-id="1591363868449"] {
+          z-index: 2;
+          top: 9px;
+          left: calc(50% - 600px + 465px);
+          width: 270px;
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591363868449"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363868449"] {
+            top: 15px;
+            left: calc(50% - 480px + 340px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363868449"] {
+            top: 15px;
+            left: calc(50% - 320px + 200px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363868449"] {
+            top: 10px;
+            left: calc(50% - 240px + 110px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363868449"] {
+            top: 24px;
+            left: calc(50% - 160px + 48px);
+            width: 230px;
+          }
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591363978970"] {
+          z-index: 3;
+          top: 77px;
+          left: calc(50% - 600px + 586px);
+          width: 15px;
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591363978970"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363978970"] {
+            top: 83px;
+            left: calc(50% - 480px + 461px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363978970"] {
+            top: 83px;
+            left: calc(50% - 320px + 321px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363978970"] {
+            top: 78px;
+            left: calc(50% - 240px + 231px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec199468814 .tn-elem[data-elem-id="1591363978970"] {
+            top: 84px;
+            left: calc(50% - 160px + 149px);
+            width: 12px;
+          }
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364048859"] {
+          z-index: 4;
+          top: 77px;
+          left: calc(50% - 600px + 637px);
+          width: 15px;
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364048859"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364048859"] {
+            top: 83px;
+            left: calc(50% - 480px + 512px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364048859"] {
+            top: 83px;
+            left: calc(50% - 320px + 372px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364048859"] {
+            top: 78px;
+            left: calc(50% - 240px + 282px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364048859"] {
+            top: 84px;
+            left: calc(50% - 160px + 193px);
+            width: 12px;
+          }
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364787366"] {
+          color: #000000;
+          z-index: 5;
+          top: 165px;
+          left: calc(50% - 600px + 421px);
+          width: 180px;
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364787366"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364787366"] {
+            top: 171px;
+            left: calc(50% - 480px + 296px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364787366"] {
+            top: 171px;
+            left: calc(50% - 320px + 156px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364787366"] {
+            top: 166px;
+            left: calc(50% - 240px + 66px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364787366"] {
+            top: 161px;
+            left: calc(50% - 160px + 18px);
+          }
+
+          #rec199468814 .tn-elem[data-elem-id="1591364787366"] .tn-atom {
+            font-size: 13px;
+          }
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364848798"] {
+          color: #000000;
+          z-index: 6;
+          top: 165px;
+          left: calc(50% - 600px + 660px);
+          width: 180px;
+        }
+
+        #rec199468814 .tn-elem[data-elem-id="1591364848798"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364848798"] {
+            top: 171px;
+            left: calc(50% - 480px + 535px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364848798"] {
+            top: 171px;
+            left: calc(50% - 320px + 395px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364848798"] {
+            top: 166px;
+            left: calc(50% - 240px + 305px);
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec199468814 .tn-elem[data-elem-id="1591364848798"] {
+            top: 161px;
+            left: calc(50% - 160px + 208px);
+          }
+
+          #rec199468814 .tn-elem[data-elem-id="1591364848798"] .tn-atom {
+            font-size: 13px;
+          }
+        }
+      </style>
+
+
+
+
+      <div class="t396">
+
+        <div class="t396__artboard" data-artboard-recid="199468814" data-artboard-height="230" data-artboard-height_vh
+          data-artboard-valign="center" data-artboard-ovrflw>
+
+          <div class="t396__carrier" data-artboard-recid="199468814"></div>
+
+          <div class="t396__filter" data-artboard-recid="199468814"></div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1994688141591363868449" data-elem-id="1591363868449"
+            data-elem-type="image" data-field-top-value="9" data-field-top-res-960-value="15"
+            data-field-top-res-640-value="15" data-field-top-res-480-value="10" data-field-top-res-320-value="24"
+            data-field-left-value="465" data-field-left-res-960-value="340" data-field-left-res-640-value="200"
+            data-field-left-res-480-value="110" data-field-left-res-320-value="48" data-field-width-value="270"
+            data-field-width-res-320-value="230" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+            <div class="tn-atom">
+              <img class="tn-atom__img" src="img/50-png.png" imgfield="tn_img_1591363868449">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1994688141591363978970" data-elem-id="1591363978970"
+            data-elem-type="image" data-field-top-value="77" data-field-top-res-960-value="83"
+            data-field-top-res-640-value="83" data-field-top-res-480-value="78" data-field-top-res-320-value="84"
+            data-field-left-value="586" data-field-left-res-960-value="461" data-field-left-res-640-value="321"
+            data-field-left-res-480-value="231" data-field-left-res-320-value="149" data-field-width-value="15"
+            data-field-width-res-320-value="12" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+            <div class="tn-atom">
+              <img class="tn-atom__img" src="img/ukazatel-2.png" imgfield="tn_img_1591363978970">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1994688141591364048859" data-elem-id="1591364048859"
+            data-elem-type="image" data-field-top-value="77" data-field-top-res-960-value="83"
+            data-field-top-res-640-value="83" data-field-top-res-480-value="78" data-field-top-res-320-value="84"
+            data-field-left-value="637" data-field-left-res-960-value="512" data-field-left-res-640-value="372"
+            data-field-left-res-480-value="282" data-field-left-res-320-value="193" data-field-width-value="15"
+            data-field-width-res-320-value="12" data-field-axisy-value="top" data-field-axisx-value="left"
+            data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+            data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+            <div class="tn-atom">
+              <img class="tn-atom__img" src="img/ukazatel-2.png" imgfield="tn_img_1591364048859">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1994688141591364787366" data-elem-id="1591364787366"
+            data-elem-type="text" data-field-top-value="165" data-field-top-res-960-value="171"
+            data-field-top-res-640-value="171" data-field-top-res-480-value="166" data-field-top-res-320-value="161"
+            data-field-left-value="421" data-field-left-res-960-value="296" data-field-left-res-640-value="156"
+            data-field-left-res-480-value="66" data-field-left-res-320-value="18" data-field-width-value="180"
+            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
+            data-field-topunits-value data-field-leftunits-value data-field-heightunits-value
+            data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591364787366">Уровень насыщения<br>
+              крови кислородом, %</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+          <div class="t396__elem tn-elem tn-elem__1994688141591364848798" data-elem-id="1591364848798"
+            data-elem-type="text" data-field-top-value="165" data-field-top-res-960-value="171"
+            data-field-top-res-640-value="171" data-field-top-res-480-value="166" data-field-top-res-320-value="161"
+            data-field-left-value="660" data-field-left-res-960-value="535" data-field-left-res-640-value="395"
+            data-field-left-res-480-value="305" data-field-left-res-320-value="208" data-field-width-value="180"
+            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
+            data-field-topunits-value data-field-leftunits-value data-field-heightunits-value
+            data-field-widthunits-value>
+
+
+
+
+
+            <div class="tn-atom" field="tn_text_1591364848798">Пульс,<br>
+              ударов в минуту</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <script>
+        $(document).ready(function () {
+          t396_init('199468814');
+        });
+      </script>
+
+
+
+      <!-- /T396 -->
+    </div>
+
+
+    <div id="rec199481006" class="r t-rec t-rec_pt_0 t-rec_pb_0"
+      style="padding-top:0px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="106"
+      data-bg-color="#f3f3f3">
+      <!-- T004 -->
+      <div class="t004">
+        <div class="t-container ">
+          <div class="t-col t-col_8 t-prefix_2">
+            <div field="text" class="t-text t-text_md  " style>Этот прибор измеряет % насыщения кислородом в
+              организме (показатель SpO2), и может сигнализировать об осложнениях. <br><br> <strong>Уровень
+                насыщения крови кислородом</strong> — это один из основных показателей, по которому судят, нужно ли дать
+              пациенту кислород через маску и нужна ли ему искусственная вентиляция легких. Именно поэтому уровень
+              насыщения крови кислородом учитывают, когда решают, нужна ли пациенту срочная госпитализация. <br></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="rec198536539" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+      style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="191"
+      data-bg-color="#f3f3f3">
+      <!-- T142 -->
+      <div class="t142">
+        <div class="t-container_100">
+          <div class="t142__wrapone">
+            <div class="t142__wraptwo">
+              <a href="#popup:pls1" target class>
+                <div class="t-btn t142__submit " style="color:#ffffff;background-color:#4ab05e;">
+                  Купить пульсоксиметр
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        $(document).ready(function () {
+          t142_checkSize('198536539');
+        });
+        $(window).load(function () {
+          t142_checkSize('198536539');
+        });
+      </script>
+
+
+
+
+      <style>
+        #rec198536539 .t-btn[data-btneffects-first],
+        #rec198536539 .t-btn[data-btneffects-second],
+        #rec198536539 .t-submit[data-btneffects-first],
+        #rec198536539 .t-submit[data-btneffects-second] {
+          position: relative;
+          overflow: hidden;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      </style>
+
+
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+
+        });
+      </script>
+    </div>
+
+
+    <div id="rec198338828" class="r t-rec t-rec_pt_45 t-rec_pb_0"
+      style="padding-top:45px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="576"
+      data-bg-color="#f3f3f3">
+      <!-- T576 -->
+
+      <div class="t576">
+        <div class="t-section__container t-container">
+          <div class="t-col t-col_12">
+            <div class="t-section__topwrapper t-align_center">
+              <div class="t-section__title t-title t-title_xs" field="btitle">Три простых шага в использовании
+                пульсоксиметра</div>
+            </div>
+          </div>
+        </div>
+        <div class="t-container t576__container">
+          <div class="t576__item">
+            <div class="t-width t-width_9 t576__mainblock">
+              <div class="t576__col t-align_center">
+                <div class="t576__linewrapper">
+                  <div class="t576__line" style="width: 2px;"></div>
+                  <div class="t576__circle" style=" border-width: 2px;  background: #000000;">
+                    <div class="t576__number t-name t-name_xs" style>1</div>
+                  </div>
+                </div>
+                <div class="t576__block">
+                  <img class="t576__img t-img" imgfield="li_img__1479137044697"
+                    src="img/1.png" ">            <div class=" t576__title t-name t-name_lg"
+                    field="li_title__1479137044697" style>Шаг 1</div>
+                <div class="t576__descr t-text t-text_xs" field="li_descr__1479137044697" style="font-size:20px;">
+                  Откройте клипсу и вставьте любой палец</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="t576__item">
+          <div class="t-width t-width_9 t576__mainblock">
+            <div class="t576__col t576__flipped t-align_center">
+              <div class="t576__linewrapper">
+                <div class="t576__line" style="width: 2px;"></div>
+                <div class="t576__circle" style=" border-width: 2px;  background: #000000;">
+                  <div class="t576__number t-name t-name_xs" style>2</div>
+                </div>
+              </div>
+              <div class="t576__block-flipped">
+                <img class="t576__img t-img" imgfield="li_img__1479137356907" src="img/2.png" ">            <div class="
+                  t576__title t-name t-name_lg" field="li_title__1479137356907" style>Шаг 2</div>
+              <div class="t576__descr t-text t-text_xs" field="li_descr__1479137356907" style="font-size:20px;">Нажмите
+                на единственную кнопку</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="t576__item">
+        <div class="t-width t-width_9 t576__mainblock">
+          <div class="t576__col t-align_center">
+            <div class="t576__linewrapper">
+              <div class="t576__line" style="width: 2px;"></div>
+              <div class="t576__circle" style=" border-width: 2px;  background: #000000;">
+                <div class="t576__number t-name t-name_xs" style>3</div>
+              </div>
+            </div>
+            <div class="t576__block">
+              <img class="t576__img t-img" imgfield="li_img__1479137790652" src="img/3.png" ">            <div class="
+                t576__title t-name t-name_lg" field="li_title__1479137790652" style>Шаг 3</div>
+            <div class="t576__descr t-text t-text_xs" field="li_descr__1479137790652" style="font-size:20px;">Дождитесь
+              8 секунд, когда показатели пульсоксиметра придут в норму</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      t576_init('198338828');
+    });
+
+    $(window).load(function () {
+      t576_init('198338828');
+    });
+  </script>
+
+  </div>
+
+
+  <div id="rec198743644" class="r t-rec t-rec_pt_45 t-rec_pb_0"
+    style="padding-top:45px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="60"
+    data-bg-color="#f3f3f3">
+    <!-- T050 -->
+    <div class="t050">
+      <div class="t-container t-align_center">
+        <div class="t-col t-col_10 t-prefix_1">
+          <div class="t050__title t-title t-title_xxl" field="title" style="font-size:40px;">Как работает пульсоксиметр?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199103445" class="r t-rec t-rec_pt_60 t-rec_pb_0"
+    style="padding-top:60px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="106"
+    data-bg-color="#f3f3f3">
+    <!-- T004 -->
+    <div class="t004">
+      <div class="t-container ">
+        <div class="t-col t-col_8 t-prefix_2">
+          <div field="text" class="t-text t-text_md  " style><strong>Основной параметр, который определяет
+              пульсоксиметр, — это насыщение (или сатурация) крови кислородом. </strong><br>В составе красных кровяных
+            клеток (эритроцитов) есть белок гемоглобин, который переносит кислород. Количество гемоглобина c кислородом
+            в венах и артериях разное (в артериях больше), именно из-за этого артериальная кровь более яркая, а венозная
+            более темная. <br><br> <strong>Пульсоксиметр определяет насыщенность крови кислородом, исходя из яркости
+              крови</strong><br>Пульсоксиметр, грубо говоря, определяет именно яркость крови и позволяет судить,
+            сколько гемоглобина в артериальной крови связано с кислородом. Эта цифра выражается в процентах, и именно
+            она называется насыщением крови (а точнее гемоглобина) кислородом. <br><br>Если пульсоксиметр показывает
+            96%, это значит, что 96% гемоглобина переносит кислород, а 4% — нет. <br><br><strong>Так же
+              пульсоксиметр HC50D показывает частоту пульса</strong><br> Частота пульса и показатели пульсовой волны
+            позволяют косвенно судить о кровоснабжении внутренних органов.<br></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199109317" class="r t-rec t-rec_pt_0 t-rec_pb_0"
+    style="padding-top:0px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="3" data-bg-color="#f3f3f3">
+    <!-- T107 -->
+    <div class="t107">
+      <div class="t-align_center" itemscope>
+
+        <!-- <img src="img/knopki.jpg" class="t107__widthauto t-img" imgfield="img"> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199105793" class="r t-rec t-rec_pt_0 t-rec_pb_45"
+    style="padding-top:0px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="106"
+    data-bg-color="#f3f3f3">
+    <!-- T004 -->
+    <div class="t004">
+      <div class="t-container ">
+        <div class="t-col t-col_8 t-prefix_2">
+          <div field="text" class="t-text t-text_md  " style><strong>Почему при пандемии коронавируса так важно
+              знать, насколько кровь насыщена кислородом? </strong><br> Уровень насыщения крови кислородом — это один
+            из основных показателей, по которому судят, нужно ли дать пациенту кислород через маску и нужна ли ему
+            искусственная вентиляция легких. Именно поэтому уровень насыщения крови кислородом учитывают, когда решают,
+            нужна ли пациенту срочная госпитализация. <br><br> Коронавирус поражает легкие, а конкретно ткань,
+            выстилающую легочные альвеолы. При тяжелой пневмонии в легких нарушается переход кислорода из воздуха в
+            кровь. <br><br> <strong>ВООЗ рекомендует при новой коронавирусной инфекции давать кислород пациенту, у
+              которого этот показатель ниже 93%</strong>. У здорового человека этот показатель, скорее, будет не ниже
+            95%. Обычно это говорит о том, что ткани организма не страдают от нехватки кислорода и наши легкие
+            достаточно эффективно «передают» кислород в кровь. <br><br> При пандемии коронавирусной инфекции если
+            показатель опускается до 93% и ниже, человеку срочно стоит обратиться в ближайшую больницу или вызывать
+            скорую для дальнейшей проверки.<br><br> <em>Владимир Будянский, анестезиолог-реаниматолог и
+              администратор профессионального сообщества «Неотложные состояния», участник Независимого медицинского
+              сообщества. </em><br></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199119093" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+    style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="479"
+    data-bg-color="#f3f3f3">
+
+
+    <!-- t479 -->
+    <div class="t479">
+      <div class="t-container">
+        <div class="t479__col t-margin_auto t-width t-width_10">
+          <div class="t479__wrapper">
+            <div class="t479__textwrapper t-align_center">
+              <div class="t479__title t-title t-title_lg t-margin_auto" field="title" style="font-size:33px;">Пример
+                использования пульсоксиметра HC50D</div>
+              <div class="t479__descr t-descr t-descr_md t-margin_auto" field="descr" style>Для удобства - одна
+                кнопка, при нажатии на которую пульсоксиметр стартует или изменяет направление дисплея</div>
+            </div>
+            <div class="t479__videowrapper">
+              <div class="unic_video">
+             <!-- <div class="t-video-lazyload" style="height:540px; " data-videolazy-type="youtube"
+              data-videolazy-id="RkTC0f50Lwk" data-blocklazy-id="199119093" data-videolazy-load="false"> -->
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RkTC0f50Lwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="rec199128732" class="r t-rec t-rec_pt_45 t-rec_pb_0"
+    style="padding-top:45px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="60"
+    data-bg-color="#f3f3f3">
+    <!-- T050 -->
+    <div class="t050">
+      <div class="t-container t-align_center">
+        <div class="t-col t-col_10 t-prefix_1">
+          <div class="t050__title t-title t-title_xxl" field="title" style="font-size:35px;">Основные
+            характеристики<br>пульсоксиметра HC50D</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199129550" class="r t-rec t-rec_pt_45 t-rec_pb_0"
+    style="padding-top:45px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="223"
+    data-bg-color="#f3f3f3">
+    <!-- T195 -->
+    <div class="t195">
+      <div class="t-container">
+
+        <div class="t-col t-col_4 t-prefix_2">
+          <div class="t195__text t-text t-text_md" style field="text">
+            <ul>
+              <li> диапазон измерения SpO2: 0%-100%; </li>
+              <li> диапазон измерения частоты пульса: 30-250 ударов в минуту; </li>
+              <li> потребление энергии: менее 25mA; </li>
+              <li> разрешение: 1% для SpO2 і 1 ударов в минуту для частоты пульса; </li>
+              <li> 6 вариантов расположения дисплея </li>
+              <li> индикатор батареек; </li>
+              <li> работает от 2-х батареек ААА (мини-пальчитковые, входят в комплектацию);</li>
+              <li>шнурок в комплекте</li>
+              <li>понятная инструкция на украинском языке</li>
+            </ul><br>
+          </div>
+        </div>
+        <div class="t-col t-col_6  t195__imgsection" itemscope>
+          <img class="t195__img t-img" data-tu-max-width="1200" data-tu-max-height="1200"
+            src="img/photo_2020-05-15_09-.png" imgfield="img"><br>
+          <div class="t195__sectitle t-descr" style field="imgtitle" itemprop="name"></div>
+          <div class="t195__secdescr t-descr" style field="imgdescr" itemprop="description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199486221" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; "
+    data-animationappear="off" data-record-type="396">
+    <!-- T396 -->
+    <style>
+      #rec199486221 .t396__artboard {
+        height: 260px;
+        background-color: #f3f3f3;
+      }
+
+      #rec199486221 .t396__filter {
+        height: 260px;
+      }
+
+      #rec199486221 .t396__carrier {
+        height: 260px;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 1199px) {
+        #rec199486221 .t396__artboard {
+          height: 270px;
+        }
+
+        #rec199486221 .t396__filter {
+          height: 270px;
+        }
+
+        #rec199486221 .t396__carrier {
+          height: 270px;
+          background-attachment: scroll;
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        #rec199486221 .t396__artboard {
+          height: 310px;
+        }
+
+        #rec199486221 .t396__filter {
+          height: 310px;
+        }
+
+        #rec199486221 .t396__carrier {
+          height: 310px;
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        #rec199486221 .t396__artboard {
+          height: 290px;
+        }
+
+        #rec199486221 .t396__filter {
+          height: 290px;
+        }
+
+        #rec199486221 .t396__carrier {
+          height: 290px;
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        #rec199486221 .t396__artboard {
+          height: 310px;
+        }
+
+        #rec199486221 .t396__filter {
+          height: 310px;
+        }
+
+        #rec199486221 .t396__carrier {
+          height: 310px;
+        }
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365467603"] {
+        z-index: 1;
+        top: 58px;
+        left: calc(50% - 600px + 120px);
+        width: 200px;
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365467603"] .tn-atom {
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      @media screen and (max-width: 1199px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365467603"] {
+          top: 65px;
+          left: calc(50% - 480px + 210px);
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365467603"] {
+          top: 100px;
+          left: calc(50% - 320px + 0px);
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365467603"] {
+          top: 80px;
+          left: calc(50% - 240px + 0px);
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365467603"] {
+          top: 120px;
+          left: calc(50% - 160px + 0px);
+          width: 170px;
+        }
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365555067"] {
+        z-index: 2;
+        top: -12px;
+        left: calc(50% - 600px + 310px);
+        width: 22px;
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365555067"] .tn-atom {
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        transform: rotate(225deg);
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      @media screen and (max-width: 1199px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365555067"] {
+          top: -5px;
+          left: calc(50% - 480px + 400px);
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365555067"] {
+          top: 30px;
+          left: calc(50% - 320px + 190px);
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365555067"] {
+          top: 10px;
+          left: calc(50% - 240px + 190px);
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365555067"] {
+          top: 10px;
+          left: calc(50% - 160px + 110px);
+        }
+
+        #rec199486221 .tn-elem[data-elem-id="1591365555067"] .tn-atom {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365616652"] {
+        color: #000000;
+        z-index: 3;
+        top: -2px;
+        left: calc(50% - 600px + 410px);
+        width: 250px;
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365616652"] .tn-atom {
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Roboto', Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      @media screen and (max-width: 1199px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] {
+          top: 5px;
+          left: calc(50% - 480px + 500px);
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] {
+          top: 40px;
+          left: calc(50% - 320px + 290px);
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] {
+          top: 10px;
+          left: calc(50% - 240px + 260px);
+        }
+
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] .tn-atom {
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] {
+          top: 15px;
+          left: calc(50% - 160px + 130px);
+          width: 250px;
+        }
+
+        #rec199486221 .tn-elem[data-elem-id="1591365616652"] .tn-atom {
+          font-size: 16px;
+        }
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365643309"] {
+        color: #000000;
+        z-index: 4;
+        top: 33px;
+        left: calc(50% - 600px + 460px);
+        width: 280px;
+      }
+
+      #rec199486221 .tn-elem[data-elem-id="1591365643309"] .tn-atom {
+        color: #000000;
+        font-size: 18px;
+        font-family: 'Roboto', Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      @media screen and (max-width: 1199px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] {
+          top: 40px;
+          left: calc(50% - 480px + 550px);
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] {
+          top: 75px;
+          left: calc(50% - 320px + 340px);
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] {
+          top: 85px;
+          left: calc(50% - 240px + 240px);
+        }
+
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] .tn-atom {
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] {
+          top: 40px;
+          left: calc(50% - 160px + 130px);
+        }
+
+        #rec199486221 .tn-elem[data-elem-id="1591365643309"] .tn-atom {
+          font-size: 13px;
+        }
+      }
+    </style>
+
+
+
+
+    <div class="t396">
+
+      <div class="t396__artboard" data-artboard-recid="199486221" data-artboard-height="260"
+        data-artboard-height-res-960="270" data-artboard-height-res-640="310" data-artboard-height-res-480="290"
+        data-artboard-height-res-320="310" data-artboard-height_vh data-artboard-valign="center" data-artboard-ovrflw>
+
+        <div class="t396__carrier" data-artboard-recid="199486221"></div>
+
+        <div class="t396__filter" data-artboard-recid="199486221"></div>
+
+
+        <div class="t396__elem tn-elem tn-elem__1994862211591365467603" data-elem-id="1591365467603"
+          data-elem-type="image" data-field-top-value="58" data-field-top-res-960-value="65"
+          data-field-top-res-640-value="100" data-field-top-res-480-value="80" data-field-top-res-320-value="120"
+          data-field-left-value="120" data-field-left-res-960-value="210" data-field-left-res-640-value="0"
+          data-field-left-res-480-value="0" data-field-left-res-320-value="0" data-field-width-value="200"
+          data-field-width-res-320-value="170" data-field-axisy-value="top" data-field-axisx-value="left"
+          data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+          data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+          <div class="tn-atom">
+            <img class="tn-atom__img" src="img/50-png-2.png" imgfield="tn_img_1591365467603">
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="t396__elem tn-elem tn-elem__1994862211591365555067" data-elem-id="1591365555067"
+          data-elem-type="image" data-field-top-value="-12" data-field-top-res-960-value="-5"
+          data-field-top-res-640-value="30" data-field-top-res-480-value="10" data-field-top-res-320-value="10"
+          data-field-left-value="310" data-field-left-res-960-value="400" data-field-left-res-640-value="190"
+          data-field-left-res-480-value="190" data-field-left-res-320-value="110" data-field-width-value="22"
+          data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
+          data-field-topunits-value data-field-leftunits-value data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+
+
+          <div class="tn-atom">
+            <img class="tn-atom__img" src="img/ukazatel-2_1.png" imgfield="tn_img_1591365555067">
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="t396__elem tn-elem tn-elem__1994862211591365616652" data-elem-id="1591365616652"
+          data-elem-type="text" data-field-top-value="-2" data-field-top-res-960-value="5"
+          data-field-top-res-640-value="40" data-field-top-res-480-value="10" data-field-top-res-320-value="15"
+          data-field-left-value="410" data-field-left-res-960-value="500" data-field-left-res-640-value="290"
+          data-field-left-res-480-value="260" data-field-left-res-320-value="130" data-field-width-value="250"
+          data-field-width-res-320-value="250" data-field-axisy-value="top" data-field-axisx-value="left"
+          data-field-container-value="grid" data-field-topunits-value data-field-leftunits-value
+          data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+          <div class="tn-atom" field="tn_text_1591365616652">Силиконовое покрытие</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="t396__elem tn-elem tn-elem__1994862211591365643309" data-elem-id="1591365643309"
+          data-elem-type="text" data-field-top-value="33" data-field-top-res-960-value="40"
+          data-field-top-res-640-value="75" data-field-top-res-480-value="85" data-field-top-res-320-value="40"
+          data-field-left-value="460" data-field-left-res-960-value="550" data-field-left-res-640-value="340"
+          data-field-left-res-480-value="240" data-field-left-res-320-value="130" data-field-width-value="280"
+          data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
+          data-field-topunits-value data-field-leftunits-value data-field-heightunits-value data-field-widthunits-value>
+
+
+
+
+
+          <div class="tn-atom" field="tn_text_1591365643309">• защита от пота<br>
+            • не скользит
+            <br>
+            • мягкое и приятное на ощупь</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <script>
+      $(document).ready(function () {
+        t396_init('199486221');
+      });
+    </script>
+
+
+
+    <!-- /T396 -->
+  </div>
+
+
+  <div id="rec199131321" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+    style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="191"
+    data-bg-color="#f3f3f3">
+    <!-- T142 -->
+    <div class="t142">
+      <div class="t-container_100">
+        <div class="t142__wrapone">
+          <div class="t142__wraptwo">
+            <a href="#popup:pls1" target class>
+              <div class="t-btn t142__submit " style="color:#ffffff;background-color:#4ab05e;">
+                Купить пульсоксиметр
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      $(document).ready(function () {
+        t142_checkSize('199131321');
+      });
+      $(window).load(function () {
+        t142_checkSize('199131321');
+      });
+    </script>
+
+
+
+
+    <style>
+      #rec199131321 .t-btn[data-btneffects-first],
+      #rec199131321 .t-btn[data-btneffects-second],
+      #rec199131321 .t-submit[data-btneffects-first],
+      #rec199131321 .t-submit[data-btneffects-second] {
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    </style>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+
+
+
+      });
+    </script>
+  </div>
+
+
+  <div id="rec198528528" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+    style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="526"
+    data-bg-color="#f3f3f3">
+    <!-- t526 -->
+
+
+
+
+
+
+
+
+    <div class="t526">
+
+      <div class="t-section__container t-container">
+        <div class="t-col t-col_12">
+          <div class="t-section__topwrapper t-align_center">
+            <div class="t-section__title t-title t-title_xs" field="btitle">Для кого подходит пульсоксиметр</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t526__container t-container">
+        <div class="t526__col t-col t-col_3 t-align_center t526__col-mobstyle">
+          <div class="t526__itemwrapper t526__itemwrapper_4">
+            <div class="t526__imgwrapper t-margin_auto">
+              <div class="t526__bgimg t526__img_circle t-margin_auto t-bgimg" bgimgfield="li_img__1478015636342"
+                style="background-image: url(&#x27;img/--15.jpg&#x27;);">
+              </div>
+            </div>
+            <div class="t526__wrappercenter">
+              <div class="t526__persname t-name t-name_lg t526__bottommargin_lg" style
+                field="li_persname__1478015636342">Для всех</div>
+              <div class="t526__perstext t-text t-text_xs" style field="li_text__1478015636342">Все, кто беспокоится
+                о своем здоровье и о безопасности близких в период пандемии, должен иметь пульсокиметр, хотя бы один на
+                всю семью</div>
+            </div>
+          </div>
+        </div>
+        <div class="t526__col t-col t-col_3 t-align_center t526__col-mobstyle">
+          <div class="t526__itemwrapper t526__itemwrapper_4">
+            <div class="t526__imgwrapper t-margin_auto">
+              <div class="t526__bgimg t526__img_circle t-margin_auto t-bgimg" bgimgfield="li_img__1591188512755"
+                style="background-image: url(&#x27;img/--15_2.jpg&#x27;);">
+              </div>
+            </div>
+            <div class="t526__wrappercenter">
+              <div class="t526__persname t-name t-name_lg t526__bottommargin_lg" style
+                field="li_persname__1591188512755">Людям уважаемого возраста</div>
+              <div class="t526__perstext t-text t-text_xs" style field="li_text__1591188512755">Пульсоксиметр
+                особенно нужен для людей постарше, так как помогает вовремя предупредить осложнения при короновирусной
+                пневмонии. Крайне важно иметь людям, у которых тяжелые хронические заболевания</div>
+            </div>
+          </div>
+        </div>
+        <div class="t526__col t-col t-col_3 t-align_center t526__col-mobstyle">
+          <div class="t526__itemwrapper t526__itemwrapper_4">
+            <div class="t526__imgwrapper t-margin_auto">
+              <div class="t526__bgimg t526__img_circle t-margin_auto t-bgimg" bgimgfield="li_img__1478015651388"
+                style="background-image: url(&#x27;img/photo.jpg&#x27;);">
+              </div>
+            </div>
+            <div class="t526__wrappercenter">
+              <div class="t526__persname t-name t-name_lg t526__bottommargin_lg" style
+                field="li_persname__1478015651388">Беременным и детям</div>
+              <div class="t526__perstext t-text t-text_xs" style field="li_text__1478015651388">Пульсоксиметр
+                безопасен для мамы и для их малыша, а так же детям любого возраста</div>
+            </div>
+          </div>
+        </div>
+        <div class="t526__col t-col t-col_3 t-align_center t526__col-mobstyle">
+          <div class="t526__itemwrapper t526__itemwrapper_4">
+            <div class="t526__imgwrapper t-margin_auto">
+              <div class="t526__bgimg t526__img_circle t-margin_auto t-bgimg" bgimgfield="li_img__1478015661335"
+                style="background-image: url(&#x27;img/--15_1.jpg&#x27;);">
+              </div>
+            </div>
+            <div class="t526__wrappercenter">
+              <div class="t526__persname t-name t-name_lg t526__bottommargin_lg" style
+                field="li_persname__1478015661335">Альпинистам и спортсменам</div>
+              <div class="t526__perstext t-text t-text_xs" style field="li_text__1478015661335">Пульсоксиметр
+                обязателен для альпинистов и спортсменов, которые тренируются на высотах с пониженым содержанием
+                кислорода</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+  <div id="rec198751396" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+    style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="798"
+    data-bg-color="#f3f3f3">
+    <!-- t798 -->
+
+    <div class="t798 t798__witharrows">
+      <div class="t-section__container t-container">
+        <div class="t-col t-col_12">
+          <div class="t-section__topwrapper t-align_center">
+            <div class="t-section__title t-title t-title_xs" field="btitle">Отзывы о нашей компании и о наших товарах
+            </div>
+            <div class="t-section__descr t-descr t-descr_xl" field="bdescr">
+              <div style="font-size:14px;" data-customstyle="yes">Тексты отзывов реальные, скопированы с наших отзывов
+                на prom.ua и rozetka.ua. Отзывы не были откорректированы, даже если они были с ошибками</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-slds" style="visibility: hidden;">
+        <div class="t-slds__main t-container">
+          <div class="t-slds__container">
+            <div class="t-slds__items-wrapper  t-slds_animated-none" data-slider-transition="300"
+              data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+
+              <div class="t-slds__item  t-slds__item_active" data-slide-index="1">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1476964743259"
+                        style=" background-image: url(&#x27;img/otziv-prom.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1476964743259" style>Замовляв
+                        пульсоксиметр по акції. Замовив у неділю, зранку в понеділок зателефонували, вечером відправили,
+                        у вівторок був в мене. Ціна, опис товару, наявність актуальна. Компанію рекомендую. Буду
+                        замовляти ще)</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1476964743259" style>Олег</div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="2">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591275507315"
+                        style=" background-image: url(&#x27;img/otziv-rozetka_1.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591275507315" style>Отличный продавец
+                        и качество товара!</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591275507315" style> Анатолий
+                        Мусиенко<br></div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="3">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591274990719"
+                        style=" background-image: url(&#x27;img/otziv-prom.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591274990719" style>Быстро отправили
+                        заказ!В этом магазине ценят своих покупателей!Спасибо!</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591274990719" style>Инна Зоря</div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="4">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591275570826"
+                        style=" background-image: url(&#x27;img/otziv-rozetka.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591275570826" style>Товаром полностью
+                        доволен. Спасибо продавцу за качество своего товара!</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591275570826" style> Сергей <br>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="5">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591275013606"
+                        style=" background-image: url(&#x27;img/otziv-prom.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591275013606" style>Перезвонили
+                        быстро, отправили в тот же день, в отделение приехало уже на следущий день. Пульсоксиметром
+                        довольны.</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591275013606" style>Алексей Губский
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="6">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591275214551"
+                        style=" background-image: url(&#x27;img/otziv-prom.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591275214551" style>Быстро связались,
+                        отправили в тот же день, на следующий уже получил товар.</div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591275214551" style>Василь
+                        Вікторович Дьяконов</div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="t-slds__item  " data-slide-index="7">
+                <div class="t-col t-col_8 t-prefix_2">
+                  <div class="t-slds__wrapper">
+                    <div class="t798__cell t-cell t-valign_top ">
+                      <div class="t798__bgimg t798__img_circle t-bgimg" bgimgfield="li_img__1591275040187"
+                        style=" background-image: url(&#x27;img/otziv-prom.jpg&#x27;);">
+                      </div>
+                    </div>
+                    <div class="t798__cell t-cell t-valign_top t798__cell_padding-left">
+                      <div class="t798__text t-text t-text_md" field="li_text__1591275040187" style>С товаром все
+                        отлично, позвонили и отправили быстро. Несмотря на то что при оформлении заказа было написано -
+                        бесплатная доставка, по факту она оказывается платной. Мелочь, а не приятно. Продавец сказал,
+                        что все доставки за счет клиента, в то же время на сайте до сих висит баннер о бесплатной
+                        доставке :)<br><br><em><span data-redactor-tag="span" style="color: rgb(255, 0, 0);">Наша
+                            реакция: "Ошибка была на нашей стороне. Клиенту компенсировали стоимость доставки на карту,
+                            а так же дали 200 грн скидки на следующую покупку в нашей компании"</span></em></div>
+                      <div class="t798__title t-name t-name_xs" field="li_title__1591275040187" style>Алексей Губский
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="t-slds__arrow_container  ">
+
+
+
+            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+              <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"
+                style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;">
+                  <svg style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>Left</desc>
+                    <polyline fill="none" stroke="#222222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+                      points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+              <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"
+                style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;">
+                  <svg style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>Right</desc>
+                    <polyline fill="none" stroke="#222222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+                      points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="t-slds__bullet_wrapper">
+
+            <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="2">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="3">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="4">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="5">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="6">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+            <div class="t-slds__bullet " data-slide-bullet-for="7">
+              <div class="t-slds__bullet_body" style="width: 6px; height: 6px;background-color: #c7c7c7;"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          t_sldsInit('198751396');
+        });
+      </script>
+
+
+      <style type="text/css">
+        #rec198751396 .t-slds__bullet_active .t-slds__bullet_body {
+          background-color: #222 !important;
+        }
+
+        #rec198751396 .t-slds__bullet:hover .t-slds__bullet_body {
+          background-color: #222 !important;
+        }
+      </style>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+
+        $('.t798').bind('displayChanged', function () {
+          t_slds_updateSlider('198751396');
+        });
+      });
+    </script>
+
+
+
+    <style>
+      .t-review-social-links {
+        line-height: 0px;
+      }
+
+      .t-review-social-links__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: auto;
+      }
+
+      .t-review-social-links {
+        margin-top: 15px;
+      }
+
+      .t-review-social-links__item {
+        padding: 0px 4px;
+      }
+
+      .t-review-social-links__item svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .t-review-social-links__wrapper_round .t-review-social-links__item svg {
+        width: 23px;
+        height: 23px;
+      }
+
+      .t-review-social-links__item:first-child {
+        padding-left: 0px;
+      }
+
+
+      @media screen and (max-width: 960px) {
+        .t-review-social-links__item {
+          margin-bottom: 3px;
+        }
+      }
+
+
+      @media screen and (max-width: 640px) {
+        .t-review-social-links {
+          margin-top: 13px;
+        }
+
+        .t-review-social-links__item {
+          padding: 0px 3px;
+        }
+
+        .t-review-social-links__item svg {
+          width: 17px;
+          height: 17px;
+        }
+
+        .t-review-social-links__wrapper_round .t-review-social-links__item svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+
+
+
+    <script>
+      function t_reviews_social_init(recid) {
+        var rec = $('#rec' + recid);
+        var social = rec.find('.t-review-social-links');
+
+        if (social !== 'undefined' && social.length > 0) {
+          social.each(function () {
+            var $this = $(this);
+            var socialAttr = $this.attr('data-social-links');
+            var socialWrapper = $this.find('.t-review-social-links__wrapper');
+            var links;
+            $this.removeAttr('data-social-links');
+            if (typeof socialAttr !== 'undefined') {
+              links = socialAttr.split(',');
+              links.forEach(function (item) {
+                t_reviews_social_add_item(item, socialWrapper);
+              });
+            }
+          });
+        }
+      }
+
+
+      function t_reviews_social_add_item(item, socialWrapper) {
+        var fill = socialWrapper.attr('data-social-color') || '#000000';
+        var fb = '';
+        fb = '<div class="t-review-social-links__item">';
+        fb += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          fb +=
+            '<svg class="t-review-social-links__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" fill="' +
+            fill +
+            '"><desc>Facebook</desc><path d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.0A5F56FA62"></path></svg>';
+        } else {
+          fb +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M21.1 7.8C22.5 6.5 24.5 6 26.4 6h6v6.3h-3.9c-.8-.1-1.6.6-1.8 1.4v4.2h5.7c-.1 2-.4 4.1-.7 6.1h-5v18h-7.4V24h-3.6v-6h3.6v-5.9c.1-1.7.7-3.3 1.8-4.3z"/></svg>';
+        }
+        fb += '</a>';
+        fb += '</div>';
+
+        var twi = '';
+        twi += '<div class="t-review-social-links__item">';
+        twi += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          twi +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M47.762 24c0 13.121-10.639 23.76-23.761 23.76S.24 37.121.24 24C.24 10.876 10.879.24 24.001.24S47.762 10.876 47.762 24m-9.731-11.625a12.148 12.148 0 0 1-3.87 1.481 6.08 6.08 0 0 0-4.455-1.926 6.095 6.095 0 0 0-6.093 6.095c0 .478.054.941.156 1.388a17.302 17.302 0 0 1-12.559-6.367 6.066 6.066 0 0 0-.825 3.064 6.088 6.088 0 0 0 2.711 5.07 6.075 6.075 0 0 1-2.761-.762v.077c0 2.951 2.1 5.414 4.889 5.975a6.079 6.079 0 0 1-2.752.106 6.104 6.104 0 0 0 5.692 4.232 12.226 12.226 0 0 1-7.567 2.607c-.492 0-.977-.027-1.453-.084a17.241 17.241 0 0 0 9.34 2.736c11.209 0 17.337-9.283 17.337-17.337 0-.263-.004-.527-.017-.789a12.358 12.358 0 0 0 3.039-3.152 12.138 12.138 0 0 1-3.498.958 6.089 6.089 0 0 0 2.686-3.372"/></svg>';
+        } else {
+          twi +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M41.8 12.7c-1.3.6-2.8 1-4.2 1.1 1.5-1 2.6-2.3 3.2-4-1.5.8-2.9 1.5-4.7 1.8-1.3-1.5-3.2-2.3-5.3-2.3-4 0EC7640A97"/></svg>';
+        }
+        twi += '</a>';
+        twi += '</div>';
+
+        var vk = '';
+        vk += '<div class="t-review-social-links__item">';
+        vk += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          vk +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M47.761 24c0 13.121-10.639 23.76-23.76 23.76C10.878 47.76.239 37.121.239 24 .239 10.877 10.878.24 24.001.24c13.121 0 23.76 10.637 23.76 23.76m-12.502 4.999c-2.621-2.433-2.271-2.041.89-6.25 1.923-2.562 2.696-4.126 2.45-4.796-.227-.639-1.64-.469-1.64-.469l-4.71.029s-.351-.048-.609.106c-.249.151-.414.505-.414.505s-.742 1.982-1.734 3.669c-2.094 3.559-2.935 3.747-3.277 3.524-.796-.516-.597-2.068-.597-3.171 0-3.449.522-4.887-1.02-5.259-.511-.124-.887-.205-2.195-.219-1.678-.016-3.101.007-3.904.398-.536.263-.949.847-.697.88.31.041 1.016.192 1.388.699.484.656.464 2.131.464 2.131s.282 4.056-.646 4.561c-.632.347-1.503-.36-3.37-3.588-.958-1.652-1.68-3.481-1.68-3.481s-.14-.344-.392-.527c-.299-.222-.722-.298-.722-.298l-4.469.018s-.674-.003-.919.289c-.219.259-.018.752-.018.752s3.499 8.104 7.573 12.23c3.638 3.784 7.764 3.36 7.764 3.36h1.867s.566.113.854-.189c.265-.288.256-.646.256-.646s-.034-2.512 1.129-2.883c1.15-.36 2.624 2.429 4.188 3.497 1.182.812 2.079.633 2.079.633l4.181-.056s2.186-.136 1.149-1.858c-.197-.139-.715-1.269-3.219-3.591"/></svg>';
+        } else {
+          vk +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M41.2 22.2c.6-.8 1.1-1.5 1.5-2 2.7-3.5 3.8-5.8 3.5-6.8l-.2-.2c-.1-.1-.3-.3-.7-.4-.4-.1-.9-.1-1.5-.1h0912B38AC1"/></svg>';
+        }
+        vk += '</a>';
+        vk += '</div>';
+
+        var ok = '';
+        ok += '<div class="t-review-social-links__item">';
+        ok += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          ok +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="' +
+            fill +
+            '"><path d="M15.001 29.997C6.715 29.997 0 23.28 0 14.997 0 6.714 6.715 0 15.001 0 23.282-.001 30 6.713 30 14.9980879676AB6"/></svg>';
+        } else {
+          ok +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="' +
+            fill +
+            '"><path d="M12.498 6.2a1.932 1.932 0 0 0-1.929 1.93 1.932 1.932 0 0 0 3.861 0 1.932 1.932 0 0 0-1.932-1.93zm0 6012128FAC7"/></svg>';
+        }
+        ok += '</a>';
+        ok += '</div>';
+
+        var behance = '';
+        behance += '<div class="t-review-social-links__item">';
+        behance += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          behance +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-455 257 48 48" fill="' +
+            fill +
+            '"><path d="M-421.541 278.608c-3.095 0-3.526 3.09-3.526 3.09h6.581c0-.001.042-3.09-3.055-3.09zM-436.472 281.697h0D0ABC3A42"/><path d="M-430.984 257C-444.248 257-455 267.75-455 281.014c0 13.263 10.752 24.016 24.016 24.016 13.262 0 24.003C88A4A64"/><path d="M-435.055 276.221c0-2.084-1.417-2.084-1.417-2.084H-442.306v4.471h5.472c.944 0 1.779-.304 1.779-2.387z"/></svg>';
+        } else {
+          behance +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="' +
+            fill +
+            '"><path d="M22.4 7.5h-5.6V6.1h5.6v1.4zm-9.3 5.7c.4.6.5 1.2.5 2s-.2 1.6-.6 2.2c-.3.4-.6.8-1 1.1-.4.3-1 .6-1.6.7-09DE89EA33"/></svg>';
+        }
+        behance += '</a>';
+        behance += '</div>';
+
+        var vimeo = '';
+        vimeo += '<div class="t-review-social-links__item">';
+        vimeo += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          vimeo +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-455 257 48 48" fill="' +
+            fill +
+            '"><path d="M-431 256.971c13.267 0 24.023 10.755 24.023 24.023s-10.755 24.023-24.023 24.023-24.023-10.755-24.02306DBE67AD5"/></svg>';
+        } else {
+          vimeo +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M2.9 16.5l1.6 2s3.2-2.5 4.3-1.3c1.1 1.3 5.2 16.5 6.5 19.3 1.2 2.5 4.5 5.7 8.1 3.4S39 27.4 41.1 15.3s01B97DAA61"/></svg>';
+        }
+        vimeo += '</a>';
+        vimeo += '</div>';
+
+        var youtube = '';
+        youtube += '<div class="t-review-social-links__item">';
+        youtube += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          youtube +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-455 257 48 48" fill="' +
+            fill +
+            '"><path d="M-431 257.013c13.248 0 23.987 10.74 23.987 23.987s-10.74 23.987-23.987 23.987-23.987-10.74-23.987-230C0E96FA0F"/></svg>';
+        } else {
+          youtube +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M43.9 15.3c-.4-3.1-2.2-5-5.3-5.3-3.6-.3-11.4-.5-15-.5-7.3 0-10.6.2-14.1.5-3.3.3-4.8 1.8-5.4 4.9-.4 201C255DA11"/></svg>';
+        }
+        youtube += '</a>';
+        youtube += '</div>';
+
+        var instagram = '';
+        instagram += '<div class="t-review-social-links__item">';
+        instagram += ' <a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          instagram +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="' +
+            fill +
+            '"><path d="M15 11.014a3.986 3.986 0 1 0 .001 7.971A3.986 3.986 0 0 0 15 11.014zm0 6.592A2.604 2.604 0 0 1 12.390DE2B3EAB5"/><path d="M15.002.15C6.798.15.149 6.797.149 15c0 8.201 6.649 14.85 14.853 14.85 8.199 0 14.85-6.648 14.85-14.807C6867A7C"/></svg>';
+        } else {
+          instagram +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="' +
+            fill +
+            '"><path d="M16.396 3.312H8.604c-2.921 0-5.292 2.371-5.292 5.273v7.846c0 2.886 2.371 5.256 5.292 5.256h7.791c2.905CFA86A75" /><path d="M12.5 9.376A3.12 3.12 0 0 0 9.376 12.5a3.12 3.12 0 0 0 3.124 3.124 3.12 3.12 0 0 0 3.124-3.124A3.133 3.133 0 0 0 12.5 9.376z"/></svg>';
+        }
+        instagram += '</a>';
+        instagram += '</div>';
+
+        var pinterest = '';
+        pinterest += '<div class="t-review-social-links__item">';
+        pinterest += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          pinterest +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-455 257 48 48" fill="' +
+            fill +
+            '"><path d="M-407 281c0 13.254-10.746 24-23.999 24-13.257 0-24.003-10.746-24.003-24 0-13.256 10.746-24 24.003-2401D4BB5AA0"/></svg>';
+        } else {
+          pinterest +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M24.9 5.5c4.2 0 7.7 1.3 10.5 3.9s4.1 5.7 4.1 9.2c0 4.6-1.2 8.4-3.5 11.3-2.3 3-5.3 4.5-8.9 4.5-1.2 0-0CA4C45A0B"/></svg>';
+        }
+        pinterest += '</a>';
+        pinterest += '</div>';
+
+        var linkedin = '';
+        linkedin += '<div class="t-review-social-links__item">';
+        linkedin += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          linkedin +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-615 1477 48 48" fill="' +
+            fill +
+            '"><path d="M-566.999 1501c0 13.256-10.746 24-24 24-13.256 0-24.002-10.744-24.002-24 0-13.254 10.746-24 24.002-20060837A20"/></svg>';
+        } else {
+          linkedin +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M42.3 23.1v13.5h-7.9V24c0-3.2-1.1-5.3-4-5.3-2.2 0-3.5 1.5-4 2.9-.2.5-.3 1.2-.3 1.9v13.2h-7.9s.1-21.40A0D0B8AA5"/></svg>';
+        }
+        linkedin += '</a>';
+        linkedin += '</div>';
+
+        var soundcloud = '';
+        soundcloud += '<div class="t-review-social-links__item">';
+        soundcloud += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          soundcloud +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><defs><path id="a" d="M0 0h48v48H0V0z"/></defs><g fill-rule="evenodd"><path d="M38.206 22.171c-.635 0-1.241.129-1.793.36-.369-4.177-3.871-7.453-8.144-7.453a8.28 8.28 0 0 0-2.965.553c-.35.136-.442.275-.446.546v14.709a.545.545 0 0 0 .5.531c.013.002 12.848 0 12.848 0 2.56 0 4.634-2.051 4.634-4.611a4.634 4.634 0 0 0-4.634-4.635zM24.17 16.237a.5.5 0 0 0-.582.043.517.517 0 0 0-.189.392v.053l-.21 10.388.107 1.92.103 1.869a.514.514 0 0 0 .51.505.515.515 0 0 0 .51-.509v.004l.228-3.79-.227-10.44a.517.517 0 0 0-.25-.435zm-1.364 14.72v-.001.001-.002.002zm-.215-13.813a.47.47 0 0 0-.264-.081.486.486 0 0 0-.478.477l-.001.09-.18 9.48.181 3.847.001.016a.48.48 0 0 0 .477.458c.246 0 .248-.054.335-.14a.486.486 0 0 0 .144-.336l.02-.38.181-3.463-.201-9.573a.487.487 0 0 0-.215-.395zm-1.853 1.479a.447.447 0 0 0-.446.444l-.2 8.044.2 3.87c.005.465.2.442.446.442.245 0 .44.023.446-.444v.003l.223-3.87-.223-8.046a.447.447 0 0 0-.446-.443zm-1.577-.273a.416.416 0 0 0-.414.412l-.219 8.349.219 3.895c.005.228.187.41.414.41a.416.416 0 0 0 .413-.412v.002l.246-3.895-.246-8.35a.416.416 0 0 0-.413-.411zm-1.184 12.693v-.002.002zm0-12.5a.385.385 0 0 0-.382-.38.384.384 0 0 0-.381.38l-.238 8.567.238 3.932c.006.21.173.377.381.377a.385.385 0 0 0 .382-.378l.268-3.931-.268-8.568zm-1.935-.069a.354.354 0 0 0-.35.347l-.256 8.288.257 3.957c.006.193.16.346.35.346a.354.354 0 0 0 .349-.347v.002l.29-3.958-.29-8.288a.355.355 0 0 0-.35-.347zm-1.564.691a.322.322 0 0 0-.318.315l-.275 7.65.276 3.998a.321.321 0 0 0 .317.313c.17 0 .31-.138.317-.315v.002l.312-3.999-.312-7.65a.323.323 0 0 0-.317-.314zM12.974 20.6a.29.29 0 0 0-.285.282l-.295 6.226.295 4.023a.29.29 0 0 0 .285.281.292.292 0 0 0 .285-.282v.001l.333-4.023-.333-6.226a.292.292 0 0 0-.285-.282zm-1.264 2.678a.258.258 0 0 0-.253-.248.257.257 0 0 0-.253.25l-.314 3.826.314 4.024c.008.142.117.25.253.25a.259.259 0 0 0 .253-.25l.356-4.024-.356-3.828zm0 7.851v.001zm-1.757-8.366a.226.226 0 0 0-.221.217l-.333 4.126.333 3.99c.009.124.104.217.22.217s.21-.093.221-.216l.4-3.991-.4-4.126c-.01-.123-.105-.217-.22-.217zm-1.493.142c-.1 0-.179.078-.189.185l-.351 4.015.351 3.868c.01.108.09.185.19.185.097 0 .176-.077.188-.184l.4-3.869-.4-4.015c-.012-.107-.091-.185-.189-.185zm-2.873 1.96c-.079 0-.14.06-.151.147l-.276 2.094.276 2.056c.01.086.072.147.15.147s.14-.06.152-.147l.326-2.056-.326-2.095c-.013-.086-.074-.145-.151-.145zM6.98 23.57c-.08 0-.146.064-.157.152l-.25 3.385.25 3.308c.011.088.077.152.157.152s.144-.062.156-.152l.422-3.308-.422-3.385c-.012-.09-.077-.152-.156-.152zM48 24c0 13.255-10.745 24-24 24C10.757 48 0 37.255 0 24 0 10.757 10.757 0 24 0c13.255 0 24 10.757 24 24z"/></g></svg>';
+        } else {
+          soundcloud +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="' +
+            fill +
+            '"><path d="M1.6 24.3c-.2 0-.3.1-.3.3l-.5 6.2.5 6c0 .2.2.3.3.3.2 0 .3-.1.3-.3l.6-6-.6-6.2c0-.2-.1-.3-.3-.3zm3.3 09D7D4DAB2"/></svg>';
+        }
+        soundcloud += '</a>';
+        soundcloud += ' </div>';
+
+        var telegram = '';
+        telegram += '<div class="t-review-social-links__item">';
+        telegram += '<a href="' + item + '" target="_blank">';
+        if (socialWrapper.hasClass('t-review-social-links__wrapper_round')) {
+          telegram +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 60 60" fill="' +
+            fill +
+            '"><path d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.40253437A76"/><path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"/></svg>';
+        } else {
+          telegram +=
+            '<svg class="t-review-social-links__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 60 60" fill="' +
+            fill +
+            '"><path d="M52.5 9L6.1 26.9c-.9.4-.9 1.8 0 2.3L18 34.1l4.4 14.1c.3.8 1.2 1 1.8.5l6.8-6.4L43.9 51c.7.4 1.6 0 1.7-.7l8.4-40c.2-.8-.7-1.6-1.5-1.3zm-28 27.7l-.7 7.3-3.6-11.2L45.5 16l-21 20.7z"/></svg>';
+        }
+        telegram += '</a>';
+        telegram += '</div>';
+
+        if (item.indexOf('facebook') != -1) {
+          socialWrapper.append(fb);
+        }
+
+        if (item.indexOf('twitter') != -1) {
+          socialWrapper.append(twi);
+        }
+
+        if (item.indexOf('vk.com') != -1) {
+          socialWrapper.append(vk);
+        }
+
+        if (item.indexOf('ok.ru') != -1) {
+          socialWrapper.append(ok);
+        }
+
+        if (item.indexOf('behance') != -1) {
+          socialWrapper.append(behance);
+        }
+
+        if (item.indexOf('vimeo') != -1) {
+          socialWrapper.append(vimeo);
+        }
+
+        if (item.indexOf('youtube') != -1) {
+          socialWrapper.append(youtube);
+        }
+
+        if (item.indexOf('instagram') != -1) {
+          socialWrapper.append(instagram);
+        }
+
+        if (item.indexOf('pinterest') != -1) {
+          socialWrapper.append(pinterest);
+        }
+
+        if (item.indexOf('linkedin') != -1) {
+          socialWrapper.append(linkedin);
+        }
+
+        if (item.indexOf('soundcloud') != -1) {
+          socialWrapper.append(soundcloud);
+        }
+
+        if (item.indexOf('telegram') != -1) {
+          socialWrapper.append(telegram);
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        t_reviews_social_init('198751396');
+      });
+    </script>
+
+
+    <style>
+      .t798 .t-review-social-links {
+        margin-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .t798 .t-review-social-links__wrapper_round .t-review-social-links__item svg {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    </style>
+
+  </div>
+
+
+  <div id="rec199102929" class="r t-rec t-rec_pt_45 t-rec_pb_0"
+    style="padding-top:45px;padding-bottom:0px;background-color:#f3f3f3; " data-record-type="60"
+    data-bg-color="#f3f3f3">
+    <!-- T050 -->
+    <div class="t050">
+      <div class="t-container t-align_center">
+        <div class="t-col t-col_10 t-prefix_1">
+          <div class="t050__title t-title t-title_xxl" field="title" style="font-size:40px;">Заключение и декларация
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199079329" class="r t-rec t-rec_pt_0 t-rec_pb_45"
+    style="padding-top:0px;padding-bottom:45px;background-color:#f3f3f3; " data-animationappear="off"
+    data-record-type="667" data-bg-color="#f3f3f3">
+    <!-- t667 -->
+
+
+
+
+    <div class="t667">
+      <div class="t667__container t-container ">
+        <div class="t667__row t667__row_indent-20px t-row">
+          <div class="t667__tile t667__tile_left">
+
+            <div class="t667__bgimg t667__bgimg_2-3 t-bgimg" bgimgfield="gi_img__0" data-zoomable="yes"
+              data-img-zoom-url="tild6162-3035-4030-b130-653531666162/---1.jpg"
+              style="background: url(&#x27;img/---1.jpg&#x27;) center center no-repeat;background-size: cover;">
+            </div>
+          </div>
+          <div class="t667__tile t667__tile_right">
+
+            <div class="t667__bgimg t667__bgimg_2-3 t-bgimg" bgimgfield="gi_img__1" data-zoomable="yes"
+              data-img-zoom-url="tild3763-3366-4238-b236-623432633137/-.jpg"
+              style="background: url(&#x27;img/-.jpg&#x27;) center center no-repeat;background-size: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec198312753" class="r t-rec" style=" " data-animationappear="off" data-record-type="415">
+    <!-- t415 -->
+    <!-- cover -->
+
+
+
+
+
+    <div class="t-cover" id="recorddiv198312753" bgimgfield="img"
+      style="height:100vh; background-image:-webkit-linear-gradient(top, #ccc, #777); background-image:-moz-linear-gradient(top, #ccc, #777); background-image:-o-linear-gradient(top, #ccc, #777); background-image:-ms-linear-gradient(top, #ccc, #777); background-image:linear-gradient(top, #ccc, #777); ">
+
+      <div class="t-cover__carrier" id="coverCarry198312753" data-content-cover-id="198312753"
+        data-content-cover-height="100vh" data-content-cover-parallax
+        style="background-image:url(&#x27;img/poleznye-sovety-dlya.jpg&#x27;);height:100vh;background-attachment:scroll; ">
+      </div>
+
+      <div class="t-cover__filter"
+        style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=&#x27;#4c000000&#x27;, endColorstr=&#x27;#4c000000&#x27;);">
+      </div>
+      <div class="t415">
+        <div class="t-container">
+          <div class="t-width t-width_12 t415__mainblock">
+            <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
+              <div class="t415__content" data-hook-content="covercontent">
+                <div class="t415__textwrapper t-width t-width_12">
+                  <div class="t415__title t-title t-title_md" field="title" style=" ">Предлагаем воспользоваться скидкой
+                    на оригинальный пульсоксиметр HC50D</div>
+                  <div class="t415__descr t-descr t-descr_md" field="descr" style=" font-size:30px;">Время до завершения
+                    скидки:</div>
+                </div>
+                <div id="t415__timer198312753" class="t415__timer">
+                  <div class="t415__col ">
+                    <span class="t415__days t-title t-title_lg t415__number"></span>
+                    <div class="t415__text t-descr t-descr_xxs">Дни</div>
+                  </div>
+                  <div class="t415__col">
+                    <span class="t415__hours t-title t-title_lg t415__number"></span>
+                    <div class="t415__text t-descr t-descr_xxs">Часы</div>
+                  </div>
+                  <div class="t415__col">
+                    <span class="t415__minutes t-title t-title_lg t415__number"></span>
+                    <div class="t415__text t-descr t-descr_xxs">Минуты</div>
+                  </div>
+                  <div class="t415__col">
+                    <span class="t415__seconds t-title t-title_lg t415__number"></span>
+                    <div class="t415__text t-descr t-descr_xxs">Секунды</div>
+                  </div>
+                </div>
+                <div class="t415__buttons">
+                  <div class="t415__descr-second t-descr t-descr_md t-width t-width_12" field="descr2"
+                    style=" font-size:30px;"><del>
+                      <x-oldprice>1590</x-oldprice>
+                      <x-currency>грн</x-currency>
+                    </del> ► <x-newprice>990</x-newprice>
+                    <x-currency>грн</x-currency> <br><span style="font-size: 18px;">Бесплатная
+                      доставка</span>
+                  </div> <a href="#popup:pls1" target class="t415__btn t-btn  "
+                    style="color:#ffffff;background-color:#4ab05e;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;">
+                    <table style="width:100%; height:100%;">
+                      <tr>
+                        <td>Купить пульсоксиметр</td>
+                      </tr>
+                    </table>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        function getTimeRemaining(endtime) {
+          var t = Date.parse(endtime) - Date.parse(new Date());
+          if (t < 0) {
+            var seconds = 0;
+            var minutes = 0;
+            var hours = 0;
+            var days = 0;
+          } else {
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+          }
+
+          return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+          };
+        }
+
+        function initializeClock(id, endtime) {
+          var clock = document.getElementById(id);
+          if (!clock) {
+            console.log('Block with timer not found');
+            return;
+          }
+          var daysSpan = clock.querySelector('.t415__days');
+          var hoursSpan = clock.querySelector('.t415__hours');
+          var minutesSpan = clock.querySelector('.t415__minutes');
+          var secondsSpan = clock.querySelector('.t415__seconds');
+
+          function updateClock() {
+            var t = getTimeRemaining(endtime);
+            if (t.days >= 100) {
+              daysSpan.innerHTML = t.days;
+            } else {
+              daysSpan.innerHTML = ('0' + t.days).slice(-2);
+            }
+
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+            if (t.total <= 0) {
+              clearInterval(timeinterval);
+            }
+          }
+
+          updateClock();
+          var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline_date = $.trim("2020-07-07");
+        var deadline_time = $.trim("12:00");
+        var deadline_utc = $.trim("+03:00");
+
+        if (deadline_utc.charAt(0) !== "-" && deadline_utc.charAt(0) !== "+") {
+          deadline_utc = "+" + deadline_utc;
+        }
+
+        var deadline = new Date(deadline_date + 'T' + ("0" + deadline_time).slice(-5) + deadline_utc);
+
+        initializeClock('t415__timer198312753', deadline);
+      });
+    </script>
+
+
+    <style>
+      #rec198312753 .t-btn[data-btneffects-first],
+      #rec198312753 .t-btn[data-btneffects-second],
+      #rec198312753 .t-submit[data-btneffects-first],
+      #rec198312753 .t-submit[data-btneffects-second] {
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    </style>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+
+
+
+      });
+    </script>
+  </div>
+
+
+  <div id="rec198518239" class="r t-rec" style=" " data-animationappear="off" data-record-type="756">
+    <!-- t756 -->
+
+    <div class="t756">
+      <div class="t-popup" data-tooltip-hook="#popup:pls1">
+        <div class="t-popup__close">
+          <div class="t-popup__close-wrapper">
+            <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                  x="10.3137085" y="-3.6862915" width="2" height="30" />
+                <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                  x="10.3137085" y="-3.6862915" width="2" height="30" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="t-popup__container t-popup__container-static t-width t-width_8 js-product js-store-product js-store-product_single"
+          data-product-gen-uid="390515491358">
+          <div class="t756__container">
+            <!-- gallery -->
+
+
+            <div class="t756__gallery ">
+
+
+
+
+              <div class="t-slds" style="visibility: hidden;">
+                <div class="t-slds__main">
+                  <div class="t-slds__container" style="background-color:#f5f5f5;">
+                    <div class="t-slds__items-wrapper t-slds_animated-fast " data-slider-transition="300"
+                      data-slider-with-cycle="true" data-slider-correct-height="true"
+                      data-auto-correct-mobile-width="false">
+                      <div class="t-slds__item  t-slds__item_active" data-slide-index="1">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0"
+                            data-zoomable="yes" data-img-zoom-url="tild3063-6535-4630-b237-353062323036/50D---.jpg">
+                            <div class="t-slds__bgimg  t-bgimg js-product-img"
+                              style="padding-bottom:66%; background-image: url(&#x27;img/50D---.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="2">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__1" data-zoom-target="1"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild3332-6139-4763-a536-353331363361/50D_photos_v2_x4-2.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/50D_photos_v2_x4-2.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="3">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__2" data-zoom-target="2"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild3366-6138-4035-a435-376434353763/photo_2020-05-15_09-.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/photo_2020-05-15_09-.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="4">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__3" data-zoom-target="3"
+                            data-zoomable="yes" data-img-zoom-url="tild3039-3164-4364-a565-633539326438/knopki-2.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/knopki-2.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="5">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__4" data-zoom-target="4"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild6437-6562-4635-a466-653030633936/napravlinia.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/napravlinia.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="6">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__5" data-zoom-target="5"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild3366-6364-4330-b463-623330646338/IMG_20200519_130426.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/IMG_20200519_130426.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="7">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__6" data-zoom-target="6"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild3537-3137-4337-b633-633463323763/IMG_20200519_130513.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/IMG_20200519_130513.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__item  " data-slide-index="8">
+                        <div class="t-slds__wrapper">
+
+                          <div class="t-slds__imgwrapper" bgimgfield="gi_img__7" data-zoom-target="7"
+                            data-zoomable="yes"
+                            data-img-zoom-url="tild3532-6630-4336-b335-386332306262/IMG_20200519_130559.jpg">
+                            <div class="t-slds__bgimg  t-bgimg "
+                              style="padding-bottom:66%; background-image: url(&#x27;img/IMG_20200519_130559.jpg&#x27;);">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="t-slds__arrow_container ">
+
+
+
+                      <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+                        <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"
+                          style="width: 30px; height: 30px;background-color: rgba(255,255,255,1);">
+                          <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 7px;">
+                            <svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <desc>Left</desc>
+                              <polyline fill="none" stroke="#222222" stroke-linejoin="butt" stroke-linecap="butt"
+                                stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+                        <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"
+                          style="width: 30px; height: 30px;background-color: rgba(255,255,255,1);">
+                          <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 7px;">
+                            <svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <desc>Right</desc>
+                              <polyline fill="none" stroke="#222222" stroke-linejoin="butt" stroke-linecap="butt"
+                                stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <style type="text/css">
+                #rec198518239 .t-slds__bullet_active .t-slds__bullet_body {
+                  background-color: #222 !important;
+                }
+
+                #rec198518239 .t-slds__bullet:hover .t-slds__bullet_body {
+                  background-color: #222 !important;
+                }
+              </style>
+
+            </div>
+            <!--/gallery -->
+            <div class="t756__wrapper  t-align_left">
+              <div class="t756__title-wrapper">
+                <div class="t756__title t-heading t-heading_lg js-product-name" style>Пульсоксиметр HC50D + 2
+                  батарейки, с бесплатной доставкой</div>
+                <div class="t756__title_small t-descr t-descr_sm js-product-sku js-store-prod-sku" style></div>
+              </div>
+              <div class="t756__price-wrapper js-store-price-wrapper">
+                <div class="t756__price t756__price-item t-name t-name_xl js-store-prod-price"
+                  style="margin-right:5px;">
+                  <div class="t756__price-value js-product-price js-store-prod-price-val" field="price"
+                    data-redactor-toolbar="no">
+                    <x-newprice>990</x-newprice>
+                  </div>
+                  <div class="t756__price-currency">грн.</div>
+                </div>
+                <div class="t756__price_old t756__price-item t-name t-name_xl js-store-prod-price-old" style>
+                  <div class="t756__price-value js-store-prod-price-old-val" data-redactor-toolbar="no"
+                    field="price_old">
+                    <x-oldprice>1590</x-oldprice>
+                  </div>
+                  <div class="t756__price-currency">
+                    <x-currency>грн</x-currency>
+                  </div>
+                </div>
+              </div>
+
+              <center>
+                <form action method="POST" id="unic_form">
+                  <input type="text" placeholder="Ваше имя" name="name " required>
+                  <input type="tel" placeholder="Ваш телефон" name="phone" required>
+                  <div class="t756__btn-wrapper ">
+                    <button class="t756__btn t-btn  " type="submit"
+                      style="color:#ffffff;background-color:#4ab05e;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;">
+                      <table style="width:100%; height:100%;">
+                        <tr>
+                          <td class="js-store-prod-buy-btn-txt">Оформить покупку</td>
+                        </tr>
+                      </table>
+                    </button>
+                  </div>
+                </form>
+              </center>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        t756_init('198518239');
+      });
+    </script>
+
+
+
+    <style type="text/css">
+      #rec198518239 .t-slds__bullet_active .t-slds__bullet_body {
+        background-color: #222 !important;
+      }
+
+      #rec198518239 .t-slds__bullet:hover .t-slds__bullet_body {
+        background-color: #222 !important;
+      }
+    </style>
+
+
+
+
+  </div>
+
+
+  <div id="rec198682147" class="r t-rec" style=" " data-animationappear="off" data-record-type="217">
+    <div class="t190" style="position:fixed; z-index:100000; bottom:60px; right:30px; min-height:30px;">
+      <a href="javascript:t190_scrollToTop();">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+          xml:space="preserve">
+          <path style="fill:#000000;" d="M47.875,24c0,13.186-10.689,23.875-23.875,23.875S0.125,37.186,0.125,24S10.814,0.125,24,0.125
+      S47.875,10.814,47.875,24z M25.503,16.881l6.994,7.049c0.583,0.588,1.532,0.592,2.121,0.008c0.588-0.583,0.592-1.533,0.008-2.122
+      l-9.562-9.637c-0.281-0.283-0.664-0.443-1.063-0.443c0,0,0,0-0.001,0c-0.399,0-0.782,0.159-1.063,0.442l-9.591,9.637
+      c-0.584,0.587-0.583,1.537,0.005,2.121c0.292,0.292,0.675,0.437,1.058,0.437c0.385,0,0.77-0.147,1.063-0.442L22.5,16.87v19.163
+      c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5L25.503,16.881z" />
+        </svg>
+
+
+
+      </a>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.t190').css("display", "none");
+        $(window).bind('scroll', t_throttle(function () {
+          if ($(window).scrollTop() > $(window).height()) {
+            if ($('.t190').css('display') == "none") {
+              $('.t190').css("display", "block");
+            }
+          } else {
+            if ($('.t190').css('display') == "block") {
+              $('.t190').css("display", "none");
+            }
+          }
+        }, 200));
+      });
+    </script>
+
+  </div>
+
+
+  <div id="rec199137101" class="r t-rec t-rec_pt_45 t-rec_pb_45"
+    style="padding-top:45px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="60"
+    data-bg-color="#f3f3f3">
+    <!-- T050 -->
+    <div class="t050">
+      <div class="t-container t-align_center">
+        <div class="t-col t-col_10 t-prefix_1">
+          <div class="t050__title t-title t-title_xxl" field="title" style="font-size:40px;">Доставка, оплата, гарантия
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec199160502" class="r t-rec t-rec_pt_0 t-rec_pb_45"
+    style="padding-top:0px;padding-bottom:45px;background-color:#f3f3f3; " data-record-type="106"
+    data-bg-color="#f3f3f3">
+    <!-- T004 -->
+    <div class="t004">
+      <div class="t-container ">
+        <div class="t-col t-col_8 t-prefix_2">
+          <div field="text" class="t-text t-text_md  " style><strong>Варианты <span
+                data-redactor-tag="span">бесплатной</span> доставки</strong><br>• «Новая почта» - при заказе до 14:00,
+            отправка в тот же день, кроме выходных<br>• «Justin» - отправляем раз в неделю, по
+            средам<br><br><strong>Адресная доставка платная</strong> через «Новую почту» - согласно тарифам «Новой
+            почты»<br><br><strong>Варианты оплаты</strong><br>• наложенным платежом;<br>• картой на сайте во
+            время покупки;<br>• перечислением на нашу карту Приватбанка<br><br>Вы можете заказать наложенным
+            платежом и на почте проверить работоспособность с помощью батареек, которые идут в
+            комплекте<br><br><strong>Возврат в течении 14 дней бесплатно</strong>. Если вас не устроит
+            пульсоксиметр, мы вернем вам деньги и оплатим доставку в нашу сторону. <br><br><strong>Гарантия 6
+              месяцев</strong>. Сервисного центра в Украине нет. Если будет поломка - заменим на новый или на
+            аналогичную модель.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="rec198675030" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; "
+    data-animationappear="off" data-record-type="455">
+    <!-- t455 -->
+    <!-- cover -->
+
+
+
+
+
+    <style>
+      #rec198675030 .t455__svgwrapper:before {
+        background: #525252;
+      }
+    </style>
+
+
+    <div class="t-cover" id="recorddiv198675030" bgimgfield="img"
+      style="height:700px; background-image:-webkit-linear-gradient(top, #ccc, #777); background-image:-moz-linear-gradient(top, #ccc, #777); background-image:-o-linear-gradient(top, #ccc, #777); background-image:-ms-linear-gradient(top, #ccc, #777); background-image:linear-gradient(top, #ccc, #777); ">
+
+      <div class="t-cover__carrier" id="coverCarry198675030"
+        style="background-image:url(&#x27;img/photo1461773518188b3e86f98242f.jpg&#x27;);height:700px;background-attachment:scroll; ">
+      </div>
+
+      <div class="t-cover__filter"
+        style="height:700px;background-color:#000;filter: alpha(opacity:60); KHTMLOpacity: 0.60; MozOpacity: 0.60; opacity: 0.60;">
+      </div>
+      <div class="t455">
+        <div class="t-container">
+          <div class="t-cover__wrapper t-valign_middle" style="height:;">
+            <div class="t455__wrapper" data-hook-content="covercontent">
+              <div class="t455__textwrapper t-width t-width_7">
+                <div class="t455__title t-title t-title_md" style field="title">Наши контакты</div>
+                <center style="margin: 30px auto; color: white; line-height: 1.6; font-size: 20px">
+                  <p>АКЦИОНЕРНОЕ ОБЩЕСТВО "ГЕКТОР ТРЕЙД" ОГРН: 1187746036499 ИНН: 7725415439 КПП: 772301001</p>
+                  <p>115088, ГОРОД МОСКВА, УЛИЦА ЮЖНОПОРТОВАЯ, ДОМ 15, СТРОЕНИЕ 4А, ЭТ 3 КОМ 6</p>
+
+
+                  <p class="tlight-link">
+                    <!--        <a class="nav-link" target="_blank" href="-->
+                    <?//= $default_main_site ?>
+                    <!--">Партнёрская программа TLight </a>-->
+                  </p>
+
+
+                  <p class="conf-link doclinks">
+                    <a class="nav-link" href onclick="window.open('/policy2.php'); return false;">Политика
+                      конфиденциальности </a>
+                  </p>
+
+                  <!--       <p class="policy-link doclinks"> -->
+                  <!--         <a class="nav-link"  href="" onclick="window.open('/policy2.php'); return false;">Условия оформления заказа</a> -->
+                  <!--       </p> -->
+
+
+                </center>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <div id="rec198683527" class="r t-rec" style=" " data-record-type="270">
+    <div class="t270"></div>
+    <script>
+      $(document).ready(function () {
+        var hash = window.location.hash;
+
+
+
+        setTimeout(function () {
+          var curPath = window.location.pathname;
+          var curFullPath = window.location.origin + curPath;
+          $('a[href^="#"]:not([href="#"],.carousel-control,.t-carousel__control,[href^="#price"],[href^="#popup"],[href^="#prodpopup"],[href^="#order"],a[href^="#!"]),a[href^="' +
+            curPath + '#"]:not(a[href*="#!/tproduct"]),a[href^="' + curFullPath +
+            '#"]:not(a[href*="#!/tproduct"])').click(function (e) {
+              var hash = this.hash.trim();
+              try {
+                target = $(hash);
+              } catch (event) {
+                console.log("Exception t270: " + event.message);
+                return true;
+              }
+              if (target.length == 0) {
+                target = $('a[name="' + hash.substr(1) + '"]');
+                if (target.length == 0) {
+                  return true;
+                }
+              }
+              e.preventDefault();
+
+
+              t270_scroll(hash, -3);
+
+            });
+
+
+
+        }, 500);
+      });
+    </script>
+
+  </div>
+
+  </div>
+  <!--/allrecords-->
+
+  <style>
+    #unic_form select {
+      width: 172px;
+      height: 50px;
+
+    }
+
+    #unic_form input {
+      width: 150px;
+      height: 30px;
+      padding: 10px;
+
+    }
+
+    .unic_video {
+      height: 560px;
+    }
+
+    @media (max-width: 640px) {
+      #unic_form select {
+        width: 90%;
+        height: 60px;
+        padding: 0px;
+        margin-bottom: 20px;
+
+      }
+
+      #unic_form input {
+        width: 90%;
+        height: 50px;
+        padding: 5px;
+        margin-bottom: 20px;
+
+      }
+
+      .unic_video {
+        height: 100px;
+      }
+    }
+  </style>
+
+</body>
+
+</html>
