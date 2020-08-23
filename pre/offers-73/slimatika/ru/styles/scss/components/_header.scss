@@ -1,0 +1,97 @@
+.header {
+  @include flex(column, center);
+  z-index: 1;
+
+  .top {
+    background-image: url(../../../img/head.png);
+    background-size: cover;
+    background-color: #343434;
+    position: relative;
+    @include desctop {
+      background-position: center right;
+    }
+
+    @include mob {
+      background-image: none;
+    }
+  }
+
+  .top,
+  .bottem {
+    background-color: #343434;
+  }
+
+  .bottem {
+    @include desctop {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin: auto;
+    max-width: $content__width;
+    width: 100%;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    position: relative;
+    &--top {
+      @include flex(column, center, center);
+      padding-top: 36px;
+      padding-bottom: 36px;
+      @include mob {
+        padding: 18px;
+      }
+    }
+    &--bottem {
+      @include flex(row);
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:nth-of-type(1) {
+          margin-left: 0;
+        }
+      }
+      p {
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+  &__ava {
+    max-width: 186px;
+    @include mob {
+      max-width: 100px;
+    }
+  }
+  &__title {
+    margin: 10px 0 0 0;
+    text-shadow: 0px 6.9901px 6.9901px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    @include mob {
+      font-size: 30px;
+    }
+    @include min {
+      font-size: 20px;
+    }
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    z-index: 2;
+    left: 0;
+    @include desctop {
+      display: block;
+    }
+  }
+}
