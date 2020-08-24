@@ -1,0 +1,121 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  height: 100%;
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @include content();
+  @media (max-width: 400px) {
+    padding: 0 0.6rem;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.25;
+  margin-top: 0;
+  & a {
+    color: #000;
+  }
+}
+
+
+.img {
+  position: relative;
+  @include flex(column, center, center);
+  &.center {
+    margin: 0.8rem auto;
+  }
+
+  p {
+    color: #707070;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    max-width: 390px;
+    text-align: center;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: none;
+  animation: show 0.4s ease;
+
+  &.active {
+    display: block;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+
+  li {
+    font-style: italic;
+  }
+}
+.row {
+  @include flex(row, center, center);
+  max-width: 35rem;
+  margin: auto;
+  img {
+    &:last-child {
+      margin-left: 1.5rem;
+    }
+  }
+  @media (max-width: 910px) {
+    max-width: 30rem;
+    margin: auto;
+    @include flex(column, center, center);
+    img {
+      width: 100%;
+      &:last-child {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+.firse {
+  img {
+    max-width: 320px;
+  }
+}
