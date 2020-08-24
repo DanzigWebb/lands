@@ -2652,3 +2652,28 @@ textarea.w-select {
   top: 60%;
 }
 
+body .owl-nav {
+  position: absolute;
+  font-size: 4rem;
+  padding: 0 2rem;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+
+.rev-content {
+  position: absolute;
+  left: 4rem;
+  top: 220px;
+  right: 4rem;
+  font-size: 1.1rem;
+}
+
+.policy_wrap {
+  padding: 1rem;
+  display: grid;
+  text-align: center;
+  
+}
