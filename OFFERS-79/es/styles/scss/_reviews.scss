@@ -1,0 +1,78 @@
+.reviews {
+  position: relative;
+  &__item {
+    @include flex(column, center, center);
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    width: 4.2rem;
+    margin: auto;
+    background: #ffffff;
+  }
+  .top {
+    position: relative;
+    @include flex(column, center, center);
+    .name {
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      background: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 0.24rem;
+      padding: 0.03rem 0.27rem;
+    }
+  }
+  .bottom {
+    padding: 0.27rem 0.2rem 0.12rem;
+    font-size: 0.18rem;
+    font-weight: 500;
+    @include flex(column, center, center);
+    .rating {
+      @include flex(column, center, center);
+      img {
+        width: 1.53rem;
+      }
+      b{
+        font-size: 0.24rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    right: 0;
+    bottom: 0.78rem;
+    letter-spacing: -0.02rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    @include flex(row, center, center);
+  }
+}
+.owl-carousel {
+  .reviews__item {
+    .ava {
+      width: 4.2rem;
+    }
+  }
+}
+.owl-carousel {
+  .owl-nav {
+    padding-top: 0.3rem;
+    width: 2.89rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      img {
+        width: 0.7rem;
+      }
+    }
+  }
+}
