@@ -1,0 +1,102 @@
+.header {
+  padding: 1rem 0;
+  padding-bottom: 0px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include mob {
+    padding-right: 0.8rem;
+  }
+
+  &__wrapper {
+    @include gridTemplate;
+    align-items: center;
+
+    @include tablet {
+      @include flex(row, space-between, center);
+    }
+  }
+
+  .container {
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    @include flex(row, space-between, center);
+    img {
+      @include min {
+        max-width: 100px;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    @include tablet {
+      display: none;
+    }
+
+    &:before {
+      content: url(../../img/search.svg);
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) translateX(50%);
+    }
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 750px;
+    background: #f3f1ed;
+    border-radius: 30px;
+    height: 44px;
+    border: none;
+    outline: none;
+    padding: 0 3rem;
+    font-weight: bold;
+    font-size: 16px;
+    &::placeholder {
+      color: #d4d4d4;
+    }
+  }
+
+  &__socials {
+    @include flex(row, flex-end, center);
+    a {
+      padding: 0 0.7rem;
+      img {
+        @include mob {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  &__mob {
+    @include hideOnTablet;
+    margin-right: 1rem;
+
+    img {
+      @include min {
+        max-width: 40px;
+      }
+    }
+  }
+}
