@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="styles/css/main.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+
+        <div class="header__logo">
+
+          <div class="header__mob sidebar-trigger">
+            <img src="img/mob.svg" alt="">
+          </div>
+
+          <img src="img/logo.svg" alt="">
+        </div>
+
+        <div class="header__content">
+          <div class="header__search">
+            <input type="text" placeholder="Buscar" class="header__input">
+          </div>
+          <div class="header__socials">
+            <a href=""><img src="img/soc1.svg" alt=""></a>
+            <a href=""><img src="img/soc2.svg" alt=""></a>
+            <a href=""><img src="img/soc3.svg" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__wrapper">
+        <div class="sidebar">
+          <ul>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Adelgazar</a></li>
+            <li><a href="">Tendencias en alimentación</a></li>
+            <li><a href="">Artículos</a></li>
+            <li><a href="">Noticias</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h2 class="content__title">Blogs según sus intereses</h2>
+
+          <div class="news">
+            <div class="news__grid">
+              <a href="" class="news__item" style="background-image: url(img/news1.png)">
+                <h4 class="news__title">Диента Бассета: 1 кг авокадо в день</h4>
+                <div class="news__action">
+                  <img src="img/down.svg" alt="">
+                  <img src="img/up.svg" alt="">
+                </div>
+              </a>
+              <a href="" class="news__item" style="background-image: url(img/news2.png)">
+                <h4 class="news__title">Йога для полных - опасно?</h4>
+                <div class="news__action">
+                  <img src="img/down.svg" alt="">
+                  <img src="img/up.svg" alt="">
+                </div>
+              </a>
+              <a href="" class="news__item" style="background-image: url(img/news3.png)">
+                <h4 class="news__title">Кристин Фанг. История, которой я горжусь</h4>
+                <div class="news__action">
+                  <img src="img/down.svg" alt="">
+                  <img src="img/up.svg" alt="">
+                </div>
+              </a>
+              <a href="" class="news__item big-left" style="background-image: url(img/news4.png)">
+                <h4 class="news__title">После карантина сложно войти в ритм? 3 совета</h4>
+                <div class="news__action">
+                  <img src="img/down.svg" alt="">
+                  <img src="img/up.svg" alt="">
+                </div>
+              </a>
+              <a href="" class="news__item" style="background-image: url(img/news5.png)">
+                <h4 class="news__title">Я готовлю самые полезные бутерброды</h4>
+                <div class="news__action">
+                  <img src="img/down.svg" alt="">
+                  <img src="img/up.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <footer class="footer">
+            <div class="container">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id vitae repellat laborum nemo possimus unde, dolorem in incidunt sint?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iste beatae reprehenderit aut molestias, reiciendis, necessitatibus porro eveniet delectus veniam distinctio ipsa in. Delectus.
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="overlay"></div>
+
+  <script src="js/common.js"></script>
+
+  <script>
+    document.querySelectorAll('a').forEach(link => link.setAttribute('href', './blog.html'))
+  </script>
+
+</html>
