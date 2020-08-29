@@ -70,6 +70,10 @@
       @include transition;
       background-color: transparent;
       z-index: 0;
+
+      @include mob {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
     }
 
     &:hover {
@@ -94,8 +98,13 @@
   width: 100%;
 
   @include flex(column, center, center);
-
   @include transition;
+
+  @include mob {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
 
   h4 {
     font-weight: 600;
