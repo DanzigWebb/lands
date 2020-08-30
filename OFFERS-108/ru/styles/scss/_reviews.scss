@@ -1,0 +1,33 @@
+.reviews {
+  &__item {
+    width: 4.4rem;
+    margin: 0.36rem auto;
+    background: #ffffff;
+    font-weight: normal;
+    box-shadow: 0px 10px 20px rgba(171, 170, 170, 0.3);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0.4rem 0.2rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.5rem;
+    .header{
+      margin:0 auto;
+      width: min-content;
+      margin-bottom: 0.25rem;
+      box-sizing: border-box;
+    .box{
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1.4rem minmax(1.16rem,2rem);
+      grid-column-gap: 0.3rem;
+      b{
+        font-size: 0.24rem;
+        display: block;
+      }
+      span{
+        color: #FE3315;
+      }
+    }
+    }
+  }
+}

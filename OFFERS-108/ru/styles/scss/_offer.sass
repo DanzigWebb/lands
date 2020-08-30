@@ -1,0 +1,87 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+  -moz-appearance: number-input
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+form
+  box-sizing: border-box
+  margin: auto
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding-bottom: 0.4rem
+input, textarea
+  height: .9rem
+  width: 100%
+  padding-left: 1.24rem
+  box-sizing: border-box
+  border-radius: 10px
+  font-size: 0.22rem
+  color: #1A3157
+  font-weight: bold
+  background: rgba(255, 255, 255, 1)
+  border: 0.01rem solid #E0E0E0
+  margin: 0 auto
+  margin-bottom: 0.4rem
+  background: #FFFFFF
+  box-shadow: 0px 10px 25px rgba(171, 170, 170, 0.2)
+  &:focus
+    border: 0.01rem solid #E0E0E0
+    border-image: linear-gradient(180deg, #ffe344 0%, #fd602a 100%)
+    border-image-slice: 1
+    border-radius: 0px
+input::placeholder
+  font-size: 0.22rem
+  font-family: inherit
+  font-weight: normal
+
+
+.input-wrap img 
+    position: absolute
+    left: 0.3rem
+    top: 50%
+    transform: translateY(-110%)
+    width: 0.33rem
+
+.input-wrap
+  position: relative
+  width: 4rem
+  &:nth-last-child(2)
+    img
+      width: 0.3rem
+    
+.input-wrap::before
+    content: ''
+    position: absolute
+    right: 3.06rem
+    top: 0.2rem
+    height: 0.5rem
+    width: 1px
+    background: linear-gradient(180deg, #ffe344 0%, #fd602a 100%)
+// ========================>
+// policy
+// <=======================
+.policy_wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  min-height: 1rem
+  background-color: #3b3c3d
+  font-size: 0.16rem
+  color: #fff
+  text-align: center
+  a
+    color: #7c7e86
