@@ -85,6 +85,7 @@
     font-size: 0.18rem;
     @include flex(row);
     align-items: end;
+    line-height: 100%;
     position: relative;
     p {
       margin: 0;
@@ -210,6 +211,9 @@
       width: 2.29rem;
       margin-bottom: 0;
       margin-top: 0.12rem;
+      b{
+        font-weight: 500;
+      }
     }
     b {
       width: 2.73rem;
