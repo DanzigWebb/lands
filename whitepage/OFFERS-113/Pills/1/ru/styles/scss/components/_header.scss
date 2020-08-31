@@ -1,0 +1,18 @@
+.header {
+  height: 76px;
+  @include flex(row, $item: center);
+  background-color: #313131;
+  background-image: url(../../../img/back_headr.png);
+  &__wrapper {
+    width: 100%;
+    @include flex(row, space-between, center);
+  }
+
+  &__basket {
+    @include flex(row, center, center);
+    color: #fff;
+    img {
+      padding-right: 10px;
+    }
+  }
+}

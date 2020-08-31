@@ -1,0 +1,40 @@
+.header {
+  height: 60px;
+  @include flex(row, $item: center);
+  background-color: #393e41;
+
+  &__wrapper {
+    width: 100%;
+    @include flex(row, center, center);
+    p {
+      color: #fff;
+      margin: 0;
+      b {
+        margin-right: 10px;
+      }
+      @include mob {
+        font-size: 16px;
+      }
+    }
+    @include tablet {
+      span {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    color: #ffbe17;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 43px;
+    @include tablet {
+      display: none;
+    }
+  }
+  @include min {
+    height: 40px;
+    p {
+      font-size: 14px;
+    }
+  }
+}
