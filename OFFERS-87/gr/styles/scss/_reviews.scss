@@ -1,0 +1,27 @@
+.reviews {
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 4.2rem;
+    margin: 0.25rem auto;
+    box-sizing: border-box;
+    padding: 0.3rem 0.2rem 0.54rem;
+  }
+  &__header {
+    @include flex(row);
+    padding-bottom: 0.3rem;
+    .text {
+      margin-left: 0.2rem;
+      @include flex(column, center);
+    }
+  }
+  &__comment {
+    font-weight: 500;
+    font-size: 0.18rem;
+    color: #272727;
+    margin-bottom: 0;
+  }
+}
+.owl-carousel .owl-item .reviews__header img {
+  width: 0.66rem;
+}
