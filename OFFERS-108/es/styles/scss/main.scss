@@ -154,6 +154,7 @@
     grid-template-columns: 2.54rem 1.78rem;
     font-weight: normal;
     .item {
+      font-size: 0.18rem;
       &--2 {
         grid-row: 3/5;
         grid-column: 2/3;
