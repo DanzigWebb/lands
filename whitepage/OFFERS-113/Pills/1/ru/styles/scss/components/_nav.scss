@@ -14,7 +14,29 @@
     }
   }
   @include mob {
-    display: none;
-    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    z-index: 10;
+    max-width: 200px;
+    width: 100%;
+    background-color: #fff;
+    @include transition;
+    padding: 1rem;
+    &__container {
+      flex-direction: column;
+      height: 200px;
+
+      width: 100%;
+      justify-content: space-around;
+      padding: 0;
+      font-size: 25px;
+    }
+  }
+
+  &.active {
+    transform: translateX(0);
   }
 }

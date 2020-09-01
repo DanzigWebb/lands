@@ -3,24 +3,24 @@ window.onload = function () {
   newsItemsAutoHeight()
 }
 
-function newsItemsAutoHeight() {
-  const items = document.querySelectorAll('.products__item')
-  const [first] = items
-
-  setHeight()
-
-  window.addEventListener('resize', setHeight)
-
-  function setHeight() {
-    items.forEach(item => item.style.height = first.offsetWidth + 'px')
-  }
-}
+//function newsItemsAutoHeight() {
+//  const items = document.querySelectorAll('.products__item')
+//  const [first] = items
+//
+//  setHeight()
+//
+//  window.addEventListener('resize', setHeight)
+//
+//  function setHeight() {
+//    items.forEach(item => item.style.height = first.offsetWidth + 'px')
+//  }
+//}
 
 
 
 function navbar() {
-  const btn = document.querySelector('.sidebar-trigger');
-  const navbarRef = document.querySelector('.sidebar');
+  const btn = document.querySelector('.header__white ');
+  const navbarRef = document.querySelector('.nav');
   const overlay = document.querySelector('.overlay')
 
   btn.addEventListener('click', () => {
