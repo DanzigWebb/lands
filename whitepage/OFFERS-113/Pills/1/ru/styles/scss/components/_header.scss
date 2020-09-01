@@ -15,4 +15,12 @@
       padding-right: 10px;
     }
   }
+  &__white {
+    a {
+      display: none;
+      @include mob {
+        display: block;
+      }
+    }
+  }
 }

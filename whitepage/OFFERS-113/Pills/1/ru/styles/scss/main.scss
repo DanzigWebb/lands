@@ -12,26 +12,83 @@
 }
 
 .intro {
-  background-image: url(../../img/main.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center, center;
-  min-height: 900px;
-  padding: 3rem 0;
-
-  @include tablet {
-    min-height: auto;
-    background-attachment: unset;
-    padding: 5rem 0;
-    background-position: top left;
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2px;
+    height: 507px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    @media (max-width: 1332px) {
+      height: 460px;
+      p {
+        width: 300px;
+      }
+    }
+    @media (max-width: 1156px) {
+      height: 400px;
+      p {
+        width: 270px;
+        font-size: 21px;
+      }
+    }
+    @include desctop {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 390px);
+    }
+    @media (max-width: 452px) {
+      grid-template-rows: repeat(2, 320px);
+      .intro__item {
+        padding: 10px;
+        &--right{
+          padding-top: 30px;
+        }
+      }
+      p {
+        width: 210px;
+        font-size: 18px;
+      }
+    }
+    @include min{
+         grid-template-rows: repeat(2, 260px);
+         p{
+           font-size: 13px;
+           width: 175px;
+         }
+    }
   }
+  &__item {
+    background-size: cover;
 
-  h1 {
-    font-weight: normal;
-    font-size: 45px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 60px 54px;
+    p {
+      max-width: 360px;
+      margin: 0;
+    }
+
+    &--left {
+      padding-right: 8px;
+      font-weight: 500;
+      background-position: top right;
+      background-image: url(../../img/intro_1.png);
+      p {
+        margin-left: auto;
+      }
+    }
+    &--right {
+      background-position: top left;
+      background-image: url(../../img/intro_2.png);
+      p {
+        font-weight: bold;
+        color: #fff;
+      }
+    }
   }
 }
-
 .products {
   h2 {
     font-size: 35px;
@@ -105,7 +162,6 @@
     transform: translateY(0);
     opacity: 1;
   }
-  
 
   h4 {
     font-weight: 600;

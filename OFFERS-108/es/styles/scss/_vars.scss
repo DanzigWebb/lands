@@ -1,0 +1,73 @@
+$accent: #fe3315;
+$yellow: #ffe500;
+$dark: #2f2f2f;
+$blue: #3d4770;
+
+$light: #c7ebf5;
+$grey: #f2f2f2;
+$txt-light: #fee7e4;
+$anim: all 0.5s ease;
+
+// Mixins
+@mixin flex($direction, $content: flex-start, $item: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}
+@mixin font( $f-size:0.2rem,$color:#000,$weight:normal,$text-align:left,$f-style:normal,) {
+  font-size: $f-size;
+  color:$color;
+  font-weight: $weight;
+  text-align:$text-align;
+  font-style: $f-style;
+}
+@mixin bacg($img, $bacsize: cover, $position: center, $repeat: no-repeat) {
+  background-image: $img;
+  background-size: $bacsize;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+@mixin grid($cols: 2, $gap: 0.2rem) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-gap: $gap;
+}
+
+@mixin transition() {
+  transition: 0.3s ease all;
+}
+
+// media
+$lg-width: 1600px;
+
+@mixin desctop {
+  @media (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+$tb-width: 930px;
+
+@mixin tablet {
+  @media (max-width: #{$tb-width}) {
+    @content;
+  }
+}
+
+$mb-width: 530px;
+
+@mixin mob {
+  @media (max-width: #{$mb-width}) {
+    @content;
+  }
+}
+
+$mn-width: 420px;
+
+@mixin min {
+  @media (max-width: #{$mn-width}) {
+    @content;
+  }
+}
