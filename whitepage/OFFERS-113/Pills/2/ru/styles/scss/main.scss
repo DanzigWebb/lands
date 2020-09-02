@@ -2,13 +2,17 @@
 @import "most";
 // components
 @import "components/header";
-@import "components/sidebar";
+@import "components/nav";
 @import "components/slider";
 @import "components/timer";
 
+.main {
+  margin-top: 3rem;
+}
+
 .product {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 3fr;
   grid-gap: 3rem;
   min-height: 480px;
   overflow: hidden;
@@ -28,28 +32,6 @@
 
   @include desctop {
     height: 480px;
-  }
-
-  &__description {
-    position: absolute;
-    bottom: 40px;
-    right: 0;
-    z-index: 1;
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px 40px;
-    padding-right: 20px;
-    max-width: 430px;
-    text-align: right;
-    background: #00af9a;
-    border-radius: 40px 0px 0px 40px;
-
-    @include mob {
-      font-size: 14px;
-      margin-left: 15px;
-    }
   }
 
   &__arrows {
@@ -93,7 +75,6 @@
     font-weight: 600;
     font-size: 33px;
     line-height: 40px;
-    text-transform: uppercase;
     color: #131414;
     margin: 0;
   }
@@ -107,302 +88,118 @@
   }
 }
 
-.features {
-  @include flex(row, $item: center);
-  color: #727272;
-  .line {
-    padding: 0 7px;
-  }
-}
 
-.delivery {
-  padding-top: 15px;
-  color: #131414;
-  font-weight: 500;
-  font-size: 18px;
-}
+.specials {
+  font-size: 21px;
 
-.info {
-  &_bot {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  &__item {
+    padding: 0.6rem 0;
+    color: #747474;
 
-    @include mob {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-
-    &_content {
-      @include mob {
-        justify-self: center;
+    &.price {
+      span {
+        color: #FFBE17;
+        font-weight: bold;
       }
-    }
-
-    .price {
-      @include flex(row);
-
-      .items {
-        @include flex(column);
-      }
-
       s {
-        color: #727272;
-        font-weight: 500;
-        font-size: 24px;
-      }
-
-      b {
-        font-size: 48px;
-      }
-
-      .discount {
-        width: 48px;
-        height: 48px;
-        background-color: #ff6b00;
-        border-radius: 50%;
-        @include flex(row, center, center);
-        color: #fff;
-        margin-left: 1.4rem;
-        font-weight: 600;
-        font-size: 16px;
+        color: #C4C4C4;
       }
     }
-  }
 
-  &_quantity {
-    @include flex(row, $item: center);
-    margin: 15px 0;
+    &.controls {
+      .controls {
+        max-width: 140px;
+        padding: .6rem 0;
+        @include flex(row, space-between, center);
 
-    &_control {
-      margin-left: 20px;
-      @include flex(row, $item: center);
-      background: #ffffff;
-      border-radius: 29px;
-      border: 1px solid #c4c4c4;
-      line-height: 0;
-      height: 40px;
+        button {
+          background-color: #E3E3E3;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          display: block;
+          border: none;
+          cursor: pointer;
+          @include flex(row, center, center);
+          color: #000;
+          outline: none;
+          @include transition;
 
-      button {
-        background: #efefef;
-        border: none;
-        outline: none;
-        height: 100%;
-        width: 37px;
-        cursor: pointer;
-
-        &.plus {
-          border-radius: 0px 30px 30px 0px;
-        }
-        &.minus {
-          border-radius: 30px 0 0 30px;
+          &:hover {
+            transform: scale(1.1)
+          }
         }
       }
+    }
 
-      .number {
-        @include flex(row, center, center);
-        width: 34px;
+    &.quantity {
+      color: #122947;
+      @include flex(column);
+      letter-spacing: 0.01em;
+
+      .line {
+        border-radius: 4px;
+        background-color: #C4C4C4;
+        max-width: 300px;
+        height: 8px;
+        margin: .6rem 0;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 90%;
+          background-color: #3E3D42;
+        }
       }
-    }
-  }
-
-  &__buy {
-    margin-top: 30px;
-    @include flex(row, $item: center);
-
-    @include mob {
-      @include flex(column, center, center);
-    }
-
-    .btn {
-      margin-right: 20px;
-      flex-shrink: 0;
-      @include mob {
-        margin: 0;
-        margin-bottom: 30px;
-      }
-    }
-    img {
-      width: 100%;
-      max-width: 300px;
     }
   }
 }
 
-.sect1 {
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+.sect {
+  margin: 4rem 0;
 
-    @include desctop {
-      grid-template-columns: 1fr;
-      justify-content: center;
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__row {
+    @include flex(row, space-between, center);
+    background-color: $accent;
+    padding: 3rem;
+
+    @include tablet {
+      flex-direction: column;
+      padding: 3rem 1rem;
     }
   }
 
   &__item {
-    width: 70%;
-    align-self: center;
-
-    @include desctop {
-      justify-self: center;
-      text-align: center;
-    }
+    width: 50%;
 
     @include tablet {
       width: 100%;
-      img {
-        width: 100%;
-      }
-    }
-
-    img {
-      height: 100%;
-    }
-  }
-  &__content {
-    background-color: #ddf4f1;
-  }
-}
-
-.sect2 {
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-
-    @include desctop {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-  }
-  &__item {
-    width: 80%;
-    align-self: center;
-
-    @include desctop {
-      justify-self: center;
-      text-align: center;
     }
 
     &:first-child {
-      background-color: #fff;
-      @include desctop {
-        width: 100%;
+      @include flex(row, center, center);
+
+      @include tablet {
+        margin-bottom: 80px;
       }
     }
 
     &:last-child {
-      @include desctop {
-        background-color: #00af9a;
-        padding: 2rem;
-        width: 100%;
+      p, h2 {
+        max-width: 500px;
       }
     }
 
     img {
-      height: 100%;
-
-      @media (max-width: 1220px) {
-        width: 100%;
-      }
-    }
-  }
-  &__content {
-    color: #fff;
-    position: relative;
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 10px;
-      top: 0;
-      width: 50%;
-      background-color: #00af9a;
-      z-index: -1;
-      @include desctop {
-        content: none;
-      }
-    }
-  }
-}
-
-.reviews {
-  &__heading {
-    background-color: #fafafa;
-    padding: 10px 0;
-    margin-bottom: 40px;
-  }
-  h2 {
-    @include flex(row, center, center);
-    color: #181a19;
-  }
-  &__google {
-    @include flex(column, center, center);
-    padding-right: 16px;
-    span {
-      font-weight: 500;
-      font-size: 14px;
-      color: #989c9f;
-    }
-  }
-}
-
-.reviews {
-  &__item {
-    max-width: 240px;
-    position: relative;
-  }
-
-  &__content {
-    background-color: #fafafa;
-    padding: 1.4rem;
-    @include flex(column, $item: flex-start);
-    font-size: 16px;
-    border-radius: 10px;
-    position: relative;
-    p {
-      height: 90px;
-      a {
-        display: block;
-        text-decoration: none;
-        color: #989c9f;
-        padding-top: 4px;
-      }
-    }
-  }
-
-  &__from {
-    @include flex(row, center);
-    img {
-      padding-right: 10px;
-    }
-    span {
-      &:first-child {
-        color: #989c9f;
-        font-size: 14px;
-      }
-      &:last-child {
-        color: #3c79e6;
-        font-weight: 500;
-      }
-    }
-  }
-
-  &__autor {
-    margin: 10px 0;
-    @include flex(row, center, center);
-    img {
-      padding-right: 10px;
-    }
-    & > div {
-      @include flex(column);
-      span {
-        color: #989c9f;
-        font-size: 14px;
-      }
+      max-width: 100%;
     }
   }
 }

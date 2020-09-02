@@ -52,13 +52,13 @@ h1 {
 
 .btn {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
-  background: #ffe500;
-  border-radius: 64px;
+  color: #fff;
+  background: $accent;
   padding: 20px 40px;
   text-decoration: none;
-  color: inherit;
+  max-width: 300px;
   text-align: center;
   @include flex(row, center, center);
   &:hover {
