@@ -1,18 +1,18 @@
 window.onload = function () {
   counter()
-  timer()
+  initNavbar()
 }
 
 
 function counter() {
-  const counterRef = document.querySelector('.info_quantity_control');
-  const number = counterRef.querySelector('.number');
+  const counterRef = document.querySelector('.specials__item .controls');
+  const number = counterRef.querySelector('.num');
 
   counterRef.addEventListener('click', ({ target }) => {
     if (target.matches('.plus')) {
       plus()
     }
-    if (target.matches('.minus')) {
+    if (target.matches('.min')) {
       minus()
     }
   })
@@ -23,48 +23,40 @@ function counter() {
   }
 
   function minus() {
-    const num = +number.textContent;
-    if (num) {
-      number.textContent = num - 1;
+    const num = +number.textContent
+    if (num - 1) {
+      number.textContent = num - 1
     }
   }
 }
 
-function timer() {
-  const items = document.querySelectorAll('.timer__item .num');
-
-  const [hour, min, sec] = items;
-
-  const data = {
-    hour: +hour.textContent,
-    min: +min.textContent,
-    sec: +sec.textContent,
+class Navbar {
+  constructor(selector, overlay) {
+    this.ref = document.querySelector(selector)
+    this.overlay = document.querySelector(overlay)
   }
 
-  const interval = setInterval(() => {
-    tick();
-  }, 1000);
-
-  function tick() {
-    if (!data.sec) {
-      data.min -= 1;
-      data.sec = 59;
-    } else {
-      data.sec -= 1;
-    }
-
-    if (!data.min && !data.sec) {
-      clearInterval(interval)
-    }
-
-    updateView();
+  toggle() {
+    this.ref.matches('active')
+      ? this.close()
+      : this.open()
   }
 
-  const setTime = (num) => `0${num}`.slice(-2);
-
-  function updateView() {
-    hour.textContent = setTime(data.hour);
-    min.textContent = setTime(data.min);
-    sec.textContent = setTime(data.sec);
+  open() {
+    this.ref.classList.add('active')
+    this.overlay.classList.add('active')
+    this.overlay.addEventListener('click', () => this.close(), { once: true })
   }
+
+  close() {
+    this.ref.classList.remove('active')
+    this.overlay.classList.remove('active')
+  }
+}
+
+const navbar = new Navbar('.nav', '.overlay')
+
+function initNavbar() {
+  const btn = document.querySelector('.nav--mob button');
+  btn.addEventListener('click', () => navbar.toggle())
 }
