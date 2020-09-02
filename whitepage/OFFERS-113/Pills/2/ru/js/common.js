@@ -3,7 +3,6 @@ window.onload = function () {
   initNavbar()
 }
 
-
 function counter() {
   const counterRef = document.querySelector('.specials__item .controls');
   const number = counterRef.querySelector('.num');
@@ -57,6 +56,6 @@ class Navbar {
 const navbar = new Navbar('.nav', '.overlay')
 
 function initNavbar() {
-  const btn = document.querySelector('.nav--mob button');
+  const btn = document.querySelector('.nav--mob button')
   btn.addEventListener('click', () => navbar.toggle())
 }
