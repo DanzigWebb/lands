@@ -1,12 +1,13 @@
 window.onload = function () {
   counter()
-  timer()
+  initMobMenu()
 }
 
 
 function counter() {
-  const counterRef = document.querySelector('.info_quantity_control');
+  const counterRef = document.querySelector('.intro__quatity');
   const number = counterRef.querySelector('.number');
+  const basketNum = document.querySelector('.basket span')
 
   counterRef.addEventListener('click', ({ target }) => {
     if (target.matches('.plus')) {
@@ -20,51 +21,51 @@ function counter() {
   function plus() {
     const num = +number.textContent;
     number.textContent = num + 1;
+    basketNum.textContent = num + 1;
   }
 
   function minus() {
     const num = +number.textContent;
     if (num) {
       number.textContent = num - 1;
+      basketNum.textContent = num - 1;
     }
   }
 }
 
-function timer() {
-  const items = document.querySelectorAll('.timer__item .num');
+function createMenu() {
+  let overlay;
+  const nav = document.querySelector('.header__nav');
 
-  const [hour, min, sec] = items;
-
-  const data = {
-    hour: +hour.textContent,
-    min: +min.textContent,
-    sec: +sec.textContent,
+  const close = () => {
+    nav.classList.remove('active')
+    overlay.remove()
   }
 
-  const interval = setInterval(() => {
-    tick();
-  }, 1000);
-
-  function tick() {
-    if (!data.sec) {
-      data.min -= 1;
-      data.sec = 59;
-    } else {
-      data.sec -= 1;
-    }
-
-    if (!data.min && !data.sec) {
-      clearInterval(interval)
-    }
-
-    updateView();
+  const open = () => {
+    nav.classList.add('active')
+    overlay = createOverlay()
   }
 
-  const setTime = (num) => `0${num}`.slice(-2);
-
-  function updateView() {
-    hour.textContent = setTime(data.hour);
-    min.textContent = setTime(data.min);
-    sec.textContent = setTime(data.sec);
+  const toggle = () => {
+    nav.matches('active') ? close() : open()
   }
+
+  const createOverlay = () => {
+    const overlay = document.createElement('div')
+    overlay.classList.add('overlay')
+    overlay.addEventListener('click', () => close(), {once: true})
+    document.body.append(overlay)
+    return overlay
+  }
+
+  return {
+    close, open, toggle
+  }
+}
+
+function initMobMenu() {
+  const menu = createMenu()
+  const btn = document.querySelector('.header__mob');
+  btn.addEventListener('click', () => menu.toggle());
 }

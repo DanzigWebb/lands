@@ -2,407 +2,115 @@
 @import "most";
 // components
 @import "components/header";
-@import "components/sidebar";
-@import "components/slider";
-@import "components/timer";
 
-.product {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  min-height: 480px;
-  overflow: hidden;
-  width: 100%;
+.intro {
+  background-image: url(../../img/main.png);
+  background-size: cover;
+  color: #fff;
 
-  @include desctop {
-    grid-template-columns: 1fr;
-  }
-}
-
-.slider {
-  overflow: hidden;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-rows: 80% auto;
-  position: relative;
-
-  @include desctop {
-    height: 480px;
-  }
-
-  &__description {
-    position: absolute;
-    bottom: 40px;
-    right: 0;
-    z-index: 1;
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px 40px;
-    padding-right: 20px;
-    max-width: 430px;
-    text-align: right;
-    background: #00af9a;
-    border-radius: 40px 0px 0px 40px;
-
-    @include mob {
-      font-size: 14px;
-      margin-left: 15px;
-    }
-  }
-
-  &__arrows {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    > div {
-      width: 40px;
-      height: 40px;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 50%;
-      font-size: 20px;
-      outline: none;
-      @include transition;
-
-      &:after {
-        font-size: 20px;
-      }
-    }
-
-    .swiper-button {
-      &-next {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        transform: translateY(-100%);
-      }
-      &-prev {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translateY(-100%);
-      }
-    }
-  }
-}
-
-.info {
-  h1 {
-    font-weight: 600;
-    font-size: 33px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #131414;
-    margin: 0;
-  }
-}
-
-.heading {
-  &_sub {
-    font-weight: 500;
-    font-size: 18px;
-    margin: 0;
-  }
-}
-
-.features {
-  @include flex(row, $item: center);
-  color: #727272;
-  .line {
-    padding: 0 7px;
-  }
-}
-
-.delivery {
-  padding-top: 15px;
-  color: #131414;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.info {
-  &_bot {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    @include mob {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-
-    &_content {
-      @include mob {
-        justify-self: center;
-      }
-    }
-
-    .price {
-      @include flex(row);
-
-      .items {
-        @include flex(column);
-      }
-
-      s {
-        color: #727272;
-        font-weight: 500;
-        font-size: 24px;
-      }
-
-      b {
-        font-size: 48px;
-      }
-
-      .discount {
-        width: 48px;
-        height: 48px;
-        background-color: #ff6b00;
-        border-radius: 50%;
-        @include flex(row, center, center);
-        color: #fff;
-        margin-left: 1.4rem;
-        font-weight: 600;
-        font-size: 16px;
-      }
-    }
-  }
-
-  &_quantity {
-    @include flex(row, $item: center);
-    margin: 15px 0;
-
-    &_control {
-      margin-left: 20px;
-      @include flex(row, $item: center);
-      background: #ffffff;
-      border-radius: 29px;
-      border: 1px solid #c4c4c4;
-      line-height: 0;
-      height: 40px;
-
-      button {
-        background: #efefef;
-        border: none;
-        outline: none;
-        height: 100%;
-        width: 37px;
-        cursor: pointer;
-
-        &.plus {
-          border-radius: 0px 30px 30px 0px;
-        }
-        &.minus {
-          border-radius: 30px 0 0 30px;
-        }
-      }
-
-      .number {
-        @include flex(row, center, center);
-        width: 34px;
-      }
-    }
-  }
-
-  &__buy {
-    margin-top: 30px;
-    @include flex(row, $item: center);
-
-    @include mob {
-      @include flex(column, center, center);
-    }
-
-    .btn {
-      margin-right: 20px;
-      flex-shrink: 0;
-      @include mob {
-        margin: 0;
-        margin-bottom: 30px;
-      }
-    }
-    img {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-}
-
-.sect1 {
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-
-    @include desctop {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-  }
-
-  &__item {
-    width: 70%;
-    align-self: center;
-
-    @include desctop {
-      justify-self: center;
-      text-align: center;
-    }
+  &__content {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    min-height: 750px;
+    @include flex(column, center);
 
     @include tablet {
       width: 100%;
-      img {
-        width: 100%;
-      }
     }
 
-    img {
-      height: 100%;
+    h1 {
+      font-weight: 800;
+      font-size: 45px;
+      color: $accent;
+      text-transform: uppercase;
+    }
+
+    .subhead {
+      font-weight: 600;
+      font-size: 25px;
     }
   }
-  &__content {
-    background-color: #ddf4f1;
+
+  &__price {
+    font-size: 80px;
+    color: $accent;
+    font-weight: bold;
+  }
+
+  &__quatity {
+    max-width: 276px;
+    border: 2px solid #FFFFFF;
+    @include flex(row, space-between, center);
+    height: 60px;
+    font-size: 35px;
+    margin: 1rem 0;
+    color: #fff;
+
+    button {
+      border: 2px solid #FFFFFF;
+      background-color: transparent;
+      display: block;
+      height: 60px;
+      width: 60px;
+      color: #fff;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  }
+
+  &__bot {
+    @include flex(row, $item: center);
+    img {
+      padding-right: 8px;
+    }
   }
 }
 
-.sect2 {
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
 
-    @include desctop {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
+
+.sect {
+  padding: 40px 0;
+  h2 {
+    font-size: 40px;
+    color: #00369F;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-  &__item {
-    width: 80%;
-    align-self: center;
 
-    @include desctop {
-      justify-self: center;
-      text-align: center;
-    }
+  h3, p {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 4px 0;
+  }
+
+  &__row {
+    @include flex(row, $item: center, $wrap: wrap);
+  }
+
+  &__item {
+    padding: 1.4rem;
 
     &:first-child {
-      background-color: #fff;
-      @include desctop {
+      width: 40%;
+
+      @include tablet {
         width: 100%;
       }
     }
 
     &:last-child {
-      @include desctop {
-        background-color: #00af9a;
-        padding: 2rem;
+      width: 60%;
+
+      @include tablet {
         width: 100%;
       }
     }
 
     img {
-      height: 100%;
-
-      @media (max-width: 1220px) {
-        width: 100%;
-      }
-    }
-  }
-  &__content {
-    color: #fff;
-    position: relative;
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 10px;
-      top: 0;
-      width: 50%;
-      background-color: #00af9a;
-      z-index: -1;
-      @include desctop {
-        content: none;
-      }
-    }
-  }
-}
-
-.reviews {
-  &__heading {
-    background-color: #fafafa;
-    padding: 10px 0;
-    margin-bottom: 40px;
-  }
-  h2 {
-    @include flex(row, center, center);
-    color: #181a19;
-  }
-  &__google {
-    @include flex(column, center, center);
-    padding-right: 16px;
-    span {
-      font-weight: 500;
-      font-size: 14px;
-      color: #989c9f;
-    }
-  }
-}
-
-.reviews {
-  &__item {
-    max-width: 240px;
-    position: relative;
-  }
-
-  &__content {
-    background-color: #fafafa;
-    padding: 1.4rem;
-    @include flex(column, $item: flex-start);
-    font-size: 16px;
-    border-radius: 10px;
-    position: relative;
-    p {
-      height: 90px;
-      a {
-        display: block;
-        text-decoration: none;
-        color: #989c9f;
-        padding-top: 4px;
-      }
-    }
-  }
-
-  &__from {
-    @include flex(row, center);
-    img {
-      padding-right: 10px;
-    }
-    span {
-      &:first-child {
-        color: #989c9f;
-        font-size: 14px;
-      }
-      &:last-child {
-        color: #3c79e6;
-        font-weight: 500;
-      }
-    }
-  }
-
-  &__autor {
-    margin: 10px 0;
-    @include flex(row, center, center);
-    img {
-      padding-right: 10px;
-    }
-    & > div {
-      @include flex(column);
-      span {
-        color: #989c9f;
-        font-size: 14px;
-      }
+      max-width: 100%;
     }
   }
 }
