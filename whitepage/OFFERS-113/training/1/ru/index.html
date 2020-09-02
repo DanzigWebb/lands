@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="styles/css/main.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__empty">
+
+        </div>
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <div class="header__box">
+          <p>Бесплатная доставка от <b>€100</b></p>
+          <p><b>300 бонусов</b>
+            за самовывоз</p>
+        </div>
+        <div class="header__geo">
+          <span>Адреса
+            магазинов</span>
+          <img src="img/geo.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div class="intro__slider">
+      <div class="item" style="background-image: url(./img/main.jpg);"></div>
+      <div class="item" style="background-image: url(./img/main.jpg);"></div>
+    </div>
+    <div class="container">
+      <div class="intro__nav">
+        <div class="left"> <img src="img/left.svg" alt=""></div>
+        <div class="right"><img src="img/right.svg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="products">
+      <h2>ТОП ТОВАРОВ</h2>
+
+      <div class="products__grid">
+        <div class="products__item" style="background-image: url(img/prod1.png)">
+          <div class="product__wrapper">
+            <h4>Черные леггинсы Run19</h4>
+            <div class="price"><b>100€</b><s>200€</s></div>
+            <a href="" class="btn small">Подробнее</a>
+          </div>
+        </div>
+        <div class="products__item" style="background-image: url(img/prod2.png)">
+          <div class="product__wrapper">
+            <h4>Черные леггинсы Run19</h4>
+            <div class="price"><b>100€</b><s>200€</s></div>
+            <a href="" class="btn small">Подробнее</a>
+          </div>
+        </div>
+        <div class="products__item" style="background-image: url(img/prod3.png)">
+          <div class="product__wrapper">
+            <h4>Черные леггинсы Run19</h4>
+            <div class="price"><b>100€</b><s>200€</s></div>
+            <a href="" class="btn small">Подробнее</a>
+          </div>
+        </div>
+        <div class="products__item" style="background-image: url(img/prod4.png)">
+          <div class="product__wrapper">
+            <h4>Черные леггинсы</h4>
+            <div class="price"><b>100€</b><s>200€</s></div>
+            <a href="" class="btn small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam veritatis praesentium veniam autem, fugit hic at
+    ratione sed, esse ipsa minima, accusantium error iste.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis magnam eveniet odio velit minima rerum
+    voluptate eum sed. Corrupti labore, cupiditate nemo vel reprehenderit totam fugit ad soluta aliquid voluptatum
+    consequuntur, inventore, ab itaque aliquam sit vitae recusandae?
+  </div>
+
+
+
+  <script src="js/common.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      const slider = $('.intro__slider').slick({
+        arrows: false,
+      });
+
+      $('.intro__nav .right').click(() =>{
+         $('.intro__slider').slick('slickNext');
+      })
+      $('.intro__nav .left').click(() =>{
+         $('.intro__slider').slick('slickPrev');
+      })
+    });
+  </script>
+
+</html>

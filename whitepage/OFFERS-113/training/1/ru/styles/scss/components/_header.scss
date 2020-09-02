@@ -1,0 +1,71 @@
+.header {
+  height: 132px;
+  @include flex(row, $item: center);
+  background-color: #005aab;
+  &__wrapper {
+    width: 100%;
+    @include flex(row, space-between, center);
+     @media (max-width: 1144px) {
+       @include flex(row, space-between,center)
+     }
+  }
+  &__empty {
+    display: none;
+    @media (max-width: 1144px) {
+      display: block;
+    }
+  }
+  &__box {
+    max-width: 516px;
+    padding: 10px 18px;
+    width: 100%;
+
+    font-weight: bold;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    @include flex(row, space-between, center);
+    border-radius: 10px;
+    text-transform: uppercase;
+    @media (max-width: 1144px) {
+      display: none;
+    }
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-right: 2px;
+      }
+    }
+    b {
+      color: #f21b2a;
+    }
+  }
+  &__geo {
+    @include flex(row, space-between, center);
+    width: 196px;
+    @media (max-width: 1144px) {
+      width: auto;
+    }
+    @include mob {
+      img {
+        width: 30px;
+      }
+    }
+    span {
+      font-weight: bold;
+      font-size: 25px;
+      color: #ffffff;
+      text-align: center;
+      @media (max-width: 1144px) {
+        display: none;
+      }
+    }
+  }
+  &__logo {
+    @include mob {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
