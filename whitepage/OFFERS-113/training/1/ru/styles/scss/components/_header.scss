@@ -6,13 +6,14 @@
     width: 100%;
     @include flex(row, space-between, center);
      @media (max-width: 1144px) {
-       @include flex(row, space-between,center)
+       @include flex(row, space-between,center);
      }
   }
   &__empty {
     display: none;
     @media (max-width: 1144px) {
       display: block;
+
     }
   }
   &__box {
@@ -42,7 +43,8 @@
   }
   &__geo {
     @include flex(row, space-between, center);
-    width: 196px;
+    width: 196px; 
+      text-decoration: none;
     @media (max-width: 1144px) {
       width: auto;
     }
@@ -51,10 +53,12 @@
         width: 30px;
       }
     }
+
     span {
       font-weight: bold;
       font-size: 25px;
       color: #ffffff;
+   
       text-align: center;
       @media (max-width: 1144px) {
         display: none;
@@ -68,4 +72,7 @@
       }
     }
   }
+   @include mob{
+     height: 80px;
+   }
 }
