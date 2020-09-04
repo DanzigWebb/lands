@@ -25,7 +25,7 @@ body {
 .container {
   @include content();
   max-width: $content__width;
-  padding: $content__padding;
+  padding: 0 $content__padding;
   margin: 0 auto;
   width: 100%;
   @media (max-width: 400px) {

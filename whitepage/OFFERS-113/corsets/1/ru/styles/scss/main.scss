@@ -2,49 +2,45 @@
 @import "most";
 // components
 @import "components/header";
-// @import "components/sidebar";
-
-.main {
-  &__wrapper {
-    @include gridTemplate;
-  }
-}
 
 .intro {
   background-image: url(../../img/main.png);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center, center;
-  min-height: 900px;
-  padding: 3rem 0;
+  min-height: 750px;
 
   @include tablet {
-    min-height: auto;
-    background-attachment: unset;
-    padding: 5rem 0;
-    background-position: top left;
+    min-height: 600px;
+  }
+
+  @include mob {
+    min-height: 460px;
   }
 
   h1 {
-    font-weight: normal;
-    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 50px 0;
   }
 }
 
 .products {
+
   h2 {
-    font-size: 35px;
-    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 
     @include tablet {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
     }
 
     @include mob {
@@ -53,81 +49,30 @@
   }
 
   &__item {
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flex(column, center, center);
-    position: relative;
-    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px;
+    padding-bottom: 30px;
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      display: block;
-      @include transition;
-      background-color: transparent;
-      z-index: 0;
-
-      @include mob {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
+    img {
+      width: 100%;
     }
 
-    &:hover {
-      &:before {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      .product__wrapper {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.product__wrapper {
-  z-index: 1;
-  color: #fff;
-  transform: translateY(-100%);
-  text-align: center;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-
-  @include flex(column, center, center);
-  @include transition;
-
-  @include mob {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
-
-  h4 {
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .price {
-    @include flex(row, space-around, flex-end);
-
-    b {
-      font-size: 30px;
-      padding-right: 30px;
+    p, h4 {
+      margin: 0;
     }
 
-    s {
+    h4 {
+      font-weight: bold;
       font-size: 20px;
+      padding: 16px 0;
     }
-  }
 
-  .btn {
-    margin-top: 20px;
-    color: #fff;
-    border-color: #fff;
+    p {
+      color: #fc4b37;
+      font-weight: 500;
+      font-size: 30px;
+    }
   }
 }
