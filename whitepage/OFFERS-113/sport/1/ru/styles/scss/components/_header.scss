@@ -6,13 +6,39 @@
   &__wrapper {
     width: 100%;
     @include flex(row, space-between, center);
+    @include mob {
+      justify-content: center;
+    }
   }
-
-  &__basket {
+  &__logo {
+    margin-right: 30px;
+    @include mob {
+      margin: 0;
+    }
+  }
+  &__search {
+    position: relative;
     @include flex(row, center, center);
     color: #fff;
+    max-width: 368px;
+    height: 36px;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 100%;
+      padding-left: 51px;
+      &::placeholder {
+        font-size: 18px;
+        color: #a7a7a7;
+      }
+    }
     img {
-      padding-right: 10px;
+      position: absolute;
+      left: 15px;
+      top: auto;
+    }
+    @include mob {
+      display: none;
     }
   }
 }
