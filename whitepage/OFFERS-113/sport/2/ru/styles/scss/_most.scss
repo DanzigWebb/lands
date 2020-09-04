@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   font-size: 16px;
   height: 100%;
@@ -52,13 +52,13 @@ h1 {
 
 .btn {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 25px;
   text-transform: uppercase;
-  background: #ffe500;
-  border-radius: 64px;
+  background: $accent;
+  color: #fff;
   padding: 20px 40px;
+  max-width: 350px;
   text-decoration: none;
-  color: inherit;
   text-align: center;
   @include flex(row, center, center);
   &:hover {
@@ -92,7 +92,7 @@ h1 {
   right: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.55);
-  display: none;
+
   animation: show 0.4s ease;
 
   &.active {
