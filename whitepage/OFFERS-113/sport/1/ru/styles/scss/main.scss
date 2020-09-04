@@ -11,37 +11,42 @@
 }
 .nav {
   height: 90px;
-@include flex(column,center);
+  @include flex(column, center);
+
   a {
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
     color: #000;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 1rem;
     }
-    span{
+
+    span {
       padding-bottom: 5px;
     }
+
     .activ,
     &:hover {
-     border-bottom: 3px solid #000000;
+      border-bottom: 3px solid #000000;
     }
-  
-  } 
-   @include mob{
-     a{
-           font-size: 20px;
-     }
-  height: 50px;
+  }
+
+  @include mob {
+    a {
+      font-size: 20px;
     }
+    height: 50px;
+  }
 }
+
 .intro {
   background-image: url(../../img/main.png);
   background-size: cover;
   max-width: 1920px;
   background-position: center, center;
-  min-height: 900px;
+  min-height: 800px;
   margin: 0 auto;
   padding: 3rem 0;
 
@@ -52,9 +57,33 @@
     background-position: top left;
   }
 
+  &__heading {
+    padding-top: 5%;
+    @include flex(column, flex-start, flex-start);
+    display: inline-flex;
+  }
+
   h1 {
     font-weight: normal;
     font-size: 45px;
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+    background-color: #ff0000;
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 40px;
+    line-height: 0.8;
+
+    @include mob {
+      font-size: 30px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+
+    @include min {
+      font-size: 24px;
+    }
   }
 }
 .brands {
@@ -74,102 +103,66 @@
     width: 100%;
   }
 }
+
 .products {
   h2 {
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include mob {
+    @include desctop {
       grid-template-columns: 1fr;
     }
   }
 
   &__item {
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flex(column, center, center);
-    position: relative;
-    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 260px 1fr 30px;
+    align-items: center;
+    text-decoration: none;
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      display: block;
-      @include transition;
-      background-color: transparent;
-      z-index: 0;
+    @include mob {
+      grid-template-columns: 180px 1fr 20px;
+    }
 
-      @include mob {
-        background-color: rgba(0, 0, 0, 0.5);
+    @include min {
+      grid-template-columns: 140px 1fr 20px;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 24px;
+      padding-left: 20px;
+      color: #000;
+      max-width: 240px;
+
+      @include min {
+        font-size: 17px;
       }
     }
 
-    &:hover {
-      &:before {
-        background-color: rgba(0, 0, 0, 0.5);
+    [src="img/arrow.png"] {
+      width: 20px;
+
+      @include mob {
+        width: 15px;
       }
-      .product__wrapper {
-        transform: translateY(0);
-        opacity: 1;
+
+      @include min {
+        width: 12px;
       }
     }
   }
 }
 
-.product__wrapper {
-  z-index: 1;
-  color: #fff;
-  transform: translateY(-100%);
-  text-align: center;
-  opacity: 0;
-  height: 100%;
+.prod-item-img {
   width: 100%;
-
-  @include flex(column, center, center);
-  @include transition;
-
-  @include mob {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  h4 {
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .price {
-    @include flex(row, space-around, flex-end);
-
-    b {
-      font-size: 30px;
-      padding-right: 30px;
-    }
-
-    s {
-      font-size: 20px;
-    }
-  }
-
-  .btn {
-    margin-top: 20px;
-    color: #fff;
-    border-color: #fff;
-  }
 }

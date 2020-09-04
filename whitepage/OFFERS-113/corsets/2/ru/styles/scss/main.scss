@@ -19,11 +19,21 @@ main {
 .intro {
   &__content {
     @include flex(row, center, flex-start);
+
+    @include desctop {
+      flex-direction: column;
+    }
   }
 
   &__item {
     width: 50%;
     margin: 1rem;
+
+    @include desctop {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 1.4rem;
+    }
 
     h2 {
       font-weight: 600;
@@ -47,10 +57,17 @@ main {
 
     &:last-child {
       margin-left: -4rem;
+      @include desctop {
+        margin-left: 0;
+        margin: 0;
+      }
     }
   }
   &__heading {
     padding: 0 5rem;
+    @include desctop {
+      padding: 1rem;
+    }
   }
 }
 
@@ -59,6 +76,10 @@ main {
   padding: 1rem 5rem;
   background-color: #FCF7EF;
   width: 100%;
+
+  @include desctop {
+    padding: 1rem;
+  }
 }
 
 .builets {
@@ -132,6 +153,10 @@ main {
   &__item {
     padding: 0 1rem;
     font-weight: 500;
+
+    @include desctop {
+      padding: 0;
+    }
 
     &:first-child {
       width: 40%;
