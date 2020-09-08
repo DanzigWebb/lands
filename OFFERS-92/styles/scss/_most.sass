@@ -1,0 +1,194 @@
+
+html
+  font-size: 20.833333vw
+  overflow-x: hidden
+  @media (min-width: 481px)
+    font-size: 100px
+    
+body
+  font-size: .20rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Comfortaa', cursive
+  font-style: normal
+  color: #535667
+  overflow-x: hidden
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+section
+  padding: .3rem 0
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+
+.content
+  padding: 0 .2rem
+  p
+    line-height: 1.5
+    &:last-child
+      margin-bottom: 0
+
+.bg-light
+  background-color: $light
+
+.no-pad
+  margin-left: -0.13rem
+  margin-right: -0.13rem
+  display: block
+  width: 4.8rem
+      
+.heading
+  padding: .2rem 0
+h2
+  text-align: center
+  font-size: 0.38rem
+  font-weight: normal
+  margin: 0
+  bottom: .5rem
+  color: $yellow
+  line-height: 1.3
+  padding-bottom: 0.5rem
+  b
+    color: $accent
+    display: block
+    font-size: 0.56rem
+  &.min
+    b
+      font-size: 0.38rem
+  &.left
+    text-align: left
+    b
+      display: block
+      
+  &.big
+    font-size: 0.46rem
+  &.black
+    color: #000
+  &.block
+    b
+      width: 3.6rem
+      margin: 0 auto
+      display: block
+  &.upp
+    text-transform: uppercase
+  
+  b.prod
+    text-transform: uppercase
+    font-weight: bold
+  .offer
+    text-transform: uppercase
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+
+h2 + p 
+  margin-top: 0
+
+.btn
+  @include flex(column, flex-start, center)
+  text-decoration: none
+  font-size: 0.23rem
+  border: none
+  box-sizing: border-box
+  background-repeat: no-repeat
+  padding-top: 0.3rem
+  background-image: url(../../img/btn.png)
+  position: relative
+  border-radius: 100px
+  text-align: center
+  background-size: contain
+  text-transform: uppercase
+  outline: none
+  color: #FFFFFF
+  font-size: 0.25rem
+  font-weight: bold
+  width: 4.59rem
+  z-index: 999
+  text-shadow: 0px 2px 0px #E86066
+  height: 1.16rem
+  margin: 0.2rem auto
+  background-color: transparent
+
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%
+
+.owl-carousel
+  .owl-dots
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 2.7rem
+    padding-top: 0.1rem
+    margin: 0 auto
+    button
+      width: 0.8rem
+      height: 0.12rem
+      outline: none
+      border-radius: 100px   
+      background: #Ffff
+      margin: 0 3px
+      &.active
+        background: #FF6E76
+        box-sizing: border-box
+      
