@@ -1,0 +1,62 @@
+.reviews {
+  position: relative;
+  &__item {
+    @include flex(column, flex-start, flex-start);
+    margin-left: 0.15rem;
+    box-sizing: border-box;
+    margin-right: 0.15rem;
+    padding: 0.3rem 0.17rem 0.4rem;
+    width: 4.2rem;
+    margin: auto;
+    background: #ffffff;
+  }
+  .top {
+    position: relative;
+    @include flex(row, flex-start, center);
+    margin-bottom: 0.33rem;
+    .name {
+      margin: 0;
+      margin-left: 0.2rem;
+      b {
+        display: block;
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .comment{
+    margin-bottom: 0;
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    font-family: "Montserrat", sans-serif;
+    right: 0;
+    color: white;
+    bottom: 0.64rem;
+    letter-spacing: -0.02rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    @include flex(row, center, center);
+  }
+}
+.owl-carousel .owl-item .top img {
+  width: 0.6rem;
+}
+.owl-carousel {
+  .owl-nav {
+    padding-top: 0.3rem;
+    width: 1.74rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      img {
+        width: 0.38rem;
+      }
+    }
+  }
+}
