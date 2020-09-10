@@ -1,0 +1,48 @@
+.reviews {
+  &__item {
+    width: 4.4rem;
+    margin: 0.36rem auto;
+    @include flex(column, center, center);
+    .header {
+      margin: 0 auto;
+      width: 3.58rem;
+      box-sizing: border-box;
+      background-color: #fff4f1;
+      box-shadow: 0px 4px 15px rgba(255, 207, 210, 0.5);
+      border-radius: 20px;
+      min-height: 1.61rem;
+      padding: 0.21rem;
+      padding-left: 0.4rem;
+      @include flex(row, flex-start, flex-start);
+      background-image: url(../../img/bac_rev.png);
+      background-position-y: -0.12rem;
+      .box {
+        @include flex(row, flex-start, center);
+      }
+      .name{
+        margin-left: 0.35rem;
+        b{
+          color: #FF6E76;
+          font-size: 0.26rem;
+          display: block;
+        }
+      }
+    }
+    .footer {
+      margin-top: -0.3rem;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.4rem 0.3rem;
+      background: #ffffff;
+      box-shadow: 0px 4px 15px rgba(255, 207, 210, 0.5);
+      border-radius: 20px;
+      @include botBorder(15px,  0px 4px 15px rgba(255, 207, 210, 0.5));
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+.owl-carousel .owl-item .reviews__item img {
+  width: 0.8rem;
+}
