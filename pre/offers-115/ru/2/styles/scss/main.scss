@@ -7,14 +7,14 @@
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr minmax(200px,400px);
   grid-template-areas: " content sidebar";
 
   grid-gap: 1rem;
   max-width: $content__width;
   margin: 0 auto;
   position: relative;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "content"

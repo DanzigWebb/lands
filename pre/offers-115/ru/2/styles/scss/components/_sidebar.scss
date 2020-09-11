@@ -1,13 +1,15 @@
 .sidebar {
-  max-width: 400px;
+  max-width: 300px;
+  width: 100%;
   margin: 0 auto;
   padding: 3rem 0.4rem;
-  @media (max-width: 900px){
-    display: none;
-  }
+   @media (max-width: 1000px) {
+     display: none;
+   }
   &__baner {
     position: relative;
     img {
+      max-width: 317px;
       width: 100%;
     }
     .baner_btn {
@@ -25,6 +27,7 @@
     @include flex(column, center, center);
     background: #efefef;
     padding: 27px;
+    width: 100%;
     text-align: center;
     padding-top: 16px;
     padding-bottom: 34px;
@@ -36,7 +39,8 @@
     a {
       background: #00b0ea;
       border-radius: 50px;
-      width: 245px;
+      max-width: 245px;
+      width: 100%;
       padding: 15px 0;
       @include flex(row, center, center);
       color: #ffffff;
