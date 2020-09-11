@@ -1,0 +1,77 @@
+.sidebar {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 3rem 0.4rem;
+  &__baner {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .baner_btn {
+      position: absolute;
+      width: 15px;
+      top: 0;
+      right: 0;
+      
+    }
+    &.none {
+      display: none;
+    }
+  }
+  &__blog {
+    @include flex(column, center, center);
+    background: #efefef;
+    padding: 27px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 34px;
+    b {
+      margin-top: 0.4rem;
+      font-size: 20px;
+      color: #000000;
+    }
+    a {
+      background: #00b0ea;
+      border-radius: 50px;
+      width: 245px;
+      padding: 15px 0;
+      @include flex(row, center, center);
+      color: #ffffff;
+      text-decoration: none;
+        transition: 0.4s ease all;
+    &:hover {
+      opacity: 0.8;
+     
+    }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+  .item {
+    text-decoration: none;
+    transition: 0.4s ease all;
+    &:hover {
+      opacity: 0.8;
+      p{
+        color: #004359; 
+      }
+     
+    }
+    img {
+      max-width: 233px;
+      width: 100%;
+    }
+    p {
+      max-width: 233px;
+      width: 100%;
+      color: #000000;
+      span {
+        display: block;
+        color: #747474;
+        margin-top: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+}

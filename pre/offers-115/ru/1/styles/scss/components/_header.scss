@@ -1,0 +1,134 @@
+.header {
+  @include flex(column, center);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__logo {
+    margin-right: 2rem;
+  }
+  &__top {
+    background: #004359;
+    a {
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  &__bottom {
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    a {
+      color: #000000;
+    }
+  }
+  &__content {
+    padding: 11px;
+    &--top {
+      @include flex(row, space-between);
+      max-width: 1396px;
+      width: 100%;
+      margin: 0 auto;
+      .box {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 520px;
+        width: 100%;
+        &:nth-child(2) {
+          max-width: 332px;
+            @media (max-width: 900px) {
+            max-width: 300px;
+            }
+            @media (max-width: 440px) {
+              max-width: 100px;
+            }
+          .come {
+            @media (max-width: 900px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &--bottom {
+      @include flex(row, space-between);
+      max-width: 951px;
+      width: 100%;
+      padding: 18px;
+      margin: 0 auto;
+      .box {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+      .Fire {
+        display: none;
+        @media (max-width: 900px) {
+          display: block;
+        }
+      }
+    }
+  }
+  .notif {
+    img {
+      margin-top: 4px;
+    }
+  }
+  &__nav {
+    &--top {
+      width: 100%;
+      @include flex(row, space-between, center);
+      margin-right: 20px;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    &--bottom {
+      @include flex(row, space-between);
+      width: 100%;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    flex-shrink: 0;
+    a {
+      padding: 0.8rem 1.45rem;
+      text-decoration: none;
+      background-color: #00b0ea;
+      border-radius: 2px;
+      @include flex(row, center, center);
+      text-align: center;
+      @media (max-width: 600px) {
+        padding: 0.7rem 1rem;
+      }
+      @media (max-width: 440px) {
+        display: none;  
+      }
+    }
+  }
+
+  &__profile {
+    margin-left: 1rem;
+  }
+
+  &__mob {
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+}
