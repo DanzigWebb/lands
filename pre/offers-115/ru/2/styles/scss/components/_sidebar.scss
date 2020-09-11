@@ -2,6 +2,9 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 3rem 0.4rem;
+  @media (max-width: 900px){
+    display: none;
+  }
   &__baner {
     position: relative;
     img {
