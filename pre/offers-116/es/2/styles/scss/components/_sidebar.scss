@@ -1,0 +1,91 @@
+.sidebar {
+  max-width: 330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.4rem;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 0;
+    color: #ffffff;
+    border-bottom: 1px solid #405368;
+    padding-bottom: 10px;
+  }
+  &__blog {
+    .item {
+      text-decoration: none;
+      @include flex(row, space-between, flex-start);
+      &:not(:nth-child(5)) {
+        margin-bottom: 1rem;
+      }
+      .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .name {
+          margin-left: 0.7rem;
+        }
+        b {
+          display: block;
+          color: #ffffff;
+          margin-bottom: 0.1rem;
+        }
+        span {
+          color: #a6afb8;
+        }
+      }
+      &__btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #00b8ff;
+      }
+    }
+    .yet {
+      font-weight: 300;
+      font-size: 14px;
+      text-decoration: none;
+      color: #a6afb8;
+    }
+  }
+  &__request {
+    padding-top: 1rem;
+    .box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    a {
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+      padding: 3px 10px;
+      border-radius: 5px;
+      margin-right: 9px;
+      text-decoration: none;
+      box-sizing: border-box;
+      margin-bottom: 0.6rem;
+    }
+    .green {
+      background: #00cf35;
+    }
+    .red {
+      background: #ff492f;
+    }
+    .orange {
+      background: #ff8a00;
+    }
+    .blue {
+      background: #00b8ff;
+    }
+    .violet {
+      background: #ff62ce;
+    }
+    .yellow {
+      background: #e8d73a;
+    }
+  }
+}

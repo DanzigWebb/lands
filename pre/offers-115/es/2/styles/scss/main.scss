@@ -1,0 +1,240 @@
+@import "var";
+@import "most";
+// components
+@import "components/header";
+@import "components/navbar";
+@import "components/sidebar";
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px,400px);
+  grid-template-areas: " content sidebar";
+
+  grid-gap: 1rem;
+  max-width: $content__width;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "sidebar";
+  }
+}
+
+.content {
+  background-color: #fff;
+  padding: 3rem 2.8rem;
+
+  @media (max-width: 460px) {
+    padding: 3rem 1rem;
+  }
+
+  &__header {
+    .top {
+      @include flex(row, space-between, flex-start);
+      &__uzer {
+        max-width: 342px;
+        width: 100%;
+        @include flex(row, space-between, flex-start);
+        p {
+          margin: 0;
+        }
+        .uzername {
+          display: flex;
+          padding-top: 10px;
+          flex-direction: row;
+          margin-bottom: 12px;
+          align-items: center;
+          color: #3f87bb;
+          font-size: 20px;
+          img {
+            margin-right: 5px;
+          }
+        }
+        .date {
+          color: #c1c1c1;
+          font-size: 15px;
+          max-width: 200px;
+          width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        @include flex(column);
+        .ava {
+          max-width: 70px;
+          width: 100%;
+          margin-right: 22px;
+        }
+        &__uzer {
+          @include flex(row, flex-start, center);
+          margin-bottom: 22px;
+          .uzername {
+            padding: 0;
+            font-size: 16px;
+          }
+        }
+      }
+      &__rec {
+        font-size: 15px;
+        background: #fff6c2;
+        border-radius: 10px;
+        box-sizing: border-box;
+        max-width: 209px;
+        padding: 7px;
+        padding-left: 17px;
+        width: 100%;
+        @include flex(row, flex-start, center);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 800;
+        img {
+          margin-right: 13px;
+        }
+      }
+    }
+    .bottom {
+      display: grid;
+      margin-top: 20px;
+      grid-template-columns: repeat(5, 117px);
+      grid-gap: 5px;
+      @media (max-width: 680px) {
+        grid-template-columns: repeat(4, 100px);
+      }
+      @media (max-width: 500px) {
+        grid-template-columns: repeat(3, 90px);
+      }
+      .statis {
+        background: #f0f0f0;
+        border-radius: 4px;
+        height: 32px;
+        font-size: 13px;
+        padding-left: 9px;
+        @include flex(row, flex-start, center);
+        img {
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  font-size: 1.2rem;
+  a {
+    color: #0182fc;
+  }
+  & > .sub {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  &__actions {
+    @include flex(row, $item: center);
+    > div {
+      margin-right: 0.6rem;
+      font-size: 1.2rem;
+      color: #bdbdd2;
+
+      img {
+        margin-right: 0.6rem;
+      }
+      @include flex(row, center, center);
+    }
+  }
+  .center {
+    a {
+      font-style: italic;
+      font-weight: 800;
+      font-size: 20px;
+      margin-top: 1rem;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #000000;
+    }
+  }
+}
+a {
+  transition: 0.4s ease all;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.comments {
+  margin-top: 3rem;
+  &__form {
+    @include flex(column);
+
+    input,
+    textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      background: #f5f5f5;
+      border: 1px solid #848484;
+      box-sizing: border-box;
+      min-height: 2.2rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+    textarea {
+      padding-top: 0.8rem;
+      resize: none;
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
+}
+.blog h1 {
+  a {
+    color: #004359;
+  }
+}
+.blog h2 {
+  a {
+    color: #000;
+  }
+}
+.comment {
+  margin-bottom: 2rem;
+  background: #ffffff;
+  padding: 19px 9px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  @include flex(row, flex-start, flex-start);
+  .ava {
+    width: 15px;
+    &--admin {
+      width: 20px;
+    }
+  }
+  &__text {
+    margin-left: 0.2rem;
+    span {
+      font-weight: 600;
+      color: #000000;
+      font-size: 16px;
+    }
+    p {
+      margin: 0;
+    }
+    .answer {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 16px;
+      text-decoration: none;
+      color: #c2c2c2;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  &.right {
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,28 @@
+.navbar {
+  padding: 3rem 0;
+  padding-left: 0.6rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  transform: translateX(-100%);
+  width: 240px;
+  @include transition;
+  z-index: 2;
+  &.active {
+    transform: translateX(0);
+  }
+ &__content{
+   @include flex(column,flex-start,flex-start)
+ }
+ a{
+     font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 20px;
+ }
+}
