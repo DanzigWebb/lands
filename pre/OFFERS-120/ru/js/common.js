@@ -3,7 +3,6 @@ window.onload = function () {
   autoImage()
   navbar()
   setAva()
-  scale()
   wheel()
 }
 
@@ -65,22 +64,7 @@ function setAva() {
   })
 }
 
-function scale() {
 
-  const btns = document.querySelectorAll('.calculator__scale button');
-  btns.forEach(item => (
-    item.addEventListener('click', handler)
-  ))
-
-  function handler() {
-    reset()
-    this.classList.add('active')
-  }
-
-  function reset() {
-    btns.forEach(btn => btn.classList.remove('active'))
-  }
-}
 const timer = new minTimer({
   hour: 't-hour',
   min: 't-min',
@@ -153,6 +137,7 @@ function showAlert() {
     window.open(currentLink, '_self')
   }, 2500);
 }
+
 function wheel() {
   const btn = document.querySelector('.wheel-cursor');
   const img = document.querySelector('.wheel-img');

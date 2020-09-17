@@ -14,17 +14,8 @@
   <link rel="stylesheet" href="font/notomono/notomono-regular.ttf">
   <!-- Begin Mailchimp Signup Form -->
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-  <style type="text/css">
-    #mc_embed_signup {
-    ?
-    }
-
-    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-
-  </style>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -216,18 +207,18 @@
         <div class="slider slider--1">
           <div class="reviews owl-carousel">
             <div class="item">
-                <img src="img/slider1_1.png" alt="">
-             <i>Прогресс за 4 недели</i>
+              <img src="img/slider1_1.png" alt="">
+              <i>Прогресс за 4 недели</i>
             </div>
             <div class="item">
-           
-                <img src="img/slider1_2.png" alt="">
-            <i>Фото слева – 78 кг. Фото справа – 65 кг</i>
+
+              <img src="img/slider1_2.png" alt="">
+              <i>Фото слева – 78 кг. Фото справа – 65 кг</i>
             </div>
             <div class="item">
-            
-                <img src="img/slider1_3.png" alt="">
-             <i>Минус 14 кг за 21 день</i>
+
+              <img src="img/slider1_3.png" alt="">
+              <i>Минус 14 кг за 21 день</i>
             </div>
           </div>
         </div>
@@ -242,22 +233,22 @@
             <form action="" class="">
               <div class="input">
                 <span>Укажите свой пол:</span>
-                <select name="select">
+                <select name="select" name="gender" required>
                   <option value="value1">Женский</option>
                   <option value="value2">Мужской</option>
                 </select>
               </div>
               <div class="input">
                 <span>Напишите свой рост:</span>
-                <input type="text" placeholder="Ваш рост">
+                <input type="text" name="growth" placeholder="Ваш рост" required>
               </div>
               <div class="input">
                 <span>Укажите свой вес:</span>
-                <input type="text" placeholder="Ваш вес">
+                <input type="text" name="weight" placeholder="Ваш вес" required>
               </div>
               <div class="input">
                 <span>Сколько вам лет:</span>
-                <input type="text" placeholder="Ваш возраст">
+                <input type="text" name="age" placeholder="Ваш возраст" required>
               </div>
               <div class="calculator__scale">
                 <p>Оцените уровень своей физической активности от 0 до 10:</p>
@@ -266,7 +257,7 @@
                   <button type="button">2</button>
                   <button type="button">3</button>
                   <button type="button">4</button>
-                  <button type="button">5</button>
+                  <button type="button" class="active">5</button>
                   <button type="button">6</button>
                   <button type="button">7</button>
                   <button type="button">8</button>
@@ -274,21 +265,44 @@
                   <button type="button">10</button>
                 </div>
               </div>
-              <button class="btn">Получить результат</button>
+              <button type="submit" class="btn">Получить результат</button>
             </form>
           </div>
+          <p><b>Совет редакции:</b> приём <a href="">капель Fortunella</a> на голодный желудок подавляет чувство
+            голода, поэтому вы наедитесь и половиной
+            привычной порции.</p>
+
           <div class="loading">
             <div class="blog__box loadin">
               <div class="">
                 <img src="img/loading-25.gif" alt="">
               </div>
-
             </div>
-            <p><b>Совет редакции:</b> приём <a href="">капель Fortunella</a> на голодный желудок подавляет чувство
-              голода, поэтому вы наедитесь и половиной
-              привычной порции.</p>
           </div>
+
           <div class="calculator__result calculator__result--1">
+            <div class="blog__box text">
+              <p>Ваш вес в пределах нормы. Чтобы поддерживать форму без диет – принимайте <a href="">капли
+                  Fortunella</a> <b>один раз в неделю.</b></p>
+            </div>
+          </div>
+
+          <div class="calculator__result calculator__result--2">
+            <div class="blog__box text">
+              <p>У вас не более 9 кг лишнего веса. Принимайте <a href="">капли Fortunella</a> <b>в течение двух
+                  недель.</b></p>
+            </div>
+          </div>
+
+          <div class="calculator__result calculator__result--3">
+            <div class="blog__box text">
+              <p>У вас более 18 лишних килограммов, что соответствует второй стадии ожирения. Пройдите курс с <a
+                  href="">каплями Fortunella</a> в
+                <b>течение 3 недель.</b></p>
+            </div>
+          </div>
+
+          <div class="calculator__result calculator__result--4">
             <div class="blog__box text">
               <p>У вас последняя стадия ожирения. <b>НУЖНЫ СРОЧНЫЕ МЕРЫ:</b> принимайте <a href="">капли Fortunella</a>
                 <b>курсом от 10 до 14</b>
@@ -296,25 +310,8 @@
                 можно сбросить от 22 до 47 килограммов.</p>
             </div>
           </div>
-          <div class="calculator__result calculator__result--1">
-            <div class="blog__box text">
-              <p>У вас не более 9 кг лишнего веса. Принимайте <a href="">капли Fortunella</a> <b>в течение двух
-                  недель.</b></p>
-            </div>
-          </div>
-          <div class="calculator__result calculator__result--1">
-            <div class="blog__box text">
-              <p>Ваш вес в пределах нормы. Чтобы поддерживать форму без диет – принимайте <a href="">капли
-                  Fortunella</a> <b>один раз в неделю.</b></p>
-            </div>
-          </div>
-          <div class="calculator__result calculator__result--1">
-            <div class="blog__box text">
-              <p>У вас более 18 лишних килограммов, что соответствует второй стадии ожирения. Пройдите курс с <a
-                  href="">каплями Fortunella</a> в
-                <b>течение 3 недель.</b></p>
-            </div>
-          </div>
+
+
           <div class="calculator__form">
             <div class="row">
               <div class="text">
@@ -333,14 +330,16 @@
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                 target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                  <div class="bux"><p>Укажите свою электронную почту:</p>
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Электронная почта"
-                  required></div>
+                  <div class="bux">
+                    <p>Укажите свою электронную почту:</p>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                      placeholder="Электронная почта" required>
+                  </div>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                       name="b_b44f1e51ed25b855d18a4ce67_7f9f69bded" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Получить план похудения" name="subscribe" id="mc-embedded-subscribe"
-                      class="button btn"></div>
+                  <div class="clear"><input type="submit" value="Получить план похудения" name="subscribe"
+                      id="mc-embedded-subscribe" class="button btn"></div>
                 </div>
               </form>
             </div>
@@ -376,16 +375,16 @@
 
         <div class="slider slider--2">
           <div class="reviews2 owl-carousel">
-     
-              <img src="img/slider2_1.png" alt="">
-         
-     
-              <img src="img/slider2_2.png" alt="">
-          
 
-     
-              <img src="img/slider2_3.png" alt="">
-        
+            <img src="img/slider2_1.png" alt="">
+
+
+            <img src="img/slider2_2.png" alt="">
+
+
+
+            <img src="img/slider2_3.png" alt="">
+
           </div>
         </div>
         <div class="blog__box border text">
@@ -458,17 +457,17 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Капли Fortunella мне посоветовал диетолог. Сказала, что сейчас это самое лучшее средство и нет никакого
-                вреда для
-                здоровья. Пью уже третью неделю, результат минус 12,5 килограмм (изначальный вес был 84 кг). Для меня
-                это хороший
-                результат, так как до этого мне ничего не помогало. Надеюсь похудеть до заветных 52 кг))
-              </p>
-              <a href="">Ответить</a>
             </div>
+            <p>
+              Капли Fortunella мне посоветовал диетолог. Сказала, что сейчас это самое лучшее средство и нет никакого
+              вреда для
+              здоровья. Пью уже третью неделю, результат минус 12,5 килограмм (изначальный вес был 84 кг). Для меня
+              это хороший
+              результат, так как до этого мне ничего не помогало. Надеюсь похудеть до заветных 52 кг))
+            </p>
+            <a href="">Ответить</a>
           </div>
+        </div>
 
         <div class="comment right">
           <img src="img/ava2.png" alt="">
@@ -477,12 +476,12 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Елена, так держать и у вас всё получится! </p> <a href="">Ответить</a>
             </div>
+            <p>
+              Елена, так держать и у вас всё получится! </p> <a href="">Ответить</a>
           </div>
-       
+        </div>
+
         <div class="comment">
           <img src="img/ava3.png" alt="">
           <div class="text">
@@ -490,13 +489,13 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Добрый день. Подскажите пожалуйста, при приеме капель надо соблюдать диеты или заниматься спортом? </p>
-              <a href="">Ответить</a>
             </div>
+            <p>
+              Добрый день. Подскажите пожалуйста, при приеме капель надо соблюдать диеты или заниматься спортом? </p>
+            <a href="">Ответить</a>
           </div>
-       
+        </div>
+
         <div class="comment right">
           <img src="img/ava4.png" alt="">
           <div class="text">
@@ -504,15 +503,15 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Здравствуйте, Полина. Соблюдать диету или увеличивать физическую активность при приеме капель не
-                обязательно, но если вы
-                уменьшите потребления сахара и жирного, то желаемого результата вы сможете добиться быстрее.</p>
-              <a href="">Ответить</a>
             </div>
+            <p>
+              Здравствуйте, Полина. Соблюдать диету или увеличивать физическую активность при приеме капель не
+              обязательно, но если вы
+              уменьшите потребления сахара и жирного, то желаемого результата вы сможете добиться быстрее.</p>
+            <a href="">Ответить</a>
           </div>
- 
+        </div>
+
         <div class="comment right">
           <img src="img/ava5.png" alt="">
           <div class="text">
@@ -520,13 +519,13 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Большое спасибо. А то я боюсь что не смогу отказаться от любимой еды, а похудеть очень хочется. Заказала
-                курс, попробую.</p> <a href="">Ответить</a>
             </div>
+            <p>
+              Большое спасибо. А то я боюсь что не смогу отказаться от любимой еды, а похудеть очень хочется. Заказала
+              курс, попробую.</p> <a href="">Ответить</a>
           </div>
-        
+        </div>
+
         <div class="comment ">
           <img src="img/ava6.png" alt="">
           <div class="text">
@@ -534,16 +533,16 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Я в восторге от этого средства. Я за 6 недель похудела на 23,5 килограмма!!! Не изнуряя себя ни диетами,
-                ни спортом,
-                только в самом начале немного уменьшила порцию, а уже буквально через три дня заметила, что аппетит
-                снизился и мне не
-                хочется объедаться на ночь. Оцените мои результаты) </p> <a href="">Ответить</a>
             </div>
+            <p>
+              Я в восторге от этого средства. Я за 6 недель похудела на 23,5 килограмма!!! Не изнуряя себя ни диетами,
+              ни спортом,
+              только в самом начале немного уменьшила порцию, а уже буквально через три дня заметила, что аппетит
+              снизился и мне не
+              хочется объедаться на ночь. Оцените мои результаты) </p> <a href="">Ответить</a>
           </div>
-        
+        </div>
+
         <div class="comment right">
           <img src="img/ava7.png" alt="">
           <div class="text">
@@ -551,400 +550,412 @@
             <div class="date">
               <img src="img/date.svg" alt="">
               <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Анна, вы выглядите шикарно!!!</p> <a href="">Ответить</a>
             </div>
+            <p>
+              Анна, вы выглядите шикарно!!!</p> <a href="">Ответить</a>
           </div>
         </div>
-        <div class="comment">
-          <img src="img/ava8.png" alt="">
-          <div class="text">
-            <b class="name">Анастасия Сорокина</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Здравствуйте. Подскажите, можно ли пить капли, если у меня проблемы с жкт? </p> <a href="">Ответить</a>
-            </div>
-     
-        </div>
-        <div class="comment right">
-          <img src="img/ava9.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Здравствуйте, Анастасия. Капли Fortunella , нормализуют не только работу жкт, но и всех систем
-                организма. Принимайте
-                капли по инструкции, и не превышайте дозировку. Удачи! </p> <a href="">Ответить</a>
-            </div>
-        
-        </div>
-        <div class="comment right">
-          <img src="img/ava10.png" alt="">
-          <div class="text">
-            <b class="name">Анастасия Сорокина</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Спасибо большое, заказала. </p> <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment">
-          <img src="img/ava11.png" alt="">
-          <div class="text">
-            <b class="name">Ирина Шишкова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Я уже давно не верю в обещания “минус 20 кг за месяц”, ну не бывает такого. Пила эти капли, за месяц
-                похудела всего на 4
-                килограмма, но с таким же успехом можно и на диете посидеть.
-              </p>
-              <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava12.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Добрый день, Ирина. Вы придерживались инструкции, когда пили курс?</p> <a href="">Ответить</a>
-            </div>
-
-        </div>
-        <div class="comment right">
-          <img src="img/ava13.png" alt="">
-          <div class="text">
-            <b class="name">Ирина Шишкова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Если честно, то только первые пару дней, потом вышла на работу, и там уже как получится.
-              </p> <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava14.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-Ирина, очень важно придерживаться инструкции, попробуйте ещё раз, не пропускайте прием и не превышайте дозировку, эффект
-капель накопительный, поэтому не бросайте, если в первое время вы не увидите резкого снижения веса.</p>
-              <a href="">Ответить</a>
-            </div>
-  
-        </div>
-    
-        <div class="comment right">
-          <img src="img/ava15.png" alt="">
-          <div class="text">
-            <b class="name">Ирина Шишкова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-              Я последовала вашему совету, и действительно, первое время вес уходил медленнее чем я рассчитывала, но спустя 2 недели
-              на весах - 11,5 килограмм. Спасибо вам большое! </p> <a href="">Ответить</a>
-            </div>
-
-        </div>
-        <div class="comment ">
-          <img src="img/ava16.png" alt="">
-          <div class="text">
-            <b class="name">Екатерина Бунина
-</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-      Я похудела на 34 килограмма с каплями Fortunella!!! Выгляжу сногсшибательно. А самое главное, что вес не возвращается. Я
-      советую всем это средство. </p> <a href="">Ответить</a>
-            </div>
-   
-        </div>
-        <div class="comment ">
-          <img src="img/ava17.png" alt="">
-          <div class="text">
-            <b class="name">Ольга Остроухова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-    Я худею с каплями Fortunella, с 78 килограмм. И за первую неделю ушло 4,5 килограмма, в основном вода и шлаки. За вторую
-    неделю ушло еще 7,5 килограмм, но это уже был исключительно жир! (у меня весы с анализатором состава тела, так что я
-    контролировала буквально все изменения). Сейчас мой вес составляет 55 килограмм, и это всего за полтора месяца!
-</p> <a href="">Ответить</a>
-            </div>
-  
-        </div>
-        <div class="comment right">
-          <img src="img/ava18.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-              Поздравляем!!! </p> <a href="">Ответить</a>
-            </div>
-  
-        </div>
-        <div class="comment ">
-          <img src="img/ava19.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-              Я столько слышала положительных отзывов об этом средстве, что решила заказать, нашла сайт в интернете и заказала курс. В
-              итоге, доставляли две недели, никакой инструкции не было, сайт где я заказывала перестал работать. На вкус гадость какая
-              то, эффекта никакого, пила неделю и начались проблемы с жкт, конечно бросила. Не советую никому. </p> <a href="">Ответить</a>
-            </div>
-  
-        </div>
-        <div class="comment right">
-          <img src="img/ava20.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-              Александра, здравствуйте. Вы купили подделку. Капли Fortunella в нашей стране продаются лишь одним производителем, его
-              сайт указан выше. В каждой упаковке есть инструкция, и конечно же никаких проблем со здоровьем капли не вызывают, а
-              наоборот нормализуют работу всего организма. Закажите на официальном сайте, и вы увидите каких результатов можно
-              добиться.
-</p> <a href="">Ответить</a>
-            </div>
- 
-        </div>
-        <div class="comment right">
-          <img src="img/ava21.png" alt="">
-          <div class="text">
-            <b class="name">Александра Александрова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Я так и поступила, заказала капли на сайте выше. Доставили через 2 дня после заказа прямо домой,
-                инструкция прилагается,
-                выглядят совершенно по другому, чем когда я заказывала в первый раз, упаковка очень качественная. По
-                вкусу приятные, пью
-                по инструкции уже 2 дня, никаких проблем не заметила. Девочки остерегайтесь подделок!!! </p> <a
-                href="">Ответить</a>
-            </div>
-   
-        </div>
-        <div class="comment right">
-          <img src="img/ava22.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Удачи вам! Ждем ваших результатов)
-              </p> <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava23.png" alt="">
-          <div class="text">
-            <b class="name">Александра Александрова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Спасибо, обязательно отпишусь!
-              </p> <a href="">Ответить</a>
-            </div>
-       
-        </div>
-        <div class="comment ">
-          <img src="img/ava24.png" alt="">
-          <div class="text">
-            <b class="name">Марина Антропова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Давно искала средство для похудения, а то я такая лентяйка, сама себя никогда в руки не возьму.
-                Заказала, понравилась
-                доступная цена и натуральный безвредный состав. Химией себя тоже травить не хочется. Пью, аппетит
-                намного меньше стал,
-                чувствую себя отлично - никаких побочных эффектов нет. На весах уже минус 6,5 килограмм, за 8 дней. Я
-                очень довольна! </p> <a href="">Ответить</a>
-            </div>
-      
-        </div>
-        <div class="comment ">
-          <img src="img/ava25.png" alt="">
-          <div class="text">
-            <b class="name">Юлия Ковалева</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Пью капли уже третью неделю - всего минус 3 килограмма. Я разочарована, надеялась на большее
-              </p> <a href="">Ответить</a>
-            </div>
-  
-        </div>
-        <div class="comment right">
-          <img src="img/ava26.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Юлия, какая у вас суточная дозировка?
-              </p> <a href="">Ответить</a>
-            </div>
-   
-        </div>
-        <div class="comment right">
-          <img src="img/ava27.png" alt="">
-          <div class="text">
-            <b class="name">Юлия Ковалева</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Я пью вечером 10 капель, после еды.
-              </p> <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava28.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Это слишком маленькая суточная доза, поэтому и результат не тот. Пейте по чайной ложке 2 раза в день или
-                по 15 капель 6
-                раз в день, и лучше всего за 20 минут до еды.
-              </p> <a href="">Ответить</a>
-            </div>
-      
-        </div>
-        <div class="comment right">
-          <img src="img/ava29.png" alt="">
-          <div class="text">
-            <b class="name">Юлия Ковалева</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-                  </div>
-              <span class="get-date " data-day-delay="9"></span>
-              <p>Спасибо, попробую. </p> <a href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava30.png" alt="">
-          <div class="text">
-            <b class="name">Юлия Ковалева</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Вы были правы, как только я изменила дозировку, вес пошёл вниз. За неделю минус 5,5 килограмм!!!</p> <a
-                href="">Ответить</a>
-            </div>
-    
-        </div>
-        <div class="comment right">
-          <img src="img/ava31.png" alt="">
-          <div class="text">
-            <b class="name">Admin</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-                  </div>
-              <p>
-                Это отлично!!! </p> <a href="">Ответить</a>
-            </div>
-   
-        </div>
-        <div class="comment">
-          <img src="img/ava32.png" alt="">
-          <div class="text">
-            <b class="name">Инга Смолова</b>
-            <div class="date">
-              <img src="img/date.svg" alt="">
-              <span class="get-date " data-day-delay="9"></span>
-            </div>
-              <p>
-                После родов никак не могла похудеть, что я только не пробовала, и диеты и таблетки и голодала даже.
-                Помогли только капли
-                Fortunella, за месяц я похудела на 16, 5 килограмм и стала такой же как до родов. Девочки, не мучайте
-                себя диетами,
-                закажите капли и вы быстро похудеете, без вреда для здоровья. Посмотрите на меня)
-              </p>
-              <div class="img">
-                <img src="img/comm2.png" alt="">
-              </div> <a href="">Ответить</a>
-            </div>
-          </div>
       </div>
+      <div class="comment">
+        <img src="img/ava8.png" alt="">
+        <div class="text">
+          <b class="name">Анастасия Сорокина</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Здравствуйте. Подскажите, можно ли пить капли, если у меня проблемы с жкт? </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava9.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Здравствуйте, Анастасия. Капли Fortunella , нормализуют не только работу жкт, но и всех систем
+            организма. Принимайте
+            капли по инструкции, и не превышайте дозировку. Удачи! </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava10.png" alt="">
+        <div class="text">
+          <b class="name">Анастасия Сорокина</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Спасибо большое, заказала. </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment">
+        <img src="img/ava11.png" alt="">
+        <div class="text">
+          <b class="name">Ирина Шишкова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я уже давно не верю в обещания “минус 20 кг за месяц”, ну не бывает такого. Пила эти капли, за месяц
+            похудела всего на 4
+            килограмма, но с таким же успехом можно и на диете посидеть.
+          </p>
+          <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava12.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Добрый день, Ирина. Вы придерживались инструкции, когда пили курс?</p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava13.png" alt="">
+        <div class="text">
+          <b class="name">Ирина Шишкова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Если честно, то только первые пару дней, потом вышла на работу, и там уже как получится.
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava14.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Ирина, очень важно придерживаться инструкции, попробуйте ещё раз, не пропускайте прием и не превышайте
+            дозировку, эффект
+            капель накопительный, поэтому не бросайте, если в первое время вы не увидите резкого снижения веса.</p>
+          <a href="">Ответить</a>
+        </div>
+
+      </div>
+
+      <div class="comment right">
+        <img src="img/ava15.png" alt="">
+        <div class="text">
+          <b class="name">Ирина Шишкова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я последовала вашему совету, и действительно, первое время вес уходил медленнее чем я рассчитывала, но
+            спустя 2 недели
+            на весах - 11,5 килограмм. Спасибо вам большое! </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment ">
+        <img src="img/ava16.png" alt="">
+        <div class="text">
+          <b class="name">Екатерина Бунина
+          </b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я похудела на 34 килограмма с каплями Fortunella!!! Выгляжу сногсшибательно. А самое главное, что вес не
+            возвращается. Я
+            советую всем это средство. </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment ">
+        <img src="img/ava17.png" alt="">
+        <div class="text">
+          <b class="name">Ольга Остроухова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я худею с каплями Fortunella, с 78 килограмм. И за первую неделю ушло 4,5 килограмма, в основном вода и
+            шлаки. За вторую
+            неделю ушло еще 7,5 килограмм, но это уже был исключительно жир! (у меня весы с анализатором состава тела,
+            так что я
+            контролировала буквально все изменения). Сейчас мой вес составляет 55 килограмм, и это всего за полтора
+            месяца!
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava18.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Поздравляем!!! </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment ">
+        <img src="img/ava19.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я столько слышала положительных отзывов об этом средстве, что решила заказать, нашла сайт в интернете и
+            заказала курс. В
+            итоге, доставляли две недели, никакой инструкции не было, сайт где я заказывала перестал работать. На вкус
+            гадость какая
+            то, эффекта никакого, пила неделю и начались проблемы с жкт, конечно бросила. Не советую никому. </p> <a
+            href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava20.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Александра, здравствуйте. Вы купили подделку. Капли Fortunella в нашей стране продаются лишь одним
+            производителем, его
+            сайт указан выше. В каждой упаковке есть инструкция, и конечно же никаких проблем со здоровьем капли не
+            вызывают, а
+            наоборот нормализуют работу всего организма. Закажите на официальном сайте, и вы увидите каких результатов
+            можно
+            добиться.
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava21.png" alt="">
+        <div class="text">
+          <b class="name">Александра Александрова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я так и поступила, заказала капли на сайте выше. Доставили через 2 дня после заказа прямо домой,
+            инструкция прилагается,
+            выглядят совершенно по другому, чем когда я заказывала в первый раз, упаковка очень качественная. По
+            вкусу приятные, пью
+            по инструкции уже 2 дня, никаких проблем не заметила. Девочки остерегайтесь подделок!!! </p> <a
+            href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava22.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Удачи вам! Ждем ваших результатов)
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava23.png" alt="">
+        <div class="text">
+          <b class="name">Александра Александрова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Спасибо, обязательно отпишусь!
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment ">
+        <img src="img/ava24.png" alt="">
+        <div class="text">
+          <b class="name">Марина Антропова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Давно искала средство для похудения, а то я такая лентяйка, сама себя никогда в руки не возьму.
+            Заказала, понравилась
+            доступная цена и натуральный безвредный состав. Химией себя тоже травить не хочется. Пью, аппетит
+            намного меньше стал,
+            чувствую себя отлично - никаких побочных эффектов нет. На весах уже минус 6,5 килограмм, за 8 дней. Я
+            очень довольна! </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment ">
+        <img src="img/ava25.png" alt="">
+        <div class="text">
+          <b class="name">Юлия Ковалева</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Пью капли уже третью неделю - всего минус 3 килограмма. Я разочарована, надеялась на большее
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava26.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Юлия, какая у вас суточная дозировка?
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava27.png" alt="">
+        <div class="text">
+          <b class="name">Юлия Ковалева</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Я пью вечером 10 капель, после еды.
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava28.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Это слишком маленькая суточная доза, поэтому и результат не тот. Пейте по чайной ложке 2 раза в день или
+            по 15 капель 6
+            раз в день, и лучше всего за 20 минут до еды.
+          </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava29.png" alt="">
+        <div class="text">
+          <b class="name">Юлия Ковалева</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+          </div>
+          <span class="get-date " data-day-delay="9"></span>
+          <p>Спасибо, попробую. </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava30.png" alt="">
+        <div class="text">
+          <b class="name">Юлия Ковалева</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Вы были правы, как только я изменила дозировку, вес пошёл вниз. За неделю минус 5,5 килограмм!!!</p> <a
+            href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment right">
+        <img src="img/ava31.png" alt="">
+        <div class="text">
+          <b class="name">Admin</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            Это отлично!!! </p> <a href="">Ответить</a>
+        </div>
+
+      </div>
+      <div class="comment">
+        <img src="img/ava32.png" alt="">
+        <div class="text">
+          <b class="name">Инга Смолова</b>
+          <div class="date">
+            <img src="img/date.svg" alt="">
+            <span class="get-date " data-day-delay="9"></span>
+          </div>
+          <p>
+            После родов никак не могла похудеть, что я только не пробовала, и диеты и таблетки и голодала даже.
+            Помогли только капли
+            Fortunella, за месяц я похудела на 16, 5 килограмм и стала такой же как до родов. Девочки, не мучайте
+            себя диетами,
+            закажите капли и вы быстро похудеете, без вреда для здоровья. Посмотрите на меня)
+          </p>
+          <div class="img">
+            <img src="img/comm2.png" alt="">
+          </div> <a href="">Ответить</a>
+        </div>
+      </div>
+    </div>
     </div>
 
     <div class="sidebar">
       <h2 class="sidebar__title">Популярные статьи</h2>
-      <a href="" class="sidebar__item sidebar__bord" >
+      <a href="" class="sidebar__item sidebar__bord">
         <div class="date">
           <div class="img">
             <img src="img/date.svg" alt="">
           </div>
           <span class="get-date " data-day-delay="9"></span>
         </div>
-     <p>Как повысить иммунитет: 5 правил на каждый день</p>
-      <div class="img">
-        <img src="img/side1.png" alt="">
-      </div>
+        <p>Как повысить иммунитет: 5 правил на каждый день</p>
+        <div class="img">
+          <img src="img/side1.png" alt="">
+        </div>
       </a>
       <a href="" class="sidebar__item sidebar__bord">
         <div class="date">
@@ -953,10 +964,11 @@
           </div>
           <span class="get-date " data-day-delay="9"></span>
         </div>
-          <p>Избавься от целлюлита в домашних условиях за неделю</p>
-          <div class="img">
-            <img src="img/side2.png" alt="">
-          </div></a>
+        <p>Избавься от целлюлита в домашних условиях за неделю</p>
+        <div class="img">
+          <img src="img/side2.png" alt="">
+        </div>
+      </a>
       <a href="" class="sidebar__item sidebar__bord">
         <div class="date">
           <div class="img">
@@ -986,6 +998,7 @@
   <script src="libs/carousel/owl.carousel.min.js"></script>
   <script src="js/timer.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/calc.js"></script>
 
 </body>
 
