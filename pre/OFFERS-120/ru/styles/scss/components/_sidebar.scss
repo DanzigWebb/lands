@@ -1,19 +1,38 @@
 .sidebar {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   margin: 0 auto;
   padding: 3rem .4rem;
   @media (max-width: 900px){
     display: none;
   }
-
+&__title{
+  text-transform: uppercase;
+font-weight: bold;
+color: #808080;
+font-size: 18px;
+}
   &__item {
     color: #000;
     text-decoration: none;
     display: block;
-    margin-bottom: 1.8rem;
-    font-family: 'Times New Roman';
-
+border-top: 1px solid #E4E4E4;
+position: relative;
+padding: 16px 0;
+padding-bottom: 25px;
+&::before{
+  content: '';
+  width: 70px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 4px;
+  background-color: #FF4891;
+}
+.img{
+  margin-top: 9px;
+}
     &:hover {
       p {
         text-decoration: underline;
@@ -26,17 +45,11 @@
     }
   }
 
-  &__head {
-    @include flex(row, $item: center);
-    margin-bottom: 0.8rem;
-
-    i {
-      font-weight: 300;
-      
-    }
-
-    img {
-      margin-right: 0.4rem;
-    }
-  }
+ .date {
+@include flex(row, space-between,center);
+width: 100px;
+font-size: 14px;
+margin-bottom: 20px;
+color: #BBBBBB;
+ }
 }

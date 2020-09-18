@@ -5,7 +5,6 @@ function calc() {
   const scaleBtns$ = $('.calculator__scale button');
 
   const form$ = $('.calculator form')
-
   start()
 
   form$.on('submit', (e) => {
@@ -25,7 +24,10 @@ function calc() {
 
   // Валидация цифровых инпутов (запрещаем вводить символы кроме [0-9])
   form$.on('input', e => {
-    e.target.value = leaveOnlyDigits(e.target.value);
+    if (!e.target.matches('select')) {
+      e.target.value = leaveOnlyDigits(e.target.value);
+
+    }
   })
 
 

@@ -15,65 +15,16 @@
   &.active {
     transform: translateX(0);
   }
-  &__menu {
+  &__nav {
     @include flex(column);
-    padding-left: 1rem;
-  }
-  &__link {
-    color: #000;
-    text-decoration: none;
-    @include transition;
+      font-size: 16px;
+    text-transform: uppercase;
 
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 1.2rem;
-    }
-  }
-
-  &__subscribers {
-    padding-left: 1rem;
-    margin: 3rem 0;
-    @include flex(row, space-between, center);
-    a.navbar__link {
-      color: #acacac;
-      margin: 0;
-    }
-  }
-
-  &__item {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: 2rem;
-    align-items: center;
-    grid-gap: 0.6rem;
-    border-radius: 10px;
-    padding: 4px 1rem;
-    border: 1px solid transparent;
-    margin-bottom: 0.3rem;
-    @include transition;
     a {
-      color: #000;
+      color: #808080;
+      margin-bottom: 19px;
       text-decoration: none;
     }
-    &:hover,
-    &.active {
-      background: #ffffff;
-      border: 1px solid #ff9933;
-      box-sizing: border-box;
-    }
-  }
 
-  &__more {
-    display: inline-block;
-    margin-top: 0.9rem;
-    font-size: 0.9rem;
-    padding-left: 1rem;
-    a {
-      color: #acacac;
-      text-decoration: none;
-    }
   }
 }

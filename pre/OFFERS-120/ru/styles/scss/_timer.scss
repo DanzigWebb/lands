@@ -3,26 +3,36 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    max-width: 260px;
+    max-width: 290px;
     width: 100%;
+ box-sizing: border-box;
     height: 194px;
-    @include flex(column, flex-end, center);
+    padding: 26px 37px;
+    @include flex(column, flex-start, center);
     background: #eeeeee;
     border: 2px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
     border-radius: 20px;
     color: #000a5a;
-    &.chin {
+
+    padding-top: 82px;
+    &.chin {   
+         position: relative;
+         z-index: 3;
         &::after {
             content: "";
-            border-radius: 1rem;
+             mix-blend-mode: color-burn;
+            border-radius: 50px;
             box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
-            height:50px;
-            width: 400px;
-            z-index: -1;
+            height:60px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
             background: #ebebeb;
-            transform: translateY(15px);
+            transform: translateY(10px);
         }
     }
 }
@@ -33,8 +43,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 60px;
-    max-width: 331px;
+    font-size: 30px;
+  max-width: 186px;
     font-weight: normal;
 }
 
@@ -45,20 +55,20 @@
 }
 
 .timer__wrapper span {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: normal;
     line-height: 1;
 }
 
 .timer__title {
     text-align: center;
-    font-size: 22px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .timer__desc {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     width: 100%;
     @include flex(row,space-between);
