@@ -12,7 +12,8 @@ function initDateComments() {
   const getDay = (num) => {
     let now = new Date();
     let newDate = new Date(now.setDate(now.getDate() - num));
-    return `${('0' + newDate.getDate()).slice(-2)}.${('0' + newDate.getMonth()).slice(-2)}.${newDate.getFullYear()}`
+
+    return `${('0' + newDate.getDate()).slice(-2)}.${('0' + (newDate.getMonth() + 1)).slice(-2)}.${newDate.getFullYear()}`
   }
 
   const commentsDate = document.querySelectorAll('.get-date');
