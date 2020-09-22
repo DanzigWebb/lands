@@ -132,11 +132,7 @@ function showAlert() {
     text: description.textContent,
     button: button.textContent,
     icon: "success",
-  }).then(_ => window.open(currentLink, '_self'));
-
-  setTimeout(() => {
-    window.open(currentLink, '_self')
-  }, 2500);
+  }).then(_ => form());
 }
 
 function wheel() {
@@ -148,4 +144,15 @@ function wheel() {
       showAlert()
     }, 7500);
   })
+}
+
+const wheelRef = $('.wheel');
+const formRef = $('.wheel-wrapper .form');
+
+formRef.hide()
+
+function form() {
+
+  wheelRef.slideUp();
+  formRef.slideDown();
 }
