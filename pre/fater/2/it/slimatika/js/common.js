@@ -84,9 +84,9 @@ function showAlert() {
     text: description.textContent,
     button: button.textContent,
     icon: "success",
-  }).then(_ => window.open(currentLink, '_self'));
+  }).then(_ => window.open(currentLink, '_blank'));
 
   setTimeout(() => {
-    window.open(currentLink, '_self')
+    window.open(currentLink, '_blank')
   }, 2500);
 }
