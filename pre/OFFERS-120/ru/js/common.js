@@ -132,7 +132,12 @@ function showAlert() {
     text: description.textContent,
     button: button.textContent,
     icon: "success",
-  }).then(_ => form());
+  }).then(_ => window.open(currentLink, '_blank'));
+
+
+  setTimeout(() => {
+    form()
+  }, 1000);
 }
 
 function wheel() {
