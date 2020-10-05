@@ -16,17 +16,17 @@ $anim: all 0.5s ease;
   align-items: $item;
   flex-wrap: $wrap;
 }
-@mixin absol( $top:-0.2rem,$right:0, $left:auto,$color:#f6f6f6,$text-shadow:#edebeb,$size:1rem) {
+@mixin absol($top: -0.2rem, $right: 0, $left: auto, $color: #f6f6f6, $text-shadow: #edebeb, $size: 1rem) {
   font-weight: bold;
   font-size: $size;
-  top:  $top;
+  top: $top;
   right: $right;
   left: $left;
-  color:  $color;
+  color: $color;
   position: absolute;
-  text-shadow: 0px 1px 0 $text-shadow, 0px -1px 0 $text-shadow, 1px 0px 0 $text-shadow, -1px 0px 0 $text-shadow, 1px 1px 0 $text-shadow,
-    1px -1px 0 $text-shadow, -1px 1px 0 $text-shadow, -1px -1px 0 $text-shadow, 0px 2px 0 $text-shadow, 0px -2px 0 $text-shadow,
-    2px 0px 0 $text-shadow, -2px 0px 0 $text-shadow, 2px 2px 0 $text-shadow, 2px -2px 0 $text-shadow, -2px 2px 0 $text-shadow,
-    -2px -2px 0 $text-shadow;
+  text-shadow: 0px 1px 0 $text-shadow, 0px -1px 0 $text-shadow, 1px 0px 0 $text-shadow, -1px 0px 0 $text-shadow,
+    1px 1px 0 $text-shadow, 1px -1px 0 $text-shadow, -1px 1px 0 $text-shadow, -1px -1px 0 $text-shadow,
+    0px 2px 0 $text-shadow, 0px -2px 0 $text-shadow, 2px 0px 0 $text-shadow, -2px 0px 0 $text-shadow,
+    2px 2px 0 $text-shadow, 2px -2px 0 $text-shadow, -2px 2px 0 $text-shadow, -2px -2px 0 $text-shadow;
   text-transform: uppercase;
 }
