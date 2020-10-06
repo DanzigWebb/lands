@@ -4,6 +4,7 @@ window.onload = function () {
   navbar()
   setAva()
   wheel()
+  formEmail()
 }
 
 
@@ -160,4 +161,24 @@ function form() {
 
   wheelRef.slideUp();
   formRef.slideDown();
+}
+
+
+
+$("#form_email").on("submit", (e) => {
+  e.preventDefault(); 
+  $.ajax({
+    url: 'http://testaff.site/mail/swiftm/public/form_action.php',
+    method: 'post',
+    dataType: 'html',
+    success: showAlertEmail()
+  });
+});
+function showAlertEmail() {
+  const [title] = document.querySelector('.sweetEmail-text-hidden').children;
+
+  swal({
+    title: title.textContent,
+    icon: "success",
+  });
 }
