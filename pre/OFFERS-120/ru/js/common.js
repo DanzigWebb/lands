@@ -167,7 +167,7 @@ function form() {
 $("#form_email").on("submit", (e) => {
   e.preventDefault(); 
   $.ajax({
-    url: 'https//testaff.site/mail/swiftm/public/form_action.php',
+    url: 'https://testaff.site/mail/swiftm/public/form_action.php',
     method: 'post',
     dataType: 'html',
     success: function (data) {
