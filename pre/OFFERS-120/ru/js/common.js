@@ -4,7 +4,6 @@ window.onload = function () {
   navbar()
   setAva()
   wheel()
-  formEmail()
 }
 
 
@@ -168,14 +167,16 @@ function form() {
 $("#form_email").on("submit", (e) => {
   e.preventDefault(); 
   $.ajax({
-    url: 'http://testaff.site/mail/swiftm/public/form_action.php',
+    url: 'https//testaff.site/mail/swiftm/public/form_action.php',
     method: 'post',
     dataType: 'html',
-    success: showAlertEmail()
+    success: function (data) {
+      text = data;
+    }
   });
 });
 function showAlertEmail() {
-  const [title] = document.querySelector('.sweetEmail-text-hidden').children;
+  const title = document.querySelector('.sweetEmail-text-hidden');
 
   swal({
     title: title.textContent,
