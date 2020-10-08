@@ -7,7 +7,6 @@ window.onload = function () {
 }
 
 
-
 function initDateComments() {
   const getDay = (num) => {
     let now = new Date();
@@ -65,14 +64,12 @@ function setAva() {
   })
 }
 
-
 const timer = new minTimer({
   hour: 't-hour',
   min: 't-min',
   sec: 't-sec',
   separation: true
 }).start();
-
 
 
 $("body").on('click', '[href*="#"]', function (e) {
@@ -103,6 +100,7 @@ $(document).ready(function () {
   });
 
 });
+
 $(document).ready(function () {
   var rev = $(".reviews2").owlCarousel({
     margin: 20,
@@ -114,7 +112,7 @@ $(document).ready(function () {
 
     responsive: {
       0: {
-        items: 1 
+        items: 1
       },
       1100: {
         items: 1,
@@ -124,6 +122,7 @@ $(document).ready(function () {
   });
 
 });
+
 function showAlert() {
   const [title, description, button] = document.querySelector('.sweet-text-hidden').children;
 
@@ -132,7 +131,12 @@ function showAlert() {
     text: description.textContent,
     button: button.textContent,
     icon: "success",
-  }).then(_ => form());
+  }).then(_ => window.open(currentLink, '_blank'));
+
+
+  setTimeout(() => {
+    form()
+  }, 1000);
 }
 
 function wheel() {
@@ -152,7 +156,7 @@ const formRef = $('.wheel-wrapper .form');
 formRef.hide()
 
 function form() {
-
   wheelRef.slideUp();
   formRef.slideDown();
 }
+
