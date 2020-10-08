@@ -12,8 +12,8 @@ function like() {
   likes.forEach(item => {
     item.addEventListener('click', e => {
       (item.matches('.active'))
-        ? item.classList.remove('active')
-        : item.classList.add('active')
+          ? item.classList.remove('active')
+          : item.classList.add('active')
     })
   })
 }
@@ -23,32 +23,47 @@ function initComments() {
   const btns = document.querySelectorAll('.comment')
   const textareas = document.querySelectorAll('.textarea')
   const sends = document.querySelectorAll('.send')
-  const commens = document.querySelectorAll('textarea')
+  const comments = document.querySelectorAll('textarea')
 
-  commens.forEach((_, i) => initItem(i))
+  comments.forEach((_, i) => initItem(i))
 
   function initItem(index) {
 
     const btn = btns[index]
     const textarea = textareas[index]
     const send = sends[index]
-    const commen = commens[index]
+    const comment = comments[index]
 
     btn.addEventListener('click', () => {
       (textarea.matches('.active'))
-        ? textarea.classList.remove('active')
-        : textarea.classList.add('active')
+          ? textareaHide(textarea)
+          : textareaShow(textarea)
     })
 
     send.addEventListener('click', () => {
-      commen.value = ""
-      showAllTextarea()
+      comment.value = ''
+      hideAllTextarea()
       showAlert()
     })
   }
 
-  function showAllTextarea() {
-    textareas.forEach(item => item.classList.remove('active'))
+  function textareaShow(textarea) {
+    hideAllTextarea()
+    textarea.classList.add('active')
+    $(textarea).slideDown(300)
+  }
+
+  function textareaHide(textarea) {
+    textarea.classList.remove('active')
+    $(textarea).slideUp(200)
+  }
+
+  function hideAllTextarea() {
+    textareas.forEach(item => textareaHide(item))
+    sends.forEach(item => {
+      item.classList.remove('active')
+      item.disabled = true
+    })
   }
 
   function showAlert() {
@@ -68,6 +83,7 @@ function initForms() {
 
   comments.forEach((com, i) => {
     com.addEventListener('input', _ => changeBackground(i))
+    com.addEventListener('keydown', e => enterHandle(e, i))
   })
 
   function changeBackground(i) {
@@ -83,6 +99,12 @@ function initForms() {
       btn.disabled = true
     }
   }
+
+  function enterHandle(e, i) {
+    if (e.key === 'Enter') {
+      btns[i].click()
+    }
+  }
 }
 
 function initDateComments() {
@@ -95,6 +117,6 @@ function initDateComments() {
 
   const commentsDate = document.querySelectorAll('.get-date')
   commentsDate.forEach(item => (
-    item.innerHTML = getDay(item.getAttribute('data-day-delay'))
+      item.innerHTML = getDay(item.getAttribute('data-day-delay'))
   ))
 }

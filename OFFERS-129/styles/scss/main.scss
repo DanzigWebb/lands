@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-gap: 1rem;
 }
 
 .comm {
@@ -11,6 +13,10 @@ body {
   padding: 12px;
   padding-bottom: 0;
   border: 1px rgb(220, 219, 219) solid;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 
   a {
     text-decoration: none;
@@ -136,13 +142,16 @@ body {
 
   .textarea {
     display: none;
-    border-top: 1px rgb(220, 219, 219) solid;
 
-    &.active {
-      padding: 20px 0;
+    &__wrapper {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    &.active {
+      visibility: visible;
     }
 
     img {
@@ -203,5 +212,16 @@ body {
         border: none;
       }
     }
+  }
+}
+
+
+a, button {
+  cursor: pointer;
+  transition: .3s ease all;
+
+  &:hover {
+    opacity: 0.7;
+    // color: #418ed2;
   }
 }
