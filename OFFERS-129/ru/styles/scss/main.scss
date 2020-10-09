@@ -46,11 +46,11 @@ body {
         color: rgb(194, 194, 194);
         font-size: 13px;
       }
-      @media (max-width:500px){
-  p{
-    font-size: 18px;
-  }
-}
+      @media (max-width: 500px) {
+        p {
+          font-size: 18px;
+        }
+      }
     }
 
     img {
@@ -191,15 +191,13 @@ body {
         resize: none;
         &::placeholder {
           color: #90949c;
-          
-          
         }
         @media (max-width: 500px) {
           padding-top: 15px;
-           &::placeholder {
+          &::placeholder {
             font-size: 10px;
-           }
           }
+        }
       }
     }
 
@@ -243,12 +241,12 @@ button {
 .form {
   max-width: 690px;
   width: 100%;
-  border: 3px solid #4A89DC;
-box-sizing: border-box;
+  border: 3px solid #4a89dc;
+  box-sizing: border-box;
   margin: 20px auto;
 
   padding: 44px 20px;
-  form{
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,33 +254,33 @@ box-sizing: border-box;
     margin: auto;
     width: 100%;
   }
-  input{
+  input {
     padding-left: 44px;
     height: 75px;
     width: 100%;
     margin-bottom: 20px;
-    border: 1.14208px solid #9C9C9C;
-box-sizing: border-box;
-&::placeholder{
- color: #A7A7A7; 
- font-size: 21px;
-}
+    border: 1.14208px solid #9c9c9c;
+    box-sizing: border-box;
+    &::placeholder {
+      color: #a7a7a7;
+      font-size: 21px;
+    }
   }
-  button{
+  button {
     border: none;
-    background: #FFCC4D;
+    background: #ffcc4d;
     max-width: 348px;
     margin-top: 20px;
     width: 100%;
-height: 75px;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-font-weight: bold;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-text-transform: uppercase;
+    height: 75px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
 
-color: #000000;
+    color: #000000;
   }
   &__title {
     font-weight: bold;
@@ -294,7 +292,7 @@ color: #000000;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    @media (max-width:400px){
+    @media (max-width: 400px) {
       font-size: 18px;
     }
   }
