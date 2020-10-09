@@ -3,6 +3,8 @@ window.onload = function () {
   like()
   initComments()
   initForms()
+  autoImage()
+  initMinComments() 
 }
 
 
@@ -17,7 +19,14 @@ function like() {
     })
   })
 }
-
+function autoImage() {
+  const images = document.querySelectorAll('.img img')
+  images.forEach(img => {
+    img.style.width = '100%'
+    const width = img.naturalWidth || ' '
+    img.parentNode.style.maxWidth = width + 'px'
+  })
+}
 function initComments() {
 
   const btns = document.querySelectorAll('.comment')
