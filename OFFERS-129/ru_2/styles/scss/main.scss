@@ -550,6 +550,7 @@
     }
     @media (max-width: 430px) {
       max-width: 200px;
+
     }
   }
   @media (max-width: 430px) {
@@ -559,6 +560,8 @@
   }
   &__none {
     box-sizing: border-box;
+    height:42px;
+    border: none;
     img {
       width: 30px;
     }
