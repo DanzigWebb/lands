@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortunella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div class="body">
+    <div class="main ">
+      <h2>Как бы вы хотели получить помощь?</h2>
+      <a href="" class="main__item btn-form"><img src="img/schedule2.png" alt=""> <b>Запланировать звонок.</b>
+        <p>Укажите, когда нам позвонить вам.</p>
+      </a>
+      <div class="main__item"><img src="img/phone1.png" alt=""> <b>Позвоните нам.</b>
+        <p>Позвоните нам с 9:00 до 21:00 (MCK) с понедельника по пятницу по телефону</p>
+      </div>
+    </div>
+    <div class="form">
+      
+      <h2>Запланировать звонок.</h2>
+      <p class="form__text"> Запланируйте вызов от специалиста в удобное для вас время.</p>
+      <form action="">
+        <div class="date ">
+          <a href="" class="back"> <img src="img/Vector.svg" alt=""></a>
+          <b>Выберите сначала дату, а затем время</b>
+          <input type="date" class="input__date" id="theDate">
+          <input type="time" id="appt" class="input__time" name="appt" min="09:00" max="18:00" required>
+          <button type="button" class="btn_date" disabled="true">Продолжить</button>
+        </div>
+        <div class="phone">
+        
+          <b>ведите номер</b>
+          <input type="tel"  id="phone" name="phone" placeholder="Телефон" required value="">
+          <button type="submit" class="button" disabled="true" >Отправить</button>
+            <div class="data">
+              <b class="data__text data__text--date"></b>
+              <b class="data__text data__text--time"></b>
+              <a><b class="data__btn">Изменить</b></a>
+            </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div class="sweet-text-hidden" style="display: none;">
+    <div class="sweet-text"> Специалист позвонит вам <b class="data__text data__text--date"></b>
+    <b class="data__text data__text--time"></b></div>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
