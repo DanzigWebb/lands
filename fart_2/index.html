@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Fortunella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    html {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .header {
+      border-bottom: 1px solid #ebebeb;
+      width: 100%;
+    }
+
+    .header .content {
+      max-width: 1366px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: auto;
+      padding: 0 25px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    @media (max-width: 400px) {
+      .header .content {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .header .content {
+        padding: 10px;
+      }
+    }
+
+    .header .logo img {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      .header .logo img {
+        width: 140px;
+      }
+    }
+
+    .header .menu {
+      padding: 25px 10px;
+      max-width: 450px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 900px) {
+      .header .menu {
+        display: none;
+      }
+    }
+
+    .header .menu a {
+      text-decoration: none;
+      color: #000;
+      border: 1px transparent solid;
+      font-size: 18px;
+      padding-bottom: 3px;
+    }
+
+    .header .menu a.active,
+    .header .menu a:hover {
+      border-bottom: 1px #000 solid;
+    }
+
+    .header .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 50px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .header .box__item--3 {
+      display: none;
+    }
+
+    .header .box__item--3 img {
+      width: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .header .box__item--3 {
+        display: block;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .header .box {
+        max-width: 70px;
+      }
+    }
+
+    .main .prod img {
+      max-width: 646px;
+      width: 100%;
+    }
+
+    .main .img img {
+      max-width: 120px;
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      .main .img img {
+        display: none;
+      }
+    }
+
+    .main .content {
+      padding: 30px;
+      padding-top: 60px;
+      max-width: 1300px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .main .content .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      min-height: 369px;
+      height: 100%;
+    }
+
+    @media (max-width: 870px) {
+      .main .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 60px;
+      }
+    }
+
+    .main__form {
+      min-height: 369px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .main__form h2 {
+      color: #3b996e;
+      font-weight: 750;
+      font-size: 38px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .main__form h2 {
+        font-size: 29px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main__form h2 {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .main__form {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+    }
+
+    .main__text {
+      max-width: 400px;
+      width: 100%;
+      font-size: 20px;
+      color: #686868;
+    }
+
+    @media (max-width: 600px) {
+      .main__text {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main__text {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    }
+
+    .main form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 370px;
+      width: 100%;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .main form .input {
+      max-width: 220px;
+      width: 100%;
+    }
+
+    .main form .input p {
+      font-weight: bold;
+      font-size: 20px;
+      color: #141414;
+    }
+
+    @media (max-width: 400px) {
+      .main form .input p {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    }
+
+    .main form button {
+      max-width: 130px;
+      width: 100%;
+      height: 40px;
+      background: #3b996e;
+      border-radius: 4px;
+      font-weight: 450;
+      font-size: 20px;
+      color: #ffffff;
+      border: none;
+      outline: none;
+    }
+
+    .main form input {
+      background: #ffffff;
+      border: 1px solid #919191;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-radius: 4px;
+      max-width: 220px;
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      padding-left: 9px;
+    }
+
+    @media (max-width: 1011px) {
+      .main form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+
+      .main form .input {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .main form .input input {
+        height: 50px;
+        max-width: 100%;
+      }
+
+      .main form button {
+        max-width: 100%;
+        height: 50px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="header">
+      <div class="content">
+        <div class="logo"> <img src="https://i.imgur.com/LRW2Xgw.png" alt=""></div>
+        <div class="menu">
+          <a href="">Buy Fortunella</a>
+          <a href="">Shipping</a>
+          <a href="" class="active">Verify your order</a>
+          <a href="">Bonus</a>
+        </div>
+        <div class="box">
+          <a href="" class="box__item--1"> <img
+              src="https://raw.githubusercontent.com/DanzigWebb/lands/b68b238042b4ee4c5328ad17c6e3d9e3ff04a880/svg/icon.svg"
+              alt=""></a>
+          <a href="" class="box__item--2"><img
+              src="https://raw.githubusercontent.com/DanzigWebb/lands/b68b238042b4ee4c5328ad17c6e3d9e3ff04a880/svg/shope.svg"
+              alt=""></a>
+          <a href="" class="box__item--3"> <img
+              src="https://raw.githubusercontent.com/DanzigWebb/lands/43ae4df72b3826d1f910f838f18dd0724a01497d/svg/menu.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <div class="prod">
+          <img src="https://i.imgur.com/asbF3H6.png" alt="">
+        </div>
+        <div class="box">
+          <div class="main__form">
+            <h2>Verifique su pedido</h2>
+            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <form action="">
+              <div class="input">
+                <p class="intput__name">Buscar por número</p>
+                <input type="tel" required>
+              </div>
+              <button>Buscar</button>
+            </form>
+          </div>
+          <div class="img">
+            <img src="https://i.imgur.com/uYuMUUs.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
