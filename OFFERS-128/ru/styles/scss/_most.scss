@@ -1,0 +1,249 @@
+html {
+  font-size: 20.833333vw;
+  overflow-x: hidden;
+  @media (min-width: 481px) {
+    font-size: 100px;
+  }
+}
+
+body {
+  font-size: 0.2rem;
+  max-width: 480px;
+  margin: auto;
+  position: relative;
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+  input,
+  textarea {
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.Montser {
+  font-family: "Montserrat", sans-serif;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+section {
+  padding: 0.3rem 0;
+}
+.img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+  &.pad {
+    padding: 0.2rem 0;
+  }
+  &.mar {
+    margin: 0.2rem 0;
+  }
+}
+
+.content {
+  padding: 0 0.13rem;
+  p {
+    line-height: 1.5;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.no-pad {
+  margin-left: -0.13rem;
+  margin-right: -0.13rem;
+  display: block;
+  width: 4.8rem;
+}
+
+.heading {
+  padding: 0.2rem 0;
+}
+.gradient {
+  background: linear-gradient(bottom, #600f8d 100%, #ab1ff7 0%);
+  &--sect6 {
+    background: linear-gradient(top, #600f8d 100%, #ab1ff7 0%);
+  }
+}
+h2 {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #000;
+  font-weight: 800;
+margin: 0;
+  bottom: 0.5rem;
+  width: 4.6rem;
+  line-height: 1.2;
+  &.white {
+    font-size: 0.3rem;
+    color: white;
+  }
+  &.marg{
+   margin: 0 auto;   
+  }
+  &.width {
+    width: 2.5rem;
+    margin: auto;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.big {
+    font-size: 0.35rem;
+    color: #1f1f1f;
+  }
+  &.min {
+    font-size: 0.22rem;
+  }
+  &.upp {
+    text-transform: uppercase;
+  }
+}
+.sub-title {
+  font-style: italic;
+  font-size: 0.2rem;
+  color: #323842;
+}
+.t-center {
+  text-align: center;
+}
+.t-white {
+  color: #fff;
+}
+span.accent {
+  color: $accent;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+.btn {
+  @include flex(row, center, center);
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.2rem;
+  height: 0.7rem;
+  width: 3.2rem;
+  box-sizing: border-box;
+  padding: 0 0.1rem;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #f42362;
+  box-shadow: 0px 0px 15px rgba(244, 35, 98, 0.8);
+  border-radius: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  span {
+    position: relative;
+  }
+}
+
+.border__top {
+  width: 4.8rem;
+  position: absolute;
+  top: -0.28rem;
+  left: 0;
+  right: 0;
+}
+.border__bot {
+  width: 4.8rem;
+  position: absolute;
+  bottom: -0.28rem;
+  left: 0;
+  right: 0;
+}
+
+// animation
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse__btn {
+  position: fixed;
+  right: 0.2rem;
+  display: inline-block;
+  bottom: 0.2rem;
+  z-index: 12;
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4);
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  transition: all 0.9s ease;
+  &.show {
+    right: -100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+img {
+  width: 100%;
+}
+
+.owl-carousel .owl-dots {
+  padding: 0.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+
+  button {
+    outline: none;
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    margin: 0 3px;
+    &.active {
+      border: none;
+      background: #ffbf73;
+    }
+  }
+}
+.chin {
+  &::after {
+    content: "";
+    border-radius: 1rem;
+    box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+    height: 0.5rem;
+    width: 4rem;
+    position: absolute;
+    mix-blend-mode: color-burn;
+    z-index: -1;
+    transform: translateY(0.15rem);
+  }
+}

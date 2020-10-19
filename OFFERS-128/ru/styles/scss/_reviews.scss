@@ -1,0 +1,101 @@
+.reviews {
+  position: relative;
+  &__item {
+    @include flex(column, center, center);
+    margin-left: 0.15rem;
+    box-sizing: border-box;
+    margin-right: 0.15rem;
+    padding: 0.3rem 0;
+    width: 3.71rem;
+    margin: auto;
+    background: #f8f8f8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.2rem;
+  }
+  .top {
+    position: relative;
+    @include flex(column, center, center);
+    margin-bottom: 0.25rem;
+    .name {
+      margin: 0;
+      font-size: 0.24rem;
+
+      font-weight: 800;
+    }
+    .evalu {
+      @include flex(row, space-between, center);
+      width: 1.7rem;
+      padding-top: 0.08rem;
+      span {
+        font-size: 0.24rem;
+        font-weight: 800;
+        color: #000000;
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .comment {
+    margin-bottom: 0.2rem;
+    width: 3.31rem;
+    font-weight: 600;
+    font-size: 0.16rem;
+    margin-top: 0.25rem;
+  }
+  .bottom {
+    width: 3.28rem;
+    @include flex(row, space-between, center);
+    span {
+      color: #000000;
+      font-size: 0.16rem;
+      opacity: 0.5;
+    }
+    .like {
+      @include flex(row, center, flex-start);
+      img {
+        width: 0.21rem;
+      }
+      span {
+        color: #2036ff;
+        font-weight: 800;
+        opacity: 1;
+        margin-left: 0.02rem;
+        font-size: 0.16rem;
+      }
+    }
+  }
+}
+.owl-carousel .owl-item .top img {
+  width: 1.23rem;
+}
+.owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+  margin-top: 30px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  button {
+    outline: none;
+    border: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(111, 111, 111, 0.25);
+    margin: 0 3px;
+    background-color: #eaeaea;
+    &.active {
+      border: none;
+      background: #0fb0d3;
+      box-shadow: inset 0px 4px 4px rgba(111, 111, 111, 0.25);
+    }
+  }
+}
