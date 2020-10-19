@@ -153,23 +153,12 @@ function accordion() {
 }
 
 $(document).ready(function () {
-  var rev = $(".reviews1").owlCarousel({
+  var rev = $(".reviews").owlCarousel({
     margin: 20,
     items: 1,
     dots: true,
     nav: false,
-    navText: ['<img src="img/arl.svg"></img>', '<img src="img/arr.svg"></img>'],
     autoHeight: true,
-
-    responsive: {
-      0: {
-        items: 1
-      },
-      1100: {
-        items: 1,
-        nav: true,
-      }
-    }
   });
 
 });

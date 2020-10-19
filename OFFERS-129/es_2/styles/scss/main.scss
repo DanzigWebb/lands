@@ -7,17 +7,18 @@
   display: grid;
   grid-gap: 1rem;
   max-width: $content__width;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: "content";
+    display: block;
   }
 }
 
 .content {
   background-color: #fff;
   padding: 1rem 0;
+  width: 100%;
   @media (max-width: 1100px) {
     padding: 1rem;
   }
@@ -49,42 +50,40 @@
     }
   }
   .bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "lef righ";
-    grid-column-gap: 1rem;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     padding-top: 2rem;
     @media (max-width: 900px) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "lef"
-        "righ";
-      grid-row-gap: 2rem;
+      flex-direction: column;
+      padding-top: 10px;
+    }
+    .slider {
+      max-width: 247px;
+      width: 100%;
+      box-sizing: border-box;
+      .reviews {
+        position: relative;
+      }
+      img {
+        max-width: 236px;
+        margin: 0 auto;
+      }
     }
   }
+
   &__lef {
-    display: grid;
-    grid-template-columns: 0.9fr 240px;
-    grid-template-areas: "prod rating";
+    display: flex;
+    flex-direction: row;
     align-items: center;
-
-    img {
-      max-width: 287px;
-      max-height: 260px;
+    margin-right: 10px;
+    .rating {
+      max-width: 240px;
+      width: 100%;
     }
-
-    @media (max-width: 900px) {
-      grid-template-columns: 1fr 1fr;
-      img {
-        justify-self: center;
-      }
-    }
-    @media (max-width: 480px) {
-      grid-template-columns: 3fr 2fr;
-      img {
-        max-width: 120px;
-      }
+    @media (max-width: 600px) {
+      flex-direction: column;
+      margin-bottom: 20px;
     }
   }
   &__righ {
@@ -103,6 +102,9 @@
       display: flex;
       justify-self: left;
       flex-direction: column;
+      img {
+        max-width: 100%;
+      }
     }
     @media (max-width: 600px) {
       span {
@@ -232,14 +234,14 @@
       }
       @media (max-width: 600px) {
         font-size: 14px;
-         margin-right: 0.5rem;
+        margin-right: 0.5rem;
       }
-           @media (max-width: 500px) {
+      @media (max-width: 500px) {
         font-size: 11px;
-         margin-right: 0.5rem;
+        margin-right: 0.5rem;
       }
       @media (max-width: 400px) {
-        font-size: 10px;
+        font-size: 8px;
         margin-right: 0.2rem;
       }
     }
@@ -320,7 +322,7 @@
       }
       @media (max-width: 500px) {
         p {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
@@ -330,7 +332,7 @@
     }
 
     .logo {
-      width: 34px;
+      width: 30px;
     }
   }
 
@@ -470,7 +472,7 @@
             font-size: 10px;
           }
         }
-          @media (max-width: 400px) {
+        @media (max-width: 400px) {
           padding-top: 15px;
           &::placeholder {
             font-size: 8px;
@@ -527,6 +529,10 @@
   align-items: flex-end;
   &--1 {
     background-image: url(../../img/ban1.jpg);
+    margin-bottom: 0;
+    @media (max-width: 900) {
+      margin-bottom: 30px;
+    }
   }
   &--2 {
     background-image: url(../../img/ban2.jpg);
@@ -554,7 +560,6 @@
     }
     @media (max-width: 430px) {
       max-width: 200px;
-
     }
   }
   @media (max-width: 430px) {
@@ -564,7 +569,7 @@
   }
   &__none {
     box-sizing: border-box;
-    height:42px;
+    height: 42px;
     border: none;
     img {
       width: 30px;
@@ -685,15 +690,15 @@ button {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
   }
-      @media (max-width: 600px) {
-      &__btn {
-        font-size: 16px;
-      }
-      }
-      @media (max-width: 400px) {
-        font-size: 10px;
-        margin-right: 0.2rem;
-      }
+  @media (max-width: 600px) {
+    &__btn {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 400px) {
+    font-size: 10px;
+    margin-right: 0.2rem;
+  }
 }
 .purchase {
   padding-top: 30px;
@@ -743,7 +748,7 @@ button {
       color: #070 !important ;
       margin: 0;
       font-size: 18px;
-         width: 130px;
+      width: 130px;
       font-weight: 600;
       margin-bottom: 2px;
     }
@@ -776,6 +781,51 @@ button {
     background-color: #ffdb4d;
     @media (max-width: 600px) {
       display: none;
+    }
+  }
+}
+.owl-nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  mix-blend-mode: hue;
+  left: 0;
+  top: 100%-60%;
+  box-sizing: border-box;
+  @include flex(row, space-between);
+  button {
+    width: 40px;
+    outline: none;
+  }
+}
+.owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+  margin-top: 30px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  button {
+    outline: none;
+    border: none;
+    max-width: 16px;
+    width: 100%;
+    height: 16px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(111, 111, 111, 0.25);
+    margin: 0 3px;
+    &.active {
+      border: none;
+      background: #f8b200;
+      box-shadow: inset 0px 4px 4px rgba(111, 111, 111, 0.25);
     }
   }
 }
