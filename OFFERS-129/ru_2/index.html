@@ -11,6 +11,7 @@
     rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="libs/carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="styles/css/main.css">
 </head>
 
@@ -35,7 +36,7 @@
           <a href="" class="logo"><span>revie</span> <img src="img/logo.svg" alt=""></a>
 
           <div class="header__input">
-            <input type="text" placeholder="Пример: Крем для лица">
+            <input type="text">
           </div>
           <a href="">
             <div class="header__img"><img src="img/sear.svg" alt=""></div>
@@ -60,7 +61,13 @@
         </div>
         <div class="bottom">
           <div class="content__lef">
-            <img src="img/product.png" class="prod" alt="">
+              <div class="slider">
+                <div class="reviews owl-carousel">
+                  <img src="img/product.png" alt="">
+                  <img src="img/product2.png" alt="">
+                  <img src="img/product3.png" alt="">
+                </div>
+              </div>
             <div class="rating">
               <div class="content__item">
                 <span>БЕЗОПАСНОСТЬ</span>
@@ -1015,6 +1022,7 @@
     link.setAttribute('href', currentLink)
   })
 </script>
+  <script src="libs/carousel/owl.carousel.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/pagination.js"></script>
 <script src="js/init.js"></script>

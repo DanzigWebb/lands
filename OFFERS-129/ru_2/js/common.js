@@ -151,3 +151,14 @@ function accordion() {
     });
   }
 }
+
+$(document).ready(function () {
+  var rev = $(".reviews").owlCarousel({
+    margin: 20,
+    items: 1,
+    dots: true,
+    nav: false,
+    autoHeight: true,
+  });
+
+});
