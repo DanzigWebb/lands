@@ -22,7 +22,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<img height="1" width="1" src="https://www.facebook.com/tr?id=704290573511234&ev=Lead&noscript=1" />
+<img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=704290573511234&ev=Lead&noscript=1" />
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -490,7 +490,7 @@
 				</div>
 				<div class="input-wrap">
 					<img src="img/phone.svg" alt>
-					<input  type="text" name="phone" required placeholder="Introduza o seu telefone">
+					<input type="text" name="phone" required placeholder="Introduza o seu telefone">
 				</div>
 				<button class="btn">
 					<span> ENCOMENDA COM DESCONTO</span><img src="img/btn.svg" alt></button>
@@ -548,11 +548,10 @@
 			'hr': '+385 _ ____ __?_',
 			'ba': '+387 __ ______',
 			/* --- */
-		},
-			forms = document.getElementsByClassName('form'),
-			inputs = [];
-		for (let form of forms)
-			inputs.push(form.querySelector('input[name="phone"]'));
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
 
 		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
 		function validate_form(form, alert_text = "Please enter valid phone number") {
@@ -566,32 +565,38 @@
 		document.addEventListener("DOMContentLoaded", function () {
 
 			function mask(event) {
-
 				var input = event.currentTarget,
 					geo = input.form.getAttribute('geo'),
 					matrix = phonePattern[geo],
 					i = 0,
 					def = matrix.replace(/\D/g, ""),
-					val = input.value.replace(/\D/g, "");
-				if (def.length >= val.length) val = def;
-				if (!(/_|\?|-|\(\)/.test(matrix[input.selectionStart])))
+					val = input.value.replace(/\D/g, "")
+
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				if (!(/_|\?|-|\(\)/.test(matrix[input.selectionStart]))) {
 					input.selectionStart = input.value.length;
+				}
 
 				input.value = matrix.replace(/./g, function (a) {
 					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
 				});
+
 				if (event.type == "blur") {
-					if (input.value.length == 2) input.value = ""
+					if (input.value.length == 2) {
+						input.value = ""
+					}
 				}
 			};
 
-			
-			for (const input of inputs) {
-				input.addEventListener("input", (e) => mask(e), false);
-				input.addEventListener("focus", (e) => mask(e), false);
-				input.addEventListener("blur", (e) => mask(e), false);
-				input.addEventListener("mouseup", (e) => mask(e), false);
-			}
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("focus", mask, false);
+				input.addEventListener("blur", mask, false);
+			})
 		});
 
 		$(document).ready(function () {
