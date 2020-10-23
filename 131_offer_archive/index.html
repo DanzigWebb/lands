@@ -577,9 +577,9 @@
 					val = def
 				};
 
-				if (!(/_|\?|-|\(\)/.test(matrix[input.selectionStart]))) {
-					input.selectionStart = input.value.length;
-				}
+				// if (!(/_|\?|-|\(\)/.test(matrix[input.selectionStart]))) {
+				// 	input.selectionStart = input.value.length;
+				// }
 
 				input.value = matrix.replace(/./g, function (a) {
 					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
