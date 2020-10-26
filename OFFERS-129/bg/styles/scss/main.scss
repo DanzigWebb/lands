@@ -81,9 +81,11 @@
       max-width: 240px;
       width: 100%;
     }
+    @media (max-width: 900px) {
+      margin-bottom: 20px;
+    }
     @media (max-width: 600px) {
       flex-direction: column;
-      margin-bottom: 20px;
     }
   }
   &__righ {
@@ -469,14 +471,16 @@
         }
         @media (max-width: 500px) {
           padding-top: 12px;
+          font-size: 10px;
           &::placeholder {
             font-size: 10px;
           }
         }
         @media (max-width: 400px) {
-          padding-top: 12px;
+          padding-top: 14px;
+          font-size: 9px;
           &::placeholder {
-            font-size: 11px;
+            font-size: 9px;
           }
         }
       }
@@ -769,7 +773,8 @@ button {
   }
   .price {
     padding: 0 20px;
-    font-size: 23px;
+    font-size: 19px;
+    text-align: center;
     color: #000;
     @media (max-width: 450px) {
       display: none;
