@@ -1,0 +1,210 @@
+
+html
+  font-size: 20.833333vw
+  overflow-x: hidden
+  @media (min-width: 481px)
+    font-size: 100px
+
+body
+  font-size: .20rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: normal
+  font-family: 'Fira Code', monospace
+  color: #333
+  overflow-x: hidden
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25)
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.play
+  font-family: 'Playfair Display', sans-serif
+section
+  padding: .3rem 0
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: .2rem 0
+  &.mar
+    margin: .2rem 0
+
+.content
+  padding: 0 .13rem
+  p
+    line-height: 1.5
+    &:last-child
+      margin-bottom: 0
+
+.bg-light
+  background-color: $light
+
+.no-pad
+  margin-left: -0.13rem
+  margin-right: -0.13rem
+  display: block
+  width: 4.8rem
+
+.heading
+  padding: .2rem 0
+h2
+  font-size: 0.55rem
+  font-weight: 300
+  color: #fff
+  margin: 0
+  line-height: 1.4
+  padding-bottom: 0.3rem
+  text-transform: uppercase
+  &.left
+    position: relative
+    z-index: 20
+    text-align: left
+    padding-left: 0.4rem
+    @include flex (row)
+  &.center
+    text-align: center
+  &.big
+    font-size: 0.4rem
+  &.black
+    color: #000
+  span
+    color: $accent
+  &.upp
+    text-transform: uppercase
+  b.prod
+    text-transform: uppercase
+    font-weight: bold
+  .offer
+    text-transform: uppercase
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+
+h2 + p
+  margin-top: 0
+
+
+.text
+  width: 4rem
+  margin: 0 auto
+
+.btn
+  @include flex(column, center, center)
+  text-transform: uppercase
+  font-weight: 400
+  text-decoration: none
+  box-sizing: border-box
+  font-size: 0.28rem
+  border: none
+  height: 1rem
+  width: 3.7rem
+  padding: 0 0.11rem
+  margin: 0 auto
+  position: relative
+  background: linear-gradient(180deg, #FAEFD6 0%, #FACE68 100%), #FFD77C
+  box-shadow: 0px 6px 0px #D69C45
+  border-radius: 100px
+  font-family: 'Fira Code', monospace
+  color: #191512
+  text-shadow: 0px 1px 0px #FFFFFF
+  margin-bottom: 0.3rem
+  &::after
+    content: ''
+    background: none
+    mix-blend-mode: lighten
+    box-shadow: 0px 10px 40px #AC8A40
+    border-radius: 100px
+    width: 3.48rem
+    bottom: 0
+    z-index: 0
+    position: absolute
+    height: 0.64rem
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%
+
+.owl-carousel
+  .owl-dots
+    padding: .2rem 0
+    display: flex
+    justify-content: center
+    align-items: center
+    button
+      width: 0.14rem
+      height: 0.14rem
+      outline: none
+      border-radius: 50%
+      margin: 0 0.07rem
+      background: #28231E
+      box-sizing: border-box
+      transition: .2s ease all
+      &.active
+        background: #FED783
+        width: 0.24rem
+        height: 0.24rem
+.text
+  &__bottm
+    color: #6B6A66
+    font-size: 0.20rem
+    font-weight: 300
+    text-align: center
+  &__subtitle
+    color: #191512
+    font-weight: 300
+    font-size: 0.26rem
+    padding-left: 0.4rem
+    margin-bottom: 0.5rem
+    font-weight: normal
