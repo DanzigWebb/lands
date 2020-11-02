@@ -577,9 +577,13 @@
 					val = def
 				};
 
-					input.selectionStart = input.value.length;
-	
-
+		
+				jQuery(function ($) {
+					$(input).click(function () {
+						input.focus();
+						input.setSelectionRange(input.value.length, input.value.length);
+					});
+				});
 				input.value = matrix.replace(/./g, function (a) {
 					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
 				});
