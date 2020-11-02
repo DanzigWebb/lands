@@ -22,7 +22,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=704290573511234&ev=Lead&noscript=1" />
+<img height="1" width="1" style="display: none;"
+	src="https://www.facebook.com/tr?id=704290573511234&ev=Lead&noscript=1" />
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -564,42 +565,68 @@
 		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
 		document.addEventListener("DOMContentLoaded", function () {
 
-			function mask(event) {
-				var input = event.currentTarget,
-					geo = input.form.getAttribute('geo'),
-					matrix = phonePattern[geo],
-					i = 0,
-					def = matrix.replace(/\D/g, ""),
-					val = input.value.replace(/\D/g, "")
+			var isTimeoutSeted = false;
+			var inputInterval;
 
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+						console.log('la');
+					}, 2)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
 
 				if (def.length >= val.length) {
 					val = def
 				};
 
-		
-				jQuery(function ($) {
-					$(input).click(function () {
-						input.focus();
-						input.setSelectionRange(input.value.length, input.value.length);
-					});
-				});
 				input.value = matrix.replace(/./g, function (a) {
 					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
 				});
 
-				if (event.type == "blur") {
-					if (input.value.length == 2) {
-						input.value = ""
-					}
-				}
+
 			};
 
 			inputs.forEach(input => {
 				input.addEventListener("input", mask, false);
-				input.addEventListener("focus", mask, false);
 				input.addEventListener("blur", mask, false);
-				  input.addEventListener("mouseup", (e) => mask(e), false);
+				input.addEventListener("focus", mask, false);
 			})
 		});
 
@@ -615,6 +642,7 @@
 				btnAcceptText: 'Ok'
 			});
 		});
+
 	</script>
 	<script src="libs/carousel/owl.carousel.min.js"></script>
 	<script src="js/timer.js"></script>
