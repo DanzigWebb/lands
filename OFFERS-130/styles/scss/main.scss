@@ -133,8 +133,10 @@
   background-image: url(../../img/sect2_back.svg);
   background-position: center;
   background-size: cover;
-  padding: 73px 0;
   background-repeat: no-repeat;
+  .content{
+    padding: 3rem 1rem;
+  }
   @media (max-width: 1500px) {
     background-size: 1700px;
     background-position: top;
