@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Regular'), local('Avenir-Next-Regular'),
+        url('AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('AvenirNextCyr-Regular.woff') format('woff'),
+        url('AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
