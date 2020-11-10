@@ -15,7 +15,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   overflow-x: hidden;
   font-size: 16px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -37,7 +39,7 @@ h1 {
   font-size: 40px;
   line-height: 1.25;
   font-family: "Roboto Slab", serif;
-  color: #6997EF;
+  color: #6997ef;
   margin: 0 auto;
   max-width: 555px;
   width: 100%;
@@ -54,7 +56,7 @@ h2 {
   text-align: center;
   margin: 0;
   color: #282828;
-    @media (max-width: 500px) {
+  @media (max-width: 500px) {
     font-size: 28px;
     line-height: 1;
   }
@@ -83,7 +85,7 @@ h2 {
     opacity: 0.8;
   }
   &.active {
-    background: #EF216E;
+    background: #ef216e;
   }
 }
 

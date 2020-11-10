@@ -13,13 +13,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 34px;
+  padding: 10px 34px;
 
   @include min {
     background-image: url(../../img/bac__main.png);
   }
   @media (max-width: 380px) {
-    padding: 0 25px;
+    padding: 9px 25px;
   }
 }
 

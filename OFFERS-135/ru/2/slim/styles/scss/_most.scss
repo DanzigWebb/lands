@@ -3,7 +3,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   height: 100%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 460px) {
     font-size: 14px;
   }
