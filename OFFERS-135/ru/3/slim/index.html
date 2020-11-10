@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortunella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="libs/carousel/owl.carousel.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="item item--main">
+      <h2>Тест:</h2>
+      <h1>Каким способом тебе лучше похудеть</h1>
+      <p>Вы не раз, не два и даже не три садились на диету, пробовали разные программы питания, купили карту в зал и скачали
+      фитнес-приложения, а вес все равно не уходит? Пройдите наш тест и узнайте лучший способ похудения для себя.</p>
+      <a href="" class="btn btn--main active">ПРОЙТИ ТЕСТ</a>
+    </div>
+    <div class="item content item--input">
+      <h2>Укажите Ваш возраст</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>лет</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+    <div class="item content item--input">
+      <h2>Укажите Ваш вес</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>кг</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+    
+    <div class="item item--input_radio content">
+      <h2>Вставая утром на работу, как ты себя чувствуешь?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Чаще всего бодрой и выспавшейся.</p>
+        <p><input name="dzen" type="radio" value="2">Утром я очень тяжело встаю, чувствую усталость, как будто и не спала.</p>
+        <p><input name="dzen" type="radio" value="3" checked>Я часто недосыпаю, но чувствую себя вполне нормально по утрам.</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>В каком состоянии твои волосы и ногти?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">В хорошем. Меня устраивает.</p>
+        <p><input name="dzen" type="radio" value="2">В нормальном, но хотелось бы лучше.</p>
+        <p><input name="dzen" type="radio" value="3" checked>В плохом.</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Как часто ты занимаешься спортом?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Систематически занимаюсь, слежу за своей фигурой.</p>
+        <p><input name="dzen" type="radio" value="2">Редко. Бывают разовые "вылазки".</p>
+        <p><input name="dzen" type="radio" value="3" checked>Я не занимаюсь вообще.</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Что входит в твой рацион?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Овощи, рыба, вареное мясо, фрукты.</p>
+        <p><input name="dzen" type="radio" value="2">Разные продукты, сладости.</p>
+        <p><input name="dzen" type="radio" value="3" checked>Очень люблю поесть сладости, жареное.</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Кушаешь ли ты по ночам?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Нет</p>
+        <p><input name="dzen" type="radio" value="2">Иногда</p>
+        <p><input name="dzen" type="radio" value="3" checked>Да</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Как ты относитесь к сладкому?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Люблю сладкое, ем каждый день</p>
+        <p><input name="dzen" type="radio" value="2">Ем не чаще 2-3 раз в неделю</p>
+        <p><input name="dzen" type="radio" value="3" checked>Ем очень редко либо вообще не ем</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Сколько килограмм ты хочешь скинуть?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">От 1-го до 3-х</p>
+        <p><input name="dzen" type="radio" value="2">От 5-ти до 10-ти</p>
+        <p><input name="dzen" type="radio" value="3" checked>От 10-ти и более</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+      <div class="item content item--form">
+        <h2>Капли для похудения Slimatika</h2>
+        <div class="prod">
+          <img src="img/prod.png" alt="">
+          <p class="prod__text">Вам помогут натуральные капли для похудения Slimatika, обладающие комплексным действием на
+            организм. Кроме своего
+            прямого назначения – сжигания жира, составляющие компоненты способствуют нормализации пищеварения, ускоряют
+            процессы
+            расщепления пищи, также они способствуют выведению из организма токсинов и шлаков</p>
+        </div>
+        <div class="price">
+          <p class="price__discount">Ваша скидка 50%, действует до конца дня
+          </p>
+          <div class="price__box">
+      
+            <b>39€</b>
+            <s>79€</s>
+          </div>
+        </div>
+        <form action="">
+          <input class="form__name" type="text" placeholder="Имя">
+          <input class="form__phone" type="text" placeholder="Телефон">
+          <button class="form__botton">ЗАКАЗАТЬ ЗВОНОК</button>
+        </form>
+      </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/button.js"></script>
+</body>
+
+
+
+</html>

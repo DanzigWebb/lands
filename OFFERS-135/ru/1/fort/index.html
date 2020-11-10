@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortunella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="libs/carousel/owl.carousel.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="item item--main">
+      <h2>Тест:</h2>
+      <h1>Узнай, как похудеть именно тебе</h1>
+      <p>Пройди наш тест и узнай, какой способ похудения поможет тебе избавиться от лишних килограммов.</p>
+      <a href="" class="btn btn--main active">ПРОЙТИ ТЕСТ</a>
+    </div>
+    <div class="item item--button content">
+      <h2>Укажите Ваш пол</h2>
+      <div class="item__box">
+        <button class="gender-btn active">
+          <img src="img/gender_gr.svg" alt="">
+          <b>Женский</b>
+        </button>
+        <button class="gender-btn">
+          <img src="img/gender_ma.svg" alt="">
+          <b>Мужской</b>
+        </button>
+      </div>
+      <a href="" class="btn btn--main active">ДАЛЕЕ</a>
+    </div>
+    <div class="item content item--input">
+      <h2>Укажите Ваш возраст</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>лет</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+    <div class="item content item--input">
+      <h2>Укажите Ваш вес</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>кг</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+    <div class="item content item--input">
+      <h2>Ваш рост</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>мм</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+
+    <div class="item item--input_radio content">
+      <h2>Какая у Вас цель?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Хочу сбросить пару лишних килограммов, чтобы влезть в любимые
+          джинсы</p>
+        <p><input name="dzen" type="radio" value="2"> Хочу иметь стройное спортивное тело.</p>
+        <p><input name="dzen" type="radio" value="3">Нужно срочно похудеть к празднику!</p>
+        <p><input name="dzen" type="radio" value="4" checked>Давно борюсь с лишним весом и хочу получить видимый
+          результат.</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Любите ли Вы заниматься спортом?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Да, не могу представить свою жизнь без спорта!</p>
+        <p><input name="dzen" type="radio" value="2"> Время от времени посещаю спортзал, чтобы держать себя в тонусе</p>
+        <p><input name="dzen" type="radio" value="3">Не люблю заниматься спортом.</p>
+        <p><input name="dzen" type="radio" value="4" checked>Занятиям в спортзале предпочитаю прогулки на свежем
+          воздухе.
+        </p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Вы часто предпринимали попытки похудеть?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Периодически думаю об этом</p>
+        <p><input name="dzen" type="radio" value="2">Да, постоянно, но неудачно</p>
+        <p><input name="dzen" type="radio" value="3">Периодически что-то делаю</p>
+        <p><input name="dzen" type="radio" value="4" checked>Да, часто этим занимаюсь с переменным успехом
+        </p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>От каких продуктов ты не готова отказаться?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Мясо - моё всё!</p>
+        <p><input name="dzen" type="radio" value="2">Не могу представить свой рацион без овощей и фруктов.</p>
+        <p><input name="dzen" type="radio" value="3">Мне сложно отказаться от любимых блюд ради похудения.</p>
+        <p><input name="dzen" type="radio" value="4" checked>Готова есть одно и то же блюдо в течении недели.
+        </p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2>Как часто Вы едите сладкое?</h2>
+
+      <form action="" class="wrapper">
+        <p><input name="dzen" type="radio" value="1">Люблю сладкое, ем несколько раз в день</p>
+        <p><input name="dzen" type="radio" value="2">Не могу прожить и дня без шоколадки.</p>
+        <p><input name="dzen" type="radio" value="3">Ем не чаще 2-3 раз в неделю</p>
+        <p><input name="dzen" type="radio" value="4" checked>Ем очень редко либо вообще не ем</p>
+      </form>
+      <a href="" class="btn active">ДАЛЕЕ</a>
+
+    </div>
+    <div class="item content item--input">
+      <h2>На сколько Вы хотите похудеть?</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p>кг</p>
+      </div>
+      <button type="submit" disabled=true class="btn btn--main">ДАЛЕЕ</button>
+
+    </div>
+    <div class="item content item--form">
+      <h2>Натуральные капли для похудения Fortunella</h2>
+      <div class="prod">
+        <img src="img/prod.png" alt="">
+        <p class="prod__text">Избавиться от лишних килограмм вам помогут капли Fortunella. Препарат представляет собой концентрат из восьми активных
+        компонентов, среди которых фортунелла - известный своими жиросжигающими свойствами. При регулярном приеме капель вы
+        сможете похудеть в кратчайшие сроки не меняя своего образа жизни.</p>
+      </div>
+      <div class="price">
+        <p class="price__discount">Ваша скидка 50%, действует до конца дня
+        </p>
+        <div class="price__box">
+    
+          <b>39€</b>
+          <s>79€</s>
+        </div>
+      </div>
+      <form action="">
+        <input class="form__name" type="text" placeholder="Имя">
+        <input class="form__phone" type="text" placeholder="Телефон">
+        <button class="form__botton">ЗАКАЗАТЬ ЗВОНОК</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/button.js"></script>
+</body>
+
+
+
+</html>
