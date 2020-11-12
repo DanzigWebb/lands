@@ -1,0 +1,52 @@
+.sidebar {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0.1rem;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+  &__title {
+    font-size: 13px;
+    color: #b0b0b0;
+    margin-bottom: 21px;
+    margin-top: 0;
+  }
+  &__main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  &__item {
+    @include flex(row, flex-start, center);
+    font-size: 13px;
+    margin-bottom: 15px;
+    transition: 0.4s ease all;
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 38px;
+    }
+    p {
+      max-width: 150px;
+      width: 100%;
+      margin: 0 8px;
+      margin-right: 12px;
+      b {
+        display: block;
+        color: #000;
+      }
+      span {
+        color: #b0b0b0;
+        font-weight: 300;
+      }
+    }
+  }
+  &__btn {
+    color: #0396f6;
+  }
+  a {
+    text-decoration: none;
+  }
+}
