@@ -1,0 +1,57 @@
+.header {
+  @include flex(column, center);
+  top: 0;
+  z-index: 1;
+  background: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  &__content {
+    max-width: 1040px;
+    width: 100%;
+    padding: 0 20px;
+    height: 72px;
+    margin: 0 auto;
+    @include flex(row, space-between, center);
+  }
+  &__logo {
+    max-width: 108px;
+    width: 100%;
+  }
+  &__svg {
+    width: 113px;
+    @include flex(row, space-between, flex-end);
+  }
+  &__input {
+    max-width: 243px;
+    width: 100%;
+    margin: 0 20px;
+    p {
+      width: 100%;
+      padding: 10px;
+      height: 32px;
+      @include flex(row, center, center);
+      background: #fafafa;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 13px;
+      color: #b0b0b0;
+    }
+    img {
+      max-width: 11px;
+      width: 100%;
+      margin-right: 10px;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__logo {
+    margin-right: 2rem;
+  }
+}
