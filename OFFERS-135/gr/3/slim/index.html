@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slimatika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="libs/carousel/owl.carousel.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="item item--main">
+      <h2> Αίτημα:</h2>
+      <h1> Ποιος είναι ο καλύτερος τρόπος για εσας για να χάσετε βάρος</h1>
+      <p> Έχετε κάνει περισσότερο από μια δίαιτες και δυο και τρεις, δοκιμάσατε διαφορετικά προγράμματα διατροφής, κάνατε συνδρομή στο γυμναστήριο και κατεβάσατε εφαρμογές γυμναστικής, αλλά το βάρος εξακολουθεί να μην εξαφανίζεται? Συμπληρώστε το αίτημά μας και μάθετε τον καλύτερο τρόπο για να χάσετε βάρος για τον εαυτό σας.</p>
+      <a href class="btn btn--main active"> ΣΥΜΠΛΗΡΩΣΤΕ ΤΟ ΑΙΤΗΜΑ</a>
+    </div>
+    <div class="item content item--input">
+      <h2> Εισαγάγετε την ηλικία σας</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> ετών</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> ΕΠΟΜΕΝΟ</button>
+
+    </div>
+    <div class="item content item--input">
+      <h2> Εισαγάγετε το βάρος σας</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> kg</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> ΕΠΟΜΕΝΟ</button>
+
+    </div>
+    
+    <div class="item item--input_radio content">
+      <h2> Όταν σηκώνεστε για δουλειά το πρωί, πώς αισθάνεστε?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Τις περισσότερες φορές, είμαι φρέσκος και ξεκουρασμένος</p>
+        <p><input name="dzen" type="radio" value="2"> Το πρωί σηκώνομαι πολύ δύσκολα, νιώθω κουρασμένος, σαν να μην είχα κοιμηθεί για μέρες</p>
+        <p><input name="dzen" type="radio" value="3" checked> Συχνά δεν κοιμάμαι καλά, αλλά αισθάνομαι φυσιολογικά το πρωί</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Ποια είναι η κατάσταση των μαλλιών και των νυχιών σας?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Σε καλή κατάσταση. Μου αρέσουν</p>
+        <p><input name="dzen" type="radio" value="2"> Κανονικά, αλλά εύχομαι να ήταν καλύτερά</p>
+        <p><input name="dzen" type="radio" value="3" checked> Σε χάλια κατάσταση</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Πόσο συχνά κάνετε γυμναστική?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Προσέχω συστηματικά τη σιλουέτα μου</p>
+        <p><input name="dzen" type="radio" value="2"> Σπάνια πηγαίνω στο γυμναστήριο</p>
+        <p><input name="dzen" type="radio" value="3" checked> Δεν γυμνάζομαι καθόλου</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Τι διατροφή κάνετε?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Λαχανικά, ψάρια, βραστό κρέας, φρούτα</p>
+        <p><input name="dzen" type="radio" value="2"> Διάφορα τρόφιμα, γλυκά</p>
+        <p><input name="dzen" type="radio" value="3" checked> Μου αρέσει πολύ να τρώω γλυκά και τηγανητά φαγητά</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Τρώτε βραδινό?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Οχι</p>
+        <p><input name="dzen" type="radio" value="2"> Μερικές φορές</p>
+        <p><input name="dzen" type="radio" value="3" checked> Ναί</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Σας αρέσουν τα γλυκά?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Λατρεύω τα γλυκά, τρώω κάθε μέρα</p>
+        <p><input name="dzen" type="radio" value="2"> Τρώω όχι περισσότερο από 2-3 φορές την εβδομάδα</p>
+        <p><input name="dzen" type="radio" value="3" checked> Τρώω πολύ σπάνια ή δεν τρώω καθόλου</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> Πόσα κιλά θέλετε να χάσετε?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> 1 έως 3</p>
+        <p><input name="dzen" type="radio" value="2"> Από 5 έως 10</p>
+        <p><input name="dzen" type="radio" value="3" checked> 10 ή περισσότερα</p>
+      </form>
+      <a href class="btn active"> ΕΠΟΜΕΝΟ</a>
+
+    </div>
+      <div class="item content item--form">
+        <h2> Σταγόνες για απώλεια βάρους Slimatika</h2>
+        <div class="prod">
+          <img src="img/prod.png" alt>
+          <p class="prod__text"> Φυσικές σταγόνες για απώλεια βάρους Οι σταγόνες Slimatika, που έχει πολύπλοκη επίδραση στο σώμα, θα σας βοηθήσει. Εκτός από τον άμεσο σκοπό τους - καύση λίπους, τα συστατικά συστατικά συμβάλλουν στην ομαλοποίηση της πέψης, επιταχύνουν τις διαδικασίες της κατανομής των τροφίμων, συμβάλλουν επίσης στην εξάλειψη των τοξινών από το σώμα.</p>
+        </div>
+        <div class="price">
+          <p class="price__discount"> Η έκπτωση 50% ισχύει έως το τέλος της ημέρας</p>
+          <div class="price__box">
+      
+            <b> 39€</b>
+            <s> 78€</s>
+          </div>
+        </div>
+        <form action>
+          <input class="form__name" type="text" placeholder="Εισάγετε το όνομά σας">
+          <input class="form__phone" type="text" placeholder="Εισαγάγετε το τηλέφωνό σας">
+          <button class="form__botton"> ΑΙΤΗΣΗ ΚΛΗΣΗΣ</button>
+        </form>
+      </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/button.js"></script>
+
+
+
+
+
+</body></html>

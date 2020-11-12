@@ -1,0 +1,159 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  height: 100%;
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @include content();
+  @media (max-width: 400px) {
+    padding: 0 0.6rem;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.25;
+  font-family: "Roboto Slab", serif;
+  color: #627c8d;
+  margin: 0 auto;
+  max-width: 555px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+}
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  color: #282828;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  background: #b5b5b5;
+  height: 71px;
+  max-width: 338px;
+  @include flex(row, center, center);
+  font-size: 30px;
+  border: none;
+  font-weight: bold;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.4s ease all;
+  box-sizing: border-box;
+  border-radius: 10px;
+  span {
+    margin-right: 20px;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &.active {
+    background: #ef6d1b;
+  }
+}
+
+.img {
+  position: relative;
+  @include flex(column, center, center);
+  &.center {
+    margin: 0.8rem auto;
+  }
+
+  p {
+    color: #707070;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    max-width: 390px;
+    text-align: center;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: none;
+  animation: show 0.4s ease;
+
+  &.active {
+    display: block;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+
+  li {
+    font-style: italic;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 347px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 100%;
+    height: 62px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    opacity: 0.9;
+    border-radius: 33.8994px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 0 36px;
+    &::placeholder {
+      color: #a7a7a7;
+      font-size: 17px;
+    }
+  }
+}
