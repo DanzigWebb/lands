@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Trebuchet-MS-Regular';
+    src: url('../fonts/Trebuchet-MS-Regular_.eot')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/Trebuchet-MS-Regular_.eot*/;
+    src: url('../Trebuchet-MS-Regular_.eot-#iefix')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/Trebuchet-MS-Regular_.eot?#iefix*/ format('embedded-opentype'), url('../fonts/Trebuchet-MS-Regular_.woff')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/Trebuchet-MS-Regular_.woff*/ format('woff'), url('../fonts/Trebuchet-MS-Regular_.ttf')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/Trebuchet-MS-Regular_.ttf*/ format('truetype'), url('../fonts/Trebuchet-MS-Regular_.svg#Trebuchet-MS-Regular_')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/Trebuchet-MS-Regular_.svg#Trebuchet-MS-Regular_*/ format('svg');
+        font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cosmoicons';
+       src: url('../fonts/cosmo-icons.woff')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/cosmo-icons.woff*/ format('woff'), url('../fonts/cosmo-icons.ttf')/*tpa=http://staticfiles-blog.org/rg_madonna/fonts/cosmo-icons.ttf*/ format('truetype');
+}
+
