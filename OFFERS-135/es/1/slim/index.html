@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slimatika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="libs/carousel/owl.carousel.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="item item--main">
+      <h2> Prueba:</h2>
+      <h1> Descubre cómo perder peso en forma personalizada</h1>
+      <p> Haz nuestra prueba y descubre qué método para perder peso te ayudará a deshacerse de esos kilos de más.</p>
+      <a href class="btn btn--main active"> PASAR PRUEBA</a>
+    </div>
+    <div class="item item--button content">
+      <h2> Indique su género</h2>
+      <div class="item__box">
+        <button class="gender-btn active">
+          <img src="img/gender_gr.svg" alt>
+          <b> Femenino</b>
+        </button>
+        <button class="gender-btn">
+          <img src="img/gender_ma.svg" alt>
+          <b> Masculino</b>
+        </button>
+      </div>
+      <a href class="btn btn--main active"> CONTINUAR </a>
+    </div>
+    <div class="item content item--input">
+      <h2> Indique su edad</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> años</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> CONTINUAR </button>
+
+    </div>
+    <div class="item content item--input">
+      <h2> Indique su peso</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> kg</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> CONTINUAR </button>
+
+    </div>
+    <div class="item content item--input">
+      <h2> Indique su altura</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> cm</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> CONTINUAR </button>
+
+    </div>
+
+    <div class="item item--input_radio content">
+      <h2> ¿Cuál es tu objetivo?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Quiero perder un par de kilos de más para ponerme mis jeans favoritos.</p>
+        <p><input name="dzen" type="radio" value="2"> Quiero tener un cuerpo atlético y delgado.</p>
+        <p><input name="dzen" type="radio" value="3"> ¡Necesitas perder peso urgentemente para las vacaciones!</p>
+        <p><input name="dzen" type="radio" value="4" checked> He estado luchando con sobrepeso durante mucho tiempo y quiero obtener resultados visibles.</p>
+      </form>
+      <a href class="btn active"> CONTINUAR </a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> ¿Le gusta hacer deporte?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Sí, no puedo imaginar mi vida sin deportes!</p>
+        <p><input name="dzen" type="radio" value="2"> Voy al gimnasio de vez en cuando para mantenerme en forma.</p>
+        <p><input name="dzen" type="radio" value="3"> No me gusta hacer deporte.</p>
+        <p><input name="dzen" type="radio" value="4" checked> Prefiero caminar al aire libre que ir al gimnasio.</p>
+      </form>
+      <a href class="btn active"> CONTINUAR </a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> ¿Ha intentado perder peso frecuentemente?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> De vez en cuando pienso en ello.</p>
+        <p><input name="dzen" type="radio" value="2"> Sí, constantemente, pero sin éxito.</p>
+        <p><input name="dzen" type="radio" value="3"> De vez en cuando intento hacer algo.</p>
+        <p><input name="dzen" type="radio" value="4" checked> Sí, a menudo hago esto con un éxito desigual.</p>
+      </form>
+      <a href class="btn active"> CONTINUAR </a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> ¿Qué alimentos no está dispuesto a rechazar?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> ¡La carne es mi todo!</p>
+        <p><input name="dzen" type="radio" value="2"> No puedo imaginar mi dieta sin verduras y frutas.</p>
+        <p><input name="dzen" type="radio" value="3"> Es difícil para mí renunciar a mis comidas favoritas por perder peso.</p>
+        <p><input name="dzen" type="radio" value="4" checked> Listo para comer el mismo plato durante la semana.</p>
+      </form>
+      <a href class="btn active"> CONTINUAR </a>
+
+    </div>
+    <div class="item item--input_radio content">
+      <h2> ¿Con qué frecuencia come dulces?</h2>
+
+      <form action class="wrapper">
+        <p><input name="dzen" type="radio" value="1"> Amo los dulces, los como varias veces al día.</p>
+        <p><input name="dzen" type="radio" value="2"> No puedo vivir un día sin una barra de chocolate.</p>
+        <p><input name="dzen" type="radio" value="3"> Como dulces unas 2-3 veces a la semana.</p>
+        <p><input name="dzen" type="radio" value="4" checked> Como dulces muy raramente o no como en absoluto.</p>
+      </form>
+      <a href class="btn active"> CONTINUAR </a>
+
+    </div>
+    <div class="item content item--input">
+      <h2> ¿Cuánto peso quiere perder?</h2>
+      <div class="input-box">
+        <input type="text" class="input" required>
+        <p> kg</p>
+      </div>
+      <button type="submit" disabled="true" class="btn btn--main"> CONTINUAR </button>
+
+    </div>
+    <div class="item content item--form">
+      <h2> Gotas para adelgazar Slimatika</h2>
+      <div class="prod">
+        <img src="img/prod.png" alt>
+        <p class="prod__text"> Para adelgazar le ayudarán gotas Slimatika, son naturales y tienen un efecto complejo en el cuerpo. Además de su propósito directo: quemar grasa, los componentes constituyentes contribuyen a la normalización de la digestión, aceleran procesos de descomposición de los alimentos y también contribuyen a la eliminación de toxinas del cuerpo.</p>
+      </div>
+      <div class="price">
+        <p class="price__discount"> Su 50% de descuento es válido hasta el final del día</p>
+        <div class="price__box">
+    
+          <b> 39€</b>
+          <s> 79€</s>
+        </div>
+      </div>
+      <form action>
+        <input class="form__name" type="text" placeholder="Introduzca su nombre">
+        <input class="form__phone" type="text" placeholder="Introduzca su Teléfono">
+        <button class="form__botton"> SOLICITAR UNA LLAMADA</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/button.js"></script>
+
+
+
+
+
+</body></html>
