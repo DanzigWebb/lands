@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Body Helper</title>
+    <meta property="og:title" content="000000" />
+    <meta property="og:description" content="000000" />
+    <meta property="og:image" content="https://i.imgur.com/tQ1O3DR.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+</head>
+
+<body>
+    <div class="mk-wrapper">
+        <header class="header">
+            <div class="header__hero hero">
+                <div class="hero__logo"><i class="svg-logo"></i></div>
+                <h1 class="hero__title"> Body Helper</h1>
+                <h2 class="hero__subtitle"> Θα κάνει την πλάτη σας ευθεία<br> και τη στάση σας όμορφη!</h2>
+                <div class="hero__woman">
+                    <img src="images/demo.png" alt="">
+                    <ul class="pulse__list">
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                    </ul>
+                </div>
+                <img src="images/product.png" alt="" class="hero__product">
+            </div>
+
+            <div class="header__action">
+                <div class="header__price price">
+                    <p class="price__title"> Πώληση</p>
+                    <div class="price__wrap">
+                        <div class="price__left">
+                            <span> Παλιά τιμή</span>
+                            <p><s> 98&euro;</s></p>
+                        </div>
+                        <div class="price__right">
+                            <span> Καινούργια τιμή</span>
+                            <p> 49&euro;</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="header__remain"> Υπάρχουν μόνο <span>14</span> Κομμάτια με έκπτωση!</p>
+                <div class="header__form">
+                    <form class="form" method="POST">
+                        <label for=""> Για παράδειγμα, Μαρία</label>
+                        <input type="text" name="name" placeholder="Εισάγετε το όνομά σας" required>
+                        <label for=""> Για παράδειγμα, +30536573417</label>
+                        <input type="tel" name="phone" placeholder="Εισάγετε το τηλέφωνό σας" required>
+                        <button type="submit" class="mk-button form__button"> Παραγγελία με έκπτωση</button>
+                        <input name="offer_id" type="hidden" value="{offer_id}">
+                        <input name="geo" type="hidden" value="">
+                        <input name="web_id" type="hidden" value="{web_id}">
+                        <input name="click_id" type="hidden" value="{click_id}">
+                        <input name="time_zone" type="hidden" value="+3">
+                        <input name="lang" type="hidden" value="RU">
+                    </form>
+                </div>
+                <div class="header__timer timer">
+                    <div class="timer__part">
+                        <span class="t-hour num"></span>
+                        <p> ώρες</p>
+                    </div>
+                    <div class="timer__part">
+                        <span class="t-min num"></span>
+                        <p> λεπτά</p>
+                    </div>
+                    <div class="timer__part">
+                        <span class="t-sec num"></span>
+                        <p> δευτ-πτο</p>
+                    </div>
+                </div>
+                <p class="header__express"><span><i class="svg-delivery"></i></span> Ταχεία παράδοση στην πόρτα</p>
+            </div>
+        </header>
+        <section class="section top">
+            <ul class="pros__list">
+                <li class="pros__item">
+                    <div class="pros__icon"><i class="svg-body1"></i></div>
+                    <div class="pros__content">
+                        <h3 class="pros__title"> Ενισχύει τον μυ κορσέ</h3>
+                        <p class="pros__text"> Έχει ένα βαθύ αποτέλεσμα μασάζ σε όλες τις μυϊκές ομάδες της πλάτης,
+                            ανακουφίζει από την ένταση και διατηρεί τον τόνο.</p>
+                    </div>
+                </li>
+                <li class="pros__item">
+                    <div class="pros__icon"><i class="svg-body2"></i></div>
+                    <div class="pros__content">
+                        <h3 class="pros__title"> Ισιώνει την πλάτη σας</h3>
+                        <p class="pros__text"> Επηρεάζει απαλά τη σπονδυλική στήλη και την ισιώνει, η στάση γίνεται
+                            ομοιόμορφη και όμορφη</p>
+                    </div>
+                </li>
+                <li class="pros__item">
+                    <div class="pros__icon"><i class="svg-body3"></i></div>
+                    <div class="pros__content">
+                        <h3 class="pros__title"> Γρήγορο αποτέλεσμα</h3>
+                        <p class="pros__text"> Ένα ορατό και απτό αποτέλεσμα επιτυγχάνεται μετά από 2-3 εβδομάδες
+                            τακτικής χρήσης</p>
+                    </div>
+                </li>
+                <li class="pros__item">
+                    <div class="pros__icon"><i class="svg-body4"></i></div>
+                    <div class="pros__content">
+                        <h3 class="pros__title"> Αόρατη αλλά ισχυρή υποστήριξη</h3>
+                        <p class="pros__text"> Αόρατο κάτω από ρούχα, μπορεί να φορεθεί στο σπίτι, στη δουλειά, σε έναν
+                            περίπατο, σε αυτοκίνητο και ακόμη και κατά τη διάρκεια σπορ</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <div class="section__title">
+                <h2> Χωρίς επίπεδη πλάτη<span> καμία εκπληκτική ζωή!</span></h2>
+            </div>
+            <p class="section__text"> Χαλάρωση, καμπυλότητα της σπονδυλικής στήλης, πόνος στους μύες και κάτω πλάτη
+                -<span> Αυτές δεν είναι μόνο δυσάρεστες αισθήσεις, είναι συμπτώματα μιας παγκόσμιας παραμόρφωσης του
+                    σώματος.</span> Αυτό σημαίνει ότι υπάρχει ένα φορτίο στα εσωτερικά όργανα για τα οποία δεν έχουν
+                σχεδιαστεί. Αυτό μπορεί να οδηγήσει στην εμφάνιση και ανάπτυξη χρόνιων ασθενειών.</p>
+            <ul class="befaf__slider">
+                <li>
+                    <div class="befaf__image"><img src="images/befaf1.jpg" alt="" class="befaf"> <img
+                            src="fonts/logo-blue.svg" alt="" class="logo"></div>
+                </li>
+                <li>
+                    <div class="befaf__image"><img src="images/befaf2.jpg" alt="" class="befaf"> <img
+                            src="fonts/logo-blue.svg" alt="" class="logo"></div>
+                </li>
+                <li>
+                    <div class="befaf__image"><img src="images/befaf3.jpg" alt="" class="befaf"> <img
+                            src="fonts/logo-blue.svg" alt="" class="logo"></div>
+                </li>
+                <li>
+                    <div class="befaf__image"><img src="images/befaf4.jpg" alt="" class="befaf"> <img
+                            src="fonts/logo-blue.svg" alt="" class="logo"></div>
+                </li>
+                <li>
+                    <div class="befaf__image"><img src="images/befaf5.jpg" alt="" class="befaf"> <img
+                            src="fonts/logo-blue.svg" alt="" class="logo"></div>
+                </li>
+            </ul>
+        </section>
+        <section class="section cause">
+            <div class="section__title section__title--center">
+                <h2><span>ΓΙΑΤΙ ΚΑΜΠΟΥΡΙΑΖΕΤΕ </span></h2>
+            </div>
+            <ul class="cause__list">
+                <li class="cause__item">
+                    <div class="cause__image cause__image--first"><img src="images/photo1.jpg" alt=""></div>
+                    <p class="cause__text">Φαίνεστε χειρότερος</p>
+                </li>
+                <li class="cause__item">
+                    <div class="cause__image cause__image--second"><img src="images/photo2.jpg" alt=""></div>
+                    <p class="cause__text"> Το βάδισμα γίνεται άσχημο</p>
+                </li>
+                <li class="cause__item">
+                    <div class="cause__image cause__image--third"><img src="images/photo3.jpg" alt=""></div>
+                    <p class="cause__text"> Εμφανίζονται πονοκέφαλοι</p>
+                </li>
+                <li class="cause__item">
+                    <div class="cause__image cause__image--fourth"><img src="images/photo4.jpg" alt=""></div>
+                    <p class="cause__text"> Οσφυϊκοί μύες και πόνος στην πλάτη</p>
+                </li>
+                <li class="cause__item">
+                    <div class="cause__image cause__image--fifth"><img src="images/photo5.jpg" alt=""></div>
+                    <p class="cause__text"> Κουράζεστε γρήγορα και δεν κοιμάστε καλά</p>
+                </li>
+                <li class="cause__item">
+                    <div class="cause__image cause__image--sixth"><img src="images/photo6.jpg" alt=""></div>
+                    <p class="cause__text"> Ολόκληρος ο οργανισμός καταστρέφεται!</p>
+                </li>
+            </ul>
+        </section>
+        <section class="section cta">
+            <div class="cta__block">
+                <h3> Το Body Helper θα ανακουφίσει τη στάση και θα αποκαταστήσει την υγεία στην πλάτη σας σε λιγότερο
+                    από ένα μήνα</h3>
+                <p> Κανένας γιατρός, χειρουργική επέμβαση, φάρμακα και άβολα άκαμπτα κορσέ.</p>
+                <p class="cta__fancy"> Οποιαδήποτε ηλικία!</p>
+            </div>
+            <a href="#order-form" class="mk-button cta__button"> απαλλαγείτε από τη στάση</a>
+        </section>
+        <section class="section">
+            <p class="section__text section__text--em"><span> Σύστημα διόρθωσης στάσης σώματος και μασάζ σώματος
+                    -</span> τεχνογνωσία στον τομέα της φροντίδας της πλάτης και της σπονδυλικής στήλης.</p>
+            <p class="section__text"> Με τη βοήθεια παλμών, η συσκευή έχει βαθιά επίδραση στους μύες της πλάτης: τις
+                ενδυναμώνει και τις τονώνει, ισιώνει τη στάση του σώματος και κάνει την πλάτη υγιή.</p>
+            <ul class="cta__slider">
+                <li>
+                    <div class="cta__image"><img src="images/befaf6.jpg" alt=""></div>
+                </li>
+                <li>
+                    <div class="cta__image"><img src="images/befaf7.jpg" alt=""></div>
+                </li>
+                <li>
+                    <div class="cta__image"><img src="images/befaf8.jpg" alt=""></div>
+                </li>
+            </ul>
+        </section>
+        <section class="section recommend">
+            <div class="section__title section__title--center">
+                <h2> Οι γιατροί προτείνουν<span> Το Body Helper για:</span></h2>
+            </div>
+            <ul class="recommend__list">
+                <li class="recommend__item">
+                    <i class="svg-office"></i>
+                    <p> Υπάλληλοι γραφείου</p>
+                </li>
+                <li class="recommend__item">
+                    <i class="svg-sport"></i>
+                    <p> Αθλητές</p>
+                </li>
+                <li class="recommend__item">
+                    <i class="svg-student"></i>
+                    <p> Φοιτητές</p>
+                </li>
+                <li class="recommend__item">
+                    <i class="svg-child"></i>
+                    <p> Για παιδιά</p>
+                </li>
+                <li class="recommend__item">
+                    <i class="svg-olds"></i>
+                    <p> Σε ηλικιωμένους</p>
+                </li>
+                <li class="recommend__item">
+                    <i class="svg-sad"></i>
+                    <p> Όποιος είναι δυσαρεστημένος με τη στάση του</p>
+                </li>
+            </ul>
+        </section>
+        <section class="section media">
+            <div class="section__title">
+                <h2><span> Σχετικά με το Body Helper στα μέσα ενημέρωσης!</span></h2>
+            </div>
+            <div class="media__image"><img src="images/magazine.jpg" alt=""></div>
+            <h3 class="media__title"> Masters of health</h3>
+            <p class="media__text"> Στο πλαίσιο της διαφημιστικής καμπάνιας, όλοι οι υπάλληλοι του τμήματος σχεδιασμού
+                και διάταξης του περιοδικού μας χρησιμοποίησαν το Body Helper για 1 μήνα. Το αποτέλεσμα ήταν
+                εντυπωσιακό: και τα 47 άτομα ανέφεραν αξιοσημείωτες βελτιώσεις στην ευημερία. Λοιπόν, βλέπουμε το
+                αποτέλεσμα καθαρά - οι πλάτες των σχεδιαστών μας έχουν γίνει ίσια!</p>
+        </section>
+        <section class="section reviews">
+            <div class="section__title">
+                <h2> Σχόλια από τους πελάτες μας<span> για το Body Helper</span></h2>
+            </div>
+            <ul class="reviews__slider">
+                <li class="reviews__item">
+                    <div class="reviews__message reviews__message--out">
+                        <div class="reviews__topbar"><img src="images/avatar1.png" alt="" class="reviews__ava"> <span
+                                class="reviews__name"> Αλέξης Δράτης</span></div>
+                        <div class="reviews__content">
+                            <p> Γειά σου! Θέλω να πω ευχαριστώ πολύ για το Body Helper - είναι εξαιρετικά πράγμα!
+                                Δουλεύω στον υπολογιστή, η πλάτη μου είναι σαν ερωτηματικό. Πρόσφατα, ένιωθα τακτικά
+                                μυϊκή δυσκαμψία και πόνο. Χρησιμοποιώ το Body Helper για 2 εβδομάδες τώρα και νιώθω τον
+                                εαυτό μου να ισιώσει τους ώμους μου ξανά, ευχαριστώ!</p>
+                            <img src="images/review1.jpg" alt="" class="reviews__image">
+                        </div>
+                        <p class="reviews__time">15:33</p>
+                    </div>
+                    <div class="reviews__message reviews__message--in">
+                        <div class="reviews__topbar reviews__topbar--tar"><span class="reviews__name"> Ομάδα του Body
+                                Helper</span> <img src="images/avatar-op.png" alt="" class="reviews__ava"></div>
+                        <div class="reviews__content reviews__content--rev">
+                            <p> Είμαστε πολύ χαρούμενοι που το χρησιμοποιούμε για υγεία!</p>
+                        </div>
+                        <p class="reviews__time">15:35</p>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__message reviews__message--out">
+                        <div class="reviews__topbar"><img src="images/avatar2.png" alt="" class="reviews__ava"> <span
+                                class="reviews__name"> Γιώργος Μάυρος</span></div>
+                        <div class="reviews__content">
+                            <p> Παιδιά, καλησπέρα! Παραγγείλαμε το Body Helper πριν από τρεις εβδομάδες, ο διευθυντής
+                                ζήτησε να αφήσει μια κριτική. Είμαι πολύ ευχαριστημένος - η στάση μου ισιώθηκε αισθητά,
+                                το κεφάλι μου σταμάτησε να πονάει. Χαίρομαι που έχω ένα πρόγραμμα μασάζ χαλάρωσης - μου
+                                αρέσει να κάνω μασάζ το βράδυ Όλα λειτουργούν καλά, ευχαριστώ!</p>
+                            <img src="images/review2.jpg" alt="" class="reviews__image">
+                        </div>
+                        <p class="reviews__time">10:23</p>
+                    </div>
+                    <div class="reviews__message reviews__message--in">
+                        <div class="reviews__topbar reviews__topbar--tar"><span class="reviews__name"> Ομάδα του Body
+                                Helper</span> <img src="images/avatar-op.png" alt="" class="reviews__ava"></div>
+                        <div class="reviews__content reviews__content--rev">
+                            <p> Γίωργε, είμαστε πολύ χαρούμενοι που σας άρεσε το προϊόν!</p>
+                        </div>
+                        <p class="reviews__time">10:25</p>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__message reviews__message--out">
+                        <div class="reviews__topbar"><img src="images/avatar3.png" alt="" class="reviews__ava"> <span
+                                class="reviews__name"> Μαρία Παπανδρέου</span></div>
+                        <div class="reviews__content">
+                            <p> Γεια σας! Όλα είναι σούπερ! Παραδίδεται γρήγορα, ένα πλήρες σετ. Το χρησιμοποιώ και εγώ
+                                και ο σύζυγός μου. Το Body Helper βοήθησε πολύ την πλάτη μου - είμαι μια θηλάζουσα
+                                μητέρα, συνεχώς σε λυγισμένη θέση. Η πλάτη πονάει άγρια ​​και η στάση ήταν άσχημη, τώρα
+                                όλα είναι ισοπεδωμένα! Καλό προϊόν, μπορώ να το συστήσω με ασφάλεια!</p>
+                            <img src="images/review3.jpg" alt="" class="reviews__image">
+                        </div>
+                        <p class="reviews__time">15:45</p>
+                    </div>
+                    <div class="reviews__message reviews__message--in">
+                        <div class="reviews__topbar reviews__topbar--tar"><span class="reviews__name"> Ομάδα του Body
+                                Helper</span> <img src="images/avatar-op.png" alt="" class="reviews__ava"></div>
+                        <div class="reviews__content reviews__content--rev">
+                            <p> Ευχαριστώ, Μαρία! Υγεία σε εσάς!</p>
+                        </div>
+                        <p class="reviews__time">15:48</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="header">
+            <div class="header__hero hero">
+                <div class="hero__logo"><i class="svg-logo"></i></div>
+                <h1 class="hero__title"> Body Helper</h1>
+                <h2 class="hero__subtitle"> Θα κάνει την πλάτη σας ευθεία<br> και τη στάση σας όμορφη!</h2>
+                <div class="hero__woman">
+                    <img src="images/demo.png" alt="">
+                    <ul class="pulse__list">
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                        <li class="pulse__item"></li>
+                    </ul>
+                </div>
+                <img src="images/product.png" alt="" class="hero__product">
+            </div>
+            <div class="header__action">
+                <div class="header__price price">
+                    <p class="price__title"> Πώληση</p>
+                    <div class="price__wrap">
+                        <div class="price__left">
+                            <span> Παλιά τιμή</span>
+                            <p><s>98&euro;</s></p>
+                        </div>
+                        <div class="price__right">
+                            <span>Καινούργια τιμή</span>
+                            <p>49&euro;</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="header__remain"> Υπάρχουν μόνο <span>14</span> Κομμάτια με έκπτωση!</p>
+                <div class="header__form" id="order-form">
+                    <form class="form" method="POST">
+                        <label for=""> Για παράδειγμα, Μαρία</label>
+                        <input type="text" name="name" placeholder="Εισάγετε το όνομά σας" required>
+                        <label for=""> Για παράδειγμα, +30536573417</label>
+                        <input type="tel" name="phone" placeholder="Εισάγετε το τηλέφωνό σας" required>
+                        <button type="submit" class="mk-button form__button"> Παραγγελία με έκπτωση</button>
+                        <input name="offer_id" type="hidden" value="{offer_id}">
+                        <input name="geo" type="hidden" value="">
+                        <input name="web_id" type="hidden" value="{web_id}">
+                        <input name="click_id" type="hidden" value="{click_id}">
+                        <input name="time_zone" type="hidden" value="+3">
+                        <input name="lang" type="hidden" value="RU">
+                    </form>
+                </div>
+                <div class="header__timer timer">
+                    <div class="timer__part">
+                        <span class="t-hour num"></span>
+                        <p> ώρες</p>
+                    </div>
+                    <div class="timer__part">
+                        <span class="t-min num"></span>
+                        <p> λεπτά</p>
+                    </div>
+                    <div class="timer__part">
+                        <span class="t-sec num"></span>
+                        <p> δευτ-πτο</p>
+                    </div>
+                </div>
+                <p class="header__express"><span><i class="svg-delivery"></i></span> Ταχεία παράδοση στην πόρτα</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__text">
+                address
+                <br><br>
+                <span>GADGET SHOP, R. Filipe Folque 36A, 1050-114 Lisboa, Portugal</span>
+                <br><br>
+                <a href="/privacypolicy" target="_blank">Privacy policy</a>
+                <a href="/general-conditions-of-sale" target="_blank">General conditions of sale</a>
+                <a href="/legal-warning" target="_blank">Legal warning</a>
+            </p>
+        </footer>
+    </div>
+    <div class="feedback">
+        <img src="images/i-phone.png" alt="">
+    </div>
+    <div class="popup-window">
+        <div class="close-popup"></div>
+        <form method="POST">
+            <label for="name2"> Για παράδειγμα, Μαρία</label>
+            <input id="name2" type="text" name="name" placeholder="Εισάγετε το όνομά σας" required>
+            <label for="phone2"> Για παράδειγμα, +30536573417</label>
+            <input id="phone2" type="tel" name="phone" placeholder="Εισάγετε το τηλέφωνό σας" required>
+            <button type="submit"> Παραγγελία με έκπτωση</button>
+            <input name="offer_id" type="hidden" value="{offer_id}">
+            <input name="geo" type="hidden" value="">
+            <input name="web_id" type="hidden" value="{web_id}">
+            <input name="click_id" type="hidden" value="{click_id}">
+            <input name="time_zone" type="hidden" value="+3">
+            <input name="lang" type="hidden" value="RU">
+        </form>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.feedback').click(function () {
+                $('.popup-window').show();
+            });
+            $('.close-popup').click(function () {
+                $('.popup-window').hide();
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="/libs/js/common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.init({
+
+                priceSelector: ".new-cost",
+                oldPriceSelector: ".old-cost",
+                reportFormSelector: ".report-abuse__form",
+                reportCallback: function (data) {
+                    console.log('ReportCallback:', data);
+                },
+                callback: function () {
+                    console.log("Do something after prices changing");
+
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
