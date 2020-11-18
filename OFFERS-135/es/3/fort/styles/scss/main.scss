@@ -52,7 +52,9 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-
+  .btn {
+      font-size: 20px;
+    }
     h1 {
       font-size: 33px;
       margin-bottom: 37px;
@@ -71,10 +73,11 @@ main {
         font-size: 23px;
       }
       p {
-        margin-bottom: 67px;
+          font-size: 17px;
+        margin-bottom: 40px;
       }
       .btn {
-        font-size: 26px;
+        font-size: 14px;
       }
     }
     @media (max-width: 380px) {
@@ -87,7 +90,7 @@ main {
         font-size: 17px;
       }
       .btn {
-        font-size: 24px;
+        font-size: 12px;
       }
     }
   }
@@ -300,7 +303,7 @@ main {
       max-width: 730px;
       width: 100%;
       margin-top: 56px;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       img {
         max-width: 157px;
         width: 100%;
@@ -382,6 +385,12 @@ main {
         &::placeholder {
           color: #a7a7a7;
           font-size: 17px;
+          @include min {
+            font-size: 13px;
+          }
+        }
+        @include min {
+          padding-left: 20px;
         }
       }
       button {
