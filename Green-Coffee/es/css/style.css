@@ -461,8 +461,6 @@ p.txt_content.fl_right {
     margin-top: -16px;
 }
 .img_dis_none_blok, .three {
-    max-width: 500px;
-    width: 100%;
     display: block;
     float: left;
     margin-right: 25px;
