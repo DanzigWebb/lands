@@ -1,0 +1,83 @@
+.timer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 290px;
+    width: 100%;
+ box-sizing: border-box;
+    height: 194px;
+    padding: 26px 37px;
+    @include flex(column, flex-start, center);
+    background: #eeeeee;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+    border-radius: 20px;
+    color: #000a5a;
+
+    padding-top: 82px;
+    &.chin {   
+         position: relative;
+         z-index: 3;
+        &::after {
+            content: "";
+             mix-blend-mode: color-burn;
+            border-radius: 50px;
+            box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+            height:60px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background: #ebebeb;
+            transform: translateY(10px);
+        }
+    }
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 30px;
+  max-width: 186px;
+    font-weight: normal;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 331px;
+    text-align: center;
+}
+
+.timer__wrapper span {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.timer__title {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.timer__desc {
+    font-size: 12px;
+    font-weight: 300;
+    width: 100%;
+    @include flex(row,space-between);
+    justify-content: space-between;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
