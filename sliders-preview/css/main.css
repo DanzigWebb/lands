@@ -1,0 +1,23 @@
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    min-height: 3000px;
+    align-items: center;
+}
+
+.scroll-sliders {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.scroll-sliders img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
