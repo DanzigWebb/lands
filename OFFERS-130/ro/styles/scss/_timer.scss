@@ -1,0 +1,100 @@
+.timer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include flex(column, flex-start, center);
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #000a5a;
+    padding-bottom: 35px;
+    &.chin {
+        position: relative;
+        z-index: 3;
+        &::after {
+            content: "";
+            mix-blend-mode: color-burn;
+            border-radius: 50px;
+            box-shadow: 0px 5px 30px rgba(117, 117, 117, 0.1);
+            height: 60px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background: #ebebeb;
+            transform: translateY(10px);
+        }
+    }
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-weight: normal;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 331px;
+    text-align: center;
+}
+
+.timer__wrapper span {
+    font-weight: normal;
+    line-height: 1;
+}
+.timer__wrapper  {
+       @media (max-width: 400px) {
+    padding: 0 20px;
+    }
+}
+.timer__title {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.timer__desc {
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    @include flex(row, space-between);
+    justify-content: space-between;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 85px;
+    text-align: center;
+}
+.t-hour,
+.t-min,
+.t-sec {
+    width: 85px;
+    padding: 0 14px;
+    height: 76px;
+    font-size: 50px;
+    background: #78ccde;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+         @media (max-width: 400px) {
+     font-size: 30px;
+     height: 50px;
+    }
+}
+.separator {
+    color: #00a7c8;
+}
