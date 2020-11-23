@@ -4591,3 +4591,9 @@ style.firebugResetStyles {
         margin-left: 25px;
     }
 }
+.text_cent{
+    margin-top: 20px;
+    color: #fc4b37;
+    font-size: 20px;
+    font-weight: bold;
+}
