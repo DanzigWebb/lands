@@ -1,0 +1,55 @@
+.sidebar {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem .4rem;
+  @media (max-width: 900px){
+    display: none;
+  }
+&__title{
+  text-transform: uppercase;
+font-weight: bold;
+color: #808080;
+font-size: 18px;
+}
+  &__item {
+    color: #000;
+    text-decoration: none;
+    display: block;
+border-top: 1px solid #E4E4E4;
+position: relative;
+padding: 16px 0;
+padding-bottom: 25px;
+&::before{
+  content: '';
+  width: 70px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 4px;
+  background-color: #FF4891;
+}
+.img{
+  margin-top: 9px;
+}
+    &:hover {
+      p {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+ .date {
+@include flex(row, space-between,center);
+width: 100px;
+font-size: 14px;
+margin-bottom: 20px;
+color: #BBBBBB;
+ }
+}
