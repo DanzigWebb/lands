@@ -135,6 +135,12 @@
     padding: 5rem 0;
   }
 
+  &.footer {
+    @include media-xl {
+      padding: 2rem 0;
+    }
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,9 +154,10 @@
   &__heading {
     @include media-md {
       margin: 0 auto;
-      display: grid;
+      @include flex(column);
       max-width: $mob-width;
       align-items: center;
+      justify-content: center;
     }
   }
 
