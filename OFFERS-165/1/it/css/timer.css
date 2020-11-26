@@ -1,0 +1,82 @@
+/*Таймер*/
+.countbox {
+	
+    width: 100%;
+    margin: 0 auto;
+    /*border-radius: 4px;*/
+    /*-webkit-border-radius: 4px;*/
+    /*padding-top: 14px;*/
+    font-family: Oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+/*.countbox:before {
+    content: "До конца акции:";
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#000;
+    margin-bottom: 13px;
+}*/
+.countbox .countbox-num {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.countbox .countbox-space {
+    float: left;
+    height: 48px;
+    width: 27px;
+}
+.countbox .countbox-space:before {
+    content: '';
+}
+.countbox-hours1, .countbox-mins1, .countbox-secs1, .countbox-hours2, .countbox-mins2, .countbox-secs2 {
+    float: left;
+    /* margin-right: 5px; */
+    width: 20px;
+    height: 30px;
+    /* line-height: 60px; */
+    text-align: center;
+    z-index: 1;
+    color: #000;
+    /* background: #d7d8d8; */
+    font-size: 24px;
+    font-weight: 700;
+    -webkit-border-radius: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    border-radius: 10px;
+    /* box-shadow: 3px 2px 7px 1px #989898; */
+}
+.countbox-hours2:after,
+.countbox-mins2:after {
+    content: ':';
+    display: block;
+    font-weight: 400;
+    color:#000;
+    font-size: 36px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.countbox-hours-text {
+    padding-left: 10%;
+}
+.countbox-secs2 {
+    margin-right: 0;
+}
+
+.countbox-hours-text, .countbox-mins-text, .countbox-secs-text {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color:#000;
+    text-align: center;
+    text-transform: lowercase;
+display: none;
+}
+
