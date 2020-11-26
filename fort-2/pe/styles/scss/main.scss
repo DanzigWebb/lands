@@ -16,6 +16,7 @@
         height: 0.8rem;
         background-color: $accent;
         color: #fff;
+        font-weight: 600;
         font-size: 0.2rem;
       }
       &:last-child {
@@ -45,7 +46,7 @@
     text-transform: uppercase;
     b {
       padding-right: 0.3rem;
-      text-align: right;
+      text-align: center;
     }
   }
   &__prod {
