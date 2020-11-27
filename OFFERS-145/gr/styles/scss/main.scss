@@ -28,13 +28,10 @@
 
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 0.34rem;
+      font-size: 0.316rem;
       background: #e01a38;
       border-radius: 6px;
-      padding: 0.11rem 0.7rem;
-      &:nth-child(2n){
-        padding: 0.11rem 0.3rem;
-      }
+      padding: 0.11rem 0.3rem;
       &.transf {
         transform: translateY(-0.1rem);
       }
