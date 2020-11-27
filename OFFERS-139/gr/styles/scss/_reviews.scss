@@ -1,0 +1,50 @@
+.reviews {
+  &__item {
+    background: #ffffff;
+    width: 4.4rem;
+    background-image: url(../../img/sect6--bac.svg);
+    background-position: center right;
+    background-size: 0.4rem;
+    background-repeat: no-repeat;
+    margin: 0.7rem auto;
+    position: relative;
+    margin-bottom: 0.64rem;
+    z-index: 999;
+    padding: 0.6rem 0.4rem;
+    padding-right: 0.65rem;
+    box-sizing: border-box;
+    .top {
+      @include flex(row, space-between, center);
+      margin-bottom: 0.4rem;
+      .ava {
+        width: 0.9rem;
+      }
+      .name {
+        width: 2.25rem;
+        img {
+          width: 1.15rem;
+        }
+        p {
+          margin: 0;
+          margin-top: 0.11rem;
+          b {
+            text-transform: uppercase;
+            font-size: 0.28rem;
+            color: #0d1116;
+          }
+          span {
+            color: #646d78;
+            font-weight: 300;
+            font-size: 0.24rem;
+          }
+        }
+      }
+    }
+  }
+  .comment {
+    width: 100%;
+    font-size: 0.22rem;
+    margin: 0 auto;
+    color: #0d1116;
+  }
+}
