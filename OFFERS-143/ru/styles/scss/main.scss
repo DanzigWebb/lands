@@ -279,6 +279,10 @@
   margin: 0 auto;
   display: grid;
   align-items: center;
+
+  @include media-xl {
+    height: 250px;
+  }
 }
 
 .scroll-sliders img {
@@ -597,9 +601,11 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1005px;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0px,220px));
     grid-gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
 
     @include media-md {
       grid-template-columns: 1fr 1fr;
@@ -638,6 +644,7 @@
     p {
       font-size: 16px;
       max-width: 220px;
+      width: 100%;
     }
   }
 }
