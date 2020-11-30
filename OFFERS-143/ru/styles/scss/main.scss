@@ -180,11 +180,15 @@
 
     @include media-lg {
       font-size: 30px;
+      text-align: center;
     }
 
     @include media-xl {
-      padding: 1rem;
+      font-size: 22px;
       text-align: center;
+      font-size: 24px;
+      padding: 3rem 1.4rem;
+      background-image: url(../../img/title_mob.png)
     }
   }
 
@@ -369,10 +373,19 @@
   background: linear-gradient(248.45deg, rgba(255, 255, 255, 0) 41.12%, #eeeeee 100%);
   position: relative;
 
+  @include media-xl {
+    background-image: url(../../img/mob-fort.png);
+    background-size: cover;
+  }
+
   &__content {
     padding: 3rem 0;
     @include flex(row, space-around);
     flex-wrap: wrap;
+
+    @include media-xl {
+      padding-bottom: 0;
+    }
   }
 
   &__item {
@@ -418,6 +431,10 @@
     bottom: 16%;
     max-width: 1700px;
     width: 100%;
+
+    @include media-xl {
+      display: none;
+    }
   }
 }
 
@@ -477,6 +494,8 @@
     bottom: 3rem;
     width: 100%;
     max-width: 400px;
+    display: block;
+    margin-left: auto;
 
     @include media-md {
       bottom: 0;
@@ -614,6 +633,8 @@
 
     @include media-xl {
       grid-template-columns: 1fr;
+      margin: auto;
+      margin-top: 3rem;
     }
   }
 
