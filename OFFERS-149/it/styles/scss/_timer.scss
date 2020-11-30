@@ -1,0 +1,81 @@
+.timer {
+    padding-bottom: 0.3rem;
+    width: 4.4rem;
+    margin: 0 auto;
+    @include flex(column, space-between, center);
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.5rem;
+    width: 100%;
+    font-weight: bold;
+    color: #407934;
+    opacity: 0.2;
+    margin: 0 auto;
+    .separ {
+        font-size: 0.5rem;
+        font-weight: 300;
+        width: 0.25rem;
+        letter-spacing: 0.05rem;
+    }
+}
+.timer__wrapper {
+    opacity: 1;
+    height: 100%;
+}
+.timer__title {
+    text-align: center;
+    margin-bottom: 0.17rem;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 0.24rem;
+    color: #b9b9b9;
+}
+
+.timer__desc {
+    font-size: 0.22rem;
+    font-weight: 100;
+color: #FFFFFF;
+    opacity: 1;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+   width: 1.3rem;
+    text-align: center;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 1rem;
+    text-align: center;
+}
+.timer__wrapper > div{
+    @include flex (row,space-between,center);
+    width: 1.3rem;
+}
+.timer__wrapper > div > div {
+    background: #ffffff;
+    box-shadow: 0px 5px 15px #29571f;
+    border-radius: 6px;
+    width: 0.6rem;
+    text-align: center;
+    display: inline-block;
+    height: 0.86rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer__wrapper .timer__delimiter{
+font-size: 0.4rem;
+color: #FFFFFF;
+width: 0.24rem;
+font-weight: normal;
+}
