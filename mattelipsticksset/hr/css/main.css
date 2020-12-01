@@ -22,8 +22,9 @@
 
 .top-block-v1 {
     position: relative;
-    padding: 412px 0 0;
+    padding: 410px 0 0;
     background: url(../img/top-block-v1.jpg) 50% 0 no-repeat;
+    background-size: contain;
 }
 .end {
     background-image: url(../img/top-block-v1.jpg);
@@ -70,6 +71,7 @@
 .top-block-v1 .cost-cont {
     height: 85px;
     text-align: center;
+    background: linear-gradient(45deg, black, #d70195);
 }
 .top-block-v1 .cost-cont > div {
     float: left;
@@ -1511,4 +1513,7 @@ form label {
 .text-cont ul li {
     padding-bottom: 20px;
     font-size: 19px;
+}
+.gif{
+    width: 480px;
 }
