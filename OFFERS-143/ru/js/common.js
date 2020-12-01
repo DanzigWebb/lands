@@ -40,6 +40,7 @@ $(document).ready(function () {
   scrollHeader()
   menuToggle()
   animCircles()
+
 });
 
 
@@ -166,4 +167,9 @@ function animCircles() {
       $($circleWrappers.get(i)).find('text').text(percent + '%')
     })
   }
+}
+
+wrapTitles()
+function wrapTitles() {
+  $('.title').wrapInner('<span></span>')
 }

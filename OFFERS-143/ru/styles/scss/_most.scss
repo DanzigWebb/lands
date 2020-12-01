@@ -62,7 +62,7 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 45px;
+  line-height: 1.1;
 
   padding: 2rem;
   padding-bottom: 4rem;
@@ -79,6 +79,18 @@ a {
     font-size: 30px;
     padding: 2rem;
   }
+
+  @include media-xl {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 3rem 1.4rem;
+    background-image: url(../../img/title_mob.png);
+    background-position: center center;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 22px;
+  }
   
   &.center {
     max-width: 770px;
@@ -93,9 +105,6 @@ a {
 
 section {
   padding: 3rem 0;
-  @include media-xl {
-    padding: 1.5rem 0;
-  }
 }
 
 .text-bold {
