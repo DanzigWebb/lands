@@ -5,7 +5,7 @@
 }
 .title-block .main-title{
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 700;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -1495,3 +1495,19 @@ form label {
     top: 10px;
     cursor: pointer;
   }
+.text-cont ul{
+padding: 20px 15px;
+padding-bottom: 30px;
+}
+.text-cont--3 ul{
+padding: 20px 26px;
+padding-bottom: 10px;
+}
+.text-cont--3{
+        background: linear-gradient(45deg, black, #d70195);
+            color: #fff;
+}
+.text-cont ul li{
+padding-bottom: 20px;
+font-size: 19px;
+}
