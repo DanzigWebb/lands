@@ -6,7 +6,7 @@
 @import "timer";
 
 .intro {
-  background: #7D50DE;
+  background: #7d50de;
   &__top {
     min-height: 6.12rem;
     padding-top: 0.01rem;
@@ -67,15 +67,15 @@
       margin: 0;
     }
   }
-  &__bott{
+  &__bott {
     background-image: url(../../img/intro__bott.png);
     min-height: 5.77rem;
     box-sizing: border-box;
     padding-top: 3.28rem;
-    transform: translateY(-3.2rem);
-    margin-top: ;
+    margin-top: -3.2rem;
     background-position: top;
   }
+  .
 }
 .sect1 {
   background-size: cover;
