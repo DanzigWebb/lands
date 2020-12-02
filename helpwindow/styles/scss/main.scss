@@ -64,8 +64,8 @@ p {
   justify-content: center;
   text-align: center;
   position: relative;
-  &__text{
-margin-bottom: 20px;
+  &__text {
+    margin-bottom: 20px;
   }
   form,
   .date,
@@ -87,6 +87,9 @@ margin-bottom: 20px;
         font-family: "Roboto", sans-serif;
         margin-top: 25px;
         margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       &__time {
         font-size: 20px;
@@ -153,7 +156,7 @@ margin-bottom: 20px;
   }
   .back {
     position: absolute;
-    top: 17px;
+    top: 18px;
     left: 2px;
   }
 }
@@ -163,4 +166,7 @@ button {
     color: #fff;
     border: none;
   }
+}
+input {
+  outline: none;
 }

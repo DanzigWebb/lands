@@ -2,8 +2,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
-  height: 100%;
-
+  height: auto;
   @media (max-width: 460px) {
     font-size: 14px;
   }
@@ -16,7 +15,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
 
-  height: 100%;
+  height: auto;
 }
 
 * {

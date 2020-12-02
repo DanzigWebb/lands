@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Fortunella</title>
+  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+    html,
+    body {
+      margin: 0;
+    }
+
+    #main-back {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    #main {
+      width: auto;
+      height: auto;
+      font-family: Roboto;
+      font-size: 24pt;
+      margin-top: 50px;
+    }
+    #search-b:hover {
+      cursor: pointer;
+    }
+
+    #popup-back {
+      position: fixed;
+      z-index: 99999;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: rgba(80, 80, 80, 0.5);
+      font-family: Roboto;
+      font-size: 16pt;
+
+    }
+
+    #popup {
+      display: flex;
+      width: 600px;
+      height: auto;
+      position: relative;
+      padding: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background: rgb(255, 255, 255);
+    }
+
+    #popup-block {
+      display: none;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+    }
+
+    #popup-close-back {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: 20px;
+    }
+
+    #popup-close {
+      width: 20px;
+      height: 20px;
+    }
+
+    #popup-close:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    #popup-head {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-family: Roboto;
+      font-size: 28pt;
+      margin-top: 15px;
+    }
+
+    #popup-image-back {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #popup-image {
+      width: 300px;
+    }
+
+    #popup-main-back {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    #popup-main-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    #popup-main-text {
+      font-family: Roboto;
+      font-size: 24pt;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    #popup-footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      font-family: Roboto;
+      font-size: 14pt;
+      color: rgb(80, 80, 80);
+      margin-top: 50px;
+    }
+
+    #popup-footer-href {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      text-decoration: none;
+      color: #1f75fe;
+      font-size: 14pt;
+    }
+
+    @media (max-width: 700px) {
+
+      #popup-back,
+      #popup {
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #popup-image {
+        width: 70%;
+        height: 100%;
+      }
+
+      #popup-head {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-family: Roboto;
+        font-size: 20pt;
+        margin-top: 10px;
+      }
+
+      #popup-image-back {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #popup-main-back {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      #popup-main-img {
+        width: 20px;
+        height: 20px;
+      }
+
+      #popup-main-text {
+        font-family: Roboto;
+        font-size: 16pt;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+
+      #popup-footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        font-family: Roboto;
+        font-size: 9pt;
+        color: rgb(80, 80, 80);
+        margin-top: 30px;
+      }
+
+      #popup-footer-href {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-decoration: none;
+        color: #1f75fe;
+        font-size: 9pt;
+      }
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    html {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .main .prod img {
+      max-width: 646px;
+      width: 100%;
+    }
+
+    .main .img img {
+      max-width: 120px;
+      width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      .main .img img {
+        display: none;
+      }
+    }
+
+    .main .content {
+      padding: 30px;
+      padding-top: 60px;
+      max-width: 1300px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .main .content .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      min-height: 369px;
+      height: 100%;
+    }
+
+    @media (max-width: 870px) {
+      .main .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 60px;
+      }
+    }
+
+    .main__form {
+      min-height: 369px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .main__form h2 {
+      color: #3b996e;
+      font-weight: 750;
+      font-size: 38px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .main__form h2 {
+        font-size: 29px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main__form h2 {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .main__form {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+    }
+
+    .main__text {
+      max-width: 400px;
+      width: 100%;
+      font-size: 20px;
+      color: #686868;
+    }
+
+    @media (max-width: 600px) {
+      .main__text {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main__text {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    }
+
+    .main form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 370px;
+      width: 100%;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .main form .input {
+      max-width: 220px;
+      width: 100%;
+    }
+
+    .main form .input p {
+      font-weight: bold;
+      font-size: 20px;
+      color: #141414;
+    }
+
+    @media (max-width: 400px) {
+      .main form .input p {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+    }
+
+    .main form button {
+      max-width: 130px;
+      width: 100%;
+      height: 40px;
+      background: #3b996e;
+      border-radius: 4px;
+      font-weight: 450;
+      font-size: 20px;
+      color: #ffffff;
+      border: none;
+      outline: none;
+    }
+
+    .main form input {
+      background: #ffffff;
+      border: 1px solid #919191;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-radius: 4px;
+      max-width: 220px;
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      padding-left: 9px;
+      outline: none;
+    }
+
+    @media (max-width: 1011px) {
+      .main form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+
+      .main form .input {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .main form .input input {
+        height: 50px;
+        max-width: 100%;
+      }
+
+      .main form button {
+        max-width: 100%;
+        height: 50px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="main">
+      <div class="content">
+        <div class="prod">
+          <img src="https://i.imgur.com/asbF3H6.png" alt="">
+        </div>
+        <div class="box">
+          <div class="main__form">
+            <h2>Verifique su pedido</h2>
+            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <form action="">
+              <div class="input">
+                <p class="intput__name">Buscar por número</p>
+                <input id="search" type="text" required>
+              </div>
+              <button id="search-b" type="button">Buscar</button>
+            </form>
+            <div id="popup-back">
+              <div id="popup">
+                <div id="popup-info">Buscar...</div>
+                <div id="popup-block">
+                  <div id="popup-close-back"><img id="popup-close"
+                      src="https://cdn.onlinewebfonts.com/svg/img_188187.png" /></div>
+                  <div id="popup-head">Tu producto</div>
+                  <div id="popup-image-back"><img id="popup-image"
+                      src="https://cdn.shopify.com/s/files/1/0425/8866/8060/products/5a2848b316ce2fb6a508b401807249f5_1024x1024@2x.png?v=1596614901" />
+                  </div>
+                  <div id="popup-main-back"><img id="popup-main-img"
+                      src="https://avatars.mds.yandex.net/get-dialogs/1535439/4d23f117ad0aa8091761/orig" />
+                    <div id="popup-main-text">Fortunella 30ml<br /><span style="font-size: 60%; font-weight: 100;">de
+                        DuoNature</span></div>
+                  </div>
+                  <div id="popup-footer">Número de serie:</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <img src="https://i.imgur.com/uYuMUUs.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">// <![CDATA[
+    $(document).ready(function () {
+
+      $("#search-b").click(function () {
+        let number = $("#search").val();
+        $("#popup-back").css("display", "flex");
+        $.ajax({
+          url: 'https://testaff.site/serialcheck/api/find.php',
+          method: 'get',
+          data: { number: number, check: 'erg435f3f' },
+          success: function (data) {
+
+            if (data == 0) {
+              html = "<span>Desafortunadamente, no se pudo encontrar este número</span>";
+              $("#popup-info").html(html);
+              $("#popup-info").css("display", "flex");
+              setTimeout(function () {
+                $("#popup-back").css("display", "none");
+                $("#popup-info").html("Buscar...");
+
+              }, 2000);
+            }
+            else {
+              html = "Producto con número " + number + " encontrado";
+              $("#popup-info").css("display", "none");
+              $("#popup-block").css("display", "flex");
+
+              $("#popup-footer").html("Número de serie: " + number + "<a id='popup-footer-href' href='#' onclick='window.location.reload();'>Comprobar otro número &#62;</a>");
+
+            }
+          }
+        });
+      });
+
+
+      $("#popup-close").click(function () {
+        $("#popup-back").css("display", "none");
+        $("#popup-block").css("display", "none");
+      });
+
+
+    });
+  // ]]></script>
+</body>
+
+</html>

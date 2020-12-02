@@ -270,24 +270,24 @@
     justify-content: space-around;
     align-items: center;
     b {
-      font-size: 80px;
+      font-size: 50px;
       font-weight: 900;
       color: #ffffff;
     }
     s {
-      font-size: 40px;
+      font-size: 28px;
       padding-top: 30px;
       text-decoration-line: line-through;
       color: #ffffff;
 
       opacity: 0.7;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
       b {
-        font-size: 60px;
+        font-size: 40px;
       }
       s {
-        font-size: 30px;
+        font-size: 18px;
       }
     }
   }
@@ -1072,12 +1072,12 @@
 
 .price b {
   color: #37bec5;
-  font-size: 34px;
+  font-size: 27px;
   margin-right: 10px;
 }
 
 .price s {
-  font-size: 20px;
+  font-size: 18px;
   color: #063273;
   font-weight: 400;
 }

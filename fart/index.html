@@ -20,130 +20,6 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
     }
-
-    .header {
-      border-bottom: 1px solid #ebebeb;
-      width: 100%;
-    }
-
-    .header .content {
-      max-width: 1366px;
-      width: 100%;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: auto;
-      padding: 0 25px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-
-    @media (max-width: 400px) {
-      .header .content {
-        padding: 10px;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .header .content {
-        padding: 10px;
-      }
-    }
-
-    .header .logo img {
-      max-width: 200px;
-      width: 100%;
-    }
-
-    @media (max-width: 400px) {
-      .header .logo img {
-        width: 140px;
-      }
-    }
-
-    .header .menu {
-      padding: 25px 10px;
-      max-width: 450px;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-    }
-
-    @media (max-width: 900px) {
-      .header .menu {
-        display: none;
-      }
-    }
-
-    .header .menu a {
-      text-decoration: none;
-      color: #000;
-      border: 1px transparent solid;
-      font-size: 18px;
-      padding-bottom: 3px;
-    }
-
-    .header .menu a.active,
-    .header .menu a:hover {
-      border-bottom: 1px #000 solid;
-    }
-
-    .header .box {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      max-width: 50px;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      width: 100%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-
-    .header .box__item--3 {
-      display: none;
-    }
-
-    .header .box__item--3 img {
-      width: 20px;
-    }
-
-    @media (max-width: 900px) {
-      .header .box__item--3 {
-        display: block;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .header .box {
-        max-width: 70px;
-      }
-    }
-
     .main {
       min-height: 508px;
     }
@@ -221,12 +97,17 @@
       border-radius: 4px;
       max-width: 150px;
       width: 100%;
+      text-decoration: none;
       height: 40px;
       font-weight: 450;
       font-size: 20px;
       outline: none;
       border: none;
       color: #ffffff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
   </style>
@@ -234,35 +115,13 @@
 
 <body>
   <div class="body">
-    <div class="header">
-      <div class="content">
-        <div class="logo"> <img src="https://i.imgur.com/LRW2Xgw.png" alt=""></div>
-        <div class="menu">
-          <a href="">Buy Fortunella</a>
-          <a href="">Shipping</a>
-          <a href="" class="active">Verify your order</a>
-          <a href="">Bonus</a>
-        </div>
-        <div class="box">
-          <a href="" class="box__item--1"> <img
-              src="https://raw.githubusercontent.com/DanzigWebb/lands/b68b238042b4ee4c5328ad17c6e3d9e3ff04a880/svg/icon.svg"
-              alt=""></a>
-          <a href="" class="box__item--2"><img
-              src="https://raw.githubusercontent.com/DanzigWebb/lands/b68b238042b4ee4c5328ad17c6e3d9e3ff04a880/svg/shope.svg"
-              alt=""></a>
-          <a href="" class="box__item--3"> <img
-              src="https://raw.githubusercontent.com/DanzigWebb/lands/43ae4df72b3826d1f910f838f18dd0724a01497d/svg/menu.svg"
-              alt=""></a>
-        </div>
-      </div>
-    </div>
     <div class="main">
       <div class="content">
         <div class="box">
           <h2>Bonus</h2>
           <b>Get your bonus here</b>
           <p>32x Ready to use and easy to follow recipes</p>
-          <button class="btn">Get bonus</button>
+          <a type="_be" href="https://download.file/here.pdf" download="" class="btn">Get bonus</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,142 @@
+
+
+  
+html
+  font-size: 20.8333333vw
+  background-color: #fff
+  @media (min-width: 480px)
+    font-size: 100px
+    overflow-x: hidden
+body
+  font-size: .20rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 300
+  font-family: 'Montserrat', sans-serif
+  color: #000
+  // background-color: $light
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+  &.pad
+    padding: 0 .2rem
+  &.mar
+    margin: .2rem 0
+
+.content
+  padding: 0 .2rem
+  p
+    line-height: 0.27rem
+    margin-bottom: 0.4rem
+    b
+      font-weight: 500
+    &:last-child
+      margin-bottom: 0
+.heading
+  padding: .2rem 0
+.heading__hr
+  height: 0.02rem
+  width: 4.4rem
+  margin: auto
+  background-image: url(../../img/hr.svg)
+  background-size: cover
+  margin-top: 0.2rem
+h2
+  font-size: 0.3rem
+  line-height: 0.37rem
+  font-weight: 500
+  color: #000
+  margin-bottom: .1rem
+  text-align: center
+  &.black
+    color: #000
+span.accent
+  color: $accent
+  text-transform: uppercase
+  font-weight: 600
+span.prod
+  color: $accent
+  font-weight: 600
+.sub-title
+  font-style: italic
+  font-size: 0.2rem
+  color: #323842
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+
+.btn
+  display: block
+  width: 2.52rem
+  height: 0.5rem
+  margin: auto
+  background-image: url(../../img/btn.svg)
+  background-color: transparent
+  background-size: cover
+  text-transform: uppercase
+  animation: btn 3s linear infinite
+  font-weight: bold
+  font-size: 0.25rem
+  color: #fff
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  span
+    text-align: center
+    display: block
+    width: 100%
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+img
+  width: 100%

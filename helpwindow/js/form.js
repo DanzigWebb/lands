@@ -61,3 +61,5 @@ function gu(){
     })
   })
 }
+const example = flatpickr('.input__date');
+

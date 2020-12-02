@@ -102,7 +102,8 @@ h2 b {
 /* offer */
 
 .offer_section {
-    background: rgb(123, 31, 162) url(../img/sttr1.jpg) center top no-repeat;
+    background: rgb(123, 31, 162) url(../img/sttr1.jpg) center 100px no-repeat;
+    background-size: contain;
     position: relative;
     padding-bottom: 30px;
 }
@@ -113,6 +114,7 @@ h2 b {
     margin: 0 0 484px;
     padding: 12px 0 0;
     color: #fff;
+
     text-transform: uppercase;
     text-align: center;
 }

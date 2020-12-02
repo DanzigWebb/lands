@@ -1861,6 +1861,7 @@ footer .container a:hover {
 
 .advantage-and-char .char-right ul {
   margin-bottom: 24px;
+  padding-left: 20px;
 }
 
 .advantage-and-char .char-right ul li {
@@ -1869,6 +1870,7 @@ footer .container a:hover {
   color: #292929;
   letter-spacing: 0.44px;
   line-height: 23px;
+   list-style-type: none;
   padding: 5px 0;
 }
 

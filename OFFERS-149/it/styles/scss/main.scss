@@ -159,10 +159,10 @@
 }
 .sect5 {
   padding: 0.6rem 0;
-  h2{
+  h2 {
     margin-bottom: 0.4rem;
   }
-    &__item {
+  &__item {
     @include flex(row, space-between, center);
     width: 2.66rem;
     margin-bottom: 0.44rem;

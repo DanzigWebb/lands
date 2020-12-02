@@ -91,11 +91,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   right: 100%;
 }
 
@@ -138,8 +138,8 @@
 
 .jcc {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .main_img {
@@ -166,15 +166,15 @@
 
 .main_price .productsum::before {
   content: "";
-    position: absolute;
-    width: 50%;
-    height: 5px;
-    z-index: -1;
-    bottom: 0px;
-    background: #38bdc5;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  z-index: -1;
+  bottom: 0px;
+  background: #38bdc5;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .main_price .oldproductsum {
@@ -223,11 +223,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 20px 0;
   position: relative;
 }
@@ -257,15 +257,15 @@ a:hover {
 
 .fww {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .orange_btn {
-  background: #F7971E;
+  background: #f7971e;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#FFD200), to(#F7971E));
-  background: linear-gradient(to right, #FFD200, #F7971E);
+  background: -webkit-gradient(linear, left top, right top, from(#ffd200), to(#f7971e));
+  background: linear-gradient(to right, #ffd200, #f7971e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 10px;
   width: 250px;
@@ -276,9 +276,9 @@ a:hover {
   border-radius: 50px;
   font-family: "AppetiteNew";
   -webkit-box-shadow: 0 0 0 rgba(247, 149, 30, 0.816);
-          box-shadow: 0 0 0 rgba(247, 149, 30, 0.816);
+  box-shadow: 0 0 0 rgba(247, 149, 30, 0.816);
   -webkit-animation: pulse 1s infinite ease-in-out;
-          animation: pulse 1s infinite ease-in-out;
+  animation: pulse 1s infinite ease-in-out;
 }
 
 @-webkit-keyframes pulse {
@@ -296,15 +296,15 @@ a:hover {
 @keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(216, 169, 26, 0.879);
-            box-shadow: 0 0 0 0 rgba(216, 169, 26, 0.879);
+    box-shadow: 0 0 0 0 rgba(216, 169, 26, 0.879);
   }
   70% {
     -webkit-box-shadow: 0 0 0 10px rgba(223, 145, 10, 0);
-            box-shadow: 0 0 0 10px rgba(223, 145, 10, 0);
+    box-shadow: 0 0 0 10px rgba(223, 145, 10, 0);
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(218, 155, 18, 0);
-            box-shadow: 0 0 0 0 rgba(218, 155, 18, 0);
+    box-shadow: 0 0 0 0 rgba(218, 155, 18, 0);
   }
 }
 
@@ -397,10 +397,10 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
@@ -528,11 +528,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 10px 0;
 }
 
@@ -576,7 +576,11 @@ a:hover {
   color: #fff;
   font-family: "Proxima Nova Regular";
 }
-
+@media (max-width: 400px) {
+  .main_text_2 {
+    font-size: 14px;
+  }
+}
 .main_text_2::before {
   content: "";
   position: absolute;
@@ -599,14 +603,12 @@ a:hover {
 }
 
 .apple_btn {
-  background: url("../img/apple.png") center center/contain no-repeat;
   width: 100px;
   height: 50px;
   margin-left: 10px;
 }
 
 .android_btn {
-  background: url("../img/android.png") center center/contain no-repeat;
   width: 100px;
   height: 50px;
   margin-left: 10px;
@@ -622,13 +624,13 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 10px 0;
   padding: 10px 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-bottom: 1px solid #35c5c58c;
 }
 
@@ -642,7 +644,7 @@ a:hover {
 .function_icon {
   padding: 20px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .function_icon1 {
@@ -725,10 +727,10 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .certificate_text {
@@ -830,10 +832,10 @@ b {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .complect_text {
@@ -863,8 +865,8 @@ b {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .rating_stars {
@@ -896,12 +898,14 @@ b {
 }
 
 .how_item {
+  position: relative;
   margin: 40px 0;
 }
 
 .how_img {
   padding: 130px;
   margin: 15px auto;
+  position: relative;
 }
 
 .how_img1 {
@@ -925,10 +929,10 @@ b {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 2px 2px 13px #00000040;
-          box-shadow: 2px 2px 13px #00000040;
+  box-shadow: 2px 2px 13px #00000040;
   border-radius: 10px;
 }
 
@@ -961,38 +965,65 @@ form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-form input, form select {
+form input,
+form select {
   width: 100%;
   margin: 10px 0;
   height: 70px;
   border: 1px solid rgba(0, 0, 0, 0.153);
   border-radius: 50px;
   -webkit-box-shadow: 2px 2px 13px #00000010;
-          box-shadow: 2px 2px 13px #00000010;
+  box-shadow: 2px 2px 13px #00000010;
   padding: 0 20px 0 40px;
   outline: none;
 }
 
 .orange_btn2 {
-  width: 100%;
+  margin: 0 auto;
   cursor: pointer;
+  margin-top: 20px;
 }
-
+.reolader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .register_lecture:hover::before {
   top: -15px;
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .register_lecture:hover::after {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   bottom: -15px;
+}
+.how_title {
+  position: absolute;
+  z-index: 9;
+  width: 90%;
+  left: 10%;
+  text-align: center;
+}
+.how_item1 .how_title {
+  top: 211px;
+  left: 9%;
+  font-weight: 800;
+}
+.how_item2 .how_title {
+  top: 215px;
+  font-weight: 800;
+}
+.how_item3 .how_title {
+  top: 194px;
+  left: 9%;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */

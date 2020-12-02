@@ -102,7 +102,8 @@ h2 b {
 /* offer */
 
 .offer_section {
-    background: rgb(123, 31, 162) url(../img/sttr1.jpg) center top no-repeat;
+    background: rgb(123, 31, 162) url(../img/sttr1.jpg) center 80px no-repeat;
+    background-size: contain;
     position: relative;
     padding-bottom: 30px;
 }
@@ -113,6 +114,7 @@ h2 b {
     margin: 0 0 484px;
     padding: 12px 0 0;
     color: #fff;
+
     text-transform: uppercase;
     text-align: center;
 }
@@ -163,7 +165,7 @@ h2 b {
 
 .offer_section .price_block .text {
     margin: 0 0 4px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 12px;
     text-transform: uppercase;
 }
@@ -191,7 +193,7 @@ h2 b {
 
 .offer_section .price_block .discount .text {
     margin: 0 0 5px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
 }
 

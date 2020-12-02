@@ -483,7 +483,7 @@
 			</div>
 			<br>
 			<br>
-			<form id="offer" method="POST" class="form" geo="pt" action="api.php"
+			<form id="offer" method="POST" class="form" geo="ro" action="api.php"
 				onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
 				<div class="input-wrap">
 					<img src="img/man.svg" alt>
@@ -552,8 +552,6 @@
 		}
 
 		const inputs = document.querySelectorAll('form input[name="phone"]')
-
-
 		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
 		function validate_form(form, alert_text = "Please enter valid phone number") {
 			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
@@ -595,7 +593,11 @@
 				var i = 0;
 				var def = matrix.replace(/\D/g, "");
 				var val = input.value.replace(/\D/g, "");
-
+				function strictVolition() {
+					if (geo==='bg'||'ro') {
+						console.log("jjjjj");
+					}
+				}
 				if (!event.type == "blur") {
 					setSelectionStart(input)
 				}
@@ -642,6 +644,7 @@
 			});
 		});
 
+	
 	</script>
 	<script src="libs/carousel/owl.carousel.min.js"></script>
 	<script src="js/timer.js"></script>

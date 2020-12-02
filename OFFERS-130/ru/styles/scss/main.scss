@@ -134,7 +134,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  .content{
+  .content {
     padding: 3rem 1rem;
   }
   @media (max-width: 1500px) {
@@ -937,8 +937,8 @@
     font-size: 100px;
     text-align: left;
     max-width: 100%;
-       @media (max-width: 800px) {
-       font-size: 80px;
+    @media (max-width: 800px) {
+      font-size: 80px;
     }
     @media (max-width: 400px) {
       font-size: 50px;
@@ -1065,4 +1065,24 @@
       font-size: 14px;
     }
   }
+}
+.price {
+  text-align: center;
+}
+
+.price b {
+  color: #37bec5;
+  font-size: 34px;
+  margin-right: 10px;
+}
+
+.price s {
+  font-size: 20px;
+  color: #063273;
+  font-weight: 400;
+}
+
+.btn--bordr {
+  color: #fff;
+  background-color: transparent;
 }
