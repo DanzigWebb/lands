@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 20px; }
+
+body {
+  line-height: 1.1;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif; }
+
+button, input, textarea {
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; }
+
+input {
+  outline: none; }

@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1024px) {
+  	.circle-block {
+		flex-wrap: wrap;
+	}
+	.wrap {
+		flex-direction: column;	
+		align-items: center;
+	}
+	.s6-block {
+		margin-bottom: 10px;
+	}
+	.s3 {
+		background: none;
+	}
+}
+@media only screen and (max-width: 500px) {
+  	.btnh {
+  		padding: 9px 9px;
+  	}
+  	.form_wrap{
+		width: 100%
+	}
+	.old-price,.new-price {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 424px) {
+	.header-gif {
+		max-width: 115px;
+	}
+	.s1 {
+		margin-top: 83px;
+	}
+	.btn {
+		font-size: 22px;
+	}
+	.old-price,.new-price {
+		font-size: 22px;
+	}
+	.s1-title {
+		font-size: 20px;
+	}
+	.extra-bold {
+		font-size: 24px;
+	}
+	.s3-list-item {
+		padding: 5px 0;
+	}
+	.s3-gif {
+		margin-bottom: 10px;
+	}
+	.old-price,.new-price {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.btn {
+		font-size: 20px;
+	}
+	.old-price,.new-price {
+		font-size: 15px;
+	}
+}
