@@ -75,28 +75,22 @@
       .description {
         text-transform: uppercase;
         color: #bbbbbb;
-        font-size: 12px;
+        font-size: 10px;
         position: absolute;
-        left: -70px;
-        margin: 0;
+        left: -50px;
         top: 100%-65%;
         transform: rotate(-90deg);
-         @media (max-width: 1000px) {
-          top: 100%-70%;
-        }
-     
         @media (max-width: 700px) {
-          font-size: 10px;
-              top: 100%-68%;
-          left: -50px;
-        } 
-          @media (max-width: 650px) {
-          top: 100%-62%;
-          left: -60px;
+          font-size: 9px;
         }
         @media (max-width: 500px) {
           font-size: 8px;
-          left: -50px;
+          left: -40px;
+        }
+        @media (max-width: 650px) {
+          top: 100%-58%;
+          font-size: 11px;
+          left: -70px;
         }
       }
       .img {
@@ -582,6 +576,7 @@
     border-bottom: 1px solid #e4e4e4;
   }
 }
+
 .calculator {
   h2 {
     font-weight: bold;
@@ -669,6 +664,7 @@
   max-width: 776px;
   width: 100%;
   margin: 0 auto;
+
   .row {
     @include flex(row, space-between);
     width: 100%;
@@ -691,13 +687,13 @@
       }
     }
   }
-
   #mc_embed_signup_scroll {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
     @include flex(row, center, flex-end);
     flex-wrap: wrap;
+
     .bux {
       max-width: 287px;
       width: 100%;
@@ -763,6 +759,7 @@
         transition: 0.4s ease all;
         border-radius: 4px;
         margin: 0;
+        outline: none;
       }
       @media (max-width: 600px) {
         max-width: 100%;
@@ -772,6 +769,9 @@
       flex-direction: column;
       @include flex(column, center, center);
     }
+  }
+  &.none {
+    display: none;
   }
 }
 
@@ -870,7 +870,7 @@
   //   }
   // }
 
-   @keyframes super-rotation {
+  @keyframes super-rotation {
     70% {
       transform: rotate(2000deg);
     }
@@ -880,104 +880,109 @@
     }
   }
   .wheel {
-    &.none{
+    &.none {
       display: none;
     }
   }
   .form {
-
     display: none;
-    &.activ{
-     width: 100%;
-    margin: 0 auto;
-    @include flex(row, space-between, center);
-        form {
-      max-width: 230px;
+    &.activ {
       width: 100%;
-      .btn{
-        margin-bottom: 0;
-      }
-    }
-    .input-wrap {
-      width: 100%;
-      p {
-        font-size: 14px;
-        color: #808080;
-      }
-      input {
-        width: 100%;
-        border: none;
-        height: 50px;
-        background: #f8f8f8;
-        box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25);
-        border-radius: 4px;
-        padding-left: 20px;
-        &::placeholder {
-          color: #d7d7d7;
-        }
-      }
-    }
-    @media (max-width: 1088px) {
-      @include flex(column, center, center);
+      margin: 0 auto;
+      @include flex(row, space-between, center);
       form {
-        max-width: 300px;
+        max-width: 230px;
         width: 100%;
-        margin-top: 20px;
+        .btn {
+          margin-bottom: 0;
+        }
+      }
+      .input-wrap {
+        width: 100%;
+        p {
+          font-size: 14px;
+          color: #808080;
+        }
         input {
-          height: 70px;
+          width: 100%;
+          border: none;
+          height: 50px;
+          background: #f8f8f8;
+          box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25);
+          border-radius: 4px;
+          padding-left: 20px;
+          &::placeholder {
+            color: #d7d7d7;
+          }
         }
-        
       }
-    }
+      @media (max-width: 1088px) {
+        @include flex(column, center, center);
+        form {
+          max-width: 300px;
+          width: 100%;
+          margin-top: 20px;
+          input {
+            height: 70px;
+          }
+        }
+      }
 
-    .row {
-      @include flex(row, center, center);
-      .img {
-        transform: translate(20%, 10%);
-        position: relative;
-        z-index: 9999;
-      }
-      @media (max-width: 600px) {
-        img {
-          display: none;
+      .row {
+        @include flex(row, center, center);
+        .img {
+          transform: translate(20%, 10%);
+          position: relative;
+          z-index: 9999;
+        }
+        @media (max-width: 600px) {
+          img {
+            display: none;
+          }
         }
       }
-    }
-    .primer {
-      .pricle {
-        background-image: url(../../img/pricle.png);
-        background-size: contain;
-        max-width: 222px;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        position: relative;
-        z-index: 6;
-        @include flex(row, center, flex-start);
-        padding-top: 25px;
-        box-sizing: border-box;
-        height: 105px;
-        margin-bottom: -80px;
-        &__item {
-          @include flex(column, center, center);
-          color: #ffff;
+      .primer {
+        .pricle {
+          background-image: url(../../img/pricle.png);
+          background-size: contain;
+          max-width: 222px;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+          position: relative;
+          z-index: 6;
+          @include flex(row, center, flex-start);
+          padding-top: 25px;
           box-sizing: border-box;
-          &:last-child {
-            margin-left: 30px;
-          }
-          span {
-            font-size: 10px;
-            opacity: 0.8;
-          }
-          s {
-            font-size: 24px;
-          }
-          b {
-            font-size: 30px;
+          height: 105px;
+          margin-bottom: -80px;
+          &__item {
+            @include flex(column, center, center);
+            color: #ffff;
+            box-sizing: border-box;
+            &:last-child {
+              margin-left: 30px;
+            }
+            span {
+              font-size: 10px;
+              opacity: 0.8;
+            }
+            s {
+              font-size: 24px;
+            }
+            b {
+              font-size: 30px;
+            }
           }
         }
       }
     }
-    }
-
+  }
+}
+.WrongEmailAddress,
+.AlreadyExists {
+  p {
+    width: 550px;
+    margin: auto;
+    color: #e83131;
   }
 }

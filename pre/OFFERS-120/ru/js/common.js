@@ -170,11 +170,12 @@ $("#form_email").on("submit", (e) => {
     url: 'https://testaff.site/mail/swiftm/public/form_action.php',
     method: 'post',
     dataType: 'html',
-    success: function (data) {
-      text = data;
-    }
+    
+    success: showAlertEmail()
+    
   });
-});
+});  
+
 function showAlertEmail() {
   const title = document.querySelector('.sweetEmail-text-hidden');
 
