@@ -6,9 +6,8 @@
     width: 4.2rem;
     box-sizing: border-box;
     margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
     padding: 0.3rem 0.2rem;
-    margin-bottom: 0.36rem;
+    margin-bottom: 0.1rem;
   }
   &__top {
     @include flex(row, space-between, center);
@@ -17,16 +16,21 @@
       width: 2.99rem;
       margin: 0;
       font-size: 0.18rem;
-      text-transform: uppercase;
       color: #acacac;
       b {
         display: block;
-        font-size: 0.18rem;
-        color: #343434;
+        font-size: 0.16rem;
+       color: #151515;
       }
     }
   }
+&__text{
+  font-weight: 500;
+}
 }
 .owl-carousel .owl-item .ava {
   width: 0.6rem;
+}
+.owl-carousel .owl-item  .rating{
+   width: 1.23rem;
 }
