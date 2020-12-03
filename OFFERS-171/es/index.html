@@ -1,136 +1,158 @@
-<html lang="bg"><head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>LORO PARLANTE DE PELUCHE</title>
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/owl.theme.default.min.css">
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
+<html lang="bg">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>LORO PARLANTE DE PELUCHE</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<!-- <script type="text/javascript" src="js/script_land.js" defer></script> -->
 
 </head>
-	<body>
-		<section class="half-hero1" id="order-form">
-			<div class="container">
-				<div class="image-gallery">
-					<img src="img/product.png" alt>
-				</div>
-				<div class="content-box">
-					<h1 class="product-title"> LORO PARLANTE DE PELUCHE</h1>
-					<ul class="product-feature-list">
-						<li> Nueva generación de juguetes de peluche</li>
-						<li> Diversión para jóvenes y adultos</li>
-						<li> El regalo perfecto para las fiestas venideras</li>
-					</ul>
-					<div class="price-box">
-						<div class="price-flex">
-							<span class="old-price al-cost-promo"> 98€</span>
-							<span class="new-price al-cost"> 49€</span>
+
+<body>
+	<section class="half-hero1" id="order-form">
+		<div class="container">
+			<div class="image-gallery">
+				<img src="img/product.png" alt>
+			</div>
+			<div class="content-box">
+				<h1 class="product-title"> LORO PARLANTE DE PELUCHE</h1>
+				<ul class="product-feature-list">
+					<li> Nueva generación de juguetes de peluche</li>
+					<li> Diversión para jóvenes y adultos</li>
+					<li> El regalo perfecto para las fiestas venideras</li>
+				</ul>
+				<div class="price-box">
+					<div class="price-flex">
+						<span class="old-price al-cost-promo"> 98€</span>
+						<span class="new-price al-cost"> 49€</span>
+					</div>
+					<span class="discount">
+						<div class="content">
+							<span> 50 %</span>
+							<p> DESCUENTO</p>
 						</div>
-						<span class="discount">
-							<div class="content">
-								<span> 50 %</span>
-								<p> DESCUENTO</p>
-							</div>
+					</span>
+				</div>
+				<form action="/land/order" class="al-form" method="POST">
+					<select class="al-country" name="country" style="display:none"></select>
+					<div class="input-wrapper">
+						<input type="text" name="name" id="name" placeholder="Nombre">
+						<label for="name"></label>
+					</div>
+					<div class="input-wrapper">
+						<input type="tel" name="phone" id="phone" placeholder="Teléfono">
+						<label for="phone"></label>
+					</div>
+					<button type="submit" name="checkout" value="checkout" class="button button-solid button-block"><img
+							src="img/shopping-cart.svg" alt> ¡ORDENAR AHORA!</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="half-description-section">
+		<div class="container">
+			<div class="left">
+				<div class="content">
+					<h3 class="title"> DESCRIPCIÓN</h3>
+					<p> ¿No sabe cómo hacer a sus hijos felices? Tenemos una nueva oferta que le garantizamos que le encantará:
+						¡El LORO QUE HABLA!</p>
+					<p> Un loro colorido que repite palabras y gestos. Fabricado en plástico de primera calidad y cubierto con
+						tela, lo que hace que el juguete sea seguro. Un regalo maravilloso y divertido para cualquier niño a partir
+						de los 3 años.</p>
+					<p> ¡Deleite a sus hijos con un REGALO DE LUJO!</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/half-decription-section.png" alt>
+			</div>
+		</div>
+	</section>
+	<section class="advantage-and-char">
+		<div class="container">
+			<div class="adv-content-left">
+				<h3 class="title"> VENTAJAS</h3>
+				<ul>
+					<li> Habla</li>
+					<li> Colores brillantes</li>
+					<li> Materiales de primera calidad</li>
+					<li> Repite palabras después de ti</li>
+					<li> Se mueve</li>
+					<li> Muy divertido para jóvenes y adultos</li>
+				</ul>
+			</div>
+			<div class="char-right">
+				<h5> CARACTERISTICAS</h5>
+				<ul>
+					<li> Loro de peluche</li>
+					<li> Repite palabras y gestos</li>
+					<li> Para niños mayores de 3 años</li>
+					<li> Material: plástico, tela</li>
+					<li> Fuente de alimentación: 3 pilas - 1,5 voltios, tipo AAA / no se incluye </li>
+					<li> Altura: 20 cm</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="raiting-section--carousel">
+		<div class="container">
+			<h2 class="title center black"> Opiniones de los usuarios</h2>
+			<div class="rating-carousel owl-carousel">
+				<div class="slide">
+					<img src="img/wom5.png" alt class="avatar">
+					<div class="content">
+						<img src="img/five-stars.svg" alt class="stars">
+						<p> El juguete es lindo, coincide completamente con la descripción y a los niños les gusta mucho. ¡Estoy
+							satisfecha!</p>
+						<span class="names">
+							<strong> Daniela Pérez </strong> -<strong> 29 años.</strong>
 						</span>
 					</div>
-					<form action="/land/order" class="al-form" method="POST">
-						<select class="al-country" name="country" style="display:none"></select>
-						<div class="input-wrapper">
-							<input type="text" name="name" id="name" placeholder="Nombre">
-							<label for="name"></label>
-						</div>
-						<div class="input-wrapper">
-							<input type="tel" name="phone" id="phone" placeholder="Teléfono">
-							<label for="phone"></label>
-						</div>
-						<button type="submit" name="checkout" value="checkout" class="button button-solid button-block"><img src="img/shopping-cart.svg" alt> ¡ORDENAR AHORA!</button>
-					</form>
 				</div>
-			</div>
-		</section>
-		<section class="half-description-section">
-			<div class="container">
-				<div class="left">
+				<div class="slide">
+					<img src="img/wom6.png" alt class="avatar">
 					<div class="content">
-						<h3 class="title"> DESCRIPCIÓN</h3>
-						<p> ¿No sabe cómo hacer a sus hijos felices? Tenemos una nueva oferta que le garantizamos que le encantará: ¡El LORO QUE HABLA!</p>
-						<p> Un loro colorido que repite palabras y gestos. Fabricado en plástico de primera calidad y cubierto con tela, lo que hace que el juguete sea seguro. Un regalo maravilloso y divertido para cualquier niño a partir de los 3 años.</p>
-						<p> ¡Deleite a sus hijos con un REGALO DE LUJO!</p>
-					</div>
-				</div>
-				<div class="right">
-					<img src="img/half-decription-section.png" alt>
-				</div>
-			</div>
-		</section>
-		<section class="advantage-and-char">
-			<div class="container">
-				<div class="adv-content-left">
-					<h3 class="title"> VENTAJAS</h3>
-					<ul>
-						<li> Habla</li>
-						<li> Colores brillantes</li>
-						<li> Materiales de primera calidad</li>
-						<li> Repite palabras después de ti</li>
-						<li> Se mueve</li>
-						<li> Muy divertido para jóvenes y adultos</li>
-					</ul>
-				</div>
-				<div class="char-right">
-					<h5> CARACTERISTICAS</h5>
-					<ul>
-						<li> Loro de peluche</li>
-						<li> Repite palabras y gestos</li>
-						<li> Para niños mayores de 3 años</li>
-						<li> Material: plástico, tela</li>
-						<li> Fuente de alimentación: 3 pilas - 1,5 voltios, tipo AAA / no se incluye </li>
-						<li> Altura: 20 cm</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="raiting-section--carousel">
-			<div class="container">
-				<h2 class="title center black"> Opiniones de los usuarios</h2>
-				<div class="rating-carousel owl-carousel">
-					<div class="slide">
-						<img src="img/wom5.png" alt class="avatar">
-						<div class="content">
-							<img src="img/five-stars.svg" alt class="stars">
-							<p> El juguete es lindo, coincide completamente con la descripción y a los niños les gusta mucho. ¡Estoy satisfecha!</p>
-							<span class="names">
-							<strong> Daniela Pérez </strong> -<strong> 29 años.</strong>
-							</span>
-						</div>
-					</div>
-					<div class="slide">
-						<img src="img/wom6.png" alt class="avatar">
-						<div class="content">
-							<img src="img/five-stars.svg" alt class="stars">
-							<p> Los niños disfrutan de este juguete. ¡Nos alegra haber pedido un papagayo que habla!</p>
-							<span class="names">
+						<img src="img/five-stars.svg" alt class="stars">
+						<p> Los niños disfrutan de este juguete. ¡Nos alegra haber pedido un papagayo que habla!</p>
+						<span class="names">
 							<strong> Marta Sánchez</strong> - <strong> 35 años.</strong>
-							</span>
-						</div>
-					</div>
-					<div class="slide">
-						<img src="img/men8.png" alt class="avatar">
-						<div class="content">
-							<img src="img/five-stars.svg" alt class="stars">
-							<p> El juguete coincide con la descripción, se entrega rápidamente y sin problemas. ¡Lo recomiendo!</p>
-							<span class="names">
-							<strong> Jorge Martínez</strong> -<strong> 32 años.</strong>
-							</span>
-						</div>
+						</span>
 					</div>
 				</div>
+				<div class="slide">
+					<img src="img/men8.png" alt class="avatar">
+					<div class="content">
+						<img src="img/five-stars.svg" alt class="stars">
+						<p> El juguete coincide con la descripción, se entrega rápidamente y sin problemas. ¡Lo recomiendo!</p>
+						<span class="names">
+							<strong> Jorge Martínez</strong> -<strong> 32 años.</strong>
+						</span>
+					</div>
+				</div>
+
 			</div>
-		</section>
-		<script src="js/jquery.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/scripts.js"></script>
-	
-</body></html>
+		</div>
+	</section>
+	<div class="policy__bot">
+		<br>
+		<div class="policy_wrap">
+			<center><span> HOME GOODS LTD, Calle Virgen del Espino, 17, 28027 Madrid, Spain</span>
+				<br>
+				<a href="/privacypolicy" target="_blank">Privacy policy</a>
+				<a href="/general-conditions-of-sale" target="_blank">General conditions of sale</a>
+				<a href="/legal-warning" target="_blank">Legal warning</a></center>
+		</div>
+		<br>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
