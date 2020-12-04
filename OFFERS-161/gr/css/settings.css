@@ -1,0 +1,260 @@
+/* my_presets *//* michael-k90 *//* endzeit_____ */
+.form input.field:focus::-webkit-input-placeholder {opacity:0;}
+.form input.field:focus::-moz-placeholder          {opacity:0;}
+.form input.field:focus:-moz-placeholder           {opacity:0;}
+.form input.field:focus:-ms-input-placeholder      {opacity:0;}
+.form input.field::-webkit-input-placeholder {color: #222; opacity: 1;}
+.form input.field:-moz-placeholder {color: #222; opacity: 1;}
+.form input.field::-moz-placeholder {color: #222; opacity: 1;}
+.form input.field:-ms-input-placeholder {color: #222; opacity: 1;}
+.hidden{display: none;}
+.left{float: left;}
+.right{float: right;}
+.center{text-align: center;}
+.just {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+p.par {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding: 0 20px 20px;
+}
+.img {
+    display: block;
+    margin: 0 auto 20px;
+}
+.clearfix:after{content: '';display: block;clear: both;}
+.clear{clear: both;height: 0px;}
+.ulfix {font-size: 0;}
+.ulfix li {font-size: 16px;}
+/* END my_presets */
+
+h1,h2,h3,h4,h5,h6{font-family: 'Proxima Nova', Helvetica, sans-serif; font-weight: 700; text-transform: uppercase;line-height: 1.3em;}
+b,strong{font-weight: 700;}
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    font-family: 'Proxima Nova', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #333;
+    background: #282828;
+}
+.wrap {
+    width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    background: #fff;
+}
+section {
+    padding: 35px 0;
+}
+section, footer {
+	width: 100%;
+    position: relative;
+}
+.wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+section:after, footer:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.form input.field{
+    position: relative;
+    display: block;
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 100%;
+    height: 76px;
+    line-height: 76px;
+    margin: 0 auto 10px;
+    padding: 0 20px;
+    background:#fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Proxima Nova', Helvetica, sans-serif;
+    font-weight: 400;
+    color: #222;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+    -ms-transition:     all 0.2s;
+    transition:         all 0.2s;
+}
+.button-m{
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 380px;
+    height: 76px;
+    line-height: 80px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+    font-family: 'Proxima Nova', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #222222;
+    background: rgb(255,233,11);
+    background: -moz-linear-gradient(top, rgba(255,233,11,1) 0%, rgba(255,128,47,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,233,11,1) 0%,rgba(255,128,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,233,11,1) 0%,rgba(255,128,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe90b', endColorstr='#ff802f',GradientType=0 ); 
+    -webkit-box-shadow: 0 5px 0 0 #ec5621;
+    box-shadow: 0 5px 0 0 #ec5621;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+    -ms-transition:     all 0.2s;
+    transition:         all 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-shadow: 0 2px 0 #ffe90b;
+}
+.button-m:hover{
+    
+}
+.button-m:active{
+   
+    top:-1px;
+}
+.form {
+    width: 380px;
+    margin: 0 auto;
+}
+.form .button-m{
+    width: 100%;
+}
+h2.title {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.15em;
+}
+h2.title > b {
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+}
+h2.title > b span {
+    color:#06af16;
+}
+.sep:after {
+    content:'';
+    display: block;
+    width: 198px;
+    height: 2px;
+    margin: 25px auto 0;
+    background: #dadada;
+}
+
+
+/*Таймер*/
+.countbox:before {
+    content: 'До конца акции осталось:';
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+.countbox {
+    height: 80px;
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto 25px;
+}
+.countbox > div:last-child {
+    margin: 0;    
+}
+.countbox > div:first-child {
+    margin-left: 70px;    
+}
+.countbox .countbox-num {
+    margin-right: 30px;
+    display: inline-block;
+}
+.countbox-hours, .countbox-mins, .countbox-secs {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 48px;
+     display: inline-block;
+    position: relative;
+}
+.countbox-mins:before, .countbox-secs:before {
+    content:':';
+    display: block;
+    font-size: 48px;
+    color:#525252;
+    font-weight: 300;
+    position: absolute;
+    top:-3px;
+    left: -17px;
+}
+.countbox-hours-text, .countbox-mins-text, .countbox-secs-text {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    display: inline-block;
+    padding-left: 3px;
+}
+
+.video-container {
+     position: relative;
+     width: 100%;
+     height: 280px;
+     margin: 0 auto;
+     overflow:hidden;
+     background:#000;	
+}
+ .video-container iframe, .video-container object, .video-container embed{
+    position:absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.youtube {
+    height: 100% !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #333;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container .youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

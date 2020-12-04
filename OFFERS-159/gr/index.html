@@ -222,99 +222,29 @@
     </div>
   </div>
   </div>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
 
-  <script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+  $(document).ready(function () {
+    $.init({
 
-  <script type="text/javascript">
-    var phonePrefix = '+7';
-  </script>
-  <script type="text/javascript" src="js/phonePrefix.js"></script>
+      priceSelector: ".new-cost",
+      oldPriceSelector: ".old-cost",
+      reportFormSelector: ".report-abuse__form",
+      reportCallback: function (data) {
+        console.log('ReportCallback:', data);
+      },
+      callback: function () {
+        console.log("Do something after prices changing");
 
-  <script type="text/javascript" src="js/check.js"></script>
-  <script type="text/javascript" src="js/detect.js"></script>
-
-
-  <link type="text/css" rel="stylesheet" href="css/roboto.css">
-  <script type="text/javascript" src="js/yasoblock-v2.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
-
-
-  <script type="text/javascript">
-    var phoneError5 = 'Номер должен содержать минимум 5 символов';
-  </script>
-
-
-  <script type="text/javascript" class="order-script" src="js/order.js"></script>
-
-
-  <script type="text/javascript">
-    $(function () {
-      M1.initComebacker(3000);
-    });
-  </script>
-
-
-
-
-  <link rel="stylesheet" href="css/enhancer_all_style.css">
-
-
-
-  <link href="css/call-m1-style.css" type="text/css" rel="stylesheet">
-  <style>
-    .call-cont-m1-front {
-      width: 120px;
-      height: 120px;
-      background: url(img/1.png) center bottom no-repeat;
-    }
-
-  </style>
-  <script>
-    var callBtn = "Бесплатный звонок";
-  </script>
-  <script src="js/call-m1.js"> </script>
-  <script>
-    $(function () {
-      setTimeout(function () {
-        $("#call-but-m1").show();
-      }, 20000);
-    });
-  </script>
-
-
-  <script>
-    var data = 'u=1&track=ref%253D97273%253B%2Bs%253D%253B%2Bw%253D%253B%2Bt%253D%253B%2Bp%253D%253B%2Bm%253D&landing_id=15415&prokl_id=0&ip=178.69.51.0&lnk=0&product=8089&sale=phone&is_organic=1&user_device=0&tel=phone&fio=fio&host=https%3A%2F%2Fgoproducti.com%2Fpage%2F5cf314685e098d4d036e56a329eac6c358110956&tren=0&useragent=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzg3LjAuNDI4MC42NiBTYWZhcmkvNTM3LjM2&showcase_from=0&is_backorder=1',
-      fp;
-
-    $(function () {
-      if (typeof Fingerprint2!= 'undefined') {
-        Fingerprint2.get(function (components) {
-          fp = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31);
-          data += '&fp=' + fp;
-          $(document).trigger("fp.ready");
-        });
       }
     });
+  });
+</script>
 
 
-    setTimeout(function () {
-      $('body').append('<img style=\'display:none;\' src=\'//m1-shop.ru/pixel/?' + data + '\'>');
-    }, 90000);
-  </script>
+</body>
 
-
-
-
-
-
-
-
-
-  <script src="js/previewYouTube.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/scripts.js"></script>
-
-
-
-
-</body></html>
+</html>
