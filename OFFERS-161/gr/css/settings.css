@@ -170,7 +170,7 @@ h2.title > b span {
 
 /*Таймер*/
 .countbox:before {
-    content: 'До конца акции осталось:';
+    content: 'Μέχρι το τέλος της προσφοράς:';
     display: block;
     text-align: center;
     font-size: 18px;
