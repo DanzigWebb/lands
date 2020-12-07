@@ -8,20 +8,13 @@
 .intro {
   background: #e6f3f7;
   &__top {
-    min-height: 6.12rem;
+    min-height: 7.12rem;
     padding-top: 0.01rem;
     background-image: url(../../img/intro__top.png);
     background-size: contain;
   }
   &__title {
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    font-weight: 600;
-    margin: 0.18rem 0;
-    color: #64fcff;
-    width: 3.97rem;
-    margin-bottom: 0;
-    animation: text-shadow 3s ease infinite;
+
   }
   .list {
     padding-right: 0.3rem;
