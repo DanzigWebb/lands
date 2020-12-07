@@ -7,6 +7,8 @@
 
 .intro {
   background: #7d50de;
+  padding-bottom: 0.1rem;
+  box-sizing: border-box;
   &__top {
     min-height: 6.12rem;
     padding-top: 0.01rem;
@@ -104,7 +106,7 @@
   background: #3c2966;
   background-size: cover;
   background-image: url(../../img/sect1_bac.png);
-  padding: 0.1rem 0;
+  padding: 0.2rem 0;
   padding-bottom: 0.3rem;
   .img {
     padding: 0 0.15rem;
@@ -127,7 +129,7 @@
   margin-top: -0.4rem;
   background-position: top;
   background-image: url(../../img/backround_2.png);
-  .btn{
+  .btn {
     font-size: 0.18rem;
   }
   &__main {
@@ -188,10 +190,10 @@
     padding-top: 0;
     margin-bottom: 0.4rem;
   }
-  &__main{
-    @include flex(row,space-between,center)
+  &__main {
+    @include flex(row, space-between, center);
   }
-  .prod{
+  .prod {
     width: 1.51rem;
   }
   &__item {
@@ -199,7 +201,7 @@
     width: 2.64rem;
     margin-bottom: 0.44rem;
     margin-left: 0.37rem;
-    img{
+    img {
       width: 0.48rem;
     }
     &:last-child {
