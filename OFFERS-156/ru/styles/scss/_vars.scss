@@ -24,9 +24,7 @@ $anim: all 0.5s ease;
     2px 2px 0 $text-shadow, 2px -2px 0 $text-shadow, -2px 2px 0 $text-shadow, -2px -2px 0 $text-shadow;
   text-transform: uppercase;
 }
-@mixin absolText($top: -0.2rem, $right: 0, $left: auto,) {
-   position: absolute;
-  top: $top;
-  right: $right;
-  left: $left;
+
+@mixin postionText($top: -0.2rem, $right: 0, $left: auto,) {
+
 }

@@ -285,7 +285,7 @@
 }
 .b4 .box{
   position: relative; 
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .b4 .box>img{
   display: block; 
@@ -293,7 +293,7 @@
 }
 .b4 .box>p{
   position: absolute;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.2em;
   width: 190px;
   top: 160px;

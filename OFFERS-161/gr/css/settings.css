@@ -16,6 +16,9 @@
     -moz-text-align-last: center;
     text-align-last: center;
 }
+form  button{
+font-size: 18px;
+}
 p.par {
     text-align: justify;
     -moz-text-align-last: center;
@@ -142,6 +145,7 @@ section:after, footer:after {
 }
 .form .button-m{
     width: 100%;
+    font-size: 18px;
 }
 h2.title {
     margin: 0 0 30px 0;

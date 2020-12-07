@@ -79,7 +79,7 @@
 }
 .sale span {
   line-height: 1em;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -90,7 +90,7 @@
   margin: 0 2px;
 }
 .sale b {
-  font-size: 36px;
+  font-size: 33px;
   line-height: 40px;
 }
 .price {
@@ -285,7 +285,7 @@
 }
 .b4 .box{
   position: relative; 
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .b4 .box>img{
   display: block; 
@@ -293,7 +293,7 @@
 }
 .b4 .box>p{
   position: absolute;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.2em;
   width: 190px;
   top: 160px;
