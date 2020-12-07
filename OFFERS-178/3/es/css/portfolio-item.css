@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.yellow-button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(223, 125, 31);
+    border-radius: 10px;
+    background-image: -ms-linear-gradient( -90deg, rgb(255,214,84) 0%, rgb(255,199,50) 100%);
+    width: 100%;
+    height: 59px;
+    font-family: 'Bebas Neue Bold';
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+span.button-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 36px;
+    height: 30px;
+    background-position: -170px -6px;
+
+}
+
+.sprite{background:url("") no-repeat center center;}
+
+row.borderd{margin:10px -30px}
+
+@media (min-width:768px){.row.borderd{border:2px dashed #fff;margin:30px -30px}}
+
+input.input-3 {
+    display: block;
+    width: 100%;
+    outline: 0;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 41px;
+    color: #1f1f1f;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 0 10px;
+    text-align: left;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #DDD;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.20), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+.pnorm ,.pofertado{display:table;margin:0 auto;vertical-align:middle}
+
+.text-center{padding-left:0;padding-right:0}
+
+span.text{display:inline-block;height:auto;font-size:16px}
+.text{display:table;width:100%;margin:0 auto;height:72px;position:relative;float:left;}
+
+label{margin-bottom:0;margin-top:5px;font-size:16px}
+.timetillde .dot{font-size:37px;line-height:73px;}
+.timetillde{display:table;margin:0 auto 10px;text-align:center}
+.timetillde .timer .num {margin-top:10px;
+    margin-right: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight:600;
+    color:#000;
+}
+
+.bg-blue{background:#157bc4;color:#fff;}
+
+.container-fluid.bg-blue.text-center{padding-left:0;padding-right:0}
+
+big{font-size:34px}
+
+.pofertado{color:#ffe73c;font-size:19px;font-weight:700;}
+
+.p12 {
+    padding: 30px;
+}
