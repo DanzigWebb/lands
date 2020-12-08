@@ -24,21 +24,21 @@ class minTimer {
       // каждая цифра в отдельном элементе
       const separation = () => {
         for (let i = 0; i < this.min.length; i++) {
-          this.hour[i].innerHTML = `<div class="">
+          this.hour[i].innerHTML = `
             <span>${hourString[0]}</span>
-          </div><div class="">
+          
             <span>${hourString[1]}</span>
-          </div>`
-          this.min[i].innerHTML = `<div class="">
+          `
+          this.min[i].innerHTML = `
             <span>${minString[0]}</span>
-          </div><div class="">
+          
             <span>${minString[1]}</span>
-          </div>`
-          this.sec[i].innerHTML = `<div class="">
+          `
+          this.sec[i].innerHTML = `
             <span>${secString[0]}</span>
-          </div><div class="">
+          
             <span>${secString[1]}</span>
-          </div>`
+          `
         }
       }
       // цифры вместе

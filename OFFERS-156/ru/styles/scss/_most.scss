@@ -29,8 +29,31 @@ body {
   }
 }
 h2 {
-  font-size: 0.3rem;
+  font-size: 0.23rem;
   font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  b{
+    display: block;
+  }
+  &.black{
+    color: $black;  
+  }
+  &.m-49{
+    margin-bottom: 0.49rem;
+  }
+  &.m-10{
+    margin-bottom: 0.1rem;
+  }
+  &.white{
+    color: white;
+  }
+  &.intro-title{
+    color: $accent;
+    font-weight: 800;
+    font-size: 0.35rem;
+    margin-bottom: 0;
+  }
 }
 .btn {
   width: 3.34rem;
@@ -90,4 +113,7 @@ img {
     text-align: center;
     color: #7e7e7e;
   }
+}
+section{
+  padding: 0.65rem 0;
 }
