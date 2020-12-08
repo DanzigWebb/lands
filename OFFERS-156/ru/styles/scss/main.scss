@@ -110,15 +110,13 @@
     padding-top: 0.58rem;
     padding-bottom: 0.69rem;
     background-position: top;
-    .bot{
+    .bot {
       margin: 0 auto;
       width: max-content;
-      img{
+      text-align: center;
+      img {
         width: 3.27rem;
         display: block;
-      }
-      b{
-        text-align: center;
       }
     }
   }
@@ -166,6 +164,53 @@
     }
   }
 }
-.sect1{
-  
+.sect1 {
+  &__main {
+    position: relative;
+    z-index: 1;
+    padding-left: 0.53rem;
+    img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      top: 0.1rem;
+      width: 4.67rem;
+    }
+    .box {
+      display: grid;
+      grid-template-rows: 0.41rem 1.76rem 0.41rem 1.39rem 0.65rem 1.92rem;
+    }
+    .title {
+      margin: 0;
+      width: 2.9rem;
+      font-size: 0.2rem;
+      line-height: 1;
+      color: $accent;
+    }
+  }
+  .text {
+    line-height: 1;
+    width: 2.7rem;
+    margin: 0;
+    font-size: 0.18rem;
+  }
+}
+.sect2{
+  background: #E6F3F7;
+  &__item{
+    @include flex(row,space-between,center);
+    margin: 0.29rem 0;
+    margin-left: 0.13rem;
+    img{
+      width: 0.8rem;
+      margin-right: 0.23rem;
+    }
+    p{
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  .btn{
+    margin-bottom: 0;
+  }
 }
