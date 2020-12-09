@@ -6,11 +6,11 @@ function CountBox() {
         out =
             // "<div class='countbox-num'><div class='countbox-hours1'><span></span>" + days1 + "</div><div class='countbox-hours2'><span></span>" + days2 + "</div><div class='countbox-hours-text'>Дней</div></div>" +
             // "<div class='countbox-space'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + hours1 + " </div><div class='timer-num'>" + hours2 + "</div></div><div class='timer-name'> ч</div></div>" +
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + hours1 + " </div><div class='timer-num'>" + hours2 + "</div></div><div class='timer-name'></div></div>" +
             "<div class='timer-separate'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + mins1 + " </div><div class='timer-num'>" + mins2 + "</div></div><div class='timer-name'>м</div></div>" +
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + mins1 + " </div><div class='timer-num'>" + mins2 + "</div></div><div class='timer-name'></div></div>" +
             "<div class='timer-separate'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + secs1 + " </div><div class='timer-num'>" + secs2 + "</div></div><div class='timer-name'>с</div>";
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + secs1 + " </div><div class='timer-num'>" + secs2 + "</div></div><div class='timer-name'></div>";
         var list = document.getElementsByClassName("timer-body");
         for (var i = 0; i < list.length; i++) {
             list[i].innerHTML = out;
@@ -49,11 +49,11 @@ function CountBox() {
         out =
             // "<div class='countbox-num'><div class='countbox-hours1'><span></span>" + days1 + "</div><div class='countbox-hours2'><span></span>" + days2 + "</div><div class='countbox-hours-text'>Дней</div></div>" +
             // "<div class='countbox-space'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + hours1 + " </div><div class='timer-num'>" + hours2 + "</div></div><div class='timer-name'>ч</div></div>" +
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + hours1 + " </div><div class='timer-num'>" + hours2 + "</div></div><div class='timer-name'></div></div>" +
             "<div class='timer-separate'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + mins1 + " </div><div class='timer-num'>" + mins2 + "</div></div><div class='timer-name'>м</div></div>" +
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + mins1 + " </div><div class='timer-num'>" + mins2 + "</div></div><div class='timer-name'></div></div>" +
             "<div class='timer-separate'></div>" +
-            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + secs1 + " </div><div class='timer-num'>" + secs2 + "</div></div><div class='timer-name'>с</div>";
+            "<div class='timer-item'><div class='timer-val'><div class='timer-num'>" + secs1 + " </div><div class='timer-num'>" + secs2 + "</div></div><div class='timer-name'></div>";
         var list = document.getElementsByClassName("timer-body");
         for (var i = 0; i < list.length; i++) {
             list[i].innerHTML = out;
