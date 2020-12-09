@@ -83,6 +83,9 @@ h2 {
 img {
   width: 100%;
 }
+.img{
+  margin: auto;
+}
 .owl-carousel {
   .owl-dots {
     padding: 0.2rem 0;
@@ -90,17 +93,17 @@ img {
     justify-content: center;
     align-items: center;
     button {
-      width: 0.24rem;
-      height: 0.07rem;
+      width: 0.34rem;
+      height: 0.05rem;
       outline: none;
-      background: #ffbe00;
+      background: #F1F1F1;
       box-sizing: border-box;
       margin: 0 0.07rem;
       border-radius: 10px;
       box-sizing: border-box;
       transition: 0.2s ease all;
       &.active {
-        background: #ff3535;
+        background: #00AA63;
       }
     }
   }
