@@ -1007,7 +1007,7 @@ h1 {
 	background-color: #fff;
 }
 .s7-item-list p {
-	line-height: 24px;
+	line-height: 1;
 	margin: 0;
 }
 .s7-item-list img {
