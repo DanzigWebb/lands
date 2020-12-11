@@ -1061,10 +1061,11 @@ fieldset {
 }
 .section__title {
   font-size: 0.34rem;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.18;
   text-align: center;
   padding: 0 0.3rem;
+  padding-bottom: 0.32rem;
 }
 .section__image {
   display: block;
@@ -1167,13 +1168,14 @@ fieldset {
 }
 .timer {
   padding: 0 0.3rem;
-  margin-bottom: 0.3rem;
 }
 .timer__remain {
   font-family: Roboto, sans-serif;
   font-size: 0.15rem;
   line-height: 1.08;
-  text-align: center;
+  padding: 0.3rem 0;
+  padding-bottom: 0.21rem;
+  width: 1.26rem;
 }
 .timer__wrap {
   display: -webkit-box;
@@ -1185,12 +1187,15 @@ fieldset {
   flex-flow: row nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .timer__part {
-  width: 0.66rem;
+  width: 0.51rem;
   text-align: center;
   position: relative;
+  border: 0.02rem solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 3px;
 }
 .timer__part:not(:last-child) {
   margin-right: 0.3rem;
@@ -1199,13 +1204,13 @@ fieldset {
   content: ":";
   position: absolute;
   font-family: Roboto Condensed, sans-serif;
-  font-size: 0.64rem;
+  font-size: 0.34rem;
   font-weight: 700;
   right: -0.23rem;
   top: 0;
 }
 .timer__part span {
-  font-size: 0.64rem;
+  font-size: 0.34rem;
   font-weight: 700;
   line-height: 1.17;
 }
@@ -1445,7 +1450,7 @@ fieldset {
   outline: none !important;
   background-color: #fff;
   display: block;
-  width: 100%;
+  width: 4.2rem;
   border-radius: 0.4rem;
   padding: 0.24rem 0.4rem;
   font-weight: 500;
@@ -1490,8 +1495,11 @@ fieldset {
 .footer__text {
   text-align: center;
 }
-.footer__text a {
-  color: inherit;
+.footer a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 0.1rem;
 }
 @media (max-width: 479px) {
   html {
