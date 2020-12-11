@@ -1,0 +1,43 @@
+.owl-carousel .reviews {
+  &__top {
+    @include flex(row, flex-start, center);
+    padding: 0.09rem 0;
+    padding-left: 0.1rem;
+    font-size: 0.16rem;
+  }
+  &__item {
+    margin: 0 0.3rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    .ava {
+      width: 0.39rem;
+      margin-right: 0.16rem;
+    }
+    p {
+      padding: 0.19rem;
+      margin: 0;
+      font-size: 0.16rem;
+      font-weight: 600;
+    }
+  }
+}
+.sect8 .owl-carousel .owl-dots {
+  padding: 0.2rem 0;
+  width: 1.28rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  button {
+    width: 0.39rem;
+    height: 0.07rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  outline: none;
+    margin: 0 3px;
+    &.active {
+    background: #FFFFFF;
+border-radius: 5px;
+    }
+  }
+}
