@@ -45,11 +45,11 @@
 			<div class="price">
 				<div class="price__left">
 					<img src="img/intro_svg.svg" alt>
-					<p><b> Protección 100%</b> sus ojos de la influencia de cualquier monitor</p>
+					<p><b> Protección 100%</b> asus ojos de la influencia de cualquier monitor</p>
 				</div>
 				<div class="price__right">
 					<div class="price__text"><span> Nuevo precio</span>
-						<p><b> 49€</b> <s> 98€ </s></p>
+						<p><b> 49€</b> <s> 98€</s></p>
 					</div>
 				</div>
 			</div>
@@ -65,10 +65,9 @@
 			</div>
 			<br>
 			<a href="#offer" class="btn"> Solicitar</a>
-		
 			<div class="bot">
 				<img src="img/stat.svg" alt>
-					<br>
+				<br>
 				<b> Quedan 18 piezas en stock</b>
 			</div>
 		</div>
@@ -81,9 +80,9 @@
 				<img src="img/sect1.png" alt>
 				<div class="box">
 					<h3 class="title title--1"> Reduce la fatiga ocular</h3>
-					<p class="text text--1"> Gafas Safe Vision F3<b> filtra y disminuye la intensidad de la </b> luz artificial de una pantalla digital y crea un entorno de visualización más cómodo.</p>
+					<p class="text text--1">  <b> Filtra y disminuye la intensidad de la </b> luz artificial de una pantalla digital y crea un entorno de visualización más cómodo.</p>
 					<h3 class="title title--2"> Protege tus ojos</h3>
-					<p class="text text--2"> gafas<b> reducir la tensión y el estrés,</b> ayudando a sus ojos a encontrar la distancia focal natural al monitor de su computadora.</p>
+					<p class="text text--2"> gafas<b> reduce la tensión y el estrés,</b> ayudando a sus ojos a encontrar la distancia focal natural al monitor de su computadora.</p>
 					<h3 class="title title--3"> Mejora el clima cerca de los ojos.</h3>
 					<p class="text text--3"> El tinte, recubrimientos y curvatura de la lente<b> protege contra la exposición a la radiación fluorescente agresiva,</b> luz del día brillante y corrientes de aire circundantes que resecan los ojos.</p>
 				</div>
@@ -247,7 +246,7 @@
 			<div class="price">
 				<div class="price__left">
 					<img src="img/intro_svg.svg" alt>
-					<p><b> Protección 100%</b> sus ojos de la influencia de cualquier monitor</p>
+					<p><b> Protección 100%</b> asus ojos de la influencia de cualquier monitor</p>
 				</div>
 				<div class="price__right">
 					<div class="price__text"><span> Precio actual</span>
@@ -282,5 +281,27 @@
 		<script src="libs/carousel/owl.carousel.min.js"></script>
 		<script src="js/timer.js"></script>
 		<script src="js/common.js"></script>
+		<script>
+			circleAnimDelay()
+			function circleAnimDelay() {
+				const circles = document.querySelectorAll('.circle')
+				const setAnimAttr = () => `animation-delay: ${Math.random()}s`
+				const candys = document.querySelectorAll('.candy')
+				circles.forEach((item) => {
+					const div = createEl()
+					item.appendChild(div)
+				})
+				candys.forEach((item) => {
+					item.setAttribute('style', setAnimAttr())
+				})
+				function createEl() {
+					const div = document.createElement('div')
+					div.classList.add('anim')
+					div.setAttribute('style', setAnimAttr())
+					return div
+				}
+			}
+		</script>
+
 
 </main></body></html>
