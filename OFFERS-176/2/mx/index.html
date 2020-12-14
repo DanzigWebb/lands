@@ -1,568 +1,681 @@
-<!DOCTYPE html><html class="no-js" dir="ltr" lang><head>
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/placeholders-3.0.2.min.js" type="text/javascript"></script>
-        <script src="js/moment-with-locales-2.18.1.min.js" type="text/javascript"></script>
-        <script src="js/dr-dtime.min.js" type="text/javascript"></script>
-        <script src="js/order_me.min.js" type="text/javascript"></script>
-        <link href="css/order_me.min.css" media="all" rel="stylesheet" type="text/css">
-        <script src="js/video_avid.min.js" type="text/javascript"></script>
-        <style>
-            .ac_footer {
-                position: relative;
-                top: 10px;
-                height: 0;
-                text-align: center;
-                margin-bottom: 70px;
-                color: #a12000;
-            }
+<head>
 
-            .ac_footer a {
-                color: #a12000;
-            }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/placeholders-3.0.2.min.js" type="text/javascript"></script>
+    <script src="js/moment-with-locales-2.18.1.min.js" type="text/javascript"></script>
+    <script src="js/dr-dtime.min.js" type="text/javascript"></script>
+    <script src="js/order_me.min.js" type="text/javascript"></script>
+    <link href="css/order_me.min.css" media="all" rel="stylesheet" type="text/css">
+    <script src="js/video_avid.min.js" type="text/javascript"></script>
+    <style>
+        .ac_footer {
+            position: relative;
+            top: 10px;
+            height: 0;
+            text-align: center;
+            margin-bottom: 70px;
+            color: #a12000;
+        }
 
-            .ac_footer p {
-                text-align: center;
-            }
+        .ac_footer a {
+            color: #a12000;
+        }
 
-            img[height="1"],
-            img[width="1"] {
-                display: none!important;
-            }
-        </style>
-        <!--retarget-->
-        <!--retarget-->
-        <meta charset="utf-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <title>CardioFort</title>
-  <meta property="og:title" content="CardioFort">
-  <meta property="og:description" content="Presión arterial normal desde su primer consumo. Acción prolongada.">
-  <meta property="og:image" content="https://i.imgur.com/UNgTxhi.png">
-  <meta property="og:type" content="website">
-	<link rel="shortcut icon" href="favicon.png" type="image/png">
-        <meta content name="description">
-        <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
-        <meta data-generator-id="1334">
-        <link href="css/css.css" rel="stylesheet">
-        <!--Import Google Icon Font-->
-        <link href="css/icon.css" rel="stylesheet">
-        <link href="css/materialize.min.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--retarget--><!--retarget-->
-        <div class="preloader-background">
-            <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue-only">
-                    <div class="circle-clipper left"><div class="circle"></div></div>
-                    <div class="gap-patch"><div class="circle"></div></div>
-                    <div class="circle-clipper right"><div class="circle"></div></div>
+        .ac_footer p {
+            text-align: center;
+        }
+
+        img[height="1"],
+        img[width="1"] {
+            display: none !important;
+        }
+    </style>
+    <!--retarget-->
+    <!--retarget-->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>CardioFort</title>
+    <meta property="og:title" content="CardioFort">
+    <meta property="og:description" content="Presión arterial normal desde su primer consumo. Acción prolongada.">
+    <meta property="og:image" content="https://i.imgur.com/UNgTxhi.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta content name="description">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <meta data-generator-id="1334">
+    <link href="css/css.css" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--retarget-->
+    <!--retarget-->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
                 </div>
             </div>
         </div>
-        <main>
-            <header>
-                <div class="container">
-                    <div class="row m-0">
-                        <div class="col xl12 l12 m12 s12">
-                            <div class="headerContent">
-                                <div class="logoBox img_box"><img alt src="img/logo.png"></div>
-                                <div class="headerContent-items">
-                                    <div class="headerItem">
-                                        <div class="headerItem-icon"><img alt src="img/headerIcon_01.png"></div>
-                                        <div class="headerItem-text"> 100% orgánico</div>
+    </div>
+    <main>
+        <header>
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col xl12 l12 m12 s12">
+                        <div class="headerContent">
+                            <div class="logoBox img_box"><img alt src="img/logo.png"></div>
+                            <div class="headerContent-items">
+                                <div class="headerItem">
+                                    <div class="headerItem-icon"><img alt src="img/headerIcon_01.png"></div>
+                                    <div class="headerItem-text"> 100% orgánico</div>
+                                </div>
+                                <div class="headerItem">
+                                    <div class="headerItem-icon"><img alt src="img/headerIcon_02.png"></div>
+                                    <div class="headerItem-text"> 3567 personas lo pidieron hoy</div>
+                                </div>
+                            </div>
+                            <div class="headerButton" data-goto=".block_12"> Pide que te llamen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="block_01">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m12 s12">
+                        <div class="block_01-title"> CardioFort ©: presión arterial normal desde su primer consumo.
+                            Acción prolongada.</div>
+                        <div class="block_01-subtitle"> Ataca la causa de la enfermedad, reduciendo a cero el riesgo de
+                            derrame cerebral e infarto.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col xl4 l4 m12 s12">
+                        <div class="plusesItem dflex">
+                            <div class="img_box plusesItem-icon"><img alt src="img/plusIco_01.png"></div>
+                            <div class="plusesItem-text"> Normaliza la presión arterial dentro de las primeras 6 horas
+                                debido a los bioflavonoides</div>
+                        </div>
+                        <div class="plusesItem dflex">
+                            <div class="img_box plusesItem-icon"><img alt src="img/plusIco_02.png"></div>
+                            <div class="plusesItem-text"> Restaura el tono y la elasticidad de los vasos sanguíneos con
+                                un solo tratamiento.</div>
+                        </div>
+                        <div class="plusesItem dflex">
+                            <div class="img_box plusesItem-icon"><img alt src="img/plusIco_03.png"></div>
+                            <div class="plusesItem-text"> Seguro para cualquier edad Efectivo en las etapas I, II y III
+                                de la hipertensión.</div>
+                        </div>
+                    </div>
+                    <div class="col xl4 l4 m6 s12">
+                        <div class="img_box productBox">
+                            <img alt src="img/product.png">
+                            <div class="obj saleBox"> Venta <span> -50% </span></div>
+                        </div>
+                    </div>
+                    <div class="col xl4 l4 m6 s12">
+                        <div class="formBox">
+                            <div class="dflex formBox-header">
+                                <div class="formBox-header__text"> La cantidad del producto es limitada:</div>
+                                <div class="valign-wrapper formBox-header__count">
+                                    <div><span class="countBox"> 18 </span><b> unidades </b></div>
+                                </div>
+                            </div>
+                            <div class="formBox-content">
+                                <div class="dflex priceBox">
+                                    <div class="priceBox-item">
+                                        <div class="oldPrice">
+                                            <div class="priceBox-title"> Precio de exportación:</div>
+                                            <div class="priceBox-info"> 1530 MXN</div>
+                                        </div>
                                     </div>
-                                    <div class="headerItem">
-                                        <div class="headerItem-icon"><img alt src="img/headerIcon_02.png"></div>
-                                        <div class="headerItem-text"> 3567 personas lo pidieron hoy</div>
+                                    <div class="priceBox-item">
+                                        <div class="newPrice">
+                                            <div class="priceBox-title"> Precio de descuento:</div>
+                                            <div class="priceBox-info"> 765 MXN</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="headerButton" data-goto=".block_12"> Pide que te llamen</div>
+                                <div class="orderForm">
+                                    <form id="order_form" method="POST">
+                                        <input name="offer_id" type="hidden" value="{offer_id}">
+                                        <input name="geo" type="hidden" value>
+                                        <input name="web_id" type="hidden" value="{web_id}">
+                                        <input name="click_id" type="hidden" value="{click_id}">
+                                        <input name="time_zone" type="hidden" value="+3">
+                                        <input name="lang" type="hidden" value="RU">
+                                        <div class="input-field"><input id="name" name="name" type="text"
+                                                required><label for="name"> Ingresa tu nombre </label></div>
+                                        <div class="input-field"><input class="only_number" id="phone" name="phone"
+                                                type="tel" required><label for="phone"> Ingresa tu número de teléfono
+                                            </label></div>
+                                        <div class="buttonBox"><button
+                                                class="waves-effect btn red js_submit button__text customBtn"
+                                                type="submit"> Pedido</button></div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <section class="block_01">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m12 s12">
-                            <div class="block_01-title"> CardioFort ©: presión arterial normal desde su primer consumo. Acción prolongada.</div>
-                            <div class="block_01-subtitle"> Ataca la causa de la enfermedad, reduciendo a cero el riesgo de derrame cerebral e infarto.</div>
+            </div>
+        </section>
+        <section class="block_02">
+            <div class="container">
+                <div class="obj objBox1"><img alt class="lazy"
+                        data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/men.png" src="img/men.png"></div>
+                <div class="row m-0">
+                    <div class="col xl8 l8 m12 s12">
+                        <div class="block_02-title"><span> ¡Compruébalo tú mismo! </span> ¿Padeces al menos uno de los
+                            siguientes síntomas?</div>
+                        <div class="dflex symptomBox">
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Dolores de cabeza</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Taquicardia</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Puntos negros ante los ojos (miodesopsias)</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Fatiga crónica</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Apatía, irritación, somnolencia</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Edema facial</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Visión borrosa</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Dedos adormecidos y fríos</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Hiperhidrosis</div>
+                            </div>
+                            <div class="dflex symptomBox-item">
+                                <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
+                                <div class="symptomItem-text"> Picos de presión arterial</div>
+                            </div>
+                        </div>
+                        <div class="bannerBox">
+                            <div class="bannerBox-title"> ¡ESTO ES HIPERTENSIÓN!</div>
+                            <div class="bannerBox-text"><span> ¡Importante! </span> El 67% de los pacientes hipertensos
+                                de México no tienen ni idea de que están enfermos.</div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col xl4 l4 m12 s12">
-                            <div class="plusesItem dflex">
-                                <div class="img_box plusesItem-icon"><img alt src="img/plusIco_01.png"></div>
-                                <div class="plusesItem-text"> Normaliza la presión arterial dentro de las primeras 6 horas debido a los bioflavonoides</div>
+                </div>
+            </div>
+        </section>
+        <section class="block_03">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m12 s12">
+                        <div class="block_03-title"> ¿Por qué es peligrosa la hipertensión?</div>
+                        <div class="block_03-subtitle center-align">
+                            <i> Las consecuencias de la hipertensión arterial son más peligrosas que las enfermedades
+                                oncológicas y la tuberculosis en conjunto. El 89% de los casos de hipertensión terminan
+                                en infartos. La trombosis se desarrolla en los vasos sanguíneos. Los riesgos de
+                                hemorragias cerebrales y el desarrollo de apoplejías son altos. </i>
+                        </div>
+                        <div class="block_03-subtitle"> Fumar, beber alcohol, la malnutrición, el sedentarismo, el
+                            estrés y los altos niveles de colesterol hacen que las consecuencias sean especialmente
+                            peligrosas. Las personas con exceso de peso sufren de hipertensión 3-4 veces más a menudo
+                            que las personas normales. </div>
+                        <div class="bannerBox">
+                            <div class="bannerBox-title"> ¡IMPORTANTE!</div>
+                            <div class="bannerBox-text"> La hipertensión progresa rápidamente, uno de cada cinco
+                                pacientes se enfrenta a un riesgo de desenlace letal. Comienza el tratamiento ahora y
+                                recupera tu salud.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_04 valign-wrapper parallax-container">
+            <div class="parallax"><img alt class="lazy"
+                    data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/bg_04.png" src="img/bg_04.png"></div>
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col xl9 l12 m12 s12">
+                        <div class="block_04-title"> El descubrimiento de los científicos que marcó una época</div>
+                        <div class="block_04-text"> A los científicos británicos del Centro Nacional de Flebología les
+                            llevó 8 años desarrollar este suplemento terapéutico profiláctico.</div>
+                        <div class="block_04-text"> El descubrimiento del año fue nominado para el Premio Internacional
+                            de la Fundación Gairdner.</div>
+                        <div class="block_04-text"> Las pruebas en múltiples etapas demostraron la efectividad del
+                            suplemento, lo que proporcionó a los investigadores todas las licencias, certificados de
+                            calidad y apoyo gubernamental necesarios. </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_05">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl12 l12 m12 s12">
+                        <div class="block_05-title"> CardioFort elimina las 5 causas principales de la hipertensión
+                        </div>
+                        <div class="dflex causesBox">
+                            <div class="causesBox-item">
+                                <div class="causesBox-icon img_box"><img alt src="img/cause_01.png"></div>
+                                <div class="causesBox-title"> Sistema nervioso sobrecargado (estrés, insomnio, etc.)
+                                </div>
+                                <div class="causesBox-text"> CardioFort alivia la ansiedad gracias al contenido de la
+                                    raíz de valeriana y de la agripalma.</div>
                             </div>
-                            <div class="plusesItem dflex">
-                                <div class="img_box plusesItem-icon"><img alt src="img/plusIco_02.png"></div>
-                                <div class="plusesItem-text"> Restaura el tono y la elasticidad de los vasos sanguíneos con un solo tratamiento.</div>
+                            <div class="causesBox-item">
+                                <div class="causesBox-icon img_box"><img alt src="img/cause_02.png"></div>
+                                <div class="causesBox-title"> Toxinas en los vasos sanguíneos</div>
+                                <div class="causesBox-text"> CardioFort mejora la actividad cardíaca, limpia los vasos
+                                    sanguíneos de residuos gracias a los bioflavonoides obtenidos del café verde y el
+                                    espino.</div>
                             </div>
-                            <div class="plusesItem dflex">
-                                <div class="img_box plusesItem-icon"><img alt src="img/plusIco_03.png"></div>
-                                <div class="plusesItem-text"> Seguro para cualquier edad Efectivo en las etapas I, II y III de la hipertensión.</div>
+                            <div class="causesBox-item">
+                                <div class="causesBox-icon img_box"><img alt src="img/cause_03.png"></div>
+                                <div class="causesBox-title"> Varicosidad y trombosis</div>
+                                <div class="causesBox-text"> CardioFort mejora la circulación sanguínea, desintegra los
+                                    coágulos y refuerza las paredes de los vasos sanguíneos debido al contenido de conos
+                                    florales concentrados, conocidos como lúpulo (Humulus lupulus). </div>
+                            </div>
+                            <div class="causesBox-item">
+                                <div class="causesBox-icon img_box"><img alt src="img/cause_04.png"></div>
+                                <div class="causesBox-title"> Aumento del nivel de azúcar en la sangre</div>
+                                <div class="causesBox-text"> CardioFort reduce el nivel de azúcar en la sangre,
+                                    previniendo la diabetes gracias a los extractos de orégano y cola de caballo.</div>
+                            </div>
+                            <div class="causesBox-item">
+                                <div class="causesBox-icon img_box"><img alt src="img/cause_05.png"></div>
+                                <div class="causesBox-title"> Exceso de peso</div>
+                                <div class="causesBox-text"> CardioFort estimula el adelgazamiento, el metabolismo y el
+                                    funcionamiento de los riñones gracias al extracto de melisa.</div>
                             </div>
                         </div>
-                        <div class="col xl4 l4 m6 s12">
-                            <div class="img_box productBox">
-                                <img alt src="img/product.png">
-                                <div class="obj saleBox"> Venta <span> -50% </span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_06">
+            <div class="container">
+                <div class="obj objBox2"><img alt class="lazy"
+                        data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/expert.png" src="img/expert.png">
+                </div>
+                <div class="row m-0">
+                    <div class="col xl8 offset-xl4 l10 offset-l2 m12 s12">
+                        <div class="block_06-title"> Opinión de experto</div>
+                        <div class="block_06-text"> ¡Lo confirmo!</div>
+                        <div class="block_06-text"> El principal agente contra la hipertensión son los bioflavonoides.
+                            Sólo pueden obtenerse del té verde y del espino. Están presentes en casi todos los remedios
+                            para la hipertensión. </div>
+                        <div class="block_06-text"> ¡Pero! ¡Su concentración en la mayoría de los productos es
+                            insignificante!</div>
+                        <div class="block_06-text"> Por consiguiente, es posible que haya que esperar el efecto durante
+                            muchos años. Sé con certeza que el único remedio con abundancia de bioflavonoides es el
+                            CardioFort. Vi su fórmula y las conclusiones de expertos independientes y personas
+                            reconocidas. Recomiendo este suplemento a los pacientes y les regaño si empiezan a
+                            autotratarse y toman algo que "un amigo les aconsejó", "lo leyeron en Internet", "lo
+                            escucharon en la televisión". </div>
+                        <div class="block_06-text"> ¡Esto no es correcto! ¡Deberías luchar contra la hipertensión sólo
+                            con métodos seguros! Esos en los que confían los médicos, que harán que tu enfermedad
+                            desaparezca para siempre.</div>
+                        <div class="expertName"><span> Antonio López </span> Médico de categoría superior, Ph.D. en
+                            Medicina</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_07">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m6 offset-m4 s12">
+                        <div class="dflex customForm">
+                            <div class="customForm-item">
+                                <div class="saleBox"> Venta <span> -50% </span></div>
+                                <div class="dflex customForm-header">
+                                    <div class="formBox-header__text"> La cantidad de productos en los almacenes más
+                                        cercanos es limitada:</div>
+                                    <div class="valign-wrapper formBox-header__count">
+                                        <div><span class="countBox"> 18 </span><b> unidades </b></div>
+                                    </div>
+                                </div>
+                                <div class="dflex priceBox">
+                                    <div class="priceBox-item">
+                                        <div class="oldPrice">
+                                            <div class="priceBox-title"> Precio de exportación:</div>
+                                            <div class="priceBox-info"> 1530 MXN</div>
+                                        </div>
+                                    </div>
+                                    <div class="priceBox-item">
+                                        <div class="newPrice">
+                                            <div class="priceBox-title"> Precio de descuento:</div>
+                                            <div class="priceBox-info"> 765 MXN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customForm-item">
+                                <div class="img_box productBox"><img alt src="img/product.png"><img alt
+                                        class="obj objArrow" src="img/arrow.png"></div>
+                            </div>
+                            <div class="customForm-item">
+                                <div class="customForm-title"> La cantidad del producto es limitada:</div>
+                                <form id="order_form" method="POST">
+                                    <input name="offer_id" type="hidden" value="{offer_id}">
+                                    <input name="geo" type="hidden" value>
+                                    <input name="web_id" type="hidden" value="{web_id}">
+                                    <input name="click_id" type="hidden" value="{click_id}">
+                                    <input name="time_zone" type="hidden" value="+3">
+                                    <input name="lang" type="hidden" value="RU">
+                                    <div class="input-field"><input id="name" name="name" type="text" required><label
+                                            for="name"> Ingresa tu nombre </label></div>
+                                    <div class="input-field"><input class="only_number" id="phone" name="phone"
+                                            type="tel" required><label for="phone"> Ingresa tu número de teléfono
+                                        </label></div>
+                                    <div class="buttonBox"><button
+                                            class="waves-effect btn red js_submit button__text customBtn" type="submit">
+                                            Pedido</button></div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col xl4 l4 m6 s12">
-                            <div class="formBox">
-                                <div class="dflex formBox-header">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_08">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m12 s12">
+                        <div class="block_08-title"> La efectividad de CardioFort © fue confirmada mediante ensayos
+                            clínicos</div>
+                        <div class="bannerBox-text">
+                            <div> La aprobación clínica se llevó a cabo en un hospital de Brighton en 2011.</div>
+                            <div> Dos grupos de voluntarios participaron en el ensayo clínico que duró 25 días.</div>
+                            <div> El 1er grupo, formado por hombres y mujeres de 28 a 80 años, con trastornos
+                                hipertensivos, que tomaron CardioFort El 2do grupo, formado por hombres y mujeres con
+                                condiciones similares, que tomaron un placebo. </div>
+                        </div>
+                        <div class="block_08-title"> Resultados de la investigación</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col xl12 l12 m12 s12">
+                        <div class="dflex resultBox">
+                            <div class="resultBox-item">
+                                <div class="resultBox-title"> PLACEBO</div>
+                                <div class="resultBox-image img_box"><img alt src="img/peaple_left.png"></div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Normalización de la presión arterial</div>
+                                    <div class="resultBox-percent"> 1%</div>
+                                </div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Eliminación de la trombosis venosa</div>
+                                    <div class="resultBox-percent"> 0%</div>
+                                </div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Eliminación de la arritmia</div>
+                                    <div class="resultBox-percent"> 2%</div>
+                                </div>
+                            </div>
+                            <div class="resultBox-item">
+                                <div class="resultBox-title"> CardioFort ©</div>
+                                <div class="resultBox-image img_box"><img alt src="img/people_right.png"></div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Normalización de la presión arterial</div>
+                                    <div class="resultBox-percent"> 100%</div>
+                                </div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Eliminación de la trombosis venosa</div>
+                                    <div class="resultBox-percent"> 90%</div>
+                                </div>
+                                <div class="dflex resultBox-info">
+                                    <div class="resultBox-text"> Eliminación de la arritmia</div>
+                                    <div class="resultBox-percent"> 99%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_09">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl12 l12 m12 s12">
+                        <div class="block_09-title"> Comentarios de personas que apreciaron el efecto de CardioFort ©
+                        </div>
+                        <div class="reviewsBox">
+                            <div class="dflex reviewItem">
+                                <div class="reviewItem-avatar img_box"><img alt src="img/review_01.jpg"></div>
+                                <div class="reviewItem-text"> Comprendí que la reducción de la PA provoca un accidente
+                                    cerebrovascular isquémico - infarto cerebral - al ver que le sucede a mi hermana
+                                    mayor. Los médicos le salvaron la vida, pero no se recuperó completamente. La
+                                    primera vez que también enfrenté esta enfermedad, ya conocía algunos trucos y sabía
+                                    que debía buscar remedios vegetales y herbales. Mi médico, una mujer muy sabia, me
+                                    recetó CardioFort. Le estoy muy agradecida. Ya pasaron 4 años y ya no soy
+                                    hipertensa. Soy una persona completamente sana, que no tiene miedo de un infarto ni
+                                    de una apoplejía. ¡Cuida tu salud! <span class="authorName"> Olivia, 39 años, Ciudad
+                                        México</span>
+                                </div>
+                            </div>
+                            <div class="dflex reviewItem">
+                                <div class="reviewItem-avatar img_box"><img alt src="img/review_02.jpg"></div>
+                                <div class="reviewItem-text"> Hace algunos años, recibí un tratamiento en el sanatorio
+                                    de Florida. Allí se investigaba un nuevo remedio para la hipertensión. Sin duda,
+                                    tenía miedo. Pero, ¿qué otra cosa podía hacer? Ningún otro remedio me ayudaba, así
+                                    que decidí intentarlo. Por suerte, estaba en un grupo que tomaba CardioFort, y no el
+                                    placebo. Dos horas después, mi presión se normalizó. Poco a poco, empecé a sentirme
+                                    mucho mejor! Estoy muy contento de haber participado en el ensayo del producto en
+                                    ese entonces. Ahora, mi PA siempre está en norma. <span class="authorName"> Diego,
+                                        44, Guadalajara</span>
+                                </div>
+                            </div>
+                            <div class="dflex reviewItem">
+                                <div class="reviewItem-avatar img_box"><img alt src="img/review_03.png"></div>
+                                <div class="reviewItem-text"> Tengo 51 años. Hace 3 años me diagnosticaron hipertensión
+                                    en nuestra clínica. Un soplo cardíaco y así sucesivamente. Padecí pero no hice nada
+                                    al respecto. Hace 6 meses, a juzgar por todos los signos, tuve un micro infarto.
+                                    Entonces, naturalmente, me asusté, pero me negué a tomar las pastillas que me
+                                    recetaron de inmediato. La química es dañina, eso todo el mundo lo sabe. Pero no
+                                    tenía ni idea de qué hacer. Afortunadamente, me encontré con un viejo amigo que me
+                                    recomendó CardioFort. Ahora, como pueden adivinar, NADA me preocupa. Mi presión es
+                                    normal, ¡estoy sano como un caballo! <span class="authorName"> Marco P. 51 años,
+                                        Monterrey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_10">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m12 s12">
+                        <div class="block_10-title"> Beneficios de CardioFort ©</div>
+                        <div class="dflex productBonus">
+                            <div class="bonusItem center-align">
+                                <div class="bonusItem-icon img_box"><img alt src="img/bonus_01.png"></div>
+                                <div class="bonusItem-title"> Ayuda rápida.</div>
+                                <div class="bonusItem-text"> En las primeras 6 horas siguientes a la ingesta, tu presión
+                                    se normalizará.</div>
+                            </div>
+                            <div class="bonusItem center-align">
+                                <div class="bonusItem-icon img_box"><img alt src="img/bonus_02.png"></div>
+                                <div class="bonusItem-title"> No causa picos o caídas de presión repentinas.</div>
+                                <div class="bonusItem-text"> Regula con exactitud la función cardíaca.</div>
+                            </div>
+                            <div class="bonusItem center-align">
+                                <div class="bonusItem-icon img_box"><img alt src="img/bonus_03.png"></div>
+                                <div class="bonusItem-title"> Mejoramiento integral de la salud.</div>
+                                <div class="bonusItem-text"> Eliminación de la angina de pecho, la arritmia, la
+                                    neurosis, mejora la memoria, recupera el habla y los movimientos después de los
+                                    accidentes cerebrovasculares.</div>
+                            </div>
+                            <div class="bonusItem center-align">
+                                <div class="bonusItem-icon img_box"><img alt src="img/bonus_04.png"></div>
+                                <div class="bonusItem-title"> Resultado efectivo sin efectos secundarios.</div>
+                                <div class="bonusItem-text"> Las células vivas de las plantas coinciden completamente
+                                    con las células del cuerpo humano</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_11">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl12 l12 m12 s12">
+                        <div class="howToUse valign-wrapper">
+                            <div class="obj objBox3 img_box"><img alt class="lazy"
+                                    data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/women.png"
+                                    src="img/women.png"></div>
+                            <div class="howToUse-content">
+                                <div class="howToUse-title"> Método de uso:</div>
+                                <div class="howToUse-text"> Toma 2 cápsulas después de comer. Para un máximo rendimiento
+                                    toma el producto durante 3 meses. Las instrucciones detalladas están incluidas en el
+                                    envase.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_12">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl10 offset-xl1 l12 m7 offset-m4 s12">
+                        <div class="dflex customForm">
+                            <div class="customForm-item">
+                                <div class="saleBox"> Venta <span> -50% </span></div>
+                                <div class="dflex customForm-header">
                                     <div class="formBox-header__text"> La cantidad del producto es limitada:</div>
                                     <div class="valign-wrapper formBox-header__count">
                                         <div><span class="countBox"> 18 </span><b> unidades </b></div>
                                     </div>
                                 </div>
-                                <div class="formBox-content">
-                                    <div class="dflex priceBox">
-                                        <div class="priceBox-item">
-                                            <div class="oldPrice">
-                                                <div class="priceBox-title"> Precio de exportación:</div>
-                                                <div class="priceBox-info"> 1530 MXN</div>
-                                            </div>
-                                        </div>
-                                        <div class="priceBox-item">
-                                            <div class="newPrice">
-                                                <div class="priceBox-title"> Precio de descuento:</div>
-                                                <div class="priceBox-info"> 765 MXN</div>
-                                            </div>
+                                <div class="dflex priceBox">
+                                    <div class="priceBox-item">
+                                        <div class="oldPrice">
+                                            <div class="priceBox-title"> Precio de exportación:</div>
+                                            <div class="priceBox-info"> 1530 MXN</div>
                                         </div>
                                     </div>
-                                    <div class="orderForm">
-                                        <form id="order_form" method="POST">
-		  <input name="offer_id" type="hidden" value="{offer_id}">
-          <input name="geo" type="hidden" value>
-          <input name="web_id" type="hidden" value="{web_id}">
-          <input name="click_id" type="hidden" value="{click_id}">
-          <input name="time_zone" type="hidden" value="+3">
-          <input name="lang" type="hidden" value="RU">
-                                            <div class="input-field"><input id="name" name="name" type="text" required><label for="name"> Ingresa tu nombre </label></div>
-                                            <div class="input-field"><input class="only_number" id="phone" name="phone" type="tel" required><label for="phone"> Ingresa tu número de teléfono </label></div>
-                                            <div class="buttonBox"><button class="waves-effect btn red js_submit button__text customBtn" type="submit"> Pedido</button></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_02">
-                <div class="container">
-                    <div class="obj objBox1"><img alt class="lazy" data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/men.png" src="img/men.png"></div>
-                    <div class="row m-0">
-                        <div class="col xl8 l8 m12 s12">
-                            <div class="block_02-title"><span> ¡Compruébalo tú mismo! </span> ¿Padeces al menos uno de los siguientes síntomas?</div>
-                            <div class="dflex symptomBox">
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Dolores de cabeza</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Taquicardia</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Puntos negros ante los ojos (miodesopsias)</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Fatiga crónica</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Apatía, irritación, somnolencia</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Edema facial</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Visión borrosa</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Dedos adormecidos y fríos</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Hiperhidrosis</div>
-                                </div>
-                                <div class="dflex symptomBox-item">
-                                    <div class="symptomItem-icon"><img alt src="img/attantion.png"></div>
-                                    <div class="symptomItem-text"> Picos de presión arterial</div>
-                                </div>
-                            </div>
-                            <div class="bannerBox">
-                                <div class="bannerBox-title"> ¡ESTO ES HIPERTENSIÓN!</div>
-                                <div class="bannerBox-text"><span> ¡Importante! </span> El 67% de los pacientes hipertensos de México no tienen ni idea de que están enfermos.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_03">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m12 s12">
-                            <div class="block_03-title"> ¿Por qué es peligrosa la hipertensión?</div>
-                            <div class="block_03-subtitle center-align">
-                                <i> Las consecuencias de la hipertensión arterial son más peligrosas que las enfermedades oncológicas y la tuberculosis en conjunto. El 89% de los casos de hipertensión terminan en infartos. La trombosis se desarrolla en los vasos sanguíneos. Los riesgos de hemorragias cerebrales y el desarrollo de apoplejías son altos. </i>
-                            </div>
-                            <div class="block_03-subtitle"> Fumar, beber alcohol, la malnutrición, el sedentarismo, el estrés y los altos niveles de colesterol hacen que las consecuencias sean especialmente peligrosas. Las personas con exceso de peso sufren de hipertensión 3-4 veces más a menudo que las personas normales. </div>
-                            <div class="bannerBox">
-                                <div class="bannerBox-title"> ¡IMPORTANTE!</div>
-                                <div class="bannerBox-text"> La hipertensión progresa rápidamente, uno de cada cinco pacientes se enfrenta a un riesgo de desenlace letal. Comienza el tratamiento ahora y recupera tu salud.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_04 valign-wrapper parallax-container">
-                <div class="parallax"><img alt class="lazy" data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/bg_04.png" src="img/bg_04.png"></div>
-                <div class="container">
-                    <div class="row m-0">
-                        <div class="col xl9 l12 m12 s12">
-                            <div class="block_04-title"> El descubrimiento de los científicos que marcó una época</div>
-                            <div class="block_04-text"> A los científicos británicos del Centro Nacional de Flebología les llevó 8 años desarrollar este suplemento terapéutico profiláctico.</div>
-                            <div class="block_04-text"> El descubrimiento del año fue nominado para el Premio Internacional de la Fundación Gairdner.</div>
-                            <div class="block_04-text"> Las pruebas en múltiples etapas demostraron la efectividad del suplemento, lo que proporcionó a los investigadores todas las licencias, certificados de calidad y apoyo gubernamental necesarios. </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_05">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl12 l12 m12 s12">
-                            <div class="block_05-title"> CardioFort elimina las 5 causas principales de la hipertensión</div>
-                            <div class="dflex causesBox">
-                                <div class="causesBox-item">
-                                    <div class="causesBox-icon img_box"><img alt src="img/cause_01.png"></div>
-                                    <div class="causesBox-title"> Sistema nervioso sobrecargado (estrés, insomnio, etc.)</div>
-                                    <div class="causesBox-text"> CardioFort alivia la ansiedad gracias al contenido de la raíz de valeriana y de la agripalma.</div>
-                                </div>
-                                <div class="causesBox-item">
-                                    <div class="causesBox-icon img_box"><img alt src="img/cause_02.png"></div>
-                                    <div class="causesBox-title"> Toxinas en los vasos sanguíneos</div>
-                                    <div class="causesBox-text"> CardioFort mejora la actividad cardíaca, limpia los vasos sanguíneos de residuos gracias a los bioflavonoides obtenidos del café verde y el espino.</div>
-                                </div>
-                                <div class="causesBox-item">
-                                    <div class="causesBox-icon img_box"><img alt src="img/cause_03.png"></div>
-                                    <div class="causesBox-title"> Varicosidad y trombosis</div>
-                                    <div class="causesBox-text"> CardioFort mejora la circulación sanguínea, desintegra los coágulos y refuerza las paredes de los vasos sanguíneos debido al contenido de conos florales concentrados, conocidos como lúpulo (Humulus lupulus). </div>
-                                </div>
-                                <div class="causesBox-item">
-                                    <div class="causesBox-icon img_box"><img alt src="img/cause_04.png"></div>
-                                    <div class="causesBox-title"> Aumento del nivel de azúcar en la sangre</div>
-                                    <div class="causesBox-text"> CardioFort reduce el nivel de azúcar en la sangre, previniendo la diabetes gracias a los extractos de orégano y cola de caballo.</div>
-                                </div>
-                                <div class="causesBox-item">
-                                    <div class="causesBox-icon img_box"><img alt src="img/cause_05.png"></div>
-                                    <div class="causesBox-title"> Exceso de peso</div>
-                                    <div class="causesBox-text"> CardioFort estimula el adelgazamiento, el metabolismo y el funcionamiento de los riñones gracias al extracto de melisa.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_06">
-                <div class="container">
-                    <div class="obj objBox2"><img alt class="lazy" data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/expert.png" src="img/expert.png"></div>
-                    <div class="row m-0">
-                        <div class="col xl8 offset-xl4 l10 offset-l2 m12 s12">
-                            <div class="block_06-title"> Opinión de experto</div>
-                            <div class="block_06-text"> ¡Lo confirmo!</div>
-                            <div class="block_06-text"> El principal agente contra la hipertensión son los bioflavonoides. Sólo pueden obtenerse del té verde y del espino. Están presentes en casi todos los remedios para la hipertensión. </div>
-                            <div class="block_06-text"> ¡Pero! ¡Su concentración en la mayoría de los productos es insignificante!</div>
-                            <div class="block_06-text"> Por consiguiente, es posible que haya que esperar el efecto durante muchos años. Sé con certeza que el único remedio con abundancia de bioflavonoides es el CardioFort. Vi su fórmula y las conclusiones de expertos independientes y personas reconocidas. Recomiendo este suplemento a los pacientes y les regaño si empiezan a autotratarse y toman algo que "un amigo les aconsejó", "lo leyeron en Internet", "lo escucharon en la televisión". </div>
-                            <div class="block_06-text"> ¡Esto no es correcto! ¡Deberías luchar contra la hipertensión sólo con métodos seguros! Esos en los que confían los médicos, que harán que tu enfermedad desaparezca para siempre.</div>
-                            <div class="expertName"><span> Antonio López </span> Médico de categoría superior, Ph.D. en Medicina</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_07">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m6 offset-m4 s12">
-                            <div class="dflex customForm">
-                                <div class="customForm-item">
-                                    <div class="saleBox"> Venta <span> -50% </span></div>
-                                    <div class="dflex customForm-header">
-                                        <div class="formBox-header__text"> La cantidad de productos en los almacenes más cercanos es limitada:</div>
-                                        <div class="valign-wrapper formBox-header__count">
-                                            <div><span class="countBox"> 18 </span><b> unidades </b></div>
-                                        </div>
-                                    </div>
-                                    <div class="dflex priceBox">
-                                        <div class="priceBox-item">
-                                            <div class="oldPrice">
-                                                <div class="priceBox-title"> Precio de exportación:</div>
-                                                <div class="priceBox-info"> 1530 MXN</div>
-                                            </div>
-                                        </div>
-                                        <div class="priceBox-item">
-                                            <div class="newPrice">
-                                                <div class="priceBox-title"> Precio de descuento:</div>
-                                                <div class="priceBox-info"> 765 MXN</div>
-                                            </div>
+                                    <div class="priceBox-item">
+                                        <div class="newPrice">
+                                            <div class="priceBox-title"> Precio de descuento:</div>
+                                            <div class="priceBox-info"> 765 MXN</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="customForm-item">
-                                    <div class="img_box productBox"><img alt src="img/product.png"><img alt class="obj objArrow" src="img/arrow.png"></div>
-                                </div>
-                                <div class="customForm-item">
-                                    <div class="customForm-title"> La cantidad del producto es limitada:</div>
-                                    <form id="order_form" method="POST">
-		  <input name="offer_id" type="hidden" value="{offer_id}">
-          <input name="geo" type="hidden" value>
-          <input name="web_id" type="hidden" value="{web_id}">
-          <input name="click_id" type="hidden" value="{click_id}">
-          <input name="time_zone" type="hidden" value="+3">
-          <input name="lang" type="hidden" value="RU">
-                                        <div class="input-field"><input id="name" name="name" type="text" required><label for="name"> Ingresa tu nombre </label></div>
-                                        <div class="input-field"><input class="only_number" id="phone" name="phone" type="tel" required><label for="phone"> Ingresa tu número de teléfono </label></div>
-                                        <div class="buttonBox"><button class="waves-effect btn red js_submit button__text customBtn" type="submit"> Pedido</button></div>
-                                    </form>
-                                </div>
+                            </div>
+                            <div class="customForm-item">
+                                <div class="img_box productBox"><img alt src="img/product.png"><img alt
+                                        class="obj objArrow" src="img/arrow.png"></div>
+                            </div>
+                            <div class="customForm-item">
+                                <div class="customForm-title"> Ingresa tus datos en el siguiente formulario:</div>
+                                <form id="order_form" method="POST">
+                                    <input name="offer_id" type="hidden" value="{offer_id}">
+                                    <input name="geo" type="hidden" value>
+                                    <input name="web_id" type="hidden" value="{web_id}">
+                                    <input name="click_id" type="hidden" value="{click_id}">
+                                    <input name="time_zone" type="hidden" value="+3">
+                                    <input name="lang" type="hidden" value="RU">
+                                    <div class="input-field"><input id="name" name="name" type="text" required><label
+                                            for="name"> Ingresa tu nombre </label></div>
+                                    <div class="input-field"><input class="only_number" id="phone" name="phone"
+                                            type="tel" required><label for="phone"> Ingresa tu número de teléfono
+                                        </label></div>
+                                    <div class="buttonBox"><button
+                                            class="waves-effect btn red js_submit button__text customBtn" type="submit">
+                                            Pedido</button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="block_08">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m12 s12">
-                            <div class="block_08-title"> La efectividad de CardioFort © fue confirmada mediante ensayos clínicos</div>
-                            <div class="bannerBox-text">
-                                <div> La aprobación clínica se llevó a cabo en un hospital de Brighton en 2011.</div>
-                                <div> Dos grupos de voluntarios participaron en el ensayo clínico que duró 25 días.</div>
-                                <div> El 1er grupo, formado por hombres y mujeres de 28 a 80 años, con trastornos hipertensivos, que tomaron CardioFort El 2do grupo, formado por hombres y mujeres con condiciones similares, que tomaron un placebo. </div>
-                            </div>
-                            <div class="block_08-title"> Resultados de la investigación</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col xl12 l12 m12 s12">
-                            <div class="dflex resultBox">
-                                <div class="resultBox-item">
-                                    <div class="resultBox-title"> PLACEBO</div>
-                                    <div class="resultBox-image img_box"><img alt src="img/peaple_left.png"></div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Normalización de la presión arterial</div>
-                                        <div class="resultBox-percent"> 1%</div>
-                                    </div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Eliminación de la trombosis venosa</div>
-                                        <div class="resultBox-percent"> 0%</div>
-                                    </div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Eliminación de la arritmia</div>
-                                        <div class="resultBox-percent"> 2%</div>
-                                    </div>
-                                </div>
-                                <div class="resultBox-item">
-                                    <div class="resultBox-title"> CardioFort ©</div>
-                                    <div class="resultBox-image img_box"><img alt src="img/people_right.png"></div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Normalización de la presión arterial</div>
-                                        <div class="resultBox-percent"> 100%</div>
-                                    </div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Eliminación de la trombosis venosa</div>
-                                        <div class="resultBox-percent"> 90%</div>
-                                    </div>
-                                    <div class="dflex resultBox-info">
-                                        <div class="resultBox-text"> Eliminación de la arritmia</div>
-                                        <div class="resultBox-percent"> 99%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_09">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl12 l12 m12 s12">
-                            <div class="block_09-title"> Comentarios de personas que apreciaron el efecto de CardioFort ©</div>
-                            <div class="reviewsBox">
-                                <div class="dflex reviewItem">
-                                    <div class="reviewItem-avatar img_box"><img alt src="img/review_01.jpg"></div>
-                                    <div class="reviewItem-text"> Comprendí que la reducción de la PA provoca un accidente cerebrovascular isquémico - infarto cerebral - al ver que le sucede a mi hermana mayor. Los médicos le salvaron la vida, pero no se recuperó completamente. La primera vez que también enfrenté esta enfermedad, ya conocía algunos trucos y sabía que debía buscar remedios vegetales y herbales. Mi médico, una mujer muy sabia, me recetó CardioFort. Le estoy muy agradecida. Ya pasaron 4 años y ya no soy hipertensa. Soy una persona completamente sana, que no tiene miedo de un infarto ni de una apoplejía. ¡Cuida tu salud! <span class="authorName"> Olivia, 39 años, Ciudad México</span>
-                                    </div>
-                                </div>
-                                <div class="dflex reviewItem">
-                                    <div class="reviewItem-avatar img_box"><img alt src="img/review_02.jpg"></div>
-                                    <div class="reviewItem-text"> Hace algunos años, recibí un tratamiento en el sanatorio de Florida. Allí se investigaba un nuevo remedio para la hipertensión. Sin duda, tenía miedo. Pero, ¿qué otra cosa podía hacer? Ningún otro remedio me ayudaba, así que decidí intentarlo. Por suerte, estaba en un grupo que tomaba CardioFort, y no el placebo. Dos horas después, mi presión se normalizó. Poco a poco, empecé a sentirme mucho mejor! Estoy muy contento de haber participado en el ensayo del producto en ese entonces. Ahora, mi PA siempre está en norma. <span class="authorName"> Diego, 44, Guadalajara</span>
-                                    </div>
-                                </div>
-                                <div class="dflex reviewItem">
-                                    <div class="reviewItem-avatar img_box"><img alt src="img/review_03.png"></div>
-                                    <div class="reviewItem-text"> Tengo 51 años. Hace 3 años me diagnosticaron hipertensión en nuestra clínica. Un soplo cardíaco y así sucesivamente. Padecí pero no hice nada al respecto. Hace 6 meses, a juzgar por todos los signos, tuve un micro infarto. Entonces, naturalmente, me asusté, pero me negué a tomar las pastillas que me recetaron de inmediato. La química es dañina, eso todo el mundo lo sabe. Pero no tenía ni idea de qué hacer. Afortunadamente, me encontré con un viejo amigo que me recomendó CardioFort. Ahora, como pueden adivinar, NADA me preocupa. Mi presión es normal, ¡estoy sano como un caballo! <span class="authorName"> Marco P. 51 años, Monterrey</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m12 s12">
-                            <div class="block_10-title"> Beneficios de CardioFort ©</div>
-                            <div class="dflex productBonus">
-                                <div class="bonusItem center-align">
-                                    <div class="bonusItem-icon img_box"><img alt src="img/bonus_01.png"></div>
-                                    <div class="bonusItem-title"> Ayuda rápida.</div>
-                                    <div class="bonusItem-text"> En las primeras 6 horas siguientes a la ingesta, tu presión se normalizará.</div>
-                                </div>
-                                <div class="bonusItem center-align">
-                                    <div class="bonusItem-icon img_box"><img alt src="img/bonus_02.png"></div>
-                                    <div class="bonusItem-title"> No causa picos o caídas de presión repentinas.</div>
-                                    <div class="bonusItem-text"> Regula con exactitud la función cardíaca.</div>
-                                </div>
-                                <div class="bonusItem center-align">
-                                    <div class="bonusItem-icon img_box"><img alt src="img/bonus_03.png"></div>
-                                    <div class="bonusItem-title"> Mejoramiento integral de la salud.</div>
-                                    <div class="bonusItem-text"> Eliminación de la angina de pecho, la arritmia, la neurosis, mejora la memoria, recupera el habla y los movimientos después de los accidentes cerebrovasculares.</div>
-                                </div>
-                                <div class="bonusItem center-align">
-                                    <div class="bonusItem-icon img_box"><img alt src="img/bonus_04.png"></div>
-                                    <div class="bonusItem-title"> Resultado efectivo sin efectos secundarios.</div>
-                                    <div class="bonusItem-text"> Las células vivas de las plantas coinciden completamente con las células del cuerpo humano</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_11">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl12 l12 m12 s12">
-                            <div class="howToUse valign-wrapper">
-                                <div class="obj objBox3 img_box"><img alt class="lazy" data-original="//febatigr.com/content/kVCSfRZo1wDQFxq/img/women.png" src="img/women.png"></div>
-                                <div class="howToUse-content">
-                                    <div class="howToUse-title"> Método de uso:</div>
-                                    <div class="howToUse-text"> Toma 2 cápsulas después de comer. Para un máximo rendimiento toma el producto durante 3 meses. Las instrucciones detalladas están incluidas en el envase.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block_12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col xl10 offset-xl1 l12 m7 offset-m4 s12">
-                            <div class="dflex customForm">
-                                <div class="customForm-item">
-                                    <div class="saleBox"> Venta <span> -50% </span></div>
-                                    <div class="dflex customForm-header">
-                                        <div class="formBox-header__text"> La cantidad del producto es limitada:</div>
-                                        <div class="valign-wrapper formBox-header__count">
-                                            <div><span class="countBox"> 18 </span><b> unidades </b></div>
-                                        </div>
-                                    </div>
-                                    <div class="dflex priceBox">
-                                        <div class="priceBox-item">
-                                            <div class="oldPrice">
-                                                <div class="priceBox-title"> Precio de exportación:</div>
-                                                <div class="priceBox-info"> 1530 MXN</div>
-                                            </div>
-                                        </div>
-                                        <div class="priceBox-item">
-                                            <div class="newPrice">
-                                                <div class="priceBox-title"> Precio de descuento:</div>
-                                                <div class="priceBox-info"> 765 MXN</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="customForm-item">
-                                    <div class="img_box productBox"><img alt src="img/product.png"><img alt class="obj objArrow" src="img/arrow.png"></div>
-                                </div>
-                                <div class="customForm-item">
-                                    <div class="customForm-title"> Ingresa tus datos en el siguiente formulario:</div>
-                                    <form id="order_form" method="POST">
-		  <input name="offer_id" type="hidden" value="{offer_id}">
-          <input name="geo" type="hidden" value>
-          <input name="web_id" type="hidden" value="{web_id}">
-          <input name="click_id" type="hidden" value="{click_id}">
-          <input name="time_zone" type="hidden" value="+3">
-          <input name="lang" type="hidden" value="RU">
-                                        <div class="input-field"><input id="name" name="name" type="text" required><label for="name"> Ingresa tu nombre </label></div>
-                                        <div class="input-field"><input class="only_number" id="phone" name="phone" type="tel" required><label for="phone"> Ingresa tu número de teléfono </label></div>
-                                        <div class="buttonBox"><button class="waves-effect btn red js_submit button__text customBtn" type="submit"> Pedido</button></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="js/materialize.min.js"></script>
-        <script src="js/jquery.lazyload.min.js"></script>
-        <script src="js/jquery.easeScroll.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/js.cookie.min.js" type="text/javascript"></script>
-        <script>
-            $(document).ready(function () {
-                try {
-                    moment.locale("");
-                    $(".day-before").text(moment().subtract(1, "day").format("D.MM.YYYY"));
-                    $(".day-after").text(moment().add(1, "day").format("D.MM.YYYY"));
-                } catch (e) {
-                    console.log("moment problems!");
-                }
-            });
-        </script>
-        <!--retarget--><!--retarget-->
-        <div class="ac_footer">
-            <span> © 2020 Copyright. All rights reserved. </span><br>
-            <a href="/privacypolicy" target="_blank"> Privacy policy </a> | <a href="/general-conditions-of-sale" target="_blank"> General conditions of sale </a> | <a href="/legal-warning" target="_blank"> Legal warning </a>
-            <p></p>
-
-        </div>
-		
-<script type="text/javascript" src="/libs/js/common.js"></script>
-<script>
-    $(document).ready(function() {
-        $.init({
-
-            priceSelector: ".new-cost",
-            oldPriceSelector: ".old-cost",
-            reportFormSelector: ".report-abuse__form",
-            reportCallback: function (data) {
-                console.log('ReportCallback:', data);
-            },
-            callback: function() {
-                console.log("Do something after prices changing");
-
+            </div>
+        </section>
+    </main>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/js.cookie.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            try {
+                moment.locale("");
+                $(".day-before").text(moment().subtract(1, "day").format("D.MM.YYYY"));
+                $(".day-after").text(moment().add(1, "day").format("D.MM.YYYY"));
+            } catch (e) {
+                console.log("moment problems!");
             }
         });
-    });
-</script>
-		
-    
+    </script>
+    <!--retarget-->
+    <!--retarget-->
+    <div class="ac_footer">
+        <span>HEALTH-E LIFE INC., Parroquia 194, Colonia Del Valle, Benito Juárez, 03100 Ciudad de México, CDMX, Mexico
+        </span><br>
+        <a href="/privacypolicy" target="_blank"> Privacy policy </a> | <a href="/general-conditions-of-sale"
+            target="_blank"> General conditions of sale </a> | <a href="/legal-warning" target="_blank"> Legal warning
+        </a>
+        <p></p>
 
-</body></html>
+    </div>
+
+    <script type="text/javascript" src="/libs/js/common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.init({
+
+                priceSelector: ".new-cost",
+                oldPriceSelector: ".old-cost",
+                reportFormSelector: ".report-abuse__form",
+                reportCallback: function (data) {
+                    console.log('ReportCallback:', data);
+                },
+                callback: function () {
+                    console.log("Do something after prices changing");
+
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
