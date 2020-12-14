@@ -15,7 +15,7 @@
     padding-top: 0.1rem;
     background-image: url(../../img/intro_main.jpg);
     background-position: top left;
-    background-position-x:-0.6rem;
+    background-position-x: -0.6rem;
     background-repeat: no-repeat;
     background-size: 5.4rem;
     box-sizing: border-box;
@@ -24,7 +24,7 @@
   &__title {
     text-align: right;
     font-size: 0.3rem;
- margin-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
     color: rgb(209, 20, 20);
   }
   &__new {
@@ -42,7 +42,7 @@
   &__bot {
     padding-top: 0.53rem;
     box-sizing: border-box;
-    
+
     background-repeat: no-repeat;
     background-size: contain;
     &--top {
@@ -50,14 +50,13 @@
       height: 2.99rem;
       margin-top: -1.6rem;
     }
-    &--botm{
+    &--botm {
       background-image: url(../../img/bot.svg);
       height: 5.29rem;
       margin-top: -1.6rem;
     }
   }
   &__disk {
-  
     text-align: center;
     background: linear-gradient(313.98deg, #cfcfcf 6.09%, rgba(255, 255, 255, 0) 78.33%), #ffffff;
     box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.25);
@@ -106,7 +105,7 @@
   }
   p {
     margin: 0.28rem 0 0.36rem;
-    b{
+    b {
       display: block;
     }
   }
@@ -180,7 +179,7 @@
   }
   &__main {
     padding-left: 0.3rem;
-    h5{
+    h5 {
       text-align: center;
       font-size: 0.25rem;
     }
@@ -240,12 +239,12 @@
 }
 .sect7 {
   padding: 0.5rem 0.3rem 0;
-  background-color: #fff; 
+  background-color: #fff;
   background-image: url(../../img/sect7.jpg);
   box-sizing: border-box;
-   background-size: 2rem;
-   background-repeat: no-repeat;
-   background-position: center right;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center right;
   height: 6.49rem;
   &__title {
     text-align: left;
@@ -275,7 +274,7 @@
   background-repeat: no-repeat;
 }
 .sect9 {
-background-color: #2925ff;
+  background-color: #2925ff;
   background-size: cover;
   padding: 0.63rem 0.32rem 0;
   box-sizing: border-box;
@@ -306,14 +305,14 @@ background-color: #2925ff;
   font-weight: 500;
   s {
     display: block;
-    font-size: 0.25rem;
+    font-size: 0.3rem;
     line-height: 0.35rem;
     padding-right: 0.14rem;
   }
   b {
     color: rgb(209, 20, 20);
     font-weight: 800;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     letter-spacing: -0.02rem;
     display: block;
     line-height: 0.55rem;
@@ -373,6 +372,6 @@ background-color: #2925ff;
     }
   }
 }
-footer{
+footer {
   margin-bottom: -0.68rem;
 }
