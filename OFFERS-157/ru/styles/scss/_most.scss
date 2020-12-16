@@ -31,10 +31,30 @@ body {
 h2 {
   font-size: 0.23rem;
   font-weight: 600;
-  text-align: center;
   margin-top: 0;
+  &.sect{
+    position: relative;
+    padding-left: 0.23rem;
+    font-size: 0.3rem;
+    b{
+      width: 3.77rem;
+    }
+    &::after{
+      content: '';
+      background-image: url(../../img/title.svg);
+      width: 4.24rem;
+      background-size: contain;
+      margin-top: 0.2rem;
+      height: 0.09rem;
+      display: block;
+    }
+
+  }
   b{
     display: block;
+  }
+  &.center{
+    text-align: center;
   }
   &.black{
     color: $black;  
@@ -49,9 +69,10 @@ h2 {
     color: white;
   }
   &.intro-title{
-    color: $accent;
     font-weight: 800;
+    text-transform: uppercase;
     font-size: 0.35rem;
+    width: 3.17rem;
     margin-bottom: 0;
   }
 }
