@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <title>Игра “Стрелялки”</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=520, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="img/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Template Basic Images End -->
+
+
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+        <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '266325074658068');
+        fbq('track', 'PageView');
+
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="tr">
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+        <style>
+        h1 {
+            font-size: 1.8em;
+            margin: .67em 0
+        }
+
+        .s-khar h3 {
+            font-size: 1.6em;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+            margin: 30px auto 35px;
+            text-align: center
+        }
+
+        h2.title {
+            text-transform: none;
+            font-size: 1.7em;
+            font-weight: 500;
+            line-height: 1.5
+        }
+
+        .s-khar h3 span::after {
+            content: '';
+            position: absolute;
+            left: 106%;
+            width: 11000%;
+            height: 4px;
+            background-color: #8bc24a;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            top: 45%
+        }
+
+        .s-khar h3 span::before {
+            content: '';
+            position: absolute;
+            right: 106%;
+            width: 1500%;
+            height: 4px;
+            background-color: #8bc24a;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            top: 45%
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id>
+            <div class="top-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="logo-wrap">
+                                <img src alt class="res-i">
+                            </div>
+                        </div>
+                        <div class=" col-xs-4">
+                            <a href="#" class="toggle-mnu"><span></span></a>
+                        </div>
+                    </div>
+                    <div class="trop ">
+                        <nav class="main-mnu hidden-mnu   landingMenu2">
+                            <ul>
+                                <li><a href="main/?fbpx=266325074658068&fbclid=PAAaawTOK2xdYNASCRIPPSCfPX08iZSj3vb6AenPUMWsxgAVnK7Rrp8xnHS9k">Главная</a></li>
+                                <li><a href="about.php?fbpx=266325074658068&fbclid=PAAaawTOK2xdYNASCRIPPSCfPX08iZSj3vb6AenPUMWsxgAVnK7Rrp8xnHS9k">О нас</a></li>
+                                <li><a href="delivery.php?fbpx=266325074658068&fbclid=PAAaawTOK2xdYNASCRIPPSCfPX08iZSj3vb6AenPUMWsxgAVnK7Rrp8xnHS9k">Доставка и оплата</a></li>
+                                <li><a href="contact.php?fbpx=266325074658068&fbclid=PAAaawTOK2xdYNASCRIPPSCfPX08iZSj3vb6AenPUMWsxgAVnK7Rrp8xnHS9k">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="main s-w">
+                <div class="container">
+                    <div class="text-top-wrap text-center">
+                        <h1>Игра “Стрелялки” </h1>
+                        <h2 class="title">Брось вызов-выиграй сражение!</h2>
+                        <h3></h3>
+                    </div>
+                    <div class="img-wrap-top text-center">
+                        <img src="img/shooter1.jpg" alt="Игра “Стрелялки”" class="res-i">
+                        <div class="text-wrap  text-center">
+                        </div>
+                    </div>
+                    <div class="header-text-wrap">
+                        <p class="clearfix" style="text-align:center;"><span class="skidka"><strong>Скидка:
+                                    50% !</strong></span><span class="gray">Акция ограничена !</span></p>
+                        <p class="accent p-round"> <img src="img/i-round.png" alt="Игра “Стрелялки”" class="res-i">Игра для всей семьи</p>
+                        <p class="accent p-round"> <img src="img/i-round.png" alt="Игра “Стрелялки”" class="res-i">Улучшает координацию рук</p>
+                        <p class="accent p-round"> <img src="img/i-round.png" alt="Игра “Стрелялки”" class="res-i">Совершенствует навыки стрельбы</p>
+                        <p class="accent p-round"> <img src="img/i-round.png" alt="Игра “Стрелялки”" class="res-i">Развивает меткость</p>
+                        <p class="accent p-round"> <img src="img/i-round.png" alt="Игра “Стрелялки”" class="res-i">Идеальна для вечеринок</p>
+						<br>
+                        <div class="btn-wrap clearfix">
+                            <strike>
+                                5980                                руб</strike>
+                            <span class="cena">
+                                2990                                руб</span>
+                            <a href="#forma" class="btn-green">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="black-div s-d">
+            <div class="container">
+                <div class="item">
+                    <img src="img/head-1.png" alt="Игра “Стрелялки”" class="res-i">
+                    <p>Доставка Курьером по всей России ДО ДВЕРИ!</p>
+                </div>
+                <div class="item">
+                    <img src="img/head-2.png" alt="Игра “Стрелялки”" class="res-i">
+                    <p>Оплата курьеру <br> при получении</p>
+                </div>
+                <div class="item">
+                    <img src="img/head-3.png" alt="Игра “Стрелялки”" class="res-i">
+                    <p>Гapaнтия<br> качества</p>
+                </div>
+            </div>
+        </div>
+        <section class="s-d s-khar" id="land_1">
+            <div class="container">
+                <div class="row">
+                    <h3><span>Игра “Стрелялки” </span></h3>
+                    <img style="margin:15px auto 15px;width: 100%" src="img/shooter1.gif" alt="Игра “Стрелялки”" class="res-i">
+                  
+					<p style="text-align:justify;font-size:1.12em;line-height:1.3;margin:15px auto;">Игра “Стрелялки” - идеальная игра для всей семьи! Это захватывающая игра понравится не только детям, но и взрослым.  Если вы устраиваете вечеринку, то эта игра станет незаменимым развлечение для ваших друзей. Вы можете посоревноваться в меткости, бросив вызов своим друзьям.</p>
+					 <img style="margin:15px auto 15px;width: 100%" src="img/shooter2.gif" alt="Игра “Стрелялки”" class="res-i">
+					 <h3>Как это работает?</h3>
+					 <p style="text-align:justify;font-size:1.12em;line-height:1.3;margin:15px auto;">Включите вентилятор и аккуратно поместите один из шариков над каждым из пяти вихрей. Как по волшебству, они мгновенно начинают зависать в воздухе. Интересное зрелище!<br><br>Но веселье на этом еще не заканчивается. Возьмите пистолет и загрузите в него один из мягких патронов. Потяните петлю, чтобы взвести ее, целитесь с помощью встроенных прицелов, сделайте глубокий вдох и ... ОГОНЬ!</p>
+					 <img style="margin:15px auto 15px;width: 100%" src="img/shooter2.jpg" alt="Игра “Стрелялки”" class="res-i">
+					  <h3>В наборе:</h3>
+					  <p style="text-align:justify;font-size:1.12em;line-height:1.3;margin:15px auto;">База для выдувания шаров<br>
+3 мягких патрона<br>
+10 шариков<br>
+Оружие
+</p>
+                   
+					 <img style="margin:15px auto 15px;width: 100%" src="img/shooter3.jpg" alt="Игра “Стрелялки”" class="res-i">
+					 <p style="text-align:justify;font-size:1.12em;line-height:1.3;margin:15px auto;">Размер 33* 7,5* 33</p>
+           
+			
+                
+                </div>
+            </div>
+        </section>
+      <section class="review">
+            <div class="container">
+                <h2 class="title" style="font-size: 32px">Отзывы</h2>
+                <div class="review-block clearfix">
+                    <div class="review-item clearfix">
+
+                        <div class="review-text">
+                            <img src="img/rev-1.jpg" class="review-img">
+                            <h3>
+
+                                <span>Ирина Кочеткова</span>
+                            </h3>
+                            <p>Супер! Это очень интересная игра, прям как на сайте, у нас бабушка с дедушкой тоже с удовольствием постреляли.
+</p>
+                        </div>
+                    </div>
+                    <div class="review-item clearfix">
+
+                        <div class="review-text">
+                            <img src="img/rev-2.jpg" class="review-img">
+                            <h3>
+                                <span>Ольга Иванова</span>
+                            </h3>
+                            <p>У меня двое мальчишек, это просто сказка для них. Весь день уже соревнуются.Спасибо!
+</p>
+                        </div>
+                    </div>
+                    <div class="review-item clearfix">
+
+                        <div class="review-text">
+                            <img src="img/rev-3.jpg" class="review-img">
+                            <h3>
+                                <span>Алина Новикова</span>
+                            </h3>
+                            <p>. У сына скоро день рождения, все развлечения для гостей-деток я придумываю сама. Купила эту игру, думаю, что это будет просто восторг у детей. 
+ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-preim s-d text-center s-dark" id="land_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="text-center"><span>преимущества</span></h2>
+                    </div>
+                    <div class=" col-xs-6 ">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/preim-1.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Гapaнтия качества. На каждый товар мы даём 1 год гapaнтии</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xs-6 ">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/preim-2.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Только подлинная продукция и более 1000 довольных клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xs-6 ">
+                        <div class="wrap-item wrap-item3">
+                            <div class="img-wrap">
+                                <img src="img/preim-3.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Работаем без предоплаты, оплата производится курьеру при получении</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xs-6 ">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/preim-4.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Мы быстро и бережно доставим Ваш заказ курьером до двери</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-work s-work-2 text-center" id="land_3" style="padding-bottom:70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="text-center"><span>Как мы работаем</span></h2>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/work-1.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Оформляете заказ</p>
+                                <div class="landingMenu2">
+                                    <a class="btn s-d accent" href="#forma">Оформить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/work-2.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>С вами связывается<br>наш менеджер</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-6">
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/work-3.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Отправляем товар <br> курьером <br> по всей России!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="wrap-item last">
+                            <div class="img-wrap">
+                                <img src="img/work-4.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Платите курьеру <br>при получении</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-d s-dark text-center s-garant" id="land_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="text-center"><span>гapaнтии</span></h2>
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/gar-1.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Проверка товара <br> перед отправкой</p>
+                            </div>
+                        </div>
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/gar-2.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Соблюдение закона “О защите прав Потребителей”. В случае выявления заводского дефекта Вы вправе обменять товар на новый в течение 14 дней с момента получения заказа. Пересылка будет осуществляться за счёт магазина</p>
+                            </div>
+                        </div>
+                        <div class="wrap-item">
+                            <div class="img-wrap">
+                                <img src="img/gar-3.png" alt="Игра “Стрелялки”" class="res-i">
+                            </div>
+                            <div class="text-wrap">
+                                <p>Гapaнтия доставки. Никаких предоплат! Оплата заказов осуществляется курьеру непосредственно по факту получения заказа.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-forma s-d">
+            <div class="container">
+                <h1 class="text-top-wrap text-center">Игра “Стрелялки” </h1>
+                <h2 class="title">Брось вызов-выиграй сражение!</h2>
+                <div class="skidka">скидка
+                    50%</div>
+                <div class="img-wrap-clock text-center">
+                    <img src="img/shooter1.jpg" alt="Игра “Стрелялки”" class=" ">
+                </div>
+                <div class="w-right" id="forma">
+                    <div class="timer-block s-w clearfix">
+                        <div>
+                            <p>До конца акции осталось:</p>
+                        </div>
+                        <div class="div-timer ">
+                            <div id="timer">
+                                <div class="block">
+                                    <div class="rect date">1</div>
+                                    <div class="label">дней</div>
+                                </div>
+                                <div class="block">
+                                    <div class="rect hours">23</div>
+                                    <div class="label">часов</div>
+                                </div>
+                                <div class="block">
+                                    <div class="rect mins">37</div>
+                                    <div class="label">минут</div>
+                                </div>
+                                <div class="block">
+                                    <div class="rect secs">08</div>
+                                    <div class="label">секунд</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-box">
+                        <form name="form-1" action="send.php?fbpx=266325074658068&fbclid=PAAaawTOK2xdYNASCRIPPSCfPX08iZSj3vb6AenPUMWsxgAVnK7Rrp8xnHS9k" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше Имя!');return false} if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}if(this.phone.value.replace(/\D+/g,'').length<11){alert('Номер телефона некорректен!');return false;} return true;">
+                            <div class="input-prepend">
+                                <span class="add-on"><i class="demo-icon icon-i-user"> </i></span>
+                                <input class="input-medium focused" name="name" type="text" required placeholder="Введите Ваше имя">
+                            </div>
+                            <div class="input-prepend">
+                                <span class="add-on"><i class="demo-icon icon-i-tel-2"> </i></span>
+                                <input class="input-medium focused phone" name="phone" required type="tel" placeholder="Введите Ваш телефон">
+                            </div>
+                            <div class="btn-wrap clearfix">
+                                <strike>
+                                    5980                                    руб</strike>
+                                <span class="cena">
+                                    2990                                    руб</span>
+                                <button class="btn-yellow clearfix" type="submit">Купить</button>
+                            </div>
+                            <input type="hidden" name="valuta" value="2990"><input type="hidden" name="tovar_id" value="129134">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map" style="padding: 0; margin: 0;">
+            <div class="center">
+                <iframe src="embed.html" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            </div>
+        </section>
+        <footer>
+            <div class="container text-center">
+                <p style="margin:0 auto 7px;">ООО Интерстайлс<br>г. Москва 111141, ул.Перовская, дoм 33<br>ОГРН 1167548889597</p><a href="tel:+79581117864" style="font-size:14px;">+7 (958) 111-78-64</a><br><a href="mailto:Oggiinfo3@gmail.com" style="font-size:14px;">Oggiinfo3@gmail.com</a><br><a href="politika.html" target="_blank" style="cursor: pointer;">Политика конфиденциальности</a><p>*На данном сайте действует <br> <a href="https://www.facebook.com/about/privacy/update" style="margin: 0 0 20px; padding: 0;" target="_blank">'Политика использования данных Facebook'</a></p><p style="font-size:14px;">ВСЕ ПРАВА ЗАЩИЩЕНЫ. © 2020</p>            </div>
+        </footer>
+        <div class="fixed1 fixed--bottom cookie-disclaimer js-cookie-disclaimer">
+
+            <div class="container">
+                <div class="media1 media--center">
+
+                    <div class="media__object media__object--right">
+                        <button class="button">Принять</button>
+                    </div>
+
+                    <div class="media__body">
+                        <p>Этот сайт использует cookies-файлы и другие технологии, чтобы помочь вам в навигации, а также предоставить лучший пользовательский опыт, анализировать использование наших продуктов и услуг. <a href="https://justmall.ru/politika-konfidencialnosti/" target="_blank">Наша политика конфиденциальности</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
