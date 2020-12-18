@@ -1,10 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
-<pre>Cannot GET /css/fonts.min.css</pre>
-</body>
-</html>
+@font-face{font-family:GothamPro;font-style:normal;font-weight:400;src:url(../ProximaNovaRegular.eot%40#iefix) format("embedded-opentype"),url(../font/ProximaNovaRegular.woff) format("woff"),url(../font/ProximaNovaRegular.ttf) format("truetype")}@font-face{font-family:GothamPro;font-style:normal;font-weight:300;src:url(../ProximaNovaLight.eot%40#iefix) format("embedded-opentype"),url(../font/ProximaNovaLight.woff) format("woff"),url(../font/ProximaNovaLight.ttf) format("truetype")}@font-face{font-family:GothamPro;font-style:normal;font-weight:700;src:url(../ProximaNovaBlack.eot%40#iefix) format("embedded-opentype"),url(../font/ProximaNovaBlack.woff) format("woff"),url(../font/ProximaNovaBlack.ttf) format("truetype")}@font-face{font-family:GothamPro;font-style:normal;font-weight:600;src:url(../ProximaNovaBold.eot%40#iefix) format("embedded-opentype"),url(../font/ProximaNovaBold.woff) format("woff"),url(../font/ProximaNovaBold.ttf) format("truetype")}@font-face{font-family:GothamPro;font-style:normal;font-weight:900;src:url(../ProximaNovaExtrabold.eot%40#iefix) format("embedded-opentype"),url(../font/ProximaNovaExtrabold.woff) format("woff"),url(../font/ProximaNovaExtrabold.ttf) format("truetype")}
