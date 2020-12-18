@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru" class>
+   <head>
+
+<script src="js/jquery.min.js"></script>
+
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'Пожалуйста, исправьте следующие ошибки'; 
+
+        orderValidator.errorNameField = 'Имя'; 
+        orderValidator.errorNameMess = 'Укажите своё имя'; 
+        
+        orderValidator.errorPhoneField = 'Телефон для связи'; 
+        orderValidator.errorPhoneMess = 'Введите правильный телефон'; 
+        
+        orderValidator.errorAddress = 'Введите правильный адрес'; 
+        orderValidator.errorRequired = 'обязательное поле'; 
+        orderValidator.errorMaxLength = 'допустимо максимум {1} символа'; 
+        orderValidator.errorMinLength = 'допустимо минимум {1} символа'; 
+        orderValidator.errorEmailField = 'E-mail';
+        orderValidator.errorEmail = 'указан не корректный email';
+        }
+    </script>
+    
+<script>
+
+
+window.app = {
+    timestamp: parseInt((new Date()).getTime() / 1000),
+    jq: jQuery,
+    formAction: window.location.href,
+    leadToken: '5fdc723a168ab2.64989905',
+    offers: {"20137":{"currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"prepaid_info_html":"","delivery_price":"","discount":"","id":20137,"country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"price":"2490","product_sku":"","link":"","price2":"5297"}},
+    currentOffer: {"currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"prepaid_info_html":"","delivery_price":"","discount":"","id":20137,"country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"price":"2490","product_sku":"","link":"","price2":"5297"},
+    allowedCountries: ["RU"],
+    _setOfferId: false,
+    
+    setOffer: function (offerId) {
+        if (offerId == this._setOfferId) {
+            return ;
+        }
+        this._setOfferId = offerId;
+        if (offerId) {
+            var offer = app.offers[offerId];
+            var previousOffer = app.currentOffer;
+            app.currentOffer = offer;
+            var event = this.jq.Event("offerchange");
+            event.previousOffer = previousOffer;
+            event.currentOffer = app.currentOffer;
+            this.jq(document).trigger(event);
+            this.updatePage(offer);
+        } else {
+            $('input[name=country]').val('');
+        }
+    },
+    
+    updatePage: function(offer) {
+        $('x-newprice').html(offer.price);
+        $('x-oldprice').html(offer.price2);
+        $('x-currency').html(offer.currency.name);
+        $('input[name=offer], select[name=offer]').val(offer.id);
+        $('input[name=country]').val(offer.country.code);
+    },
+
+    blockForm: function() {
+        // Блокируем кнопки при отправке формы
+        $('input[type=submit]', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        $('button', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        app.incompleteOrder.lock = true;
+        clearTimeout(app.incompleteOrder.timer);
+    },
+
+    unblockForm: function() {
+        $('input[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        $('button[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        app.incompleteOrder.lock = false;
+        clearTimeout(app.incompleteOrder.timer);
+    }
+
+};
+
+
+</script><script src="js/form.validate.js"></script>
+<script src="js/form.incomplete.js"></script>
+<script src="js/main2.js"></script>
+
+
+
+      <!-- KIOSK NEW -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=480">
+      <link rel="stylesheet" type="text/css" href="css/form.min.css">
+      
+      
+      <title>Часы SMART WATCH V8</title>
+      <meta name="description" content="Часы SMART WATCH V8 со скидкой и быстрой доставкой по СНГ">
+      
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <meta property="og:title" content="Умные часы + беспроводные наушники в подарок!">
+      <meta property="og:description" content="Стильный дизайн смарт часов и потрясающий звук беспроводных наушников не оставят равнодушным никого! Быстрая дставка по России">
+      <link rel="stylesheet" href="css/reset.css" type="text/css">
+      <link rel="stylesheet" href="css/slick.css" type="text/css">
+      <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+      <link rel="stylesheet" href="css/TimeCircles.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <style type="text/css">
+         .youtube{background-color:#000;max-width:100%;height:inherit;overflow:hidden;position:relative;cursor:hand;cursor:pointer}.youtube .thumb{bottom:0;display:block;left:0;margin:auto;max-width:100%;position:absolute;right:0;top:0;width:100%;height:auto}.youtube .play{filter:alpha(opacity=80);opacity:.8;height:77px;left:50%;margin-left:-38px;margin-top:-38px;position:absolute;top:50%;width:77px;background:url("img/youtube-play-icon.png") no-repeat}
+      </style>
+      
+     
+   </head>
+   <body>
+     
+      <div class="wrap">
+      <div class="header">
+         <h1 class="uppercase center white b green_bg">Smart Watch V8</h1>
+         <h2 class="uppercase center white">Легендарные умные часы</h2>
+         <img alt="Smart Watch V8" title="Smart Watch V8" src="img/header_img.jpg">
+         <div class="reyt">
+            <div class="stars"><b>4.9</b> (голосов: 673)</div>
+            заказов: 21058
+         </div>
+         <div class="timer_price">
+            <div class="timer_block clearfix">
+               <p>До конца акции:</p>
+               <div class="timer b clearfix">
+                  <div class="timer_item hours">00</div>
+                  <div class="timer_item minutes">00</div>
+                  <div class="timer_item seconds">00</div>
+               </div>
+            </div>
+            <div class="price">
+               <div class="old"> <x-oldprice>5297</x-oldprice> <x-currency>руб</x-currency> </div>
+               <div class="sale"> -53% </div>
+               <div class="new b"> <x-newprice>2490</x-newprice> <x-currency>руб</x-currency>  </div>
+            </div>
+         </div>
+         <a href="#order_form" class="button-m">Заказать сейчас</a>
+         <div class="guard_all">
+            <div class="guard">Защита покупателя</div>
+            <div class="products_count prod1"><b>13 шт.</b> осталось по акции</div>
+         </div>
+      </div>
+      <div class="video-container">
+         <iframe src="FTswq9DwBTk.html" allowfullscreen></iframe>
+      </div>
+      <section class="opisanie">
+         <h2 class="venzel"><span class="green">Часы по-новому</span> это <b>SmartWatch V8</b></h2>
+         <img alt="Smart Watch V8" title="Smart Watch V8" class="center" src="img/2.jpg">
+         <p class="justify">Фитнес-трекер, камера, телефон, смарт часы на твоей руке. Классические и одновременно спортивные. Показывают время по взмаху руки и могут звонить!</p>
+         <p class="justify">Они предлагают вам важную информацию там, где она нужна. Тогда, когда она вам нужна. И помогают в считанные секунды выполнять повседневные задачи. Позволяют моментально связаться с близкими людьми или проконтролировать важные
+            для вас вещи. И при этом показывают точное время. Да, это часы. Но совсем не такие, какими вы их всегда себе представляли.
+         </p>
+      </section>
+      <section>
+         <div class="gallery">
+            <div>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/1.jpg">
+            </div>
+            <div>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/3.jpg">
+            </div>
+            <div>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/4.jpg">
+            </div>
+            <div>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/5.jpg">
+            </div>
+            <div>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/6.jpg">
+            </div>
+         </div>
+      </section>
+      <section>
+         <ul class="spisok ul_black black_ul">
+            <li>Могут полноценно! синхронизироваться с Вашим смартфоном на IOS, Android, а значит позволят Вам принимать звонки, СМС не касаясь Вашего телефона</li>
+            <li>Могут отсылать Вам уведомления от различных приложений на Вашем смартфоне на IOS, Android</li>
+            <li>Могут звонить с помощью Вашего смартфона и принимать СМС и звонки</li>
+            <li>Могут управлять камерой Вашего телефона, а значит позволят сделать Вам отличные селфи</li>
+            <li>Могут делать снимки с помощью камеры Вашего смартфона и сохранять их в его память</li>
+            <li>Могут считать пройденное расстояние и потраченные калории с помощью шагомера, а значит заменить Вам фитнесс-трекер</li>
+            <li>Могут напомнить Вам о забытом телефоне, а значит сэкономить на покупке нового и на потраченных нервах</li>
+            <li>Могут играть музыку с телефона</li>
+         </ul>
+         <p class="justify">Чего не могут, пока еще.. Варить кофе и приносить тапочки. Но мы над этим работаем :-)</p>
+         <p><a href="#order_form" class="button-m">Заказать сейчас</a></p>
+      </section>
+      <section>
+         <h2 class="venzel"><span class="green">Технические характеристики</span> <b>Smart Watch V8</b></h2>
+         <ul class="ul_str">
+            <li><span>Материал корпуса: </span>спецсплав и стекло</li>
+            <li><span>Ремень: </span>каучуковый</li>
+            <li><span>Сенсорный дисплей: </span>IPS 240*240</li>
+            <li><span>Аккумулятор: </span>380 мАч (2-4 дня)</li>
+            <li><span>Язык: </span>русский, английский и т.д.</li>
+            <li><span>Совместимость: </span>Android 4.0, iOS 7.0 и выше</li>
+            <li><span>Процессор: </span>2 ядра, 1200 mhz. MTK 6582</li>
+            <li><span>Поддержка карт памяти: </span>Micro SD</li>
+            <li><span>ОС: </span>Android 5.1.1</li>
+            <li><span>Цвет: </span>черный, белый</li>
+         </ul>
+      </section>
+      <img alt="Smart Watch V8" title="Smart Watch V8" class="center" src="img/tov-2.jpg">
+      <p><a href="#order_form" class="button-m">Заказать сейчас</a></p>
+      <!-- i7s -->
+      <section class="opisanie" style="background-image: url(img/bottle3.jpg); height: 700px;">
+         <h2 class="venzel">
+            <span class="green">Огромная выгода</span> вместе с <b>Air-Pods</b>
+         </h2>
+         <!-- <img alt="Air-Pods" title="Air-pods" class="center" src="http://smartpods.shopent.net/files/k/kiosk/smartpods.shopent.net/files/img/bottle3.jpg"> -->
+         <p class="justify">AirPods меняют подход к использованию наушников. Хватит тратить время в пустую, просто достань их из чехла и они уже готовы к работе!</p>
+         <p class="justify">Это одним из самых удобных наушников на сегодняшний день. Никаких проводов, качественный звук и длительное время работы позволит наслаждатся музыкой в любое время.</p>
+         <p class="justify">Они отлично подходят для любой деятельности - активный отдых, экстримальный спорт, и незаменимы в повседневной жизни.</p>
+      </section>
+      <section class="opisanie" style="background-image: url(img/21212.jpg); height: 700px;background-size: cover;background-position: center;">
+         <h2 class="venzel" style="color: #fff;">
+            <span class="green">Наслаждайся музыкой</span> здесь и сейчас с <b>Air-Pods</b>
+         </h2>
+         <div style="margin-top:500px;">
+            <!-- <img alt="Air-Pods" title="Air-pods" class="center" src="http://smartpods.shopent.net/files/k/kiosk/smartpods.shopent.net/files/img/bottle3.jpg"> -->
+            <p class="justify" style="color: #fff;">Стильные Bluetooth-наушники AirPods практически не ощутимы, и с ними вы сможете услышать малейшие детали передаваемого звука, отдавать команды смартфону и не мучиться с надоевшими проводами.</p>
+         </div>
+      </section>
+      <!-- i7s ends -->
+      <section class="b10 b10-avas">
+         <h2 class="venzel"><span class="green">Отзывы покупателей</span> о <b>Smart Watch V8</b></h2>
+         <div class="hit clearfix">
+            <div class="hit-left">
+               <p>Хит сезона</p>
+            </div>
+            <div class="hit-right">
+               <p>Средний рейтинг: <span>4.9 из 5</span></p>
+            </div>
+         </div>
+         <div class="reviews">
+            <div class="rev">
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/b11-ava.jpg">
+               <p>Добрый день. Как просили оставляю отзыв. Брала эти часы мужу на подарок на др (все таки 30 лет) Он у меня гаджетоман. Недавно купил новый смартфон и я решила купить ему в добавок умные часы. Чуть переживала по поводу доставки и тд., но в
+                  принципе подумала — что мне терять, деньги то я плачу на почте. Так и вышло. Часы пришли я пришла на них посмотрела — вроде все нормально. Удачно что упаковка не мятая, не поцарапанная — я ее обернула подарочной бумагой и получилось очень
+                  здорово! Я конечно знаю что умею мужу угодить — ну тут был особый случай. Говорит мол — я об этом столько читал, хотел заказать, но денег было жалко, а тут ты как будто мысли прочитала. А мне на любимого мужа не жалко, может быть немного и
+                  дороговато — при этом за хорошую вещь не дорого. Тем более теперь у меня есть скидка на вторую покупку 10%. Спасибо Вам я всем довольна. Буду заказывать еще.
+               </p>
+               <p class="name"><b>Виктория Лесникова</b> 28 лет</p>
+            </div>
+            <div class="rev">
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/b10-ava.jpg">
+               <p>Добрый день. Пишу коротко — мало времени. У меня двое детей Саша и Алиса. Саше 9 лет, а Алисе 11. Так уж получилось что день рождения у них осенью, причем в обеих в один и тот же месяц. Они давно хотели Apple Watch. Но я то знаю что с ними
+                  будет: потерялись, поломались — мама помоги)), а это все таки не дешево. В общем я в качестве эксперимента решила купить аналог. Заказала 2 шт. — Благо есть разных цветов. Получила на Почте на следующий день. В общем вечером было куча эмоций
+                  — дети довольны. У племянника зимой день рождения я думаю, что закажу и ему. Спасибо!
+               </p>
+               <p class="name"><b>Ольга Губская</b> 32 года</p>
+            </div>
+            <div class="rev">
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/b12-ava.jpg">
+               <p>Для начала — спасибо. Доставили быстро. Буквально за пару дней. Пришла смска с Почты. Тут же оплатил и забрал часы. Дома уже разобрался основательно. Все заявленные функции работают на ура. Немного сразу не разобрался с синхронизацией —
+                  благо куча роликов есть на ютубе. В общем все посмотрел, сделал как говорят и все заработал. Пока доволен на все 100. Да — спасибо за скидку на вторые часы (собрался брать на подарок). В общем 5 из 5. Рекомендую
+               </p>
+               <p class="name"><b>Кирилл Кизилов</b> 29 лет</p>
+            </div>
+         </div>
+      </section>
+      <section>
+         <ul class="deliv deliv1">
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv1-1.png">
+               <h3>Доставка</h3>
+               <p>От 1 до 7 рабочих дней. Стоимость доставки товара от 450 руб.</p>
+            </li>
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv1-2.png">
+               <h3>Оплата</h3>
+               <p>Оплата заказов осуществляется по факту получения товара</p>
+            </li>
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv1-3.png">
+               <h3>Гарантии</h3>
+               <p>Мы всегда проверяем товар перед отправкой и гарантируем 100% качество</p>
+            </li>
+         </ul>
+      </section>
+      <section>
+         <ul class="deliv_v2 deliv_v2_1 border_bottom">
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv_v2-1.png">
+               <h3>Заявка</h3>
+               <p>Оставляете заявку на сайте</p>
+            </li>
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv_v2-2.png">
+               <h3>Звонок</h3>
+               <p>Наш менеджер уточняет детали заказа</p>
+            </li>
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv_v2-3.png">
+               <h3>Отправка</h3>
+               <p>Доставляем ваш товар в течение 1-10 дней</p>
+            </li>
+            <li>
+               <img alt="Smart Watch V8" title="Smart Watch V8" src="img/deliv_v2-4.png">
+               <h3>Получение</h3>
+               <p>Оплачиваете при получении на почте</p>
+            </li>
+         </ul>
+      </section>
+      <div class="header footer">
+      <h1 class="uppercase center white b green_bg">Smart Watch V8</h1>
+      <h2 class="uppercase center white">Легендарные умные часы</h2>
+      <img alt="Smart Watch V8" title="Smart Watch V8" src="img/header_img.jpg">
+      <div class="reyt">
+         <div class="stars"><b>4.9</b> (голосов: 673)</div>
+         заказов: 21058
+      </div>
+      <h3>Оставьте <b>заявку</b></h3>
+      <div class="posttile">Наши менеджеры свяжутся с вами для консультации и помогут сделать заказ</div>
+      <div class="timer_price">
+         <div class="timer_block clearfix">
+            <p>До конца акции:</p>
+            <div class="timer b clearfix">
+               <div class="timer_item hours">00</div>
+               <div class="timer_item minutes">00</div>
+               <div class="timer_item seconds">00</div>
+            </div>
+         </div>
+         <div class="price">
+            <div class="old"> <x-oldprice>5297</x-oldprice> <x-currency>руб</x-currency> </div>
+            <div class="sale"> -53% </div>
+            <div class="new b"> <x-newprice>2490</x-newprice> <x-currency>руб</x-currency>  </div>
+         </div>
+      </div>
+      <form data-form-number="1" id="order_form" class="m1-form lv2-form lv2-form1" method="post" action>
+             <input name="csrf_token" type="hidden" value="f8365554865a7ba20044033bc2ae0934:1608276172">
+    <select name="offer" class="form-control country_chang">
+                <option data-country-code="RU" selected="selected" value="20137">
+            Россия        </option>
+            </select>
+             <input id="lv-form-fio" class="field" maxlength="255" placeholder="Введите ваше имя" name="name" type="text">
+         
+         <input id="lv-form-phone" class="field" placeholder="Введите ваш телефон" name="phone" type="tel">
+         
+        
+         <button class="button-m" type="submit">Заказать сейчас</button>
+         
+      </form>
+      <div class="guard_all">
+         <div class="guard">Защита покупателя</div>
+      </div>
+      <section class="cpu" style="font-size:80%;">
+        <center style="margin: 30px auto"><p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АГРЕССИВНЫЕ ПРОДАЖИ" ОГРН: 1185053043108 ИНН: 5024190952 КПП: 502401001</p>
+<p>143403, МОСКОВСКАЯ ОБЛАСТЬ, КРАСНОГОРСК ГОРОД, РЕЧНАЯ УЛИЦА, ДОМ 20, КОРПУС 2, ПОМЕЩЕНИЕ 7Б ОФИС 2</p> 
+
+  
+    
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href onclick="window.open('/policy2.php'); return false;">Политика конфиденциальности </a>
+      </p>
+      
+<!--       <p class="policy-link doclinks"> -->
+<!--         <a class="nav-link"  href="" onclick="window.open('/policy2.php'); return false;">Условия оформления заказа</a> -->
+<!--       </p> -->
+
+    
+</center>
+      </section>
+      <script src="js/jquery.min_1.js"></script>
+
+      <script src="js/TimeCircles.js"></script>
+      <script src="js/slick.min.js"></script>
+      
+      
+      <script src="js/init.js"></script>
+
+   </div></div></body>
+</html>

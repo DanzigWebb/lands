@@ -424,15 +424,7 @@ ul.ul_black li {
 	padding: 12px 20px 12px 54px;
 	color: #fff;
 }
-ul.ul_item li {
-	padding: 12px 20px 12px 54px;
-	color: #000;
-}
-ul.ul_item-2 li {
-	padding: 10px 20px 10px 40px;
-	color: #ffff;
-	background: url(../img/svg.svg) 10px 13px no-repeat;
-}
+
 ul.three {
 	text-align: center;
 	margin: 0 0 20px;
@@ -494,8 +486,6 @@ ul.ul_str {
 ul.ul_str span {
 	font-weight: 700;
 	float: left;
-	text-align: left;
-	width: 197px;
 	display: inline-block;
 }
 ul.ul_str li {
@@ -999,4 +989,3 @@ ul.deliv_v2_3 {
     display: inline-block;
     float: none;
 }
-z
