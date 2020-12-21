@@ -1,0 +1,19 @@
+form {
+  display: grid;
+  grid-gap: 2rem;
+  max-width: 370px;
+  width: 100%;
+}
+
+input {
+  background: #ffffff;
+  opacity: 0.85;
+  border: 1.14208px solid #ffab00;
+  box-sizing: border-box;
+  border-radius: 41px;
+
+  height: 75px;
+  padding-left: 2rem;
+  font-size: 20px;
+  font-weight: 300;
+}

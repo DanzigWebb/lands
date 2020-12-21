@@ -1,0 +1,76 @@
+
+.owl-carousel {
+  .review {
+    &__item {
+      display: grid;
+      justify-content: center;
+    }
+    &__content {
+      height: 515px;
+      max-width: 360px;
+      padding: 30px 40px;
+      background-image: url(../../img/rev.png);
+      background-size: cover;
+      background-position: bottom;
+      font-size: 18px;
+      line-height: 1.4;
+
+      @include media-xl {
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      @include media-xs {
+        font-size: 16px;
+        background-position: top;
+        height: 400px;
+        padding: 15px 20px;
+      }
+
+      .stars {
+        width: 120px;
+      }
+    }
+  }
+
+  .autor {
+    @include flex($item: center);
+    display: inline-flex;
+    margin-top: 2rem;
+    .ava {
+      width: 60px;
+      margin-right: 1rem;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    small {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+}
+
+.owl-dots {
+  margin-top: 3rem;
+  @include flex(row, center, center);
+
+  button {
+    height: 10px;
+    width: 58px;
+    z-index: 2;
+    background: #fff !important;
+    opacity: 1;
+    margin: 0 4px;
+    border-radius: 30px;
+
+    &.active {
+      background: #FFAB00 !important;
+    }
+  }
+}
