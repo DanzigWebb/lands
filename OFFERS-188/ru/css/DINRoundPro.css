@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../font/subset-DINRoundPro-Light.woff2') format('woff2'),
+        url('../font/subset-DINRoundPro-Light.woff') format('woff'),
+        url('../font/subset-DINRoundPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../font/subset-DINRoundPro.woff2') format('woff2'),
+        url('../font/subset-DINRoundPro.woff') format('woff'),
+        url('../font/subset-DINRoundPro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../font/subset-DINRoundPro-Medi.woff2') format('woff2'),
+        url('../font/subset-DINRoundPro-Medi.woff') format('woff'),
+        url('../font/subset-DINRoundPro-Medi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINRoundPro';
+    src: url('../font/subset-DINRoundPro-Bold.woff2') format('woff2'),
+        url('../font/subset-DINRoundPro-Bold.woff') format('woff'),
+        url('../font/subset-DINRoundPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
