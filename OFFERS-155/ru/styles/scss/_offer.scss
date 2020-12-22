@@ -37,10 +37,9 @@ textarea {
   color: #1a3157;
   font-weight: bold;
   background: rgba(255, 255, 255, 1);
-  border: 0.01rem solid #e0e0e0;
+  border: 1.14208px solid #008E64;
   margin: 0 auto;
   margin-bottom: 0.4rem;
-  background: #E8E8E8;
   box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25);
   border-radius: 100px;
 }
@@ -48,6 +47,7 @@ input::placeholder {
   font-size: 0.17rem;
   font-family: inherit;
   font-weight: normal;
+  color: #A7A7A7;
 }
 
 // ========================>
