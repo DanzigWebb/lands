@@ -707,7 +707,6 @@ p {
 img {
     border: none;
     outline: none;
-    max-width: 100%;
 }
 
 .button {
@@ -1032,6 +1031,7 @@ video {
 }
 .img-web {
     display: block;
+    width: 100%;
 }
 .img-mob {
     display: none;
@@ -1204,14 +1204,7 @@ video {
 
 
 @media (max-width: 560px) {
-    .img-mob {
-        display: block;
-        width: 300px;
-        margin: auto;
-    }
-    .img-web {
-        display: none;
-    }
+ 
     .img-block {
         width: 300px;
         margin: 0 auto 3px;
@@ -1313,7 +1306,9 @@ video {
 
 
 
-
+.img{
+    width: 100%;
+}
 
 
 
