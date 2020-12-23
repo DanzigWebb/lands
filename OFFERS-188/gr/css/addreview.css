@@ -1,0 +1,312 @@
+.addreview {
+    text-align: center;
+    background: #fff;
+    margin: 0 30px;
+    padding: 30px;
+    border-radius: 10px;
+    color: #222;
+}
+
+.addreview .reviews_test {
+    display: inline-block;
+    position: relative;
+}
+.addreview .reviews_test:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    background-size: contain;
+}
+
+.addreview .review_radio {
+    width: 100%;
+    height: 45px;
+    line-height: 41px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 45px;
+    border: 2px solid #000;
+}
+
+.addreview .review_radio.green_radio {
+    border-color: #f2f2f2;
+}
+
+.addreview .review_radio.red_radio {
+    border-color: #f2f2f2;
+}
+
+.addreview .review_radio.blue_radio {
+    border-color: #f2f2f2;
+}
+
+.addreview .review_radio:before {
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    display: inline-block;
+    content: "";
+    border: 4px solid #000;
+    border-radius: 20px;
+    float: left;
+}
+
+.addreview .review_radio.green_radio:before {
+    border-color: #51c23b;
+}
+
+.addreview .review_radio.red_radio:before {
+    border-color: #ff5e5e;
+}
+
+.addreview .review_radio.blue_radio:before {
+    border-color: #45b9f6;
+}
+
+.addreview .review_radio.green_radio.active:before {
+    background: #00c04a;
+}
+
+.addreview .review_radio.red_radio.active:before {
+    background: #de3437;
+}
+
+.addreview .review_radio.blue_radio.active:before {
+    background: #00b0f4;
+}
+
+.addreview .review_radio input[type=radio] {
+    display: none;
+}
+
+.addreview .review_radio span {
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+}
+
+.addreview .review_box {
+    background: #e1e1e1;
+    padding: 20px 35px;
+    width: 100%;
+    max-width: 415px;
+    display: inline-block;
+}
+
+.addreview_title {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.addreview input,
+.addreview textarea {
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.addreview textarea {
+    width: 100%;
+    height: 140px;
+    overflow-y: auto;
+    float: left;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.addreview .min_input {
+    width: 100%;
+    float: left;
+}
+
+.addreview .min_input input[type="text"] {
+    width: 180px;
+    height: 32px;
+}
+
+.addreview .min_input a.button {
+    height: 32px;
+    width: 150px;
+    float: right;
+    line-height: 32px;
+    font-size: 16px;
+    text-transform: inherit;
+    padding: 0 10px;
+}
+
+.addreview .min_input input[type="file"] {
+    display: none;
+}
+
+.addreview .result {
+    width: 345px;
+    display: inline-block;
+}
+
+.addreview .review_result {
+    display: inline-block;
+    width: 100%;
+    display: none;
+    float: left;
+}
+
+.addreview .review_result p {
+    text-align: left;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.addreview .review_result .line {
+    height: 30px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    float: left;
+    min-width: 20px;
+}
+
+/* owmen17 */
+.addreview .review_result .result_item {
+    display: inline-block;
+    float: right;
+    line-height: 30px;
+    font-size: 13px;
+    color: #999;
+    font-weight: bold;
+}
+
+.addreview .review_result .line.green_result {
+    background: #51c23b;
+}
+
+.addreview .review_result .line.red_result {
+    background: #ff5e5e;
+}
+
+.addreview .review_result .line.blue_result {
+    background: #45b9f6;
+}
+
+.widthpoll {
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #eee;
+    padding-right: 21px;
+}
+
+.addreview .review_result p.votenum {
+    text-align: center !important;
+    margin-top: 20px;
+}
+
+.addreview .review_result p span {
+    background: #00c0ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+@-webkit-keyframes green_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@keyframes green_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+.green_view {/* bizlife_inc */
+    -webkit-animation: green_view 2s 1 ease-out;
+    -moz-animation: green_view 2s 1 ease-out;
+    -ms-animation: green_view 2s 1 ease-out;
+    -o-animation: green_view 2s 1 ease-out;
+    animation: green_view 2s 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes red_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 2%;
+    }
+}
+
+@keyframes red_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 2%;
+    }
+}
+
+.red_view {
+    -webkit-animation: red_view 2s 1 ease-out;
+    -moz-animation: red_view 2s 1 ease-out;
+    -ms-animation: red_view 2s 1 ease-out;
+    -o-animation: red_view 2s 1 ease-out;
+    animation: red_view 2s 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes blue_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes blue_view {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+.blue_view {
+    -webkit-animation: blue_view 2s 1 ease-out;
+    -moz-animation: blue_view 2s 1 ease-out;
+    -ms-animation: blue_view 2s 1 ease-out;
+    -o-animation: blue_view 2s 1 ease-out;
+    animation: blue_view 2s 1 ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
