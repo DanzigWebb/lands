@@ -107,17 +107,18 @@
 	float: left;
 }
 .block1 .price .oldcost {
-	font-size: 24px;
+	font-size: 30px;
 	line-height: 26px;
 	text-decoration: line-through;
 	padding: 0 0 0 160px;
 	text-align: right;
 }
 .block1 .price .newcost {
-	font-size: 32px;
+	font-size: 60px;
 	line-height: 40px;
-	color: #51c43b;
-	padding: 0 0 0 160px;
+
+	color: #ff1515;
+	padding: 10px 0 0 160px;
 	text-align: right;
 }
 .block1 .stock {
@@ -333,6 +334,8 @@
 }
 .block4 .content > img {
 	float: left;
+	max-width: 300px;
+	width: 100%;
 	margin: -14px 0;
 }
 .block4 .bull_list h3 {
@@ -439,7 +442,8 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	height: 280px;
+	min-height: 280px;
+	padding-bottom: 0.5rem;
 }
 .rev > div img {
 	display: block;
