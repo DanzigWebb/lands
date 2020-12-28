@@ -1,13 +1,11 @@
-    $('.form-popup-btn').click( function() {
-        $('body').css('overflow','hidden');
-        $("#order-form-popup").show();
-    });
-    
-    $('.close-popup-btn').click( function(){
-        $('#order-form-popup').hide();
-        $('body').css('overflow','visible');
-    });
-    
+$(function() {
+	$('a[href^="#"]').click(function (){
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top - 60;
+		jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop: destination}, 800);
+		return false;
+	});
+});
     $('.button').click( function () {
         let selectZodiakVal = $(this).offsetParent().find('.zodiac-sign').val();
         console.log( selectZodiakVal);
