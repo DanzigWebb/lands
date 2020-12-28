@@ -6,14 +6,6 @@
 @import "timer";
 .intro {
   padding-bottom: 0.8rem;
-  &__top {
-    background-image: url(../../img/intro_top.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 7.2rem;
-    padding-top: 0.13rem;
-  }
-
   &__triger {
     transform: rotate(-14.65deg);
     font-weight: bold;
@@ -25,18 +17,44 @@
     margin-top: 0.47rem;
   }
   &__subtitle {
-    width: 2.77rem;
-    margin: auto;
-    text-align: center;
-    margin-top: 1.2rem;
-    span {
-      font-weight: bold;
-      display: block;
-      font-size: 0.2rem;
-    }
-    img {
-      width: 1.46rem;
-    }
+    width: 3.8rem;
+    margin-top: -0.2rem;
+    line-height: 0.7;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+  }
+  .text_top{
+    padding: 0.2rem 0.3rem;
+    padding-bottom: 0;
+  }
+  .price{
+    background-image: url(../../img/bac_price.png);
+    min-height: 5.01rem;
+    width: 4.8rem;
+    background-position: center;
+    position: relative;
+    &__item{
+      position: absolute;
+      line-height: 1.1;
+     
+      .new{
+        color: #922662;
+        font-size: 0.43rem;
+      }
+      &--top{
+top: 0.3rem;
+left: 0.4rem; span,s,b{
+        display: block;
+      }
+      }
+      &--bottom{
+        top: 2.7rem;
+        right: 0.4rem;
+        span{
+          display: block;
+        }
+      }
+    } 
   }
 }
 .sect1 {
@@ -128,42 +146,7 @@
     }
   }
 }
-.price {
-  @include flex(column);
-  align-items: flex-start;
 
-  &--header {
-    margin-top: 0.45rem;
-    margin-left: 0.24rem;
-  }
-  &__item {
-    @include flex(column);
-    align-items: flex-start;
-    text-transform: uppercase;
-    span {
-      font-weight: bold;
-      font-size: 0.15rem;
-    }
-    &--top {
-      color: #3e5581;
-      margin-bottom: 0.1rem;
-      b {
-        font-weight: 800;
-        font-size: 0.64rem;
-        line-height: 110%;
-      }
-    }
-    &--bottom {
-      color: #8598bc;
-      margin-top: -0.1rem;
-      s {
-        margin-top: 0.05rem;
-        font-size: 0.3rem;
-        font-weight: 800;
-      }
-    }
-  }
-}
 .sect3 {
   background: linear-gradient(180deg, #fff4f9, #ffdfee);
   padding: 0;
