@@ -46,8 +46,8 @@
             <div class="prices">
                 <span class="deadline"> só hoje!</span>
                 <div class="prices-wrapper">
-                    <span class="current-price"> por apenas<span class="tot-amount"><x-newprice>7</x-newprice></span>
-                        <span class="init_price-txt"><x-currency> 49€</x-currency></span>
+                    <span class="current-price"> por apenas<span class="tot-amount"></span>
+                        <span class="init_price-txt"><x-currency style="font-weight: 600;"> 49€</x-currency></span>
                     </span>
                     <span class="previous-price"> em vez de<span class="old-amount"><x-oldprice> 98€</x-oldprice></span>
                         <span class="init_price-txt"><x-currency> </x-currency></span>
@@ -63,7 +63,7 @@
                 <h2> Uma forma simples e eficaz de preservar e proteger o seu amor, família e casamento. O seu homem nunca mais olhará para outra!</h2>
                 <article>
                     <p> "A traição é uma força negra e maligna. Mais cedo ou mais tarde cada homem sucumbe a esta tentação. Mas pode impedir o seu amor de fazer batota, refreando o poder de um antigo amuleto".</p>
-                    <p class="caption"> Maria Teresa<br> freira dum mosteiro antigo<br> de montanhas</p>
+                    <p class="caption"> Maria Teresa<br> freira dum mosteiro antigo<br> de montanhas San Colombano</p>
                 </article>
                 <div class="img-wrapper">
                     <img src="img/votary.png" alt="фото монаха">
@@ -135,8 +135,8 @@
                     </p>
                 <div class="prices">
                     <span class="deadline"> só hoje!</span>
-                    <span class="current-price"> por apenas<span class="tot-amount"><x-newprice>7</x-newprice></span> <br>
-                        <span class="init_price-txt"><x-currency> 49€</x-currency></span>
+                    <span class="current-price"> por apenas<br>
+                        <span class="init_price-txt"><x-currency> <s>49</s>€</x-currency></span>
                     </span>
                     <span class="previous-price"> em vez de<span class="old-amount"><x-oldprice> 98€</x-oldprice></span> <br>
                         <span class="init_price-txt"><x-currency> </x-currency></span>
@@ -171,8 +171,8 @@
             <div class="prices">
                 <span class="product-name"> Amuleto<br> protetor contra a infidelidade</span>
                 <div class="price-wrapper">
-                    <span class="current-price"> por apenas<span class="tot-amount"><x-newprice>7</x-newprice></span> <br>
-                        <span class="init_price-txt"><x-currency> 49€</x-currency></span>
+                    <span class="current-price">  por apenas <br>
+                        <span class="init_price-txt"><x-currency> <s>49€</s></x-currency></span>
                     </span>
                     <span class="previous-price"> em vez de<span class="old-amount"> <br><x-oldprice> 98 €</x-oldprice></span> <br>
                         <span class="init_price-txt"><x-currency></x-currency></span>
@@ -220,12 +220,13 @@
                         </div>
                          <div class="prices">
                              <div class="current-price">
-                                <span class="tot-amount" style="font-size: 45px;"><x-newprice>7</x-newprice></span>
                                 <span> Apenas<br>
                                 <span class="init_price-txt"><x-currency> 49€</x-currency></span></span>
                             </div>
+                            <br>
                             <div class="previous-price">
-                                <span class="old-amount" style="font-size: 45px;"><x-oldprice> em vez de</x-oldprice></span>
+                                <span class="old-amount"><x-oldprice> em vez de</x-oldprice></span>
+                                <br>
                                 <span> 98€<br>
                                 <span class="init_price-txt"><x-currency> </x-currency></span></span>
                             </div>
@@ -238,26 +239,6 @@
                                                     
     
 	                      <input name="csrf_token" type="hidden" value="e2ce8af83b5076d6140757df649cbfe5:1608731759">
-    <select name="offer" class="form-control country_chang">
-                <option data-country-code="BY" selected="selected" value="9827">Беларусь        </option>
-            </select>
-    					  <select class="zodiac-sign required" name="comments">
-                            <option value="знак зодиака не выбран">Выберите знак зодиака</option>
-                            <option value="знак зодиака - Овен">Овен</option> 
-                            <option value="знак зодиака - Телец">Телец</option>	
-                            <option value="знак зодиака - Близнецы">Близнецы</option> 
-                            <option value="знак зодиака - Рак">Рак</option>	
-                            <option value="знак зодиака - Лев">Лев</option> 
-                            <option value="знак зодиака - Дева">Дева</option>	
-                            <option value="знак зодиака - Весы">Весы</option> 
-                            <option value="знак зодиака - Скорпион">Скорпион</option>
-                            <option value="знак зодиака - Змееносец">Змееносец</option> 
-                            <option value="знак зодиака - Стрелец">Стрелец</option>	
-                            <option value="знак зодиака - Козерог">Козерог</option> 
-                            <option value="знак зодиака - Водолей">Водолей</option>
-                            <option value="знак зодиака - Рыбы">Рыбы</option>
-                        </select> 
-                        
                         <input type="text" name="name" required placeholder="O seu nome completo">
                         <input type="tel" name="phone" placeholder="Número de telefone">
                     </div>
@@ -266,68 +247,7 @@
             </div>
         </div>
     </div></section>
-     <!--  FORM POPUP -->
-     <div class="popup" id="order-form-popup">
-        <div class="popup-content">
-            <button class="close-popup-btn"></button>
-            <span class="accent-color"> Tomou a decisão certa!</span>
-            <div class="main-content">
-                <form class="order_form" action method="post">
-                <div class="main-content_left">
-                    <div class="img-wrapper">
-                        <span> O preço de hoje!</span>
-                        <img src="img/amulet.png" alt="амулет измен">
-                    </div>
-                    <div class="prices">
-                             <div class="current-price">
-                                <span class="tot-amount" style="
-    font-size: 45px;
-"><x-newprice>7</x-newprice></span>
-                                <span> Apenas<br>
-                                <span class="init_price-txt"><x-currency> €</x-currency></span></span>
-                            </div>
-                            <div class="previous-price">
-                                <span class="old-amount" style="
-    font-size: 45px;
-"><x-oldprice> 49</x-oldprice></span>
-                                <span> Em vez de<br>
-                                <span class="init_price-txt"><x-currency> 98€</x-currency></span></span>
-                            </div>
-                        </div>
-                </div>
-                    <div class="main-content-right">
-                     
-                        <div style="display:none;"></div>             
-                                                    
-                            <input name="csrf_token" type="hidden" value="e2ce8af83b5076d6140757df649cbfe5:1608731759">
-    <select name="offer" class="form-control country_chang">
-                <option data-country-code="BY" selected="selected" value="9827">Беларусь        </option>
-            </select>
-       <select class="zodiac-sign required" name="comments">
-                            <option value="знак зодиака не выбран">Выберите знак зодиака</option>
-                            <option value="знак зодиака - Овен">Овен</option> 
-                            <option value="знак зодиака - Телец">Телец</option>	
-                            <option value="знак зодиака - Близнецы">Близнецы</option> 
-                            <option value="знак зодиака - Рак">Рак</option>	
-                            <option value="знак зодиака - Лев">Лев</option> 
-                            <option value="знак зодиака - Дева">Дева</option>	
-                            <option value="знак зодиака - Весы">Весы</option> 
-                            <option value="знак зодиака - Скорпион">Скорпион</option>
-                            <option value="знак зодиака - Змееносец">Змееносец</option> 
-                            <option value="знак зодиака - Стрелец">Стрелец</option>	
-                            <option value="знак зодиака - Козерог">Козерог</option> 
-                            <option value="знак зодиака - Водолей">Водолей</option>
-                            <option value="знак зодиака - Рыбы">Рыбы</option>
-                        </select> 
-	                   
-                        <input type="text" name="name" required placeholder="O seu nome completo">
-                        <input type="tel" name="phone" placeholder="Número de telefone">
-                    </div>
-                        <button type="submit" class="button"> Encomendar o Amuleto</button>
-                    </form>
-            </div>
-        </div>
-    </div>
+     
  
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
@@ -386,7 +306,9 @@
     
     
             <p class="conf-link doclinks">
-        <a class="nav-link" href onclick="window.open('/policy2.php'); return false;"> Política de Privacidade</a>
+                <a href="/privacypolicy" target="_blank"> Privacy policy</a>
+				<a href="/general-conditions-of-sale" target="_blank"> General conditions of sale</a>
+				<a href="/legal-warning" target="_blank"> Legal warning</a>
       </p>
 
     

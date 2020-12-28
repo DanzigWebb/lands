@@ -304,7 +304,7 @@ section {
     height: 450px;  
     background: url(../img/couple2.png) center center no-repeat;
     background-size: contain;
-    top: 20%;
+    top: 23%;
     left: calc(50% - 770px/2);
     position: absolute;
 }
@@ -336,7 +336,7 @@ section {
     text-align: left;
 }
 .section3 .discount .content_left span:nth-of-type(1){
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: SourceSerifPro,sans-serif;
     text-transform: uppercase;
@@ -460,7 +460,12 @@ section {
     width: 105px;
 }
 .section4 .legend-wrapper .prices .current-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     text-align: right;
+    line-height: 1.3;
 }
 .section4 .legend-wrapper .prices .previous-price {
     text-align: left;
@@ -620,6 +625,12 @@ section {
     width: 105px;
 }
 .section5 .prices .current-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    line-height: 1.2;
     margin-right: 25px;
 }
 /* SECTION6 */
@@ -722,7 +733,6 @@ section {
 }
 .order-block .main-content_left .previous-price {
     color: #fff;
-    display: flex;
     align-items: center;
     margin-top: -10px;
 }
@@ -734,7 +744,8 @@ section {
 }
 .order-block .main-content_left .previous-price span:not(.old-amount) {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .order-block .main-content-right {
