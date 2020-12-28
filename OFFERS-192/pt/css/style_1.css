@@ -1,0 +1,33 @@
+/*.error404{
+	margin: 40px auto 0 auto; 	
+	min-width: 800px;
+	min-height: 700px;
+	background: url(../img/404.png) no-repeat center center #fff;
+}*/
+.error404{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;	
+	text-align: center;	
+}
+.error404 span{
+	display: block;
+	margin: 0;
+	color: #999;
+}
+.error404 span:nth-child(1){
+	font-size: 74px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.error404 span:nth-child(2){
+	font-size: 180px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: 700;
+}
