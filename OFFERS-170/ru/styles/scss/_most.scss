@@ -92,8 +92,16 @@ h2 {
       display: block;
     }
   }
-  &.big {
-    font-size: 0.4rem;
+  &.sect{
+font-size: 0.35rem;
+width: 4.28rem;
+padding-bottom: 0.1rem;
+font-weight: bold;
+text-align: center;
+margin: 0 auto;
+  }
+  &.min {
+    font-size: 0.35rem;
   }
   &.black {
     color: #000;
@@ -115,7 +123,9 @@ h2 {
 .sub-title {
   font-style: italic;
   font-size: 0.2rem;
-  color: #323842;
+  text-align: center;
+  padding: 0 0.6rem;
+  font-family: "Playfair Display", serif;
 }
 .t-center {
   text-align: center;
@@ -132,16 +142,20 @@ h2 + p {
 }
 .btn {
   @include flex(row, center, center);
-  background: #ff3062;
-  border: none;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(89.09% 89.09% at 50% 20%, #FFF84A 0%, #FFAB00 100%);
   border-radius: 50px;
-  color: #fff;
+  border: none;
+  box-shadow: 0px 5px 0px rgb(182, 121, 0);
+  border-radius: 50px;
+  color: #000000ad;
   font-weight: 800;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 0.25rem;
-  height: 0.92rem;
-  width: 3.48rem;
+  height: 0.65rem;
+  width: max-content;
+  padding: 0 0.6rem;
+  letter-spacing: 0.04em;
   margin: 0 auto;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -231,4 +245,8 @@ img {
     z-index: -1;
     transform: translateY(0.15rem);
   }
+}
+.text{
+  width: 4.26rem;
+  margin: 0.2rem auto;
 }
