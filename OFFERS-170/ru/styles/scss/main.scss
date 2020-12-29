@@ -120,19 +120,24 @@
   }
 }
 .sect3{
-  
+  &__item{
+   @include flex (column,center,center);
+   p{
+     width: 4.39rem;
+     margin: 0.16rem auto; 
+     margin-bottom: 0.3rem;
+   }
+   b{
+     font-size: 0.25rem;
+     display: inline-block;
+     width: 2.56rem;
+     text-align: center;
+   }
+  }
 }
 .sect5 {
-  padding: 0;
-  &__absol {
-    &--top {
-      transform: translateY(-0.3rem);
-    }
-    &--bottom {
-      transform: translateY(0.5rem);
-    }
-  }
-  background: linear-gradient(180deg, #ecfbff, #bef2fe);
+padding: 0.79rem 0;
+background: #F3E7EE;
 }
 .sect6 {
   padding-top: 0.8rem;
