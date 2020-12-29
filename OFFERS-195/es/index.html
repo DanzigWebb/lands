@@ -210,9 +210,9 @@
                 </div>
                 <p class="price">
                     <span class="visually-hidden" aria-hidden="false"></span>
-                    <span class="pay-price sl-subhead-title"><x-newprice> 49</x-newprice> <x-currency> €</x-currency></span>
+                    <span class="pay-price sl-subhead-title" style="font-size: 30px;"><x-newprice> 49€</x-newprice></span>
                     <span class="visually-hidden" aria-hidden="false"></span>
-                    <span class="orig-price sl-subhead-title"><x-oldprice> 98</x-oldprice> <x-currency> €</x-currency></span>
+                    <span class="orig-price sl-subhead-title" style="font-size: 24px;"><x-oldprice> 98€</x-oldprice></span>
                 </p>
                 <div class="products-tisp J-ProductsTisp" style="display: none">
                     <span></span>
@@ -653,7 +653,15 @@
                 <div class="form-wrap" id="order-form">
                     <h2 class="form__title"> LLENE EL FORMULARIO DE PEDIDO</h2>
                     <form class="form" method="POST">
+                        <center>
+                            <span class="visually-hidden" aria-hidden="false"></span>
+                            <span class="pay-price sl-subhead-title" style="font-size: 30px; color:#ff0000;"><x-newprice> 49€</x-newprice></span>
+                            <span class="visually-hidden" aria-hidden="false"></span>
+                            <span class="orig-price sl-subhead-title" style="font-size: 24px;"><x-oldprice> 98€</x-oldprice></span>
+                        </center>
+                        <br>
                             <div class="fields">
+
                             <label for> Introduzca su nombre</label>
                             <input type="text" name="name" placeholder="Introduzca su nombre" required>
                         </div>
