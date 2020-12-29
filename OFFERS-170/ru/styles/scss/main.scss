@@ -75,22 +75,49 @@
       }
     }
   }
-  &__text{
+  &__text {
     background-image: url(../../img/bac_text.png);
     min-height: 1.5rem;
     margin-top: -0.2rem;
-    background-position:center;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     box-sizing: border-box;
     font-size: 0.18rem;
     padding: 0.4rem 0.5rem;
-   padding-left: 1.8rem;
+    padding-left: 1.8rem;
   }
 }
 .sect1 {
-  background: #F3E7EE;
+  background: #f3e7ee;
   padding: 0.8rem 0;
+}
+.sect2 {
+  background: #922662;
+  padding: 0.4rem 0;
+  padding-bottom: 0.67rem;
+  p.title {
+    font-size: 0.22rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0.23rem;
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.01rem;
+    margin: 0 auto;
+  }
+  &__left {
+    width: 2.1rem;
+    img {
+      width: 1.69rem;
+    }
+  }
 }
 .sect5 {
   padding: 0;
