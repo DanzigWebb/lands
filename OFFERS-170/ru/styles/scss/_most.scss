@@ -101,7 +101,7 @@ h2 {
     margin: 0 auto;
   }
   &.min {
-    font-size: 0.35rem;
+    font-size: 0.3rem;
   }
   &.black {
     color: #000;
@@ -218,21 +218,4 @@ img {
   width: 4.26rem;
   margin: 0.2rem auto;
 }
-.owl-carousel {
-  .owl-dots {
-    padding: 0.2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  button {
-    width: 0.4rem;
-    height: 0.06rem;
-    border-radius: 50%;
-    background-color: #e7e7e7;
-    margin: 0 3px;
-    &.active {
-      background: #f2c1ce;
-    }
-  }
-}
+
