@@ -34,3 +34,7 @@ footer {padding-bottom: 20px;line-height: 26px; margin-top: -40px; font-size: 14
 .ajax_loader {
   display: none;
 }
+.price{
+    font-size: 40px;
+    color: #f7d766;
+}
