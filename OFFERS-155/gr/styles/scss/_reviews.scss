@@ -1,0 +1,32 @@
+.reviews {
+ &__item{
+   margin-bottom: 0.4rem;
+ }
+  .box{
+     background: #E6F3F7;
+  border-radius: 20px;
+  font-size: 0.16rem;
+  padding: 0.16rem 0.23rem;
+  padding-bottom: 0.31rem;
+  box-sizing: border-box;
+  width: 4.50rem;
+  margin: 0 auto;
+  }
+  .name{
+    margin-left: 0.13rem;
+    padding-top: 0.2rem;
+    @include flex (row,flex-start,center);
+    img{
+      margin-right: 0.2rem;
+    }
+    b{
+      display: block;
+    }
+  }
+}
+.owl-carousel .owl-item .ava {
+  width: 0.92rem;
+}
+.owl-carousel .owl-item .box__svg{
+   width: 1.6rem;
+}
