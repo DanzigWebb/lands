@@ -36,12 +36,11 @@ textarea {
   font-size: 0.22rem;
   color: #1a3157;
   font-weight: bold;
-  background: rgba(255, 255, 255, 1);
-  border: 1.14208px solid #008E64;
+  border: 1.14208px solid #DC0B80;
+  box-sizing: border-box;
+  border-radius: 41px;
   margin: 0 auto;
   margin-bottom: 0.4rem;
-  box-shadow: inset 0px 4px 4px rgba(162, 162, 162, 0.25);
-  border-radius: 100px;
 }
 input::placeholder {
   font-size: 0.17rem;

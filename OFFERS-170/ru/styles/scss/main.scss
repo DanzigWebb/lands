@@ -148,37 +148,20 @@ background: #F3E7EE;
 .sect6 {
   
   &__grid {
-    padding-left: 0.6rem;
-
+    padding-left: 0.33rem;
+padding-top: 0.2rem;
     p {
-      font-weight: 600;
-      font-size: 0.18rem;
+      font-weight: 300;
+      font-size: 0.2rem;
       margin: 0;
     }
   }
   &__item {
     display: grid;
-    grid-gap: 0.33rem;
+    grid-gap: 0.29rem;
     margin-bottom: 0.25rem;
-    grid-template-columns: 0.6rem 1.7rem;
+    grid-template-columns: 0.7rem 2.5rem;
     align-items: center;
   }
-  &__triger {
-    width: 4.5rem;
-    background: #3e5581;
-    box-sizing: border-box;
-    padding: 0.17rem 0.1rem;
-    margin-top: 0.4rem;
-    padding-left: 0.6rem;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 0.25rem;
-    text-transform: uppercase;
-    color: #ffffff;
-    img {
-      width: 0.64rem;
-      padding-right: 0.29rem;
-    }
-  }
+
 }
