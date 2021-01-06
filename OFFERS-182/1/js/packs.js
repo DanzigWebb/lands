@@ -83,8 +83,8 @@ function loadImageFileAsURL(a, b, d) {
 $(function () {
   $("#calcweight").click(function (a) {
     a.preventDefault(); a = Math.ceil(Number($("#minus_weight").val()) / .666666); Number($("#weight").val()) > Number($("#minus_weight").val()) + 40 ? 
-    $(".formResult").html("<p><b>¡Si sigue las instrucciones a continuación, podrá perder " + $("#minus_weight").val() + " en solo " + a + " días sin dieta ni ejercicio!</b></p><p>¿Crees que es imposible? Lea el artículo a continuación hasta el final y cambiará de opinión. ¡Espero que esto cambie tu vida!</p>") : 
-    $(".formResult").html("<p><b>Datos Incorrectos.</b></p>");
+    $(".formResult").html("<p><b> Εάν ακολουθήσετε τις παρακάτω οδηγίες, μπορείτε να χάσετε " + $("#minus_weight").val() + "κιλά σε μόλις " + a + " ημέρες χωρίς δίαιτες και προπονήσεις!</b></p><p>Πιστεύετε ότι αυτό είναι αδύνατον? Διαβάστε το παρακάτω άρθρο μέχρι το τέλος και θα αλλάξετε γνώμη. Ελπίζουμε ότι αυτό θα αλλάξει τη ζωή σας!</p>") : 
+    $(".formResult").html("<p><b>Λάθος δεδομένα</b></p>");
     $(".formResult").css({ transition: "background 1s", backgroundColor: "#ff7426c4", border: '2px solid #ff7426c4' }); setTimeout(function () { $(".formResult").css({ backgroundColor: "#fff" }) }, 2E3)
   })
 });
