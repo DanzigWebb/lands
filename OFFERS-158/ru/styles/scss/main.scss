@@ -1,0 +1,90 @@
+@import "vars";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+.intro {
+  padding-bottom: 0.8rem;
+  .title {
+    width: 100%;
+    min-height: 0.88rem;
+    padding: 0.2rem 0.31rem;
+    box-sizing: border-box;
+    background: #d9f0f4;
+  }
+}
+.sect1 {
+  background: #f3e7ee;
+  padding: 0.8rem 0;
+}
+.sect2 {
+  background: #922662;
+  padding: 0.4rem 0;
+  padding-bottom: 0.67rem;
+  p.title {
+    font-size: 0.22rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0.23rem;
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.01rem;
+    margin: 0 auto;
+  }
+  &__left {
+    width: 2.1rem;
+    img {
+      width: 1.69rem;
+    }
+  }
+  &__right {
+    img {
+      width: 1.56rem;
+    }
+  }
+}
+.sect3 {
+  &__item {
+    @include flex(column, center, center);
+    p {
+      width: 4.39rem;
+      margin: 0.16rem auto;
+      margin-bottom: 0.3rem;
+    }
+    b {
+      font-size: 0.25rem;
+      display: inline-block;
+      width: 2.56rem;
+      text-align: center;
+    }
+  }
+}
+.sect5 {
+  padding: 0.79rem 0;
+  background: #f3e7ee;
+}
+.sect6 {
+  &__grid {
+    padding-left: 0.33rem;
+    padding-top: 0.2rem;
+    p {
+      font-weight: 300;
+      font-size: 0.2rem;
+      margin: 0;
+    }
+  }
+  &__item {
+    display: grid;
+    grid-gap: 0.29rem;
+    margin-bottom: 0.25rem;
+    grid-template-columns: 0.7rem 2.5rem;
+    align-items: center;
+  }
+}
