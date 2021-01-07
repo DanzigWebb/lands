@@ -1,0 +1,15 @@
+.fb_iframe_widget iframe{
+    width: auto !important;
+}
+*{ box-sizing: border-box;}
+.product_info img:not(.cus_width){
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.width52{
+    width: 52px;
+}
+.dcenter{
+    margin: 0 auto;
+}
