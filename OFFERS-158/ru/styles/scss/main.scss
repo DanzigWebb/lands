@@ -13,6 +13,31 @@
     box-sizing: border-box;
     background: #d9f0f4;
   }
+  &__main {
+display: grid;
+grid-template-rows: 4.5rem 0.64rem;
+    background-image: url(../../img/intro_bac.png);   
+   background-color:  #2B4E76;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 6.29rem;
+  }
+  &__trigger {
+    padding-left: 0.22rem;
+    padding-top: 0.52rem;
+    .item {
+      width: 1.29rem;
+      color: #ffff;
+      margin-bottom: 0.3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        display: block;
+        width: 0.59rem;
+      }
+    }
+  }
 }
 .sect1 {
   background: #f3e7ee;
