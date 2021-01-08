@@ -1,0 +1,249 @@
+@import "vars";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+.intro {
+  &__slogan {
+    font-family: "Black Ops One", cursive;
+  }
+  &__main {
+    background-image: url(../../img/back__intro.png);
+    height: 5.9rem;
+    position: relative;
+    box-sizing: border-box;
+    background-size: cover;
+  }
+  &__top {
+    text-align: center;
+    padding-top: 0.02rem;
+  }
+  &__slogan {
+    font-size: 0.4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    padding: 0.04rem;
+    font-size: 0.16rem;
+    background-color: #ffe600;
+    width: 2.25rem;
+    font-weight: bold;
+  }
+  &__list {
+    color: #fff;
+    padding-left: 0.08rem;
+    padding-top: 0.16rem;
+    img {
+      width: 0.39rem;
+      height: 0.39rem;
+      margin-right: 0.14rem;
+    }
+  }
+  &__item {
+    @include flex(row, left, center);
+  }
+  &__blink {
+    position: absolute;
+    width: 0.14rem;
+    height: 0.14rem;
+    background: #ffe600;
+    border-radius: 100%;
+    animation: pulse 2s linear infinite;
+    &--face {
+      top: 2.75rem;
+      left: 4.38rem;
+    }
+    &--chin {
+      top: 4.25rem;
+      left: 3.3rem;
+    }
+    &--neck {
+      top: 3.98rem;
+      left: 2.49rem;
+    }
+  }
+  &__product {
+    width: 2.76rem;
+    position: absolute;
+    top: 4.79rem;
+    left: 1.7rem;
+  }
+  &__bottom {
+    background-color: #0c0b0b;
+  }
+}
+
+.sect1 {
+  background-color: #0c0b0b;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  padding-bottom: 0.1rem;
+  color: #fff;
+  &__title {
+    margin-top: 0;
+    color: #fff;
+  }
+  &__main {
+    margin-top: -0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  &__text {
+    margin-bottom: 0.36rem;
+    margin-top: 0.36rem;
+  }
+  &__video {
+    margin-top: 0.8rem;
+    height: 3.2rem;
+  }
+}
+.sect3 {
+  background-color: #0c0b0b;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  &__main {
+ 
+    margin: 0 auto;
+    width: 4rem;
+  }
+  &__item {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.3rem;
+    padding-bottom: 0.2rem;
+    p {
+      margin: 0;
+      font-weight: 900;
+      margin-top: 0.1rem;
+      color: #fff;
+    }
+  }
+}
+.sect4 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+  &__title {
+    font-size: 0.3rem;
+    text-align: center;
+    color: #000;
+  }
+}
+.sect6 {
+  background-image: url(../../img/backround_6.png);
+  color: red($color: #fff);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 0.47rem;
+  padding-bottom: 0.7rem;
+  &__title {
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 0 0.14rem;
+    grid-gap: 0.3rem;
+    img {
+      width: 1.16rem;
+    }
+    p {
+      margin-top: 0;
+      color: #fff;
+    }
+    b {
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+}
+.price {
+  position: relative;
+  padding-top: 0rem;
+  @include flex(row, center, center);
+  &__item {
+    width: 2.13rem;
+    height: 0.82rem;
+    @include flex(column, center, center);
+    box-sizing: border-box;
+    border-radius: 30px;
+    span {
+      font-size: 0.17rem;
+    }
+    &--lef {
+      border: 1px solid #ffe600;
+      color: #b8b8b8;
+      s {
+        font-size: 0.3rem;
+      }
+    }
+    &--righ {
+      background: #ffe600;
+      box-shadow: 0px 0px 10px rgba(255, 230, 0, 0.4);
+      border-radius: 30px;
+      b {
+        font-size: 0.3rem;
+      }
+    }
+  }
+  &__center {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 100%;
+    width: 0.82rem;
+    height: 0.82rem;
+    font-weight: bold;
+    font-size: 0-0.24rem;
+    text-align: center;
+    @include flex(row, center, center);
+    font-weight: 800;
+  }
+}
+.builets {
+  &__item {
+    @include flex(row, left, center);
+    border: 1px solid #4b4b4b;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 4.28rem;
+    padding: 0.08rem;
+    margin-left: 0.44rem;
+    margin-bottom: 0.13rem;
+    color: #fff;
+    img {
+      width: 0.42rem;
+      transform: translateX(-68%);
+    }
+  }
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &__item {
+    position: relative;
+    padding-left: 0.35rem;
+    &:not(:last-child) {
+      margin-bottom: 0.15rem;
+    }
+    &:before {
+      content: ".";
+     color: #ffff;
+      background-size: contain;
+      display: block;
+      line-height: 0.2;
+      font-size: 0.7rem;
+      width: 0.24rem;
+      height: 0.24rem;
+      position: absolute;
+      left: 0.1rem;
+      top: -0.15rem;
+    }
+  }
+}
