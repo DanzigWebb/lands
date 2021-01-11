@@ -1,0 +1,307 @@
+@import "vars";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+
+.intro {
+  background: #2f2f2f;
+  &__top {
+    min-height: 6.6rem;
+
+    padding-top: 0.01rem;
+    background-image: url(../../img/intro__top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .list {
+    padding-left: 0.11rem;
+    padding-top: 0.4rem;
+    img {
+      width: 0.12rem;
+    }
+    p {
+      font-size: 0.15rem;
+      font-weight: 500;
+      margin: 0;
+      padding-left: 0.1rem;
+      color: #fff;
+    }
+    &__item {
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 0.1rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__box {
+      @include flex(row, left, center);
+      width: 3.1rem;
+    }
+  }
+  &__text {
+    padding: 0.21rem;
+    padding-top: 0.06rem;
+    box-sizing: border-box;
+  }
+  .subtitle {
+    text-transform: uppercase;
+    color: #9ccfdf;
+    text-align: center;
+    font-size: 0.19rem;
+    font-weight: bold;
+    margin-bottom: 0.46rem;
+    margin-top: 0;
+  }
+
+  .price {
+    background-image: url(../../img/price.png);
+    background-size: contain;
+    padding-left: 2.5rem;
+    box-sizing: border-box;
+    padding-top: 1.7rem;
+    bottom: 0;
+    @include flex(column, top, center);
+    transform: translateY(0.5rem);
+    background-repeat: no-repeat;
+    min-height: 4.6rem;
+    s {
+      color: #6b6b6b;
+      font-size: 0.3rem;
+      display: inline-block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+    span {
+      font-size: 0.18rem;
+    }
+    b {
+      font-size: 0.5rem;
+      line-height: 1;
+      color: #000;
+    }
+  }
+  .trigger {
+    width: 3.63rem;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      margin-top: 0.15rem;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+.sect1,
+.sect2 {
+  &__item {
+    @include flex(row, left, center);
+    margin-bottom: 0.5rem;
+
+    img {
+      width: 2.1rem;
+    }
+    .text {
+      width: 2.15rem;
+      font-size: 0.18rem;
+    }
+    p {
+      margin-top: 0.1rem;
+      margin-bottom: 0;
+    }
+    h2 {
+      background-image: url(../../img/Vector.svg);
+      background-size: 1.51rem;
+      font-size: 0.19rem;
+      margin-left: -0.1rem;
+      padding-left: 0.1rem;
+      margin-bottom: 0;
+      padding-bottom: 0.26rem;
+      font-weight: bold;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.sect1,
+.sect3,
+.sect5,
+.sect7 {
+  background: #2f2f2f;
+}
+.sect1 {
+  padding-top: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0.6rem;
+  background-image: url(../../img/sect1.svg);
+  &__item {
+    color: #fff;
+  }
+}
+.sect2 {
+  &__item {
+    @include flex(row-reverse, left, center);
+    color: #000;
+  }
+}
+.sect3 {
+  padding-top: 1.45rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0.3rem;
+  padding-bottom: 0.1rem;
+  background-image: url(../../img/sect3.svg);
+  h2 {
+    font-size: 0.22rem;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    text-align: center;
+    color: #000;
+    font-size: 0.18rem;
+    width: 3.23rem;
+    margin: 0 auto;
+    margin-bottom: 0.76rem;
+  }
+}
+.sect4 {
+  background-image: url(../../img/sect4.svg);
+  background-repeat: no-repeat;
+  background-position-y: 1rem;
+  background-position-x: center;
+  background-size: 4.5rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+  &__item {
+    @include flex(row);
+    width: 4.5rem;
+    margin: 0 auto;
+    .numb {
+      width: 0.41rem;
+      display: inline-block;
+      height: 0.41rem;
+      text-align: center;
+      @include flex(row, center, center);
+      background: #218676;
+      border-radius: 100%;
+      margin-top: 0.15rem;
+      color: #fff;
+    }
+    p {
+      width: 3.94rem;
+      padding-left: 0.2rem;
+    }
+  }
+}
+.sect5 {
+  background-image: url(../../img/sect5.svg);
+  background-position: 0 0.7rem;
+  padding-top: 1.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  h2 {
+    margin-bottom: 0.9rem;
+  }
+  &__item {
+    @include flex(row, left, center);
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    width: 3.9rem;
+
+    p {
+      margin: 0;
+      margin-left: 0.3rem;
+      line-height: 1.1;
+      font-size: 0.2rem;
+      font-weight: 600;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      p {
+        margin-right: 0.3rem;
+        margin-left: 0;
+      }
+    }
+    img {
+      width: 1.46rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.sect6 {
+  background: #ffff;
+  padding-bottom: 1rem;
+  background-image: url(../../img/);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  h2{
+    margin-bottom: 0.7rem;
+  }
+}
+.sect7 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: #fff;
+  &__main {
+    padding: 0.2rem 0;
+    padding-bottom: 0;
+  }
+  &__item {
+    width: 3.07rem;
+    margin: 0.2rem auto;
+    font-size: 0.18rem;
+    font-weight: bold;
+    margin-left: 0.23rem;
+    @include flex(row, flex-start, center);
+    img {
+      width: 0.6rem;
+      margin-right: 0.1rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .text {
+    width: 4.19rem;
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 0.3rem;
+        width: 1rem;
+        height: 0.02rem;
+        background-color: #000;
+      }
+    }
+  }
+}
+.anim {
+  width: 2.34rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .img-anim {
+    width: 2.07rem;
+    position: absolute;
+    height: 2.6rem;
+    left: 0.14rem;
+    animation: beforeAfter 7s infinite alternate;
+    background-size: cover;
+    background-image: url(../../img/prod_anim2.png);
+  }
+}

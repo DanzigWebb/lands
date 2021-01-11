@@ -1,0 +1,214 @@
+@import "vars";
+@import "most";
+@import "offer";
+@import "anim";
+@import "reviews";
+@import "timer";
+.intro {
+  padding-bottom: 0.8rem;
+  &__subtitle {
+    color: #fff;
+    text-align: center;
+    margin-top: -0.2rem;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 0.2rem;
+  }
+  .text_top {
+    padding: 0.2rem 0.3rem;
+    padding-bottom: 0;
+  }
+  &__top {
+    background-image: url(../../img/intro.png);
+    min-height: 6.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .trigger {
+    padding-top: 0.3rem;
+    &__item {
+      color: #fff;
+      margin-bottom: 0.15rem;
+      font-weight: 500;
+      font-size: 0.19rem;
+      @include title(2rem, #8e2472, 0.23rem);
+      width: max-content;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .price {
+    padding-top: 0.7rem;
+    padding-left: 0.3rem;
+    padding-bottom: 1.9rem;
+    s {
+      text-decoration-line: line-through;
+      font-size: 0.4rem;
+      font-weight: 300;
+      display: block;
+      color: #c8c8c8;
+    }
+    b {
+      color: #ffffff;
+      line-height: 1;
+      font-size: 0.6rem;
+      font-weight: 800;
+    }
+  }
+}
+.sect1 {
+  &__item {
+    @include flex(row, space-between, center);
+    padding-bottom: 0.4rem;
+    padding-top: -0.3rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    img {
+      width: 1.85rem;
+    }
+
+    b {
+      display: block;
+      font-size: 0.2rem;
+
+      font-weight: 800;
+      padding-bottom: 0.11rem;
+    }
+    p {
+      width: 2.5rem;
+      padding-right: 0.1rem;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      p {
+        padding-right: 0;
+        padding-left: 0.3rem;
+      }
+    }
+  }
+}
+.sect3{
+padding-top: 0.5rem;
+background-image: url(../../img/sect3bag.png);
+background-repeat: no-repeat;
+min-height: 8rem;
+background-size: cover;
+h2.sect2{
+  padding-bottom: 0.4rem;
+}
+  &__item{
+    @include flex(row, space-between, center);
+    padding-bottom: 0.1rem;
+    color: #fff;
+    padding-top: -0.3rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    img {
+      width: 1.4rem;
+    }
+
+    b {
+      font-size: 0.16rem;
+
+      font-weight: 800;
+    }
+    p {
+      font-size: 0.16rem;
+      padding-right: 0.3rem;
+      margin: 0;
+      padding-left: 0.2rem;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      p {
+        padding-right: 0.2rem;
+        padding-left: 0.3rem;
+      }
+    } 
+  }
+}
+.sect4{
+  padding-top: 0.4rem;
+  .list{
+    width: 4.48rem;
+    margin-left: 0.1rem;
+    &__item{
+      padding-left: 0.28rem;
+      background-image: url(../../img/svg.svg);
+      background-repeat: no-repeat;
+      background-size: 0.17rem;
+      background-position: 0 0.05rem;
+    }
+  }
+}
+.sect5{
+  padding-bottom: 0.7rem;
+  padding-top: 0.5rem;
+  .box{
+    position: relative;display: flex;
+      align-items: center;
+      justify-content: center;
+    b{
+      position: absolute;
+      top: 0.02rem;
+      color: #fff;
+      left: auto;
+      
+    }
+  }
+  &__item{
+    width: 4.49rem;
+    margin: 0 auto;
+    @include flex(row, space-between, center);
+    padding-bottom: 0.1rem;
+    color: #000;
+    padding-top: -0.3rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    img {
+      width: 1.39rem;
+    }
+
+ 
+    p {
+      padding-right: 0.3rem;
+      padding-left: 0.2rem;
+      font-size: 0.17rem;
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      p {
+        padding-right: 0.2rem;
+        padding-left: 0.3rem;
+      }
+    } 
+  }
+}
+.sect6 {
+  background-image: url(../../img/sect3bag.png);
+background-repeat: no-repeat;
+min-height: 8rem;
+background-size: cover;
+}
+.sect7 {
+  &__grid {
+    padding-left: 0.1rem;
+    padding-top: 0.2rem;
+    p {
+      font-weight: 300;
+      font-size: 0.2rem;
+      margin: 0;
+    }
+  }
+  &__item {
+    display: grid;
+    grid-gap: 0.29rem;
+    margin-bottom: 0.25rem;
+    grid-template-columns: 0.7rem 2.5rem;
+    align-items: center;
+  }
+}
