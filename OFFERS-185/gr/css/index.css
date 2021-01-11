@@ -188,9 +188,6 @@ a:hover { border-bottom-color: transparent; }
 img { max-width: 100%; border: medium none; }
 .list--ul > .list__item::before { content: ""; position: absolute; top: 0.75em; right: 100%; height: 1px; width: 12px; margin-right: 10px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; }
 .list--ol > .list__item::before { content: counter(liCnt, decimal) "."; position: absolute; right: 100%; margin-right: 10px; font-size: 1rem; font-weight: bold; }
-.btn { position: relative; display: inline-block; height: 40px; line-height: 40px; min-width: 40px; padding: 0px 1.2em; border: medium none; outline: medium none; background: rgb(41, 124, 179) none repeat scroll 0% 0%; color: rgba(255, 255, 255, 0.95); font-size: 0.75rem; letter-spacing: 1px; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; cursor: pointer; transition: all 0.2s ease 0s; }
-.btn:hover { background: rgb(95, 170, 215) none repeat scroll 0% 0%; }
-.btn:active { background: rgb(26, 114, 163) none repeat scroll 0% 0%; }
 *::-moz-selection { background: rgba(229, 90, 41, 0.75) none repeat scroll 0% 0%; color: rgb(255, 255, 255); text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25); }
 .i--cross::before, .i--cross::after { content: ""; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto; height: 2px; width: 16px; background: currentcolor none repeat scroll 0% 0%; transform: rotate(45deg); }
 .i--cross::after { transform: rotate(-45deg); }
@@ -261,7 +258,7 @@ img { max-width: 100%; border: medium none; }
 .actual-info { margin: 0px; padding-bottom: 15px; font-size: 0.875rem; }
 .menu { top: 100%; left: 0px; right: 0px; font-size: 0.875rem; line-height: 1.428; }
 .menu__link { display: inline-block; vertical-align: middle; margin-left: 3.5%; border-bottom-color: transparent; letter-spacing: 1px; font-weight: bold; }
-.menu-toggle { display: none; position: absolute; top: 0px; bottom: 0px; right: 20px; height: 23px; width: 27px; margin: auto; cursor: pointer; transition: all 0.25s ease 0s; }
+.menu-toggle { display: none; position: absolute; top: 0px; bottom: 0px; right: 20px; height: 23px;width: 27px; margin: auto; cursor: pointer; transition: all 0.25s ease 0s; }
 .menu-toggle__line { height: 3px; background: rgb(41, 124, 179) none repeat scroll 0% 0%; }
 .menu-toggle__line + .menu-toggle__line { margin-top: 7px; }
 .subnav { border-bottom: 2px solid rgb(246, 246, 246); background: rgb(251, 251, 252) none repeat scroll 0% 0%; font-weight: normal; }
@@ -488,7 +485,7 @@ img { max-width: 100%; border: medium none; }
 	.direction-nav--extend .hasdrop__toggle::after { margin-top: 16px; }
 	.direction-nav--extend .direction-nav__content.hasdrop__container::after { display: none; }
 	.footer { padding-top: 0px; }
-	.menu-toggle { display: block; }
+	.menu-toggle { display: block; width: 20px; height: 17px; }
 	.questions-list__item:nth-child(n) { padding-bottom: 0px; }
 	.modal-container--centered::after { display: none; }
 }
@@ -1164,3 +1161,45 @@ header { border-bottom: 3px solid rgb(242, 242, 242); }
 .screenLock { position: fixed; width: 100%; background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; top: 0px; left: 0px; z-index: 99999; display: none; }
 .msg { position: absolute; width: 800px; height: auto; top: 150px; left: 45%; padding-bottom: 20px; margin-left: -300px; background: rgb(251, 251, 252) none repeat scroll 0% 0%; border: 2px solid rgb(246, 246, 246); }
 .close { position: absolute; top: 1px; right: 5px; font-size: 40px; cursor: pointer; }
+.img-widh{
+	max-width: 500px;
+	width: 100%;
+}
+.btn{
+	background-color: transparent;
+	position: relative;
+	text-align: center;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+.btn p{
+position: absolute;
+color: #fff;
+font-size: 23px;
+top: auto;
+text-transform: uppercase;
+font-weight: bold;
+left: auto;
+}
+@media (max-width: 600px){
+	.btn p{
+		font-size: 20px;
+		}
+}
+@media (max-width: 450px){
+	.logo__text{
+		font-size: 12px;
+	}
+	.logo__uppercase{
+		font-size: 26px;
+	}
+	.btn p{
+		font-size: 16px;
+		}
+}
+@media (max-width:350px){
+	.menu-toggle{
+		display: none;
+	}
+}
