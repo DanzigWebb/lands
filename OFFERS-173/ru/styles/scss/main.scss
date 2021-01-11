@@ -6,51 +6,55 @@
 @import "timer";
 .intro {
   padding-bottom: 0.8rem;
+  box-sizing: border-box;
+  background-image: url(../../img/intro.png);
+  min-height: 9.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
   &__subtitle {
-    color: #fff;
+    color: #000;
     text-align: center;
-    margin-top: -0.2rem;
     line-height: 1.2;
-    font-weight: 500;
-    font-size: 0.2rem;
-  }
-  .text_top {
-    padding: 0.2rem 0.3rem;
-    padding-bottom: 0;
-  }
-  &__top {
-    background-image: url(../../img/intro.png);
-    min-height: 6.6rem;
-    background-size: contain;
-    background-repeat: no-repeat;
+    font-weight: 300;
+    padding-bottom: 0.26rem;
+    font-size: 0.26rem;
   }
   .trigger {
     padding-top: 0.3rem;
     &__item {
-      color: #fff;
-      margin-bottom: 0.15rem;
-      font-weight: 500;
-      font-size: 0.19rem;
-      @include title(2rem, #8e2472, 0.23rem);
-      width: max-content;
-      &:last-child {
-        margin-bottom: 0;
+      width: 4.29rem;
+      opacity: 0.9;
+      margin: 0 auto;
+      border: 2px solid #b20421;
+      border-radius: 50px;
+      padding: 0.03rem 0.03rem;
+      @include flex (row,flex-start,center);
+      margin-bottom: 0.3rem;
+      img{
+        width: 0.67rem;
+        margin-right: 0.2rem;
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 0.25rem;
+        text-transform: uppercase;
       }
     }
   }
   .price {
-    padding-top: 0.7rem;
+    padding-top: 0.1rem;
     padding-left: 0.3rem;
-    padding-bottom: 1.9rem;
+    padding-bottom: 2.17rem;
     s {
       text-decoration-line: line-through;
-      font-size: 0.4rem;
+      font-size: 0.3rem;
       font-weight: 300;
       display: block;
-      color: #c8c8c8;
+      color: #8f8f8f;
     }
     b {
-      color: #ffffff;
+      color: #000000;
       line-height: 1;
       font-size: 0.6rem;
       font-weight: 800;
@@ -89,16 +93,16 @@
     }
   }
 }
-.sect3{
-padding-top: 0.5rem;
-background-image: url(../../img/sect3bag.png);
-background-repeat: no-repeat;
-min-height: 8rem;
-background-size: cover;
-h2.sect2{
-  padding-bottom: 0.4rem;
-}
-  &__item{
+.sect3 {
+  padding-top: 0.5rem;
+  background-image: url(../../img/sect3bag.png);
+  background-repeat: no-repeat;
+  min-height: 8rem;
+  background-size: cover;
+  h2.sect2 {
+    padding-bottom: 0.4rem;
+  }
+  &__item {
     @include flex(row, space-between, center);
     padding-bottom: 0.1rem;
     color: #fff;
@@ -127,15 +131,15 @@ h2.sect2{
         padding-right: 0.2rem;
         padding-left: 0.3rem;
       }
-    } 
+    }
   }
 }
-.sect4{
+.sect4 {
   padding-top: 0.4rem;
-  .list{
+  .list {
     width: 4.48rem;
     margin-left: 0.1rem;
-    &__item{
+    &__item {
       padding-left: 0.28rem;
       background-image: url(../../img/svg.svg);
       background-repeat: no-repeat;
@@ -144,22 +148,22 @@ h2.sect2{
     }
   }
 }
-.sect5{
+.sect5 {
   padding-bottom: 0.7rem;
   padding-top: 0.5rem;
-  .box{
-    position: relative;display: flex;
-      align-items: center;
-      justify-content: center;
-    b{
+  .box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    b {
       position: absolute;
       top: 0.02rem;
       color: #fff;
       left: auto;
-      
     }
   }
-  &__item{
+  &__item {
     width: 4.49rem;
     margin: 0 auto;
     @include flex(row, space-between, center);
@@ -173,7 +177,6 @@ h2.sect2{
       width: 1.39rem;
     }
 
- 
     p {
       padding-right: 0.3rem;
       padding-left: 0.2rem;
@@ -185,14 +188,14 @@ h2.sect2{
         padding-right: 0.2rem;
         padding-left: 0.3rem;
       }
-    } 
+    }
   }
 }
 .sect6 {
   background-image: url(../../img/sect3bag.png);
-background-repeat: no-repeat;
-min-height: 8rem;
-background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 8rem;
+  background-size: cover;
 }
 .sect7 {
   &__grid {

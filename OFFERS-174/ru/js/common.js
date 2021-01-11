@@ -22,3 +22,12 @@ $(document).ready(function () {
     autoHeight: true
   });
 });
+$(document).ready(function () {
+  $(".galleria").owlCarousel({
+    margin: 20,
+    items: 1,
+    dots: true,
+    nav: false,
+    autoHeight: true
+  });
+});
