@@ -1,10 +1,11 @@
 .reviews {
   &__item {
+    font-family: 'Roboto', sans-serif;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     margin: 0.5rem auto;
     position: relative;
-    min-height: 6.30rem;
-    width: 3.57rem;
+    min-height: 5.11rem;
+    width: 3.6rem;
     padding-bottom: 0.5rem;
     background-color: #fff;
     box-sizing: border-box;
@@ -120,10 +121,10 @@
       height: 0.2rem;
       outline: none;
       border-radius: 50%;
-      background:  #fff ;
+      background:  #C4C4C4 ;
       margin: 0 3px;
       &.active {
-        background:#FFE600;
+        background:#F8A1EA;
       }
     }  }
   }
