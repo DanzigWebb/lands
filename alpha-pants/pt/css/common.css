@@ -1,0 +1,39 @@
+.fb_iframe_widget iframe{
+    width: auto !important;
+}
+*{ box-sizing: border-box;}
+.product_info img:not(.cus_width){
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.width52{
+    width: 52px;
+}
+.dcenter{
+    margin: 0 auto;
+}
+.sales{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.sales label {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.sales label del{
+    font-size: 18px;
+}
+.price {
+    font-size: 30px;
+}
+.text-sal {
+    color: #000;
+    font-weight: 300;
+}
+.text-sal b{
+    display: block;
+    margin-top: 15px;
+    line-height: 0.8;
+}
