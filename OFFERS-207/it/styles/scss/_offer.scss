@@ -1,0 +1,68 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form {
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+input,
+textarea {
+  height: 0.62rem;
+  width: 3.47rem;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 0.22rem;
+  color: #1a3157;
+  font-weight: bold;
+  border: 1.14208px solid #DC0B80;
+  box-sizing: border-box;
+  border-radius: 41px;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+}
+input::placeholder {
+  font-size: 0.17rem;
+  font-family: inherit;
+  font-weight: normal;
+  color: #A7A7A7;
+}
+
+// ========================>
+// policy
+// <=======================
+.policy_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 1rem;
+  background-color: #3b3c3d;
+  font-size: 0.16rem;
+  color: #fff;
+  text-align: center;
+  a {
+    color: #7c7e86;
+  }
+}
