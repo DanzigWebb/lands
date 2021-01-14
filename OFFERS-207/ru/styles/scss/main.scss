@@ -24,13 +24,14 @@
     font-style: italic;
   }
   .text_top {
-    padding: 0.2rem 0.3rem;
+    padding: 0.2rem 0.2rem;
     padding-bottom: 0;
   }
   .price {
     background-image: url(../../img/bac_price.png);
-    min-height: 5.01rem;
+    min-height: 4.7rem;
     width: 4.8rem;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     position: relative;
@@ -60,7 +61,7 @@
       }
       &--bottom {
         top: 3.06rem;
-        right: 0.4rem;
+        right: 0.5rem;
         .discount {
           padding: 0 0.1rem;
           text-align: center;
