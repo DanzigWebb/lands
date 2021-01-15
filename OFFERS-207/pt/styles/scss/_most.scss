@@ -13,7 +13,7 @@ body {
   position: relative;
   line-height: 1.4;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   overflow-x: hidden;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
@@ -81,13 +81,16 @@ h2 {
   &.right {
     text-align: right;
   }
-  &.intro__title {
-    font-size: 0.24rem;
+  &.intro_title {
+    font-size: 0.3rem;
     color: #000000;
-    text-align: center;
     line-height: 1;
-    font-weight: 800;
-    padding-bottom: 0 ;
+    font-weight: 100;
+
+    b {
+      font-size: 0.7rem;
+      display: block;
+    }
   }
   &.sect {
     font-size: 0.35rem;
@@ -139,16 +142,16 @@ h2 + p {
 }
 .btn {
   @include flex(row, center, center);
-  background: #FFCD00;
-  box-shadow: 0px 4px 20px rgba(255, 205, 0, 0.4);
+  background: radial-gradient(89.09% 89.09% at 50% 20%, #fff84a 0%, #ffab00 100%);
   border-radius: 50px;
   border: none;
+  box-shadow: 0px 5px 0px rgb(182, 121, 0);
   border-radius: 50px;
-  color: #000000;
+  color: #000000ad;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.23rem;
+  font-size: 0.25rem;
   height: 0.65rem;
   width: max-content;
   padding: 0 0.6rem;
