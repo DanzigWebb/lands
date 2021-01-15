@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", Datee);
 function Datee() {
     var msInDay = 86400000,
         counterLength = 90,
-        months, countryName = 'es', // Встановлюємо мову для місяців.
+        months, countryName = 'pt', // Встановлюємо мову для місяців.
         isAbbreviated = false, // Якщо потрібно скорочений варіант місяців з трьох букв, наприклад "янв", "июн" і т.д, тоді ставим TRUE.
         localDate = new Date();
 
