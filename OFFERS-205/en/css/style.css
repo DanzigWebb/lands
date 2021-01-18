@@ -30,7 +30,7 @@
 
 .section {
   max-width: 450px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -262,27 +262,23 @@
 }
 
 .div-block-4 {
-  min-height: 28vh;
-  background-image: url("../img/5e45976b03b5d90794fceda0_f20a1ffa-4783-43f6-ad9b-ca0ab53cb056-1567997499.jpg");
-  background-position: 50% 50%;
-  background-size: 450px;
-  background-repeat: no-repeat;
   text-align: center;
 }
 
 .italic-text-5 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  color: #000;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
 }
 
 .text-block-5 {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-right: 28px;
   padding-left: 28px;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -352,7 +348,6 @@
 .image-3 {
   margin-bottom: 10px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #000;
 }
 
 .slider {
@@ -600,4 +595,79 @@
     padding-top: 3px;
     padding-bottom: 3px;
   }
+}
+.sect6__grid {
+  padding: 0 20px;
+  padding-top: 20px;
+}
+.sect6__grid p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+.sect6__item {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 29px;
+  margin-bottom: 25px;
+  -ms-grid-columns: 70px 250px;
+  grid-template-columns: 70px 250px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .sect6__grid p {
+font-size: 13px;
+  }
+  .sect6__item {
+
+    -ms-grid-columns: 50px 180px;
+    grid-template-columns: 50px 180px;
+
+  }
+}
+@media (max-width: 400px) {
+  .sect6__grid p {
+font-size: 13px;
+  }
+  .sect6__item {
+    grid-gap: 10px;
+    -ms-grid-columns: 50px 180px;
+    grid-template-columns: 50px 180px;
+
+  }
+}
+@media (max-width: 300px) {
+  .sect6__grid p {
+font-size: 12px;
+  }
+  .sect6__item {
+    grid-gap: 10px;
+    -ms-grid-columns: 40px 140px;
+    grid-template-columns: 40px 140px;
+
+  }
+  .text_steps p{
+    font-size: 11px;
+    line-height: 1;
+  }
+}
+iframe{
+  max-width: 305px;
+  width: 100%;
+  height: 300px;
+}
+.text_steps{
+  display: flex;
+}
+.text_steps p {
+ max-width:150px ;
+ width: 100%;
+ text-align: center;
+ box-sizing: border-box;
+ padding: 0 5px;
+margin-top: -30px;
+padding-bottom: 30px;
 }

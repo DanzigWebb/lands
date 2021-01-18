@@ -1,134 +1,70 @@
 .reviews {
   &__item {
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    margin: 0.5rem auto;
-    position: relative;
-    min-height: 6.30rem;
-    width: 3.57rem;
-    padding-bottom: 0.5rem;
-    background-color: #fff;
-    box-sizing: border-box;
-  }
-  &__header {
-    height: 0.46rem;
-    @include flex(row, space-between, center);
-    padding: 0 0.24rem;
-    background: #fafafa;
+   margin: 0 auto;
+   width: max-content;
+    .comm {
+      width: 3.57rem; 
+      background: #fafafa;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px;
+      box-sizing: border-box;
+      padding: 0.3rem 0.4rem;
+      font-size: 0.2rem;
 
-    color: #1c1c1c;
-  }
-  &__lef {
-    @include flex(row, left, center);
-  }
-  &__righ {
-    @include flex(row, left, center);
-  }
-  &__video {
-    width: 0.25rem !important;
-  }
-
-  &__phon {
-    width: 0.22rem !important;
-    margin-right: 0.2rem;
-  }
-  &__main {
-    margin-top: 0.18rem;
-  }
-  &__name {
-    b {
-      font-size: 0.14rem;
-      color: #000;
-      display: block;
-      margin-bottom: -0.08rem;
-    }
-    span {
-      color: #a09f9f;
-      font-size: 0.11rem;
-    }
-  }
-  &__comment {
-    max-width: 2.3rem;
-    box-sizing: border-box;
-    border-radius: 24px;
-    padding: 0.08rem 0;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    margin: 0;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 1.4;
-    width: max-content;
-
-    &--left {
-      background: #f6f6f6;
-      border-radius: 12.8013px 12.8013px 12.8013px 3.20032px;
-    }
-    &--righ {
-      background: #efefef;
+      font-weight: normal;
+      line-height: 1.2;
       position: relative;
-      margin-left: auto;
-      background: #0084ff;
-      border-radius: 12.8013px 3.20032px 12.8013px 12.8013px;
-      color: #ffff;
-    }
-    &--img {
-      min-width: 2.3rem;
-      margin-right: -0.1rem;
-      margin-left: -0.1rem;
-      margin-top: -0.08rem;
-      margin-bottom: 0.09rem;
-    }
-  }
-  &__user {
-    margin-bottom: 0.2rem;
-    &--left {
-      @include flex(row, left, flex-end);
-      position: relative;
-      left: 0.1rem;
-    }
-    &--righ {
-      @include flex(row, right, flex-end);
-      .img {
-        margin-left: 0.1rem;
+      margin-bottom: 0.6rem;
+      &::after{
+        content: '';
+        background-image: url(../../img/revi.png);
+        width: 0.6rem ;
+        background-position-x: right;
+        background-position-y: bottom;
+        position: absolute;
+        bottom: -0.39rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 0.4rem;
       }
     }
+    img.evaluat{
+      width: 1.23rem;
+    }
+    img.comment{
+      width: 2.02rem;
+    }
   }
-
-  &__bottom {
-    background-image: url(../../img/bottom.png);
-    background-size: cover;
-    height: 0.41rem;
-    width: 3.37rem;
-    position: absolute;
-    bottom: 0;
-  left: 0.1rem;
-    margin: 0 auto;
-    margin-top: 0.23rem;
-    @include flex(row, left, center);
-  }
- 
-} 
+}
 .owl-carousel {
-    .owl-dots {
-      padding: 0.2rem 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
+  .owl-dots {
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     button {
-      width: 0.2rem;
-      height: 0.2rem;
+      width: 0.15rem;
+      height: 0.15rem;
       outline: none;
       border-radius: 50%;
-      background:  #C4C4C4 ;
+      background: #DFDFDF;
       margin: 0 3px;
       &.active {
-        background:#F8A1EA;
+        background: #FFAB00;
       }
-    }  }
+    }
   }
+  .uzer{
+    @include flex (row)
+    b{
+      margin-top: 0.1rem;
+    }
+  }
+}
 .owl-carousel .owl-item .ava {
-  width: 0.36rem;
+  width: 0.6rem;
   margin-left: 0.24rem;
   margin-right: 0.11rem;
 }

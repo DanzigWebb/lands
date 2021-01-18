@@ -139,39 +139,67 @@
   padding-top: 0.5rem;
   .video {
     padding-top: 0.2rem;
-    iframe{
+    iframe {
       width: 4.8rem;
-    height: 2.9rem;
+      height: 2.9rem;
     }
   }
-  p{
+  p {
     width: 4.29rem;
     margin: 0 auto;
     margin-bottom: 0.3rem;
   }
-  .box{
+  .box {
     width: 4.42rem;
     padding: 0.15rem 0.28rem;
-    border: 5px solid #4F7BAF;
+    border: 5px solid #4f7baf;
     margin: 0 auto;
-box-sizing: border-box;
-    @include flex (row,space-between,center);
-    p{
+    box-sizing: border-box;
+    @include flex(row, space-between, center);
+    p {
       margin: 0;
     }
-    img{
+    img {
       width: 0.92rem;
       margin-right: 0.2rem;
     }
   }
 }
 .sect3 {
+  background: #06101b;
+  padding-top: 0.5rem;
+  &__main{
+    padding-top: 0.4rem;
+  }
   &__item {
     @include flex(column, center, center);
+    width: 4.45rem;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+    height: 1.59rem;
+    background-size: contain;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    &:nth-child(odd){
+      text-align: right;
+    }
+    &--1 {
+      background-image: url(../../img/sect3__item1.png);
+    }
+    &--2 {
+      background-image: url(../../img/sect3__item2.png);
+    }
+    &--3 {
+      background-image: url(../../img/sect3__item3.png);
+    }
+    &--4 {
+      background-image: url(../../img/sect3__item4.png);
+    }
     p {
-      width: 4.39rem;
+      width: 3.8rem;
       margin: 0.16rem auto;
-      margin-bottom: 0.3rem;
     }
     b {
       font-size: 0.25rem;
@@ -181,9 +209,32 @@ box-sizing: border-box;
     }
   }
 }
-.sect5 {
+.sect4 {
   padding: 0.79rem 0;
-  background: #f3e7ee;
+  iframe {
+    width: 4.8rem;
+    height: 2.9rem;
+  }
+}
+.sect5{
+  color: #fff;
+  background: #06101B;
+padding: 0.4rem 0.2rem;
+span{
+ font-size: 0.16rem; 
+ font-weight: 600;
+}
+p{
+  margin: 0.1rem 0;
+}
+.img{
+  margin: 0 auto;
+width: max-content;
+padding: 0.4rem 0;
+  img{
+    width: 3.53rem;
+  }
+}
 }
 .sect6 {
   &__grid {
