@@ -13,7 +13,9 @@
 	<link rel="stylesheet" href="styles/css/main.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
@@ -31,19 +33,22 @@
 					<div class="item"><img src="img/trigger_1.svg" alt=""><b>Яркий свет</b></div>
 					<div class="item"><img src="img/trigger_2.svg" alt=""><b>Простая установка</b></div>
 				</div>
-				<div class="price price_old">
+				<div class="price price__old">
 					<span>обычная цена</span>
-					<s>100€</s>	
+					<s>100€</s>
 				</div>
 				<div class="price price__new">
-					<span>обычная цена</span>
-					<b>49€</b>	
-					<img src="img/price_prod.png" alt="">
-					<div class="quantity"><b>4 шт.</b></div>	
+					<div class="price__text">
+						<span>цена со скидкой</span>
+						<b>49€</b>
+					</div>
+					<div class="prod">
+						<p>4 шт.</p>
+					</div>
 				</div>
 			</div>
 			<div class="timer">
-				<p class="timer__title">До конца акции осталось</p>
+				<p class="timer__title title_sec">До конца акции осталось</p>
 				<br>
 				<div class="timer__wrapper">
 					<div class="t-hour"></div>
@@ -58,61 +63,48 @@
 				</div>
 			</div>
 			<br>
-			<a href="#offer" class="btn">Заказать</a>
+			<a href="#offer" class="btn">купить</a>
 		</div>
 	</header>
 
 	<main class="main">
 		<section class="sect1">
-			<h2 class="sect">Роскошное кольцо Сaprice</h2>
-			<p class="sub-title">Стиль и роскошь видно в каждой детали этого потрясающего кольца. </p>
+			<h2 class="sect white">Преимущества светодиодной подсветки для мебельных петель:</h2>
+			<div class="sect1__main">
+				<p><b>Удобно и комфортно</b>Вы можете не иметь специальных навыков, и легко установить освещение при
+					монтаж</p>
+				<p><b>Автоматическое вкл/ выкл света</b>Ярко освещает внутреннюю часть мебели</p>
+				<p><b>Низкая стоимость и высокое качество</b>Вы можете обеспечить комфортном все шкафы в вашем доме</p>
+			</div>
+			<div class="sect1__prod">
+				<p>Очень простая установка!</p>
+				<img src="img/prod_sect1.png" alt="">
+			</div>
 			<br>
-			<img src="img/sect1_1.jpg" alt="">
-			<p class="text">У него есть все для того чтобы покорить даже самую взыскательную ценительницу украшений.</p>
-			<p class="text">Кольцо получило <b>оригинальный дизайн и непревзойденное качество.</b> Сложно устоять перед
-				такой красотой.</p>
-			<p class="text">Именно такое кольцо стоит дарить любимой девушке, подруге или дорогому человеку – <b>этот
-					подарок запомнится навсегда!</b>
-			</p>
 			<br>
-			<a href="#offer" class="btn">ЗАКАЗАТЬ СО СКИДКОЙ</a>
+			<a href="#offer" class="btn">купить</a>
 		</section>
 		<section class="sect2">
-			<div class="sect2__main">
-				<div class="sect2__left">
-					<p class="title">
-						Силиконовые накладки подойдут для любого кольца!
-					</p>
-					<img src="img/sect2_1.png" alt="">
-				</div>
-				<div class="sect2__right">
-					<img src="img/sect2_2.png" alt="">
-				</div>
+			<h2 class="sect black">Универсальная подсветка</h2>
+			<!-- <video class="video" preload="auto" autoplay="true" loop="true" muted="muted">
+				<source src="video.mp4">
+			</video> -->
+			<br>
+			<p>Если вам часто не хватает света в вашей гардеробной, тумбочке с вещами, кухонном стеллаже или в- любом
+				другом месте, <b>это очень легко исправить!</b>
+
+			</p>
+			<p><b>Светодиодная Led подсветка подходит к разным видам мебели.</b> Устанавливается на петлю. Быстро,
+				удобно и не занимает дополнительного места</p>
+			<div class="box">
+				<img src="img/sect2__box.svg" alt="">
+				<p><b>Автоматически активируется</b> при каждом открытии дверцы.</p>
 			</div>
 		</section>
 		<section class="sect3">
-			<h2 class="sect">Прекрасный подарок на особенный случай</h2>
-			<p class="sub-title">Красота в деталях</p>
+			<h2 class="sect white">Где можно использовать</h2>
 			<div class="sect3__item">
-				<img src="img/sect3_1.png" alt="">
-				<b>Роскошный дизайн</b>
-				<p>Благодаря эксклюзивному дизайну, кольцо дополнит любой образ и придадаст ему элегантности и шик</p>
-			</div>
-			<div class="sect3__item">
-				<img src="img/sect3_2.png" alt="">
-				<b> Высокое качество</b>
-				<p>Кольцо изготовлено из гипоаллергенного сплава, которое не темнеет со временем</p>
-			</div>
-			<div class="sect3__item">
-				<img src="img/sect3_3.png" alt="">
-				<b>Идеальный подарок</b>
-				<p>Кольцо "Сaprice" станет идеальным подарком любимой девушке, жене или дорогому человеку </p>
-			</div>
-			<div class="sect3__item">
-				<img src="img/sect3_4.png" alt="">
-				<b>День скидок</b>
-				<p>Успейте купить кольцо по акции с максимальной скидкой – 50%. Внимание! Количество товара ограничено!
-				</p>
+				
 			</div>
 		</section>
 		<section class="sect5">
