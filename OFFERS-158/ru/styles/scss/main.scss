@@ -168,7 +168,7 @@
 .sect3 {
   background: #06101b;
   padding-top: 0.5rem;
-  &__main{
+  &__main {
     padding-top: 0.4rem;
   }
   &__item {
@@ -182,7 +182,7 @@
     font-weight: 600;
     padding: 0 0.3rem;
     box-sizing: border-box;
-    &:nth-child(odd){
+    &:nth-child(odd) {
       text-align: right;
     }
     &--1 {
@@ -216,25 +216,25 @@
     height: 2.9rem;
   }
 }
-.sect5{
+.sect5 {
   color: #fff;
-  background: #06101B;
-padding: 0.4rem 0.2rem;
-span{
- font-size: 0.16rem; 
- font-weight: 600;
-}
-p{
-  margin: 0.1rem 0;
-}
-.img{
-  margin: 0 auto;
-width: max-content;
-padding: 0.4rem 0;
-  img{
-    width: 3.53rem;
+  background: #06101b;
+  padding: 0.4rem 0.2rem;
+  span {
+    font-size: 0.16rem;
+    font-weight: 600;
   }
-}
+  p {
+    margin: 0.1rem 0;
+  }
+  .img {
+    margin: 0 auto;
+    width: max-content;
+    padding: 0.4rem 0;
+    img {
+      width: 3.53rem;
+    }
+  }
 }
 .sect6 {
   &__grid {
@@ -252,5 +252,35 @@ padding: 0.4rem 0;
     margin-bottom: 0.25rem;
     grid-template-columns: 0.7rem 2.5rem;
     align-items: center;
+  }
+}
+.sect7 {
+  background-color: #06101b;
+  &__main{
+    padding-top: 0.5rem;
+  }
+  &__item {
+    @include flex(column);
+    margin-bottom: 0.3rem;
+    .box {
+      @include flex(row,flex-start,center);
+      padding-left: 0.66rem;
+      img{
+        width: 0.46rem;
+        margin-right: 0.2rem;
+      }
+      b {
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        color: #00a7c8;
+        font-weight: 900;
+      }
+    }
+    p{
+      color: #ffff;
+      margin-left: 0.15rem;
+      width: 3.36rem;
+      font-weight: normal;
+    }
   }
 }

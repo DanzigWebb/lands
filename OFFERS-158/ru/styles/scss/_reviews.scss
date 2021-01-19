@@ -32,14 +32,15 @@
     img.evaluat{
       width: 1.23rem;
     }
-    img.comment{
+    img.img-comm{
       width: 2.02rem;
     }
   }
 }
 .owl-carousel {
   .owl-dots {
-    padding: 0.2rem 0;
+    padding: 0.6rem 0;
+    padding-bottom: 0.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +58,7 @@
     }
   }
   .uzer{
-    @include flex (row)
+    @include flex (row);
     b{
       margin-top: 0.1rem;
     }
