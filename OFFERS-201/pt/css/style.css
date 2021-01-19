@@ -81,7 +81,7 @@ p {
 }
 
 .block_1 .container {
-  padding: 70px 15px 80px;
+  padding: 30px 15px 80px;
 }
 
 .block_1-content {
@@ -97,9 +97,9 @@ p {
 
 .block_1-title {
   margin-bottom: 20px;
-
+margin-top: 0;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .block_1-subtitle {
