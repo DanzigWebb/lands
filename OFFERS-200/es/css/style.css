@@ -18,10 +18,11 @@
 }
 .old-cost b {
     text-decoration: line-through;
+    font-size: 30px;
 }
 .new-cost {
     float: right;
-    font-size: 29px;
+    font-size: 38px;
 }
 .old-cost,
 .new-cost {
@@ -38,12 +39,12 @@
     position: absolute;
     top: -23px;
     left: 42px;
-    font-size: 14px;
+    font-size: 11px;
     color: #4f3619;
     text-transform: uppercase;
 }
 .old-cost:before {
-    content: "HARGA LAMA:";
+    content: "Precio anterior:";
 }
 .new-cost:before {
     content: "HARGA BARU:";
@@ -477,7 +478,7 @@ background-size: 260px;}
 /*block7*/
 .block7 {
     background: url(../img/b7.jpg) /*tpa=http://funvezun.ru/amuletz/2/img/b7.jpg*/ no-repeat center top;
-    height: 499px;
+ height: 499px;
 }
 .stars {
     position: absolute;
@@ -508,6 +509,14 @@ background-size: 260px;}
 }
 .ship {
     text-align: center;
+    display: flex;
+justify-content: space-between;
+align-items: flex-start
+}
+@media(max-width: 978px){
+.ship{
+    display: contents;
+}
 }
 .ship li {
     display: inline-block;
@@ -696,7 +705,7 @@ background-size: 260px;}
         display: block;
     }
     .block6 {
-        padding: 40px 0 426px;
+        padding: 40px 0 106px;
     }
     .stars {
         width: 462px;

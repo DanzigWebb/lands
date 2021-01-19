@@ -1,6 +1,6 @@
 /*Таймер*/
 .countbox:before {
-    content: 'PENAWARAN INI BERAKHIR:';
+    content: 'HASTA EL FINAL DE LA PROMOCIÓN QUEDAN:';
     display: block;
     text-align: center;
     font-size: 14px;

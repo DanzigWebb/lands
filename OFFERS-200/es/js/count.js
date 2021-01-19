@@ -41,8 +41,8 @@ function CountBox() {
 			secs = Math.floor(amount);
 			secs1 = (secs >= 10) ? secs.toString().charAt(0) : '0';
 			secs2 = (secs >= 10) ? secs.toString().charAt(1) : secs.toString().charAt(0);
-			out = "<div class='countbox-num'><div class='countbox-hours'><span></span>" + hours1 + hours2 + "</div><div class='countbox-hours-text'>jam</div></div>" +
-			"<div class='countbox-num'><div class='countbox-mins'><span></span>" + mins1 + mins2 +"</div><div class='countbox-mins-text'>menit</div></div>" + "<div class='countbox-num'><div class='countbox-secs'><span></span>" + secs1 + secs2 + "</div><div class='countbox-secs-text'>detik</div></div>";
+			out = "<div class='countbox-num'><div class='countbox-hours'><span></span>" + hours1 + hours2 + "</div><div class='countbox-hours-text'>HORAS</div></div>" +
+			"<div class='countbox-num'><div class='countbox-mins'><span></span>" + mins1 + mins2 +"</div><div class='countbox-mins-text'>MINUTOS</div></div>" + "<div class='countbox-num'><div class='countbox-secs'><span></span>" + secs1 + secs2 + "</div><div class='countbox-secs-text'>SEGUNDOS</div></div>";
 			var list = document.getElementsByClassName("countbox");
 			for (var i = 0; i < list.length; i++) {
 				list[i].innerHTML = out;
