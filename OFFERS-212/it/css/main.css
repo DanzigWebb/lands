@@ -22,8 +22,10 @@
 
 .top-block-v1{
     position: relative;
-    padding: 412px 0 0;
+    padding: 570px 0 0;
+ 
     background: url(../img/top-block-v1.jpg) 50% 0 no-repeat;
+       background-size: 480px;
 }
 .end {
     background-image: url(../img/top-block-v1.jpg);
@@ -49,8 +51,8 @@
     position: absolute;
     width: 120px;
     height: 120px;
-    top: 20px;
-    right: 20px;
+top: 500px;
+    right: 180px;
     padding: 18px 0 0;
     text-align: center;
     font-weight: 700;
@@ -68,6 +70,7 @@
 }
 .top-block-v1 .cost-cont{
     height: 85px;
+    background-color: #d70195;
     text-align: center;
 }
 .top-block-v1 .cost-cont>div{
