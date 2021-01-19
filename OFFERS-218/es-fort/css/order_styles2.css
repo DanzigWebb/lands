@@ -1,0 +1,719 @@
+fieldset
+{
+    margin-bottom: 1em;
+    padding: 0.5em;
+    padding-bottom: 3em;
+}
+form
+{
+    margin: 0px; padding: 0px
+}
+img
+{
+    border: 0px none
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+th
+{
+    padding-right: 1em;
+    border-bottom: 3px solid rgb(204, 204, 204);
+    text-align: left
+}
+tr
+{
+    height: 30px
+}
+tr:hover
+{
+    background-color: rgba(204, 204, 204,0.2)
+}
+/* tr.even, tr:nth-child(odd)
+{
+    padding: 0.1em 0.6em;
+    background-color: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(204, 204, 204)
+}
+tr:nth-child(odd) .form-item, tr.even .form-item
+{
+    margin-bottom: 0px; margin-top: 0px;
+    white-space: nowrap
+} */
+tbody
+{
+    border-top: 1px solid rgb(204, 204, 204)
+}
+thead th
+{
+    padding-right: 1em;
+    border-bottom: 3px solid rgb(204, 204, 204);
+    text-align: left
+}
+.item-list ul
+{
+    margin: 0px 0px 0.75em; padding: 0px
+}
+.item-list ul li
+{
+    margin: 0px 0px 0.25em 1.5em; padding: 0px;
+    list-style: disc outside none
+}
+.form-item
+{
+    margin-bottom: 0px; margin-top: 1em
+}
+.form-item label.option
+{
+    display: inline;
+    font-weight: normal
+}
+.form-item label
+{
+    display: block;
+}
+.form-checkboxes, .form-radios
+{
+    margin: 1em 0px
+}
+.form-checkboxes .form-item, .form-radios .form-item
+{
+    margin-bottom: 0.4em; margin-top: 0.4em
+}
+.marker, .form-required
+{
+    color: rgb(255, 0, 0)
+}
+html.js fieldset.collapsible
+{
+    position: relative
+}
+html.js fieldset.collapsible .fieldset-wrapper
+{
+    overflow: auto
+}
+html.js fieldset.collapsible legend a
+{
+    padding-left: 15px;
+    background: url('../images/menu-expanded.png') no-repeat scroll 5px 75% transparent
+}
+html.js fieldset.collapsible legend a
+{
+    display: block
+}
+.resizable-textarea
+{
+    width: 95%
+}
+.resizable-textarea .grippie
+{
+    height: 9px;
+    border-right: 1px solid rgb(221, 221, 221);
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url('../images/grippie.png') no-repeat scroll center 2px rgb(238, 238, 238);
+    border-color: rgb(221, 221, 221);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px 1px 1px;
+    cursor: s-resize;
+    overflow: hidden;
+}
+html.js .resizable-textarea textarea
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 0px
+}
+ul.menu
+{
+    text-align: left;
+    border: medium none;
+    list-style: none outside none;
+}
+ul.menu li
+{
+    margin: 0px 0px 0px 0.5em
+}
+li.leaf
+{
+    margin: 0px; padding: 0.2em 0.5em 0px 0px;
+    list-style-image: url('../images/menu-leaf.png');
+    list-style-type: square;
+}
+.block ul
+{
+    margin: 0px; padding: 0px 0px 0.25em 1em
+}
+tbody
+{
+    border: 0px none
+}
+.uc-price
+{
+    white-space: nowrap
+}
+@media not all
+{
+
+}
+.collapse-processed
+{
+    font-weight: bolder
+}
+h2
+{
+    font-size: 18px
+}
+#userlogged
+{
+    font-size: 10px;
+    line-height: 27px
+}
+.black_overlay
+{
+    display: none; position: absolute;
+    left: 0%; top: 0%;
+    height: 100%; width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1001;
+}
+.white_content
+{
+    display: none; position: absolute;
+    left: 25%; top: 25%;
+    height: 50%; width: 50%;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid rgb(221, 221, 221);
+    border-radius: 5px 5px 5px 5px;
+    overflow: auto;
+    z-index: 1002;
+}
+#lightClose
+{
+    position: absolute;
+    cursor: pointer;
+    z-index: 10000;
+}
+#mcCouponPane
+{
+    width: 100%;
+    text-align: right
+}
+.fThrobberCheckout
+{
+    position: absolute;
+    right: 105px ! important;
+    height: 16px; width: 16px;
+    margin: 85px 0px 0px
+}
+#couponErrorContainer
+{
+    display: block; float: right; position: relative;
+    top: -8px;
+    height: 18px; width: 100%
+}
+#couponError
+{
+    color: red;
+    font-size: 12px
+}
+#mcCouponInput label
+{
+    padding-right: 6px;
+    color: rgb(0, 101, 149)
+}
+#mcCouponInput input
+{
+    width: 175px
+}
+#mcCouponApplied
+{
+    margin: 0px; padding: 0px
+}
+#mcCouponApplied ul
+{
+    list-style: none outside none
+}
+#mcCouponTotals
+{
+    float: right;
+    width: 310px;
+    margin: 0px; padding: 0px
+}
+#mcCouponTotals .totalsLabel
+{
+    float: left;
+    width: 200px;
+    font-weight: bold
+}
+#mcCouponTotals .totalsVal
+{
+    float: right;
+    width: 100px
+}
+#mcCouponTotals li
+{
+    list-style: none outside none
+}
+#mcCouponTotals ul
+{
+    list-style: none outside none
+}
+#uc_discounts-pane
+{
+    display: none
+}
+#uc_discounts_more-pane
+{
+    margin: 0px ! important; padding: 0px ! important;
+    border: medium none
+}
+#checkout_preview-pane
+{
+    display: none
+}
+#cart-form-buttons
+{
+    padding-top: 0px
+}
+#cart-form-buttons .form-button, #cart-form-buttons .form-submit
+{
+    margin: 0.5em 0.5em 0.5em 0em
+}
+.clear
+{
+    clear: both
+}
+.solid-border
+{
+    padding: 5px;
+    border: 1px solid rgb(187, 187, 187)
+}
+.solid-border td
+{
+    padding: 5px
+}
+#line-items-div table
+{
+    width: auto
+}
+#line-items-div td
+{
+    padding: 0em 1em
+}
+#line-items-div tbody
+{
+    border-top: 0px none
+}
+#cart-form-buttons
+{
+    float: right;
+    margin: 0.5em 0em;
+    text-align: right
+}
+td.qty
+{
+    text-align: center
+}
+td.price
+{
+    text-align: right;
+    white-space: nowrap
+}
+td.subtotal
+{
+    text-align: right
+}
+.field-label
+{
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top
+}
+.address-pane-table
+{
+    margin-left: auto; margin-right: auto; margin-top: 10px
+}
+.address-pane-table .form-item
+{
+    display: inline
+}
+.address-pane-table table td
+{
+    padding: 4px 2px 2px 2px
+}
+.address-pane-table tbody
+{
+    border-top: 0px none
+}
+.inline-pane-table tbody
+{
+    border-top: 0em none
+}
+.inline-pane-table .form-item
+{
+    display: inline
+}
+.info
+{
+    font-size: 12px
+}
+#checkout-form-bottom
+{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: right
+}
+#checkout-form-bottom .form-button, #checkout-form-bottom .form-submit
+{
+    margin: 0.5em 0.5em 0.5em 0em
+}
+@font-face
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: "futura_bkbook";
+    src: local("futura_bkbook"), url('../fonts/ftrabk-webfont.eot') format("embedded-opentype"), url('../fonts/ftrabk-webfont.woff') format("woff"), url('../fonts/ftrabk-webfont.ttf') format("truetype"), url('../fonts/ftrabk-webfont.svg') format("svg");
+}
+*
+{
+    margin: 0px
+}
+body
+{
+    margin: 0px; padding: 0px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    line-height: 1.5em;
+}
+.container
+{
+    width: 740px;
+    margin: auto;
+    border-collapse: separate;
+    clear: both;
+    overflow: hidden;
+}
+#navi
+{
+    height: 95px;
+    margin: 46px auto auto;
+    clear: both
+}
+#logo
+{
+    float: left; position: relative;
+    left: 0px;
+    width: 230px
+}
+#nav-buttons
+{
+    float: right; position: relative;
+    width: 300px;
+    z-index: 4
+}
+#submenu
+{
+    display: none; float: right;
+    margin-right: 80px; margin-top: 18px
+}
+#submenu img
+{
+    float: left
+}
+#block-menu-primary-links
+{
+    position: relative;
+    left: 25px;
+    margin: 0px; padding: 0px
+}
+#block-menu-primary-links li.aboutus
+{
+    min-width: 95px
+}
+#block-menu-primary-links li
+{
+    float: left; position: relative;
+    padding: 0px 5px 3px;
+    list-style: none outside none
+}
+#block-menu-primary-links li:hover
+{
+    color: rgb(23, 90, 152)
+}
+#block-menu-primary-links li
+{
+    height: 31px;
+    padding-bottom: 3px;
+    margin: 0px ! important
+}
+#block-menu-primary-links *
+{
+    margin: 0px; padding: 0px
+}
+#block-menu-primary-links a, #block-menu-primary-links span
+{
+    display: block;
+    height: 32px;
+    padding: 0px 8px;
+    color: rgb(111, 111, 111);
+    font-size: 14px;
+    text-decoration: none; text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-family: "futura_bkbook",Verdana,Arial,Helvetica,sans-serif;
+    line-height: 30px;
+}
+#block-menu-primary-links a:hover, #block-menu-primary-links span:hover
+{
+    color: rgb(15, 95, 148)
+}
+a
+{
+    color: rgb(23, 90, 152)
+}
+#footer
+{
+    height: 73px;
+    width: 100%;
+    margin: auto;
+    clear: both
+}
+#bottom
+{
+
+    clear: both;
+}
+#footer-nav
+{
+    width: 740px;
+    margin-left: auto; margin-right: auto;
+    padding: 20px 0px;
+    color: rgb(126, 155, 175);
+    font-size: 0.8em;
+    font-family: Verdana,sans-serif;
+    line-height: 1.00em;
+}
+#footer-nav .block-menu
+{
+    float: left;
+    width: 25%
+}
+#footer-nav ul
+{
+    margin: 0px; padding: 0px
+}
+#footer-nav li
+{
+    margin: 0px; padding: 0px;
+    list-style: none outside none
+}
+#footer-nav a
+{
+    color: rgb(126, 155, 175);
+    font-weight: normal;
+    text-decoration: none
+}
+#footer-nav a:hover
+{
+    color: rgb(201, 225, 242);
+    text-decoration: underline
+}
+.copyright
+{
+    display: none;
+    width: 100%;
+    margin-top: 100px;
+    letter-spacing: 0.1em;
+    clear: both
+}
+p, h1, h2, h3, ul, ol
+{
+    margin-bottom: 1em
+}
+#footer-nav h2 a, #footer-nav h2
+{
+    font-size: 1em; font-weight: bold;
+    letter-spacing: 0.1em
+}
+h1
+{
+    margin: 15px 0px;
+    color: rgb(0, 101, 149);
+    font-weight: normal
+}
+#mainformtext
+{
+ margin: 15px 0px;
+    color: rgb(0, 101, 149);
+    font-weight: normal;
+font-size:26px;
+font-family: Verdana,Arial,Helvetica,sans-serif;
+line-height:30px;
+}
+#content
+{
+    max-width: 740px;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0px auto 20px auto
+}
+.mecInteriorTable td a, .content a, .rightCol a
+{
+    font-weight: normal;
+    text-decoration: none
+}
+.mecInteriorTable td a:hover, .content a:hover, .rightCol a:hover
+{
+    text-decoration: underline
+}
+#edit-update
+{
+    height: 20px; width: 86px;
+    color: transparent;
+    text-indent: -9999px; text-transform: capitalize;
+    background: url('../images/button-training-site-update-cart.jpg') no-repeat scroll 50% 50% transparent;
+    border: medium none;
+    cursor: pointer;
+}
+#edit-panes-uc-discounts-uc-discounts-button
+{
+    height: 20px; width: 174px;
+    margin: 3px 0px;
+    color: transparent;
+    text-indent: -9999px; text-transform: capitalize;
+    background: url('../images/button-training-site-calculate-discounts.jpg') no-repeat scroll 50% 50% transparent;
+    border: medium none;
+    cursor: pointer;
+}
+#edit-cancel
+{
+    height: 20px; width: 53px;
+    color: transparent;
+    text-indent: -9999px; text-transform: capitalize;
+    background: url('../images/button-training-site-cancel.jpg') no-repeat scroll 50% 50% transparent;
+    border: medium none;
+    cursor: pointer;
+}
+#edit-continue
+{
+    height: 20px; width: 96px;
+    color: transparent;
+    text-indent: -9999px; text-transform: capitalize;
+    background: url('../images/button-training-site-review-order.jpg') no-repeat scroll 50% 50% transparent;
+    border: medium none;
+    cursor: pointer;
+}
+#contshop
+{
+    font-weight: bold;
+    text-align: right
+}
+#mcCouponTotals
+{
+    clear: both
+}
+#bubWrapper
+{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+}
+@font-face
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: "futura_bkbook";
+    src: url('../fonts/ftrabk-webfont_001.eot') format("embedded-opentype"), url('../fonts/ftrabk-webfont_001.woff') format("woff"), url('../fonts/ftrabk-webfont_001.ttf') format("truetype"), url('../fonts/ftrabk-webfont_001.svg') format("svg");
+}
+#mecHeader a
+{
+    color: rgb(51, 51, 51);
+    text-decoration: none
+}
+#mc-user-info
+{
+    float: right;
+    padding-right: 15px; padding-top: 10px;
+    color: rgb(114, 114, 114);
+    font-size: 10px;
+    text-align: right;
+    letter-spacing: 1px
+}
+#mc-user-info a
+{
+    margin: 0px;
+    color: rgb(114, 114, 114);
+    font-weight: lighter;
+    text-decoration: none
+}
+#mc-user-info a:hover
+{
+    color: rgb(186, 186, 186);
+    text-decoration: none
+}
+#ssbutton
+{
+    margin: 0 auto;
+    margin-top: 10px;
+   display:block;
+   position:static;
+    text-decoration:underline;
+    padding: 12px 10px;
+    background-color: #0083B2;color: #FFFFFF;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size:22px !important;
+    border: none;
+    box-shadow: inset 0px 1px 0px 0px #AEC3E5;
+    font: 700 20px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Geneva", "Verdana", sans-serif;
+    text-shadow: 0px -1px 1px #64799E;
+}
+#ssbutton:hover
+{
+    background-color: #330099;
+    box-shadow: inset 0px 1px 0px 0px #A5B9D9;
+    cursor: pointer;
+}
+#codinp{
+margin-right:5px !important;
+}
+#billing-pane
+{
+background:#EBEBEB;
+}
+
+h3 {
+  text-align: left;
+color: #0083B2;
+font-size: 26px !important;
+}
+
+#billing-pane {
+  border: 2px solid #6c6c6c;
+}
+
+legend {
+  width: auto;
+  margin: 0;
+}
+
+.morepad {
+  font-size: 14px;
+}
+
+input {
+  height: 25px;
+}
+
+#coddiv {
+  text-align: left;
+}
