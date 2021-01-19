@@ -1607,7 +1607,7 @@ select.inp {
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
 }
-.copyright { font-size: 14px;text-align: center; padding:20px 0;color: #6C6E6F;}
+.copyright { font-size: 14px;text-align: center; padding:20px 0;color: #6C6E6F; display: flex; flex-direction: column;}
 .copyright p { width: 100%; text-align: center; padding: 0; margin: 0; }
 .copyright br { display: none; }
 .copyright img { margin: 10px auto!important; max-width:100%; }
