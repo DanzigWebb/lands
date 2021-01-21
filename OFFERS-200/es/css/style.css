@@ -142,7 +142,7 @@
     -o-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
-    z-index: 2;
+    z-index: 4;
 }
 .sale p {
     font-size: 36px;
@@ -229,7 +229,7 @@
     background-position: 0 -197px;
 }
 .block2 ul li:nth-child(5):before {
-    background: url(../img/5.jpg) no-repeat 0 0;
+    background: url(../img/4.jpg) no-repeat 0 0;
     background-size: 300px;
 }
 .block2 ul li:nth-child(6):before {
@@ -435,9 +435,9 @@
     margin-right: 20px;
 }
 .reviews li:nth-child(2):before {
-    
     background: url(../img/8.jpg) /*tpa=http://funvezun.ru/amuletz/2/img/rev.jpg*/ no-repeat 0 0; /* endzeit_____ */
-background-size: 260px;}
+    background-size: 260px;
+}
 .reviews li:nth-child(3):before {
     background: url(../img/rev.jpg) /*tpa=http://funvezun.ru/amuletz/2/img/rev.jpg*/ no-repeat 0 0; /* endzeit_____ */
     background-position: -432px 0;
@@ -478,7 +478,7 @@ background-size: 260px;}
 /*block7*/
 .block7 {
     background: url(../img/b7.jpg) /*tpa=http://funvezun.ru/amuletz/2/img/b7.jpg*/ no-repeat center top;
- height: 499px;
+    height: 499px;
 }
 .stars {
     position: absolute;
@@ -510,13 +510,13 @@ background-size: 260px;}
 .ship {
     text-align: center;
     display: flex;
-justify-content: space-between;
-align-items: flex-start
+    justify-content: space-between;
+    align-items: flex-start;
 }
-@media(max-width: 978px){
-.ship{
-    display: contents;
-}
+@media (max-width: 978px) {
+    .ship {
+        display: contents;
+    }
 }
 .ship li {
     display: inline-block;
@@ -764,6 +764,7 @@ align-items: flex-start
     }
     .stock {
         color: #fff;
+        display: none;
     }
     .block1 h3,
     .block8 h3 {
