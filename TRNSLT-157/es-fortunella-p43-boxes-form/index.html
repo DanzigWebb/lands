@@ -1,0 +1,1770 @@
+<!DOCTYPE html><html xmlns="https://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Gotas Fortunella</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print_ek_at_rwd.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/textSizeMod.js"></script>
+    <!-- <script src="price.js"></script> -->
+    <script type="text/javascript">
+      function dtime(d, type) {
+        var dayNames;
+
+        if (type == 1)
+          dayNames = new Array(
+            "domingo",
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes",
+            "sábado"
+          );
+        else
+          dayNames = new Array(
+            "domingo",
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes",
+            "sábado"
+          );
+
+        var now = new Date();
+        var month = now.getMonth() + 1;
+        now.setDate(now.getDate() + d + 1);
+        document.write(
+          dayNames[now.getDay()] +
+            " " +
+            now.getDate() +
+            "." +
+            month +
+            "." +
+            now.getFullYear()
+        );
+      }
+
+      function dtime2(d) {
+        var dayNames;
+        var now = new Date();
+        var month = now.getMonth() + 1;
+        now.setDate(now.getDate() + d + 1);
+        document.write(now.getDate() + "-" + month + "-" + now.getFullYear());
+      }
+
+      function showLast3Buyers() {
+        var lastBuys = "";
+        var l = buyers.length;
+
+        for (var i = 0; i < 3; i++) {
+          if (l > i) {
+            var time = new Date().getTime() - buyers[l - i - 1][0];
+            var time_in_sec = Math.floor(time / 1000);
+            var time_str = "";
+            if (time_in_sec < 3) time_str = "hace un momento";
+            else if (time_in_sec > 60) {
+              var time_in_min = Math.floor(time_in_sec / 60);
+              time_in_sec -= time_in_min * 60;
+              time_str =
+                time_in_min + "minutos" + time_in_sec + " " + "segundos";
+            } else time_str = time_in_sec + " " + "segundos";
+            lastBuys +=
+              time_str +
+              " " +
+              locali_ppl[buyers[l - i - 1][1]] +
+              " " +
+              locali_dop[buyers[l - i - 1][2]] +
+              "\n";
+          }
+        }
+
+        $.pnotify({
+          title: "Compras hechas recientemente:",
+          text: lastBuys,
+          animation: "fade",
+          type: "success",
+          addclass: "stack-bottomright",
+          stack: stack_bottomright,
+        });
+        //setTimeout(showLast3Buyers, 30000);
+      }
+
+      function myCallback() {
+        var new_delay = Math.floor(Math.random() * 15000 + 3000);
+        $.pnotify({
+          title: "",
+          text: generateMsg(),
+          animation: "fade",
+          type: "success",
+          addclass: "stack-bottomright",
+          stack: stack_bottomright,
+        });
+        setTimeout(myCallback, new_delay);
+      }
+    </script>
+  </head>
+
+  <body onload="textSizeMod();" style="visibility: visible">
+    <div id="wrapper">
+      <img style="width: 100%; margin-bottom: 15px" src="images/logotypes.jpg" alt class="top_banner">
+
+      <div id="side">
+        <style>
+          .yellowstar {
+            color: gold!important;
+            text-shadow: 1px 1px 1px black;
+          }
+
+          .no {
+            color: lightgray!important;
+            text-shadow: 1px 1px black;
+          }
+        </style>
+        <ul class="testimonials">
+          <li class="opinion">
+            <div class="faces" style="background-position: 5px 0px">
+              <img style="width: 100%" src="images/user001.jpg" alt>
+            </div>
+            <h3 class="lt1"> ¡Adelgacé por mi hija!</h3>
+            <p> Los chicos en la escuela se reían de mi hija, ellos decían que su madre era gorda como un hipopótamo y que mis piernas eran como dos columnas... Era ofensivo, pero tenían razón. Tuve una repentina falta de aire, no pude participar como los otros padres en el día de deportes de la escuela de mi hija. Las cosas cambiaron cuando me enteré de este método para bajar de peso. Una semana más tarde, sentí que mi vida se estaba haciendo más fácil, me sentía aliviada.<strong> En unos 2 meses perdí 23 kg.</strong> ¡Ahora puedo seguirle el ritmo a mi hija! </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="no">★</span>
+            </span>
+            <p class="author lt8"> Beatriz,<br> 42 años </p>
+          </li>
+          <li class="opinion">
+            <div class="faces" style="background-position: 65px 0px">
+              <img style="width: 100%" src="images/user02.jpg" alt>
+            </div>
+            <h3 class="lt9"> Fácil y eficaz</h3>
+            <p class="lt10"> Quién se iba a imaginar que un método tan sencillo iba a hacer estos milagros. Solo tienes que tomar estas gotas para empezar a quemar grasa de inmediato. Increíble. Mis hermanas, mis amigas y yo ya la hemos tomado.<strong> ¡Se las recomiendo a todo el mundo!</strong> En efecto, es un descubrimiento pionero en cuanto al adelgazamiento. </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt16"> Julia Vargas<br> 55 años </p>
+          </li>
+          <li class="opinion">
+            <div class="faces" style="background-position: -80px 0px">
+              <img style="width: 100%" src="images/user03.jpg" alt>
+            </div>
+            <h3 class="lt17"> Mi esposa nuevamente me ha comenzado a admirar</h3>
+            <p class="lt18"> Gracias a <a href> las gotas Fortunella</a>
+              <strong> perdí 22 kg en 7 semanas.</strong> Llegué a pensar que nunca me sentiría atractivo nuevamente . Mi esposa siempre se quejaba de que yo estaba demasiado gordo y que tenía muchos males por el sobrepeso. Ella me trajo este medicamento. Y ahora aquí estoy, delgado, sano y feliz. </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt24"> Daniel<br> 62 años </p>
+          </li>
+          <li class="opinion">
+            <div class="faces" style="background-position: -160px 0px">
+              <img style="width: 100%" src="images/user04.jpg" alt>
+            </div>
+            <h3 class="lt25"> He recuperado mi autoestima</h3>
+            <p class="lt26"> Empecé a tener problemas de peso después de cumplir 30 años. En unos pocos años logré subir 28 kg. Trabajo como vendedora, así que debo lucir bien y no tener problemas al moverme. No tengo tiempo para ir gimnasios o dietas. Pero estaba muy avergonzada por mi sobrepeso y quería deshacerme de el. Sobre todo porque sigo soltera y me gustaría conocer a alguien. Al principio no creí que un tratamiento<strong> estuviera disponible a un buen precio y además</strong> pudiera ser tan efectivo. Pero lo he podido comprobar por mí misma. <strong> He perdido 25 kg </strong> y nuevamente me he vuelto atractiva! </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="no">★</span>
+            </span>
+            <p class="author lt32"> Milagros<br> 44 años </p>
+          </li>
+          <li class="opinion">
+            <div class="faces" style="background-position: -160px -80px">
+              <img style="width: 100%" src="images/main.jpg" alt>
+            </div>
+            <h3 class="lt33"> Me siento útil</h3>
+            <p class="lt34"> Los años laborales como funcionario público hicieron muy bien su trabajo. Es tan simple: te la pasas sentado todo el día y después del trabajo ya no tienes fuerzas para moverte, a esto tienes que sumarle que en casa tu esposa cocina muy bien. Así fue como llegué a pesar 114 kilos. Estaba cansado todo el tiempo, por el sobrepeso siempre me quedaba dormido, no hacía nada en casa, y en el trabajo hacía todo muy lento. Me sentí un inútil. Afortunadamente, mi hija me dio<a href> las gotas Fortunella</a> . ¡Fue algo especial! Sentí la diferencia de inmediato. <strong> Ya perdí 26 kg. Tengo más energía y me siento al menos 20 años más joven. </strong> Otra vez puedo pasar el tiempo activamente con mi familia. </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt40"> Víctor<br> 61 años </p>
+          </li>
+          <li class="opinion">
+            <div class="faces" style="background-position: -80px -80px">
+              <img style="width: 100%" src="images/user005.jpg" alt>
+            </div>
+            <h3 class="lt41"> Volví al trabajo</h3>
+            <p class="lt42"> Tenía un trabajo extra como guardia de seguridad. Una noche, durante mi turno, me dio un poco de sueño y sonó la alarma. Vi a un grupo de ladrones. Traté de correr detrás de ellos, pero debido al sobrepeso, no pude respirar y me caí al suelo como un hombre muerto. Algunas cosas fueron robadas del almacén, y yo perdí mi trabajo. Empecé a aprender técnicas de pérdida de peso, y todo el mundo decía que<a href> las gotas Fortunella</a> eran lo mejor. Lo probé y después de 40 días<strong> bajé 15 kg. ¡Qué gran cambio!</strong> . He recuperado la agilidad y puedo volver a trabajar. </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt48"> José <br> 59 años </p>
+          </li>
+
+          <li class="opinion">
+            <div class="faces" style="background-position: 0px -80px">
+              <img style="width: 100%" src="images/user007.jpg" alt>
+            </div>
+            <h3 class="lt49"> Una vida nueva por tan poco dinero</h3>
+            <p class="lt50"> Siempre me habían dicho que tenía sobrepeso porque como mucho... ¡Pero eso no era cierto! Me he matado de hambre tantas veces, con dietas, comiendo 3 manzanas pequeñas al día y sin ningún efecto ¡como si mi metabolismo se hubiera ido por completo! <strong> Solo gracias a <a href> las gotas Fortunella</a> sentí la diferencia </strong> después de unos cuantos días de uso. Sin que me diera cuenta ya pesaba 12 kg menos: ¡sólo habían pasado 4 semanas! ¡Es un milagro! </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt56"> Carmen<br> 29 años </p>
+          </li>
+
+          <li class="opinion">
+            <div class="faces" style="background-position: 0px -80px">
+              <img style="width: 100%" src="images/user08.jpg" alt>
+            </div>
+            <h3 class="lt57"> El único método eficaz</h3>
+            <p class="lt58"> ¡Probé muchos métodos para perder peso, tenía que bajar 34 kg! Pero nada funcionó, no tenía ni energía ni esperanza. Además, gasté un montón de dinero en diferentes productos. Pero con<a href="#order-form"> las gotas Fortunella</a> ocurrió algo distinto. Perdí 30 kg y <strong> me siento como si me hubieran dado una nueva vida. </strong>
+            </p>
+            <span class="rating" title="Evaluación" de los editores>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+              <span class="yellowstar">★</span>
+            </span>
+            <p class="author lt64"> Sandra<br> 59 años </p>
+          </li>
+        </ul>
+      </div>
+      <div id="post">
+        <h1 class="a1 lt65" style="color: #820000"> Menos 14 kg en un mes. Resultado garantizado. Método científicamente comprobado. </h1>
+        <style>
+          .redoyel {
+            line-height: 32px;
+          }
+        </style>
+        <a href>
+          <img style="
+              width: 50%;
+              float: right;
+              margin: 40px 0 0 10px;
+              max-width: 245px;
+            " class src="images/specialist_kankustaduo2_a.png">
+        </a>
+        <br>
+        <p class="lt67"> ¡Hola!</p>
+        <p class="lt68"> Mi nombre es Richard Norman, soy un científico, doctorado en anatomía y biología. En esta página, me gustaría presentarles el mayor logro de mi vida, por el cual ya he conseguido<strong> varios premios prestigiosos </strong> . He creado una fórmula para bajar de peso que puede garantizar una pérdida de hasta 14 kg por mes. Esta fórmula se basa en los procesos naturales del cuerpo y permite deshacerse del exceso de peso sin necesidad de hacer dietas ni actividad física intensa. </p>
+
+        <h2 class="redo lt69" style="margin-top: 50px"> Así que si quieres hacer esto, sin cambiar tu estilo de vida: </h2>
+
+        <ul class="libo" style="margin-left: 20px">
+          <li class="lt70">
+            <strong> perder 14 kg en un mes</strong>, incluso si anteriormente el matarte de hambre y entrenamientos intensos no te dieron resultados; </li>
+          <li class="lt71">
+            <strong> normalizar el nivel de colesterol</strong> ya después de 2 primeras semanas de uso del método y disminuir el riesgo de ateroesclerosis un 82%; </li>
+          <li class="lt72">
+            <strong> prevenir la diabetes</strong> regular los niveles de azúcar en la sangre </li>
+          <li class="lt73">
+            <strong> disminuir el riesgo de sufrir </strong> un derrame, infarto, ictus o la degeneración articular un 91%; </li>
+          <li class="lt74"> parar de una vez por todas <strong> el efecto yo-yo</strong>: </li>
+          <li class="lt75"> ganar <strong> 3 veces más de energía </strong> y verte espectacular en cualquier situación y con cualquier prenda... </li>
+        </ul>
+
+        <p class="lt76"> Puedes lograr todo esto sin visitar nutriólogos, sin tener que pasar hambre, sin tener que ir a entrenar o hacer otros sacrificios y sin sentirte decepcionado. Y al mismo tiempo, <strong> puedes ahorrar dinero</strong> . Termina de leer lo que tengo que decirte. </p>
+
+        <p class="lt77"> No importa la edad que tengas, los medicamentos que estés tomando o cuantos kilos tengas de sobrepeso. No importa si el sobrepeso es hereditario, si es causado por el embarazo o si está relacionado con la toma de ciertos medicamentos. No importa cuántos kilos de sobrepeso tengas. Aunque tus intentos por perder peso han fallado y sólo han causado más frustración... Deberías saber que<strong> ya son cosas del pasado</strong> . Con este método, puedes perder 14 kg en un mes de una vez por todas.<strong> al final lograr una figura delgada y atractiva</strong> . Sin esfuerzo, sin dieta y sin sacrificios. </p>
+
+        <h2 class="redo lt78"> Las razones por las que mi método es una alternativa estupenda a las dietas para adelgazar: </h2>
+
+        <ul class="libo" style="margin-left: 20px">
+          <li class="lt79">
+            <strong> Es natural y funciona en armonía con tu cuerpo. </strong> Al pasar hambre, nunca conseguirás el objetivo deseado. Nuestro cuerpo está hecho para comer. La comida es energía. Y la energía es vida. En el momento en que le niegas a tu cuerpo los alimentos, actúas contra su naturaleza. Durante las dietas, el cuerpo no convierte los alimentos en energía, sino que los acumula en sus reservas, por lo cual se pueden ganar más kilos, ¡incluso si comes una hierba! Es igual de antinatural hacer ejercicio de forma intensa, tu cuerpo no está diseñado para matarse durante horas en el gimnasio. </li>
+          <li class="lt80">
+            <strong> Garantiza efectos rápidos y visibles.</strong> En lugar de comer verduras al vapor durante meses, negándote a tus platos y dulces favoritos y calculando cada gramo de comida, puedes sencillamente ajustar tu cuerpo a un nivel diferente de quema de grasa. Sin levantar pesas, saltos y otras tonterías. Se trata de afinar los mecanismos metabólicos. </li>
+          <li class="lt81">
+            <strong> No tienes que matarte de hambre. </strong> Sí, como ya lo he dicho: puedes comer lo que quieras, cuanto quieras, cuando quieras. No son los alimentos los que hacen que no puedas perder peso, sino la forma en que el cuerpo dispone de ellos y cómo, los convierte en energía. </li>
+          <li class="lt82">
+            <strong> Quema grasa de forma automática las 24 horas del día.</strong> Incluso recostado en el sofá, con el control remoto en la mano, puedes perder peso de manera efectiva. Todo porque mi método limita el apetito y acelera los procesos de quema de grasa en más del 350%. </li>
+          <li class="lt83">
+            <strong> Protege la salud. </strong> Mi método limpia el cuerpo de acúmulos mortales y toxinas, y también reduce el nivel de colesterol malo y azúcar en la sangre. Gracias a esto, reduce radicalmente el riesgo de ateroesclerosis, infartos, derrames, diabetes, y degeneración de las articulaciones de la rodilla y la cadera. </li>
+          <li class="lt84">
+            <strong> Adelgaza de una vez por todas. </strong> Mi método funciona de acuerdo con el modo natural de funcionamiento del cuerpo. Gracias a esto, no hay posibilidad del efecto yo-yo que aparece después de realizar una dieta. </li>
+          <li class="lt85">
+            <strong> Te permite ahorrar cientos y miles de euros. </strong> En lugar de gastar dinero en dietas, entrenadores y productos supuestamente dietéticos, puedes usar mi método. Una vez por 1 mes y deshacerte del sobrepeso de una vez por todas. </li>
+        </ul>
+
+        <style>
+          @media (max-width: 480px) {
+            h1 {
+              font-size: 2em;
+            }
+          }
+
+          .redoyel {
+            color: #cc0000;
+            font-weight: bold;
+            width: 100%;
+          }
+
+          .redoyel span {
+            background: yellow;
+          }
+
+          @media (max-width: 768px) {
+            #post {
+              margin: 0px!important;
+            }
+            #licznikProduktow {
+              float: none!important;
+              margin: 0 auto;
+            }
+            #licznikProduktow span:nth-child(1) {
+              margin: 0 auto;
+              display: block;
+            }
+          }
+        </style>
+
+        <h2 class="redo lt87"> He creado un método natural que elimina las causas del sobrepeso y quema la grasa de manera automática </h2>
+
+        <p class="lt88"> Con mi método, te librarás del exceso de peso de una vez por todas, obtendrás la silueta de tus sueños y protegerás tu salud... Podrás olvidarte de las enormes tallas de ropa, el dolor en las rodillas, la falta de aliento y la sudoración excesiva. También puedes olvidar la vergüenza, la decepción y la envidia que has experimentado tantas veces. </p>
+        <p class="lt89"> Gracias a mi método, en 30 días tendrás 14 kg menos. ¡Te quedarás con la ropa que quieras y tendrás un cuerpo perfecto! Finalmente, podrás mostrar tu cuerpo con orgullo en la playa, en la piscina o en tu dormitorio..... Todo esto porque he logrado crear una fórmula de dos fases que destruye las causas del exceso de peso y<strong> quema la grasa de forma automática las 24 horas del día. </strong> ¿Y cómo lo he conseguido? </p>
+
+        <h2 class="redo lt90"> Quería que mi esposa fuera feliz y que volviera a amar su cuerpo. </h2>
+
+        <p class="lt91"> De acuerdo con investigaciones recientes, una de cada tres personas en el planeta tiene sobrepeso. Es un gran problema, especialmente para las mujeres. Un cuerpo bien formado nos da confianza y nos hace sentir más atractivos, lo cual es una necesidad perfectamente natural y correcta para todos. La obesidad<strong> supone un riesgo grave para la salud</strong> . El sobrepeso no sólo aumenta el riesgo de sufrir un accidente cerebrovascular, aterosclerosis, diabetes, infarto de miocardio o una grave degeneración de las articulaciones. También es causa de enfermedades que dificultan la vida cotidiana, como el eccema, el acné y las alergias. Desafortunadamente, mi esposa Lorena también se vio afectada por el problema del sobrepeso... </p>
+        <p class="lt92"> Antes de casarnos, ella era una mujer hermosa y delgada. No contaba las calorías, comía lo que quería y no engordaba. Sin embargo, con el paso de los años y después del nacimiento de nuestros dos hijos, comenzó a ganar peso. Los pliegues de su estómago, la grasa y la celulitis de sus muslos y piernas se convirtieron en una fuente de grandes complejos para ella. Aunque yo la quería por lo que era, me di cuenta de que no se sentía bien. Tanto física como moralmente. </p>
+        <p class="lt93"> Lorena<strong> se avergonzaba de su cuerpo </strong> no podía soportar su apariencia. Se volvió irritable. Literalmente todos tenían miedo de hablar con ella. Un día llegó a casa histérica. "Mi vestido está desgarrado. ¡Soy una ballena gorda y asquerosa!", dijo que estaba sollozando. Dio un portazo y se encerró en el dormitorio. Y así comenzó a verse nuestra vida diaria. </p>
+
+        <h2 class="redo lt94"> ¡Esto suponía una amenaza para su vida!</h2>
+
+        <p class="lt95"> Pero lo peor estaba por venir. La salud de Lorena comenzaba a empeorar. Sus articulaciones empezaron a enfermarse. No podía subir al segundo piso porque le dolían las rodillas y tenía falta de aliento. Así que fue al médico, y él le dijo todo al grano. Fue muy sincero y solo le dijo: "Si no pierdes peso y bajas tus niveles de colesterol, entonces<strong> no llegarás a la vejez</strong> ". Por eso Lorena se puso a dieta, o mejor dicho... se moría de hambre. Desafortunadamente, la dieta no fue efectiva. Perdió unos kilos, pero luego volvía a engordar debido a su lento metabolismo. Ella se estaba decepcionando cada vez más.<strong> No solamente se sentía disgustada con su cuerpo, además, estaba empeorando su salud. </strong>
+        </p>
+
+        <h2 class="redo lt96"> ¿Y cómo inventé el "antídoto al sobrepeso"?</h2>
+
+        <p class="lt97"> Tuve que ayudar a mi esposa a recuperar su delgado cuerpo, y con eso… su buen humor y, sobre todo, su salud. Quería que se olvidara de su cuerpo y fuera feliz de nuevo. Pensé: "<strong> Hombre, eres un científico! </strong> Conoces la biología y la anatomía mejor que nadie. Ya has desarrollado muchas soluciones para varias enfermedades. ¡Piensa en algo contra el sobrepeso!" Y entonces empecé a investigar... </p>
+
+        <p class="lt98"> Realicé pruebas de laboratorio intensivas durante más de tres años. Estuve probando varias combinaciones de sustancias activas en mi esposa. Sólo diré que todos son 100% naturales y seguras para el cuerpo. El conocimiento científico, el trabajo duro y un poco de suerte, todo funcionó al final. Desarrollé.<strong> una fórmula bifásica única para perder peso</strong> . La llamé <a href> Fortunella</a> . La envié de inmediato a ensayos clínicos. El 98% de su efectividad fue confirmada por los mayores centros de investigación de toda Europa y Estados Unidos! Incluso durante los ensayos, mi fórmula ayudó a los participantes que habían perdido <strong> 14 kg por mes</strong> en promedio. </p>
+
+        <p class="lt99"> Mi esposa se sintió mejor casi inmediatamente después de usar mi fórmula bifásica de adelgazamiento. Estaba feliz de no tener ataques de hambre, ni un deseo abrumador de comer alimentos no saludables o dulces. Y eso fue sólo el comienzo. Después de la primera semana, perdió cinco kg. Pero lo más importante, ¡estaba llena de energía y amor a la vida!" Richard:<strong> ¡siento como la grasa se está evaporando!</strong> ", gritó de alegría cuando se puso los pantalones que no se ponía ¡desde hace 4 años! </p>
+
+        <h2 class="redo lt100"> Perdió 26 kilogramos sin dietas en 2 meses</h2>
+
+        <p class="lt101"> No podíamos creerlo, la báscula mostraba menos cada día. Su figura estaba adelgazando y su cintura estrechando. La celulitis que tanto odiaba había desaparecido. Después de 2 meses, mi esposa confesó: "Richard, me probé mi vestido de novia, y me queda perfecto! <strong> ¡He recuperado la figura que tenía antes de que nos casáramos! </strong> ¡Has inventado el antídoto contra el sobrepeso! ¡Vas a ayudar a un montón de gente! Te lo agradezco tanto." </p>
+        <p class="lt102"> gracias a mi fórmula bifásica contra el sobrepeso, Lorena perdió <strong> 26 kg en 2 meses</strong> . Ella estaba perdiendo peso sin matarse con dietas, sin tener que hacer ejercicio. Limpió su cuerpo y se llenó de energía, subía las escaleras más rápido que nuestra hija, se deshizo del dolor, ¡su piel y su cabello mejoraron! Pero hay más. Cuando fue al médico, él alabó sus resultados. El colesterol se normalizó y ya no tenemos miedo de u na ateroesclerosis, ataques de apoplejía o infartos </p>
+
+        <h2 class="redo lt103"> Perder tanto peso, sin dañarse la salud, hasta ahora era imposible. Hoy en día, gracias a mi fórmula bifásica para adelgazar, se puede no solamente perder peso de manera rápida y segura, sino también evitar el efecto yo-yo. </h2>
+        <img style="width: 100%" src="images/lady.jpg">
+        <p class="lt104" style="
+            text-align: center;
+            font-size: 14px;
+            margin: 0;
+            background-color: #ddd;
+            padding: 2px 5px;
+          "> Mi esposa recuperó su figura de nuestra juventud, y junto con ella la energía y la alegría de vivir. </p>
+
+        <h4 class="lt105" style="margin: 25px 0"> Déjame explicarte brevemente por qué mi fórmula para adelgazar es tan eficaz. Funciona en 2 fases: </h4>
+
+        <p class="phase lt106">
+          <span> Fase I</span> – Purificación del organismo </p>
+        <p class="lt107"> Nunca perderás ni siquiera 1 kg si no purificas el organismo. Incluso si te matas de hambre y te torturas con ejercicios en el gimnasio, la báscula te sigue mostrando lo mismo, porque en tus intestinos quedan incluso <strong> 15 kg de depósitos en descomposición</strong>, y en el sistema circulatorio hay <strong> toxinas dañinas</strong> . Ellas ralentizan el metabolismo y bloquean la quema de grasa. Llenan nuestro cuerpo de forma invisible, y mucha gente ni siquiera lo sabe. Pero inhalamos endógenos, comida moderna, no muy beneficiosa, bebemos bebidas en polvo... Las sustancias venenosas están incluso en las frutas y verduras. Ahora son nuestros compañeros de por vida </p>
+        <p class="lt108"> Mi fórmula <strong> purifica el organismo de depósitos dañinos y toxinas con</strong> eficacia. Pone el cuerpo en un modo de funcionamiento completamente diferente: el de la eliminación de toxinas, pero también de la quema más rápida del tejido graso y de la adquisición de 15 veces más energía de los alimentos. Por esta razón, es posible eliminar completamente los ataques de hambre, reducir el apetito y detener el efecto yo-yo. Gracias a esto, después de solo unos días de usar mi método, puedes entrar en la fase de quema de grasa automática. </p>
+
+        <p class="phase lt109">
+          <span> Fase II</span> – Quema automática de grasa </p>
+        <p class="lt110"> En la fórmula, incluí sustancias naturales que literalmente <strong> destruyen las células de grasa</strong> . No tienes que ir al gimnasio, correr o entrenar. Si quieres tener músculos, por supuesto puedes hacerlo. Sin embargo, si sólo quieres deshacerte de la grasa abdominal, deshacerte de la grasa en las caderas y los glúteos y de la celulitis, basta con usar mi fórmula de adelgazamiento en dos fases. </p>
+        <p class="lt111"> Ya después de unos pocos días, comenzarás a<strong> quemar la grasa las 24 horas al día</strong> de manera automática, incluso durante el sueño. Además, bloquearás permanentemente el efecto yo-yo. Puedes estar seguro de que te librarás de esta grasa odiosa <u> de una vez por todas</u> . Gracias a este método, detendrás la acumulación del tejido adiposo a nivel molecular y acelerarás radicalmente la quema de grasa. </p>
+
+        <h2 class="redo lt112"> ¿Por qué mi fórmula bifásica para adelgazar ha sido llamada "antídoto maravilloso para adelgazar" </h2>
+
+        <h2 class="redoyel">
+          <span class="lt113"> TIENE MÁS DE 98% DE EFICACIA</span>
+        </h2>
+
+        <div style="display: flex">
+          <div style="width: 50%">
+            <img src="images/before.png" alt style="width: 100%">
+            <h2 style="text-align: center; margin: 0">
+              <strong class="lt114"> ANTES</strong>
+            </h2>
+            <p class="lt115" style="padding: 0 5px; text-align: center"> Metabolismo bloqueado por acúmulos dañinos y toxinas </p>
+          </div>
+          <div style="width: 50%">
+            <img src="images/after.png" alt style="width: 100%">
+            <h2 style="text-align: center; margin: 0">
+              <strong class="lt116"> DESPUÉS</strong>
+            </h2>
+            <p class="lt117" style="padding: 0 5px; text-align: center"> Organismo purificado: metabolismo acelerado al máximo </p>
+          </div>
+        </div>
+
+        <br>
+
+        <p class="lt118"> Hasta ahora el adelgazamiento efectivo parecía completamente imposible. Hoy en día, con la ayuda de mi fórmula bifásica para adelgazar, no solo se puede detener, sino también revertir completamente el proceso de ganar peso. Lo confirma el caso de mi esposa y de 14 mil personas que ya han conseguido una figura delgada gracias a mi fórmula adelgazante bifásica. Más aún, <strong> su eficacia está comprobada</strong> por un centro de investigación estadounidense ubicado en Chicago. Se trata de un descubrimiento a escala mundial que ha ganado el reconocimiento y la admiración de destacados especialistas en nutrición y pérdida de peso. </p>
+
+        <h2 class="redoyel">
+          <span class="lt119"> ES! 100% SEGURA Y EXTREMADAMENTE FÁCIL DE USAR</span>
+        </h2>
+        <div style>
+          <p class="lt120"> Las sustancias naturales hacen milagros: ¡basta con que la ciencia desarrolle su composición perfecta! Este es el lema que me inspiró a crear la fórmula adelgazante bifásica. El tratamiento contiene solo <strong> sustancias naturales, seguras y súper efectivas </strong> Las hice en forma de cápsulas para que todos pudieran someterse al tratamiento de una forma fácil y cómodamente sin salir de casa. Sólo tienes que tomar una cápsula dos veces al día para <strong> ver como la grasa literalmente desaparece de tu cuerpo</strong> y obtiene una silueta fabulosamente bella y delgada. </p>
+        </div>
+
+        <h2 class="redo lt121"> Todos sus amigos, colegas, familiares se sorprenderán por tu nueva apariencia. ¡No podrán creer que hayas perdido peso tan rápido sin esfuerzo! </h2>
+
+        <p class="lt122"> La fórmula única<strong> del medicamento</strong> garantiza: </p>
+
+        <p class="lt123">
+          <strong> 1. Seguridad total para su salud </strong> Las cápsulas no contienen sustancias sintéticas nocivas ni componentes baratos.<strong> Son completamente naturales</strong> y consisten en ingredientes orgánicos. Esto asegura que el producto se absorba rápido y se incorpore al cuerpo. </p>
+        <p class="lt124">
+          <strong> 2. La hidratación adecuada </strong> el medicamento ayuda a absorber mejor los beneficiosos componentes de los alimentos. Ayuda a todos los sistemas del cuerpo a estar adecuadamente nutridos y a mantener el equilibrio de agua, de modo que el cuerpo no necesita abastecerse y convierte activamente las calorías en energía. ¡Estás literalmente perdiendo peso delante de tus ojos!<strong> Este producto le otorga al cuerpo agua cuatro veces más</strong> que tomar un litro de agua. </p>
+        <p class="lt125">
+          <strong> 3. Acción inmediata</strong> los ingredientes útiles se absorben tan pronto como entran en el cuerpo. Si hubieras tomado las gotas antes de leer este texto, <strong> ¡el proceso de quema de grasa ya habría comenzado!</strong>
+        </p>
+
+        <style>
+          .infograph {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+
+          .infograph-column {
+            align-items: center;
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .infograph-prod {
+            width: 100%;
+            justify-self: center;
+          }
+
+          .infograph-img {
+            width: 28%;
+            margin: 0 auto;
+            display: block;
+          }
+
+          .infograph-row {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .infograph-text {
+            color: green;
+            font-size: bold;
+            text-transform: uppercase;
+            text-shadow: 1px 0px grey;
+            text-align: center!important;
+          }
+
+          @media only screen and (max-width: 768px) {
+            .infograph-arrow {
+              display: none;
+            }
+            .infograph {
+              flex-direction: column;
+            }
+            .infograph-column {
+              width: 100%!important;
+            }
+            .infograph-rewerse {
+              flex-direction: column-reverse!important;
+            }
+            .infograph-prod {
+              display: none;
+            }
+          }
+        </style>
+
+        <div class="infograph">
+          <div class="infograph-column">
+            <div class="infograph-row">
+              <img src="images/icon1.png" alt class="infograph-img">
+              <p class="infograph-text lt127"> ELIMINACIÓN DE DEPÓSITOS DAÑINOS Y TOXINAS </p>
+              <img src="images/arrow_315.png" alt class="infograph-arrow">
+            </div>
+            <div class="infograph-row infograph-rewerse">
+              <img src="images/arrow_225.png" alt class="infograph-arrow">
+              <p class="infograph-text lt128"> CUIDADO DE LA SALUD Y LA VITALIDAD </p>
+              <img src="images/icon4.png" alt class="infograph-img">
+            </div>
+          </div>
+          <div class="infograph-column">
+            <div class="infograph-row">
+              <img src="images/icon2.png" alt class="infograph-img">
+              <p class="infograph-text lt129"> ACELERACIÓN DEL METABOLISMO AL MÁXIMO </p>
+              <img src="images/arrow_0.png" alt class="infograph-arrow">
+            </div>
+            <div class="infograph-row">
+              <a href>
+                <img src="images/img.png" alt class="infograph-prod">
+              </a>
+            </div>
+            <div class="infograph-row infograph-rewerse">
+              <img src="images/arrow_180.png" alt class="infograph-arrow">
+              <p class="infograph-text lt130"> FACILIDAD DE USO</p>
+              <img src="images/icon5.png" alt class="infograph-img">
+            </div>
+          </div>
+          <div class="infograph-column">
+            <div class="infograph-row">
+              <img src="images/icon3.png" alt class="infograph-img">
+              <p class="infograph-text lt131"> QUEMA AUTOMÁTICA DE GRASA LAS 24H AL DÍA </p>
+              <img src="images/arrow_45.png" alt class="infograph-arrow">
+            </div>
+            <div class="infograph-row infograph-rewerse">
+              <img src="images/arrow_135.png" alt class="infograph-arrow">
+              <p class="infograph-text lt132"> AHORRO SIGNIFICATIVO</p>
+              <img src="images/icon6.png" alt class="infograph-img">
+            </div>
+          </div>
+        </div>
+
+        <h2 class="redo lt133"> ¿Perderías la oportunidad de conseguir la figura de tus sueños? </h2>
+
+        <p class="lt134"> Puedes seguir sufriendo por los complejos causados por el sobrepeso y arriesgando su salud. Puedes seguir matándote con dietas inútiles... Pero, ¿por qué hacer eso si te garantizo un rápido<strong> fácil y seguro método</strong> para perder 14 kg en 30 días y conseguir la delgada silueta que siempre has soñado? Sólo un mes es suficiente para convertirte en una de las 14.000 personas que han adelgazado gracias a<a href="#order-form"> las gotas Fortunella</a> las cuales ahora disfrutan de un cuerpo atractivo y de una buena salud. </p>
+
+        <h2 class="redo lt135"> ¡No tienes nada que perder!</h2>
+
+        <p class="lt136"> Usando <a href> las gotas Fortunella</a> perderás<strong> 14 kg en 30 días</strong> . ¡Resultado garantizado sin dañar tu salud! Mi fórmula de adelgazamiento en dos fases, como un logro mundial, recibió <strong> una prestigiosa </strong> certificación de: autenticidad, calidad y efectividad. </p>
+
+        <h2 class="lt137" style="text-align: center; margin-top: 50px; font-weight: bold"> Triple certificación </h2>
+
+        <p class="lt138">
+          <strong> 1. Certificado de autenticidad</strong>: en <a href> las gotas Fortunella</a> por primera vez se usaron sustancias muy efectivas para adelgazar. Es una combinación única que combate las causas del sobrepeso y, al mismo tiempo, desencadena la quema de grasa automática en el organismo. Por lo tanto, puedes estar seguro de que recibirás el tratamiento original, disponible solo a través de este sitio. </p>
+        <p class="lt139">
+          <strong> 2. Certificado de calidad</strong>: gracias a la mejora del proceso de preparación, la pureza de los ingredientes activos de<a href="#order-form"> las gotas Fortunella</a> cumplen con los más altos estándares de calidad. Es una composición de las más poderosas sustancias adelgazantes, pero completamente segura para el cuerpo. Todo esto para cumplir al 100% con sus expectativas. </p>
+        <p class="lt140">
+          <strong> 3. Certificado de efectividad</strong> La eficacia del tratamiento se confirma por el hecho de que todos los pacientes han logrado perder al menos 14 kg en un mes. Eso es todo, y en primer lugar estoy seguro de que también se librará de la pesadilla del sobrepeso y podrás mostrar con orgullo tu nueva figura esbelta. </p>
+
+        <h2 class="redo lt141"> Adelgaza 14 kg en 28 días con <a href> las gotas Fortunella</a> de manera rápida, fácil y económica </h2>
+
+        <p class="lt142"> Las grandes compañías farmacéuticas de los EE. UU. y Japón, literalmente <strong> están luchando por la patente para mi fórmula bifásica </strong> de esbeltez. Una vez que se venda la patente, el tratamiento estará disponible en todo el mundo, pero sin duda será muy caro. </p>
+
+        <p class="lt143"> Pero antes de que eso suceda, he decidido hacerte sentir los beneficios de la fórmula. Tú podrás comprar el medicamento<strong> con un descuento del 59%</strong> . Hago esto por la gente de mi país porque quiero ayudarles a perder peso, de forma rápida, eficiente y segura. </p>
+
+        <p class="lt144"> ¡Así que te animo a que aproveches esta oportunidad! Es muy fácil pedir el medicamento. No necesitas enviar dinero por Internet o pagar con tu tarjeta para conseguir <a href> las gotas Fortunella</a> . Todo lo que tienes que hacer es completar el formulario, lo cual te tomará 2 minutos, y después de unos días recibirás un paquete por el que le pagarás cómodamente al cartero o mensajero. </p>
+
+        <p class="lt145"> Gracias por tomarte el tiempo de leer mi mensaje. ¡Te deseo felicidad, salud y un cuerpo delgado!<strong> Sin sobrepeso y </strong> complejos, pero con mucha seguridad en ti mismo y muchísima vitalidad. </p>
+
+        <img style="
+            max-width: 150px;
+            width: 100%;
+            float: right;
+            margin: 0px 0 0 10px;
+            display: block;
+          " src="images/es_sign.png">
+
+        <br>
+        <br>
+        <p class="lt146" style="text-align: right; margin-top: 0"> Prof. Richard Norman </p>
+        <div id="side2">
+          <style>
+            .yellowstar {
+              color: gold!important;
+              text-shadow: 1px 1px 1px black;
+            }
+
+            .no {
+              color: lightgray!important;
+              text-shadow: 1px 1px black;
+            }
+          </style>
+          <ul class="testimonials">
+            <li class="opinion">
+              <div class="faces" style="background-position: 5px 0px">
+                <img style="width: 100%" src="images/user001.jpg" alt>
+              </div>
+              <h3 class="lt148"> ¡Adelgacé por mi hija!</h3>
+              <p class="lt149"> Los chicos en la escuela se reían de mi hija, ellos decían que su madre era gorda como un hipopótamo y que mis piernas eran como dos columnas... Era ofensivo, pero tenían razón. Tuve una repentina falta de aire, no pude participar como los otros padres en el día de deportes de la escuela de mi hija. Las cosas cambiaron cuando me enteré de este método para bajar de peso. Una semana más tarde, sentí que mi vida se estaba haciendo más fácil, me sentía aliviada.<strong> En unos 2 meses perdí 23 kg.</strong> ¡Ahora puedo seguirle el ritmo a mi hija! </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="no">★</span>
+              </span>
+              <p class="author lt155"> Beatriz,<br> 42 años </p>
+            </li>
+            <li class="opinion">
+              <div class="faces" style="background-position: 65px 0px">
+                <img style="width: 100%" src="images/user02.jpg" alt>
+              </div>
+              <h3 class="lt156"> Fácil y eficaz</h3>
+              <p class="lt157"> Quién se iba a imaginar que un método tan sencillo iba a hacer estos milagros. Solo tienes que tomar estas gotas para empezar a quemar grasa de inmediato. Increíble. Mis hermanas, mis amigas y yo ya la hemos tomado.<strong> ¡Se lo recomiendo a todo el mundo!</strong> En efecto, es un descubrimiento pionero en cuanto al adelgazamiento. </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt163"> Julia Vargas<br> 55 años </p>
+            </li>
+            <li class="opinion">
+              <div class="faces" style="background-position: -80px 0px">
+                <img style="width: 100%" src="images/user03.jpg" alt>
+              </div>
+              <h3 class="lt164"> Mi esposa nuevamente me ha comenzado a admirar </h3>
+              <p class="lt165"> Gracias a <a href> las gotas Fortunella</a>
+                <strong> perdí 22 kg en 7 semanas.</strong> Sentí que nunca me sentiría atractivo. Mi esposa siempre se quejaba de que yo estaba demasiado gordo y que tenía muchos males por el sobrepeso. Ella me trajo este medicamento. Y ahora aquí estoy, delgado, sano y feliz. </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt171"> Daniel<br> 62 años </p>
+            </li>
+            <li class="opinion">
+              <div class="faces" style="background-position: -160px 0px">
+                <img style="width: 100%" src="images/user04.jpg" alt>
+              </div>
+              <h3 class="lt172"> He recuperado mi autoestima</h3>
+              <p class="lt173"> Empecé a tener problemas de peso después de cumplir 30 años. En unos pocos años logré subir 28 kg. Trabajo como vendedora, así que debo lucir bien y no tener problemas al moverme. No tengo tiempo para ir gimnasios o dietas. Pero estaba muy avergonzada por mi sobrepeso y quería deshacerme de el. Sobre todo porque sigo soltera y me gustaría conocer a alguien. Al principio no creí que un tratamiento<strong> estuviera disponible a un buen precio y además</strong> pudiera ser tan efectivo. Pero lo he podido comprobar por mí misma. <strong> He perdido 25 kg </strong> y nuevamente me he vuelto atractiva! </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="no">★</span>
+              </span>
+              <p class="author lt179"> Milagros<br> 44 años </p>
+            </li>
+            <li class="opinion">
+              <div class="faces" style="background-position: -160px -80px">
+                <img style="width: 100%" src="images/main.jpg" alt>
+              </div>
+              <h3 class="lt180"> Me siento útil</h3>
+              <p class="lt181"> Los años laborales como funcionario público hicieron muy bien su trabajo. Es tan simple: te la pasas sentado todo el día y después del trabajo ya no tienes fuerzas para moverte, a esto tienes que sumarle que en casa tu esposa cocina muy bien. Así fue como llegué a pesar 114 kilos. Estaba cansado todo el tiempo, por el sobrepeso siempre me quedaba dormido, no hacía nada en casa, y en el trabajo hacía todo muy lento. Me sentí un inútil. Afortunadamente, mi hija me dio<a href> las gotas Fortunella</a> . ¡Era algo especial! Sentí la diferencia de inmediato. <strong> Ya perdí 26 kg. Tengo más energía y me siento al menos 20 años más joven. </strong> Otra vez puedo pasar el tiempo activamente con mi familia. </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt187"> Víctor<br> 61 años </p>
+            </li>
+            <li class="opinion">
+              <div class="faces" style="background-position: -80px -80px">
+                <img style="width: 100%" src="images/user005.jpg" alt>
+              </div>
+              <h3 class="lt188"> Volví al trabajo</h3>
+              <p class="lt189"> Tenía un trabajo extra como guardia de seguridad. Una noche, durante mi turno, me dio un poco de sueño y sonó la alarma. Vi a un grupo de ladrones. Traté de correr detrás de ellos, pero debido al sobrepeso, no pude respirar y me caí al suelo como un hombre muerto. Algunas cosas fueron robadas del almacén, y yo perdí mi trabajo. Empecé a aprender técnicas de pérdida de peso, y todo el mundo decía que<a href> las gotas Fortunella</a> eran lo mejor. Lo probé y después de 40 días<strong> bajé 15 kg. ¡Qué gran cambio!</strong> . He recuperado la agilidad y puedo volver a trabajar. </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt195"> José <br> 59 años </p>
+            </li>
+
+            <li class="opinion">
+              <div class="faces" style="background-position: 0px -80px">
+                <img style="width: 100%" src="images/user007.jpg" alt>
+              </div>
+              <h3 class="lt196"> Una vida nueva por tan poco dinero</h3>
+              <p class="lt197"> Siempre me habían dicho que tenía sobrepeso porque como mucho... ¡Pero eso no era cierto! Me he matado de hambre tantas veces, con dietas, comiendo 3 manzanas pequeñas al día y sin ningún efecto ¡como si mi metabolismo se hubiera ido por completo! <strong> Solo gracias a <a href> las gotas Fortunella</a> sentí la diferencia </strong> después de unos cuantos días de uso. Sin que me diera cuenta ya pesaba 12 kg menos: ¡sólo habían pasado 4 semanas! ¡Es un milagro! </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt203"> Carmen<br> 29 años </p>
+            </li>
+
+            <li class="opinion">
+              <div class="faces" style="background-position: 0px -80px">
+                <img style="width: 100%" src="images/user08.jpg" alt>
+              </div>
+              <h3 class="lt204"> El único método eficaz</h3>
+              <p class="lt205"> ¡Probé muchos métodos para perder peso, tenía que bajar 34 kg! Pero nada funcionó, no tenía ni energía ni esperanza. Además, gasté un montón de dinero en diferentes productos. Pero con<a href="#order-form"> las gotas Fortunella</a> ocurrió algo distinto. Perdí 30 kg y <strong> me siento como si me hubieran dado una nueva vida. </strong>
+              </p>
+              <span class="rating" title="Evaluación" de los editores>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+                <span class="yellowstar">★</span>
+              </span>
+              <p class="author lt211"> Sandra<br> 59 años </p>
+            </li>
+          </ul>
+        </div>
+        <div id="borderPosition"></div>
+        <div style="clear: both"></div>
+        <p class="lt212" style="text-align: center; margin-top: 30px; font-weight: bold"> ¡Obtén <a href> las gotas Fortunella</a> con descuento! </p>
+
+        <style>
+          .ileProduktow {
+            background: url(images/licznik_bg.png) repeat-x;
+            background-size: 100% 115%;
+            background-position: 0;
+          }
+
+          .ileProduktow {
+            font-size: 45px;
+            color: #000;
+            padding: 0 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+          }
+
+          #licznikProduktow {
+            text-align: center;
+            float: right;
+            margin-top: 10%;
+            margin-right: 20px;
+          }
+
+          #licznikProduktow p {
+            font-size: 18px;
+            font-weight: bold;
+            word-wrap: break-word;
+            max-width: 388px;
+            padding-top: 20px;
+          }
+
+          .imagesSlider {
+            float: left;
+            text-align: center;
+            padding: 10px;
+          }
+
+          .imagesSlider img {
+            max-width: 100px;
+          }
+        </style>
+
+        <div id="licznikProduktow">
+          <span class="lt214" style="
+              font-weight: bold;
+              font-size: 14px;
+              display: block;
+              margin-bottom: 30px;
+              width: 130px;
+            "> Unidades disponibles:</span>
+          <span class="ileProduktow" id="setne">0</span>
+          <span class="ileProduktow" id="dziesietne">0</span>
+          <span class="ileProduktow" id="jednosci">7</span>
+        </div>
+
+        <div id="bottle">
+          <a href>
+            <img src="images/img.png" style="max-height: 300px; margin-bottom: 0">
+          </a>
+        
+          <div class="hidden-xs" id="bottle_g">
+            <img src="images/es_satisfaction.png" width="80" height="80">
+          </div>
+        </div>
+
+        <p class="lt215" style="font-size: 16px; text-align: center; line-height: 140%"> Pide <u> ahora</u> y obtén la posibilidad de volverte delgada. Al superar el límite de 200 pedidos, la oferta terminará. </p>
+
+        <link href="css/order_styles2.css" rel="stylesheet" type="text/css">
+      
+        <link href="css/index_form_rwd.css" rel="stylesheet" type="text/css">
+		<!-- newform-->
+		<link href="css/style.min.css" rel="stylesheet" type="text/css">
+		<script src="js/all.js"></script>
+		<h1 class="myh1" id="contact-form"> ¡El sorteo se extiende hasta el <span class="date-0"></span>! </h1>
+		<center>
+					
+     
+								<!---BOXES--->
+								<div id="boxesContainer">
+					
+									<div class="instructions" id="fford"> Pruebe su suerte! Reciba un descuento de hasta 50%. <table>
+											<tbody>
+												<tr>
+													<td>
+														<span class="bounce">↓</span>
+													</td>
+													<td>
+					
+													</td>
+													<td><span class="bounce">↓</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div id="boxes" class="boxes boxesfirsttry">
+										<div id="0">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="1">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="2">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="3">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="4">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="5">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="6">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="7">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+										<div id="8">
+											<img src="images/box_c.png" class="try">
+											<img src="images/download.png" class="opentry">
+											<span class="boxtext"> 50%</span>
+										</div>
+									</div>
+					
+					
+									<div id="shadow"></div>
+					
+									<div class="sweet-overlay" style="opacity: 1.03; display: none;" tabindex="-1">
+									</div>
+									<div class="sweet-alert animated bounceIn" id="modal02">
+										<div class="sa-icon sa-success" id="success02">
+											<span class="sa-line sa-tip" id="successtip02"></span> <span class="sa-line sa-long" id="successlong02"></span>
+											<div class="sa-placeholder"></div>
+											<div class="sa-fix"></div>
+										</div>
+										<p id="cnt" style="text-align:center;"> Un intento más! <br> Intente otra vez, por favor!</p>
+										<div class="sa-button-container">
+											<div class="sa-confirm-button-container">
+												<button id="update" style="display: inline-block; box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: #FFA400;"> OK </button>
+												<div class="la-ball-fall"></div>
+											</div>
+										</div>
+									</div>
+					
+					
+								</div>
+								<!---BOXES--->
+								<div class="order_block">
+									<center>
+										<center>
+											<!--<img src="images/product.png" style="max-width:300px;">-->
+											<h3 style="text-align: center; margin: 0;">
+
+												
+					<br> Introduzca su nombre y número telefónico: </h3>
+										</center>
+									</center>
+									<br>                                           
+								 
+									<div id="countdown"></div>
+					<div class="iframe" id="fforms">
+					
+					
+					<form method="post" class="x_order_form orderFormWrapper" 
+					geo="es" action="api.php" onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+					
+					<div class="order_form">
+					<div style="margin-bottom: 20px;"><span style="text-decoration: line-through;font-size: 30px;"> 
+					<span class="x_price_previous"> 98€</span> 
+					<span class="x_currency"></span></span>   
+					<span style="color:red;font-size: 34px;margin-left: 10px;">
+					<span class="x_price_current"> 49€</span> 
+					<span class="x_currency"></span></span>
+					</div>
+					<div class="block_form">
+					<label for="name"> Ejemplo: Gabriela García</label>
+					
+					<input class="form_input" value name="name" type="text" placeholder="Nombre" required style="height: 28px;">
+					
+					</div>
+					<div class="block_form">
+					<label for="phone"> Teléfono de contacto</label>
+					
+					<input class="form_input" value name="phone" type="tel" placeholder="Teléfono" required style="height: 28px;">
+					
+					</div>
+					<button type="submit" class="ifr_button"> Pedir las gotas Fortunella</button>
+					
+					</div>
+					
+      <input name="subid" type="hidden" value="{subid}">
+      <input name="px" type="hidden" value="{px}">
+							  
+					
+					</form>
+					
+					</div>
+					
+					
+					
+								</div>
+								<div class="spin-result-wrapper">
+									<div class="pop-up-window">
+										<div class="close-popup"></div>
+										<span class="pop-up-heading"> Felicitaciones!</span>
+										<p class="pop-up-text"> Ha recibido el descuento de 50% para nuestro producto! </p>
+										<button class="pop-up-button"> OK</button>
+									</div>
+								</div>
+							
+					
+						</center>
+		
+		<!--/ newform-->
+		
+		
+
+      </div>
+
+      <div id="footer" class="lt228" style="margin-top: 10px">
+        <p>
+          <br> Sport&Fit, Bailen, 51 cv, Carrera de San Francisco, 16, 28005 Madrid, Spain </p>
+        <a href="policy.html" target="_blank"> Privacy Policy</a>
+      </div>
+
+      <center>
+        <div style="
+            margin-top: 50px;
+            padding-top: 0;
+            color: #aaa;
+            font-size: 12px;
+            width: 80%;
+            font-family: arial;
+            line-height: 15px;
+          ">
+          <p class="lt229"> Al comprar un tratamiento con descuento recibirás una caja del producto adicional de regalo de parte de nuestra compañía. </p>
+          <p class="lt230"> Por motivos de seguridad y para proporcionar el servicio al máximo nivel, el propietario de la página web se reserva el derecho a realizar cambios en los contenidos de la política de privacidad. El objetivo es preservar el anonimato de los clientes, por lo que pensando en su satisfacción con los servicios prestados, los nombres y los apellidos incluidos se han cambiado. Al mismo tiempo, el propietario del sitio web señala que cualquier parecido con personajes reales es casual y no se ha utilizado deliberadamente. </p>
+        </div>
+      </center>
+    </div>
+
+    <style>
+      @media (max-width: 767px) {
+        #comments_box {
+          display: none!important;
+        }
+      }
+
+      #comments_box {
+        position: fixed;
+        right: 25px;
+        bottom: 10px;
+        max-width: 300px;
+        display: none;
+      }
+
+      #carousel {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      #slides {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      #slides ul {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      #slides li {
+        float: left;
+      }
+      /* Styling for prev and next buttons */
+
+      .btn-bar {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        top: 20px;
+      }
+
+      #buttons {
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+      }
+
+      #buttons a {
+        display: block;
+      }
+
+      a#prev {
+        width: 20px;
+        height: 60px;
+        float: left;
+        background-image: url(images/left.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      a#next {
+        width: 20px;
+        height: 60px;
+        float: right;
+        background-image: url(images/right.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .quote-phrase {
+        padding: 0px 30px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .quoteContainer,
+      .authorContainer {
+        display: table;
+        width: 100%;
+      }
+
+      .quoteContainer {
+        background-color: #e9f0fa;
+        color: #4869b1;
+      }
+
+      .authorContainer {
+        color: #4869b1;
+        background-color: #fff;
+        padding-top: 10px;
+      }
+
+      .authorContainer img {
+        margin: 2px 5px 0 0;
+        float: left;
+      }
+
+      .quote-author-country {
+        color: #6a6a6a;
+        color: #6a6a6a;
+      }
+    </style>
+    <div id="comments_box" style="display: block">
+      <div id="carousel">
+        <div class="btn-bar">
+          <div id="buttons">
+            <a id="prev" href="#"></a>
+            <a id="next" href="#"></a>
+          </div>
+        </div>
+        <div id="slides">
+          <ul>
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider">
+                          <img src="images/s005.jpg" alt>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt232" style="padding-left: 0"> ¿Sabes que es lo que más me gusta? No solo que <a href> las gotas Fortunella</a> funciona y es 100% natural. No tiene efectos secundarios. El mundo no conoce una mejor manera para perder peso. </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt233"> Carmen,</span><span class="quote-author-country lt234"> Huancayo</span>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt235"> Tenía tanto peso que me sentía como una inválida. Solo<a href> las gotas Fortunella</a> hicieron que perdiera peso, y gracias a esto recuperé mi agilidad, la energía y un buen aspecto. </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt236"> José Luis</span><span class="quote-author-country lt237"> Huánuco</span>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt238"> ¡Mi vecina ha tenido la razón! Esta fórmula acelera la quema de grasa, por lo cual se adelgaza cada día más y más. Adiós al sobrepeso. </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt239"> Luz,</span><span class="quote-author-country lt240"> Cajamarca</span>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt241"> He recuperado la silueta esbelta y la alegría de vivir. ¡Otra vez puedo jugar con mis nietos, dar paseos, trabajar en el jardín! Puedo llevar una vida normal. </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt242"> Alex,</span><span class="quote-author-country lt243"> Iquitos</span>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider">
+                          <img src="images/s008.png" alt>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt244" style="padding-left: 0"> Mi médico me ha advertido que debido al sobrepeso podría empezar a sufrir de ateroesclerosis. Y entonces mi mujer me consiguió este tratamiento espectacular. Voy a ser breve: ¡he adelgazado y ya no me preocupa la salud! </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt245"> Juan</span><span class="quote-author-country lt246"> Piura</span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt247" style="padding-left: 0"> ES INCREÍBLE. He adelgazado sin tener que estar a dieta. Tengo más energía, me siento más optimista, ¡He recuperado la alegría de vivir! </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt248"> Mónica, </span><span class="quote-author-country lt249"> Chiclayo</span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt250" style="padding-left: 0"> El sobrepeso me hacía la vida imposible. ¡Pero ya son cosas del pasado! ¡Gracias a <a href> las gotas Fortunella</a> he recuperado la silueta de mis tiempos de juventud! </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt251"> María,</span><span class="quote-author-country lt252"> Trujillo</span>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top">
+                        <div class="imagesSlider"></div>
+                      </td>
+                      <td>
+                        <p class="quote-phrase lt253"> ¡Este producto me ha salvado la vida! ¡He adelgazado hasta llegar a la talla 36 y me siento atractiva otra vez! ¡Qué alivio! </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div style="clear: both"></div>
+              <div class="authorContainer">
+                <img src="images/image3.png" alt>
+                <span class="quote-author lt254"> Adriana</span><span class="quote-author-country lt255"> Lima</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        coments();
+      }, 500);
+
+      function coments() {
+        var w = window.innerWidth;
+        if (w > 769) {
+          $("#comments_box").fadeIn();
+        }
+        //rotation speed and timer
+        var speed = 10000;
+
+        var run = setInterval(rotate, speed);
+        var slides = $(".slide");
+        var container = $("#slides ul");
+        var elm = container.find(":first-child").prop("tagName");
+        var item_width = container.width();
+        var previous = "prev"; //id of previous button
+        var next = "next"; //id of next button
+        slides.width(item_width); //set the slides to the correct pixel width
+        container.parent().width(item_width);
+        container.width(slides.length * item_width); //set the slides container to the correct total width
+        container.find(elm + ":first").before(container.find(elm + ":last"));
+        resetSlides();
+
+        //if user clicked on prev button
+
+        $("#buttons a").click(function (e) {
+          //slide the item
+          if (container.is(":animated")) {
+            return false;
+          }
+          if (e.target.id == previous) {
+            container.stop().animate(
+              {
+                left: 0,
+              },
+              1500,
+              function () {
+                container
+                  .find(elm + ":first")
+                  .before(container.find(elm + ":last"));
+                resetSlides();
+              }
+            );
+          }
+
+          if (e.target.id == next) {
+            container.stop().animate(
+              {
+                left: item_width * -2,
+              },
+              1500,
+              function () {
+                container
+                  .find(elm + ":last")
+                  .after(container.find(elm + ":first"));
+                resetSlides();
+              }
+            );
+          }
+
+          //cancel the link behavior
+          return false;
+        });
+
+        //if mouse hover, pause the auto rotation, otherwise rotate it
+        container
+          .parent()
+          .mouseenter(function () {
+            clearInterval(run);
+          })
+          .mouseleave(function () {
+            run = setInterval(rotate, speed);
+          });
+
+        function resetSlides() {
+          //and adjust the container so current is in the frame
+          container.css({
+            left: -1 * item_width,
+          });
+        }
+      }
+      //a simple function to click next link
+      //a timer will call this function, and the rotation will begin
+
+      function rotate() {
+        $("#next").click();
+      }
+    </script>
+    <div style="display: none"></div>
+
+    <style>
+      #ExitDiv {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        margin: auto;
+        width: 700px;
+        height: 154px;
+        z-index: 1000;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      #exitdiv_text1 {
+        position: relative;
+        top: 5px;
+        left: 5px;
+        width: 400px;
+        height: 93px;
+        font-family: "Arial Narrow", Arial, sans-serif;
+        font-size: 36px;
+        color: #6e0606;
+        font-weight: bold;
+        font-stretch: condensed;
+      }
+
+      #exitdiv_text2 {
+        position: absolute;
+        top: 0;
+        left: 400px;
+        width: 300px;
+        height: 93px;
+        font-family: arial;
+        font-size: 56px;
+        color: #6e0606;
+        font-weight: bold;
+      }
+
+      #exitdiv_text3 {
+        position: absolute;
+        left: 225px;
+        top: 100px;
+        width: 230px;
+        height: 100px;
+        font-family: arial;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        color: #04447c;
+      }
+
+      #left-wrapper {
+        position: relative;
+        width: 475px;
+        height: 100px;
+        float: left;
+      }
+
+      #left-wrapper #popup-1-top {
+        position: relative;
+        padding: 25px 0 0 35px;
+        width: 217px;
+        height: 61px;
+      }
+
+      #left-wrapper #popup-1-top #popup1-header-1 {
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+        font-size: 8px;
+        color: #6f77c6;
+      }
+
+      #left-wrapper #popup-1-top #popup1-header-2 {
+        margin-top: 5px;
+        font-family: arial;
+        font-size: 7px;
+        color: #353234;
+      }
+
+      #left-wrapper #exit_div_alert1 {
+        width: 147px;
+        margin-top: -25px;
+        padding: 0 35px 5px 35px;
+        background: url("images/popup_1_middle.png") repeat-y 0% 0%;
+        font-family: arial;
+        font-size: 8px;
+        color: #353234;
+      }
+
+      #left-wrapper #popup-1-bottom {
+        width: 217px;
+        height: 55px;
+        background: url("images/popup_1_bottom.png") no-repeat;
+      }
+
+      #left-wrapper #popup-1-bottom .texts {
+        margin-left: 50px;
+        font-family: arial;
+        font-size: 9px;
+        color: #151c55;
+      }
+
+      #left-wrapper #popup-1-bottom .text-1 {
+        padding-top: 4px;
+      }
+
+      #left-wrapper #popup-1-bottom .text-2 {
+        position: relative;
+        padding-top: 8px;
+      }
+
+      #left-wrapper #popup-1-bottom .text-2 .arrow {
+        position: absolute;
+        bottom: -12px;
+        right: -49px;
+        width: 247px;
+        height: 64px;
+        background: url("images/arrow_1.png") no-repeat 0% 0%;
+      }
+
+      #left-wrapper #popup-3 {
+        position: relative;
+        width: 418px;
+        height: 96px;
+        float: right;
+        background: url("images/popup_3.png") no-repeat;
+        font-family: arial;
+      }
+
+      #left-wrapper #popup-3 .texts {
+        font-size: 9px;
+        color: #000;
+      }
+
+      #left-wrapper #popup-3 .text-1 {
+        padding: 33px 15px 0px 42px;
+      }
+
+      #left-wrapper #popup-3 .text-2,
+      #left-wrapper #popup-3 .text-3 {
+        position: absolute;
+        bottom: 19px;
+        left: 124px;
+        width: 76px;
+        height: 15px;
+        font-size: 9px;
+        text-align: center;
+        color: #151c55;
+      }
+
+      #left-wrapper #popup-3 .text-3 {
+        left: 208px;
+      }
+
+      #left-wrapper #popup-3 .text-3 .arrow {
+        position: absolute;
+        bottom: -7px;
+        right: -14px;
+        width: 101px;
+        height: 137px;
+        background: url("images/arrow_2.png") no-repeat 0% 0%;
+      }
+
+      #right-wrapper {
+        position: relative;
+        width: 225px;
+        margin-top: 36px;
+        float: right;
+      }
+
+      #right-wrapper #popup-2-top {
+        width: 227px;
+        height: 27px;
+        background: url("images/popup_2_top.png") no-repeat;
+      }
+
+      #right-wrapper #exit_div_alert3 {
+        width: calc(227px - 36px);
+        padding: 10px 18px;
+        background: url("images/popup_2_middle.png") repeat-y;
+        font-family: arial;
+        font-size: 10px;
+        color: #353234;
+      }
+
+      #right-wrapper #popup-2-bottom {
+        width: 227px;
+        height: 42px;
+        background: url("images/popup_2_bottom.png") no-repeat;
+      }
+
+      #right-wrapper #popup-2-bottom .texts {
+        position: absolute;
+        font-family: arial;
+        font-size: 9px;
+        text-align: center;
+        color: #151c55;
+      }
+
+      #right-wrapper #popup-2-bottom .text-1,
+      #right-wrapper #popup-2-bottom .text-2 {
+        bottom: 21px;
+        left: 27px;
+        width: 74px;
+        height: 15px;
+      }
+
+      #right-wrapper #popup-2-bottom .text-2 {
+        bottom: 21px;
+        left: 105px;
+        width: 100px;
+      }
+
+      #right-wrapper #popup-2-bottom .text-2 .popup {
+        position: absolute;
+        bottom: -10px;
+        right: -7px;
+        width: 280px;
+        height: 133px;
+        background: transparent url("images/arrow_3.png") no-repeat 0% 0%;
+      }
+    </style>
+
+    <div id="ExitBackDiv" style="
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        z-index: 999;
+      "></div>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function (e) {
+        var id = $(this).attr("href");
+        var $id = $(id);
+        if ($id.length === 0) {
+          return;
+        }
+        e.preventDefault();
+        var pos = $id.offset().top;
+        $("body, html").animate({ scrollTop: pos });
+      });
+    </script>
+	
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ____',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length? val.charAt(i++): i >= val.length? "": a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+	
+  
+
+</body></html>

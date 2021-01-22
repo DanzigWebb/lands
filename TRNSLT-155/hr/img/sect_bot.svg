@@ -1,0 +1,17 @@
+<svg width="480" height="134" viewBox="0 0 480 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="134">
+<rect width="480" height="134" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect y="-969" width="480" height="993" fill="#FFE3DE"/>
+<rect x="118.463" y="60.1191" width="37.3719" height="140.06" rx="18.686" transform="rotate(135 118.463 60.1191)" fill="#FFE3DE"/>
+<rect x="511.463" y="36.1953" width="58.4767" height="112" rx="29.2383" transform="rotate(135 511.463 36.1953)" fill="#FFE3DE"/>
+<rect x="252.894" y="61.1953" width="42" height="112" rx="21" transform="rotate(135 252.894 61.1953)" fill="#FFE3DE"/>
+<rect x="349.545" y="46.1953" width="28.7782" height="112" rx="14.3891" transform="rotate(135 349.545 46.1953)" fill="#FFE3DE"/>
+<rect x="432.463" y="56.6934" width="46.5643" height="105.464" rx="23.2821" transform="rotate(135 432.463 56.6934)" fill="#FFE3DE"/>
+<rect x="292.963" y="101.037" width="46.5643" height="50.964" rx="23.2821" transform="rotate(135 292.963 101.037)" fill="#FFE3DE"/>
+<rect x="292.598" y="53.7988" width="28" height="28" rx="14" transform="rotate(135 292.598 53.7988)" fill="#FFE3DE"/>
+<rect x="184.247" y="57.752" width="23.326" height="70.3614" rx="11.663" transform="rotate(135 184.247 57.752)" fill="#FFE3DE"/>
+<rect x="61.1144" y="75.6895" width="35.9559" height="40.5733" rx="17.978" transform="rotate(135 61.1144 75.6895)" fill="#FFE3DE"/>
+</g>
+</svg>
