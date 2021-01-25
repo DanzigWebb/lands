@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/open_sans.eot);
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/open_sans.eot) format('embedded-opentype'), url(../fonts/open_sans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'open sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/opensans.eot);
+  src: local('open sans'), local('open sans'), url(../fonts/opensans.eot) format('embedded-opentype'), url(../fonts/opensans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'open sans light';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/opensans-light.eot);
+  src: local('open sans light'), local('open sans light'), url(../fonts/opensans-light.eot) format('embedded-opentype'), url(../fonts/opensans-light.woff) format('woff');
+}

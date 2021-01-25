@@ -1,0 +1,10 @@
+@media all and (max-width:750px){
+	form .info {display:block;}
+}
+@media all and (max-width:520px){
+	input[type=text], input[type=text]#pcode,select,textarea, select{width:100% !important;padding:2%;}
+	input#codinp{width:auto !important;padding:0;margin-bottom:0;}
+	.address-pane-table table td {display:block;text-align:left;}
+	.address-pane-table {width:96%;max-width:300px;margin-bottom:10px;}
+	input, select, textarea {margin-bottom: 10px}
+}
