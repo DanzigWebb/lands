@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic-Bold.ttf') format('truetype'),
+        url('../fonts/CenturyGothic-Bold.woff') format('woff'),
+        url('../fonts/CenturyGothic-Bold.svg') format('svg'),
+        url('../fonts/CenturyGothic-Bold.eot') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic-Italic.ttf') format('truetype'),
+        url('../fonts/CenturyGothic-Italic.woff') format('woff'),
+        url('../fonts/CenturyGothic-Italic.svg') format('svg'),
+        url('../fonts/CenturyGothic-Italic.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Engravers Gothic BT";
+    src: url('../fonts/EngraversGothicBT-Regular.ttf') format('truetype'),
+        url('../fonts/EngraversGothicBT-Regular.woff') format('woff'),
+        url('../fonts/EngraversGothicBT-Regular.svg') format('svg'),
+        url('../fonts/EngraversGothicBT-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic.ttf') format('truetype'),
+        url('../fonts/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic.svg') format('svg'),
+        url('../fonts/CenturyGothic.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
