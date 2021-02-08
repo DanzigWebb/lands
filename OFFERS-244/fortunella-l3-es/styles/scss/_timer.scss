@@ -1,0 +1,98 @@
+.timer {
+    padding-bottom: 0.3rem;
+    width: 4rem;
+    margin: 0 auto;
+
+    @include flex(column, space-between, center);
+    .tim {
+        box-shadow: inset 0px 5px 10px rgba(25, 21, 18, 0.5);
+        width: 100%;
+        border-radius: 4px;
+        min-height: 2.07rem;
+        background: #28231e;
+        border: 2px solid #3d3a37;
+        box-sizing: border-box;
+        @include flex(column, center, center);
+    }
+}
+.timer__wrapper,
+.timer__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    max-width: 3.4rem;
+    width: 100%;
+    font-weight: bold;
+     color:  #FFF23D;
+
+    opacity: 0.2;
+    margin: 0 auto;
+    .separ {
+        font-size: 0.5rem;
+        font-weight: 300;
+        width: 0.25rem;
+        letter-spacing: 0.05rem;
+    }
+}
+.timer__wrapper {
+    opacity: 1;
+    height: 100%;
+}
+.timer__title {
+    text-align: center;
+    margin-bottom: 0.17rem;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 0.24rem;
+    color: #b9b9b9;
+}
+
+.timer__desc {
+    font-size: 0.24rem;
+    font-weight: 100;
+color: #909498;
+opacity: 1;
+    text-transform: lowercase;
+}
+
+.timer__desc span {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+}
+
+.timer__wrapper > div,
+.timer__desc > div {
+    width: 1rem;
+    text-align: center;
+}
+.timer__wrapper > div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    height: 100%;
+    font-weight: 300;
+    font-size: 0.6rem;
+   color:  #FFF23D;
+    opacity: 1;
+    &:nth-child(2),
+    &:nth-child(3) {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.02rem;
+            height: 100%;
+            z-index: -1;
+            left: -0.11rem;
+            top: auto;
+            background: #3d3a37;
+        }
+    }
+}
