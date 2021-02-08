@@ -1,0 +1,91 @@
+.reviews {
+  position: relative;
+  &__item {
+    width: 4.2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0.15rem 0.2rem;
+  }
+  .top {
+    @include flex(row, space-between);
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.02rem solid #00000031;
+    &__uzer {
+      width: 1rem;
+      b {
+        margin-top: 0.07rem;
+      }
+    }
+    &__text {
+      width: 2.64rem;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .bottom {
+    &__uzer {
+      @include flex(row, flex-start, center);
+      img {
+        width: 0.55rem;
+        margin-right: 0.09rem;
+      }
+      b {
+        margin-bottom: 0.09rem;
+      }
+    }
+  }
+  b {
+    color: #712222;
+    font-size: 0.14rem;
+    font-weight: bold;
+    display: block;
+  }
+  span {
+    font-size: 0.15rem;
+    color: #000000;
+    font-weight: normal;
+    opacity: 0.3;
+  }
+  p {
+    font-size: 0.15rem;
+    line-height: 1.04;
+    font-weight: normal;
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    font-family: "Montserrat", sans-serif;
+    right: 0;
+    bottom: 0.78rem;
+    letter-spacing: -0.02rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    @include flex(row, center, center);
+  }
+}
+.owl-carousel {
+  .reviews__item {
+    .ava {
+      width: 4.2rem;
+    }
+  }
+}
+.owl-carousel {
+  .owl-nav {
+    padding-top: 0.3rem;
+    width: 2.89rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      img {
+        width: 0.7rem;
+      }
+    }
+  }
+}
