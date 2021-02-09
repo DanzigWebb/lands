@@ -207,7 +207,7 @@ section .image {
  height: 112px;
  background: center no-repeat;
  font-weight: 700;
- font-size: 13px;
+ font-size: 11px;
  line-height: 13px;
  text-transform: uppercase;
  position: absolute;
