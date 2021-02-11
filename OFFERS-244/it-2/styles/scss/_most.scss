@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+a {
+  @include transition;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $container-width;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  background: linear-gradient(93deg, #ff7a00 3.68%, #ffb957 48.7%, #ff7a00 95.39%);
+  box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.47);
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  @include flex(row, center, center);
+  max-width: 380px;
+  width: 100%;
+  height: 85px;
+  animation: pulse 2s ease infinite;
+  border: none;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-family: Georgia, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.1;
+
+  padding: 2rem;
+  padding-bottom: 4rem;
+
+  margin-bottom: -3rem;
+
+  background-image: url(../../img/title-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @include media-md {
+    background-position: center;
+    font-size: 30px;
+    padding: 2rem;
+  }
+
+  @include media-xl {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 3rem 1.4rem;
+    background-image: url(../../img/title_mob.png);
+    background-position: center center;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 22px;
+  }
+
+  &.center {
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media-xl {
+      margin-top: 0;
+    }
+  }
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.text-bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.circle-chart__circle {
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+  transition: 4s ease all;
+}
+
+.circle-chart__info {
+  transform: translateY(0.15em);
+}
