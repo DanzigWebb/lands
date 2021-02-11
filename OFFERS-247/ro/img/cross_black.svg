@@ -1,0 +1,1028 @@
+
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Muscles Detector</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="dist/index.css?ver=3" rel="stylesheet">
+  <style>
+    .disclaimer {
+      color: #fff;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+    #contact_popup {
+      padding: 25px 40px;
+      background-color: #fff;
+      max-width: 800px;
+      width: 100%;
+      height: 410px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      z-index: 9999;
+      display: none;
+      color: #3d3d3d;
+      opacity: 1;
+      visibility: visible;
+      -webkit-box-shadow: 1px 1px 38px 0px #ccc;
+      -moz-box-shadow: 1px 1px 38px 0px #ccc;
+      box-shadow: 1px 1px 38px 0px #ccc;
+      
+    }
+
+    .contact_inner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    #contact_popup h2,
+    #contact_popup p {
+      margin-bottom: 30px
+    }
+
+    #close_contact {
+      content: '';
+      position: absolute;
+      cursor: pointer;
+      top: -40px;
+      right: -40px;
+      background-image: url('dist/images/4eeaae4b46f70ff3790f73f273f847b8.svg');
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
+
+    .promo-text-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12px;
+      padding: 5px;
+      color: #fff;
+    }
+
+    @media (max-width: 991px) {
+      #contact_popup {
+        bottom: auto;
+        height: auto;
+        top: 15px;
+        max-height: calc(100vh - 15px);
+        overflow: auto
+      }
+
+      #close_contact {
+        top: 15px;
+        right: 15px;
+        background-image: url('dist/images/cross_black.svg');
+      }
+    }
+
+    @media (max-width: 600px) {
+      #contact_popup h2 {
+        font-size: 30px
+      }
+
+      #contact_popup h3 {
+        font-size: 20px
+      }
+    }
+
+
+    .footer-links a{
+      color:#fff;
+      text-decoration:none;
+    }
+
+    @media (max-width: 991px) {
+      .footer-links {
+        padding-bottom: 80px !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-links {
+        font-size: 12px
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- contact -->
+  <div id="contact_popup">
+    <div class="contact_inner">
+    <div class="flex">
+      <div class="text_wrapper" style="max-width: 100%;">
+        <h2 class="popup_title">CONTATTO</h2>
+        <h3 class="popup_subtitle"><strong>Dati dell'amministratore</strong></h3>
+        <p>Amministratore - il proprietario e gestore del sito, ovvero Jayden Carepromotion LLC con sede a Wilmington, DE, USA, indirizzo: 19C Trolley Square, Wilmington, DE, US 19806 , iscritta al relativo registro con il numero L20000179832</p>
+
+        <h3 class="popup_subtitle"><strong>E-mail</strong></h3>
+
+        <p>Indirizzo e-mail: <a href="mailto:contactpl@globalreversed.com">contactit@globalreversed.com</a></p>
+      </div>
+    </div>
+    </div>
+
+    <div id="close_contact"></div>
+
+  </div>
+  <!-- contact END -->
+  <div class="site__wrapper">
+    <div class="overlay"></div>
+    <div id="popup" class="popup"><img src="dist/images/4eeaae4b46f70ff3790f73f273f847b8.svg" alt="x" class="popup__close"
+        id="popup-close" />
+      <div class="popup__content">
+        <p class="text--header popup__header text--yellow">ASPETTA!</p>
+        <p class="popup__title text--orange">Ottieni lo sconto!</p>
+        <p class="popup__push text--white text--ac">L’offerta è indirizzata <span class="text--bold">SOLO a te</span> e scadrà tra 15 minuti.</p>
+        <p class="popup__underheading text--white">Per ritirare la confezione in promozione, torna al sito web.</p>
+      </div>
+      <div class="popup__product-wrapper">
+        <div class="popup__product-container"><img src="src/assets/images/muscle-detector-product-discount.png" alt="pbg"
+            class="popup__product img-resp" /></div>
+        <div class="popup__buttons"><a class="popup__button btn--clippath" href="./popup.php"><span
+              class="text--bold text--white text--ac">VOGLIO OTTENERE LO SCONTO</span> </a><a href="/"
+            class="popup__cancel text--ac">No, grazie</a></div>
+      </div>
+    </div>
+    <div class="delivery__banner">
+      <div class="container">
+        <div class="delivery__wrapper"><img src="dist/images/7a067f4bbaa87d68fb6a44987175bb89.svg" alt="icon"
+            class="delivery__wrapper--img">
+          <div class="delivery__wrapper--text-container">
+            <div class="text--desktop">
+              <p class="delivery__wrapper--text text--bold">CONSEGNA SICURA!</p>
+              <p class="delivery__wrapper--text">Con noi non devi preoccuparti di niente!
+                  Ci prendiamo cura della sicurezza dei nostri
+                  clienti!
+                  I nostri corrieri cambiano mascherina e guanti
+                  ogni 2 ore. Il processo di consegna e di
+                  pagamento avviene senza contatto.</p>
+            </div>
+            <div class="text--mobile">
+              <p class="delivery__wrapper--text text--bold">CONSEGNA SICURA!</p>
+              <p class="delivery__wrapper--text">I nostri corrieri cambiano mascherina e guanti ogni 2 ore. Il processo di consegna e di pagamento avviene senza contatto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+    <!-- promo txt -->
+  <div class="promo-text-box">Promozione</div>
+  <!-- promo txt END -->
+      <div class="container header__wrapper"><a href="#"><img src="dist/images/muscle-detector-logo.png"
+            alt="logo" class="header__logo"></a>
+        <div class="hamburger icon"><span class="line top"></span> <span class="line middle"></span> <span
+            class="line bottom"></span></div>
+        <ul class="navigation" id="collapse">
+          <li class="navigation__item"><a href="#benefits"
+              class="navigation__item--link text--white text--bold">BENEFICI</a></li>
+          <li class="navigation__item"><a href="#how_it_works"
+              class="navigation__item--link text--white text--bold">EFFETTI DELLA CURA</a></li>
+          <li class="navigation__item"><a href="#faq" class="navigation__item--link text--white text--bold">FAQ</a></li>
+          <li class="navigation__item"><a href="#clients"
+              class="navigation__item--link text--white text--bold">CLIENTI SODDISFATTI</a></li>
+          <li class="navigation__item--btn"><a href="#footer" class="btn btn--clippath text--white text--bold">ORDINA ORA</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="section-1">
+      <div class="container">
+        <div class="section-1__wrapper">
+          <div class="section-1__titles">
+            <div class="section-1__titles--header">
+              <p class="text--header text--white">Naturale</p>
+              <h1 class="text--title text--orange text--bold">INIEZIONE DI TESTOSTERONE</h1>
+            </div>
+            <div class="section-1__titles--list-wrapper">
+              <ul class="section-1__titles--list">
+                <li class="section-1__titles--list-item text--white"><span class="text--orange text--bold">Aumenta la massa muscolare</span> di oltre l'80%</li>
+                <li class="section-1__titles--list-item text--white">Otteni fino al <span
+                    class="text--orange text--bold">65% di energia in più</span></li>
+                <li class="section-1__titles--list-item text--white"><span class="text--orange text--bold">Aumenta la tua forza fino a</span> 6 volte</li>
+                <li class="section-1__titles--list-item text--white">Perdi il peso <span
+                    class="text--orange text--bold">senza dover patire la fame</span> e senza dover fare allenamenti strazianti.</li>
+                <li class="section-1__titles--list-item text--white">Aumenta il tuo <span
+                    class="text--orange text--bold">desiderio sessuale</span></li>
+              </ul><img src="src/assets/images/muscle-detector-product-discount.png" alt="product"
+                class="section-1__titles--product">
+            </div>
+          </div>
+          <div class="section-1__form">
+            <div class="form_wrapper">
+              <div class="form_promotion">
+                <p class="form_promotion--title">Muscles Detector a soli</p>
+                <div class="form_promotion--wrapper">
+                  <p class="form_promotion--old"><s>157 EUR</s></p>
+                  <p class="form_promotion--new">47 EUR</p>
+                </div>
+              </div>
+              <h3 class="form_wrapper--title">Compila il modulo d’ordine</h3>
+              <form class="sale__form" id="sale_form1">
+
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form1__phone" name="form__phone" value="" class="input text--6 text-dark form__phone" placeholder="Il tuo numero di telefono:" />
+                    <div class="error-feedback">Inserisci correttamente il numero di telefono</div>
+                  </div>
+                </div>
+
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form1__name" name="form__name" value="" class="input text--6 text-dark form__name" placeholder="Nome" />
+                    <div class="error-feedback">Inserisci il tuo nome correttamente</div>
+                  </div>
+                </div>
+
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form1__surname" name="form__surname" value="" class="input text--6 text-dark form__surname" placeholder="Cognome" />
+                    <div class="error-feedback">Inserisci il tuo nome correttamente</div>
+                  </div>
+                </div>
+
+                <div class="button-wrapper">
+                  <input type=hidden name=sessionId value="" id="sessionId" class=sessionId> 
+                  <input type=hidden name=partnerId value="" id="partnerId" class=partnerId> 
+                  <input type=hidden name=partnerName value="" id="partnerName" class=partnerName> 
+                  <input type=hidden name=product value="PRO125" id="product"> 
+                  <input type=hidden name=offerId value="" id="offerId" class=offerId>
+                  <input type=hidden name=currency_1 value="47" id="currency">
+                  <input type=hidden name=leadsource value="http://catchonlythebestpromotions.com/" id="leadsource">
+                  <input type="hidden" name="country" value="IT" />
+                  <button type="submit" class="input__button text--bold">ORDINA SUBITO</button>
+                </div>
+
+                <div class="countdown__wrapper">
+                  <p class="countdown__wrapper--text text--white text--ac">La promozione scade tra:</p>
+                  <p class="text--subtitle text--white text--ac text--bold timer">45:00</p>
+                </div>
+
+              </form>
+
+              <form id="hidden-form-1" class="hidden-form sale__form">
+                <div class="discount__hidden-form">
+
+                  <div class="discount__partners">
+                    <div class="discount__partners-img"><img src="dist/images/a8a561aa93a65305f84ca826a63de06c.png"
+                        alt="OK5" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/47addc1357983c7109bf137d1c8c3f12.png"
+                        alt="OK6" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/4627773732952376be1e69090ccb3edc.png"
+                        alt="OK7" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/28361a739e07e61e4ba227a1b466e1da.png"
+                        alt="OK8" /></div>
+                  </div>
+
+                  <p class="discount__text text--gray text--align-left"><b>IMPORTANTE!</b> Non pagare un extra per la spedizione. Il costo della consegna del pacco, in alcune aree, è rimborsato al 100% <b>dal produttore. Per verificare se hai diritto ad un rimborso completo, compila il modulo con i dettagli dell'indirizzo corretto e premi il pulsante qui sotto.</p>
+
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <input name="adress_form" value="" class="input text-dark discount__input form__street" placeholder="Inserisci qui l’indirizzo e il numero civico:" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <input name="postal_form" value="" class="input text-dark discount__input form__postal" placeholder="Inserisci qui il codice postale:" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <input name="city_form" value="" class="input text-dark discount__input form__city" placeholder="Inserisci qui la Città:" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <textarea name="message_form" cols="40" rows="3" class="input text-dark form__comments" placeholder="Note per il corriere:"></textarea>
+                  </div>
+
+                  <div class="input__group">
+                    <div class="input__wrapper email">
+                      <input name="email_form" class="input text-dark discount__input form__email" placeholder=" E-mail:" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                      <span class="discount__info" style="color:#fff;">(Ottieni le ultime informazioni sulle promozioni e le offerte in corso)</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="button__wrapper">
+                  <button type="submit" class="input__button text--bold">OTTIENI LO SCONTO E ORDINA MUSCLES DETECTOR CON LA SPEDZIONE GRATIS!</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="wrapper">
+        <div class="wrapper__item"><img src="dist/images/f2053c8054676edc61913a4f8851b748.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--red text--bold">Consegna rapida</p>
+            <p class="wrapper__item--text text--red">Inizia a rafforzare i tuoi muscoli oggi stesso</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/390819080eb31ae55eb9e5c8b03002aa.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--red text--bold">Confezione pratica</p>
+            <p class="wrapper__item--text text--red">Puoi averlo con te in qualsiasi momento e ovunque</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/02baccd24b4b1f71d5285378cb1ccbf9.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--red text--bold">Prezzo vantaggioso</p>
+            <p class="wrapper__item--text text--red">Una silhouette da sogno per tutti</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/d01e9c5cdacc3a093772241c4b641a25.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--red text--bold">Ingredienti 100% naturali</p>
+            <p class="wrapper__item--text text--red">Smettila di avvelenare il tuo corpo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="container">
+        <div class="title__wrapper">
+          <h2 class="text--title text--red text--bold text--ac">Massa muscolare asciutta</h2>
+          <h2 class="text--title text--black text--bold text--ac">indipendentemente dal peso, dall'età o dallo stile di vita</h2>
+        </div>
+        <p class="section-3__text">Anche se si segui la dieta più rigorosa e ti alleni duramente ogni giorno, <span class="text--bold">la crescita muscolare rallenta con il passare degli anni.</span></p>
+        <p class="section-3__text text--bold">Ma non per chi prende il Muscles Detector!</p>
+        <p class="section-3__text">Muscles Detector è stato creato per stimolare il tuo corpo ad aumentare la produzione di testosterone.</p>
+        <p class="section-3__text">E quando il tuo testosterone inizia a crescere...</p>
+        <div class="title__wrapper">
+          <h3 class="text--subtitle text--bold text--black text--ac">In palestra avrai PIÙ energia, maggiore resistenza e risultati MIGLIORI!</h3>
+        </div>
+        <p class="section-3__text">Tutto grazie a Muscles Detector <span class="text--bold">ZMA.</span></p>
+        <p class="section-3__text">ZMA è una combinazione di zinco (monometionina e aspartato), <span
+            class="text--bold">magnesio aspartato e vitamina B6.</span> Ognuno di questi ingredienti <span
+            class="text--bold">è fondamentale per la SINTESI delle proteine che porta alla crescita muscolare.</span></p>
+        <p class="section-3__text">Un gruppo di ricercatori dell'Università di Boise, Idaho, ha invitato 150.000 atleti di età  tra i 20 e i 25 anni a un test di 12 settimane, durante il quale sono stati sottoposti ad un programma di allenamento appositamente sviluppato e all'integrazione dello ZMA.</p>
+        <p class="section-3__text text--bold">I risultati?</p>
+        <div class="title__wrapper">
+          <h3 class="text--subtitle text--bold text--black text--ac">Dopo 12 settimane, i soggetti del test hanno registrato un aumento dell'80% di testosterone e un notevole sviluppo della massa muscolare - fino a 15 kg!</h3>
+        </div>
+        <p class="section-3__text">Ma non è finita qua!</p>
+        <p class="section-3__text">Perchè solo <span class="text--bold">la metà dei ragazzi testati ha ricevuto lo ZMA ,il resto dei partecipanti ha ricevuto il placebo.</span></p>
+        <p class="section-3__text">Quali sono stati i loro risultati?</p>
+        <p class="section-3__text text--bold">Hanno registrato un calo dell'8% del testosterone!</p>
+        <p class="section-3__text">Se i giovani, seguendo un programma del genere per 12 settimane, hanno sperimentato un calo di testosterone, come potrebbe influire sugli uomini di età maggiore ai 40 anni... Ecco perché è assolutamente necessario prendere Muscles Detector! Soprattutto se si ha a cuore la propria forma muscolare, l’energia corporea e...</p>
+        <p class="section-3__text text--bold">Massa muscolare asciutta acquisita nel modo più naturale possibile!</p>
+        <div class="section-3__wrapper"><img src="src/assets/images/muscle-detector-product-discount.png" alt="product"
+            class="section-3__wrapper--product">
+          <div class="section-3__wrapper--text-container">
+            <p class="text--subtitle text--bold">Massa muscolare asciutta</p>
+            <p class="text--header text--orange">Ottienila in modo naturale!</p><a href="#footer" class="btn text--bold">INIZIA OGGI STESSO L'AVVENTURA CON MUSCLES DETECTOR! >></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="container">
+        <p class="section-4__text text--title text--bold">Recupera la tua libido giovanile e aumenta le tue prestazioni sessuali</p>
+        <div class="text__wrapper">
+          <p class="section-4__text">Non lasciare che le umilianti situazioni a letto del passato ostacolino il tuo desiderio sessuale! Risveglia in te il demone del sesso nelle cui vene scorre fuoco e... testosterone!</p>
+          <p class="section-4__text">Muscles Detector risolve 2 cause spesso sottovalutate di calo del testosterone.</p>
+        </div>
+        <div class="text__wrapper">
+          <p class="section-4__text text--subtitle text--bold text--ac">Supera queste 2 cause che devastano, esauriscono e distruggono il testosterone.</p>
+          <p class="section-4__text">Come si fa a mantenere costante il livello di testosterone indipendentemente dall'età?</p>
+          <p class="section-4__text">È semplice: dieta ed esercizio fisico. Tuttavia, la ricerca afferma chiaramente: anche se controlli diligentemente il numero dei tuoi pasti o l'apporto calorico e fai esercizio fisico come se ti stessi preparando per le Olimpiadi, ciò non impedisce al tuo testosterone di diminuire.</p>
+          <p class="section-4__text">Perché? Per 2 ragioni spesso sopravvalutate.</p>
+        </div>
+        <div class="text__wrapper">
+          <p class="section-4__text text--subtitle text--yellow text--bold text--ac">Causa #1</p>
+          <p class="section-4__text text--subtitle text--bold text--ac">Insufficienti ore di sonno</p>
+          <p class="section-4__text">Se vuoi costruire una muscolatura duratura e godere di una perfetta struttura corporea, devi avere un organismo riposato.</p>
+          <p class="section-4__text">Molti credono che se vuoi sviluppare una massa muscolare, dovresti dormire di più.</p>
+          <p class="section-4__text"><span class="text--bold">Questa è solo una parte della verità,</span> perché la qualità del sonno conta tanto quanto la quantità. Tuttavia, al giorno d'oggi ,la quantità di sonno che aumenterebbe il testosterone e i tuoi muscoli da sogno è impossibile da raggiungere.</p>
+          <p class="section-4__text text--subtitle text--bold text--ac">Ottieni un sonno completo grazie a Muscles Detector</p>
+          <p class="section-4__text">La composizione di Muscles Detector è ricca di ZMA di alta qualità.</p>
+          <p class="section-4__text">Gli studi dimostrano che ZMA migliora la qualità del sonno <span
+              class="text--bold">estendendo la 3 e 4 fase del sonno</span> profondo, che è la più importante per la crescita muscolare.</p>
+          <p class="section-4__text">Non lasciare che il tuo duro lavoro durante il giorno vada sprecato durante il sonno!</p>
+          <p class="section-4__text">Ricarica il tuo corpo con abbastanza ZMA con Muscles Detector!</p>
+        </div>
+        <div class="text__wrapper">
+          <p class="section-4__text text--subtitle text--yellow text--bold text--ac">Causa #2</p>
+          <p class="section-4__text text--subtitle text--bold text--ac">Troppo pochi minerali</p>
+          <p class="section-4__text">I pasti equilibrati sono molto importanti quando si tratta di produzione di testosterone. Ecco perché quando mancano i minerali chiave, tutto il resto va sprecato.</p>
+          <p class="section-4__text">Le ricerche dimostrano che i deficit di zinco sono in maggioranza  negli atleti e nelle persone che si allenano. Gli scienziati confermano che ciò è dovuto alla maggiore sudorazione e all'alimentazione scorretta. Tali carenze possono ridurre drasticamente le prestazioni in palestra e non solo.</p>
+          <p class="section-4__text text--bold">Il risultato: riduzione di forza e diminuzione della crescita muscolare.</p>
+          <p class="section-4__text text--subtitle text--bold text--ac">Muscles Detector nutrirà il tuo corpo con i minerali essenziali di cui hai bisogno</p>
+          <p class="section-4__text">Non è un segreto che l'assunzione di ZMA migliora le prestazioni sportive e la produzione di testosterone.</p>
+          <p class="section-4__text">Muscles Detector è uno ZMA di alta qualità sviluppato in laboratorio, consegnato direttamente al tuo corpo per un migliore funzionamento, più energia e una crescita muscolare veloce.</p>
+          <p class="section-4__text text--bold">Ma la potenza di Muscles Detector è ancora maggiore!</p>
+          <p class="section-4__text">Nella sua composizione troverete ulteriori vitamine, minerali e sostanze nutritive che hanno dimostrato di aumentare il testosterone e le prestazioni complessive del corpo. Tutto al 100% naturale!</p>
+          <p class="section-4__text text--bold">FUNZIONA DAVVERO!</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-6" id="benefits">
+      <div class="container">
+        <div class="section-6__titles"><img src="dist/images/muscle-detector-product.png" alt="product"
+            class="section-6__product">
+          <div class="section-6__text-container">
+            <p class="section-6__text text--title text--red text--bold text--ac">6 vantaggi dell'utilizzo di Muscles Detector</p>
+            <p class="section-6__text text--bold text--ac">Nel corso delle ricerche di laboratorio e dei test su un gruppo di volontari, gli scienziati americani si sono concentrati sull'identificazione di 6 incontestabili ragioni per cui Muscles Detector è migliore di altri prodotti della concorrenza.</p>
+          </div>
+        </div>
+        <div class="section-6__wrapper">
+          <div class="section-6__wrapper--item"><img src="dist/images/19713cc95c1182e72201a748f39b07c4.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #1</p>
+              <p class="section-6__text text--bold">La formula efficace</p>
+              <p class="section-6__text">Dopo approfondite ricerche e test, gli scienziati americani sono riusciti a isolare e incapsulare in questa formula rivoluzionaria una miscela di ingredienti  efficaci che stimolano la produzione di testosterone, con il risultato di un accumulo completamente naturale di tessuto muscolare.</p>
+            </div>
+          </div>
+          <div class="section-6__wrapper--item"><img src="dist/images/3cdc03d88d122671b43cf0e11b08584e.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #2</p>
+              <p class="section-6__text text--bold">Ingredienti naturali al 100% perfettamente abbinati</p>
+              <p class="section-6__text">Muscles Detector è una formula dettagliata in cui la selezione degli <span
+                  class="text--bold">ingredienti garantisce la massima energia, la crescita del tessuto muscolare e anche fino a 10 volte  più rigenerazione dopo un allenamento estenuante.</span></p>
+            </div>
+          </div>
+          <div class="section-6__wrapper--item"><img src="dist/images/45bd774b46fedec9532ac3ecedfc6b45.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #3</p>
+              <p class="section-6__text text--bold">Testato in laboratorio</p>
+              <p class="section-6__text">Muscles Detector è stato creato con ingredienti di altissima qualità, rigorosamente controllati in  laboratorio presso l'Università di Boise. È stato sottoposto ad analisi, grazie alle quali ha ricevuto numerosi riconoscimenti scientifici, tra cui il prestigioso <span
+                  class="text--bold">Certificato Europeo di Alta Qualità.</span></p>
+            </div>
+          </div>
+          <div class="section-6__wrapper--item"><img src="dist/images/eec0bd80ef2438731b11d16b88500a6e.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #4</p>
+              <p class="section-6__text text--bold">Efficacia indipendentemente dall'età</p>
+              <p class="section-6__text">Muscles Detector è stato creato per tutti coloro che hanno a cuore  la propria forma muscolare. La decisione di una composizione completamente non invasiva e naturale senza l'aggiunta della popolare e dannosa taurina è un successo - <span class="text--bold">sia i ventenni che i sessantenni con una struttura corporea diversa possono utilizzare il prodotto, ottenendo gli stessi risultati senza effetti collaterali.</span></p>
+            </div>
+          </div>
+          <div class="section-6__wrapper--item"><img src="dist/images/8265541f98acd66e7d9d6dd419074a4e.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #5</p>
+              <p class="section-6__text text--bold">ZMA come segreto nel funzionamento</p>
+              <p class="section-6__text">ZMA è esattamente la stessa combinazione di due minerali e una vitamina che ha sollevato il livello di HGH e testosterone nei parteciapanti al test precedentemente descritto. La formula è supportata anche da altri ingredienti naturali che agiscono sul testosterone, maggiori informazioni qui sotto.</p>
+            </div>
+          </div>
+          <div class="section-6__wrapper--item"><img src="dist/images/7354dfa419c40a7729585aa06d7294a5.svg" alt="icon"
+              class="section-6__wrapper--img">
+            <div class="section-6__wrapper--text-container">
+              <p class="section-6__text text--subtitle text--bold text--red">BENEFICIO #6</p>
+              <p class="section-6__text text--bold">Facile da usare</p>
+              <p class="section-6__text">Muscles Detector è sotto forma di compresse, presenti in una confezione pratica - ecco perché questo trattamento è così sicuro: niente aghi sgradevoli o polveri liquide da sciogliere e l'effetto? 15 kg di massa muscolare!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-7" id="how_it_works">
+      <div class="container">
+        <div class="section-7__wrapper">
+          <div class="section-7__wrapper--item">
+            <p class="section-7__text text--title">Come funziona Muscles Detector?</p>
+            <p class="section-7__text text--bold">Muscles Detector aumenta la massa muscolare fino all'80%, fino ad 8 volte aumenta la capacità aerobica, facilita la perdita di peso e aumenta il desiderio sessuale.</p>
+            <p class="section-7__text">In breve: Muscles Detector <span
+                class="text--bold">stimola il corpo a produrre più testosterone fino al 76%.</span> Esso <span class="text--bold">aumenta il tasso di sintesi proteica fino a 6 volte,</span> il che aiuta a costruire la massa muscolare. Inoltre,
+              <span class="text--bold">riduce l'azione di un ormone catabolico chiamato cortisolo</span>, che decompone il tessuto muscolare.</p>
+            <p class="section-7__text">Gli amminoacidi formano proteine che guidano la crescita muscolare, ma la capacità del tuo corpo di elaborarli con maggiore sforzo dipende dalla loro biodisponibilità.</p>
+            <p class="section-7__text">Il testosterone aiuta nella sintesi delle proteine legandosi ai recettori degli androgeni nelle cellule muscolari. Il tuo corpo può quindi utilizzare questa proteina per riparare i microdanni minori che appaiono nei tuoi tessuti, per esempio quando sollevi un carico. Ecco perché il nostro prodotto contiene anche ingredienti che influiscono sulla produzione di proteine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-8">
+      <div class="container">
+        <div class="section-8__wrapper">
+          <div class="section-8__wrapper--product-container"><img src="src/assets/images/muscle-detector-product-discount.png"
+              alt="product" class="section-8__wrapper--product">
+            <p class="section-8__text text--subtitle text--bold">Scopri tu stesso come ti può aiutare Muscles Detector!</p><a
+              href="#footer" class="btn btn--clippath text--bold text--subtitle">ORDINA SUBITO</a>
+          </div>
+          <div class="section-8__wrapper--text-container">
+            <p class="section-8__text text--title text--bold">Come può aiutarmi Muscles Detector?</p>
+            <p class="section-8__text"><span class="text--bold">Muscles Detector</span> aumenta il livelli di testosterone, il che ti darà <span class="text--bold">più energia nel quotidiano, una migliore rigenerazione e muscoli più grandi...</span></p>
+            <p class="section-8__text">...che può durare più a lungo - un beneficio che può essere incredibile non solo in palestra ma anche in camera da letto. È stato scientificamente provato che alcuni degli ingredienti nella sua composizione, tra cui lo zinco e l'acido D-aspartico, <span class="text--bold">aumentano la mascolinità.</span></p>
+            <p class="section-8__text">È stato anche dimostrato che Muscles Detector aumenta i livelli dell'ormone della crescita di 5 volte. Anche se mangi e riposi in maniera corretta, la maggior parte degli uomini oltre i 30 anni perde in media il 10% di testosterone ogni decennio. In altre parole: <span class="text--bold">non importa quanto duramente ti alleni, potresti non notare alcun aumento del testosterone una volta raggiunto questo limite.</span></p>
+            <p class="section-8__text text--bold">Cosa stai aspettando?</p>
+            <p class="section-8__text">È il tuo momento di lasciare la panchina della riserva e andare finalmente avanti con la tua vita <span
+                class="text--bold">AVANTI, AVANTI, AVANTI, AVANTI! Ordinate oggi stesso il vostro stimolatore naturale di testosterone Muscles Detector!</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-9">
+      <div class="section-9__header">
+        <p class="text--title text--bold text--red text--ac">Muscles Detector suddiviso in fattori primi</p>
+      </div>
+      <div class="container">
+        <div class="section-9__wrapper">
+          <div class="section-9__item"><img src="dist/images/31848d440f78fddfa9336dbeae6038c3.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">ZMA</p>
+              <p class="section-9__text"><span class="text--bold">ZMA</span> è un importante stimolo muscolare, supporta anche il sistema immunitario e aumenta i livelli di energia. La sua azione riguarda tutto il corpo e garantisce una rigenerazione efficace.</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/96c0813264c1383adf43fbb60ec84638.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">ESTRATTO DI SEMI DI FIENO GRECO</p>
+              <p class="section-9__text">Il fieno greco aiuta a bruciare i grassi. Si tratta di un'erba indiana ricca di un composto chiamato trigonellina . Riduce i livelli di grasso, aumenta i livelli di testosterone e la biodisponibilità. Inoltre, contribuisce alla crescita della libido ed elimina i problemi di erezione.</span></p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/48d69787547fccc8cf0fdb1422ae3cd7.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">ESTRATTO DI SEMI DI MANGO AFRICANO</p>
+              <p class="section-9__text">Accelera il processo di combustione dei grassi nel corpo in modo completamente naturale perché contiene una grande quantità di fibre. I semi di mango sono anche ricchi di proteine. Abbassano il colesterolo, accelerando il metabolismo e liberando il corpo dall'eccesso di tossine.</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/36ff796be9a3863c80d8aca11059cf11.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">VITAMINA D3</p>
+              <p class="section-9__text">Uno studio condotto nel 2013 a Oxford <span
+                  class="text--bold">ha dimostrato che la vitamina D3 ha aumentato il totale di testosterone bioattivo  di quasi il 30%, integrato ogni giorno per 3 mesi.</span> Inoltre, supporta una serie di funzioni di base, dall'assorbimento del calcio all'aumento dei livelli di testosterone, quest'ultimo è molto importante per lo sviluppo muscolare.</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/f1b0eab3dde08c5c6e8e42b867577bbb.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">VITAMINA K2 (MK4)</p>
+              <p class="section-9__text">La vitamina K è un gruppo di composti di cui il <span class="text--bold">K2</span> è particolarmente importante. Riduce la distruzione della massa ossea, stabilizza i livelli di testosterone e supporta il corretto funzionamento del sistema cardiovascolare - tutto questo è utile durante l'allenamento.</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/c774126a8117f1f3f3d7415ba77417e8.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">VITAMINA B6 (PIRIDOSSINA HCL)</p>
+              <p class="section-9__text"><span class="text--bold">La vitamina B6 partecipa al processo della sintesi delle proteine e riduce  la ritenzione di testosterone nel nucleo delle cellule.</span> Influisce anche sulla pressione sanguigna, sugli spasmi muscolari e sulla frequenza cardiaca. La vitamina B6 può inoltre influire sui livelli di estrogeni, partecipa a molti rapporti complessi tra gli ormoni e, di conseguenza, aumenta il nostro buon umore.</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/74856e997c708e2c6d4d18a48cc73e01.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">MAGNEZIO</p>
+              <p class="section-9__text">La prossima volta che volete prendere una bevanda energetica, provate  il magnesio! Questo secondo elettrolita più comune nel corpo supporta molti triathlonisti, riducendo il tempo necessario per riposare. <span
+                  class="text--bold">Solo 1 grammo di magnesio al giorno aumenta i livelli di testosterone fino a ¼!</span></p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/1ab334dae762c3b9cd27d9d01a8e309d.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">ZINCO</p>
+              <p class="section-9__text">Lo zinco aiuta a mantenere il testosterone. Molti studi confermano che durante l'attività fisica intensa, l'assunzione di zinco <span class="text--bold">assicura il mantenimento dei livelli di testosterone e quindi aumenta le prestazioni sportive.</span> Oltre a questo... ha un effetto positivo sulle prestazioni sessuali!</p>
+            </div>
+          </div>
+          <div class="section-9__item"><img src="dist/images/ef2ad4af9960f22b8ae4f069598b54ce.png" alt="img"
+              class="section-9__item--img">
+            <div class="section-9__item--text-container">
+              <p class="section-9__text item--title">ACIDO D-ASPARTICO</p>
+              <p class="section-9__text">L'acido D-Aaspartico (D-AA) è un potente amplificatore di testosterone. Aiuta nella sua sintesi stimolando l'ormone luteinizzante (LH) e l'ormone della crescita (HGH), che a sua volta stimolano i testicoli a produrre più testosterone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-10">
+      <div class="section-10__header">
+        <p class="section-10__text text--title text--bold text--ac">Muscles Detector  guadagna sempre più fan</p>
+      </div>
+      <div class="section-10__bottom">
+        <p class="section-10__text text--subtitle text--bold text--ac">Inizia oggi stesso l'avventura con Muscles Detector! Ordinate subito!</p>
+      </div>
+    </section>
+    <section class="section-11" id="faq">
+      <div class="section-11__header">
+        <p class="text--title text--red text--bold text--ac">Un elenco delle domande più frequenti:</p>
+      </div>
+      <div class="container">
+        <div class="tabs">
+          <div class="tab"><input type="checkbox" id="chck1"> <label class="tab-label" for="chck1"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">CHE COS'È Muscles Detector?</p>
+            </label>
+            <div class="tab-content">
+              <p>Muscles Detector è un prodotto per la costruzione muscolare composto da ingredienti naturali di alta qualità che aumentano i livelli di testosterone e, di conseguenza, stimolano la crescita del tessuto muscolare. Fornisce inoltre ai muscoli un prolungato periodo di azione senza riposo, grazie al quale ha un effetto positivo sulle prestazioni sportive. 
+              </p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck2"> <label class="tab-label" for="chck2"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">MUSCLES DETECTOR È UNO STEROIDE?</p>
+            </label>
+            <div class="tab-content">
+              <p>No. Gli steroidi sono agenti che imitano l'effetto del testosterone sul corpo, a volte portando ad una significativa sottoproduzione di esso. Infatti, sono un tipo di droga e sono illegali se usati senza consultazione di un medico. Muscles Detector è un farmaco naturale al 100% che contiene vitamine, minerali e aminoacidi che stimolano il corpo a produrre testosterone. Devi tutto al tuo corpo e... alla natura!</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck3"> <label class="tab-label" for="chck3"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">COME FUNZIONA?</p>
+            </label>
+            <div class="tab-content">
+              <p>Muscles Detector è stato creato per influenzare il testosterone. Quando i suoi livelli sono disturbati, avrai difficoltà a costruire il tuo corpo da sogno perché è proprio questo ormone che aumenta il  metabolismo delle proteine e porta alla costruzione del muscolo. Come dimostrano i test medici, altri ingredienti Muscles Detector supportano l'ossigenazione del corpo, aumentando la sua resistenza fino a 10 volte. Inoltre, il processo di rigenerazione del corpo è migliorato dall'uso regolare di Muscles Detector. Questo perché il testosterone è la chiave per il tasso di riparazione muscolare, il quale ha molti microdanni dopo l'allenamento.</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck4"> <label class="tab-label" for="chck4"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">IN COSA SI DIFFRENZIA DA GLI ALTRI PRODOTTI SIMILARI?</p>
+            </label>
+            <div class="tab-content">
+              <p>Probabilmente avete provato la creatina, il siero del latte in polvere e altri integratori per il sollevamento pesi e avrete avuto strane impressioni - forse anche una leggera carenza? Il loro principale svantaggio è che escludono il testosterone ed è prioprio lui l’elemento principale. Aumento la sintesi delle proteine e quindi contribuisce alla formazione del muscolo. La mancanza di testosterone equivale alla mancanza di muscoli. È semplice! 
+              Inoltre, Muscles Detector è fatto di ingredienti naturali di altissima qualità, testati in laboratorio.  Questi naturali elementi aumentano i livelli di testosterone e la relativa forza e resistenza muscolare.</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck5"> <label class="tab-label" for="chck5"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">È SICURO?</p>
+            </label>
+            <div class="tab-content">
+              <p>Muscles Detector ha una composizione totalmente  naturale. Viene prodotto in Nord America sotto la supervisione di specialisti e secondo le severe norme di salute e sicurezza.</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck6"> <label class="tab-label" for="chck6"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">QUANDO SARANNO VISIBILI I PRIMI RISULTATI?</p>
+            </label>
+            <div class="tab-content">
+              <p>Prendi una dose di Muscles Detector, cena e vai a dormire. Il giorno dopo ti alzerai in iperventilazione, durante l'allenamento batterai tutti i tuoi record, quando tornerai a casa non sentirai nemmeno un'po di stanchezza, la tua partner sarà sorpresa... E nei giorni successivi andrà solamente imeglio!</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck7"> <label class="tab-label" for="chck7"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">COME POSSO OTTENERE LO SCONTO SU MUSCLES DETECTOR?</p>
+            </label>
+            <div class="tab-content">
+              <p>Basta compilare il modulo sottostante - pochi click e il gioco è fatto!</p>
+            </div>
+          </div>
+          <div class="tab"><input type="checkbox" id="chck8"> <label class="tab-label" for="chck8"><img
+                src="dist/images/e8a64dd47d15c4bdee8d7bad9aa41add.svg" alt="" class="tab-icon">
+              <p class="tab-title">PER QUANTO TEMPO DOVREI PRENDERLO?</p>
+            </label>
+            <div class="tab-content">
+              <p>I primi effetti sono visibili fin dal primo utilizzo, quindi già dopo poche ore di sonno. Nei giorni successivi il tuo stato d'animo e il tuo riposo miglioreranno – ti accorgerai che non sei mai stato così attivo. Muscles Detector come mix di vitamine e ingredienti naturali sostiene il tuo corpo stanco e ti dà una vera spinta di energia in modo che tu non voglia rinuciare al trattamento! Gli effetti saranno visibili prendendo il preparato per  3 mesi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-12">
+      <div class="container">
+        <div class="section-12__wrapper">
+          <div class="section-12__wrapper--titles">
+            <p class="text--title text--red text--bold text--ac">Breve storia<br>Giovanni C. che ha già testato Muscles Detector!</p><img src="dist/images/998b873c444c8292f524af991bcfde1f.png" alt="arrow"
+              class="section-12__wrapper--arrow">
+            <p class="section-12__text text--subtitle text--bold text--ac">Giorno 1:</p>
+            <p class="section-12__text text--ac">"E' appena arrivato il pacco con la fornitura di Muscles Detector per 3 mesi. Come potete vedere dal mio fisico, ho un po' di grasso e d'acqua in eccesso nel mio corpo. Ho intenzione di testare Muscles Detector per 8-12 settimane senza cambiare troppo la mia dieta. Vedremo se Muscles Detector può aiutarmi".</p>
+          </div>
+        </div>
+        <div class="section-12__wrapper">
+          <div class="section-12__wrapper--titles"><img src="dist/images/332af5c2eab97ce21c14e5ad4d48d1ab.png" alt="arrow"
+              class="section-12__wrapper--arrow">
+            <p class="section-12__text text--subtitle text--bold text--ac">Giorno 60:</p>
+            <p class="section-12__text text--ac">"Sono passate otto settimane da quando ho iniziato a prendere il Muscles Detector. Non mi aspettavo grandi risultati, ed ecco una bella sorpresa! Sono riuscito a formare un bel po' di tessuto muscolare... Ho notato una diminuzione del grasso, il corpo nel suo complesso appare più completo e sodo. Non ho cambiato nulla nella mia dieta, tutto questo e solo grazie all'assunzione di Muscles Detector. Dovete vedere con i vostri occhi"!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-13" id="clients">
+      <div class="container">
+        <div class="section-13__slider">
+          <div class="swiper-container section-13__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="section-13__slider--wrapper">
+                  <div class="section-13__slider--img-container"><img src="dist/images/26160b45640ac9232b1930a9ec1619be.png"
+                      alt="img" class="section-13__slider--img">
+                    <p class="section-13__slider--title text--bold">Filippo (36 anni)</p>
+                    <p class="section-13__slider--title">Torino</p>
+                  </div>
+                  <div class="section-13__slider--text-container">
+                    <p class="text--subtitle text--bold text--orange">Ho ottenuto più di quanto volessi</p>
+                    <p class="text--italic text--white">Mi alleno da anni, partecipando a competizioni per uomini forzuti e mi piace portare il mio corpo a prestazioni sempre più elevate. Ma ultimamente mi è sembrato di aver raggiunto il limite, di essere troppo vecchio... è come se i muscoli si fossero fermati, pensavo che non avrei più pogredito con questo fisico. Poi il mio allenatore mi ha dato una speranza - mi ha consigliato una pagina da cui posso ordinare il Muscles Detector. Ha detto di non aver mai trovato qualcosa di così efficace nello sviluppo della massa muscolare. Mi sono fidato di lui e non me ne pento affatto. Sono solo a metà del trattamento e gli effetti sono già visibili ad occhio nudo! Ho un metabolismo migliore e sono sempre di buon umore,  anche la mia ragazza è entusiasta...  capite cosa intendo!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-13__slider--wrapper">
+                  <div class="section-13__slider--img-container"><img src="dist/images/f9f13a9c78d3b2df84ad67a45829f649.png"
+                      alt="img" class="section-13__slider--img">
+                    <p class="section-13__slider--title text--bold">Roberto (28 anni)</p>
+                    <p class="section-13__slider--title">Firenze</p>
+                  </div>
+                  <div class="section-13__slider--text-container">
+                    <p class="text--subtitle text--bold text--orange">Muscles Detector wyleczył mnie z kompleksów!</p>
+                    <p class="text--italic text--white">Le altre persone in palestra ottenevano risulati mentre io no . Cambiavo i miei programmi di allenamento, i vari integratori, una volta adirittura finii in ospedale a causa di questa dannata cosa! Ero stanco di tutto questo. Gli amici mi ridevano in faccia, dicendomi che sarei rimasto così magro per sempre e che nessuna ragazza mi avrebbe mai voluto. E avevano ragione! Quando inziavo finalmente ad uscire con una e sembrava che stesse andando tutto bene, tutto andava in ritoli nel momento in cui ci andavo a letto. E sai come fa male all'ego maschile... Ma poi tutto è cambiato di 180 gradi. Un amico con problemi simili mi ha parlato dell'esistenza di questa cura, che mi avrebbe aiutato a scolpire il mio corpo in modo non invasivo e al 100% naturale, aumentando allo stesso tempo il testosterone. Ne ordinai uno anch'io. Lo presi due volte al giorno per 3 mesi e realizzai i miei obiettivi. Finalmente ho l'aspetto che voglio, ho la ragazza dei miei sogni e sono davvero felice.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-13__slider--wrapper">
+                  <div class="section-13__slider--img-container"><img src="dist/images/08de4184d94ec5f93642e505340e8c46.png"
+                      alt="img" class="section-13__slider--img">
+                    <p class="section-13__slider--title text--bold">Sofia (25 anni)</p>
+                    <p class="section-13__slider--title">Verona</p>
+                  </div>
+                  <div class="section-13__slider--text-container">
+                    <p class="text--subtitle text--bold text--orange">Funziona anche sulle donne.</p>
+                    <p class="text--italic text--white">Alcuni pensano che non sia femminile, ma io amo lavorare con i miei muscoli, ampliandoli. Mi fa sentire molto sexy e nessun vicolo buio mi spaventa! Ma prima di iniziassi a giocare seriamente con i pesi, ero una donna obesa, che odiava se stessa. Mi sono allenato per un anno e mezzo e ho adottato misure davvero diverse per aumentare le mie capacità, per superare i limiti. Purtroppo, la maggior parte di esse . Inoltre, mi piacciono i prodotti naturali, quindi era difficile trovare qualcosa di adatto a me. Per fortuna, le persone in palestra sono molto disponibili e un amico mi ha dato da provare Muscles Detector. è cambiato tutto! Abbiamo incominciato la cura con il mio partner ed è semplicemente incredibile - ci siamo liberati del tessuto adiposo, ottenuto bei muscoli e ora godiamo di un sesso migliore! Ho bisogno di aggiungere altro?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-13__slider--wrapper">
+                  <div class="section-13__slider--img-container"><img src="dist/images/2b3e93f92316dec1430eb567f434cf42.png"
+                      alt="img" class="section-13__slider--img">
+                    <p class="section-13__slider--title text--bold">Dario (56 anni)</p>
+                    <p class="section-13__slider--title">Massa Carrara</p>
+                  </div>
+                  <div class="section-13__slider--text-container">
+                    <p class="text--subtitle text--bold text--orange">Ero certo che mia moglie mi avrebbe lasciato</p>
+                    <p class="text--italic text--white">Gli ultimi sei mesi sono stati come delle montagne russe. Sono caduto in una terribile depressione, sono ingrassato, ho sospettato mia moglie di tradimento ed è mancato poco al divorzio. Muscles Detector mi ha salvato. Prima di comprarlo, avevo bisogno di vedere con i miei occhi quanto fosse efficace. Il mercato è pieno di questi prodotti e naturalmente tutti sono pubblicizzati come unici e ottimi prodotti.  
+                    Ed è proprio per questo che quando mio fratello, mi ha portato con lui in palestra e ha iniziato a utilizzare questo prodotto,  ho pensato che fosse arrivato il momento anche per me! E cosa è successo? Ho sostituito il grasso con la massa muscolare come in un sogno, ed ero anche bello riposato - nonostante l'esercizio fisico quotidiano! Ho salvato il mio matrimonio,  mia moglie ora non vuole letteralmente farmi alzare dal letto!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-13__slider--wrapper">
+                  <div class="section-13__slider--img-container"><img src="dist/images/ee5b36db10c8460322a3ef05fbc14e02.png"
+                      alt="img" class="section-13__slider--img">
+                    <p class="section-13__slider--title text--bold">Marco (49 anni)</p>
+                    <p class="section-13__slider--title">Siena</p>
+                  </div>
+                  <div class="section-13__slider--text-container">
+                    <p class="text--subtitle text--bold text--orange">Prendi Muscles Detector e agisci!</p>
+                    <p class="text--italic text--white">Sono passati due mesi da quando ho iniziato a prendere Muscles Detector e per la durata dell'intero periodo ho preso appunti accurati sui progressi durante la cura. Quest'anno per la prima volta volevo partecipare al triathlon e sapevo dai miei amici che l'allenamento a casa non sarebbe bastato, ci voleva delle fondamenta solide. Ecco perché ero felice quando mio figlio mi ha regalato questo farmaco - non dovevo più scegliere cosa fare! Ha fatto una ricerca approfondita, ha chiesto a tuttii suoi amici sportivi  e tutti non facevano che ripetere il nome di questo prodotto! Dopo due mesi ho acquisito 10 kg di soli muscoli, le ciambelle di grasso sul mio stomaco sono scomparse. Adesso in un tempo più breve sono in grado di percorrere distanze più lunghe -  di corsa,  in bicicletta,  a nuoto. E  riposo come non mai!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination2"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-14">
+      <div class="container">
+        <div class="section-14__wrapper">
+          <div class="section-14__wrapper--titles">
+            <p class="text--title text--red text--bold text--ac">Questo prodotto unico nel suo genere è coperto dalla Garanzia Europea di Alta Qualità.</p>
+            <p class="section-14__text">Questo prodotto unico nel suo genere è coperto dalla Garanzia Europea di Alta Qualità. 
+            Si tratta di un certificato assegnato a soluzioni innovative che dimostrano una straordinaria efficacia. Il Segretario e il Presidente del Consiglio di Amministrazione del Capitolo Europeo della Qualità e dell'Efficienza assegnano il riconoscimento solo a formule e prodotti sottoposti a una serie di rigorosi test di laboratorio. Questa distinzione internazionale <span class="text--bold">riguarda sia i suoi ingredienti, sia il processo di produzione e l'effetto finale sotto forma di medicinale pronto per il consumo.</span></p>
+            <div class="section-14__wrapper--icons"><img src="dist/images/55f5168fda59c052fcaeb02225b8b853.png" alt="badge"
+                class="section-14__wrapper--badge"> <img src="dist/images/08ae614fb12f3c2d65921eb1c67bd0ea.png" alt="badge"
+                class="section-14__wrapper--badge"> <img src="dist/images/261085aacbd8d3098ece5853a45b4773.png" alt="badge"
+                class="section-14__wrapper--badge"> <img src="dist/images/44b6811f02cb8abf9ab78e83913f8cef.png" alt="badge"
+                class="section-14__wrapper--badge"></div>
+          </div>
+          <div class="section-14__wrapper--img-container"><img src="dist/images/muscle-detector-certificate.jpg"
+              alt="certificate" class="section-14__wrapper--certificate"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-15">
+      <div class="wrapper">
+        <div class="wrapper__item"><img src="dist/images/026599b6e54b7fee220992a122e3c72b.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--white text--bold">Consegna rapida</p>
+            <p class="wrapper__item--text text--white">Inizia a rafforzare i tuoi muscoli oggi stesso</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/1905f34e5f55b3ba0776407e3df590b5.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--white text--bold">Confezione pratica</p>
+            <p class="wrapper__item--text text--white">Puoi averlo con te in qualsiasi momento e ovunque</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/a18907c6f24bcfe69eab8bf5edaad73d.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--white text--bold">Prezzo vantaggioso</p>
+            <p class="wrapper__item--text text--white">Una silhouette da sogno per tutti</p>
+          </div>
+        </div>
+        <div class="wrapper__item"><img src="dist/images/e056e0a75ba7e37f34b480a4f4cf6f59.svg" alt="icon"
+            class="wrapper__item--img">
+          <div class="wrapper__item--text-container">
+            <p class="wrapper__item--text text--white text--bold">Ingredienti 100% naturali</p>
+            <p class="wrapper__item--text text--white">Smettila di avvelenare il tuo corpo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-16" id="footer">
+      <div class="container">
+        <div class="section-16__wrapper">
+          <div class="section-16__titles">
+            <div class="section-1__titles--header"><img src="dist/images/muscle-detector-logo.png" alt="logo"
+                class="section-16__titles--logo">
+              <p class="text--header text--white">Naturale</p>
+              <h1 class="text--title text--orange text--bold">INIEZIONE DI TESTOSTERONE</h1>
+            </div>
+            <div class="section-16__titles--list-wrapper">
+              <ul class="section-16__titles--list">
+                <li class="section-16__titles--list-item text--white"><span
+                    class="text--orange text--bold">Inizia il processo di costruzione del tessuto muscolare</span> in poco tempo</li>
+                <li class="section-16__titles--list-item text--white"><span class="text--orange text--bold">Inizia il processo di costruzione del tessuto muscolare  in poco tempo</span></li>
+                <li class="section-16__titles--list-item text--white">Rimuove i giorni bui senza energia dal tuo calendario
+                </li>
+                <li class="section-16__titles--list-item text--white">L'86% degli uomini testati ha riportato un <span
+                    class="text--orange text--bold">significativo aumento delle prestazioni sessuali</span></li>
+                <li class="section-16__titles--list-item text--white"><span class="text--orange text--bold">Consigliato da allenatori</span> e professionisti</li>
+              </ul><img src="src/assets/images/muscle-detector-product-discount.png" alt="product"
+                class="section-16__titles--product">
+            </div>
+          </div>
+          <div class="section-16__form">
+            <p class="text--subtitle text--yellow text--bold text--ac">POSSIBILITÀ UNICA!</p>
+            <div class="form_wrapper">
+              <div class="form_promotion">
+                <p class="form_promotion--title">Muscles Detector a soli:</p>
+                <div class="form_promotion--wrapper">
+                  <p class="form_promotion--old"><s>157 EUR</s></p>
+                  <p class="form_promotion--new">47 EUR</p>
+                </div>
+              </div>
+              <h3 class="form_wrapper--title">COMPILA IL MODULO</h3>
+              <form class="sale__form--bottom" id="sale_form2" novalidate>
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form2__phone" name="form__phone-2" value="" class="input text--6 text-dark form__phone-2" placeholder="Il tuo numero di telefono" />
+                    <div class="error-feedback">Inserisci correttamente il numero di telefono</div>
+                  </div>
+                </div>
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form2__name" name="form__name-2" value="" class="input text--6 text-dark form__name-2" placeholder="Nome" />
+                    <div class="error-feedback">Inserisci il tuo nome correttamente</div>
+                  </div>
+                </div>
+                <div class="input__group">
+                  <div class="input__wrapper">
+                    <input id="form2__surname" name="form__surname-2" value="" class="input text--6 text-dark form__surname-2" placeholder="Cognome" />
+                    <div class="error-feedback">Inserisci il tuo nome correttamente</div>
+                  </div>
+                </div>
+                <div class="button-wrapper">
+                  <input type=hidden name=sessionId value="" id="sessionId" class=sessionId> 
+                  <input type=hidden name=partnerId value="" id="partnerId" class=partnerId> 
+                  <input type=hidden name=partnerName value="" id="partnerName" class=partnerName> 
+                  <input type=hidden name=product value="PRO125" id="product"> 
+                  <input type=hidden name=offerId value="" id="offerId" class=offerId>
+                  <input type=hidden name=currency_1 value="47" id="currency">
+                  <input type=hidden name=leadsource value="http://catchonlythebestpromotions.com/" id="leadsource">
+                  <input type="hidden" name="country" value="IT" />
+                  <button type="submit" class="input__button text--bold">ORDINA SUBITO</button>
+                </div>
+                <div class="countdown__wrapper">
+                  <p class="countdown__wrapper--text text--white text--ac">La promozione scade tra:</p>
+                  <p class="text--subtitle text--white text--ac text--bold timer2">45:00</p>
+                </div>
+              </form>
+              <form class="hidden-form sale__form" id="hidden-form-2">
+                <div class="discount__hidden-form">
+                  <div class="discount__partners">
+                    <div class="discount__partners-img"><img src="dist/images/a8a561aa93a65305f84ca826a63de06c.png"
+                        alt="OK5" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/47addc1357983c7109bf137d1c8c3f12.png"
+                        alt="OK6" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/4627773732952376be1e69090ccb3edc.png"
+                        alt="OK7" /></div>
+                    <div class="discount__partners-img"><img src="dist/images/28361a739e07e61e4ba227a1b466e1da.png"
+                        alt="OK8" /></div>
+                  </div>
+                  <p class="discount__text text--gray text--align-left"><b>IMPORTANTE!</b> Non pagare un extra per la spedizione. Il costo della consegna del pacco, in alcune aree, è rimborsato al 100% <b>dal produttore. Per verificare se hai diritto ad un rimborso completo,</b> compila il modulo con i dettagli dell'indirizzo corretto e premi il pulsante qui sotto.</p>
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <input name="adress_form" value="" class="input text-dark discount__input form__street2" placeholder="Inserisci qui l’indirizzo e il numero civico" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <input name="postal_form" value="" class="input text-dark discount__input form__postal2" placeholder="Inserisci qui il codice postale" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+                  <div class="input__group required">
+                    <div class="input__wrapper">
+                      <input name="city_form" value="" class="input text-dark discount__input form__city2" placeholder="Inserisci qui la Città" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div>
+                    </div>
+                  </div>
+                  <div class="input__group">
+                    <div class="input__wrapper">
+                      <textarea name="message_form" cols="40" rows="3" class="input text-dark discount__input form__comments2" placeholder="Note per il corriere"></textarea>
+                    </div>
+                  </div>
+                  <div class="input__group">
+                    <div class="input__wrapper email">
+                      <input name="email_form" class="input text-dark discount__input form__email2" placeholder="E-mail" />
+                      <div class="error-feedback">Compila il modulo correttamente!</div><span
+                        class="discount__info text--gray">(Ottieni le ultime informazioni sulle promozioni e le offerte in corso)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="button__wrapper">
+                  <button type="submit"
+                    class="input__button text--bold">OTTIENI LO SCONTO E ORDINA MUSCLES DETECTOR CON LA SPEDZIONE GRATIS!</button>
+                  </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="section-16__footer">
+          <div class="section-16__footer--delivery-container"> <img src="dist/images/4627773732952376be1e69090ccb3edc.png"
+              alt="partner" class="section-16__footer--partner"> <img src="dist/images/a8a561aa93a65305f84ca826a63de06c.png"
+              alt="partner" class="section-16__footer--partner"> <img src="dist/images/47addc1357983c7109bf137d1c8c3f12.png"
+              alt="partner" class="section-16__footer--partner"> <img src="dist/images/28361a739e07e61e4ba227a1b466e1da.png"
+              alt="partner" class="section-16__footer--partner"></div>
+          <form id="frm-regulations" action="https://directifindterms.com/regulamin.php" method="post">
+            <input type="hidden" name="domain" value="catchonlythebiggestoccasions.com" />
+          </form>
+          <div class="disclaimer">
+          Prodotto progettato per uso esterno. L'integratore non deve essere utilizzato come sostituto di diete. Muscles Detector non può essere utilizzato da  malati cronici,  donne incinte in fase di allattamento  e  bambini al di sotto dei 18 anni senza aver prima consultato un medico.
+          </div>
+          <div class="section-16__footer--copyrights">
+            <p class="section-16__footer--text">Copyright © 2020</p>
+            <ul class="section-16__footer--nav footer-links">
+              <li class="section-16__footer--text section-16__footer--nav-item"><a href="https://directifindpolicy.com/politica.php">L'informativa sulla privacy</a> |</li>
+              <li class="section-16__footer--text section-16__footer--nav-item"><a href="https://directifindpolicy.com/regolamento.php" id="btn-regulations">Il regolamento </a> |</li>
+              <li class="section-16__footer--text section-16__footer--nav-item"><a href="#" id="btn-contact">Contatto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="dist/index.js?ver=3"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(function () {
+
+      $("#btn-regulations").on('click', function (event) {
+        event.preventDefault();
+        $("#frm-regulations").submit();
+      });
+
+      $("#btn-contact").on('click', function (event) {
+        event.preventDefault();
+        $("#contact_popup").show();
+        $(".overlay2").show();
+      });
+
+      $("#close_contact").on("click", function () {
+        $("#contact_popup").hide();
+        $(".overlay2").hide();
+      });
+
+      if( $(window).outerWidth() < 768 ){
+        setTimeout(() => {
+          console.log('here')
+          $('#popup').addClass('popup--visible');
+        }, 15000);
+      }
+    });
+  </script>
+</body>
+
+</html>
