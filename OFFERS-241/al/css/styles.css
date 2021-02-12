@@ -251,7 +251,7 @@ section .image {
 
 .offer_section.offer1 .price_old .value {
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 26px;
 	text-decoration: line-through;
 }
@@ -337,7 +337,7 @@ section .image {
 
 .offer_section.offer2 .price_item .value {
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 23px;
 	line-height: 30px;
 }
 
