@@ -3,8 +3,12 @@
   <meta name="description" content>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <script src="js/validator.js"></script>
   <title>4D Silk Fiber Lash Mascara</title>
+  <meta property="og:title" content="4D Silk Fiber Lash Mascara"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="https://i.imgur.com/Qy7X1aZ.png"/>
+<meta property="og:type" content="website"/>
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -307,13 +311,19 @@
           <div class="input-wrap">
             <input type="text" name="phone" required placeholder="телефон">
           </div>
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
           <button class="mk-button"> Заказать</button>
         </form>
       </div>
     </header>
 
     <footer class="footer">
-      <span> GADGET SHOP,Leof. Stratou, 56533, Thessaloniki, Greece</span>
+      <span>BEAUT-E SHOP</span>
       <a href="/privacypolicy" target="_blank"> Privacy policy</a>
       <a href="/general-conditions-of-sale" target="_blank"> General conditions of sale</a>
       <a href="/legal-warning" target="_blank"> Legal warning</a>
@@ -330,5 +340,23 @@
 
   </script>
 
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
 
 </body></html>
