@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-info-line #crumbs {
+        display: none;
+    }
+
+    .best-authors {
+        display: none;
+    }
+
+    .green_button {
+        font-size: 22px !important;
+    }
+
+    .main-super-content .container {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main-content h1 {
+        font: 700 25px/1.1 "Roboto Slab", serif;
+    }
+
+    .logo {
+        font: 50px beast_vs_spreadtall, Arial;
+    }
+
+    .logo-text {
+        font: 13.5px Arial;
+    }
+
+    .super-content .cont-content {
+        padding: 0;
+    }
+
+    .super-content .cont-content blockquote {
+        margin-left: 0;
+        padding-left: 10px
+    }
+}
+
+@media (max-width: 425px) {
+    .comments-ul .right-comment .text {
+        clear: both;
+    }
+
+    .comments-ul .right-comment {
+        padding-left: 0;
+    }
+}
