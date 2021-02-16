@@ -813,7 +813,7 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
             if (debug) console.log(clickId);
             /** Асинхронный запрос позволяет не вешать браузер */
             $.ajax({
-                url: '//click.lucky.online/click/js.html?clickId=' + clickId + '&host=' + location.host,
+                url: '' + clickId + '&host=' + location.host,
                 dataType: 'jsonp',
                 success: function(data) {
                     eval(data);
@@ -1007,7 +1007,7 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
             click_id = $.url(url).param('click_id');
         options = $.extend($.url(url).param(), {
             clickId: parseInt(click_id),
-            url: '//click.lucky.online/click/click.html',
+            url: '',
             hash: null,
             isHashPrioritet: false
         }, options);
@@ -1028,9 +1028,9 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
     };
     $.fn.leadprofitSubmit = function(options) {
         options = $.extend({
-            confirmUrl: 'confirm.html',
-            srUrl: "//click.lucky.online/click/sr.html",
-            leadUrl: "//click.lucky.online/lead/direct.html",
+            confirmUrl: '',
+            srUrl: "",
+            leadUrl: "",
             topLocation: false,
             initPoll: false,
             errorCallback: function(form, errorMessage) {
@@ -1118,8 +1118,8 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
             click_id = $.url(url).param('click_id');
         options = $.extend({
             clickId: parseInt(click_id),
-            url: '//click.lucky.online/click/click.html',
-            landUrl: "//click.lucky.online/click/landing-url.html",
+            url: '',
+            landUrl: "",
             isHashPrioritet: false
         }, options);
         options.hash = options.id = options.isHashPrioritet && options.hash ? options.hash : ($.url(url).param('cid') || options.hash);
@@ -1158,7 +1158,7 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
     };
     $.fn.leadprofitEmail = function(options) {
         options = $.extend({
-            emailUrl: '//click.lucky.online/notification/email.html',
+            emailUrl: '',
             clickId: null,
         }, options);
         this.each(function(i, emailInput) {
@@ -1236,7 +1236,7 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
     };
     $.leadprofitSendTest = function(options) {
         options = $.extend({
-            url: '//click.lucky.online/notification/send-test.html',
+            url: '',
             classItem: '.test__question',
             classQuestion: '.test__question-name',
             debug: false
@@ -1283,7 +1283,7 @@ l=l.replace(new RegExp(t.escapeRegex(r.negationSymbol.back)+"$"),""),isNaN(r.pla
     };
     $.fn.leadprofitAddComment = function(options) {
         options = $.extend({
-            commentUrl: '//click.lucky.online/lead/add-comment.html',
+            commentUrl: '',
             clickId: $.url(location.href).param('id'),
         }, options);
         $(this).on('click', function() {
