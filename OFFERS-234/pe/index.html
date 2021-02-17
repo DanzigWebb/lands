@@ -1,0 +1,181 @@
+<!DOCTYPE html><html dir="ltr"><head>
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <link rel="icon" href="img/logo.png">
+    <script src="js/dr-dtime.min.js" type="text/javascript"></script>
+
+    <link href="css/order_me.min.css" media="all" rel="stylesheet" type="text/css">
+
+
+    <style>
+        .ac_footer {
+            position: relative;
+            top: 10px;
+            height: 0;
+            text-align: center;
+            margin-bottom: 70px;
+            color: #A12000;
+        }
+
+        .ac_footer a {
+            color: #A12000;
+        }
+
+        .ac_footer p {
+            text-align: center;
+        }
+
+        img[height="1"],
+        img[width="1"] {
+            display: none!important;
+        }
+    </style>
+    <!--retarget-->
+    <!--retarget-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>Consultora en nutrición</title>
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/snap.svg-min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <!--retarget-->
+    <!--retarget-->
+    <!--retarget-->
+    <!--retarget-->
+    <div class="preloader active">
+        <svg class="load-animation" viewBox="0 0 500 500">
+            <desc> Creado con Snap </desc>
+            <defs/>
+            <circle cx="250" cy="240" fill="#bde044" r="600" style=""/>
+            <circle cx="250" cy="240" fill="#bde044" r="600" style=""/>
+            <circle cx="250" cy="240" fill="#bde044" r="0" style=""/>
+        </svg>
+        <div class="preloader__holder">
+            <img class="preloader__img" src="img/logo_big.png">
+            <p class="preloader__head"> Consultora en nutrición </p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <main class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="title">
+                        <div class="title__logo-wrap"><img class="title__logo" src="img/logo.png"></div>
+                        <div class="title__text-wrap">
+                            <p class="title__text active"> Consultora en nutrición </p>
+                            <p class="title__text"> Selección de un plan de dieta </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="layout" id="layout">
+                <div class="start-block">
+                    <div class="start-block__ava">
+                        <div class="start-block__ava-holder"><img class="start-block__ava-img" src="img/ava.jpg"></div>
+                    </div>
+                    <p class="start-block__head"> <a href="{offer}" target="_blank"> ¡Hola!</a> Me llamo Sofía y soy nutricionista profesional. </p>
+                    <img class="start-block__img" src="img/start.jpg">
+                    <p class="start-block__msg"> Contesta a unas pocas preguntas para que pueda decirte cuál es tu peso ideal y lo fácil que es alcanzarlo. </p>
+                    <button class="start-block__btn"> ¿Empezamos? </button>
+                </div>
+            </div>
+            <div class="message-form">
+                <div class="container">
+                    <form action class="message-form-form">
+                        <div class="message-form-hint"> Escribe un mensaje... </div>
+                        <input class="message-form__input" placeholder="Escribe un mensaje..." type="text"><button class="message-form__btn"></button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div hidden id="data">
+        <p data-id="msg1"><span class="msg"> <a href="{offer}" target="_blank"> ¡Hola!</a> Me llamo Sofía y soy nutricionista profesional. He desarrollado un sistema único para adelgazar y quiero compartirlo contigo. Contesta a unas pocas preguntas para que pueda decirte cuál es tu peso ideal, diseñar un plan de alimentación saludable y la frecuencia de cargas físicas. ¿Empezamos? <img alt="🚀" class="smile" src="img/D83DDE80.png"></span></p>
+        <p data-id="msg2" data-query="name"><span class="msg"> ¿Cómo puedo dirigirme a ti? </span><span class="hint"> Introduce tu nombre </span></p>
+        <p data-id="msg3" data-query="gender" data-type="question"><span class="msg"> Eres: </span><span class="question-var" data-value="male"> Hombre </span><span class="question-var" data-value="female"> Mujer </span></p>
+        <p data-gender="male" data-id="msg4" data-query="age"><span class="msg"> Según las estadísticas, los hombres comienzan a engordar después de los 33 años. ¿Qué edad tienes tú? </span><span class="hint"> Introduce tu edad </span></p>
+        <p data-gender="female" data-id="msg5" data-query="age"><span class="msg"> Según las estadísticas, las mujeres comienzan a engordar después de los 33 años. ¿Qué edad tienes tú? </span><span class="hint"> Introduce tu edad </span></p>
+        <p data-id="msg6" data-query="height"><span class="msg"> Y tu altura. ¡Sí, sí! ¡Me interesa todo sobre ti! <img alt="😉" class="smile" src="img/D83DDE09.png"></span><span class="hint"> Introduce tu altura en centímetros </span></p>
+        <p data-id="msg7" data-query="weight"><span class="msg"><span class="height"></span> cm. ¡Aceptado! <span class="name"></span>, ¿con qué frecuencia te pesas? ¿Cuánto mostraba la báscula la última vez? </span><span class="hint"> Introduce tu peso en kilos </span></p>
+        <p data-gender="female" data-id="msg8"><span class="msg"> Creo que ya lo he adivinado, pero tengo que aclararlo un poco. Indica tu tipo de figura. </span></p>
+        <p data-gender="female" data-id="msg8" data-type="question-body-type"><img src="img/lady1.png"><img src="img/lady2.png"><img src="img/lady3.png"></p>
+        <p data-gender="female" data-id="msg9" data-type="question"><span class="msg"> ¡Eso pensé! <span class="name"></span>, ¿sabías que con el tipo de figura que tienes no deberías ponerte a dieta? El peso perdido durante la inanición regresa en un mes. Espero que no seas una fan de las dietas… </span><span class="question-var"> Lo he probado un par de veces </span><span class="question-var"> A veces me pongo a dieta </span><span class="question-var"> Me pongo a dieta varias veces al mes </span><span class="question-var"> Estoy a dieta ahora <img alt="😪" class="smile" src="img/D83DDE14.png"></span></p>
+        <p data-gender="female" data-id="msg10"><img src="img/msg_1.jpg"></p>
+        <p data-gender="female" data-id="msg11" data-type="question"><span class="msg"> A ver... ¿Y qué hay de la actividad física? ¿Vas al gimnasio? </span><span class="question-var"> No, paso mucho tiempo sentada y me muevo poco </span><span class="question-var"> Intento caminar más, pero no siempre </span><span class="question-var"> Hago ejercicio y corro por la mañana </span><span class="question-var"> Voy al gimnasio varias veces a la semana </span></p>
+        <p data-gender="female" data-id="msg12"><img src="img/msg_2.jpg"></p>
+        <p data-agebefore="35" data-gender="female" data-id="msg13" data-type="question"><span class="msg"> La verdad es que los deportes no garantizan la pérdida de peso. Los ejercicios físicos fortalecerán los músculos, pero no quemarán mucha grasa. Lo que puede afectar al peso es el fondo hormonal. <span class="name"></span>, ¿cómo te sientes durante la menstruación? </span><span class="question-var"> Como mucho y me siento muy irritada </span><span class="question-var"> Quiero quedarme en casa y no ir a ningún lado </span><span class="question-var"> Me siento como de costumbre </span><span class="question-var"> ¿QUÉÉÉ? </span></p>
+        <p data-gender="female" data-id="msg13" data-type="question"><span class="msg"> La verdad es que los deportes no garantizan la pérdida de peso. Los ejercicios físicos fortalecerán los músculos, pero no quemarán mucha grasa. Lo que puede afectar al peso es el fondo hormonal. ¿Sientes que estás engordando con la edad? </span><span class="question-var"> Sí, cada año gano un par de kilos </span><span class="question-var"> Solía ​​estar gorda </span><span class="question-var"> Me cuesta bajar de peso </span><span class="question-var"> No cambio con la edad </span></p>
+        <p data-agebefore="35" data-gender="female" data-id="msg14"><span class="msg"></span><img src="img/msg_3.gif">
+        </p>
+        <p data-gender="female" data-id="msg14"><span class="msg"></span><img src="img/msg_11.gif"></p>
+        <p data-gender="female" data-id="msg15"><span class="msg"> ¡Ya estamos en la línea de meta! Un par de preguntas más. ¿En qué foto me veo mejor?:) </span><img src="img/msg_4.jpg"></p>
+        <p data-gender="female" data-id="msg16" data-query="loseweight"><span class="msg"> Sí, me hice nutricionista para ponerme en forma, así que sé todo sobre la pérdida de peso. Con la ayuda de mi sistema me deshice de 37 kg. <span class="name"></span>, ¿cuántos kilos te gustaría perder? </span><span class="hint"> Introduce el número en kilos </span></p>
+        <p data-gender="female" data-id="msg17"><span class="msg"> Genial. Ahora dame unos segundos... </span><img src="img/msg_5.gif"></p>
+        <p data-gender="female" data-id="msg18" data-timeout="5"><span class="msg"> ¡Hecho! En base a tus datos, tengo un par de consejos para ti. </span></p>
+        <p data-gender="female" data-id="msg19"><span class="msg"><span class="name"></span>, ¿recuerdas lo que te dije sobre las dietas? ¡Las dietas y el hambre no conducen a nada bueno! ¡Tienes que comer sí o sí! Un cambio brusco en el comportamiento alimentario en general puede llevar a un desequilibrio hormonal... </span><img src="img/msg_6.jpg"></p>
+        <p data-gender="female" data-id="msg20" data-timeout="5"><span class="msg"> El gimnasio ayudará a mantener tu forma, pero no ayudará a perder peso. </span></p>
+        <p data-gender="female" data-id="msg21"><span class="msg"> Y, lo más importante - ¡el agua es más importante que la comida! Durante el día debes beber al menos tres vasos de líquido. El primero - por la mañana con el estómago vacío, el segundo - para el almuerzo y, el tercero - por la noche, antes de acostarte. Pero hay un secreto. </span></p>
+        <p data-gender="female" data-id="msg22" data-timeout="5"><img src="img/prod.jpg"></p>
+        <p data-gender="female" data-id="msg23"><span class="msg"> Para perder rápidamente <span class="loseweight"></span> esos kilos de más tienes que tomar con un vasode agua una cápsula  de <a class="link" href="{offer}" target="_blank"> Fortunella </a> .Son mi gran hallazgo. </span></p>
+        <p data-gender="female" data-id="msg24" data-timeout="5"><span class="msg"><a class="link" href="{offer}" target="_blank"> las cápsulas  Fortunella </a> es un suplemento especial que ayuda a perder peso. Reduce el apetito y comienza el proceso de quema de grasa. </span></p>
+        <p data-gender="female" data-id="msg25"><span class="msg"> El extracto de la fruta Fortunella, el cardamomo, el extracto de aceite de cilantro, la L-carnitina, las  vitaminas (A, B1-B6, B12, C, D) y los minerales (magnesio, calcio, zinc, manganeso, etc.) que forman parte de la composición de <a class="link" href="{offer}" target="_blank"> las cápsulas Fortunella </a> aceleran el metabolismo y comienzan a luchar con depósitos de grasa tan pronto como ingresan al cuerpo. Gracias a esto, la pérdida de peso será rápida e inofensiva. </span>
+        </p>
+        <p data-gender="female" data-id="msg26" data-timeout="5"><span class="msg"> Si has llegado al final, obtienes un 50% de descuento <a class="link" href="{offer}" target="_blank"> siguiendo este enlace. </a></span></p>
+        <p data-end data-gender="female" data-id="msg27"><span class="msg"> ¡Buena suerte! ¡Pierde peso con cabeza! <a class="start-block__btn order-btn" href="{offer}" target="_blank"> PEDIR AHORA </a></span></p>
+        <p data-gender="male" data-id="msg28" data-query="sleeptime"><span class="msg"> ¿Sabías que la falta de sueño en los hombres ralentiza bruscamente el metabolismo? ¿Cuántas horas al día duermes habitualmente? </span><span class="hint"> Introduce el número de horas </span></p>
+        <p data-gender="male" data-id="msg29" data-type="question"><span class="msg"><span class="name"></span>, con un régimen de sueño así es muy importante comer bien. Un hombre con tu peso necesita consumir al menos 2500 calorías al día. ¿De qué productos suele consistir tu dieta? </span><span class="question-var"> Carne, ¡mucha carne grasosa y deliciosa! </span><span class="question-var"> No pienso en eso. Como lo que pillo </span><span class="question-var"> Intento comer bien, consumir menos comida grasa y dulce </span></p>
+        <p data-gender="male" data-id="msg30"><img src="img/msg_8.gif"></p>
+        <p data-gender="male" data-id="msg31" data-type="question"><span class="msg"> A ver... ¿Y qué hay de la actividad física? ¿Vas al gimnasio? <img alt="💪" class="smile" src="img/D83DDCAA.png"></span><span class="question-var"> No, paso mucho tiempo sentado y me muevo poco </span><span class="question-var"> Intento caminar más, pero no siempre </span><span class="question-var"> Hago ejercicio y corro por la mañana </span><span class="question-var"> Voy al gimnasio varias veces a la semana </span></p>
+        <p data-gender="male" data-id="msg32"><img src="img/msg_9.jpg"></p>
+        <p data-gender="male" data-id="msg33"><span class="msg"> La verdad es que los deportes no garantizan la pérdida de peso. Los ejercicios físicos fortalecerán los músculos, pero no quemarán mucha grasa. Lo que sí ayudará a poner tu cuerpo en forma rápidamente es el sexo regular debido a una liberación adicional de hormonas;) </span></p>
+        <p data-gender="male" data-id="msg34" data-type="question"><span class="msg"><span class="name"></span>, ¿con qué frecuencia practicas el sexo? <img alt="🔥" class="smile" src="img/D83DDD25.png"></span><span class="question-var"> Todos los días, soy una bestia en la cama </span><span class="question-var"> Varias veces a la semana </span><span class="question-var"> Varias veces al mes </span><span class="question-var"> Forever alone <img alt="😓" class="smile" src="img/D83DDE13.png"></span>
+        </p>
+        <p data-gender="male" data-id="msg35"><img src="img/msg_10.gif"></p>
+        <p data-gender="male" data-id="msg36"><span class="msg"> ¡Ya estamos en la línea de meta! Un par de preguntas más. ¿A cuál de estas dos chicas invitarías a una cita?:) </span><img src="img/msg_4.jpg"></p>
+        <p data-gender="male" data-id="msg37" data-query="loseweight"><span class="msg"> Ambas fotos son mías. Sí, me hice nutricionista para ponerme en forma, así que sé todo sobre la pérdida de peso. Con la ayuda de mi sistema me deshice de 37 kg. Dime una cosa, ¿cuántos kilos te gustaría perder? </span><span class="hint"> Introduce el número en kilos </span></p>
+        <p data-gender="male" data-id="msg38"><span class="msg"> Genial. Ahora dame unos segundos... </span></p>
+        <p data-gender="male" data-id="msg39" data-timeout="5"><span class="msg"> ¡Hecho! En base a tus datos, tengo un par de consejos para ti. </span></p>
+        <p data-gender="male" data-id="msg40"><span class="msg"><span class="name"></span>, ¿recuerdas lo que te dije sobre la alimentación? ¡Las dietas y el hambre no conducen a nada bueno! ¡Un hombre tiene que comer sí o sí! Un cambio brusco en el comportamiento alimentario en general puede llevar a un desequilibrio hormonal y a problemas con la potencia sexual... ¿Quieres comenzar a perder peso? Practica el sexo más a menudo. </span><img src="img/msg_6.jpg"></p>
+        <p data-gender="male" data-id="msg41" data-timeout="5"><span class="msg"> El gimnasio ayudará a mantener tu forma, pero no ayudará a perder peso. </span></p>
+        <p data-gender="male" data-id="msg42"><span class="msg"> Y, lo más importante - ¡el agua es más importante que la comida! Durante el día debes beber al menos tres vasos de líquido. El primero - por la mañana con el estómago vacío, el segundo - para el almuerzo y, el tercero - por la noche, antes de acostarte. Pero hay un secreto. </span></p>
+        <p data-gender="male" data-id="msg43" data-timeout="5"><span class="msg"></span><img src="img/prod.jpg"></p>
+        <p data-gender="male" data-id="msg44"><span class="msg"> Para perder rápidamente <span class="loseweight"></span> esos kilos de más tienes que tomar con un vaso de agua una cápsula  de <a class="link" href="{offer}" target="_blank"> Fortunella </a> . Son mi gran hallazgo. </span></p>
+        <p data-gender="male" data-id="msg45" data-timeout="5"><span class="msg"><a class="link" href="{offer}" target="_blank"> las cápsulas Fortunella </a> es un suplemento especial que ayuda a perder peso. Reduce el apetito y comienza el proceso de quema de grasa. </span></p>
+        <p data-gender="male" data-id="msg46"><span class="msg"> El extracto de la fruta Fortunella, el cardamomo, el extracto de aceite de cilantro, la L-carnitina, las  vitaminas (A, B1-B6, B12, C, D) y los minerales (magnesio, calcio, zinc, manganeso, etc.) que forman parte de la composición de <a class="link" href="{offer}" target="_blank"> las cápsulas Fortunella </a> aceleran el metabolismo y comienzan a luchar con depósitos de grasa tan pronto como ingresan al cuerpo. Gracias a esto, la pérdida de peso será rápida e inofensiva. </span>
+        </p>
+        <p data-gender="male" data-id="msg47" data-timeout="5"><span class="msg"> Si has llegado al final, obtienes un 50% de descuento <a class="link" href="{offer}" target="_blank"> siguiendo este enlace. </a></span></p>
+        <p data-end data-gender="male" data-id="msg48"><span class="msg"> ¡Buena suerte! ¡Pierde peso con placer! <a class="start-block__btn order-btn" href="{offer}" target="_blank"> PEDIR AHORA </a></span></p>
+        <p data-gender="female" data-id="msg49" data-type="waiting"><span class="msg"> ¿Estas ahí? ¡Este guaperas y yo estamos esperando tu respuesta! </span><img src="img/msg_help_1.jpg"></p>
+        <p data-gender="female" data-id="msg50" data-type="waiting"><span class="msg"> ¡Jorge Martinez pudo perder 15 kg! ¡Tú también podrás hacerlo! </span><img src="img/msg_help_3.jpg"></p>
+        <p data-gender="male" data-id="msg51" data-type="waiting"><span class="msg"> ¡Antonio Valdés pudo perder 18 kg! ¡Tú también podrás hacerlo! </span><img src="img/msg_help_5.jpg"></p>
+        <p data-id="msg52" data-type="waiting"><img src="img/msg_help_4.gif"></p>
+        <p data-gender="male" data-id="msg54" data-type="waiting"><span class="msg"> ¿Estás ahí? ¡Este bellezón y yo estamos esperando tu respuesta! </span><img src="img/msg_help_2.jpg"></p>
+        <p data-id="msg55" data-type="isright"><span class="msg"> Venga ya, no te creo:) </span></p>
+        <p data-id="msg55" data-type="isright"><span class="msg"> No lo creo:) </span></p>
+        <p data-id="msg55" data-type="isright"><span class="msg"> Seamos honestos:) </span></p>
+        <p data-id="msg55" data-type="isright"><span class="msg"> Creo que estás bromeando <img alt="😉" class="smile" src="img/D83DDE09.png"></span></p>
+        <p data-id="msg56" data-type="helper"><span class="msg"> Selecciona una opción </span></p>
+        <p data-id="msg57" data-type="helper"><span class="msg"> Escribe un mensaje... </span></p>
+        <p data-id="msg58" data-type="waiting"><img src="img/msg_help_6.gif"></p>
+        <p data-id="msg59" data-type="waiting"><img src="img/msg_help_7.gif"></p>
+        <p data-id="msg60" data-type="waiting"><img src="img/msg_help_8.gif"></p>
+        <p data-id="msg57" data-type="helper-end"><span class="msg"> ¡Me alegro de haberte ayudado! </span></p>
+        <p data-id="msg57" data-type="helper-end"><span class="msg"> ¡Lo conseguirás! </span></p>
+        <p data-id="msg57" data-type="helper-end"><span class="msg"> ¡Adiós! </span></p>
+    </div>
+
+    <!--retarget-->
+    <!--retarget-->
+
+
+    <script src="js/purl.min.js"></script>
+    <script src="js/leadprofit.js"></script>
+
+
+
+
+</body></html>
