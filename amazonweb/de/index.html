@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://template.drcash.sh/30bb1b61-2499-11e9-b355-0a580a140033 -->
+<html lang="de" class>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="initial-scale=1" id="viewport">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/common.css">
+		<title>PowerShape</title>
+		<link rel="icon" href="img/favicon/favicon_PowerShape.ico">
+		<link rel="stylesheet" href="css/jquery.countdown.css">
+		<!-- INTH_SNIPPET_TOP -->
+		<link type="text/css" rel="stylesheet" charset="UTF-8" href="css/translateelement.css">
+		<link type="text/css" rel="stylesheet" charset="UTF-8" href="css/fix.css">
+		<link type="text/css" rel="stylesheet" charset="UTF-8" href="css/new_styles.css">
+		
+		
+	
+<script>//INCLUDED IN EACH PRELANDING AND FIRST FORM FILE OF EACH LANDING
+function setDoaffVisitorCookie(v)
+{
+    var d = new Date();
+    d.setTime(d.getTime() + 2592000000);
+    document.cookie = "doaff_visitor=" + v +"; expires="+ d.toUTCString()+ "; path=/";
+}
+function fillGet(tmpGet)
+{
+    //SLASHES
+    var items = window.location.pathname.split("/");
+    
+    if (items.length < 4) {console.log('missing get params'); return {};} 
+
+    tmpGet['affiliate'] = items[2];
+    tmpGet['banner'] = items[3];
+    //NORMAL GET
+    items = window.location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+            var parts = items[index].split("=");
+            tmpGet[parts[0]] = decodeURIComponent(parts[1]);
+    }
+    return tmpGet;
+}
+
+function sendRequest(get)
+{
+    var affiliate = get['affiliate'];//REPLACE WITH CONSTANT ON DOWNLOAD
+    var banner = get['banner'];//REPLACE WITH CONSTANT ON DOWNLOAD
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://go.doaffiliate.net/power-shape.eu/'+affiliate+'/'+banner+'?getVisitor');
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.send();
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var json = JSON.parse(xhr.responseText);
+            setDoaffVisitorCookie(json.visitor);
+        }
+        else {
+            console.log(xhr.status);
+        }
+    };
+    
+}
+
+var get = fillGet({});
+typeof get.v !== "undefined" ? setDoaffVisitorCookie(get["v"]) : sendRequest(get);
+
+
+
+</script>
+<script>//INCLUDED IN EACH FORM FILE OF EACH LANDING
+function startLoading()
+{
+    var html = "<div id='doaffLoading' style='z-index:9999999; position: fixed; top: 200px; left: 50%; background-color: white; padding: 20px; border: 1px solid #444;color: black; margin-left: -150px; margin-top:-30px;height: 60px; width: 300px;font-size: 12'>Loading... Please wait!</div>";
+    document.body.innerHTML = document.body.innerHTML + html;
+}
+function endLoading(){
+    document.querySelector("#doaffLoading").remove();
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    
+	for (i=0; i<=1; i++)
+	document.querySelectorAll('.form2')[i].onsubmit=function(e)
+    {
+        e.preventDefault();
+        startLoading();
+
+        var data = new FormData(this);
+
+        var parts = ('; ' + document.cookie).split('; doaff_visitor=');
+        if (parts.length == 2)
+        {
+            data.append('v', parts.pop().split(';').shift());
+            data.append('jsCodes',1);
+            var req = new XMLHttpRequest();
+            req.open("POST", 'https://c.doaffiliate.net/power-shape.eu/landing/redkini/apiHandler1.php', true);
+            req.onload = function () {
+				
+				console.log(req.responseText);
+				return false;
+				
+                if (req.status === 200) {
+                    var json = JSON.parse(req.responseText);
+                    window.location.href = "success.php";
+                    console.log(json);
+                }
+                else
+                {
+                    endLoading();
+                    console.log("ERROR");
+                }
+            };
+            req.send(data);
+
+        }
+
+        return false;
+    };    
+});
+
+
+</script>
+</head>
+		<body>
+				<div class="page_wrapper">
+						<div class="warning_block">
+								<div class="wrapper">
+										<div class="container">
+												<div class="row">
+														<div class="col-md-12">
+																<div class="warning">
+																		<p> <span>ACHTUNG: </span>Wegen der großen Medienaufmerksamkeit haben wir nur noch einen begrenzten Lagerbestand. Am  <i class="date"></i> hatten wir nur noch 52 Artikel verfügbar. </p>
+																		<div class="close"></div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+						<section class="header">
+								<div class="wrapper">
+										<div class="top_line">
+												<img class="top_line__logo" src="img/logo.png" alt>
+												<div class="top_line__description">Verbrennen Sie Fett, um Ihre Versteckte Formschöne Figur Freizusetzen</div>
+										</div>
+										<div class="header__site_title">
+												<div class="header__container">
+														<h1>Verbrennen Sie Natürlich </h1>
+														<div>bis zu 40 Kilo Fett pro Kurs ohne Anstrengende </div>
+														<div>Diäten und Übungen!</div>
+												</div>
+										</div>
+
+										<div class="header__colums">
+												
+												<div class="product_box">														
+														<img src="img/new_product_only.png" alt>
+												</div>
+												<div class="header__left">
+														<ul class="header__list">
+																<li class="header__list__item">Unterdrückt den Appetit</li>
+																<li class="header__list__item">Belebt den Körper</li>
+																<li class="header__list__item">Beschleunigt die Fettverbrennung</li>
+																<li class="header__list__item">Verhindert die Spaltung von Kohlenhydraten</li>
+																<li class="header__list__item">Normalisiert den Stoffwechsel </li>
+														</ul>
+														<div class="header__product">
+																<img src="img/product.png" alt>
+																<ul class="header__ser_list">
+																		<li class="header__ser_item"></li>
+																		<li class="header__ser_item"></li>
+																		<li class="header__ser_item"></li>
+																</ul>
+														</div>
+												</div>
+												<div class="girl_box">														
+														<img src="img/girl1.png" alt>
+												</div>
+												<div class="header__right">
+														<div class="form_top header__form" id="form2">
+																<div id="scroll_to_form"></div>
+																<div class="left_part">
+																
+																<div class="form_top__price_container">
+																		<div class="form_top__price_old">
+																				<div class="form_top__price_old_label">Verkauf:</div>
+																				<div class="form_top__price_old_value"><span class="old_price_val">98</span> <span class="old_price_cur">€</span></div>
+																		</div>
+																		<div class="form_top__price_new">
+																				<div class="form_top__price_val">
+																						<span class="new_price_val">49</span> <span class="new_price_cur">€</span>
+																						<div class="form_top__icon_new">Neu!</div>
+																				</div>
+																				<div class="form_top__price_label">
+																						+ <span>KOSTENLOS </span>LIEFERUNG
+																				</div>
+																		</div>
+																</div>
+																<div class="timer" data-timer>
+																		<div id="countdown" class="countdownHolder">
+																		</div>
+																</div>
+																</div>
+																<form class="form landing__form orderForm form2" method="post" id="top_form">
+																																		<input type="text" name="utm_source" hidden value>
+																	<input type="text" name="utm_medium" hidden value>
+																	<input type="text" name="utm_term" hidden value>
+																	<input type="text" name="utm_content" hidden value>
+																	<input type="text" name="utm_campaign" hidden value="power-shape.eu">
+																	<input type="text" name="ip" hidden value="178.71.15.109">
+																	<input type="text" name="timezone" hidden class="timezoneInput">
+                                                                                                                                        <input type="text" name="goods[goodID]" hidden value="103675">
+                                        <input type="text" name="goods[quantity]" hidden value="1">
+                                        <input type="text" name="goods[price]" hidden value="1">
+                                        <input type="text" name="referer" hidden value>
+                                        <input type="text" name="additional4" hidden value="Landing">
+																	
+																	<div class="form_top__field form_top__field-name">
+																		<input class="form_top__input" type="text" name="fio" placeholder="Dein Name:" required>
+																	</div>
+																	<div class="form_top__field form_top__field-phone">
+																		<input class="form_top__input" type="tel" name="phone" placeholder="Telefonnummer" required="required" minlength="8">
+																	</div>
+
+																	<button class="submit_form form_top__submit" type="submit"><span class="big">Bestellen Sie </span></button>
+																</form>
+																<div class="form_top__title"> Bestellen Sie mit <span> 60% Rabatt! </span></div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</section>
+					 
+						<div class="why_fight">
+								<div class="wrapper">
+										<div class="why_fight__columns">
+												<div class="why_fight__right">
+														<div class="why_fight__title">Warum Übergewicht bekämpfen?</div>
+														<div class="slider_container">
+																<ul class="why_fight__list">
+																		<li class="why_fight__item" aria-hidden="false">
+																				<div class="why_fight__item__title">
+																						<div class="why_fight__item__procent">70%</div>
+																						<strong>Der Herz-Kreislauf-Erkrankungen beginnen mit Adipositas</strong>
+																				</div>
+																				<div class="why_fight__description">Experten liefern Daten, dass etwa 70% der Herz-Kreislauf-Erkrankungen mit Übergewicht beginnen. Das Übergewicht führt zu hohem Blutdruck und erhöhtem Cholesterinspiegel, was zu Herzproblemen führt, die tödlich sein können</div>
+																		</li>
+																		<li class="why_fight__item" aria-hidden="true">
+																				<div class="why_fight__item__title">
+																						<div class="why_fight__item__procent">40% </div>
+																						<strong>Übergewichtige Menschen werden aufgrund ihrer Größe vom Service abgelehnt</strong>
+																				</div>
+																				<div class="why_fight__description">Für manche kann es als sehr unhöflich angesehen werden, aber es ist wahr. Im letzten Jahr gab es Fälle, in denen übergewichtigen Passagieren aufgrund ihrer Größe der Bordservice von Flugzeugen, Schiffen und sogar öffentlichen Verkehrsmitteln verweigert wurde.</div>
+																		</li>
+																		<li class="why_fight__item" aria-hidden="true">
+																				<div class="why_fight__item__title">
+																						<div class="why_fight__item__procent">86%</div>
+																						<strong>Der Männer gehen nicht auf ein Date mit einer übergewichtigen Frau</strong>
+																				</div>
+																				<div class="why_fight__description">Es mag hart klingen, aber es stimmt, die meisten Männer betrachten übergewichtige Frauen als nicht attraktiv. Experten geben verschiedene Gründe dafür an, wie &quot;Nicht den Standards der Schönheit zu entsprechen&quot;, &quot;Nicht den Standards eines gesunden Lebensstils zu entsprechen&quot; und so weiter. Unabhängig von den Gründen sind die Ergebnisse gleich. Männer mögen in der Regel keine übergewichtigen Frauen.</div>
+																		</li>
+																</ul>
+														</div>
+														<!-- <div class="why_fight__img"><img src="./index_files/fat_woman.png" alt=""></div> -->
+												</div>
+										</div>
+								</div>
+								<div class="bg_meter">
+										<img src="img/meter.png" alt>
+								</div>
+						</div>
+						<div class="never_help">
+								<div class="wrapper">
+										<div class="never_help__title">Warum helfen Diäten, Sport und andere beliebte <strong>Methoden nie?</strong></div>
+										<div class="slider_container">
+												<div class="never_help__list">
+														<div class="never_help__item">
+																<div class="never_help__item__bg" style="background-image: url(img/1help.jpg);" alt></div>
+																<div class="never_help__item__name">Diät</div>
+																<div class="never_help__item__desc">Wenn Sie aufhören, die gleiche Menge an Essen zu essen, die Sie zuvor gegessen haben, wird der Körper es als eine Bedrohung für Ihr Überleben betrachten. Daher wird es jedes Stück Nahrung in Ihren Körper saugen, um die Diät zu bekämpfen.</div>
+														</div>
+														<div class="never_help__item">
+																<div class="never_help__item__bg" style="background-image: url(img/2help.jpg);" alt></div>
+																<div class="never_help__item__name">Fitnessstudio</div>
+																<div class="never_help__item__desc">Körperliche Übungen waren immer eine Antwort auf Übergewicht, aber nicht jeder hat genug Zeit oder Motivation, um mit dem Sport zu beginnen. Deshalb fangen viele Menschen einfach an zu trainieren und geben dann aufgrund von Zeitmangel auf. Kein Ergebnis am Ende.</div>
+														</div>
+														<div class="never_help__item">
+																<div class="never_help__item__bg" style="background-image: url(img/3help.jpg);" alt></div>
+																<div class="never_help__item__name">Medizinische Lösung</div>
+																<div class="never_help__item__desc">Medizinische Lösung kann die Abhängigkeit Ihres Körpers von medizinischen Produkten verursachen, da Sie natürlichen Zutaten keine Chance geben, Fettleibigkeit zu bekämpfen. So können Sie im moralischen Dilemma stecken: &quot;Suchtgefahr oder Übergewicht?&quot;</div>
+														</div>
+														<div class="never_help__item">
+																<div class="never_help__item__bg" style="background-image: url(img/4help.jpg);" alt></div>
+																<div class="never_help__item__name">Fettabsaugung</div>
+																<div class="never_help__item__desc">Der schlimmste Fall ist Fettabsaugung, bei der Sie eine Menge Geld für die Verformung Ihres Körpers zahlen und das Fett trotzdem zurückkehrt! Unser Körper wird versuchen, künstlich entferntes Fett zurückzuerlangen. Also, müssen Sie wirklich Geld bezahlen, um sich selbst hässlich zu machen und auf lange Sicht Fett zurückzubekommen?</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="bdoctor">
+								<div class="bdoctor_container">
+								<div class="wrapper">
+										<div class="bdoctor__title">Dutzende meiner Patienten haben dieses Produkt bereits ausprobiert und ihre Ergebnisse sind umwerfend!</div>
+										<div class="bdoctor__colums">
+												<div class="doc_img_box">
+														<img src="img/doctor.jpg" alt>
+														<div class="text_box">                                
+																<p>Ich empfehle PowerShape allen meinen Patienten</p>
+																<div class="bdoctor__desc"><strong>Helen Schwartz ,  </strong>Ernährungsberaterin, Diätologin, Expertin für die Behandlung von Fettleibigkeit mit 20 Jahren Erfahrung, Autorin zahlreicher Bücher über Diätologie.</div>
+														</div>
+												</div>                        
+												<div class="bdoctor__colum__left">
+														<p>Ich verschrieb meinen Patienten verschiedene medizinische Pillen, aber nicht alle schienen effektiv zu wirken. Patienten neigen dazu, Diäten und Sport aufzugeben und die eine Art von Pillen zu einer anderen ohne Wirkung auf ihren Körper zu ändern. Es wird noch schlimmer, wenn sie anfangen, noch mehr Gewicht zu bekommen.</p>
+														<p> <i>PowerShape ist eine Innovation in der Gewichtsverlust-Industrie, die Ihren Appetit sofort nach der Verabreichung unterdrückt. Der vollständige Verlauf des Produkts wird dazu beitragen, über 40 Kilo zu verlieren. Außerdem hat dieses Produkt keine Nebenwirkungen.</i></p>
+														<p> <strong>Ich empfehle PowerShape allen meinen Patienten, die schnell, effektiv und natürlich abnehmen wollen. Die wichtigsten Vorteile von PowerShape im Vergleich zu anderen Ergänzungen sind:</strong></p>
+														<ul>
+																<li>Aktiviert Energie, um Fett zu verbrennen;</li>
+																<li>Verringert den Cholesterinspiegel;</li>
+																<li>Normalisiert den Blutzuckerspiegel;</li>
+																<li>Verbessert das Immunsystem;</li>
+																<li>Beschleunigt die Zerstörung von Fettzellen.</li>
+														</ul>
+														<p>Dutzende meiner Patienten haben dieses Produkt bereits ausprobiert und ihre Ergebnisse sind umwerfend. Ich hatte sogar einen Patienten mit einem Gewicht von über hundert Kilo, aber nach vier Monaten PowerShape konnte er 45 Kilo abnehmen.</p>
+														<p>Es ist am besten, den vollen fortgeschrittenen PowerShape-Kurs von 4 Monaten zu durchlaufen, um fit und schön zu bleiben. Wenn Sie beim Kurs bleiben, haben Sie keine Chance, Ihre extra Kilos zurück zu bekommen! </p>
+												</div>												
+										</div>
+								</div>
+								</div>
+						</div>
+						<div class="lose_chance">
+								<div class="wrapper">
+										<a class="scroll_to_button show_mobile" href="javascript:void(0);">
+														<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+										<div class="lose_chance__image new_img">
+												<img src="img/new_product.png" alt>
+										</div>
+										<div class="lose_chance__text">
+												<div class="lose_chance__title"> Verpassen Sie Nicht Ihre Chance</div>
+												<div class="lose_chance__desc"> Die Neueste Innovation in der Diätologie
+														Zu Verwenden!
+												</div>
+
+												<a class="scroll_to_button" href="javascript:void(0);">
+														<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+										</div>
+								</div>
+						</div>
+						<div class="natural">
+								<div class="wrapper">
+										<div class="natural__title"> Die Einzige Kombination von Natürlichen Zutaten, <span>die Fett 2-3 mal Effektiver Verbrennt </span></div>
+										<div class="natural__product">
+												<div class="natural__product__img">
+														<div class="img_box">
+																<img src="img/new_product.png" alt>                                
+														</div>
+												</div>
+												<div class="slider_container">
+														<ul class="natural__list">
+																<li class="natural__list__item" aria-hidden="false">
+																		<div class="box">
+																				<div class="natural__list__item__image"><img src="img/effect_1.jpg" alt></div>
+																				<div class="natural__list__item__text">
+																						<div class="natural__list__item__title"> Wasserfreies Koffein</div>
+																						<div class="natural__list__item__desc">Unterdrückt den Hunger, erhöht die Lebhaftigkeit, erhöht die Energie, beschleunigt den Verbrauch von Fettreserven.</div>
+																				</div>
+																		</div>
+																		<div class="natural__list__item__desc show_mobile">Unterdrückt den Hunger, erhöht die Lebhaftigkeit, erhöht die Energie, beschleunigt den Verbrauch von Fettreserven.</div>
+																</li>
+																<li class="natural__list__item" aria-hidden="true">
+																		<div class="box">
+																				<div class="natural__list__item__image"><img src="img/effect_2.jpg" alt></div>
+																				<div class="natural__list__item__text">
+																						<div class="natural__list__item__title">Grüntee-Extrakt</div>
+																						<div class="natural__list__item__desc">Leitet überschüssige Flüssigkeit aus dem Körper, regt den Stoffwechsel an und reduziert Stress durch Gewichtsverlust.</div>
+																				</div>
+																		</div>
+																		<div class="natural__list__item__desc show_mobile">Leitet überschüssige Flüssigkeit aus dem Körper, regt den Stoffwechsel an und reduziert Stress durch Gewichtsverlust.</div>
+																</li>
+																<li class="natural__list__item" aria-hidden="true">
+																		<div class="box">
+																				<div class="natural__list__item__image"><img src="img/effect_3.jpg" alt></div>
+																				<div class="natural__list__item__text">
+																						<div class="natural__list__item__title">Schwarzer Pfeffer</div>
+																						<div class="natural__list__item__desc">Beschleunigt den Fettabbau, blockiert die Spaltung von Kohlenhydraten, reduziert den glykämischen Index, bewahrt das Muskelgewebe.</div>
+																				</div>
+																		</div>
+																		<div class="natural__list__item__desc show_mobile">Beschleunigt den Fettabbau, blockiert die Spaltung von Kohlenhydraten, reduziert den glykämischen Index, bewahrt das Muskelgewebe.</div>
+																</li>
+																<li class="natural__list__item" aria-hidden="true">
+																		<div class="box">
+																				<div class="natural__list__item__image"><img src="img/effect_4.jpg" alt></div>
+																				<div class="natural__list__item__text">
+																						<div class="natural__list__item__title">Cayenne-Pfeffer </div>
+																						<div class="natural__list__item__desc">Aktiviert die Produktion von Energie, erhöht die Ausdauer und Effizienz des Immunsystems.</div>
+																				</div>
+																		</div>
+																		<div class="natural__list__item__desc show_mobile">Aktiviert die Produktion von Energie, erhöht die Ausdauer und Effizienz des Immunsystems.</div>
+																</li>
+																<li class="natural__list__item">
+																		<div class="box">
+																				<div class="natural__list__item__image"><img src="img/effect_5.jpg" alt></div>
+																				<div class="natural__list__item__text">
+																						<div class="natural__list__item__title">Acetyl-L-Carnitin</div>
+																						<div class="natural__list__item__desc">Wenn es in das Verdauungssystem gelangt, bildet es ein Gel, das die Aufnahme von Fetten verhindert und Giftstoffe entfernt.</div>
+																				</div>
+																		</div>
+																		<div class="natural__list__item__desc show_mobile">Wenn es in das Verdauungssystem gelangt, bildet es ein Gel, das die Aufnahme von Fetten verhindert und Giftstoffe entfernt.</div>
+																</li>
+														</ul>
+												</div>
+										</div>
+								</div>
+						</div>
+						
+						<section class="reviews">
+								<div class="wrapper">
+										<div class="container">
+												<div class="title"> Was schreiben uns die Menschen normalerweise
+														nach der Einnahme von PowerShape?
+												</div>
+												<div class="slider_container">
+														<ul class="reviews_slider">
+																<li class="slide">
+																		<div class="description_box">
+																				<div class="img before">
+																						<img src="img/2_before.jpg" alt>
+																				</div>
+																				<div class="text_box">
+																						<p>Ich bin sehr beeindruckt von PowerShape. Ich benutzte es in meinem Trainingszyklus, um die überschüssige Flüssigkeit aus meinem Körper zu entfernen 😃 Es hat wirklich funktioniert. In nur ein Monat konnte ich die Anforderungen meiner Gewichtsklasse erfüllen. Wenn Sie schnell und effizient abnehmen möchten, dann ist PowerShape Ihre Antwort!</p>
+																				</div>
+																				<div class="img after">
+																						<img src="img/2_after.jpg" alt>
+																				</div>
+																		</div>                                    
+																</li>
+																 <li class="slide">
+																		<div class="description_box">
+																				<div class="img before">
+																						<img src="img/1_before.jpg" alt>
+																				</div>
+																				<div class="text_box">
+																						<p>Hartnäckiges Fett loszuwerden, nachdem ich fast drei Jahre lang alles versucht habe, scheint ein wirkliches Wunder zu sein 😃 Mein Leben hat sich verändert, nachdem ich PowerShape benutzt habe. Ich glaubte nicht, dass man 30 Kilo abnehmen kann, ohne viel Sport zu treiben, aber es ist wahr. Ich glaube, dass es der beste Weg ist, um Gewicht zu verlieren!</p>
+																				</div>
+																				<div class="img after">
+																						<img src="img/1_after.jpg" alt>
+																				</div>
+																		</div>                                    
+																</li>                               
+																<li class="slide">
+																		<div class="description_box">
+																				<div class="img before">
+																						<img src="img/3_before.jpg" alt>
+																				</div>
+																				<div class="text_box">
+																						<p>Nachdem ich 30 geworden bin, merke ich plötzlich, wie schwer es sein kann, in Form zu bleiben. Sie können nicht alles essen, was Sie in Ihren Vierzigern wollen, da es leicht auf Ihrer Taille gespeichert werden kann. PowerShape verbrennt im Vergleich zu anderen Produkten Fett in den gewünschten Bereichen des Körpers 😋</p>
+																				</div>
+																				<div class="img after">
+																						<img src="img/3_after.jpg" alt>
+																				</div>
+																		</div>                                    
+																</li>
+																<li class="slide">
+																		<div class="description_box">
+																				<div class="img before">
+																						<img src="img/4_before.jpg" alt>
+																				</div>
+																				<div class="text_box">
+																						<p>Ich fing an, weniger zu essen und es scheint natürlich für mich zu sein. In nur vier Wochen habe ich etwa zehn Kilo abgenommen  😉. Mit Hilfe von PowerShape war ich auf meine Hochzeit mehr als vorbereitet. Ich habe viele Kritiken gelesen und beschlossen, es selbst auszuprobieren. Ich bin sehr zufrieden mit den Ergebnissen. 😜 😋</p>
+																				</div>
+																				<div class="img after">
+																						<img src="img/4_after.jpg" alt>
+																				</div>
+																		</div>                                    
+																</li>
+																
+
+														</ul>                            
+												</div>
+												
+										</div>
+								</div>
+						</section>
+						
+									<div class="lose_chance">
+										<div class="wrapper">
+											<a class="scroll_to_button show_mobile" href="javascript:void(0);">
+														<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+											<div class="lose_chance__image new_img">
+												<img src="img/new_product.png" alt>
+											</div>
+											<div class="lose_chance__text">
+												<div class="lose_chance__title">Warum Sind Sie Nicht Dabei?</div>
+												<div class="lose_chance__desc"> Über 1 Million Kunden Nennen PowerShape ihr
+														Traumprodukt, um Gewicht zu verlieren
+												</div>
+
+												<a class="scroll_to_button" href="javascript:void(0);">
+													<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+												</div>
+											</div>
+										</div>
+										
+						<div class="methods_usage">
+								<div class="wrapper">
+										<div class="methods_usage__title">Verwendungsmethoden</div>
+										<div class="slider_container">
+												<div class="methods_usage__list">
+														<div class="methods_usage__item">
+																<div class="methods_usage__item_image"><img src="img/methods_1.jpg" alt></div>
+																<div class="methods_usage__text">
+																		<div class="methods_usage__item__title">Programm Starter <strong>1 Monat </strong></div>
+																		Wenn Sie bis zu 10 kg verlieren müssen
+																		<ul>
+																				<li> <span>Nehmen Sie PowerShape einmal täglich;</span></li>
+																				<li> <span>Das Gewicht wird von selbst verbrannt</span></li>
+																		</ul>
+																</div>
+														</div>
+														<div class="methods_usage__item">
+																<div class="methods_usage__item_image">
+																	<img src="img/methods_2.jpg" alt>
+																</div>
+
+																<div class="methods_usage__text">
+																		<div class="methods_usage__item__title">Programm Mittel  <strong>2 Monate</strong></div>
+																		Wenn Sie 20 kg verlieren und die Gesundheit verbessern wollen
+																		<ul>
+																				<li><span>Nehmen Sie PowerShape einmal täglich</span></li>
+																				<li><span>Halten Sie sich an jegliche Diät</span></li>
+																				<li><span>Machen Sie Morgengymnastik;</span></li>
+																		</ul>
+																</div>
+																<div class="methods_usage__message">Verbrennt Fett, entgiftet den Körper, entfernt überschüssige Flüssigkeit, tonisiert die Muskeln, normalisiert den Blutdruck und den Cholesterinspiegel.</div>
+														</div>
+														<div class="methods_usage__item">
+																<div class="methods_usage__item_image"><img src="img/methods_2.jpg" alt></div>
+																<div class="methods_usage__text">
+																		<div class="methods_usage__item__title">Programm Fortgeschritten  <strong>4 Monate</strong></div>
+																		Wenn Sie 30 kg verlieren müssen und die ganze Saison lang schlank sein wollen
+																		<ul>
+																				<li> <span>Nehmen Sie PowerShape einmal täglich;</span></li>
+																				<li> <span>Halten Sie sich an jegliche Diät;</span></li>
+																				<li> <span>Machen Sie Morgengymnastik;</span></li>
+																				<li> <span>Gehen Sie zweimal pro Woche zum Fitnessstudio;</span></li>
+																		</ul>
+																</div>
+																<div class="methods_usage__message">Verbrennt Fett, entgiftet den Körper, entfernt überschüssige Flüssigkeit, verbessert das Immunsystem, verbessert die Stoffwechselprozesse, reinigt die Blutgefäße, tonisiert die Muskeln, normalisiert den Blutdruck und den Cholesterinspiegel.</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="mellisa">
+								<div class="wrapper">
+									<div class="mellisa__flex">
+										<div class="mellisa__title">Melissa McCarthy  <span>verlor satte 35 Kilo </span>Und Ist Dabei,
+												Ihre Geheime Diät-Zutat Mitzuteilen
+											</div>
+										<div class="melissa_box">
+											<div class="before_img img_box">
+												<img src="img/melissa_1.jpg" alt>
+											</div>
+											<div class="after_img img_box">
+												<img src="img/melissa_2.jpg" alt>
+												
+											</div>
+										</div>
+										<div class="mellisa__text">
+											
+											<div class="right_content">
+												<div class="mellisa__desc">Die Zeitschrift Life &amp; Style enthüllte das Geheimnis der Melissa McCarthy Diät! Der 47-jährige Star hat keine anstrengende Diät durchgemacht, um das fantastische Ergebnis zu erreichen, 35 Kilo zu verlieren.
+													Die Brautjungfern-Schauspielerin scherzte, dass sie keine Zeit für Übungen hatte und eine faule Lösung wollte, um ihr Gewicht zu verlieren. Die Zeitschrift enthüllte - ihre faule Waffe im Kampf gegen hartnäckige Kalorien war PowerShape.
+												</div>
+												<div class="mellisa__short_desc">Die Logik dieser Annahme war ziemlich einfach und basierte auf den folgenden Schlüsselmerkmalen von Melissa McCarthy: </div>
+												<ul class="header__list">
+														<div class="header__list__item">Verminderter Essensdrang </div>
+														<div class="header__list__item">Erhöhte Energie </div>
+														<div class="header__list__item">Verbesserte Stimmung </div>
+												</ul>                				
+											</div>
+										</div>                      
+									</div>
+										
+								</div>
+						</div>
+						<div class="lose_chance">
+								<div class="wrapper">
+										<a class="scroll_to_button show_mobile" href="javascript:void(0);">
+														<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+										<div class="lose_chance__image new_img">
+												<img src="img/new_product.png" alt>
+										</div>
+										<div class="lose_chance__text">
+												<div class="lose_chance__title">Wie Die Hollywood Stars!</div>
+												<div class="lose_chance__desc">Gewicht Verlieren , Effektiv Und Ohne Diäten</div>
+												<a class="scroll_to_button" href="javascript:void(0);">
+														<button class="submit_form scroll_to_form form_top__submit" type="submit"><span>Bestellen Sie </span></button></a>
+										</div>
+								</div>
+						</div>
+						
+						<div class="how_order">
+								<div class="wrapper">
+										<div class="how_order__title"><span>Wie kann ich bestellen?</span></div>
+
+										<ul class="how_order__list">
+												<li>
+														<div class="how_order__image">
+															<img src="img/order1.jpg" alt>
+														</div>
+														<div class="box">
+																<div class="how_order__caption">Füllen Sie das untenstehende Bestellformular aus</div>
+																<div class="how_order__desc">Ihr Name und Ihre Telefonnummer</div>
+														</div>
+												</li>
+												<li>
+														<div class="how_order__image">
+															<img src="img/order2.jpg" alt>
+														</div>
+														<div class="box">
+																<div class="how_order__caption">Bestätigen Sie die Lieferadresse, den Typ und das Datum</div>
+																<div class="how_order__desc">Der Manager wird Sie nach der Bestellung anrufen</div>
+														</div>
+												</li>
+												<li>
+														<div class="how_order__image">
+															<img src="img/order3.jpg" alt>
+														</div>
+														<div class="box">
+																<div class="how_order__caption">Erhalt der Ware und Bezahlung</div>
+																<div class="how_order__desc">Zahlung bei Lieferung an Kurierdienst oder bei der Post</div>
+														</div>
+												</li>
+										</ul>
+										<div class="delivery__image">											
+											<img src="img/track.png" alt class="track">
+										</div>
+										<div class="delivery">
+												<div class="delivery__flex">
+														<div class="delivery__text">
+																<div class="delivery__title">Lieferung nach ganz Europa</div>
+																<ul class="delivery_list">
+																		<li>
+																				<p>Sie erhalten Ihren PowerShape innerhalb von 4-7 Tagen nach der Bestellung.</p>
+																		</li>
+																		<li>
+																				<p>Bezahlen Sie erst nach Erhalt des Pakets!</p>
+																		</li>
+																</ul>
+																<div class="delivery__icons_list">
+																		<li><img src="img/delivery_1.png" alt></li>
+																		<li><img src="img/delivery_2.png" alt></li>
+																		<li><img src="img/delivery_3.png" alt></li>
+																		<li><img src="img/delivery_4.png" alt></li>
+																		<li><img src="img/delivery_5.png" alt></li>
+																		<li><img src="img/delivery_6.png" alt></li>
+																		<li><img src="img/delivery_7.png" alt></li>
+																</div>
+														</div>
+												</div>
+										</div>										
+								</div>
+						</div>
+
+
+
+					  <div class="footer">
+								<div class="wrapper foot_box">
+										<div class="girl_img">
+											<img src="img/girl.png" alt>
+										</div>
+										<div class="footer__title"> Stellen Sie sich vor, wie sich Ihr Leben Verändert, <span>Wenn Sie Das Hartnäckige Fett Loswerden!</span></div>
+										<div class="footer__colums">
+												<div class="footer__colum_2">
+														<div class="product_box">
+															<img src="img/new_product_only.png" alt>
+														</div>
+														<ul class="footer__list">
+																<li><span>Keine Diäten!</span></li>
+																<li><span>Keine Operation!</span></li>
+																<li><span>Keine Nebenwirkungen!</span></li>
+																<li><span>Keine anstrengenden  Übungen!</span></li>
+														</ul>
+														
+												</div>
+												<div class="header__right">
+														<div class="form_top header__form" id="form2">
+																<div id="scroll_to_form"></div>
+																<div class="left_part">																
+																<div class="form_top__price_container">
+																		<div class="form_top__price_old">
+																				<div class="form_top__price_old_label">Verkauf:</div>
+																				<div class="form_top__price_old_value"><span class="old_price_val">147</span> <span class="old_price_cur">€</span></div>
+																		</div>
+																		<div class="form_top__price_new">
+																				<div class="form_top__price_val">
+																						<span class="new_price_val">49</span> <span class="new_price_cur">€</span>
+																						<div class="form_top__icon_new">Neu!</div>
+																				</div>
+																				<div class="form_top__price_label">
+																						+ <span>KOSTENLOS </span>LIEFERUNG
+																				</div>
+																		</div>
+																</div>
+																<div class="timer" data-timer>
+																		<div id="countdown1" class="countdownHolder">
+																		</div>
+																</div>
+																</div>
+
+																<form class="form landing__form orderForm form2" id="bot_form" method="post">
+																																		<input type="text" name="utm_source" hidden value>
+																	<input type="text" name="utm_medium" hidden value>
+																	<input type="text" name="utm_term" hidden value>
+																	<input type="text" name="utm_content" hidden value>
+																	<input type="text" name="utm_campaign" hidden value>
+																	<input type="text" name="ip" hidden value="178.71.15.109">
+																	<input type="text" name="timezone" hidden class="timezoneInput">
+                                                                                                                                        <input type="text" name="goods[goodID]" hidden value="103675">
+                                        <input type="text" name="goods[quantity]" hidden value="1">
+                                        <input type="text" name="goods[price]" hidden value="1">
+                                        <input type="text" name="referer" hidden value>
+                                        <input type="text" name="additional4" hidden value="Landing">
+																	
+																	<div class="form_top__field form_top__field-name">
+																			<input class="form_top__input" type="text" name="fio" placeholder="Dein Name:" required>
+																	</div>
+																	<div class="form_top__field form_top__field-phone">
+																			<input class="form_top__input" type="tel" name="phone" placeholder="Telefonnummer" required minlength="5" onkeyup="this.value=this.value.replace(/\s/,&#39;&#39;)">
+																	</div>
+
+																	<button class="submit_form form_top__submit" type="submit"><span class="big">Bestellen Sie </span></button>
+																</form>
+																<div class="form_top__title"> Bestellen Sie mit <span> 60% Rabatt! </span></div>
+														</div>
+												</div>
+										</div>										
+								</div>
+								<div class="footer__container">
+									<div class="wrapper">
+										<div class="footer__top">
+											<div class="footer__logo"><img src="img/logo_1.png" alt></div>
+										</div>
+										<div class="footer__bottom">
+											<div class="footer__copyr"> Copyright © 2019
+												Alle Rechte vorbehalten.
+											</div>
+											<div class="footer__menu"><a href="#">Privacy policy</a></div>
+										</div>
+										
+									</div>
+								</div>
+						</div>						
+
+						<div class="popup" id="doctor">
+								<div class="close_container"></div>
+								<div class="popup_container">
+										<div class="close"></div>
+										<div class="doctor_head">
+												<div class="logo_list"><span class="item_1"></span><span class="item_2"></span><span class="item_3"></span></div>
+												<div class="doctor_image"></div>
+										</div>
+										<div class="scroll_container">
+												<div class="doctor_sertificate">
+														<div class="bg"></div>
+														<div class="text">
+																<h4>Decision of the commission:</h4>
+																<p>The product is completely natural, highly effective, harmless to people, and then without any restrictions can be used in the home as a basic or auxiliary mean.</p>
+																<br>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+
+						
+						
+						
+						
+						
+						
+
+
+
+				</div>
+				<link rel="stylesheet" href="css/cod_line.css">
+
+
+		<!-- INTH_SNIPPET_BOTTOM --><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="img/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+		
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"/></svg></div></div></body></html>

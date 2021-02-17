@@ -1,0 +1,33 @@
+.order_form {background: #f3f3f3;border: #ddd 1px solid;padding: 36px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;margin: 0px;font-family: Arial,Helvetica;}
+.block_form {margin:0 0 34px;}
+.block_form_label{width:65px;font-size:14px;color:#333;text-align:right;display: block;float: left;margin: 8px 10px 0 0;}
+.block_form input{display:block;width:98.8%;height: 13px;padding:8px 10px;border:#888 1px solid;font-size:15px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; background: #fff;}
+.block_form select 	{padding:2px 0;margin-top: 6px;font-size: 16px;}
+.block_form p{font-size: 15px;padding-top: 8px;color: #1D1D1D;}
+.form_hr{border-top: #bbb 1px solid;}
+.block_form div{margin-left: 75px;position: relative;}
+.block_form_off{display: none;}
+.w_block_form_prices{padding-left: 74px;}
+.block_form_prices{}
+.block_form_prices p{margin-top: 3px;margin-bottom: 18px;}
+.block_form_prices_label{float: left;padding-right:5px;}
+.block_form_prices_total{}
+.block_form_prices_total label{text-transform: uppercase;}
+.block_form_prices_total p{font-size: 18px;padding-top: 6px;margin-top: 8px; margin-bottom: 0px;font-weight: 700;}
+.order_form .clear{clear: both;}
+.order_form .fhelp{font-size:14px;color:#929292;display:block;padding-top: 10px;}
+.errorMessage{position: absolute;z-index: 10000; font-size:14px;background: #e74c3c;color:#fff;padding:6px 7px 5px;margin:3px 0px 0px 1px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-family: Arial;}
+/*button begin*/
+.ifr_button{font-family: Arial; display: block;margin: 20px auto;color: #fff;font-size:24px;text-decoration: none;text-align: center;width: 180px;height: 51px;line-height: 51px;background: #e74c3c;font-weight:700;border-bottom:2px solid #c0392b;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}	
+.ifr_button:hover{background: #e75c4e;}
+.ifr_button:active{background: #c0392b;}
+/*button end*/
+@media screen and (max-width:710px) { 
+	.block_form{margin-bottom: 14px;}
+	.block_form label{text-align: left;margin: 8px 21px 7px 0;float: none;}
+	.block_form div {margin-left: 0px;}
+	.block_form input {width: 95%;}
+	.block_form_prices label{float: left;width: auto}
+	.int_price_total{margin: 0px;}
+	.w_block_form_prices{padding-left: 0px;}
+}
