@@ -1460,3 +1460,6 @@ font-size: 30px;
 margin-bottom: 20px;
 }
 }
+.order_form{
+   box-sizing: border-box;
+}

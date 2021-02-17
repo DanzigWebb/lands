@@ -1,0 +1,147 @@
+@media screen and (max-width: 1024px) {
+    header {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    header {
+        background: #d0e4fc;
+        width: 100%;
+    }
+
+    .logo {
+        padding: 20px 0 0 0;
+        width: 135px;
+    }
+
+    .content {
+        width: 320px;
+        padding: 0 20px;
+    }
+
+    .mob_menu {
+        top: -40px;
+        right: 20px;
+        left: auto;
+    }
+
+    .left_column {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+
+    .sub_h span {
+        padding-right: 20px;
+    }
+
+    .img_block:before,
+    .img_block:after {
+        font-size: 16px;
+    }
+
+    .img_block:before {
+        padding: 5px 10px;
+    }
+
+    .img_block:after {
+        padding: 5px;
+    }
+
+    .border,
+    .border1,
+    .border2 {
+        top: 3px;
+        bottom: 3px;
+    }
+
+    .border {
+        left: 3px;
+        right: 3px;
+        bottom: 32px;
+    }
+
+    .border1 {
+        left: 3px;
+        margin-right: 5px;
+    }
+
+    .border2 {
+        right: 3px;
+        margin-left: 5px;
+    }
+
+    .anons {
+        padding: 15px 20px 15px 20px;
+
+    }
+
+    .anons_border {
+        margin: 0 0 15px 0;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .img_block {
+        margin-bottom: 15px;
+    }
+
+    .bot_block {}
+
+    .comm_text {
+        margin-left: 0;
+        margin-top: 15px;
+        padding-top: 10px;
+
+    }
+
+    .ava {
+        top: 10px;
+    }
+
+    .name,
+    .data {
+        margin-left: 90px;
+    }
+
+    .comm_text p {
+        margin-top: 35px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .right_column {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    .left_column {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .img_block {
+        width: 67%;
+    }
+
+}
