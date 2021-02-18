@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+
+<head>    
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width">    
+<title>Эффективное средство для наращивания мышечной массы
+</title>    
+
+<link type="text/css" rel="stylesheet" href="css/style.css">    
+
+<link type="text/css" rel="stylesheet" href="css/style-2.css">    
+<script src="js/jquery-1.8.3.min.js" type="text/javascript">
+</script>    
+<script type="text/javascript" src="js/script.js">
+</script>  
+<script type="text/javascript">    var country_list = new Object();        country_list['RU'] = {s1: '990', s2: '300', s3: '1290', s4: '1980', curr: 'руб.'};        country_list['UA'] = {s1: '249', s2: '35', s3: '284', s4: '498', curr: 'грн.'};        country_list['KZ'] = {s1: '6990', s2: '0', s3: '6990', s4: '13980', curr: 'тенге'};        country_list['MD'] = {s1: '400', s2: '60', s3: '460', s4: '800', curr: 'лей'};        country_list['BY'] = {s1: '299000', s2: '50000', s3: '349000', s4: '598000', curr: 'бел. руб.'};        function change_country(id)    {      $('.price_land_s1').text(country_list[id].s1);        $('.price_land_s2').text(country_list[id].s2);        $('.price_land_s3').text(country_list[id].s3);        $('.price_land_s4').text(country_list[id].s4);        $('.price_land_curr').text(country_list[id].curr);        $('.price_field_s1').val(country_list[id].s1);        $('.price_field_s2').val(country_list[id].s2);        $('.price_field_s3').val(country_list[id].s3);      }        $(function(){      $('.country_select').change(function(){        change_country($(this).val());        $('.country_select').val($(this).val());      });      change_country('RU');      });   
+</script>  
+<script type="text/javascript">    $(function() {        $('form').submit(function() {            $('input[name=name]', this).val($.trim($('input[name=name]', this).val()));            if(!$('input[name=name]', this).val()) {                alert('Укажите корректные ФИО!');                return false;            }            var phone_val = $('input[name=phone]', this).val();            var reg1 = new RegExp("[^0-9]*", "g"), reg2 = new RegExp("[^0-9\-\+ \(\)]", "g");            var phone_txt = phone_val.replace(reg1, '');                        if(phone_val.search(reg2) != -1)            {                alert('Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы');                return false;            }                        if(!phone_txt || phone_txt.length < 7)             {                alert('В вашем телефоне слишком мало цифр!');                return false;            }            return true;        });        $('a.order-btn').click(function() {            $(this).closest('form').submit();            return false;        });    });
+</script>
+
+
+<script>    function disableSelect() {        if ($('select[name=country]').length) {            $('select[name=country]').attr('disabled', 'disabled');            $('form').append("
+<input type='hidden' name='country' value='RU' />");        }    }//    try {//        if (!enableSelect()) {//            disableSelect();//        }//    }//    catch (e) {//        disableSelect();//    }	$(function() {					if (!$('select[name=country]').length && !$('input[name=country]').length) {				$('form').append("
+<input type='hidden' name='country' value='RU' />");			}			});
+</script>
+<!-- jQuery/Modal BEGIN -->
+
+<link href="css/modal.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/modal.js">
+</script>
+<!-- jQuery/Modal END -->
+<script>function enableSelect() {return true;}
+</script>
+</head>
+
+<body>																													        			    			    	
+
+<div class="wrap">	
+
+<div class="head">		
+
+<div class="container">		    
+
+<div class="logo">				
+<!--img  alt="" src="img/logo.jpg"-->		    
+</div>		    
+
+<div class="slogan">Не упусти шанс стать
+<br>объектом вожделения! 
+</div>			
+
+<div class="clearfix">
+</div>		    
+
+<div class="title">				
+
+<div class="category">Концентрат сывороточного белка
+</div>				
+
+<div class="brand">КСБ 
+
+<span>55
+</span>
+</div>				
+
+<div class="application">Эффективное средство для наращивания мышечной массы!
+</div>		    
+</div>		    
+
+<div class="order">			
+
+<div class="topic">Закажите сегодня!
+</div>			
+
+<span>по специальной цене:
+</span>			
+
+<div class="price">			    
+
+<span class="old">
+
+<span class="price_land_s4">1980
+</span> 
+
+<span class="price_land_curr">руб.
+</span>
+</span>			    
+
+<span class="current">
+
+<span class="price_land_s1">990
+</span> 
+
+<span class="price_land_curr">руб.
+</span>
+</span>			
+</div>			<a class="btn-order js-scrollto" href="#form">Заказать</a>		    
+</div>				
+</div>	
+</div>	
+
+<div class="main">	    
+
+<div class="content container">			
+
+<div class="title">Концентрат сывороточного белка 
+
+<span>КСБ 55
+</span>
+</div>			
+
+<div class="graph">			    <img src="img/graph.png">			
+</div>	    
+</div>	
+</div>	
+
+<div class="you-need">	    
+
+<div class="content container">		
+
+<div class="title">
+
+<span>КСБ 55
+</span>вам необходим, если:
+</div>		
+
+<div class="items">		    
+
+<div class="ico_1">Вы хотите выглядеть как Аполлон и&nbsp;привлекать внимание девушек
+</div>		    
+
+<div class="ico_2">Хотите, чтобы на месте подкожного жира была мышечная масса
+</div>		    
+
+<div class="ico_3">Вашему организму необходимы витамины и&nbsp;микроэлементы 
+</div>		    
+
+<div class="ico_4">Вам нужен заряд энергией на целый день
+</div>		
+</div>	    
+</div>	
+</div>	
+
+<div class="form-order" id="form">	    
+
+<div class="content container">			
+
+<div class="title">Заказывайте прямо сейчас
+
+<span>со скидкой 50%
+</span>
+</div>			
+
+<div class="column-left">			    
+
+<div class="price">					
+
+<span class="old">
+
+<span class="price_land_s4">1980
+</span> 
+
+<span class="price_land_curr">руб.
+</span>
+</span>					
+
+<span class="current">
+
+<span class="price_land_s1">990
+</span> 
+
+<span class="price_land_curr">руб.
+</span>
+</span>			    
+</div>			
+</div>			
+
+<div class="column-right">			    
+
+<form action="core/send.php" method="post" class="niceform" id="order_all">				
+<select name="country" id="country" class="country_select">
+
+<option value="BY">Беларусь</option>
+
+<option value="KZ">Казахстан</option>
+
+<option value="MD">Молдова</option>
+
+<option value="RU" selected="selected">Россия</option>
+
+<option value="UA">Украина</option>
+</select>				
+<input type="text" name="name" id="name" placeholder="Ваше имя">				
+<input type="text" name="phone" id="phone" placeholder="Ваш телефон">		        
+
+<div class="delivery">		            Цена c доставкой: <strong class="itogo">
+
+<span class="price_land_s3">1290
+</span> 
+
+<span class="price_land_curr">руб.
+</span></strong>		        
+</div>				
+<input class="btn-submit" type="submit" value="Заказать">			    
+<input type="hidden" name="s1" class="price_field_s1" value="990">
+<input type="hidden" name="s2" class="price_field_s2" value="300">
+<input type="hidden" name="s3" class="price_field_s3" value="1290">
+<input type="hidden" name="forma" value="основная">
+</form>			
+</div>	    
+</div>	
+</div>	
+
+<div class="footer">		<img src="img/rekvizity-1-3.png">
+<br>		<a href="#" modal="polit">Политика конфиденциальности</a>	
+</div>
+</div>
+
+<div id="polit" class="modal">
+   
+
+<div class="modal-block">
+       
+
+<div class="icon-close">
+</div>
+       
+
+<div class="title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+</div>
+       
+
+<div class="content">
+           
+
+<div class="padding">
+                
+
+<p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность
+                    при оформлении заказа. Сведения надёжно сохраняются и защищены от передачи. </p>
+
+                
+
+<p>Согласием на обработку данных клиента исключительно с целью оказания услуг является размещение заказа
+                    на сайте. </p>
+
+                
+
+<p>К персональным данным относится личная информация о клиенте: домашний адрес; имя, фамилия, отчество;
+                    сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта)
+                    и прочие сведения, которые
+
+                    перечислены в Законе РФ № 152-ФЗ «О персональных данных» от 27 июля 2006 г. </p>
+
+                
+
+<p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется
+                    удаление с сайта всех персональных данных в трёхдневный срок в рабочее время. Подобный отказ клиент
+                    может оформить простым электронным
+
+                    письмом на адрес, указанный на странице нашего сайта. </p>
+            
+</div>
+        
+</div>
+    
+</div>
+
+</div>
+
+
+
+<div id="kmacb-form" class="modal">
+    
+
+<div class="modal-block">
+        
+
+<div class="icon-close">
+</div>
+        
+
+<div class="title">Понравилось это предложение?
+</div>
+        
+
+<div class="content">
+            
+
+<div class="padding">
+                
+
+<p>Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с подходящими акционными предложениями!</p>
+               
+
+<form method="POST" action="core/send.php">
+                    
+<input type="text" name="name" value placeholder="Ваше имя">
+                    
+<input type="text" name="phone" value placeholder="Ваш номер телефона">
+<br>
+                    
+<input type="submit" value="ПЕРЕЗВОНИТЬ МНЕ">
+                  
+<!-- 
+<input type="hidden" name="s1" class="price_field_s1" value="990" />
+                    
+<input type="hidden" name="s2" class="price_field_s2" value="300" />
+                    
+<input type="hidden" name="s3" class="price_field_s3" value="1290" /> -->					
+<input type="hidden" name="forma" value="обратный звонок">
+                
+</form> 
+                
+
+<p class="bold">Оператор перезвонит Вам через 15-30 минут</p>
+            
+</div>
+        
+</div>
+    
+</div>
+
+</div>
+
+ 
+</body>
+
+</html>
