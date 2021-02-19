@@ -49,8 +49,8 @@ input[value="Получить бесплатно"]:active {
     padding-left: 5px;
     height: 42px;
     margin-bottom: 10px;
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
 }
 
 input[placeholder="Ваше имя"],
