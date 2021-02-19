@@ -400,3 +400,10 @@ footer a {
         overflow: visible;
         vertical-align: -.125em
     }
+
+    .grid{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+    }
