@@ -16,7 +16,7 @@ $(function(){
         minu = ((minu+'').length==1?minu='0'+minu:minu)+'';
         secu = 60-now.getSeconds(); 
         secu = ((secu+'').length==1?secu='0'+secu:secu)+'';
-        $('.timer-action').html('<span class="timer-col"><strong>' + hour + '</strong><br/><span>sat</span></span><span class="timer-col"><strong>' + minu + '</strong><br/><span>minut</span></span><span class="timer-col"><strong>' + secu +'</strong><br/><span>sekund</span></span>');
+        $('.timer-action').html('<span class="timer-col"><strong>' + hour + '</strong><br/><span>Orë</span></span><span class="timer-col"><strong>' + minu + '</strong><br/><span>Minutë</span></span><span class="timer-col"><strong>' + secu +'</strong><br/><span>Sekondë</span></span>');
     }   
     times();                                              
     setInterval(times,1000);

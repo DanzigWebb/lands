@@ -272,15 +272,7 @@ const formatDate = () => {
 };
 
 
-const commentSection = document.querySelector('.commentForm');
-commentSection.addEventListener('submit', (ev) => {
-	ev.preventDefault();
-	const comment = {
-		name: ev.target['name'].value,
-		content: ev.target['content'].value
-	};
-	writeComment(ev, comment);
-});
+
 
 loadAllCommentsFromStorage();
     

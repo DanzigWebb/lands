@@ -164,7 +164,7 @@
     transform: rotate(75deg);
 }
 .top-block-v1 .top-cont .cost-cont .old-cost:after{
-    font-size: 24px
+    font-size: 24px;
     margin: 22px 0 0;
     -webkit-transform: rotate(-75deg);
     -ms-transform: rotate(-75deg);
@@ -429,12 +429,12 @@
 .top-block-v3 .cost-cont .old-cost>strong, .top-block-v3 .cost-cont .new-cost>strong{
     display: block;
     display: block;
-    font-size: 2.3em;
+    font-size: 2.1em;
     line-height: 29px;
     font-weight: 900;
 }
 .top-block-v3 .cost-cont .old-cost>strong{
-    font-size: 29px;
+    font-size: 24px;
     line-height: 29px;
     text-decoration: line-through;
 }
