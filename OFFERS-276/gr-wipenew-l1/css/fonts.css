@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Proxima Nova Condensed';
+	src:url('../fonts/ProximaNovaCondensedRegular/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaCondensedRegular/ProximaNovaCond-Regular.woff') format('woff'),
+		url('../fonts/ProximaNovaCondensedRegular/ProximaNovaCond-Regular.hxd') format('truetype'),
+		url('../fonts/ProximaNovaCondensedRegular/ProximaNovaCond-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed';
+	src:url('../fonts/ProximaNovaExtraCondensedBold/ProximaNovaExCn-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaExtraCondensedBold/ProximaNovaExCn-Bold.hxd') format('opentype'),
+		url('../fonts/ProximaNovaExtraCondensedBold/ProximaNovaExCn-Bold.woff') format('woff'),
+		url('../fonts/ProximaNovaExtraCondensedBold/ProximaNovaExCn-Bold-1.hxd') format('truetype'),
+		url('../fonts/ProximaNovaExtraCondensedBold/ProximaNovaExCn-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed';
+	src:url('../fonts/ProximaNovaExtraCondensedBlackItalic/ProximaNovaExCn-BlackIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaExtraCondensedBlackItalic/ProximaNovaExCn-BlackIt.hxd') format('opentype'),
+		url('../fonts/ProximaNovaExtraCondensedBlackItalic/ProximaNovaExCn-BlackIt.woff') format('woff'),
+		url('../fonts/ProximaNovaExtraCondensedBlackItalic/ProximaNovaExCn-BlackIt-1.hxd') format('truetype'),
+		url('../fonts/ProximaNovaExtraCondensedBlackItalic/ProximaNovaExCn-BlackIt.svg') format('svg');
+	font-weight: 900;
+	font-style: italic;
+}
+
+
