@@ -154,7 +154,7 @@ body {
 }
 
 .form1 .btn {
-	font-size: 30px;
+	font-size: 23px;
 	margin: 20px auto 10px;
 	display: block
 }
@@ -360,7 +360,7 @@ body {
 	border-radius: 4px;
 	color: #fcfcfa;
 	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
+	font-size: 23px;
 	font-weight: 400;
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
