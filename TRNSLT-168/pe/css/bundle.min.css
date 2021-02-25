@@ -391,10 +391,10 @@ img[width="1"] {
 .block1 .price__old__num::before {
     position: absolute;
     content: '';
-    width: 100%;
+    width: 80%;
     height: 1px;
     background-color: red;
-    top: 15px;
+    top: 18px;
     left: 0;
     -webkit-transform: rotate(14deg);
     transform: rotate(14deg)
