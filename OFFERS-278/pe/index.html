@@ -1,0 +1,263 @@
+<!DOCTYPE html><html><head>
+<style>button.kc_ml_rounded {border: 0 none;cursor: pointer;font-family: verdana;padding: 0 5px 0 0;height: 52px;line-height: 52px;width: 100%;background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAABoCAYAAACHU2I8AAABDklEQVR4nO2a0QkCUQwET8iHfViMJdiaPVrDvdjCfiwsAzsVDHFyxOMe399rLwBzboTnNedgRNMKGpyJbifqhSSaVtCY7US9tFE3pEYxomkFjU7UzSzncE4raJAahYj2cDbTZXLTRt2QRNMKGpyJdpnMkETTCho9nN20UTd9U+KG89N3omZIy5RW0CA1ChHt4Wymy+Rm3p9n2kGC9E1JWkFjzp1W0AA9RykTBTUK2fo2aobUaFpBo4264Zx5y5loWkGD1GhaQYPUKGTr26gZUqNpBQ1Oo6DrifJ44kw0raBBajStoEFqFLL1bdQMqdG0gkYbdcP5z9QL3wyp0bSCBqlRyNa3UTOkRtMKGphG/xiq9Sbyjx5hAAAAAElFTkSuQmCC ) repeat-x scroll right top;clear: left;font-size: 2em;position: relative;border-radius: 5px;}button.kc_ml_rounded span {display: block;position: relative;white-space: nowrap;height: 52px;line-height: 52px;background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi4AAABoCAYAAADW1HuHAAACNklEQVR4nO3dwU0EMRBFQZD6QB4EQwiktjkSg9ukMLfVk6oimKP1/bz7+fr7vh8AAAGzx7kFAGiYXQcXAKBhdt/9CQAAz1hcAICMuRYXACDC4gIAZDi4AAAZ4lwAIGOuxQUAiLC4AAAZGhcAIMPiAgBkaFwAgAxXRQBAhqsiACDD4gIAZFhcAICMucfiAgA0WFwAgAyNCwCQ4eACAGTMdVUEAERYXACADHEuAJBhcQEAMjQuAECGxQUAyHBwAQAyxLkAQIbFBQDIEOcCABkWFwAgw8EFAMgQ5wIAGXOPxQUAaLC4AAAZGhcAIMPiAgBkzLW4AAARrooAgAxXRQBAhsUFAMiwuAAAGeJcACDD4gIAZGhcAIAMBxcAIGOuqyIAIMLiAgBkiHMBgAyLCwCQMT+/X+/+BgCAR2aPxQUAaNC4AAAZs+fdnwAA8IzfcQEAMiwuAECGxgUAyPCqCADI0LgAABkaFwAgQ+MCAGRYXACADI0LAJBhcQEAMmbXc2gAoGGuxQUAiPCqCADI0LgAABkWFwAgQ+MCAGR4VQQAZGhcAIAMjQsAkKFxAQAyLC4AQIbGBQDI8O/QAEDG7PEcGgBo0LgAABkaFwAgQ+MCAGRYXACADI0LAJDhVREAkKFxAQAyNC4AQIbGBQDIsLgAABkaFwAgw+ICAGTMrufQAEDDXIsLABDhVREAkKFxAQAyLC4AQIbGBQDI8KoIAMjQuAAAGRoXACBD4wIAZFhcAIAMjQsAkPEPQkz1JqCoQYIAAAAASUVORK5CYII= ) repeat-x scroll left top;color: #FFFFFF;border-radius: 5px;        margin-left: 26px;}button.kc_ml_rounded:hover {background-position: 100% -52px;}button.kc_ml_rounded:hover span {background-position: 0% -52px;}* html button.kc_ml_rounded span {background-image:url('mhtml:path_to_mhtml/mhtml!1')}* html button.kc_ml_rounded {background-image:url('mhtml:path_to_mhtml/mhtml!2')}*+html button.kc_ml_rounded span {background-image:url('mhtml:path_to_mhtml/mhtml!1')}*+html button.kc_ml_rounded {background-image:url('mhtml:path_to_mhtml/mhtml!2')}.kc_ml_tel {background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA1RTYxNjlGQkI5MTExRTVBRkU4OTExQTUyNkI2MEZFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA1RTYxNkEwQkI5MTExRTVBRkU4OTExQTUyNkI2MEZFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDVFNjE2OURCQjkxMTFFNUFGRTg5MTFBNTI2QjYwRkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDVFNjE2OUVCQjkxMTFFNUFGRTg5MTFBNTI2QjYwRkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Xqp/5AAAMw0lEQVR42sRaW2wcZxU+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');width: 52px;height: 52px;position: absolute;top: 0;left: 0;}.kc_ml_panel-tel {margin: 10px;}@media screen and (min-width: 768px) {.kc_ml_panel-tel {display: none;}}</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <title>O seu amuleto mágico pessoal para a riqueza</title>
+<meta property="og:title" content="Tu amuleto mágico personal para la riqueza">
+<meta property="og:description" content="El dinero vendrá...">
+<meta property="og:image" content="https://i.imgur.com/H1OjECT.png">
+<meta property="og:type" content="website">
+	<link rel="shortcut icon" href="img/monet-mini.png" type="image/png">
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/form.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.addEventListener("touchstart", function () { }, true);
+    </script>
+</head>
+
+<body data-lang="DE">
+<div class="s__main">
+    <section class="box1" id="box1">
+        <div class="w1170">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 monet-mini">
+                    <img class="img-fluid" src="img/monet-mini.png">
+                    <span> Sorte</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 monet-mini">
+                    <img class="img-fluid" src="img/monet-mini.png">
+                    <span> Riqueza</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 monet-mini">
+                    <img class="img-fluid" src="img/monet-mini.png">
+                    <span> Amor e felicidade</span>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 monet-mini">
+                    <img class="img-fluid" src="img/monet-mini.png">
+                    <span> Proteção contra o mal</span>
+                </div>
+                <div class="col-sm-12">
+                    <ul class="list-inline list-menu">
+                        <li>
+                            <a class="b1" href="#box1"> Principal</a>
+                        </li>
+                        <li>
+                            <a class="b2" href="#about"> Sobre Money Amulet</a>
+                        </li>
+                        <li>
+                            <a class="b3" href="#otziv"> Comentários</a>
+                        </li>
+                        <li>
+                            <a class="b4" href="#wrap-order-form"> Como reservar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-lg-8 col-lg-offset-4 col-md-9 col-md-offset-3 col-sm-12">
+                    <div class="blackBox prod_img_bef">
+                        <h2 class="bigh2"> O dinheiro virá...</h2>
+                        <h1 class="bigh1"> O seu amuleto mágico pessoal para a riqueza</h1>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" id="about">
+                    <div class="blackBox">
+                        <h5 class="bigh5"> O Amuleto do Dinheiro é feito de forma estritamente individual para uma determinada pessoa. Depois, um antigo ritual é realizado com cada amuleto em nome do indivíduo. A partir deste momento o seu amuleto começará a trabalhar em conjunto com a sua energia e trazer-lhe-á dinheiro ao longo da sua vida.</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="blackBox prod_img_bef_wap">
+                        <form class="form1 order_form" id="order2" method="post">
+
+                            <h3> Formulário de encomenda</h3>
+
+                            <input class="form-control" name="name" placeholder="Nome completo" type="text" required>
+                            <input class="form-control only_number" name="phone" id="phone" placeholder="Número de telefone" type="text" required>
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value>
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
+                            <h3> Preço<b class="price_only11780"> 49</b> <b class="price_currency">€</b>
+                                <strike><b class="price_old11780"> 98</b> <b class="price_currency">€</b></strike>
+                            </h3>
+                            <button type="submit" class="btn btn-lg js_pre_toform"> ENCOMENDAR</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-sm-12" id="otziv">
+                    <h1 class="h1"> Como as pessoas vivem com Money Amulet</h1>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards flipcard h" id="card1">
+                        <div class="front" id="front1">
+                        </div>
+                        <div class="back" id="back1">
+                            <div class="whiteBg">
+                                <img class="img-fluid" src="img/otziv1.jpg">
+                                <p> Nunca pensei que me endividaria e que sairia das dívidas. Tudo começou com um empréstimo. Chamadas constantes de cobradores, a minha vida tornou-se um inferno. Comprei o amuleto com o último dinheiro que tinha por desespero, e a minha vida encheu-se de fenómenos incríveis - tudo se resolveu! Paguei algumas das minhas dívidas e ofereceram-me um emprego decente com boa remuneração!</p>
+                                <div class="name"> Manuel, Lisboa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid strela" src="img/strela.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards flipcard h" id="card2">
+                        <div class="front" id="front2">
+                        </div>
+                        <div class="back" id="back2">
+                            <div class="whiteBg">
+                                <img class="img-fluid" src="img/otziv2.jpg">
+                                <p> Bem, eu tenho SORTE! Eu recebo dinheiro de todo o lado ... Vendo roupa nas redes sociais há anos, mas nunca tinha ganho tanto dinheiro! Os meus clientes não param de comprar e até já começaram a comprar por maior. Em 3 meses poupei muito e comprei o meu carro de sonho! Eu uso sempre o meu amuleto ao pescoço e nunca mostro o meu tesouro a ninguém.</p>
+                                <div class="name"> Victor, Coimbra</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid strela" src="img/strela.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards flipcard h" id="card3">
+                        <div class="front" id="front3">
+                        </div>
+                        <div class="back" id="back3">
+                            <div class="whiteBg">
+                                <img class="img-fluid" src="img/otziv3.jpg">
+                                <p> Estou a usar o amuleto desde 12.03.20 e quero dizer que durante este período da minha vida houve mudanças muito positivas. Por exemplo, o meu marido deixou o jogo e conseguiu um emprego. Também comecei a ganhar um ingresso secundário, apesar de antes disso ter estado falido. Fomos finalmente viajar e esquecemos todos os nossos problemas que pareciam assombrar a nossa família. Obrigada!</p>
+                                <div class="name"> Verónica, O Porto</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid strela" src="img/strela.png">
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-sm-12">
+                    <div class="yelloBox">
+                        <p> Você também merece uma vida melhor<br> Sem necessidade, problemas e dívidas.</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="box2">
+        <div class="w1170">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="blackBox">
+                        <p class="pi"> Deve haver um equilíbrio no mundo: porque é que algumas pessoas podem ter tudo desde o nascimento, enquanto outras têm de contar o seu dinheiro todos os meses? Você também merece viver e não apenas sobreviver!<span> Um amuleto do dinheiro ajudá-lo-á!</span>
+                            <br>
+                            <br> Lembra-se dos seus sonhos? Talvez tenha sonhado com um carro de luxo que nunca poderia pagar ... Talvez queira levar a sua família, filhos e pais para outro país? Ou talvez simplesmente não queira ir para o trabalho que tanto odeia e esteja constantemente a perguntar-se onde arranjar o dinheiro. Isso não é justo. Os seus sonhos precisam de se tornar realidade!</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="blackBox">
+                        <p class="pi">
+                                <span> Encomende um amuleto para atrair dinheiro agora mesmo!</span> Preencha o seguinte formulário e fabricaremos o seu amuleto de dinheiro no prazo de 3 dias úteis.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="blackBox">
+                        <p class="piItalic text-xs-center"> Custo de produção<br>
+                            <b class="price_only11780"> 49</b> <b class="price_currency">€</b>
+                            <strike><b class="price_old11780"> 98</b> <b class="price_currency">€</b></strike>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+                <div class="wrap" id="wrap-order-form">
+                    <div class="container">
+                        <div class="col-md-12 text-center">
+                            <h1 class="formtitle">
+                                    <span> Atenção:</span> Indique o seu nome completo no formulário de encomenda. <br> Isto é importante tanto para garantir que o amuleto chegou até si, como para a correta condução do ritual.</h1>
+                        </div>
+                        <div class="col-md-12 form_img_bottom" style="text-align: center;">
+                            <form id="order" class="order_form" method="post">
+
+                                <div class="sliderform">
+                                    <div class="input-field-md">
+                                        <input class="form-control" name="name" placeholder="Nome completo" type="text" required>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class>
+                                    </div>
+                                    <div class="input-field-md">
+                                        <input class="form-control only_number" name="phone" id="phone1" placeholder="Número de telefone" type="text" required>
+                                    </div>
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value>
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
+                                    <button type="submit" class="btn btn-lg js_pre_toform"> ENCOMENDAR</button>
+                                    <div class="toform"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<div class="policy__bot">
+    <br>
+    <center>
+      <div class="policy_wrap">
+        <span> YourCharms, Tv. Almas 28, 1350-290 Lisboa, Portugal</span> <br>
+        <a href="/privacypolicy" target="_blank"> Privacy policy</a>
+        <a href="/general-conditions-of-sale" target="_blank"> General conditions of sale</a>
+        <a href="/legal-warning" target="_blank"> Legal warning</a>
+      </div>
+    </center>
+    <br>
+  </div>
+
+<script src="js/main.min.js"></script>
+
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
+
+
+
+</body></html>
