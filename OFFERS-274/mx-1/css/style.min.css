@@ -1246,32 +1246,38 @@ header {
 
 .di-1 {
   background: url(../img/sost-1.png) no-repeat bottom center;
+  background-size: contain;
   float: left
 }
 
 .di-2 {
   background: url(../img/sost-2.png) no-repeat bottom center;
-  float: left
+  float: left;
+  background-size: contain;
 }
 
 .di-3 {
   background: url(../img/sost-3.png) no-repeat bottom center;
-  float: left
+  float: left;
+  background-size: contain;
 }
 
 .di-4 {
   background: url(../img/sost-4.png) no-repeat bottom center;
-  float: left
+  float: left;
+  background-size: contain;
 }
 
 .di-5 {
   background: url(../img/sost-5.png) no-repeat bottom center;
-  float: left
+  float: left;
+  background-size: contain;
 }
 
 .di-6 {
   background: url(../img/sost-6.png) no-repeat bottom center;
-  float: left
+  float: left;
+  background-size: contain;
 }
 
 .deger_item {
