@@ -946,14 +946,15 @@ header {
 }
 
 .tovar-header {
-  width: 422px;
-  min-height: 290px;
+  width: 406px;
+  min-height: 300px;
   background: url(../img/tovar-header.png) no-repeat;
-  background-position-x: 30px;
+  background-position-x: center;
+  background-position-y: center;
   top: 36px;
   left: -52px;
   position: relative;
-  background-size: cover;
+  background-size: contain;
   z-index: 5;
   margin: 28px 0;
 }
@@ -1374,6 +1375,7 @@ header {
   min-height: 200px;
   background: url(../img/tovar-header.png) no-repeat;
   background-size: cover;
+  background-position-x: center;
   margin: 0 auto;
 }
 
@@ -2024,7 +2026,8 @@ input {
 
   .tovar-header_1 {
     position: relative;
-    z-index: 20
+    z-index: 20;
+    background-position-x: center;
   }
 
   .bg-doc {
@@ -2816,7 +2819,7 @@ select:-moz-focusring {
   .tovar-header_1 {
     max-width: 290px;
     background-size: contain;
-    background-position-x: 20px;
+    background-position-x: center;
   }
 
   .best__item:first-child {
@@ -2840,7 +2843,6 @@ select:-moz-focusring {
 @media (min-width: 480px) {
   .tovar-header {
     margin-bottom: 0;
-    background-position-x: 40px;
   }
 
   .sale-lable {
