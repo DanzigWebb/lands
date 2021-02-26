@@ -1817,17 +1817,6 @@ header {
   position: relative
 }
 
-.adress::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background: url(../img/everad_logo.png) center center no-repeat;
-  background-size: cover
-}
-
 .rek-footer p {
   text-align: left;
   margin: 0
@@ -1848,7 +1837,7 @@ header {
   width: 100%;
   color: #246f91;
   font-family: Montserrat;
-  text-align: left !important;
+  text-align: center !important;
   line-height: 30px;
   display: inline-block;
   text-decoration: underline;
