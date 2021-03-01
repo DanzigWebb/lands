@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 0 20px 100px;
+  }
+  header .header_content a {
+    display: none;
+  }
+  header ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+  header .header_content {
+    background-position: 100% bottom;
+  }
+  .sidebar .banner h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  header ul li {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .chart article p {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar, header .header_box img:nth-child(3), .header_box img:nth-child(4), header ul {
+    display: none;
+  }
+  .content {
+    max-width: 768px;
+  }
+  header .header_content h1 {
+    margin-bottom: 160px;
+  }
+  header .header_content {
+    background-position: center bottom;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+  .content h3 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .content h4 {
+    font-size: 22px;
+  }
+  .content h5 {
+    font-size: 20px;
+  }
+  .comments h2 {
+    font-size: 24px;
+  }
+  .comments article:nth-child(1n+8), .comments article img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header_box img:nth-child(2) {
+    display: none;
+  }
+  header .header_content h1 {
+    font-size: 22px;
+  }
+  header .header_content h1 span {
+    font-size: 18px;
+  }
+  .chart article p {
+    font-size: 10px;
+  }
+  .content .cta {
+    font-size: 20px;
+  }
+  .chart_text p {
+    font-size: 14px;
+  }
+  .chart article p, .chart_text p {
+    word-break: break-all;
+    padding: 5px;
+  }
+}

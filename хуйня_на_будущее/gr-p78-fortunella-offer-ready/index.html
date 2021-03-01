@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+    img[src*="stabx.net/track_js"] {
+        position: absolute;
+        bottom: 300px;
+    }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortunella</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="css/componentsStyles.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function getRedirectUrl() {
+        var url = "{offer}";
+        return url;
+    };
+
+    jQuery(function($) {
+        $(document).data('timestamp', parseInt((new Date()).getTime() / 1000));
+    });
+
+    function setUrls() {
+        $("a").each(function (i) {
+            if ($(this).data('seturl') || !$(this).attr('href')) {
+                $(this).attr("href", getRedirectUrl());
+                $(this).data('seturl', 1);
+            }
+        });
+
+        $("form").each(function (i) {
+            if ($(this).data('seturl') || !$(this).attr('action')) {
+                $(this).attr("action", getRedirectUrl());
+                $(this).data('seturl', 1);
+            }
+        });
+
+        setTimeout(setUrls, 1000);
+    }
+    setUrls();
+
+    $(document).on('click', 'button, span.vk-comment-answer, .icon-like, div.vk-comment-like, div.vk-comment-like-count', function() {
+        config.launch = false;
+        if (!$(this).hasClass('foofoobar') || !$(this).hasClass('js-no-redirect')) {
+            window.location.href = getRedirectUrl();
+        }
+    });
+
+
+</script>
+
+</head>
+<body>
+    <section class="template_index ltr">
+        <section class="container">
+            <header class="container__header">
+                <header class="x-header-medical   blueOtherMobile">
+                    <div class="header_desktop">
+                        <div class="header_data comment-date">Κυριακή 20.12.2020</div>
+                        <div class="header_content">
+                            <div class="header_content_text-holder">
+                                <div class="header_content-title" style="color: blueOtherMobile;">
+                                    <p>ΕΛΛΗΝΙΚΗ ΠΥΛΗ ΓΙΑ ΤΗΝ ΥΓΕΙΑ</p>
+                                </div>
+                                <div class="header_content-text">
+                                    <p>Μόνο επιβεβαιωμένες πληροφορίες!</p>
+                                </div>
+                                <img class="desktop-to-mobile-img" src="images/press.png">
+                            </div>
+                            <div class="header_content-img">
+                                <img src="images/header_img.png">
+                            </div>
+                            <div class="header_input">
+                                <a href="{offer}" target="_blank" class="header_input-anchor">
+                                    <input class="header_input-input" type="text" name="" value="">
+                                    <div class="header_input-search"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_bar">
+                            <div class="header_bar-img" id="header_bar-img1">
+                                <img src="images/header_img1.png"> </div>
+                            <div class="header_bar-img" id="header_bar-img2">
+                                <img src="images/header_img2.png"> </div>
+                            <div class="header_bar-img" id="header_bar-img3">
+                                <img src="images/header_img3.png"> </div>
+                            <div class="header_bar-img" id="header_bar-img4">
+                                <img src="images/header_img4.png"> </div>
+                        </div>
+                        <div class="header_menu">
+                            <ul>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΤΡΕΧΟΝΤΑ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΑΡΘΡΑ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΚΕΝΤΡΟ ΔΙΑΓΝΩΣΗΣ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΟΙ ΕΙΔΙΚΟΙ ΜΑΣ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{offer}" target="_blank">
+                                        <p>ΕΓΓΡΑΨΟΥ ΣΕ ΜΑΣ</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_mobile">
+                        <div class="header_mobile-headline">
+                            <div class="header_mobile-headline-img">
+                                <img src="images/logo.png">
+                            </div>
+                            <h1>
+                                <p>ΕΛΛΗΝΙΚΗ ΠΥΛΗ ΓΙΑ ΤΗΝ ΥΓΕΙΑ</p>
+                            </h1>
+                        </div>
+                        <div class="header_mobile-promotion">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img class="header_mobile-press" src="images/press.png">
+                        <p class="header_mobile-report">ΕΙΔΙΚΟ ΑΦΙΕΡΩΜΑ</p>
+                        <p class="header_mobile-publication">Δημοσιεύτηκε
+                            <span>πριν από 3 ώρες</span>
+                            <span>2867 άτομα</span></p>
+                    </div>
+                </header>
+             <h2 class="x-h2-medical  hide-desktop    center" style="color: #000000; font-weight: ;">
+  Έλληνας ανέπτυξε μια αγωγή που μειώνει το βάρος - 14 κιλά σε 1 μήνα χωρίς πείνα, ασκήσεις και φαινόμενο γιο-γιο
+</h2>
+               <div class="x-article-medical  hide-desktop">
+  <a class="article-link" href="{offer}" target="_blank" target="_blank" rel="noopener noreferrer">
+
+      
+        <noscript>
+          <img class="article-img" src="images/prof2.png" alt="">
+        </noscript>
+
+        <img class="article-img" src="images/prof2.png">
+
+      
+    <div class="article-text"><p><b>Καθ. Στέφανος Κουρτάκης</b></p></div>
+  </a>
+</div>
+            </header>
+            <section class="container__wrapper">
+                <main class="container__wrapper--main ">
+                    <a href="{offer}" target="_blank" class="x-path-medical hide-mobile " style="text-align: left">
+                        <p>ΑΡΘΡΑ / ΝΕΕΣ ΑΝΑΚΑΛΥΨΕΙΣ / Το τέλος εποχής του υπερβολικού βάρους! Μια επαναστατική αγωγή ενός Έλληνα καθηγητή...</p>
+                    </a>
+                    <h1 class="x-h1-medical hide-mobile     left" style="color: #000000; font-weight: ; ">
+                        Τέλος εποχής για το υπερβολικό βάρος!
+                    </h1>
+                    <h1 class="x-h1-medical hide-mobile     left" style="color: #000000; font-weight: ; ">
+                        Έλληνας ανέπτυξε μια αγωγή που μειώνει το βάρος - 14 κιλά σε 1 μήνα χωρίς πείνα, ασκήσεις και φαινόμενο γιο-γιο
+                    </h1>
+                    <div class="x-image-medical lazy position-left
+  hide-desktop left">
+
+  
+    
+  
+  
+    <noscript>
+      <img class="image-img " src="images/img1_1.jpg">
+    </noscript>
+
+    <img class="image-img" data-src="5c52f6ab748ade0001340ef4/img1.jpg">
+
+  
+  <div class="text-container"><p style="max-width: 240px;">Τέλος εποχής για το υπερβολικό βάρος!</p></div>
+
+</div>
+         
+                    <div class="x-image-medical lazy position-left
+ hide-mobile  left">
+                        <noscript>
+                            <img class="image-img " src="images/img1.jpg">
+                        </noscript>
+                        <img class="image-img lazy_image " src="images/img1.jpg">
+                        <div class="text-container"></div>
+                    </div>
+                  
+                    <h6 class="x-h6-medical    left" style="font-weight: ; color: #000000;">
+                        Οι διατροφολόγοι φοβούνται για τη δουλειά τους. Η νέα μέθοδος αδυνατίσματος θα στερήσει τη δουλειά χιλιάδων από αυτούς; Σπουδαίοι ειδικοί σε θέματα διατροφής δεν έχουν καμία αμφιβολία ότι αυτό θα συμβεί. Με την ανάπτυξη της φυσικής, διφασικής φόρμουλας αδυνατίσματος, από έναν Έλληνα καθηγητή, ακολούθησε μια επανάσταση στον αγώνα κατά του υπερβολικού βάρους.
+                    </h6>
+                    <h6 class="x-h6-medical    left" style="font-weight: ; color: #000000;">
+                        Ήδη πάνω από 14 χιλιάδες χρήστες της αγωγής αδυνάτισαν μέσα σε 28 ημέρες κατά μέσο όρο 14 κιλά - χωρίς προσπάθεια, με ασφάλεια και χωρίς το φαινόμενο γιο-γιο. Ως αποτέλεσμα, μείωσαν τον κίνδυνο εμφράγματος και εγκεφαλικού επεισοδίου κατά 185%, μείωσαν κατά 15 φορές το επίπεδο της κακής χοληστερόλης και προστάτευσαν τους εαυτούς τους από την αθηροσκλήρωση. Ανέκτησαν ελκυστική σιλουέτα, αυτοπεποίθηση και άριστη φυσική κατάσταση. Πώς είναι αυτό δυνατόν;
+                    </h6>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Ο καθ. Στέφανος Κουρτάκης (ειδικός στη μοριακή βιολογία) αποφάσισε να απελευθερώσει τη γυναίκα του από την προοδευτική παχυσαρκία και τα συμπλέγματα κατωτερότητας. Αυτή ήταν αρχή μίας επανάστασης στον αγώνα κατά του υπερβολικού βάρους. Ο καθηγητής μετά από ένα χρόνο προηγμένων εργαστηριακών μελετών, ανέπτυξε <b>μία φυσική, ασφαλή και εύκολη σε χρήση</b> φόρμουλα αδυνατίσματος. Χάρη σε αυτή, η σύζυγος του καθηγητή έχασε σε λιγότερο από 2 μήνες 26 κιλά και - όπως παραδέχεται η ίδια με υπερηφάνεια - "απόκτησε σώμα μοντέλου"!</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Επαγγελματικά ιατρικά περιοδικά έχουν ήδη αναγνωρίσει αυτή την αγωγή ως ένα <b>"πρωτοποριακό επίτευγμα στη διαιτολογία"</b>, ενώ ο καθηγητής Κουρτάκης έχει ήδη λάβει πολλά αναγνωρισμένα βραβεία για την επιστημονική του ανακάλυψη. Χάρη στη δράση της 2-φασικής του φόρμουλας, ακόμη και άτομα με μεγάλη και πολύχρονη παχυσαρκία (ανεξάρτητα από την αιτία) μπορούν να αδυνατίσουν περίπου 14 κιλά σε 1 μήνα - αποτελεσματικά, χωρίς αποχή από το φαγητό και χωρίς ασκήσεις.</p>
+                    </div>
+                    <h4 class="x-h4-medical    left" style="font-weight: ; background: ; color: #000000;">
+                        "Η δίαιτα για αδυνάτισμα είναι μια ταλαιπωρία και πεταμένα χρήματα!" Ποιοι είναι οι λόγοι για να πιστεύεις κάτι τέτοιο;
+                    </h4>
+                    <div class="x-image-medical lazy position-left
+  hide-desktop left">
+                        <noscript>
+                            <img class="image-img " src="">
+                        </noscript>
+                        <img class="image-img lazy_image " src="">
+                        <div class="text-container"></div>
+                    </div>
+            
+                    <div class="x-p-medical  hide-desktop" style="text-align: left; ">
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/img2.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/img2.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Αυτά τα λόγια επιβεβαιώνονται από πάνω από 14 χιλιάδες ικανοποιημένους χρήστες της φυσικής, 2-φάσεων φόρμουλας αδυνατίσματος, οι οποίοι έχουν ήδη περάσει την αγωγή και απολαμβάνουν μια λεπτή σιλουέτα. Για αυτό αποφασίσαμε να περάσουμε από το μικροσκόπιο τις γνωστές έως τώρα δίαιτες αδυνατίσματος. Να ελέγξουμε ακριβώς, γιατί δεν προσφέρουν τα επιθυμητά αποτελέσματα. Ακολουθούν τα συμπεράσματα:</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <ul class="x-ul_list-medical   
+left">
+                        <li>
+                            <p><b>Οι περισσότερες δίαιτες δημιουργούνται από ερασιτέχνες</b></p>
+                            <p>Για να χάσεις μόνιμα 2 κιλά χρειάζεται να στερηθείς το φαγητό κατά μέσο 2,5 μήνες. Αυτό σημαίνει ότι για να αποκτήσεις το επιθυμητό βάρος, χρειάζονται ακόμη και <b>μερικά χρόνια θυσιών</b>. Απόρριψη των απολαύσεων και αγώνα με τον εαυτό σου, ώστε να μην μπεις στον πειρασμό για την αγαπημένη σου πίτσα, το γλυκό ή το επιδόρπιο. Και αυτό επειδή το 98% των προγραμμάτων διατροφής δημιουργούνται από εντελώς ερασιτέχνες. Από ανθρώπους που δεν έχουν ιδέα για τη λειτουργία του σώματος, του πεπτικού συστήματος και την υπεύθυνη διατροφή. Αυτές οι δίαιτες είναι επιβλαβείς για τον οργανισμό, επικίνδυνες για την υγεία και εντελώς αναποτελεσματικές.</p>
+                        </li>
+                        <li>
+                            <p><b>Η δίαιτα αποδυναμώνει το σώμα και μειώνει την αντοχή</b></p>
+                            <p>Η δίαιτα προκαλεί ανεπάρκεια βιταμινών και μικροστοιχείων. Το σώμα χάνει ενέργεια με αποτέλεσμα να είμαστε <b>κουρασμένοι, ευερέθιστοι και να νιώθουμε υπνηλία</b>. Η αντίσταση του οργανισμού σε ιούς και βακτήρια μειώνεται δραστικά, με αποτέλεσμα να αρρωσταίνουμε πολύ πιο εύκολα.</p>
+                        </li>
+                        <li>
+                            <p><b>Τα διαιτητικά προϊόντα είναι επικίνδυνα για την υγεία</b></p>
+                            <p>Οι παραγωγοί τροφίμων προσελκύουν τους καταναλωτές με "fit" προϊόντα. Δυστυχώς, ακόμη και αν περιέχουν πολλές φυτικές ίνες, είναι γεμάτα με ζάχαρη, η οποία όπως είναι γνωστό, παχαίνει περισσότερο και από τα χάμπουργκερ. Από την άλλη τα προϊόντα χωρίς ζάχαρη περιέχουν <b>καρκινογόνο ασπαρτάμη</b>!</p>
+                        </li>
+                        <li>
+                            <p><b>Η δίαιτα είναι μια συνεχής πείνα, θυσίες και τύψεις</b></p>
+                            <p>Ο συνεχής αγώνας με την όρεξη και η άρνηση της απόλαυσης που μας προσφέρει το φαγητό δεν <b>είναι κάτι που ξεπερνιέται εύκολα</b>. Από την άλλη, οι καταστάσεις κατά τις οποίες η ασταμάτητη όρεξη μας διαλύει κατά τη διάρκεια ενός οικογενειακού μεσημεριανού ή το δείπνο σε μια παρέα φίλων, αποτελούν αιτία για τύψεις.</p>
+                        </li>
+                        <li>
+                            <p><b>Η δίαιτα απορροφά πολλά χρήματα</b></p>
+                            <p>Η μηνιαία επίσκεψη σε έναν ειδικευμένο διαιτολόγο είναι μια δαπάνη τουλάχιστον 150 ευρώ. Από την άλλη, όλα τα διαιτητικά προϊόντα, χαμηλών θερμίδων και "fit" είναι εξαιρετικά ακριβά. Ως αποτέλεσμα, για μια διατροφή "αδυνατίσματος" ξοδεύουμε ακόμη και <b>4 φορές περισσότερα χρήματα</b> από την κανονική διατροφή. Για να διατηρήσουμε το βάρος μας, θα έπρεπε να τρώμε με αυτόν τον τρόπο για όλη μας τη ζωή. Κανένα πορτοφόλι δεν θα άντεχε κάτι τέτοιο.</p>
+                        </li>
+                        <li>
+                            <p><b>Μετά τη δίαιτα έρχεται το φαινόμενο γιο-γιο</b></p>
+                            <p>Ένας οργανισμός που είναι αδύναμος λόγω πείνας, αρχίζει αυτόματα να συλλέγει αποθέματα ενέργειας για αργότερα, με αποτέλεσμα ο μεταβολισμός να επιβραδύνεται - μέχρι που σταματάει εντελώς. Ως αποτέλεσμα, μετά την δίαιτα <b>το σώμα επιστρέφει στο προηγούμενο βάρος ακόμη πιο γρήγορα</b> απ' όσο διαρκούσε το αδυνάτισμα.</p>
+                        </li>
+                    </ul>
+                    <h5 class="x-h5-medical    left" style="font-weight: ; color: #000000;">
+                        Γι' αυτό ακριβώς η διφασική φόρμουλα αδυνατίσματος του καθ. Κουρτάκη αποτελεί πραγματική επανάσταση στον αγώνα για ένα λεπτό σώμα.
+                    </h5>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Η δίαιτα αδυνατίσματος αφαιρεί από τον άνθρωπο την υγεία, την ενέργεια και τα χρήματα. Συνεχής καταμέτρηση θερμίδων, παρακολούθηση της ώρας των γευμάτων και άρνηση της απόλαυσης που προσφέρει το φαγητό. <b>Βασανιστική πείνα, κόπωση, και καταστροφή του οργανισμού</b>. Με τόσο μεγάλη τιμή πληρώνουμε για... απογοήτευση, επειδή τα αποτελέσματα συνήθως είναι αμελητέα. Σχεδόν αμέσως εμφανίζεται το φαινόμενο γιο-γιο, το οποίο καταστρέφει όλη την προσπάθεια και τις μακροχρόνιες θυσίες.</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Η φυσική, 2-φάσεων φόρμουλα αδυνατίσματος του καθ. Κουρτάκη, λειτουργεί εντελώς διαφορετικά. Δεν χρειάζεται να αρνείσαι τίποτα, να προσέχεις τι και πότε το τρως, ούτε και να υποφέρεις από την κουραστική πείνα. Η καύση του λίπους λαμβάνει χώρα αυτόματα. Όπως περιγράφει ένας από τους εθελοντές: <b>"Αδυνατίζεις ενώ είσαι ξαπλωμένος μπροστά στην τηλεόραση"</b> Επιπλέον, η αγωγή ρυθμίζει τον μεταβολισμό από την αρχή και <b>εμποδίζει για πάντα το φαινόμενο γιο-γιο</b>. Όλα αυτά κοστίζουν την ημέρα λιγότερο από ένα κουτάκι κόκα-κόλα!</p>
+                    </div>
+                    <h5 class="x-h5-medical    left" style="font-weight: ; color: #000000;">
+                        Τώρα μπορεί ο καθένας να αδυνατίσει χωρίς προσπάθεια, γρήγορα και με ασφάλεια
+                    </h5>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Η 2-φασική φόρμουλα αδυνατίσματος του καθ. Κουρτάκη είναι πλέον διαθέσιμη σε λιανική πώληση με το όνομα Fortunella. Η φόρμουλα έχει τη μορφή αναβράζοντων δισκίων που διαλύονται στο νερό και πίνονται (κάτι που προσφέρει μία επιπλέον δόση ενυδάτωσης, σημαντική για την καλή κατάσταση του οργανισμού). Η εφαρμογή της είναι πλήρως ασφαλής, όπως αποδεικνύουν οι πρόσθετες μελέτες του αμερικανικού ερευνητικού κέντρου στο Σικάγο. Ο έρευνες αυτές έδειξαν επίσης, ότι <b>η αγωγή έχει πάνω από 98% αποτελεσματικότητα</b>. Χάρη σε αυτή, άτομα ηλικίας από 38-93 ετών, σε μόλις <b>28 ημέρες</b> αδυνάτισαν κατά μέσο όρο 14 κιλά. Ανεξάρτητα από την ηλικία, τη διάρκεια και την αιτία του υπερβολικού βάρους.</p>
+                    </div>
+                    <h5 class="x-h5-medical    left" style="font-weight: ; color: #000000;">
+                        Αποδεδειγμένη αποτελεσματικότητα
+                    </h5>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Τα άτομα αυτά λίγες ώρες μετά την πρώτη εφαρμογή, άρχισαν να καθαρίζουν το σώμα τους από τις δηλητηριώδεις αποθέσεις και τις τοξίνες, έτσι σταμάτησαν την υπερβολική όρεξη και μπόρεσαν να εισέλθουν σε μία έντονη φάση καύσης των θερμίδων. Τις επόμενες ημέρες, τα εξεταζόμενα άτομα έπαψαν να τρώνε υπό την επήρεια του στρες και <b>ξεπέρασαν ολοκληρωτικά τις κρίσεις πείνας</b>. Έπειτα, μέρα με τη μέρα παρατηρούσαν τη ζυγαριά να δείχνει όλο και λιγότερο βάρος, ενώ <b>η περιφέρεια σε μέση, γοφούς και μηρούς μειωνόταν ακόμη και μερικά εκατοστά την ημέρα!</b></p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Αλλά δεν είναι μόνο αυτό. Το επίπεδο της κακής χοληστερόλης και του σακχάρου είχε μειωθεί. Οι εθελοντές είχαν κατά μέσο όρο 3 φορές περισσότερη ενέργεια και κατά 5 φορές καλύτερη διάθεση σε σχέση με πριν την εφαρμογή της διφασικής φόρμουλας αδυνατίσματος του καθ. Κουρτάκη.</p>
+                    </div>
+                    <h5 class="x-h5-medical    left" style="font-weight: ; color: #000000;">
+                        Τα τεκμηριωμένα αποτελέσματα της αγωγής μιλούν από μόνα τους:
+                    </h5>
+                    <div class="x-chart_new-medical   green">
+                        <div class="chart-row1">
+                            <div class="chart-column asc">
+                                <div class="chart-text">
+                                    <p>απομάκρυνση των αποθέσεων από τα έντερα, καθαρισμός των τοξινών, τέλος της υπερβολικής όρεξης, περίπου 5 kg λιγότερο</p>
+                                </div>
+                                <div class="chart-post"></div>
+                            </div>
+                            <div class="chart-column asc">
+                                <div class="chart-text">
+                                    <p>μείωση της πείνας, καλύτερος μεταβολισμός, επιτάχυνση καύσης των θερμίδων, άλλα 4 kg λιγότερο</p>
+                                </div>
+                                <div class="chart-post"></div>
+                            </div>
+                            <div class="chart-column asc">
+                                <div class="chart-text">
+                                    <p>αυτόματη καύση του λιπώδους ιστού, μείωση της χοληστερόλης και του σακχάρου, άλλα 3 kg λιγότερο</p>
+                                </div>
+                                <div class="chart-post"></div>
+                            </div>
+                            <div class="chart-column asc">
+                                <div class="chart-text">
+                                    <p>3 φορές περισσότερη ενέργεια, ρύθμιση του μεταβολισμού και αποκλεισμός του φαινομένου γιο-γιο, περίπου 2 kg λιγότερο (συνολικά 14 kg σε 1 μήνα)</p>
+                                </div>
+                                <div class="chart-post"></div>
+                            </div>
+                        </div>
+                        <div class="chart-row2">
+                            <div class="chart-signature">
+                                <p>1η εβδομάδα</p>
+                            </div>
+                            <div class="chart-signature">
+                                <p>2η εβδομάδα</p>
+                            </div>
+                            <div class="chart-signature">
+                                <p>3η εβδομάδα</p>
+                            </div>
+                            <div class="chart-signature">
+                                <p>4η εβδομάδα</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p><b>1η εβδομάδα</b> – απομάκρυνση των αποθέσεων από τα έντερα, καθαρισμός των τοξινών, τέλος της υπερβολικής όρεξης, περίπου 5 kg λιγότερο</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p><b>2η εβδομάδα</b> – μείωση της πείνας, καλύτερος μεταβολισμός, επιτάχυνση καύσης των θερμίδων, άλλα 4 kg λιγότερο</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p><b>3η εβδομάδα</b> – αυτόματη καύση του λιπώδους ιστού, μείωση της χοληστερόλης και του σακχάρου, άλλα 3 kg λιγότερο</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p><b>4η εβδομάδα</b> – 3 φορές περισσότερη ενέργεια, ρύθμιση του μεταβολισμού και αποκλεισμός του φαινομένου γιο-γιο, περίπου 2 kg λιγότερο (συνολικά 14 kg σε 1 μήνα)</p>
+                    </div>
+                    <h5 class="x-h5-medical hide-mobile   left" style="font-weight: ; color: #000000;">
+                        Η κυρία Ελένη Μπάκα (37 ετών) από Βόλο, είναι ένα από τα πρώτα άτομα στην Ελλάδα που πέρασαν από μεταμόρφωση με το Fortunella:
+                    </h5>
+                    <div class="x-image-medical lazy position-left
+ hide-mobile  left">
+                        <noscript>
+                            <img class="image-img " src="images/img3.jpg">
+                        </noscript>
+                        <img class="image-img lazy_image " src="images/img3.jpg">
+                        <div class="text-container"></div>
+                    </div>
+                
+                    <div class="x-p-medical hide-mobile " style="text-align: left; ">
+                        <p>"Μέχρι πρόσφατα, ντρεπόμουν για τα αποθέματα λίπους και τα έκρυβα κάτω από στρώματα χαλαρών ρούχων. Προσπάθησα πολλές φορές να αδυνατίσω, αλλά χωρίς αποτέλεσμα. Πήγα μάλιστα και σε διαιτολόγο. Για την επίσκεψη πλήρωσα μια περιουσία, αλλά δε με βοήθησε. Έπρεπε να απολογούμαι για κάθε μπισκότο, κάθε ποτήρι κρασί. Ασκήσεις; Πώς θα μπορούσα να ολοκληρώσω την ημέρα μου στο γυμναστήριο μετά από μια κουραστική μέρα εργασίας; Και ποιος θα φροντίσει το σπίτι, τα παιδιά, το σκύλο; Με την πάροδο του χρόνου ανακάλυψα το Fortunella. Τώρα ξέρω ότι <b> εάν δεν εκμεταλλευόμουν αυτή την αγωγή - θα έκανα το λάθος της ζωής μου.</b> Ήμουν παχιά σαν βαρέλι και αρκούσαν 4 εβδομάδες για να είμαι πιο αδύνατη από την έφηβη ανιψιά μου. Δεν κούνησα καν το δάχτυλό μου, κατάπινα μόνο την διφασική φόρμουλα αδυνατίσματος σε καθορισμένους χρόνους. Από μέγεθος 44 πήγα στο 38, ξαναβρήκα την αυτοπεποίθησή μου και αισθάνομαι καταπληκτικά, όπως ποτέ πριν. Οι φίλες μου από τη δουλειά ζηλεύουν την ωραία μου σιλουέτα. Το συνιστώ!</p>
+                    </div>
+                 <div class="x-testimonial_mobile-medical  hide-desktop">
+  <div class="testimonial__header">
+    <img class="testimonial__header--img" src="images/img3_1.jpg" alt="">
+    <article>
+      <div class="testimonial__header--signature"><p>Ειρήνη Σταματίου,</p><p>(37 ετών) Θεσσαλονίκη</p></div>
+      <div class="testimonial__header--title"><p>Η πρώτη Ελληνίδα μετά τη μεταμόρφωση με το Fortunella</p></div>
+      <span class="info">i</span>
+    </article>
+  </div>
+        <div class="testimonial-text">
+      <p>"Μέχρι πρόσφατα, ντρεπόμουν για τα αποθέματα λίπους και τα έκρυβα κάτω από στρώματα χαλαρών ρούχων. Προσπάθησα πολλές φορές να αδυνατίσω, χωρίς αποτέλεσμα. Πήγα μάλιστα σε ένα διαιτολόγο. Για την επίσκεψη πλήρωσα μια περιουσία, αλλά δε με βοήθησε.</p>
+    </div>
+      <div class="testimonial-text">
+      <p>Έπρεπε να ομολογώ κάθε κομμάτι γλυκού, κάθε ποτήρι κρασί. Ασκήσεις; Δηλαδή τι, εξαντλημένη μετά από μια ολόκληρη μέρα δουλειάς, να βασανίζομαι και στο γυμναστήριο; Και ποιος θα ασχοληθεί με το σπίτι, τα παιδιά, τον σκύλο; Σύντομα ανακάλυψα το Fortunella.</p>
+    </div>
+      <div class="testimonial-text">
+      <p>Τώρα ξέρω ότι <b>αν δεν είχα επωφεληθεί από αυτή την αγωγή - θα είχα κάνει το λάθος της ζωή μου.</b> Ήμουν χοντρή σαν βαρέλι και αρκούσαν 4 εβδομάδες για να είμαι λεπτότερη ακόμη και από την έφηβη ανιψιά μου. Απλά έπινα αυτή τη διφασική φόρμουλα αδυνατίσματος την ίδια ώρα της ημέρας.</p>
+    </div>
+      <div class="testimonial-text">
+      <p>Από μέγεθος 44 κατέβηκα στο 38, επανέκτησα την αυτοπεποίθησή μου και αισθάνομαι φανταστικά, όπως ποτέ άλλοτε. Οι φίλες στην δουλειά ζηλεύουν την ωραία μου σιλουέτα. Το συνιστώ!»</p>
+    </div>
+  </div>
+                    <h5 class="x-h5-medical    left" style="font-weight: ; color: #000000;">
+                        Γιατί να υποφέρετε λόγω του υπερβολικού βάρους ή να βασανίζεστε με δίαιτες, εφόσον μπορείτε να αδυνατίσετε εύκολα, γρήγορα και οικονομικά;
+                    </h5>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Η αποτελεσματικότητα της 2-φασικής φόρμουλας αδυνατίσματος έχει αποδειχθεί πέραν πάσης αμφιβολίας από το αμερικανικό ερευνητικό κέντρο στο Σικάγο. Ο καθ. Κουρτάκης λαμβάνει συνεχώς σημαντικές κριτικές από κορυφαίους ειδικούς, καθώς και <b>διακεκριμένα βραβεία</b> για το ερευνητικό και επιστημονικό του επίτευγμα.</p>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p>Το καλό νέο είναι ότι μπορείς να λάβεις τη 2-φασική φόρμουλα αδυνατίσματος του καθ. Κουρτάκη Fortunella με τη συμμετοχή στην εκπτωτική πλατφόρμα <b>με χρηματοδότηση 49 EUR φτηνότερα.</b> Η ειδική προσφορά ισχύει έως το τέλος της ημέρας <script type="text/javascript">
+    d = new Date(); p = new Date(d.getTime() -  0*86400000);
+    monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+    var w = p.getDate();
+    document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+</script>. Η αγωγή μπορεί να αποκτηθεί μέσω του παρακάτω ιστοτόπου.</p>
+                    </div>
+                    <div class="x-CTA-medical  " style="text-align: left">
+                        <a href="{offer}" target="_blank" class="cta">
+                            <p>Κάνε κλικ εδώ για να λάβεις την αγωγή με χρηματοδότηση και να αδυνατίσεις 14 kg σε 1 μήνα &gt;&gt;</p>
+                        </a>
+                        <a href="{offer}" target="_blank" class="cta cta_mobile">
+                            <p>Κάνε κλικ εδώ για να λάβεις την αγωγή με χρηματοδότηση και να αδυνατίσεις 14 kg σε 1 μήνα &gt;&gt;</p>
+                        </a>
+                    </div>
+                    <div class="x-p-medical  " style="text-align: left; ">
+                        <p><span style="color: red;">Η ειδική προσφορά ισχύει μέχρι το τέλος της ημέρας <script type="text/javascript">
+    d = new Date(); p = new Date(d.getTime() -  0*86400000);
+    monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+    var w = p.getDate();
+    document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+</script></span></p>
+                    </div>
+                </main>
+                <section class="container__wrapper--sidebar">
+                    <h5 class="x-h5-medical hide-mobile   center" style="font-weight: ; color: #000000;">
+                        Οι συχνότερες αναγνώσεις του τμήματος ΑΔΥΝΑΤΙΣΜΑ:
+                    </h5>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img1.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img1.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>5 βότανα για αποτοξίνωση του οργανισμού</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img2.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img2.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Πώς να καταπολεμήσεις αποτελεσματικά την κυτταρίτιδα;</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img3.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img3.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Τρόπος για επίπεδη κοιλιά; Μη κάνεις κοιλιακούς!</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img4.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img4.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Η μάστιγα της παχυσαρκίας στα παιδιά</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img5.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img5.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Ζάχαρη - ο λευκός δολοφόνος</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img6.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img6.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Το λάδι καρύδας είναι υγιεινό;</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img7.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img7.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Μύθοι και στοιχεία σχετικά με το αδυνάτισμα</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img8.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img8.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Δίαιτα για γρήγορα αδυνάτισμα</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img9.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img9.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>Τι δεν θα σου πει ο διαιτολόγος (γιατί δεν τον συμφέρει)</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-float_img_text-medical hide-mobile " style="text-align: left">
+                        <a class="link-x-float_img_text-medical" href="{offer}" target="_blank">
+                            <div style="" class="float_img_text-img float_left ">
+                                <noscript>
+                                    <img src="images/sidebar_img10.jpg" alt="">
+                                </noscript>
+                                <img class="lazy_image" src="images/sidebar_img10.jpg" alt="">
+                            </div>
+                            <div class="float_img_text-text">
+                                <p>28 kg σε 2 μήνες - καταπληκτική μεταμόρφωση της Πετρούλας</p>
+                            </div>
+                            <ol class="float_img_text-list">
+                            </ol>
+                            <div style="clear: both;"></div>
+                        </a>
+                    </div>
+                    <div class="x-banner-medical hide-mobile  " style="">
+                        <a href="{offer}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div class="banner-text" style="">
+                                <p>Ειδική προσφορά!</p>
+                            </div>
+                            <div class="banner-text2">
+                            </div>
+                            <img class="product_visualization x1  " src="images/EO_5F400px_5F255B30tablets255DV1kA1K5aRN.png" alt="img_small_index">
+                            <div class="banner-button" style="">
+                                <p>Ελέγξτε&gt;&gt;</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <section class="container__wrapper--comments ">
+                <h2 class="x-h2-medical      left" style="color: #000000; font-weight: ;">
+                    Σχόλια
+                </h2>
+                <h6 class="x-h6-medical    left" style="font-weight: ; color: #000000;">
+                    Διάβασε τα σχόλια του άρθρου "Το τέλος εποχής του υπερβολικού βάρους! Μια επαναστατική αγωγή ενός Έλληνα καθηγητή...
+                </h6>
+                <div class="x-comment-medical  " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Θωμάς</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>και λέγεται ότι οι Έλληνες δεν είναι επιτυχείς στην παγκόσμια επιστήμη. Καταπληκτικό επίτευγμα. Μπράβο για τον συμπατριώτη μας.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical  " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>βαρβάρα</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Εφάρμοσα αυτή την αγωγή αδυνατίσματος, την έλαβα για τη συμμετοχή στην εκπτωτική πλατφόρμα και κόστισε τόσο λίγα χρήματα, επιτέλους αδυνάτισα! αισθάνομαι σαν καινούργια. το συνιστώ ολόκαρδα</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical  " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Μαρία</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>την δοκίμασα κι εγώ και αδυνάτισα παρόλο που έχω γεννητική τάση στο υπερβολικό βάρος. Είναι τόσο απλό. Έγραψα σχετικά με την μεταμόρφωσή μου στο blog μου και την συνιστώ σε όλους:)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical  " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>σοφία</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>δοκίμασα ήδη πολλά συμπληρώματα διατροφής για αδυνάτισμα και κανένα δεν βοήθησε, πεταμένα χρήματα. Αλλά για να είμαι ειλικρινής, είναι η πρώτη μέθοδος που λειτούργησε σε μένα. Την χρησιμοποιώ μόνο μια εβδομάδα αλλά σταμάτησα να τρώω τη νύχτα και γενικά έχω λιγότερη όρεξη. Τρώω λιγότερο και νιώθω πιο ελαφριά. Και δεν υπάρχει λόγος να βλέπω ακριβώς τι τρώω. Έχασα ήδη πάνω από 4 κιλά και η κυτταρίτιδα εξαφανίστηκε.!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical  " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Γιάννης</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Λοιπόν, θα σας πω μερικά πράγματα, γιατί αγωνιζόμουν με την παχυσαρκία πριν από 7 χρόνια. Είναι λογικό σαν άντρας, να μου αρέσει να πίνω μπύρα και να τρώω ωραία πράγματα. Η γυναίκα μου μου έλεγε ότι πρέπει κάτι να κάνω γιατί η χοληστερόλη ήταν ανεβασμένη και το να είσαι χοντρός είναι ανθυγιεινό. Ώσπου η κόρη μου μου έφερε από την Αμερική αυτά τα δισκία και τα δοκίμασα. Δεν άλλαξα τρόπο ζωής. Έχασα 10 κιλά σε 3 εβδομάδες και έχω φυσιολογικά αποτελέσματα εξετάσεων. Οπότε είμαι και υγιής αλλά και χωρίς την γκρίνια της γυναίκας μου.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Ανδρέας</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>επίσης εφάρμοσα το Fortunella και έχω ωφεληθεί πολύ από αυτό. Την εφαρμόζω εδώ και 2 εβδομάδες, αλλά τα παντελόνια μου είναι ήδη χαλαρά. Ελέγξτε στον εαυτό σας, γιατί δεν έχω δει ακόμη αρνητική άποψη σχετικά με αυτή τη μέθοδο αδυνατίσματος</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>μαίρη</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>μπαίνοντας σε αυτή τη σελίδα δεν περίμενα να διαβάζω τέτοια θαυμαστά πράγματα. Πρέπει να αποκτήσω αυτή την αγωγή. Έχω μεγάλη κοιλιά και χοντρά πόδια. Επιτέλους κάτι που λειτουργεί!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Χαρίκλεια</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>είμαι μείον 16 κιλά. 30 ημέρες πριν ζύγιζα 78 κιλά και σήμερα 62. Παραγγείλετε όσο υπάρχει η προσφορά.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Μιχάλης</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>τα τελευταία χρόνια όλοι μας έχουμε αποθέσεις στα έντερα και τοξίνες στον οργανισμό. Δεν είναι περίεργο που ένα στα δυο άτομα είναι υπέρβαρο. Καλά που υπάρχει αυτή η μέθοδος που καθαρίζει και καίει το λίπος</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Άννα</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Σας έχω μια ερώτηση. Υπάρχει κανείς που είναι υπέρβαρος από παιδί (δηλαδή όχι μετά από εγκυμοσύνη ή από φάρμακα, αλλά από μικρός) και αδυνάτισε με αυτό τον τρόπο;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Διονύσης</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>@Αννα ναι, για παράδειγμα εγώ. Στην περίπτωση μου είναι κληρονομικό. Όλοι στην οικογένεια είναι χοντροί. Αλλά μετά από 3 εβδομάδες με το Fortunella δεν ταιριάζω πλέον στην οικογένεια :)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Άννα</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>@Δημήτρη, σε ευχαριστώ πολύ για την απάντησή σου. Θα το ρισκάρω και θα το δοκιμάσω, εξάλλου τίποτα δεν έχω να χάσω...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Ελένη</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>εγώ με την αγωγή του καθηγητή αδυνάτισα 15 kg :) το συνιστώ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>εύη</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>θα το χρησιμοποιούσα αμέσως, αλλά έχω φόβους ότι δεν θα λειτουργήσει. Έχω ξοδέψει ήδη αρκετά χρήματα σε αναποτελεσματικές μεθόδους</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>εύη</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>α!! Μόλις διάβασα ότι αυτή η αγωγή είναι εγγυημένη από την τριπλή ικανοποίηση, οπότε δεν υπάρχει φόβος. Θα πάρω για τον εαυτό μου, μπορεί να με βοηθήσει :)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>Αντώνης</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Η μητέρα μου με αυτά τα δισκία αδυνάτισε μετά από 20 χρόνια σοβαρών προβλημάτων με το υπερβολικό βάρος</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="x-comment-medical hide-mobile " style="text-align: left">
+                    <img class="comment-img" src="images/avatar.png">
+                    <div class="comment-box">
+                        <div class="comment-signature">
+                            <p>φάνης</p>
+                            <div class="comment-date">
+                                Τρίτη
+                                22.12.2020
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>περιμένω το πακέτο με την αγωγή, σύντομα θα γράψω σχετικά με τα αποτελέσματα</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container__wrapper--footer">
+                <link type="text/css" rel="stylesheet" href="css/index_1.css">
+                <div class="footer__links">
+                    <a class="footer__links--link" href="privacy.html" target="_blank" rel="noopener noreferrer" title="Privacy policy">Privacy policy</a>
+                    <a class="footer__links--link" href="cond.html" target="_blank" rel="noopener noreferrer" title="Information for affiliates">Information for affiliates</a>
+                </div>
+                <div class="x-bibliography-medical-sp  ">
+                    <link type="text/css" rel="stylesheet" href="css/index.css">
+                    <div class="FooterBibliography">
+                        <p class="headline">Βιβλιογραφία:</p>
+                        <ol class="list">
+                            <li>Onakpoya, I., Terry, R., &amp; Ernst, E. (2011). The Use of Green Coffee Extract as a Weight Loss Supplement: A Systematic Review and Meta-Analysis of Randomised Clinical Trials.&nbsp;Gastroenterology Research and Practice,&nbsp;2011, 1–6.</li>
+                            <li>Vinson, J., Nagendran, M. V., &amp; Burnham, B. R. (2012).&nbsp;Randomized, double-blind, placebo-controlled, linear dose, crossover study to evaluate the efficacy and safety of a green coffee bean extract in overweight subjects.&nbsp;Diabetes, Metabolic Syndrome and Obesity: Targets and Therapy,&nbsp;5, 21-27.</li>
+                            <li>Flanagan, J., Bily, A., Rolland, Y., &amp; Roller, M. (2013).&nbsp;Lipolytic Activity of Svetol®, a Decaffeinated Green Coffee Bean Extract.&nbsp;Phytotherapy Research,&nbsp;28(6), 946–948.</li>
+                            <li>Reh, C., Gerber, A., Prodolliet, J., &amp; Vuataz, G. (2006).&nbsp;Water content determination in green coffee – Method comparison to study specificity and accuracy.&nbsp;Food Chemistry,&nbsp;96(3), 423–430.</li>
+                            <li>Dellalibera, O., Lemaire, B., &amp; Lafay, S. (2006). Svetol, green coffee extract, induces weight loss and increases the lean to fat mass ratio in volunteers with overweight problem.&nbsp;Phytotherapie,&nbsp;4(4), 194-197.</li>
+                            <li>Buchanan, R., &amp; Beckett, R. D. (2013).&nbsp;Green Coffee for Pharmacological Weight Loss.&nbsp;Journal of Evidence-Based Complementary &amp; Alternative Medicine,&nbsp;18(4), 309–313.</li>
+                            <li>Samadi, M., Mohammadshahi, M., &amp; Haidari, F. (2015). Green coffee bean extract as a weight loss supplement.&nbsp;Journal of Nutritional Disorders &amp; Therapy,&nbsp;5(4).</li>
+                            <li>Thom, E. (2007).&nbsp;The Effect of Chlorogenic Acid Enriched Coffee on Glucose Absorption in Healthy Volunteers and Its Effect on Body Mass When Used Long-term in Overweight and Obese People.&nbsp;Journal of International Medical Research,&nbsp;35(6), 900–908.</li>
+                            <li>Farah, A., Monteiro, M., Donangelo, C. M., &amp; Lafay, S. (2008). Chlorogenic Acids from Green Coffee Extract are Highly Bioavailable in Humans.&nbsp;The Journal of Nutrition,&nbsp;138(12), 2309–2315.</li>
+                            <li>Upadhyay, R., Ramalakshmi, K., &amp; Rao, L. J. M. (2012). Microwave-assisted extraction of chlorogenic acids from green coffee beans.&nbsp;Food Chemistry,&nbsp;130(1), 184-188.</li>
+                            <li>Bastos, D. H. M., Oliveira, D. D., Matsumoto, R. T., Carvalho, P. D. O., &amp; Ribeiro, M. L. (2007). Yerba mate: pharmacological properties, research and biotechnology.&nbsp;Medicinal and Aromatic Plant Science and Biotechnology,&nbsp;1(1), 37-46.</li>
+                            <li>Kim, S. Y., Oh, M. R., Kim, M. G., Chae, H. J., &amp; Chae, S. W. (2015). Anti-obesity effects of Yerba Mate (Ilex Paraguariensis): a randomized, double-blind, placebo-controlled clinical trial.&nbsp;BMC complementary and Alternative Medicine,&nbsp;15(1).</li>
+                            <li>Arçari, D. P., Bartchewsky, W., Santos, T. W. D., Oliveira, K. A., Funck, A., Pedrazzoli, J., … Ribeiro, M. L. (2009). Antiobesity Effects of yerba maté Extract (Ilex paraguariensis) in High-fat Diet–induced Obese Mice.&nbsp;Obesity,&nbsp;17(12), 2127–2133.</li>
+                            <li>Pimentel, G. D., Lira, F. S., Rosa, J. C., Caris, A. V., Pinheiro, F., Ribeiro, E. B., … Oyama, L. M. (2013).&nbsp;Yerba mate extract (Ilex paraguariensis) attenuates both central and peripheral inflammatory effects of diet-induced obesity in rats.&nbsp;The Journal of Nutritional Biochemistry,&nbsp;24(5), 809–818.</li>
+                            <li>Gambero, A., &amp; Ribeiro, M. L. (2015). The positive effects of Yerba Maté (Ilex paraguariensis) in obesity.&nbsp;Nutrients,&nbsp;7(2), 730-750.</li>
+                            <li>Kang, Y .-R., Lee, H.-Y., Kim, J.-H., Moon, D.-I., Seo, M.-Y., Park, S.-H., … Oh, H.-G. (2012). Anti-obesity and anti-diabetic effects of Yerba Mate (Ilex paraguariensis) in C57BL/6J mice fed a high-fat diet.&nbsp;Laboratory Animal Research,&nbsp;28(1), 23.</li>
+                            <li>Yimam, M., Jiao, P., Hong, M., Brownell, L., Lee, Y.-C., Hyun, E.-J., … Jia, Q. (2016). Appetite Suppression and Antiobesity Effect of a Botanical Composition Composed of Morus alba, Yerba mate, and Magnolia officinalis.&nbsp;Journal of Obesity,&nbsp;2016, 1–12.</li>
+                            <li>Riachi, L. G., &amp; De Maria, C. A. B. (2017).&nbsp;Yerba mate: An overview of physiological effects in humans.&nbsp;Journal of Functional Foods,&nbsp;38, 308–320.</li>
+                            <li>Rashti, S. L., Ratamess, N. A., Kang, J., Faigenbaum, A. D., Chilakos, A., &amp; Hoffman, J. R. (2009).&nbsp;Thermogenic effect of meltdown RTD™ energy drink in young healthy women: a double blind, cross-over design study.&nbsp;Lipids in Health and Disease,&nbsp;8(1), 57.</li>
+                            <li>Choi, M.-S., Park, H. J., Kim, S. R., Kim, D. Y., &amp; Jung, U. J. (2017).&nbsp;Long-Term Dietary Supplementation with Yerba Mate Ameliorates Diet-Induced Obesity and Metabolic Disorders in Mice by Regulating Energy Expenditure and Lipid Metabolism.&nbsp;Journal of Medicinal Food,&nbsp;20(12), 1168–1175.</li>
+                        </ol>
+                    </div>
+                </div>
+               
+            </section>
+        </section>
+    </section>
+
+
+<script>
+  //скрипт для генерации даты
+  function time(d, like_eu) {
+    var now = new Date;
+    now.setDate(now.getDate() + d);
+    var dayNum = "";
+    if (now.getDate() < 10) {
+        dayNum = "0"
+    }
+    dayNum += now.getDate();
+    var monthNum = "";
+    if (now.getMonth() + 1 < 10) {
+        monthNum = "0"
+    }
+    monthNum += now.getMonth() + 1;
+  
+    return dayNum + "." + monthNum + "." + now.getFullYear();
+}
+</script>
+<script>
+var count = $(".comment-date").length; //кол-во кометов куда надо вписать дату
+$(".comment-date").each(function(i,elem){ //перебор всех коментов
+  var timeText = time(-(count - i), true);
+  $(this).html(timeText); //вставляем дату
+});
+</script>
+
+
+</body>
+
+</html>
