@@ -1,194 +1,944 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>LongUp </title>
-<meta name="viewport" content="initial-scale=1">
-<link rel="shortcut icon" href="favicon_1.ico" type="image/x-icon">
-<style>html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}h1{margin:.67em 0;font-size:2em}b,strong{font-weight:bold}img{border:0}button,input{margin:0;font-family:inherit;font-size:100%}button,input{line-height:normal}button{text-transform:none}button{cursor:pointer;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}@media print{*{color:#000!important;text-shadow:none!important;background:transparent!important;box-shadow:none!important}img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:2cm .5cm}p,h2{orphans:3;widows:3}h2{page-break-after:avoid}}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857142;color:#333;background-color:#fff}input,button{font-family:inherit;font-size:inherit;line-height:inherit}img{vertical-align:middle}p{margin:0 0 10px}h1,h2,h5{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1,h2{margin-top:20px;margin-bottom:10px}h5{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}h5{font-size:14px}ul{margin-top:0;margin-bottom:10px}label{display:inline-block;margin-bottom:5px;font-weight:bold}@-ms-viewport{width:device-width}.hidden-xs{display:block!important}@media(max-width:767px){.hidden-xs{display:none!important}}*{margin: 0;padding: 0}body{background: #EBEBEB}p{margin: 10px 0}h1,h2{margin: 1em 0;color: #820000;text-align: left;font-weight: normal}h1{font-size: 40px;line-height: 1em}h2{font-size: 28px;line-height: 140%}#wrapper{margin: 0 auto;padding: 20px 10px;min-height: 500px;width: 960px;border-left: 1px solid black;border-right: 1px solid black;background: #fff;color: #3d3d3d;font-size: 16px;font-family: georgia;line-height: 25px;max-width: 980px;width: 100%}@media (min-width:769px){#post{width: 70%!important;display: inline-block!important}}@media (max-width: 768px){#post{width: 100%}}#post{margin: 20px;max-width: 630px}h1.a1{margin-bottom: 30px;font-weight: bold}.redo{color: #CC0000;font-weight: bold;font-size: 20px;margin-top: 25px;margin-bottom: 20px;margin-left: 10px}.redoyel{font-family: arial;color: #CC0000;font-weight: bold;font-size: 18px;margin-top: 25px;margin-bottom: 25px;margin-left: 10px}#bottle{margin: 20px auto;width: 220px;text-align: center;position: relative}#bottle_g{position: absolute;top: 0;right: 20px;width: 80px}#bottle img{display: block;margin: 0 auto 20px auto}.libo li{margin-bottom: 15px}@media (min-width: 769px){#post{width: 67%!important}}.infograph{display: flex;flex-direction: row;margin: 0;padding: 0;align-items: center;margin-top: 50px;margin-bottom: 50px}.infograph-column{align-items: center;justify-items: center;margin: 0;padding: 0;width: 33%;display: flex;flex-direction: column}.infograph-prod{width: 100%;justify-self: center}.infograph-img{width: 28%;margin: 0 auto;display: block}.infograph-row{margin: 0;padding: 0;display: flex;flex-direction: column;align-items: center}.infograph-text{color: green;font-size: bold;text-transform: uppercase;text-shadow: 1px 0 grey;text-align: center!important}@media only screen and (max-width: 768px){.infograph-arrow{display: none}.infograph{flex-direction: column}.infograph-column{width: 100%!important}.infograph-rewerse{flex-direction: row-reverse!important;justify-content: flex-end!important}.infograph-prod{display: none}.infograph-row{flex-direction: row;align-items: center;justify-content: flex-start;flex-wrap: nowrap;margin-bottom: 15px;width: 100%}.infograph-img{width: 60px;margin: 0 20px 0 0}.infograph-text{text-align: left!important}}.our-form{font-family: Arial,Helvetica,sans-serif;border: 2px solid #6c6c6c;background: #EBEBEB;position: relative;box-sizing: border-box;padding: 8px;margin-top: 24px}#our-main-form label{position: relative}.our-form-header{margin: 0;display: inline-block;transform: translateY(-76%);color: #0083B2;font-size: 26px;font-weight: bolder;background: rgba(255,255,255,1);background: -moz-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(235,235,235,1) 52%,rgba(235,235,235,1) 71%,rgba(235,235,235,1) 100%);background: -webkit-gradient(left top,left bottom,color-stop(0%,rgba(255,255,255,1)),color-stop(51%,rgba(255,255,255,1)),color-stop(52%,rgba(235,235,235,1)),color-stop(71%,rgba(235,235,235,1)),color-stop(100%,rgba(235,235,235,1)));background: -webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(235,235,235,1) 52%,rgba(235,235,235,1) 71%,rgba(235,235,235,1) 100%);background: -o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(235,235,235,1) 52%,rgba(235,235,235,1) 71%,rgba(235,235,235,1) 100%);background: -ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(235,235,235,1) 52%,rgba(235,235,235,1) 71%,rgba(235,235,235,1) 100%);background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(235,235,235,1) 52%,rgba(235,235,235,1) 71%,rgba(235,235,235,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#ebebeb',GradientType=0 )}.our-form-description{margin-top: 20px;margin-bottom: 20px;font-size: 14px}.our-form-itemInput{display: flex;align-items: center;margin-bottom: 8px}.itemInput-label{width: 25%;text-align: right;padding-right: 12px}.our-form-txtInput{width: 45%;padding: 4px;outline: none}.our-order-btn{transition: 0.4s;display: block;margin: 20px auto;padding: 10px 50px;outline: none;border-radius: 8px;border: 1px solid #ccc;background: green;color: #ffffff;font-size: 24px}.our-order-btn:hover{transform: scale(1.1)}.form-choice-container < input[type=radio]:checked{background: red!important}input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none}@media screen and (max-width: 762px){.our-form-itemInput{flex-direction: column}.itemInput-label{width: 100%;text-align: left;padding-right: 12px}.our-form-txtInput{width: 100%;padding: 4px;outline: none}}*,*::before,*::after{margin: 0;padding: 0;box-sizing: border-box}html{font-family: 'Barlow',sans-serif}.redoyel{line-height: 32px}@media (max-width: 480px){h1{font-size: 2em}}.redoyel{color: #CC0000;font-weight: bold;width: 100%}.redoyel span{background: yellow}@media (max-width: 768px){#post{margin: 0!important}#licznikProduktow{float: none!important;margin: 0 auto}#licznikProduktow span:nth-child(1){margin: 0 auto;display: block}}.ileProduktow{background: url('images/licznik-bg.png') repeat-x;background-size: 100% 115%;background-position: 0}.ileProduktow{font-size: 45px;color: #000;padding: 0 5px;border: 1px solid black;border-radius: 5px}#licznikProduktow{text-align: center;float: right;margin-top: 10%;margin-right: 20px}</style>
-	
- <link href="favicon_1.ico" rel="shortcut icon" type="image/x-icon">
- </head><body> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="shortcut icon" href="favicon_1.ico" type="image/x-icon">
+	<style>
+		html {
+			font-family: sans-serif;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%
+		}
+
+		body {
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		h1 {
+			margin: .67em 0;
+			font-size: 2em
+		}
+
+		b,
+		strong {
+			font-weight: bold
+		}
+
+		img {
+			border: 0
+		}
+
+		button,
+		input {
+			margin: 0;
+			font-family: inherit;
+			font-size: 100%
+		}
+
+		button,
+		input {
+			line-height: normal
+		}
+
+		button {
+			text-transform: none
+		}
+
+		button {
+			cursor: pointer;
+			-webkit-appearance: button
+		}
+
+		button::-moz-focus-inner,
+		input::-moz-focus-inner {
+			padding: 0;
+			border: 0
+		}
+
+		@media print {
+			* {
+				color: #000 !important;
+				text-shadow: none !important;
+				background: transparent !important;
+				box-shadow: none !important
+			}
+
+			img {
+				page-break-inside: avoid
+			}
+
+			img {
+				max-width: 100% !important
+			}
+
+			@page {
+				margin: 2cm .5cm
+			}
+
+			p,
+			h2 {
+				orphans: 3;
+				widows: 3
+			}
+
+			h2 {
+				page-break-after: avoid
+			}
+		}
+
+		*,
+		*:before,
+		*:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box
+		}
+
+		html {
+			font-size: 62.5%;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		}
+
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.42857142;
+			color: #333;
+			background-color: #fff
+		}
+
+		input,
+		button {
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit
+		}
+
+		img {
+			vertical-align: middle
+		}
+
+		p {
+			margin: 0 0 10px
+		}
+
+		h1,
+		h2,
+		h5 {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 500;
+			line-height: 1.1;
+			color: inherit
+		}
+
+		h1,
+		h2 {
+			margin-top: 20px;
+			margin-bottom: 10px
+		}
+
+		h5 {
+			margin-top: 10px;
+			margin-bottom: 10px
+		}
+
+		h1 {
+			font-size: 36px
+		}
+
+		h2 {
+			font-size: 30px
+		}
+
+		h5 {
+			font-size: 14px
+		}
+
+		ul {
+			margin-top: 0;
+			margin-bottom: 10px
+		}
+
+		label {
+			display: inline-block;
+			margin-bottom: 5px;
+			font-weight: bold
+		}
+
+		@-ms-viewport {
+			width: device-width
+		}
+
+		.hidden-xs {
+			display: block !important
+		}
+
+		@media(max-width:767px) {
+			.hidden-xs {
+				display: none !important
+			}
+		}
+
+		* {
+			margin: 0;
+			padding: 0
+		}
+
+		body {
+			background: #EBEBEB
+		}
+
+		p {
+			margin: 10px 0
+		}
+
+		h1,
+		h2 {
+			margin: 1em 0;
+			color: #820000;
+			text-align: left;
+			font-weight: normal
+		}
+
+		h1 {
+			font-size: 40px;
+			line-height: 1em
+		}
+
+		h2 {
+			font-size: 28px;
+			line-height: 140%
+		}
+
+		#wrapper {
+			margin: 0 auto;
+			padding: 20px 10px;
+			min-height: 500px;
+			width: 960px;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			background: #fff;
+			color: #3d3d3d;
+			font-size: 16px;
+			font-family: georgia;
+			line-height: 25px;
+			max-width: 980px;
+			width: 100%
+		}
+
+		@media (min-width:769px) {
+			#post {
+				width: 70% !important;
+				display: inline-block !important
+			}
+		}
+
+		@media (max-width: 768px) {
+			#post {
+				width: 100%
+			}
+		}
+
+		#post {
+			margin: 20px;
+			max-width: 630px
+		}
+
+		h1.a1 {
+			margin-bottom: 30px;
+			font-weight: bold
+		}
+
+		.redo {
+			color: #CC0000;
+			font-weight: bold;
+			font-size: 20px;
+			margin-top: 25px;
+			margin-bottom: 20px;
+			margin-left: 10px
+		}
+
+		.redoyel {
+			font-family: arial;
+			color: #CC0000;
+			font-weight: bold;
+			font-size: 18px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			margin-left: 10px
+		}
+
+		#bottle {
+			margin: 20px auto;
+			width: 220px;
+			text-align: center;
+			position: relative
+		}
+
+		#bottle_g {
+			position: absolute;
+			top: 0;
+			right: 20px;
+			width: 80px
+		}
+
+		#bottle img {
+			display: block;
+			margin: 0 auto 20px auto
+		}
+
+		.libo li {
+			margin-bottom: 15px
+		}
+
+		@media (min-width: 769px) {
+			#post {
+				width: 67% !important
+			}
+		}
+
+		.infograph {
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			padding: 0;
+			align-items: center;
+			margin-top: 50px;
+			margin-bottom: 50px
+		}
+
+		.infograph-column {
+			align-items: center;
+			justify-items: center;
+			margin: 0;
+			padding: 0;
+			width: 33%;
+			display: flex;
+			flex-direction: column
+		}
+
+		.infograph-prod {
+			width: 100%;
+			justify-self: center
+		}
+
+		.infograph-img {
+			width: 28%;
+			margin: 0 auto;
+			display: block
+		}
+
+		.infograph-row {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center
+		}
+
+		.infograph-text {
+			color: green;
+			font-size: bold;
+			text-transform: uppercase;
+			text-shadow: 1px 0 grey;
+			text-align: center !important
+		}
+
+		@media only screen and (max-width: 768px) {
+			.infograph-arrow {
+				display: none
+			}
+
+			.infograph {
+				flex-direction: column
+			}
+
+			.infograph-column {
+				width: 100% !important
+			}
+
+			.infograph-rewerse {
+				flex-direction: row-reverse !important;
+				justify-content: flex-end !important
+			}
+
+			.infograph-prod {
+				display: none
+			}
+
+			.infograph-row {
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				flex-wrap: nowrap;
+				margin-bottom: 15px;
+				width: 100%
+			}
+
+			.infograph-img {
+				width: 60px;
+				margin: 0 20px 0 0
+			}
+
+			.infograph-text {
+				text-align: left !important
+			}
+		}
+
+		.our-form {
+			font-family: Arial, Helvetica, sans-serif;
+			border: 2px solid #6c6c6c;
+			background: #EBEBEB;
+			position: relative;
+			box-sizing: border-box;
+			padding: 8px;
+			margin-top: 24px
+		}
+
+		#our-main-form label {
+			position: relative
+		}
+
+		.our-form-header {
+			margin: 0;
+			display: inline-block;
+			transform: translateY(-76%);
+			color: #0083B2;
+			font-size: 26px;
+			font-weight: bolder;
+			background: rgba(255, 255, 255, 1);
+			background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(235, 235, 235, 1) 52%, rgba(235, 235, 235, 1) 71%, rgba(235, 235, 235, 1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(51%, rgba(255, 255, 255, 1)), color-stop(52%, rgba(235, 235, 235, 1)), color-stop(71%, rgba(235, 235, 235, 1)), color-stop(100%, rgba(235, 235, 235, 1)));
+			background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(235, 235, 235, 1) 52%, rgba(235, 235, 235, 1) 71%, rgba(235, 235, 235, 1) 100%);
+			background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(235, 235, 235, 1) 52%, rgba(235, 235, 235, 1) 71%, rgba(235, 235, 235, 1) 100%);
+			background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(235, 235, 235, 1) 52%, rgba(235, 235, 235, 1) 71%, rgba(235, 235, 235, 1) 100%);
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 51%, rgba(235, 235, 235, 1) 52%, rgba(235, 235, 235, 1) 71%, rgba(235, 235, 235, 1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0)
+		}
+
+		.our-form-description {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 14px
+		}
+
+		.our-form-itemInput {
+			display: flex;
+			align-items: center;
+			margin-bottom: 8px
+		}
+
+		.itemInput-label {
+			width: 25%;
+			text-align: right;
+			padding-right: 12px
+		}
+
+		.our-form-txtInput {
+			width: 45%;
+			padding: 4px;
+			outline: none
+		}
+
+		.our-order-btn {
+			transition: 0.4s;
+			display: block;
+			margin: 20px auto;
+			padding: 10px 50px;
+			outline: none;
+			border-radius: 8px;
+			border: 1px solid #ccc;
+			background: green;
+			color: #ffffff;
+			font-size: 24px
+		}
+
+		.our-order-btn:hover {
+			transform: scale(1.1)
+		}
+
+		.form-choice-container < input[type=radio]:checked {
+			background: red !important
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none
+		}
+
+		@media screen and (max-width: 762px) {
+			.our-form-itemInput {
+				flex-direction: column
+			}
+
+			.itemInput-label {
+				width: 100%;
+				text-align: left;
+				padding-right: 12px
+			}
+
+			.our-form-txtInput {
+				width: 100%;
+				padding: 4px;
+				outline: none
+			}
+		}
+
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box
+		}
+
+		html {
+			font-family: 'Barlow', sans-serif
+		}
+
+		.redoyel {
+			line-height: 32px
+		}
+
+		@media (max-width: 480px) {
+			h1 {
+				font-size: 2em
+			}
+		}
+
+		.redoyel {
+			color: #CC0000;
+			font-weight: bold;
+			width: 100%
+		}
+
+		.redoyel span {
+			background: yellow
+		}
+
+		@media (max-width: 768px) {
+			#post {
+				margin: 0 !important
+			}
+
+			#licznikProduktow {
+				float: none !important;
+				margin: 0 auto
+			}
+
+			#licznikProduktow span:nth-child(1) {
+				margin: 0 auto;
+				display: block
+			}
+		}
+
+		.ileProduktow {
+			background: url('images/licznik-bg.png') repeat-x;
+			background-size: 100% 115%;
+			background-position: 0
+		}
+
+		.ileProduktow {
+			font-size: 45px;
+			color: #000;
+			padding: 0 5px;
+			border: 1px solid black;
+			border-radius: 5px
+		}
+
+		#licznikProduktow {
+			text-align: center;
+			float: right;
+			margin-top: 10%;
+			margin-right: 20px
+		}
+	</style>
+
+	<link href="favicon_1.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-<div id="wrapper">
-<img style="width:100%;margin-bottom: 15px;" src="images/logotypes-es.jpg" alt class="top_banner"><div id="post" style="width: 96%!important;max-width: 100%">
-<h1 class="a1" style="color: #820000;"> En 1 mes ganarás 10 kg de músculo tan duro como una roca sin tener que hacer ejercicio ni dieta, un efecto confirmado por pruebas médicas independientes. </h1>
-<img style="width:50%;float:right;margin: 40px 0 0 10px;max-width: 245px;" class src="images/prof-prolesanpure.jpg"><br><p> Daniel</p>
-<p> Soy el Prof. Carlos Ortiz Torres y soy científico, especialista en ingeniería genética. En esta página, quiero presentarte el mayor logro de mi vida, por el que acabo de ser nominado para el equivalente asiático del Premio Nobel: el Premio Confucio. He desarrollado una fórmula para estimular la síntesis de proteínas, contribuyendo al máximo aumento de masa muscular. Gracias a mi método, todo hombre puede ganar de forma automática y permanente 10 kg de masa muscular pura en 1 mes.</p>
-<h2 class="redo" style="margin-top: 50px;"> Entonces, si quieres:</h2>
-<ul class="libo" style="margin-left: 20px;">
-<li>
-<strong> ganar 10 kg de masa muscular </strong> pura en 1 mes de forma automática, sin gimnasio ni dietas;</li>
-<li>
-<strong> Esculpe músculos duros como una roca por todo el cuerpo, </strong> sin levantar pesas, sin entrenar y sin las lesiones y traumas resultantes;</li>
-<li>
-<strong> haz la "tortuga" en el abdomen </strong> – incluso si en este momento solo ves rollos de grasa;</li>
-<li>
-<strong> Convierte la grasa en músculos fuertes y firmes, </strong> incluso si está luchando contra el sobrepeso o la obesidad</li>
-<li> ganar 4 veces más energía y 5 veces más fuerza muscular y así sentirse como un verdadero hombre ... </li>
-</ul>
-<p> ... y si quieres lograr todo esto sin los entrenamientos excesivos, los suplementos peligrosos, las dietas agotadoras y en consecuencia ahorrar decenas de miles de euros - lee lo que tengo que contarte. </p>
-<p> No importa la edad que tengas o el tiempo que lleves intentando esculpir tu figura musculosa. Incluso si has escuchado que no hay nada que ver con tu tipo de cuerpo porque simplemente eres delgado o con sobrepeso y estás condenado al fracaso ... <strong> Debes saber que en un mes podrás disfrutar de 10 kg de músculo duro como una roca sin ir al gimnasio.!</strong></p>
-<h2 class="redo"> Aquí te explico por qué mi fórmula es una excelente alternativa a las dietas, los suplementos y los ejercicios insoportables en el gimnasio: </h2>
-<ul class="libo" style="margin-left: 20px;">
-<li>
-<strong> obtendrás 10 kg de músculo en 1 mes, </strong> logrando un mejor efecto que haciendo 3 años de entrenamiento intenso;</li>
-<li>
-<strong> automáticamente obtendrás músculos robustos, </strong> sin esfuerzo y sin sacrificio, incluso cuando estés acostado frente al televisor, leyendo un periódico o durmiendo;</li>
-<li>
-<strong> no es necesario seguir ninguna dieta,</strong> - porque el crecimiento intensivo del tejido muscular se produce a nivel del ADN;</li>
-<li>
-<strong> evitarás las consecuencias de lesiones o traumatismos en los músculos,</strong> las articulaciones y la columna, que son el resultado final del entrenamiento;</li>
-<li>
-<strong> protegerás tu salud, </strong> en lugar de envenenarse con nutrientes y estimulantes peligrosos; </li>
-<li>
-<strong> ahorrarás tiempo,</strong> en lugar de pasar la mitad de tu vida en el gimnasio;</li>
-<li>
-<strong> Ahorrarás dinero, </strong> en lugar de gastarlo en gimnasios y nutricionistas.</li>
-</ul>
-<h2 class="redo"> He desarrollado un método intragénico que genera automáticamente 10 kg de masa muscular pura en 1 mes. </h2>
-<p> Gracias a esto, no tendrás que hacer ejercicio, seguir dietas o envenenarte con suplementos y potenciadores sospechosos. Olvidarás todos los problemas y humillaciones que te han preocupado por tu figura no deportiva, demasiado delgada o gorda. Comenzará a desarrollar masa muscular limpia haciendo sus actividades diarias: ir al trabajo, tomar una taza de té, contestar el teléfono. Cada movimiento activará los procesos regenerativos de las fibras musculares y estimulará la síntesis de proteínas, que construirá de forma automática y permanente masa muscular pura. </p>
-<p> Y eso es todo porque he desarrollado una fórmula intragénica que genera automáticamente 10 kg de masa muscular pura en 1 mes. ¿Como lo hice? </p>
-<h2 class="redo"> Quería ayudar a mi hermano a conseguir una figura masculina de la que estuviera orgulloso.</h2>
-<p> Las últimas investigaciones del Instituto de Deportes muestran que el 62% de los hombres en España tienen un problema de baja autoestima debido a la falta de figura masculina, mientras que 4 de cada 10 de ellos son percibidos como no masculinos. Lamentablemente este problema también afectó a mi hermano pequeño: Juan.</p>
-<p> Mi hermano siempre ha sido frágil, tenía hombros estrechos, pero nadie en la familia pensó que se sentía mal en su cuerpo. Todo cambió cuando se fue a su primer trabajo y se enamoró de una chica que había conocido allí.</p>
-<p> Empezó a tener problemas para dormir, le sudaban las manos ... Pensó que estaba enfermo, pero estaba "simplemente" enamorado. Fue un amor platónico. Mi hermano era bastante tímido e inseguro, tenía miedo de ser rechazado.</p>
-<p> Después de unos meses, en una fiesta de la empresa, finalmente encontró el coraje para acercarse a la niña e invitarla al cine. Él esperaba un "no", pero ella aceptó. Mi hermano estaba en el séptimo cielo. Durante los días siguientes no habló más que de la cita y la chica de sus sueños.</p>
-<p> Planeó todo hasta el más mínimo detalle: el cine, la película romántica, el paseo y la cena. Se encontraron frente al cine. Cuando llegó la niña, hicieron cola en el mostrador. Hablaron, se rieron y ni siquiera escucharon a nadie decirles nada. De repente, mi hermano sintió que alguien le daba unas palmaditas en el hombro y le decía: "Señora, se le cayó la bufanda". Mi hermano se puso rojo. "Señora" - esa persona lo confundió con una mujer solo porque era delgado y tenía los hombros estrechos ... La niña se sorprendió ... Mi hermano, sin embargo, quiso comportarse con elegancia y se quedó hasta el final de la película. Apenas podía sentarse en esa silla, pero después de la película encontró una excusa y se escapó.</p>
-<p> Después de ese incidente, Juan se encerró. No llamó a nadie de su familia, apagó su teléfono. Nadie sabía lo que le estaba pasando. Todos moríamos de preocupación.</p>
-<h2 class="redo"> Arruinó su salud y su salud mental</h2>
-<p> Juan se aisló completamente del mundo. A partir de ese momento, lo único que importaba era el gimnasio, los nuevos amigos y los diversos suplementos que le daban. Hacía más y más pesas, esforzando su cuerpo. Hizo todo lo posible para cambiar su genética. Quería fortalecer sus músculos, comenzando por su figura delgada y hombros estrechos. Los entrenamientos pesados ​​en el gimnasio no lo ayudaron. Ningún músculo apareció en su frágil cuerpo. Finalmente, comenzó a comprar impulsores peligrosos, que se suponía que le daban el cuerpo de un culturista. Todavía no sabía que estaba arriesgando su vida. Los continuos entrenamientos pesados, la motivación poco saludable, el odio a su cuerpo y las píldoras peligrosas estaban arruinando su salud y su psique.</p>
-<p> Lo peor es que fue de mal en peor. No volvió al trabajo, no podía soportar la vergüenza y la humillación frente a esa chica. Solo se dirigió a sus padres para pedirles dinero. Hizo muchas deudas con su familia y con la mayoría de sus amigos, solo para poder pagar el gimnasio, el entrenador personal, la ropa deportiva, los refuerzos y los suplementos que estaba tomando.</p>
-<p> Odiaba su cuerpo hasta el punto de destruirlo y torturarlo. El gimnasio se había convertido en una especie de sala de tortura. Pensó que estaba haciendo algo bueno al desarrollar sus músculos, pero en realidad estaba desgastando sus articulaciones y su cuerpo en general. Un día, su cuerpo se negó a obedecer. Se desmayó y un gran peso que estaba levantando cayó sobre él. Terminó en la sala de emergencias. Casi pierdo a mi hermano ...</p>
-<h2 class="redo"> ¿Cómo inventé la "patente de explosión muscular"?</h2>
-<p> Tuve que ayudar a mi hermano a conseguir una figura masculina de la que se sintiera orgulloso: sin gimnasio, sin dietas y sin suplementos peligrosos. Quería que pudiera tener un cuerpo en el que se sintiera 100% masculino. Cuando fui al hospital y miré a Juan, se me ocurrió una idea: ¡después de todo soy un científico! Participé en el descubrimiento de muchas sustancias que combaten eficazmente diversas enfermedades, afectan tejidos y genes. ¿Por qué no desarrollar una fórmula de crecimiento muscular automática que sea eficaz y segura? Y luego comencé la búsqueda ...</p>
-<p> He estado haciendo una intensa investigación de laboratorio durante seis meses. Probé diferentes combinaciones de sustancias activas en mi hermano. Solo señalaré que todos eran 100% naturales y seguros para el cuerpo. El conocimiento científico y un poco de suerte llevaron rápidamente a este resultado: desarrollé una fórmula única que regenera las fibras musculares, estimula la síntesis de proteínas y la sometí inmediatamente a una investigación a gran escala. ¡Su eficacia del 98% ha sido confirmada por los mayores centros de investigación de Europa y EE. UU.! Durante las pruebas, mi fórmula intragénica ya ha ayudado a 7.000 hombres a ganar 10 kg de masa muscular pura.</p>
-<p> Juan, después de solo 1 semana de usar esta fórmula, activó la síntesis de proteínas y comenzó a ganar masa muscular 8 veces más rápido que cuando se suicidó en el gimnasio y se envenenó con esos suplementos. Y esto fue solo el comienzo. ¡La semana siguiente sus frágiles músculos explotaron! ¡Hizo dos bíceps como un atleta de UFC! Día a día mejoraba, ya que con su figura parecía un culturista profesional. Los músculos de todo el cuerpo eran duros, sólidos y fuertes.</p>
-<p> Después de solo 3 semanas, mi hermano, mirándose en el espejo, gritó y dijo: "¡Hermano mío, tú inventaste la patente para la explosión muscular! Para convertirme en una figura así, tendría que torturarme en el gimnasio por ¡6 años! ¡Eres un genio! "</p>
-<img style="width: 100%;" src="images/imgimg-prolesanpure.jpg"><p style="text-align: center; font-size: 14px; margin: 0; background-color: #ddd; padding: 2px 5px"> Mi hermano ganó 10 kg de masa muscular y logró una figura masculina de la que ahora está orgulloso</p>
-<p> Ganó un total de 10 kg de masa muscular pura en solo un mes. Lleno de energía, volvió a la vida, encontró trabajo y sobre todo ... tuvo el coraje de hablar con la chica de la que aún estaba enamorado. ¿Y sabes qué? ¡Casi se desmaya cuando lo vio! ¡Ella esperaba ver a un chico flaco y en su lugar conoció a un hombre real con músculos que parece un culturista!</p>
-<p> Permítanme explicarles brevemente por qué algunos hombres tienen músculos como los culturistas, mientras que otros son delgados o gordos. Este proceso es muy complicado, pero intentaré explicarlo en un lenguaje comprensible para una persona que no sea científica.</p>
-<p> Sepa que una figura musculosa no se debe solo al entrenamiento diario. Seguro que conoces a alguien que entrena casi todos los días y que no parece un culturista. Esto se debe a que no todos conocen la síntesis de proteínas. Es un gen que todo hombre tiene, pero cuando no se activa bloquea el crecimiento muscular natural y automático.</p>
-<p> Por eso mi desafío fue crear una fórmula que tuviera un efecto radical. Activar la síntesis de proteínas, luego activar el tejido muscular para un crecimiento automático, rápido, permanente y seguro. ¡Lo he hecho! He desarrollado mi propia fórmula intragénica. Lo llamé LongUp gotas.</p>
-<h2 class="redo"> ¿Por qué mi fórmula intragénica se llamó "la patente de la explosión muscular"?</h2>
-<h2 class="redoyel"><span> TIENE MÁS DEL 98% DE EFECTIVIDAD EN LA CONSTRUCCIÓN DEL TEJIDO MUSCULAR</span></h2>
-<img style="width: 100%;" src="images/ba.png"><div style="display: flex; margin-top: 2%">
-<div style="width: 50%;">
-<h2 style="text-align: center; margin: 0;"> ANTES</h2>
-<p style="padding:0 5px; text-align: center;"></p>
-</div>
-<div style="width: 50%;">
-<h2 style="text-align: center; margin: 0;"> DESPUÉS</h2>
-<p style="padding:0 5px; text-align: center;"></p>
-</div>
-</div>
-<br><p> Hasta ahora, todo esto puede parecer un milagro. Pero es un hecho que lo confirma el caso de mi hermano y otros 7.000 hombres que ya han ganado 10 kg de masa muscular en 1 mes. Además, la eficacia de la fórmula intragénica fue probada por el centro de investigación español en Barcelona. Es un descubrimiento mundial que se ha ganado el reconocimiento y la admiración de los principales especialistas en el mundo de la genética, la dietética y los culturistas profesionales.</p>
-<h2 class="redoyel"><span> ES 100% SEGURO Y FÁCIL DE USAR</span></h2>
-<div style><p> Los ingredientes naturales funcionan de maravilla: ¡la ciencia solo necesita desarrollar una composición perfecta! Este es el lema que me guió en la creación de la fórmula intragénica. La fórmula contiene solo sustancias naturales, seguras y súper efectivas. Las gotas LongUp son un complemento alimenticio que contiene un complejo de principios activos especialmente seleccionados, que apoyan los procesos de regeneración de las fibras musculares y estimulan la síntesis de proteínas, contribuyendo al máximo aumento de la masa muscular. Los extractos de plantas, vitaminas y microelementos aceleran activamente los procesos metabólicos, lo que se traduce en una mayor eficiencia de todo el cuerpo y una mejor efectividad durante el entrenamiento. La preparación se basa exclusivamente en ingredientes de origen natural, fácilmente asimilables y seguros de usar. La fórmula única acelera el desarrollo de la masa muscular, regula el manejo hormonal y apoya activamente el rendimiento físico. Además, ¡obtendrás 10 kg adicionales de músculos duros y fuertes! Para obtener los mejores resultados, se recomienda tomar 60 gotas al día.</p></div>
-<h2 class="redo"> ¡Todos los que estén acostumbrados a tu figura frágil o gorda se sorprenderán al ver 10 kg de músculos duros como una roca en tu cuerpo!</h2>
-<div class="infograph">
-<div class="infograph-column">
-<div class="infograph-row">
-<img src="images/icon1.png" alt class="infograph-img"><p class="infograph-text"> 10 KG DE CRECIMIENTO MUSCULAR EN 1 MES</p>
-<img src="images/arrow-315.png" alt class="infograph-arrow">
-</div>
-<div class="infograph-row infograph-rewerse">
-<img src="images/arrow-225.png" alt class="infograph-arrow"><p class="infograph-text"> 70% MÁS POTENCIA</p>
-<img src="images/icon4.png" alt class="infograph-img">
-</div>
-</div>
-<div class="infograph-column">
-<div class="infograph-row">
-<img src="images/icon2.png" alt class="infograph-img"><p class="infograph-text"> METABOLISMO A MÁXIMA VELOCIDAD</p>
-<img src="images/arrow-0.png" alt class="infograph-arrow">
-</div>
-<div class="infograph-row"><img src="images/prolesanpure-small.png" alt class="infograph-prod"></div>
-<div class="infograph-row infograph-rewerse">
-<img src="images/arrow-180.png" alt class="infograph-arrow"><p class="infograph-text"> FÁCIL DE USAR</p>
-<img src="images/icon5.png" alt class="infograph-img">
-</div>
-</div>
-<div class="infograph-column">
-<div class="infograph-row">
-<img src="images/icon3.png" alt class="infograph-img"><p class="infograph-text"> RECONSTRUCCIÓN AUTOMÁTICA DE MÚSCULOS SIN DIETAS NI EJERCICIO</p>
-<img src="images/arrow-45.png" alt class="infograph-arrow">
-</div>
-<div class="infograph-row infograph-rewerse">
-<img src="images/arrow-135.png" alt class="infograph-arrow"><p class="infograph-text"> AHORRO DE DINERO</p>
-<img src="images/icon6.png" alt class="infograph-img">
-</div>
-</div>
-</div>
-<p> Puedes seguir cansándote en el gimnasio. También puedes seguir envenenándote con peligrosos suplementos y potenciadores ... ¿Pero por qué, cuando te garantizo una forma rápida, sencilla y económica de ganar 10 kg de masa muscular pura? Solo hace falta 1 mes para unirse a los 7.000 usuarios satisfechos de las gotas LongUp que ya están disfrutando de su figura de culturista.</p>
-<h2 class="redo"> ¡No arriesgas nada!</h2>
-<p> Con las gotas LongUp obtendrás 10 kg de músculos en 1 mes. Además, ¡no arriesgarás nada! Confirmando su éxito, mi fórmula ha recibido una prestigiosa garantía de triple satisfacción: originalidad, calidad y satisfacción.</p>
-<h2 style="text-align: center; margin-top: 50px; font-weight: bold;"> Garantía de Satisfacción Triple</h2>
-<p> 1. Originalidad garantizada en la fórmula intragénica, las gotas LongUp se han insertado con una fórmula basada en sustancias fuertes que activan el crecimiento del tejido muscular. Su eficacia está confirmada por pruebas clínicas. Es la única fórmula tan innovadora y eficaz. Por este motivo, puede estar seguro de que recibirá el producto original, disponible únicamente a través de este sitio web.</p>
-<p> 2. Calidad garantizada: gracias al avanzado proceso de fabricación de la fórmula intragénica, las gotas LongUp cumplen con los más altos estándares de calidad. Por el bien de su salud y bienestar, la concentración de sustancias activas se ha seleccionado de manera que la fórmula sea completamente segura. Todo ello para que sus efectos cumplan tus expectativas al 100%.</p>
-<p> 3. Satisfacción garantizada: numerosas pruebas de laboratorio y de consumidores confirman la máxima eficacia de las gotas LongUp. A partir de estos resultados, la fórmula ha ganado el reconocimiento de especialistas de todo el mundo, que la recomiendan a sus clientes. Están seguros de que en 1 mes ganarás 10 kg de masa muscular pura (independientemente del tipo de silueta).</p>
-</div>
-<br><br><br><div class="our-form">
-<h2 class="redo"> Obtén 10 kg de músculo en 1 mes, de forma rápida, sencilla y económica</h2>
-<p style="text-align: center; margin-top: 30px; font-weight: bold;"> Obtén las gotas LongUp con <span style="color: #ff0000;"> un 50% de descuento</span></p>
-<div id="licznikProduktow">
-<span style="font-weight: bold;font-size: 14px;display: block; margin-bottom: 30px; width: 130px"> Número de unidades disponibles en stock: </span><span class="ileProduktow" id="setne">0</span><span class="ileProduktow" id="dziesietne">0</span><span class="ileProduktow" id="jednosci">9</span>
-</div>
-<div id="bottle">
-<img src="images/product-1.png" style="max-height: 300px; margin-bottom: 0;max-width: 100%;"><div class="hidden-xs" id="bottle_g"><img src="images/hr-satisfaction.png" width="80" height="80"></div>
-</div>
+	<div id="wrapper">
+		<img style="width:100%;margin-bottom: 15px;" src="images/logotypes-es.jpg" alt class="top_banner">
+		<div id="post" style="width: 96%!important;max-width: 100%">
+			<h1 class="a1" style="color: #820000;"> En 1 mes ganarás 10 kg de músculo tan duro como una roca sin tener
+				que hacer ejercicio ni dieta, un efecto confirmado por pruebas médicas independientes. </h1>
+			<img style="width:50%;float:right;margin: 40px 0 0 10px;max-width: 245px;" class
+				src="images/prof-prolesanpure.jpg"><br>
+			<p> Daniel</p>
+			<p> Soy el Prof. Carlos Ortiz Torres y soy científico, especialista en ingeniería genética. En esta página,
+				quiero presentarte el mayor logro de mi vida, por el que acabo de ser nominado para el equivalente
+				asiático del Premio Nobel: el Premio Confucio. He desarrollado una fórmula para estimular la síntesis de
+				proteínas, contribuyendo al máximo aumento de masa muscular. Gracias a mi método, todo hombre puede
+				ganar de forma automática y permanente 10 kg de masa muscular pura en 1 mes.</p>
+			<h2 class="redo" style="margin-top: 50px;"> Entonces, si quieres:</h2>
+			<ul class="libo" style="margin-left: 20px;">
+				<li>
+					<strong> ganar 10 kg de masa muscular </strong> pura en 1 mes de forma automática, sin gimnasio ni
+					dietas;
+				</li>
+				<li>
+					<strong> Esculpe músculos duros como una roca por todo el cuerpo, </strong> sin levantar pesas, sin
+					entrenar y sin las lesiones y traumas resultantes;
+				</li>
+				<li>
+					<strong> haz la "tortuga" en el abdomen </strong> – incluso si en este momento solo ves rollos de
+					grasa;
+				</li>
+				<li>
+					<strong> Convierte la grasa en músculos fuertes y firmes, </strong> incluso si está luchando contra
+					el sobrepeso o la obesidad
+				</li>
+				<li> ganar 4 veces más energía y 5 veces más fuerza muscular y así sentirse como un verdadero hombre ...
+				</li>
+			</ul>
+			<p> ... y si quieres lograr todo esto sin los entrenamientos excesivos, los suplementos peligrosos, las
+				dietas agotadoras y en consecuencia ahorrar decenas de miles de euros - lee lo que tengo que contarte.
+			</p>
+			<p> No importa la edad que tengas o el tiempo que lleves intentando esculpir tu figura musculosa. Incluso si
+				has escuchado que no hay nada que ver con tu tipo de cuerpo porque simplemente eres delgado o con
+				sobrepeso y estás condenado al fracaso ... <strong> Debes saber que en un mes podrás disfrutar de 10 kg
+					de músculo duro como una roca sin ir al gimnasio.!</strong></p>
+			<h2 class="redo"> Aquí te explico por qué mi fórmula es una excelente alternativa a las dietas, los
+				suplementos y los ejercicios insoportables en el gimnasio: </h2>
+			<ul class="libo" style="margin-left: 20px;">
+				<li>
+					<strong> obtendrás 10 kg de músculo en 1 mes, </strong> logrando un mejor efecto que haciendo 3 años
+					de entrenamiento intenso;
+				</li>
+				<li>
+					<strong> automáticamente obtendrás músculos robustos, </strong> sin esfuerzo y sin sacrificio,
+					incluso cuando estés acostado frente al televisor, leyendo un periódico o durmiendo;
+				</li>
+				<li>
+					<strong> no es necesario seguir ninguna dieta,</strong> - porque el crecimiento intensivo del tejido
+					muscular se produce a nivel del ADN;
+				</li>
+				<li>
+					<strong> evitarás las consecuencias de lesiones o traumatismos en los músculos,</strong> las
+					articulaciones y la columna, que son el resultado final del entrenamiento;
+				</li>
+				<li>
+					<strong> protegerás tu salud, </strong> en lugar de envenenarse con nutrientes y estimulantes
+					peligrosos;
+				</li>
+				<li>
+					<strong> ahorrarás tiempo,</strong> en lugar de pasar la mitad de tu vida en el gimnasio;
+				</li>
+				<li>
+					<strong> Ahorrarás dinero, </strong> en lugar de gastarlo en gimnasios y nutricionistas.
+				</li>
+			</ul>
+			<h2 class="redo"> He desarrollado un método intragénico que genera automáticamente 10 kg de masa muscular
+				pura en 1 mes. </h2>
+			<p> Gracias a esto, no tendrás que hacer ejercicio, seguir dietas o envenenarte con suplementos y
+				potenciadores sospechosos. Olvidarás todos los problemas y humillaciones que te han preocupado por tu
+				figura no deportiva, demasiado delgada o gorda. Comenzará a desarrollar masa muscular limpia haciendo
+				sus actividades diarias: ir al trabajo, tomar una taza de té, contestar el teléfono. Cada movimiento
+				activará los procesos regenerativos de las fibras musculares y estimulará la síntesis de proteínas, que
+				construirá de forma automática y permanente masa muscular pura. </p>
+			<p> Y eso es todo porque he desarrollado una fórmula intragénica que genera automáticamente 10 kg de masa
+				muscular pura en 1 mes. ¿Como lo hice? </p>
+			<h2 class="redo"> Quería ayudar a mi hermano a conseguir una figura masculina de la que estuviera orgulloso.
+			</h2>
+			<p> Las últimas investigaciones del Instituto de Deportes muestran que el 62% de los hombres en España
+				tienen un problema de baja autoestima debido a la falta de figura masculina, mientras que 4 de cada 10
+				de ellos son percibidos como no masculinos. Lamentablemente este problema también afectó a mi hermano
+				pequeño: Juan.</p>
+			<p> Mi hermano siempre ha sido frágil, tenía hombros estrechos, pero nadie en la familia pensó que se sentía
+				mal en su cuerpo. Todo cambió cuando se fue a su primer trabajo y se enamoró de una chica que había
+				conocido allí.</p>
+			<p> Empezó a tener problemas para dormir, le sudaban las manos ... Pensó que estaba enfermo, pero estaba
+				"simplemente" enamorado. Fue un amor platónico. Mi hermano era bastante tímido e inseguro, tenía miedo
+				de ser rechazado.</p>
+			<p> Después de unos meses, en una fiesta de la empresa, finalmente encontró el coraje para acercarse a la
+				niña e invitarla al cine. Él esperaba un "no", pero ella aceptó. Mi hermano estaba en el séptimo cielo.
+				Durante los días siguientes no habló más que de la cita y la chica de sus sueños.</p>
+			<p> Planeó todo hasta el más mínimo detalle: el cine, la película romántica, el paseo y la cena. Se
+				encontraron frente al cine. Cuando llegó la niña, hicieron cola en el mostrador. Hablaron, se rieron y
+				ni siquiera escucharon a nadie decirles nada. De repente, mi hermano sintió que alguien le daba unas
+				palmaditas en el hombro y le decía: "Señora, se le cayó la bufanda". Mi hermano se puso rojo. "Señora" -
+				esa persona lo confundió con una mujer solo porque era delgado y tenía los hombros estrechos ... La niña
+				se sorprendió ... Mi hermano, sin embargo, quiso comportarse con elegancia y se quedó hasta el final de
+				la película. Apenas podía sentarse en esa silla, pero después de la película encontró una excusa y se
+				escapó.</p>
+			<p> Después de ese incidente, Juan se encerró. No llamó a nadie de su familia, apagó su teléfono. Nadie
+				sabía lo que le estaba pasando. Todos moríamos de preocupación.</p>
+			<h2 class="redo"> Arruinó su salud y su salud mental</h2>
+			<p> Juan se aisló completamente del mundo. A partir de ese momento, lo único que importaba era el gimnasio,
+				los nuevos amigos y los diversos suplementos que le daban. Hacía más y más pesas, esforzando su cuerpo.
+				Hizo todo lo posible para cambiar su genética. Quería fortalecer sus músculos, comenzando por su figura
+				delgada y hombros estrechos. Los entrenamientos pesados ​​en el gimnasio no lo ayudaron. Ningún músculo
+				apareció en su frágil cuerpo. Finalmente, comenzó a comprar impulsores peligrosos, que se suponía que le
+				daban el cuerpo de un culturista. Todavía no sabía que estaba arriesgando su vida. Los continuos
+				entrenamientos pesados, la motivación poco saludable, el odio a su cuerpo y las píldoras peligrosas
+				estaban arruinando su salud y su psique.</p>
+			<p> Lo peor es que fue de mal en peor. No volvió al trabajo, no podía soportar la vergüenza y la humillación
+				frente a esa chica. Solo se dirigió a sus padres para pedirles dinero. Hizo muchas deudas con su familia
+				y con la mayoría de sus amigos, solo para poder pagar el gimnasio, el entrenador personal, la ropa
+				deportiva, los refuerzos y los suplementos que estaba tomando.</p>
+			<p> Odiaba su cuerpo hasta el punto de destruirlo y torturarlo. El gimnasio se había convertido en una
+				especie de sala de tortura. Pensó que estaba haciendo algo bueno al desarrollar sus músculos, pero en
+				realidad estaba desgastando sus articulaciones y su cuerpo en general. Un día, su cuerpo se negó a
+				obedecer. Se desmayó y un gran peso que estaba levantando cayó sobre él. Terminó en la sala de
+				emergencias. Casi pierdo a mi hermano ...</p>
+			<h2 class="redo"> ¿Cómo inventé la "patente de explosión muscular"?</h2>
+			<p> Tuve que ayudar a mi hermano a conseguir una figura masculina de la que se sintiera orgulloso: sin
+				gimnasio, sin dietas y sin suplementos peligrosos. Quería que pudiera tener un cuerpo en el que se
+				sintiera 100% masculino. Cuando fui al hospital y miré a Juan, se me ocurrió una idea: ¡después de todo
+				soy un científico! Participé en el descubrimiento de muchas sustancias que combaten eficazmente diversas
+				enfermedades, afectan tejidos y genes. ¿Por qué no desarrollar una fórmula de crecimiento muscular
+				automática que sea eficaz y segura? Y luego comencé la búsqueda ...</p>
+			<p> He estado haciendo una intensa investigación de laboratorio durante seis meses. Probé diferentes
+				combinaciones de sustancias activas en mi hermano. Solo señalaré que todos eran 100% naturales y seguros
+				para el cuerpo. El conocimiento científico y un poco de suerte llevaron rápidamente a este resultado:
+				desarrollé una fórmula única que regenera las fibras musculares, estimula la síntesis de proteínas y la
+				sometí inmediatamente a una investigación a gran escala. ¡Su eficacia del 98% ha sido confirmada por los
+				mayores centros de investigación de Europa y EE. UU.! Durante las pruebas, mi fórmula intragénica ya ha
+				ayudado a 7.000 hombres a ganar 10 kg de masa muscular pura.</p>
+			<p> Juan, después de solo 1 semana de usar esta fórmula, activó la síntesis de proteínas y comenzó a ganar
+				masa muscular 8 veces más rápido que cuando se suicidó en el gimnasio y se envenenó con esos
+				suplementos. Y esto fue solo el comienzo. ¡La semana siguiente sus frágiles músculos explotaron! ¡Hizo
+				dos bíceps como un atleta de UFC! Día a día mejoraba, ya que con su figura parecía un culturista
+				profesional. Los músculos de todo el cuerpo eran duros, sólidos y fuertes.</p>
+			<p> Después de solo 3 semanas, mi hermano, mirándose en el espejo, gritó y dijo: "¡Hermano mío, tú
+				inventaste la patente para la explosión muscular! Para convertirme en una figura así, tendría que
+				torturarme en el gimnasio por ¡6 años! ¡Eres un genio! "</p>
+			<img style="width: 100%;" src="images/imgimg-prolesanpure.jpg">
+			<p style="text-align: center; font-size: 14px; margin: 0; background-color: #ddd; padding: 2px 5px"> Mi
+				hermano ganó 10 kg de masa muscular y logró una figura masculina de la que ahora está orgulloso</p>
+			<p> Ganó un total de 10 kg de masa muscular pura en solo un mes. Lleno de energía, volvió a la vida,
+				encontró trabajo y sobre todo ... tuvo el coraje de hablar con la chica de la que aún estaba enamorado.
+				¿Y sabes qué? ¡Casi se desmaya cuando lo vio! ¡Ella esperaba ver a un chico flaco y en su lugar conoció
+				a un hombre real con músculos que parece un culturista!</p>
+			<p> Permítanme explicarles brevemente por qué algunos hombres tienen músculos como los culturistas, mientras
+				que otros son delgados o gordos. Este proceso es muy complicado, pero intentaré explicarlo en un
+				lenguaje comprensible para una persona que no sea científica.</p>
+			<p> Sepa que una figura musculosa no se debe solo al entrenamiento diario. Seguro que conoces a alguien que
+				entrena casi todos los días y que no parece un culturista. Esto se debe a que no todos conocen la
+				síntesis de proteínas. Es un gen que todo hombre tiene, pero cuando no se activa bloquea el crecimiento
+				muscular natural y automático.</p>
+			<p> Por eso mi desafío fue crear una fórmula que tuviera un efecto radical. Activar la síntesis de
+				proteínas, luego activar el tejido muscular para un crecimiento automático, rápido, permanente y seguro.
+				¡Lo he hecho! He desarrollado mi propia fórmula intragénica. Lo llamé LongUp gotas.</p>
+			<h2 class="redo"> ¿Por qué mi fórmula intragénica se llamó "la patente de la explosión muscular"?</h2>
+			<h2 class="redoyel"><span> TIENE MÁS DEL 98% DE EFECTIVIDAD EN LA CONSTRUCCIÓN DEL TEJIDO MUSCULAR</span>
+			</h2>
+			<img style="width: 100%;" src="images/ba.png">
+			<div style="display: flex; margin-top: 2%">
+				<div style="width: 50%;">
+					<h2 style="text-align: center; margin: 0;"> ANTES</h2>
+					<p style="padding:0 5px; text-align: center;"></p>
+				</div>
+				<div style="width: 50%;">
+					<h2 style="text-align: center; margin: 0;"> DESPUÉS</h2>
+					<p style="padding:0 5px; text-align: center;"></p>
+				</div>
+			</div>
+			<br>
+			<p> Hasta ahora, todo esto puede parecer un milagro. Pero es un hecho que lo confirma el caso de mi hermano
+				y otros 7.000 hombres que ya han ganado 10 kg de masa muscular en 1 mes. Además, la eficacia de la
+				fórmula intragénica fue probada por el centro de investigación español en Barcelona. Es un
+				descubrimiento mundial que se ha ganado el reconocimiento y la admiración de los principales
+				especialistas en el mundo de la genética, la dietética y los culturistas profesionales.</p>
+			<h2 class="redoyel"><span> ES 100% SEGURO Y FÁCIL DE USAR</span></h2>
+			<div style>
+				<p> Los ingredientes naturales funcionan de maravilla: ¡la ciencia solo necesita desarrollar una
+					composición perfecta! Este es el lema que me guió en la creación de la fórmula intragénica. La
+					fórmula contiene solo sustancias naturales, seguras y súper efectivas. Las gotas LongUp son un
+					complemento alimenticio que contiene un complejo de principios activos especialmente seleccionados,
+					que apoyan los procesos de regeneración de las fibras musculares y estimulan la síntesis de
+					proteínas, contribuyendo al máximo aumento de la masa muscular. Los extractos de plantas, vitaminas
+					y microelementos aceleran activamente los procesos metabólicos, lo que se traduce en una mayor
+					eficiencia de todo el cuerpo y una mejor efectividad durante el entrenamiento. La preparación se
+					basa exclusivamente en ingredientes de origen natural, fácilmente asimilables y seguros de usar. La
+					fórmula única acelera el desarrollo de la masa muscular, regula el manejo hormonal y apoya
+					activamente el rendimiento físico. Además, ¡obtendrás 10 kg adicionales de músculos duros y fuertes!
+					Para obtener los mejores resultados, se recomienda tomar 60 gotas al día.</p>
+			</div>
+			<h2 class="redo"> ¡Todos los que estén acostumbrados a tu figura frágil o gorda se sorprenderán al ver 10 kg
+				de músculos duros como una roca en tu cuerpo!</h2>
+			<div class="infograph">
+				<div class="infograph-column">
+					<div class="infograph-row">
+						<img src="images/icon1.png" alt class="infograph-img">
+						<p class="infograph-text"> 10 KG DE CRECIMIENTO MUSCULAR EN 1 MES</p>
+						<img src="images/arrow-315.png" alt class="infograph-arrow">
+					</div>
+					<div class="infograph-row infograph-rewerse">
+						<img src="images/arrow-225.png" alt class="infograph-arrow">
+						<p class="infograph-text"> 70% MÁS POTENCIA</p>
+						<img src="images/icon4.png" alt class="infograph-img">
+					</div>
+				</div>
+				<div class="infograph-column">
+					<div class="infograph-row">
+						<img src="images/icon2.png" alt class="infograph-img">
+						<p class="infograph-text"> METABOLISMO A MÁXIMA VELOCIDAD</p>
+						<img src="images/arrow-0.png" alt class="infograph-arrow">
+					</div>
+					<div class="infograph-row"><img src="images/prolesanpure-small.png" alt class="infograph-prod">
+					</div>
+					<div class="infograph-row infograph-rewerse">
+						<img src="images/arrow-180.png" alt class="infograph-arrow">
+						<p class="infograph-text"> FÁCIL DE USAR</p>
+						<img src="images/icon5.png" alt class="infograph-img">
+					</div>
+				</div>
+				<div class="infograph-column">
+					<div class="infograph-row">
+						<img src="images/icon3.png" alt class="infograph-img">
+						<p class="infograph-text"> RECONSTRUCCIÓN AUTOMÁTICA DE MÚSCULOS SIN DIETAS NI EJERCICIO</p>
+						<img src="images/arrow-45.png" alt class="infograph-arrow">
+					</div>
+					<div class="infograph-row infograph-rewerse">
+						<img src="images/arrow-135.png" alt class="infograph-arrow">
+						<p class="infograph-text"> AHORRO DE DINERO</p>
+						<img src="images/icon6.png" alt class="infograph-img">
+					</div>
+				</div>
+			</div>
+			<p> Puedes seguir cansándote en el gimnasio. También puedes seguir envenenándote con peligrosos suplementos
+				y potenciadores ... ¿Pero por qué, cuando te garantizo una forma rápida, sencilla y económica de ganar
+				10 kg de masa muscular pura? Solo hace falta 1 mes para unirse a los 7.000 usuarios satisfechos de las
+				gotas LongUp que ya están disfrutando de su figura de culturista.</p>
+			<h2 class="redo"> ¡No arriesgas nada!</h2>
+			<p> Con las gotas LongUp obtendrás 10 kg de músculos en 1 mes. Además, ¡no arriesgarás nada! Confirmando su
+				éxito, mi fórmula ha recibido una prestigiosa garantía de triple satisfacción: originalidad, calidad y
+				satisfacción.</p>
+			<h2 style="text-align: center; margin-top: 50px; font-weight: bold;"> Garantía de Satisfacción Triple</h2>
+			<p> 1. Originalidad garantizada en la fórmula intragénica, las gotas LongUp se han insertado con una fórmula
+				basada en sustancias fuertes que activan el crecimiento del tejido muscular. Su eficacia está confirmada
+				por pruebas clínicas. Es la única fórmula tan innovadora y eficaz. Por este motivo, puede estar seguro
+				de que recibirá el producto original, disponible únicamente a través de este sitio web.</p>
+			<p> 2. Calidad garantizada: gracias al avanzado proceso de fabricación de la fórmula intragénica, las gotas
+				LongUp cumplen con los más altos estándares de calidad. Por el bien de su salud y bienestar, la
+				concentración de sustancias activas se ha seleccionado de manera que la fórmula sea completamente
+				segura. Todo ello para que sus efectos cumplan tus expectativas al 100%.</p>
+			<p> 3. Satisfacción garantizada: numerosas pruebas de laboratorio y de consumidores confirman la máxima
+				eficacia de las gotas LongUp. A partir de estos resultados, la fórmula ha ganado el reconocimiento de
+				especialistas de todo el mundo, que la recomiendan a sus clientes. Están seguros de que en 1 mes ganarás
+				10 kg de masa muscular pura (independientemente del tipo de silueta).</p>
+		</div>
+		<br><br><br>
+		<div class="our-form">
+			<h2 class="redo"> Obtén 10 kg de músculo en 1 mes, de forma rápida, sencilla y económica</h2>
+			<p style="text-align: center; margin-top: 30px; font-weight: bold;"> Obtén las gotas LongUp con <span
+					style="color: #ff0000;"> un 50% de descuento</span></p>
+			<div id="licznikProduktow">
+				<span style="font-weight: bold;font-size: 14px;display: block; margin-bottom: 30px; width: 130px">
+					Número de unidades disponibles en stock: </span><span class="ileProduktow" id="setne">0</span><span
+					class="ileProduktow" id="dziesietne">0</span><span class="ileProduktow" id="jednosci">9</span>
+			</div>
+			<div id="bottle">
+				<img src="images/product-1.png" style="max-height: 300px; margin-bottom: 0;max-width: 100%;">
+				<div class="hidden-xs" id="bottle_g"><img src="images/hr-satisfaction.png" width="80" height="80"></div>
+			</div>
 
-<form method="post" id="our-main-form" geo="es" action="api.php" onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
-<h2 class="our-form-header" style="background: #fff;margin-top: 95px;text-align: center;display: block;"> FORMULARIO DE ORDEN</h2>
-<p class="our-form-description"> ¡SIP! Quiero obtener las gotas LongUp. Esto significa que mi elección es completamente segura ya que el producto tiene una triple garantía de satisfacción. El producto será entregado por correo o mensajería en los próximos días.</p>
-<center><strong><center>
-<span style="text-decoration: line-through;"><span class="price_land_s4"> 99.90 </span><span class="price_land_curr"> Euros</span></span><br><span class="price_land_s1" style="color:red;font-size:24px"> 49.95 </span><span class="price_land_curr"> Euros</span>
-</center></strong></center>
-<div class="our-form-itemInput">
-<label class="itemInput-label" for><span>*</span> Nombre: </label><input class="our-form-txtInput" name="name" type="text" id required>
-</div>
-<div class="our-form-itemInput">
-<label class="itemInput-label" for><span>*</span> Número de teléfono: </label><input id="phone" class="our-form-txtInput" type="tel" name="phone" required>
-</div>
-<button type="submit" class="our-order-btn"> ORDENAR AHORA </button>
-<input name="data1" type="hidden" value="{subid}">
-</form>
+			<form method="post" id="our-main-form" geo="es" action="api.php"
+				onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+				<h2 class="our-form-header"
+					style="background: #fff;margin-top: 95px;text-align: center;display: block;"> FORMULARIO DE ORDEN
+				</h2>
+				<p class="our-form-description"> ¡SIP! Quiero obtener las gotas LongUp. Esto significa que mi elección
+					es completamente segura ya que el producto tiene una triple garantía de satisfacción. El producto
+					será entregado por correo o mensajería en los próximos días.</p>
+				<center><strong>
+						<center>
+							<span style="text-decoration: line-through;"><span class="price_land_s4"> 99.90 </span><span
+									class="price_land_curr"> Euros</span></span><br><span class="price_land_s1"
+								style="color:red;font-size:24px"> 49.95 </span><span class="price_land_curr">
+								Euros</span>
+						</center>
+					</strong></center>
+				<div class="our-form-itemInput">
+					<label class="itemInput-label" for><span>*</span> Nombre: </label><input class="our-form-txtInput"
+						name="name" type="text" id required>
+				</div>
+				<div class="our-form-itemInput">
+					<label class="itemInput-label" for><span>*</span> Número de teléfono: </label><input id="phone"
+						class="our-form-txtInput" type="tel" name="phone" required>
+				</div>
+				<button type="submit" class="our-order-btn"> ORDENAR AHORA </button>
+				<input name="data1" type="hidden" value="{subid}">
+			</form>
 
-</div>
-</div>
-<br><br><h5><center><span style="color: silver"> El producto es un complemento alimenticio. El producto no puede ser responsable del diagnóstico y tratamiento de ninguna enfermedad o enfermedad clasificada por medicamentos. El producto no debe utilizarse como sustituto de una dieta variada. El producto puede mostrar funciones de apoyo y beneficiosas para el organismo y los efectos del uso del producto son el resultado de las predisposiciones individuales del organismo.</span></center></h5>
-<style>.lang-list{position: fixed;left: 0;top: 20%;text-align: center;min-width: 34px;width: 5%;padding: 10px 5px;background-color: rgba(0,0,0,.6);border: 1px solid;border-color: rgba(0,0,0,.3);z-index: 100}.lang-list img{opacity: 0.5;display: inline-block}.lang-list img.active-lang,.lang-list img:hover{opacity: 1;cursor: pointer}</style>
-	   
-	
+		</div>
+	</div>
+	<br><br>
+	<h5>
+		<center><span style="color: silver"> El producto es un complemento alimenticio. El producto no puede ser
+				responsable del diagnóstico y tratamiento de ninguna enfermedad o enfermedad clasificada por
+				medicamentos. El producto no debe utilizarse como sustituto de una dieta variada. El producto puede
+				mostrar funciones de apoyo y beneficiosas para el organismo y los efectos del uso del producto son el
+				resultado de las predisposiciones individuales del organismo.</span></center>
+	</h5>
+	<style>
+		.lang-list {
+			position: fixed;
+			left: 0;
+			top: 20%;
+			text-align: center;
+			min-width: 34px;
+			width: 5%;
+			padding: 10px 5px;
+			background-color: rgba(0, 0, 0, .6);
+			border: 1px solid;
+			border-color: rgba(0, 0, 0, .3);
+			z-index: 100
+		}
 
-	
-<script> 
-const anchors = document.querySelectorAll('a[href*="#"]')
+		.lang-list img {
+			opacity: 0.5;
+			display: inline-block
+		}
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href')
-    
-    document.querySelector('' + blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
-</script>			
+		.lang-list img.active-lang,
+		.lang-list img:hover {
+			opacity: 1;
+			cursor: pointer
+		}
+	</style>
 
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-        let anchors = document.getElementsByTagName("a");
-        for (let i=0; i<anchors.length; i++) {
-            anchors[i].setAttribute("target", "_parent");
-        }
-    });
-</script>	
 
-<script type="text/javascript" src="/libs/js/gdpr.js"></script>
-<link rel="stylesheet" href="/libs/js/gdpr.css">
-<script>
+
+
+	<script>
+		const anchors = document.querySelectorAll('a[href*="#"]')
+
+		for (let anchor of anchors) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+
+				const blockID = anchor.getAttribute('href')
+
+				document.querySelector('' + blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				})
+			})
+		}
+	</script>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+			let anchors = document.getElementsByTagName("a");
+			for (let i = 0; i < anchors.length; i++) {
+				anchors[i].setAttribute("target", "_parent");
+			}
+		});
+	</script>
+
+	<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+	<link rel="stylesheet" href="/libs/js/gdpr.css">
+	<script>
 		var phonePattern = {
 			'ru': '+7 (___) ___-__-__',
 			'ua': '+38-___-___-__-__',
@@ -291,7 +1041,7 @@ for (let anchor of anchors) {
 				};
 
 				input.value = matrix.replace(/./g, function (a) {
-					return /[_|?\d]/.test(a) && i < val.length? val.charAt(i++): i >= val.length? "": a
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
 				});
 
 
@@ -317,8 +1067,10 @@ for (let anchor of anchors) {
 			});
 		});
 
-</script>
+	</script>
 
 
 
-</body></html>
+</body>
+
+</html>
