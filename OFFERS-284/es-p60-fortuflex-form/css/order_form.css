@@ -1,0 +1,396 @@
+#order_form {
+
+	background: white;
+
+	    padding: 47px 25px 146px 25px;
+    max-width: 651px;
+
+	font-family:Arial;
+
+	margin:20px;
+
+	background-image:url("../images/formbg.jpg");
+
+	background-repeat:no-repeat;
+
+
+}
+
+@media (min-width: 600px) and (max-width: 739px) {
+      #order_form{
+      padding: 20px!important;
+	    margin: 0px -12px!important;
+	    padding-bottom: 116px!important;}}
+
+
+@media (min-width: 460px) and (max-width: 599px) {
+      #order_form{
+          padding: 20px!important;
+    margin: 0px -38px!important;
+    padding-bottom: 177px!important;
+}}
+
+
+
+#order_form div {
+
+	background:transparent!important;
+	padding: 0px 5px;
+
+}
+
+#order_form h2 {
+
+	margin:25px 0 0 0;
+
+	padding:0px;
+
+	line-height:32px;
+
+	border:none;
+
+}
+
+#order_form label {
+
+	width:230px;
+
+	display:block;
+
+	padding:5px 0 5px 0;
+
+	font-weight:bold;
+
+	font-size:16px;
+
+}
+
+#order_form label.vertical {
+
+	border:none!important;
+
+}
+
+
+
+.device_info {
+
+	font-size: 14px;
+
+	color:green;
+
+	display:block;
+
+	margin:10px 20px;
+
+}
+
+
+
+#order_form .order_form_pole {
+
+	padding:5px;
+
+	margin:0px;
+
+}
+#order_form select {
+
+	font-size:21px;
+
+	padding:4px;
+
+	border-radius:3px;
+
+	border:2px solid #e9d7dc;
+
+	max-width:300px;
+
+	width:100%;
+
+}
+#order_form input {
+
+	font-size:21px;
+
+	padding:15px;
+
+	border-radius:3px;
+
+	border:2px solid #e9d7dc;
+
+	max-width:300px;
+
+	width:100%;
+
+}
+
+#order_form span {
+
+	font-size:12px;
+
+}
+
+
+
+#order_form button, .obutton {
+
+    display: inline-block;
+
+    padding: 20px;
+
+    color: #fff;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+
+    border-radius: 5px;
+
+    background-color: #0299ff;
+
+    background-position: 1.35em .94em;
+
+    background-size: 1em;
+
+    background-repeat: no-repeat;
+
+    transition: all .15s ease-in-out;
+
+	border:none;
+
+	cursor:pointer;
+
+	font-size:20px;
+
+	margin-top:20px;
+	font-family: roboto condensed;
+    text-transform: uppercase;
+
+}
+
+#order_form button:hover, .obutton:hover {
+
+	background-color:#017ACC;
+
+}
+
+#order_form button:active {
+
+	position:relative;
+
+	top:1px;
+
+}
+
+
+
+.order_info h2 {
+
+	border:none!important;
+    font-size: 30px;
+	color:red!important;
+
+}
+
+
+
+.left_count {
+
+    background: red;
+
+
+    margin: 12px 0px;
+
+    width: 210px;
+
+    color: #fff;
+
+    text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+
+	font-size:32px!important;
+
+	border-radius:5px;
+
+}
+
+
+
+.left_count .prod_left_val {
+
+	font-size:52px!important;
+
+}
+
+
+
+#order_form_success {
+
+	position:relative;
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+	#order_form input {
+
+		
+
+	}
+
+	
+
+	#order_form label {
+
+		font-size:14px;
+
+	}
+
+	
+
+	#order_form button {
+
+		font-size:16px;
+
+	}
+
+	
+
+	#order_form {
+
+		padding: 21px;
+		padding-top:30px;
+	}
+
+	
+
+	#order_form .order_form_pole {
+
+		padding: 0px;
+
+		margin: 2px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 459px) {
+
+	#order_form input {
+
+		/*width:80%;*/
+
+	}
+
+	
+
+	#order_form {
+
+margin-left: -37px;
+    margin-right: -35px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 349px) {
+
+	#order_form input {
+
+		font-size:17px;
+
+	}
+
+	
+
+	#order_form button {
+
+		margin-left:0px;
+
+	}
+
+}
+
+#order_form h2 {
+    margin: 0px 0px 25px;
+    padding: 0px;
+    line-height: 32px;
+}
+
+#order_form label {
+    width: 493px;
+    display: inline-block;
+    /* border-bottom: 1px solid gray; */
+    padding: 5px 0px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    line-height: 14px;
+}
+
+#order_form label.vertical {
+    border: medium none ! important;
+}
+
+#order_form .order_form_pole {
+    padding: 10px;
+    margin: 10px;
+}
+
+#order_form input {
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #909090;
+    max-width: 498px;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 35px;
+}
+
+#order_form span {
+    font-size: 12px;
+}
+
+#order_form button {
+    box-shadow: 0px 1px 0px 0px rgb(245, 151, 142) inset;
+    background: rgb(242, 69, 55);
+    border-radius: 3px;
+    border: 1px solid rgb(208, 39, 24);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 21px 16px 21px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgb(129, 14, 5);
+    margin-top: 25px;
+    transition: 0.2s;
+    line-height: 30px;
+    font-family: roboto condensed;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#order_form button:hover {
+    background: rgb(198, 45, 31)
+}
+
+#order_form button:active {
+    position: relative;
+    top: 1px;
+}
+
+#order_form_success {
+    position: relative;
+}

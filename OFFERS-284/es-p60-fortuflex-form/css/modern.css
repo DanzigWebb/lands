@@ -1,0 +1,248 @@
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-info {height:auto !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner{max-width:inherit;min-width:inherit;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content a.aw-current-weather{padding-top:10px !important}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-bg {border:0 !important}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-day-details{display:none !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content{border-bottom:0 !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-top-content {border:2px solid #e9e9e9 !important }
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a, #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night p{color:#000 !important}
+#awtd1383134730488 div.aw-widget-36hour-inner div.bg-cl.aw-widget-content, #awtd1383134730488 div.aw-widget-36hour-inner div.bg-cl.aw-widget-content a.aw-current-weather div.aw-current-weather-info, #awtd1383134730488 div.aw-widget-36hour-inner div.bg-s.aw-widget-content, #awtd1383134730488 div.aw-widget-36hour-inner div.bg-s.aw-widget-content a.aw-current-weather div.aw-current-weather-info{color:#000 !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li h3, #awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li h3{font-size:1.2em !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours p.aw-day-message {font-size: 1.1em !important;}
+#awtd1383134730488 div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-real-feel{margin-bottom:10px !important;}
+#awtd1383134730488  .bg-f, #awtd1383134730488  .tbg-f, #awtd1383134730488 .aw-widget-current .bg-f, #awtd1383134730488 .aw-widget-current .tbg-f {background:none;}
+
+#link_get_widget{display: none ! important;}
+#link_logo{height:33px;}
+#link_logo > img{display: none !important;}
+div.aw-temp-unit{height:22px !important;}
+div.aw-temp-unit > ul{display:none;}
+.aw-widget-36hour .tbg-su, .aw-widget-36hour .bg-su, .aw-widget-current .tbg-su, .aw-widget-current .bg-su{background: none !important;}
+#link_arrow_right{display: none;}
+.aw-widget-36hour .tbg-cl, .aw-widget-36hour .bg-cl, .aw-widget-current .tbg-cl, .aw-widget-current .bg-cl{background: none !important;color:white !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a{color:black !important;}
+.aw-widget-36hour .tbg-c, .aw-widget-36hour .bg-c, .aw-widget-current .tbg-c, .aw-widget-current .bg-c{background: none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search{border: 1px solid #E9E9E9 !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search button.aw-submit-button{background: none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-day-details, div.aw-header{display:none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content{border-bottom:1px solid #e9e9e9 !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-bg{border: none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a:hover .aw-bg{border: 1px solid #e8e8e8 !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a:hover .aw-bg{border: 1px solid #e8e8e8 !important;}
+#link_current{cursor:default;}
+div.pogoda{position: relative;}
+.aw-widget-36hour .tbg-t, .aw-widget-36hour .bg-t, .aw-widget-current .tbg-t, .aw-widget-current .bg-t ,.aw-widget-36hour .tbg-s, .aw-widget-36hour .bg-s, .aw-widget-current .tbg-s, .aw-widget-current .bg-s, .aw-widget-36hour .tbg-r, .aw-widget-36hour .bg-r, .aw-widget-current .tbg-r, .aw-widget-current .bg-r{background:none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content.bg-cl, div.aw-widget-36hour-inner div.aw-widget-content.bg-s, div.aw-widget-36hour-inner div.aw-widget-content.bg-cl a.aw-current-weather div.aw-current-weather-info, div.aw-widget-36hour-inner div.aw-widget-content.bg-s a.aw-current-weather div.aw-current-weather-info{color: #000 !important;}
+#akudet{position:absolute;width:100%;height:100%;top:0px;z-index:9999;}
+span.aw-icon-1-l,
+	span.aw-icon-1-m,
+	span.aw-icon-1-s {
+		background: url('../images/1.png') no-repeat;
+	}
+	span.aw-icon-2-l,
+	span.aw-icon-2-m,
+	span.aw-icon-2-s {
+		background: url('../images/2.png') no-repeat;
+	}
+	span.aw-icon-3-l,
+	span.aw-icon-3-m,
+	span.aw-icon-3-s {
+		background: url('../images/3.png') no-repeat;
+	}
+	span.aw-icon-4-l,
+	span.aw-icon-4-m,
+	span.aw-icon-4-s {
+		background: url('../images/4.png') no-repeat;
+	}
+	span.aw-icon-5-l,
+	span.aw-icon-5-m,
+	span.aw-icon-5-s {
+		background: url('../images/5.png') no-repeat;
+	}
+	span.aw-icon-6-l,
+	span.aw-icon-6-m,
+	span.aw-icon-6-s {
+		background: url('../images/6.png') no-repeat;
+	}
+	span.aw-icon-7-l,
+	span.aw-icon-7-m,
+	span.aw-icon-7-s {
+		background: url('../images/7.png') no-repeat;
+	}
+	span.aw-icon-8-l,
+	span.aw-icon-8-m,
+	span.aw-icon-8-s {
+		background: url('../images/8.png') no-repeat;
+	}
+	span.aw-icon-11-l,
+	span.aw-icon-11-m,
+	span.aw-icon-11-s {
+		background: url('../images/11.png') no-repeat;
+	}
+	span.aw-icon-12-l,
+	span.aw-icon-12-m,
+	span.aw-icon-12-s {
+		background: url('../images/12.png') no-repeat;
+	}
+	span.aw-icon-13-l,
+	span.aw-icon-13-m,
+	span.aw-icon-13-s {
+		background: url('../images/13.png') no-repeat;
+	}
+	span.aw-icon-14-l,
+	span.aw-icon-14-m,
+	span.aw-icon-14-s {
+		background: url('../images/14.png') no-repeat;
+	}
+	span.aw-icon-15-l,
+	span.aw-icon-15-m,
+	span.aw-icon-15-s {
+		background: url('../images/15.png') no-repeat;
+	}
+	span.aw-icon-16-l,
+	span.aw-icon-16-m,
+	span.aw-icon-16-s {
+		background: url('../images/16.png') no-repeat;
+	}
+	span.aw-icon-17-l,
+	span.aw-icon-17-m,
+	span.aw-icon-17-s {
+		background: url('../images/17.png') no-repeat;
+	}
+	span.aw-icon-18-l,
+	span.aw-icon-18-m,
+	span.aw-icon-18-s {
+		background: url('../images/18.png') no-repeat;
+	}
+	span.aw-icon-19-l,
+	span.aw-icon-19-m,
+	span.aw-icon-19-s {
+		background: url('../images/19.png') no-repeat;
+	}
+	span.aw-icon-20-l,
+	span.aw-icon-20-m,
+	span.aw-icon-20-s {
+		background: url('../images/20.png') no-repeat;
+	}
+	span.aw-icon-21-l,
+	span.aw-icon-21-m,
+	span.aw-icon-21-s {
+		background: url('../images/21.png') no-repeat;
+	}
+	span.aw-icon-22-l,
+	span.aw-icon-22-m,
+	span.aw-icon-22-s {
+		background: url('../images/22.png') no-repeat;
+	}
+	span.aw-icon-23-l,
+	span.aw-icon-23-m,
+	span.aw-icon-23-s {
+		background: url('../images/23.png') no-repeat;
+	}
+	span.aw-icon-24-l,
+	span.aw-icon-24-m,
+	span.aw-icon-24-s {
+		background: url('../images/24.png') no-repeat;
+	}
+	span.aw-icon-25-l,
+	span.aw-icon-25-m,
+	span.aw-icon-25-s {
+		background: url('../images/25.png') no-repeat;
+	}
+	span.aw-icon-26-l,
+	span.aw-icon-26-m,
+	span.aw-icon-26-s {
+		background: url('../images/26.png') no-repeat;
+	}
+	span.aw-icon-29-l,
+	span.aw-icon-29-m,
+	span.aw-icon-29-s {
+		background: url('../images/29.png') no-repeat;
+	}
+	span.aw-icon-30-l,
+	span.aw-icon-30-m,
+	span.aw-icon-30-s {
+		background: url('../images/30.png') no-repeat;
+	}
+	span.aw-icon-31-l,
+	span.aw-icon-31-m,
+	span.aw-icon-31-s {
+		background: url('../images/31.png') no-repeat;
+	}
+	span.aw-icon-32-l,
+	span.aw-icon-32-m,
+	span.aw-icon-32-s {
+		background: url('../images/32.png') no-repeat;
+	}
+	span.aw-icon-33-l,
+	span.aw-icon-33-m,
+	span.aw-icon-33-s {
+		background: url('../images/33.png') no-repeat;
+	}
+	span.aw-icon-34-l,
+	span.aw-icon-34-m,
+	span.aw-icon-34-s {
+		background: url('../images/34.png') no-repeat;
+	}
+	span.aw-icon-35-l,
+	span.aw-icon-35-m,
+	span.aw-icon-35-s {
+		background: url('../images/35.png') no-repeat;
+	}
+	span.aw-icon-36-l,
+	span.aw-icon-36-m,
+	span.aw-icon-36-s {
+		background: url('../images/36.png') no-repeat;
+	}
+	span.aw-icon-37-l,
+	span.aw-icon-37-m,
+	span.aw-icon-37-s {
+		background: url('../images/37.png') no-repeat;
+	}
+	span.aw-icon-38-l,
+	span.aw-icon-38-m,
+	span.aw-icon-38-s {
+		background: url('../images/38.png') no-repeat;
+	}
+	span.aw-icon-39-l,
+	span.aw-icon-39-m,
+	span.aw-icon-39-s {
+		background: url('../images/39.png') no-repeat;
+	}
+	span.aw-icon-40-l,
+	span.aw-icon-40-m,
+	span.aw-icon-40-s {
+		background: url('../images/40.png') no-repeat;
+	}
+	span.aw-icon-41-l,
+	span.aw-icon-41-m,
+	span.aw-icon-41-s {
+		background: url('../images/41.png') no-repeat;
+	}
+	span.aw-icon-42-l,
+	span.aw-icon-42-m,
+	span.aw-icon-42-s {
+		background: url('../images/42.png') no-repeat;
+	}
+	span.aw-icon-43-l,
+	span.aw-icon-43-m,
+	span.aw-icon-43-s {
+		background: url('../images/43.png') no-repeat;
+	}
+	span.aw-icon-44-l,
+	span.aw-icon-44-m,
+	span.aw-icon-44-s {
+		background: url('../images/44.png') no-repeat;
+	}
+.lt-480 div.aw-widget-36hour-inner div.aw-widget-content a.aw-current-weather{padding-top: 10px !important;}
+.lt-480 div.aw-widget-36hour-inner div.aw-top-content div.aw-emergency-header{display:none;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours ul {font-size: inherit;}
+.aw-six-hours,.aw-more-block,.aw-more-sep-2,.aw-more-sep-3,.aw-more-sep-4,.aw-arrow,.aw-get-this-widget,.aw-alert-info {display:none;}
+.aw-fc-status{display:none!important;}
+div.aw-widget-36hour-inner{max-width: 300px;width: 100%;min-width: 100px;margin:auto;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a:hover .aw-bg{border:none !important;}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a:hover .aw-bg{border:none !important;}
+div.aw-widget-36hour .message {top:40px !important;}
+#awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours{  padding-bottom: 10px!important;}
+#awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours LI.night .aw-bg H3{color:#3e6bb6 !important;}
+#awtd1383134730488 DIV.aw-widget-36hour-inner DIV.aw-widget-content DIV.aw-36-hours LI.night .aw-bg SPAN {color: #000000 !important;}
