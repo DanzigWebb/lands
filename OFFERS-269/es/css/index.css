@@ -475,3 +475,8 @@ footer .footer-links-impressum a {
 .vjs-fullscreen-control {
     display: none !important;
 }
+@media (max-width: 1200px){
+    .header-top-2{
+        display: none;
+    }
+}
