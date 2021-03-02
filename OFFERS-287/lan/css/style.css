@@ -675,7 +675,7 @@ color: #FFFFFF;
     font-family: Open Sans;
 font-style: normal;
 font-weight: 800;
-font-size: 160px;
+font-size: 80px;
 line-height: 65%;
 /* or 131px */
 text-transform: uppercase;
@@ -852,7 +852,7 @@ color: #222222;
 }
 
 .second_block_middle {
-   padding: 2% 0%; 
+   padding: 8% 0%; 
 }
 
 .second_block_last {     
@@ -1240,7 +1240,7 @@ padding: 2% 1%;
 
 
 .second_block_header_f {
-    font-size: 82px;
+    font-size: 60px;
     line-height: 100%;
 }
 
@@ -1258,6 +1258,7 @@ line-height: 90%;
 .couple_prod {
     position: absolute;
     top: 750px;
+    display: none;
     margin-left: 210px;
     width: 90px;
 }
@@ -1364,7 +1365,7 @@ line-height: 90%;
 }
 
 .prod_form {
-    margin-top: 160px;
+    margin-top: 220px;
 }
 
 .fourth_block_left_prod img {
