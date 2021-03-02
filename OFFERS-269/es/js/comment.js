@@ -213,29 +213,6 @@ const findSibling = (firstElement, counter, siblingClassName) => {
 };
 
 const formatDate = () => {
-	DayName = new Array(7);
-	DayName[0] = 'Niedziela';
-	DayName[1] = 'Poniedziałek';
-	DayName[2] = 'Wtorek';
-	DayName[3] = 'Środa';
-	DayName[4] = 'Czwartek';
-	DayName[5] = 'Piątek';
-	DayName[6] = 'Sobota';
-
-	MonthName = new Array(12);
-	MonthName[0] = 'Styczeń';
-	MonthName[1] = 'Luty';
-	MonthName[2] = 'Marzec';
-	MonthName[3] = 'Kwiecień';
-	MonthName[4] = 'Maj';
-	MonthName[5] = 'Czerwiec';
-	MonthName[6] = 'Lipiec';
-	MonthName[7] = 'Sierpień';
-	MonthName[8] = 'Wrzesień';
-	MonthName[9] = 'PaLsdziernik';
-	MonthName[10] = 'Listopad';
-	MonthName[11] = 'Grudzień';
-
 	function getDateStr() {
 		var Today = new Date();
 		var WeekDay = Today.getDay();
@@ -252,11 +229,6 @@ const formatDate = () => {
 		// Array of day names
 
 		var dayNames;
-
-		if (type == 1)
-			dayNames = new Array('Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota');
-		else dayNames = new Array('Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota');
-
 		var now = new Date();
 		var month = now.getMonth() + 1;
 		if (now.getDate() + d + 1 < 1) {
