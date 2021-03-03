@@ -477,6 +477,6 @@ footer .footer-links-impressum a {
 }
 @media (max-width: 1200px){
     .header-top-2{
-        display: none;
+        display: none !important;
     }
 }
