@@ -1,0 +1,1275 @@
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(../fonts/Roboto-Regular.ttf)}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(../fonts/Roboto-Bold.ttf)}.blue .header_desktop .header_bar,.blue .header_mobile .header_bar,.blue .header_desktop .header_mobile-headline,.blue .header_mobile .header_mobile-headline{background-color:#1b478a !important}.blueOtherMobile .header_desktop .header_bar,.blueOtherMobile .header_mobile .header_bar,.blueOtherMobile .header_desktop .header_mobile-headline,.blueOtherMobile .header_mobile .header_mobile-headline{background-color:#1b478a !important}.pink .header_desktop .header_bar,.pink .header_mobile .header_bar,.pink .header_desktop .header_mobile-headline,.pink .header_mobile .header_mobile-headline{background-color:#ff8096 !important}.potency .header_desktop .header_bar,.potency .header_mobile .header_bar,.potency .header_desktop .header_mobile-headline,.potency .header_mobile .header_mobile-headline{background-color:#015b6b !important}.green .header_desktop .header_bar,.green .header_mobile .header_bar,.green .header_desktop .header_mobile-headline,.green .header_mobile .header_mobile-headline{background-color:#008736 !important}.darkGreen .header_desktop .header_bar,.darkGreen .header_mobile .header_bar,.darkGreen .header_desktop .header_mobile-headline,.darkGreen .header_mobile .header_mobile-headline{background-color:#216353 !important}.orange .header_desktop .header_bar,.orange .header_mobile .header_bar,.orange .header_desktop .header_mobile-headline,.orange .header_mobile .header_mobile-headline{background-color:#F39629 !important}.lightBlue .header_desktop .header_bar,.lightBlue .header_mobile .header_bar,.lightBlue .header_desktop .header_mobile-headline,.lightBlue .header_mobile .header_mobile-headline{background-color:#ADD8E6 !important}@media only screen and (max-width:768px){.blueOtherMobile .header_desktop .header_bar,.blueOtherMobile .header_mobile .header_bar,.blueOtherMobile .header_desktop .header_mobile-headline,.blueOtherMobile .header_mobile .header_mobile-headline{background-color:#125b7d !important}}.x-header-medical{border-bottom:2px solid #b8b8b8;margin:0 20px 40px;font-family:'Roboto'}.x-header-medical .header_mobile{display:none}.x-header-medical .header_data{padding:10px 0;color:#1c1c1c;font-size:13px;font-weight:400;text-align:right;margin:0}.x-header-medical .header_input{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid #707070;height:35px;max-width:210px;width:100%}.x-header-medical .header_input .header_input-anchor{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%}.x-header-medical .header_input .header_input-anchor .header_input-input{border:none;width:100%;height:100%}.x-header-medical .header_input .header_input-anchor .header_input-search{height:20px;width:35px;border-left:1px solid #b8b8b8;background:url(../images/search_1.png) no-repeat center center}.x-header-medical .header_content{background:#fff;min-height:150px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.x-header-medical .header_content .header_content_text-holder .header_content-title{color:#1b478a;font-size:40px;font-weight:700;text-align:left;text-transform:uppercase;font-family:'Roboto'}.x-header-medical .header_content .header_content_text-holder .header_content-text{color:#000;font-size:24px;font-weight:400;text-align:left}.x-header-medical .header_content .header_content_text-holder .desktop-to-mobile-img{display:none}.x-header-medical .header_content .header_content-img{-ms-flex-item-align:end;align-self:flex-end}.x-header-medical .header_content .header_content-search{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:1px solid #707070;height:35px;max-width:290px;width:100%}.x-header-medical .header_content .header_content-search input{border:none;width:100%;height:100%}.x-header-medical .header_content .header_content-search div{width:32px;height:100%;background-image:url(../images/search.png);background-position:center;background-repeat:no-repeat;background-size:auto}.x-header-medical .header_bar{width:100%;background-color:#ff8096;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}.x-header-medical .header_bar div{max-width:120px;width:100%;background-position:center;background-repeat:no-repeat;background-size:contain;text-align:center}.x-header-medical .header_bar div img{max-width:100%;margin:10px}.x-header-medical .header_menu ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style:none;padding:0;margin:0;-ms-flex-pack:distribute;justify-content:space-around}.x-header-medical .header_menu ul li a{color:#1c1c1c;font-size:18px;font-weight:400;line-height:18px;text-align:center;text-decoration:none}.x-header-medical .header_menu ul li a p{padding:10px 20px}.x-header-medical .header_menu ul li a:hover{color:#1b478a}.x-header-medical .header_mobile .header_mobile-headline{width:100%;min-height:80px;background:#ff8096;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:10px}.x-header-medical .header_mobile .header_mobile-headline h1{margin:0;padding:0;color:#fff;font-family:'Roboto';text-transform:uppercase;font-size:25px;font-weight:700;line-height:30px;text-align:left;padding-left:10px}.x-header-medical .header_mobile .header_mobile-promotion{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%}.x-header-medical .header_mobile .header_mobile-promotion span{height:1px;width:100%;background:#cccccc;display:block;margin-left:10px;margin-right:10px}.x-header-medical .header_mobile .header_mobile-promotion p{color:#cccccc;font-size:12px;font-weight:500;line-height:24px;text-align:center;padding:0;margin:0}.x-header-medical .header_mobile .header_mobile-press{max-width:348px;width:100%}.x-header-medical .header_mobile .header_mobile-report{width:100%;background:#ad0000;color:#ffffff;font-size:15px;font-weight:700;line-height:25px;text-align:center;margin:10px 0 20px}.x-header-medical .header_mobile .header_mobile-publication{color:#767676;font-size:15px;font-weight:700;line-height:25px;text-align:center;margin-bottom:10px}.x-header-medical .header_mobile .header_mobile-publication span{font-weight:400}.x-header-medical .header_mobile .header_mobile-publication span:nth-child(2){padding-left:25px;margin-left:10px;background-image:url(../images/people.png);background-position:left center;background-repeat:no-repeat}.x-header-medical.potency .header_content .header_content_text-holder .header_content-title{color:#015b6b;font-size:40px;font-weight:700;text-align:left}@media only screen and (max-width:1200px){.x-header-medical .header_menu ul li a{font-size:16px}}@media only screen and (max-width:1000px){.x-header-medical .header_content{background-position:100% bottom}.x-header-medical .header_content .header_content-search{display:none}.x-header-medical .header_menu ul li{padding:5px}.x-header-medical .header_menu ul li a{font-size:12px}}@media only screen and (max-width:810px){.x-header-medical .header_content .header_content-title{font-size:45px}}@media only screen and (max-width:768px){.x-header-medical{border:none;margin:0}.x-header-medical .header_content{background-position:center bottom;padding:25px 0 150px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.x-header-medical .header_content h1,.x-header-medical .header_content h2{text-align:center}.x-header-medical .header_menu{display:none}.x-header-medical .header_desktop{display:none}.x-header-medical .header_mobile{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media only screen and (max-width:480px){.x-header-medical .header_content h1{font-size:28px}.x-header-medical .header_content h2{font-size:18px}.x-header-medical .header_bar div:nth-child(3),.x-header-medical .header_bar div:nth-child(4){display:none}}@media only screen and (min-width:769px){.x-header-medical.hide-desktop{display:none}}@media only screen and (max-width:768px){.x-header-medical.hide-mobile{display:none}}@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-h2-medical {
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h2-medical.left {
+  text-align: left;
+}
+.x-h2-medical.right {
+  text-align: right;
+}
+.x-h2-medical.center {
+  text-align: center;
+}
+.x-h2-medical.justify {
+  text-align: justify;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h2-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h2-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-article-medical {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.x-article-medical .article-link {
+  max-width: 280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.x-article-medical .article-link .article-img {
+  width: 68px;
+  height: auto;
+}
+.x-article-medical .article-link .article-text {
+  width: 100%;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-article-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-article-medical.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-path-medical {
+  font-family: 'Roboto';
+  text-decoration: none!important;
+  color: #000dc3;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+}
+.x-path-medical p {
+  padding: 0 20px;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-path-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-path-medical.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-h1-medical {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: left;
+  color: #000;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h1-medical.left {
+  text-align: left;
+}
+.x-h1-medical.right {
+  text-align: right;
+}
+.x-h1-medical.center {
+  text-align: center;
+}
+.x-h1-medical.justify {
+  text-align: justify;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h1-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h1-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(../fonts/Roboto-Regular.ttf)}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(../fonts/Roboto-Bold.ttf)}.x-image-medical{font-family:'Roboto';margin:10px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.x-image-medical.position-left{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.x-image-medical.position-right{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.x-image-medical.position-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.x-image-medical.bcg-lightgrey{background-color:#EBEBEB}.x-image-medical .image-img{max-width:100%;width:auto;padding:0 20px}.x-image-medical div.title-container{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.x-image-medical div.title-container p{width:100%;display:block;font-family:'Georgia';font-size:14px;padding:5px;color:#3d3d3d}.x-image-medical div.text-container p{width:100%;display:block;font-size:14px;text-align:inherit;background-color:#ddd;margin:0 20px;padding:0 5px}.x-image-medical div{text-align:left;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}.x-image-medical.right div{text-align:right}.x-image-medical.right div.title-container{text-align:right}.x-image-medical.right div.text-container{text-align:right}@media only screen and (max-width:768px){.x-image-medical{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.x-image-medical .image-img{max-width:100%;width:auto}.x-image-medical .image-img.max-width{width:100%;max-width:none}.x-image-medical div.text-container{-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}.x-image-medical div.text-container p{font-style:normal;display:inline-block;background-color:#ffc000;font-size:24px;font-weight:700;padding:15px;margin:-20px 20px 0}}@media only screen and (min-width:769px){.x-image-medical.hide-desktop{display:none}}@media only screen and (max-width:768px){.x-image-medical.hide-mobile{display:none}}@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-h6-medical {
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h6-medical.left {
+  text-align: left;
+}
+.x-h6-medical.right {
+  text-align: right;
+}
+.x-h6-medical.center {
+  text-align: center;
+}
+.x-h6-medical.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-h6-medical {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h6-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h6-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-p-medical {
+  font-family: 'Roboto';
+  color: #1e1e1e;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 20px;
+}
+.x-p-medical.left {
+  text-align: left;
+}
+.x-p-medical.right {
+  text-align: right;
+}
+.x-p-medical.center {
+  text-align: center;
+}
+.x-p-medical.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-p-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-p-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-h4-medical {
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h4-medical.left {
+  text-align: left;
+}
+.x-h4-medical.right {
+  text-align: right;
+}
+.x-h4-medical.center {
+  text-align: center;
+}
+.x-h4-medical.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-h4-medical {
+    font-size: 22px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h4-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h4-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(../fonts/Roboto-Regular.ttf)}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(../fonts/Roboto-Bold.ttf)}.x-float_img_text-medical{font-family:'Roboto';color:#000;font-size:17px;font-weight:400;line-height:1.4em;margin:0 20px}.x-float_img_text-medical a[href]{color:inherit;text-decoration:inherit}.x-float_img_text-medical .float_img_text-img{max-width:230px;width:auto;float:left;margin:0 20px 20px}.x-float_img_text-medical .float_img_text-img.float_left{float:left!important;display:flex}.x-float_img_text-medical .float_img_text-img.float_right{display:flex;flex-direction:row-reverse;float:right!important}.x-float_img_text-medical .float_img_text-img.column{flex-direction:column}.x-float_img_text-medical .float_img_text-img img{width:100%}.x-float_img_text-medical .float_img_text-list{margin:0!important}@media only screen and (max-width:500px){.x-float_img_text-medical{display:flex;align-items:center;flex-direction:column;justify-content:flex-start}}@media only screen and (max-width:768px){.x-float_img_text-medical{text-align:center}.x-float_img_text-medical .float_img_text-img{max-width:100%;float:none;margin:0 20px 10px}.x-float_img_text-medical .float_img_text-text{font-size:16px}.x-float_img_text-medical .float_img_text-list{font-size:16px;margin-left:20px!important}}@media only screen and (min-width:769px){.x-float_img_text-medical.hide-desktop{display:none}}@media only screen and (max-width:768px){.x-float_img_text-medical.hide-mobile{display:none}}@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-ul_list-medical {
+  font-family: 'Roboto';
+  color: #1e1e1e;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 20px 0;
+  padding: 0 20px 0 40px;
+}
+.x-ul_list-medical li {
+  margin: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .x-ul_list-medical {
+    font-size: 16px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-ul_list-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-ul_list-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-h5-medical {
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 22px;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px 20px;
+}
+.x-h5-medical.left {
+  text-align: left;
+}
+.x-h5-medical.right {
+  text-align: right;
+}
+.x-h5-medical.center {
+  text-align: center;
+}
+.x-h5-medical.justify {
+  text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .x-h5-medical {
+    line-height: 28px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-h5-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-h5-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-chart_new-medical {
+  width: 100%;
+  max-width: 545px;
+  margin: 25px auto;
+  font-family: 'Roboto';
+}
+.x-chart_new-medical.green .chart-row1 .chart-column .chart-post {
+  background-color: #429543;
+}
+.x-chart_new-medical.green .chart-row1 .chart-column:nth-child(1) {
+  background-color: #f8fff7;
+}
+.x-chart_new-medical.green .chart-row1 .chart-column:nth-child(2) {
+  background-color: #e7ffe7;
+}
+.x-chart_new-medical.green .chart-row1 .chart-column:nth-child(3) {
+  background-color: #d8ffd3;
+}
+.x-chart_new-medical.green .chart-row1 .chart-column:nth-child(4) {
+  background-color: #ccffc6;
+}
+.x-chart_new-medical.dark-green .chart-row1 .chart-column .chart-post {
+  background-color: #33665f;
+}
+.x-chart_new-medical.dark-green .chart-row1 .chart-column:nth-child(1) {
+  background-color: #f4f9fb;
+}
+.x-chart_new-medical.dark-green .chart-row1 .chart-column:nth-child(2) {
+  background-color: #e3eef2;
+}
+.x-chart_new-medical.dark-green .chart-row1 .chart-column:nth-child(3) {
+  background-color: #d3e4e8;
+}
+.x-chart_new-medical.dark-green .chart-row1 .chart-column:nth-child(4) {
+  background-color: #c2dae1;
+}
+.x-chart_new-medical.pink .chart-row1 .chart-column .chart-post {
+  background-color: #8f0a59;
+}
+.x-chart_new-medical.pink .chart-row1 .chart-column:nth-child(1) {
+  background-color: #FFF0F3;
+}
+.x-chart_new-medical.pink .chart-row1 .chart-column:nth-child(2) {
+  background-color: #FFD7DF;
+}
+.x-chart_new-medical.pink .chart-row1 .chart-column:nth-child(3) {
+  background-color: #F9C0CF;
+}
+.x-chart_new-medical.pink .chart-row1 .chart-column:nth-child(4) {
+  background-color: #FCA9BB;
+}
+.x-chart_new-medical .text-above p {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.x-chart_new-medical .chart-row1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #000;
+  border-top: none;
+  border-right: none;
+}
+.x-chart_new-medical .chart-row1 .chart-column {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.x-chart_new-medical .chart-row1 .chart-column .chart-text {
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 135px;
+}
+@media only screen and (max-width: 500px) {
+  .x-chart_new-medical .chart-row1 .chart-column .chart-text {
+    font-size: 10px;
+    max-width: 100px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .x-chart_new-medical .chart-row1 .chart-column .chart-text {
+    font-size: 8px;
+    max-width: 90px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .x-chart_new-medical .chart-row1 .chart-column .chart-text {
+    font-size: 6px;
+    max-width: 85px;
+  }
+}
+.x-chart_new-medical .chart-row1 .chart-column .chart-post {
+  background-color: #33665f;
+  width: 40%;
+  height: 100px;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(1) {
+  background-color: #f4f9fb;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(1) .chart-post {
+  height: 150px;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(2) {
+  background-color: #e3eef2;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(2) .chart-post {
+  height: 175px;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(3) {
+  background-color: #d3e4e8;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(3) .chart-post {
+  height: 200px;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(4) {
+  background-color: #c2dae1;
+}
+.x-chart_new-medical .chart-row1 .asc:nth-child(4) .chart-post {
+  height: 250px;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(1) {
+  background-color: #f4f9fb;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(1) .chart-post {
+  height: 250px;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(2) {
+  background-color: #e3eef2;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(2) .chart-post {
+  height: 200px;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(3) {
+  background-color: #d3e4e8;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(3) .chart-post {
+  height: 175px;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(4) {
+  background-color: #c2dae1;
+}
+.x-chart_new-medical .chart-row1 .desc:nth-child(4) .chart-post {
+  height: 150px;
+}
+.x-chart_new-medical .chart-row2 {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.x-chart_new-medical .chart-row2 .chart-signature {
+  width: 25%;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+@media only screen and (max-width: 500px) {
+  .x-chart_new-medical .chart-row2 .chart-signature {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .x-chart_new-medical .chart-row2 .chart-signature {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .x-chart_new-medical .chart-row2 .chart-signature {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .x-chart_new-medical {
+    max-width: 100%;
+    width: auto;
+    margin: 25px 20px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-chart_new-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-chart_new-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-testimonial_mobile-medical {
+  font-family: 'Roboto';
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 40px;
+  background: url(../images/quote.png);
+  background-repeat: no-repeat;
+  background-position: right 10px bottom 10px;
+  background-color: #125b7d;
+}
+.x-testimonial_mobile-medical .testimonial__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0076cd;
+  margin: 0 0 15px;
+}
+.x-testimonial_mobile-medical .testimonial__header .testimonial__header--img {
+  max-width: 125px;
+  width: 100%;
+  height: auto;
+}
+.x-testimonial_mobile-medical .testimonial__header article {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+.x-testimonial_mobile-medical .testimonial__header article .testimonial__header--signature {
+  font-weight: 700;
+}
+.x-testimonial_mobile-medical .testimonial__header article .info {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffc000;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  right: 10px;
+  top: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  font-weight: 900;
+  font-family: serif;
+}
+.x-testimonial_mobile-medical .testimonial-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 15px 15px;
+}
+@media only screen and (max-width: 415px) {
+  .x-testimonial_mobile-medical {
+    max-width: 100%;
+    width: auto;
+    margin: 0 20px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-testimonial_mobile-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-testimonial_mobile-medical.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-CTA-medical .cta {
+  font-family: 'Roboto';
+  color: #0000ff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-decoration: underline;
+}
+.x-CTA-medical .cta p {
+  padding: 0 20px;
+}
+.x-CTA-medical .cta_mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 2px solid #0000ff;
+  display: none;
+  z-index: 1;
+}
+.x-CTA-medical .cta_mobile p {
+  padding: 0;
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-CTA-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-CTA-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+.x-weather-medical {
+  width: auto;
+  margin: 0 20px 20px;
+  font-family: "Roboto";
+}
+.x-weather-medical .weather_title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px 12px;
+  text-align: center;
+}
+.x-weather-medical .weather_title time {
+  font-weight: 700;
+}
+.x-weather-medical .weather_title span {
+  display: inline-block;
+  width: 1px;
+  min-width: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.x-weather-medical .weather_title.weather_title_today span {
+  height: 12px;
+  margin: 0 7px;
+}
+.x-weather-medical .weather_title.weather_title_future {
+  font-size: 14px;
+  flex-direction: column;
+  padding: 5px 2px;
+}
+.x-weather-medical .weather_title.weather_title_future span {
+  display: none;
+}
+.x-weather-medical .weather_title.weather_title_future time {
+  font-size: 13px;
+  font-weight: 900;
+}
+.x-weather-medical .actual_weather {
+  width: 100%;
+}
+.x-weather-medical .actual_weather .weather_today {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.x-weather-medical .actual_weather .weather_today_main {
+  display: flex;
+  flex-direction: column;
+}
+.x-weather-medical .actual_weather .weather_today_main .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_img_wrapper {
+  max-width: 62px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_img_wrapper img {
+  width: 100%;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  padding-left: 12px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_wind_speed,
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_pressure {
+  font-size: 16px;
+  letter-spacing: .2px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_wind_speed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_wind_speed::before {
+  content: '';
+  background-image: url(../images/wind.png);
+  background-size: cover;
+  width: 27px;
+  height: 19px;
+  min-width: 27px;
+  min-height: 19px;
+  margin-right: 5px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_temp {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 42px;
+}
+.x-weather-medical .actual_weather .weather_today_main .top .top_content .content_temp img {
+  display: none;
+}
+.x-weather-medical .actual_weather .weather_today_main .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: rgba(41, 73, 98, 0.7);
+  padding: 7px 10px;
+}
+.x-weather-medical .actual_weather .weather_today_main .bottom .bottom_temp_feel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.x-weather-medical .actual_weather .weather_today_main .bottom .bottom_temp_feel p {
+  font-size: 10px;
+}
+.x-weather-medical .actual_weather .weather_today_main .bottom .bottom_temp_feel span {
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 6px;
+}
+.x-weather-medical .actual_weather .weather_today_main .bottom .bottom_timer {
+  font-size: 20px;
+  font-weight: 400;
+}
+.x-weather-medical .actual_weather_2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 3px 0;
+  filter: brightness(120%);
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(246, 127, 0, 0.7);
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 5px;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col .content span {
+  font-size: 20px;
+  font-weight: 900;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col .content p {
+  font-size: 9px;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col.temp {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col.temp:nth-child(2) {
+  margin-right: -10px;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col.temp .content {
+  margin-left: 3px;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col.clouds {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.x-weather-medical .actual_weather_2 .actual_weather_2_col.clouds .content .img_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.x-weather-medical .future_weather_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+.x-weather-medical .future_weather_wrapper .future_weather {
+  width: calc(48.5%);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content {
+  padding: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_icon_mobile {
+  display: none;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_pressure,
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_wind_speed {
+  font-size: 14px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_temp {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 6px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_temp img {
+  max-width: 34px;
+  max-height: 32px;
+  margin-right: 7px;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_wind_speed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.x-weather-medical .future_weather_wrapper .future_weather .content .content_wind_speed::before {
+  content: '';
+  background-image: url(../images/wind.png);
+  background-size: cover;
+  width: 22px;
+  height: 15px;
+  min-width: 22px;
+  min-height: 15px;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 769px) {
+  .x-weather-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-weather-medical.hide-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .x-weather-medical .weather_title.weather_title_future {
+    flex-direction: row;
+    font-size: 14px;
+  }
+  .x-weather-medical .weather_title.weather_title_future span {
+    display: inline-block;
+    height: 10px;
+    margin: 0 5px;
+  }
+  .x-weather-medical .weather_title.weather_title_future time {
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .x-weather-medical .future_weather_wrapper {
+    flex-direction: column;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_inner {
+    width: auto;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_inner img {
+    display: none;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_inner .content_temp {
+    font-size: 22px;
+    margin: 4px 0;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_icon_mobile {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .x-weather-medical .actual_weather .weather_today_main .top {
+    justify-content: center;
+  }
+  .x-weather-medical .actual_weather .weather_today_main .top .top_img_wrapper {
+    display: none;
+  }
+  .x-weather-medical .actual_weather .weather_today_main .top .top_content {
+    padding: unset;
+  }
+  .x-weather-medical .actual_weather .weather_today_main .top .top_content .content_temp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 33px;
+  }
+  .x-weather-medical .actual_weather .weather_today_main .top .top_content .content_temp img {
+    display: inline-block;
+    max-height: 28px;
+    min-height: 28px;
+    margin-right: 6px;
+  }
+  .x-weather-medical .actual_weather_2 .actual_weather_2_col {
+    width: 50%;
+  }
+  .x-weather-medical .actual_weather_2 .actual_weather_2_col.clouds {
+    display: none;
+  }
+  .x-weather-medical .actual_weather_2 .actual_weather_2_col.temp:nth-child(2) {
+    margin-right: unset;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .x-weather-medical .weather_today_main .bottom .bottom_timer {
+    display: none;
+  }
+  .x-weather-medical .weather_title.weather_title_today {
+    flex-direction: column;
+  }
+  .x-weather-medical .weather_title.weather_title_today span {
+    display: none;
+  }
+  .x-weather-medical .weather_title.weather_title_today time {
+    margin-top: 2px;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content {
+    justify-content: center;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_inner img {
+    display: inline-block;
+  }
+  .x-weather-medical .future_weather_wrapper .future_weather .content .content_icon_mobile {
+    display: none;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-weather-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-weather-medical.hide-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(../fonts/Roboto-Regular.ttf)}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(../fonts/Roboto-Bold.ttf)}.x-banner-medical{font-family:'Roboto';background:-webkit-linear-gradient(top, #ebd50c 0%, #795e8e 100%);background:-webkit-gradient(linear, left top, left bottom, from(#ebd50c), to(#795e8e));background:-o-linear-gradient(top, #ebd50c 0%, #795e8e 100%);background:linear-gradient(to bottom, #ebd50c 0%, #795e8e 100%);padding:20px 0;border:1px solid #000;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 20px}.x-banner-medical.sticky{position:-webkit-sticky;position:sticky;top:0}.x-banner-medical a{width:100%}.x-banner-medical a .banner-text{width:100%;color:#ffffff;font-size:30px;font-weight:700;line-height:32px;text-align:center;background-color:#3454b9;padding:15px}.x-banner-medical a .banner-img{max-width:330px;width:100%}.x-banner-medical a .banner-button{max-width:200px;width:100%;text-decoration:none;cursor:pointer;border:none;color:#ffffff;font-size:22px;font-weight:700;line-height:32px;text-align:center;border-radius:10px;background:-webkit-linear-gradient(90deg, #0056ba 0%, #4494f1 100%);background:-webkit-linear-gradient(bottom, #0056ba 0%, #4494f1 100%);background:-webkit-gradient(linear, left bottom, left top, from(#0056ba), to(#4494f1));background:-o-linear-gradient(bottom, #0056ba 0%, #4494f1 100%);background:linear-gradient(0deg, #0056ba 0%, #4494f1 100%);-webkit-box-shadow:0 1px 6.96px 1.04px rgba(0,0,0,0.63);box-shadow:0 1px 6.96px 1.04px rgba(0,0,0,0.63);padding:10px 0;margin:10px auto 0}@media only screen and (min-width:769px){.x-banner-medical.hide-desktop{display:none}}@media only screen and (max-width:768px){.x-banner-medical.hide-mobile{display:none}}@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+.x-comment-medical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 20px 0;
+  margin: 0 20px;
+  border-bottom: 2px solid #dedede;
+  font-family: 'Roboto';
+}
+.x-comment-medical .comment-img {
+  width: 41px;
+  height: 41px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.x-comment-medical .comment-box {
+  width: 100%;
+}
+.x-comment-medical .comment-box .comment-signature {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.x-comment-medical .comment-box .comment-signature .comment-date {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+.x-comment-medical .comment-box .comment-signature .comment-text {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .x-comment-medical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .x-comment-medical .comment-img {
+    display: none;
+  }
+  .x-comment-medical .comment-box .comment-text {
+    font-size: 18px;
+  }
+}
+/* Ukrycie komponentu w trybie mobile lub desktop */
+@media only screen and (min-width: 769px) {
+  .x-comment-medical.hide-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .x-comment-medical.hide-mobile {
+    display: none;
+  }
+}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(../fonts/Roboto-Regular.ttf)}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url(../fonts/Roboto-Bold.ttf)}.x-bibliography-medical-sp{max-width:1000px;width:100%;font-family:'Roboto';color:#aaa;font-size:12px;line-height:15px;margin:0 auto;padding:20px;direction:ltr}.x-bibliography-medical-sp .headline{font-weight:700;margin:0}.x-bibliography-medical-sp .list{margin:10px 0 0;padding:0 0 0 20px}@media only screen and (max-width:768px){.x-bibliography-medical-sp{color:#dddee3}.x-bibliography-medical-sp .list{display:none}}@media only screen and (min-width:769px){.bibliography-medical-sp.hide-desktop{display:none}}@media only screen and (max-width:768px){.bibliography-medical-sp.hide-mobile{display:none}}
