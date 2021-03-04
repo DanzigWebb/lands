@@ -488,7 +488,6 @@ textarea { overflow: auto; }
 
 .top__header {
 	background: #0da4b5;
-	height: 125px;
 }
 
 .top__header__block {
@@ -504,7 +503,7 @@ textarea { overflow: auto; }
 
 .top__header__img__journal {
     position: relative;
-    right: -120px;
+	width: 100%;
 }
 
 .b-header {
@@ -648,4 +647,8 @@ input:invalid {
 	.js-mediator-footer {
 		margin-top: 68px;	
 	}
+}
+.logo{
+	width: 100%;
+	max-width: 540px;
 }
