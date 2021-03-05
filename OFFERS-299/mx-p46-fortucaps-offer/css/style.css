@@ -1,0 +1,401 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+    font-family: 'Montserrat'
+}
+
+header {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 200;
+    width: 100%;
+    background: #57297a;
+    font-size: 28px;
+    padding: 0 20px;
+    padding-top: 5px;
+    max-width: 600px;
+    text-align: center
+}
+
+main {
+    margin: 0 16px
+}
+
+.story h2 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+    border-bottom: 2px solid #f7edff;
+    line-height: 1;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px
+}
+
+h2 + p {
+    margin-top: 0
+}
+
+.golova {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.golova > img {
+    position: relative
+}
+
+.golova h2 {
+    position: absolute;
+    bottom: 25px;
+    color: #000;
+    font-size: 23px;
+    margin: 0 20px;
+    text-shadow: 2px 2px 0 white;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase
+}
+
+.story p strong {
+    font-weight: 600
+}
+
+.story a img {
+    display: block;
+    width: 100%
+}
+
+.img-responsive {
+    width: 100%
+}
+
+.story p strong, .story p b {
+    font-weight: 600;
+    background: #f9f4fd;
+    padding: 0 3px
+}
+
+.story a {
+    font-weight: 600;
+    color: #137ce1
+}
+
+.story p {
+    font-size: 15px;
+    line-height: 21px;
+    text-align: justify
+}
+
+html {
+    padding: 0;
+    margin: 0
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 10px 0
+}
+
+footer a {
+    color: #fff
+}
+
+.socialicons a {
+    color: #fff !important;
+    margin: 0 3px
+}
+
+.content_autor {
+    border-right: 2px solid #eee;
+    padding-right: 12px;
+    color: #db1464;
+    margin-right: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-bottom: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    width: auto
+}
+
+.content_autor .ava {
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 60px;
+    display: block !important;
+    margin-bottom: 10px;
+}
+
+.fa-facebook {
+    color: #3b5999
+}
+
+.fa-twitter {
+    color: #1da1f3
+}
+
+.fa-instagram {
+    color: #262626
+}
+
+.login_block-social_link {
+    font-size: 1rem;
+    margin-top: 6px;
+    margin-right: 5px
+}
+
+.fil0 {
+    fill: #fefefe
+}
+
+.fil4 {
+    fill: #fcdc6b
+}
+
+.fil1 {
+    fill: #6a99d0
+}
+
+.fil5 {
+    fill: #201e1e
+}
+
+.fil2 {
+    fill: #f50953
+}
+
+.fil3 {
+    fill: #fefefe;
+    fill-rule: nonzero
+}
+
+.fb-shit {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 15px
+}
+
+.fb-shit .fb-like-click {
+    background: #eee;
+    padding: 4px 10px;
+    padding-left: 2px;
+    border-radius: 4px;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 auto;
+            flex: 2 1 auto
+}
+
+.fb-shit .fb-like-click + .fb-like-click {
+    margin-left: 10px
+}
+
+.fb-shit svg {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle
+}
+
+.img-comment {
+    display: block;
+    width: 100%;
+    background: #57297a;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-style: italic;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
+}
+
+.img-comment .star {
+    color: #db1464;
+    font-weight: 600;
+    font-style: normal
+}
+
+.img-comment2 {
+    display: block;
+    width: 100%;
+    background: #fbebfd;
+    border: 1px solid #c9afdd;
+    padding: 8px;
+    text-align: center;
+    color: #57297a;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 10px 0
+}
+
+.img-comment2 p {
+    margin: 0;
+    font: inherit
+}
+
+.commentarios {
+    padding: 5px 10px;
+    line-height: 1;
+    font-size: 11px;
+    color: #fff;
+    background: #2361ae;
+    font-family: Tamoha, sans-serif
+}
+
+.otros-commentarios a {
+    color: #333;
+    text-decoration: none !important;
+    font-weight: 700
+}
+
+.otros-commentarios {
+    margin: 20px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f2f2f2;
+    color: #000;
+    text-decoration: none !important;
+    text-align: center
+}
+
+.comenti {
+    margin-bottom: 30px
+}
+
+.coma {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 10px;
+    margin-top: 10px
+}
+
+.coma + .coma {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 10px
+}
+
+.coma .coma {
+    margin-left: 0
+}
+
+.coma .col-avatar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0;
+            flex: 0 0;
+    margin-right: 10px
+}
+
+.coma .col-avatar img {
+    width: 50px
+}
+
+.coma .col-comm-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto
+}
+
+.coma .col-comm-text p {
+    margin-top: 0
+}
+
+.coma .col-comm-text img {
+    max-width: 300px
+}
+
+.coma .nickname {
+    margin: 0
+}
+
+.coma .nickname a {
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.coma .comment {
+    padding-top: 5px;
+    margin: 0 28px 5px 0
+}
+
+.coma .respond {
+    text-decoration: none;
+    color: #3b5998
+}
+
+.coma .date {
+    border-bottom: 1px dotted gray;
+    color: gray
+}
+.product {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.button {
+  text-align: center;
+      margin: 10px 0px 20px 0px;
+}
+.button a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 28px;
+    border: 1px solid rgb(24, 117, 0);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgb(45, 221, 0)), to(rgb(24, 117, 0))) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(45, 221, 0), rgb(24, 117, 0)) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(top, rgb(45, 221, 0), rgb(24, 117, 0)) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(45, 221, 0), rgb(24, 117, 0)) repeat scroll 0% 0%;
+    text-shadow: 1px 1px 1px rgb(14, 69, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 21px;
+}
+.button a:hover, .button a:focus {
+    border: 1px solid rgb(28, 138, 0);
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgb(54, 255, 0)), to(rgb(29, 140, 0))) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(54, 255, 0), rgb(29, 140, 0)) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(top, rgb(54, 255, 0), rgb(29, 140, 0)) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(54, 255, 0), rgb(29, 140, 0)) repeat scroll 0% 0%;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+
+.product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}</style><style type="text/css">svg:not(:root).svg-inline--fa {
+        overflow: visible
+    }
+
+    .svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -.125em
+    }
