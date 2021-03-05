@@ -475,7 +475,8 @@
     position: relative;
     display: inline-block;
     width: 55px;
-    margin: 0 10px;  
+    margin: 0 10px; 
+    font-size: 0.6em; 
     text-align: center;
     line-height: 1em;
     color: #e62117;
@@ -485,7 +486,7 @@
     position: absolute;
     top: 20%;
     right: -12px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #ccc;
 }
 .top-block-v3 .timer .timer-action .timer-col:last-child:after{
@@ -635,6 +636,7 @@
     display: inline-block;
     width: 55px;
     margin: 0 10px;  
+    font-size: 0.7em;
     text-align: center;
     line-height: 1em;
     color: #e62117;
