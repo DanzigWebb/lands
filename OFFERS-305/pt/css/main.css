@@ -1,0 +1,1254 @@
+/* Шапка-примущества */
+.head-block-v1{
+    padding: 0;
+    background: url(../img/head-icon-2.png) 96% 40% no-repeat;
+}
+.head-block-v1 ul{
+    width: 85%; 
+    padding: 20px 0;
+}
+.head-block-v1 ul>li{
+    float: left;
+    width: 50%;
+    padding: 0 0 0 20px;
+    line-height: 1.3em;
+}
+.head-block-v1 ul>li:nth-child(1){
+    border-right: 1px solid #dcdcdc;
+}
+.head-block-v1 ul>li:before{
+    content: '';
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 4px 12px 4px 0;
+    background: url(../img/head-icon.png) no-repeat;
+}
+.head-block-v1 ul>li:nth-child(1):before{
+    background-position: 0 0;
+}
+.head-block-v1 ul>li:nth-child(2):before{
+    background-position: -30px 0;
+}
+
+/* Шапка-v1 top-block-pic-v1.jpg */
+.top-block-v1{
+    padding: 0;
+}
+.top-block-v1 .top-img{
+    position: relative;
+    height: 484px;
+    background: url(https://big-dreams.ru/massager-3d/img/top-block-pic-v1.jpg) 50% 0 no-repeat;
+}
+.top-block-v1 .top-sale{
+    position: absolute;
+    width: 112px;
+    top: 226px;
+    left: 138px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 1.1em;
+    font-weight: 700;
+    color: #fff;
+}
+.top-block-v1 .top-sale>strong{
+    font-size: 2em;
+    line-height: 1.05em;
+}
+.top-block-v1 .top-cont{
+    position: relative;
+    padding: 40px 50px;
+    color: #fff;
+    background: #2a2d33;
+    -webkit-box-shadow: inset 0 14px 12px -8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: inset 0 14px 12px -8px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0 14px 12px -8px rgba(0, 0, 0, 0.35);
+}
+.top-block-v1 .top-cont:after, .top-block-v1 .top-cont:before{
+    content: '';
+    position: absolute;
+    display: block;
+}
+.top-block-v1 .top-cont:before{
+    width: 43px;
+    height: 78px;
+    top: 26%;
+    right: 0;
+    background: url(https://big-dreams.ru/massager-3d/img/head-flora-right.png) 0 0 no-repeat;
+}
+.top-block-v1 .top-cont:after{
+    width: 40px;
+    height: 63px;
+    left: 0;
+    bottom: 0;
+    background: url(https://big-dreams.ru/massager-3d/img/head-flora-left.png) 0 0 no-repeat;
+}
+.top-block-v1 .top-cont .list-type-v1{
+    padding: 15px 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 3px solid #dcdcdc;
+    background: #fff;
+}
+.top-block-v1 .timer{
+    padding: 40px 0 20px;
+    text-align: center;
+}
+.top-block-v1 .timer>h4{
+    padding: 0 0 5px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.top-block-v1 .time_circles>div>span{
+    font-family: "OfficinaSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.top-block-v1 .time_circles>div>h4{
+    font-family: "OfficinaSans", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+.top-block-v1 .top-cont .cost-cont{
+    overflow: hidden;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #07a6e0;
+    background: -moz-linear-gradient(-45deg, #32dac3 30%, #07a6e0 100%);
+    background: -webkit-linear-gradient(-45deg, #32dac3 30%,#07a6e0 100%);
+    background: -webkit-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -moz-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -o-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: linear-gradient(135deg, #32dac3 30%,#07a6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32dac3', endColorstr='#07a6e0',GradientType=1 );
+}
+.top-block-v1 .top-cont .cost-cont>div{
+    float: left;
+    width: 50%;
+    padding: 12px 0 16px;
+    text-align: center;
+}
+.top-block-v1 .top-cont .cost-cont>div>strong{
+    display: block;
+    font-size: 2.3em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v1 .top-cont .cost-cont .old-cost{
+    position: relative;
+    color: #333;
+    background: #fff;
+}
+.top-block-v1 .top-cont .cost-cont .old-cost:after, .top-block-v1 .top-cont .cost-cont .old-cost:before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 15px;
+    top: 50%;
+    right: -30px;
+    margin: -33px 0 0;
+    background: #fff;
+    -webkit-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+.top-block-v1 .top-cont .cost-cont .old-cost:after{
+    font-size: 24px
+    margin: 22px 0 0;
+    -webkit-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    -moz-transform: rotate(-75deg);
+    -o-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+}
+.top-block-v1 .top-cont .cost-cont .old-cost>strong{
+    text-decoration: line-through;
+}
+.top-block-v1 .top-cont .cost-cont .new-cost{
+    color: #fff;
+}
+.top-block-v1 a.button-m{
+    width: auto;
+    margin: 20px auto 0;
+}
+.top-block-v1 .ost-col{
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.top-block-v1 .ost-col>span{
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #fff;
+    background: #07a6e0;
+    background: -moz-linear-gradient(-45deg, #32dac3 30%, #07a6e0 100%);
+    background: -webkit-linear-gradient(-45deg, #32dac3 30%,#07a6e0 100%);
+    background: -webkit-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -moz-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -o-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: linear-gradient(135deg, #32dac3 30%,#07a6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32dac3', endColorstr='#07a6e0',GradientType=1 );
+}
+
+/* Шапка-v2 top-block-pic-v2.jpg */
+.top-block-v2{
+    padding: 0;
+}
+.top-block-v2 .top-img{
+    position: relative;
+    height: 480px;
+    background: url(https://big-dreams.ru/massager-3d/img/top-block-pic-v2.jpg) 50% 0 no-repeat;
+}
+.top-block-v2 .top-sale{
+    position: absolute;
+    width: 112px;
+    top: 170px;
+    left: 184px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 1.1em;
+    font-weight: 700;
+    color: #fff;
+}
+.top-block-v2 .top-sale>strong{
+    font-size: 2em;
+    line-height: 1.05em;
+}
+.top-block-v2 .top-cont{
+    position: relative;
+    padding: 0 0 40px 0;
+    color: #fff;
+    background: #07a6e0;
+    background: -moz-linear-gradient(-45deg, #32dac3 30%, #07a6e0 100%);
+    background: -webkit-linear-gradient(-45deg, #32dac3 30%,#07a6e0 100%);
+    background: -webkit-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -moz-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -o-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: linear-gradient(135deg, #32dac3 30%,#07a6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32dac3', endColorstr='#07a6e0',GradientType=1 );
+}
+.top-block-v2 .top-cont:after, .top-block-v2 .top-cont:before{
+    content: '';
+    position: absolute;
+    display: block;
+}
+.top-block-v2 .top-cont:before{
+    width: 43px;
+    height: 78px;
+    top: 26%;
+    right: 0;
+    background: url(https://big-dreams.ru/massager-3d/img/head-flora-right.png) 0 0 no-repeat;
+}
+.top-block-v2 .top-cont:after{
+    width: 40px;
+    height: 63px;
+    left: 0;
+    bottom: 0;
+    background: url(https://big-dreams.ru/massager-3d/img/head-flora-left.png) 0 0 no-repeat;
+}
+.top-block-v2 .top-cont .list-type-v1{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    background: #fff;
+    border-bottom: 3px solid #dcdcdc;
+    -webkit-box-shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.2);
+}
+.top-block-v2 .timer{
+    padding: 40px 50px 20px;
+    text-align: center;
+}
+.top-block-v2 .timer>h4{
+    padding: 0 0 5px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.top-block-v2 .time_circles>div>span{
+    font-family: "OfficinaSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.top-block-v2 .time_circles>div>h4{
+    font-family: "OfficinaSans", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+.top-block-v2 .top-cont .cost-cont{
+    overflow: hidden;
+    margin: 0 50px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #17b5c4;
+}
+.top-block-v2 .top-cont .cost-cont>div{
+    float: left;
+    width: 50%;
+    padding: 12px 0 16px;
+    text-align: center;
+}
+.top-block-v2 .top-cont .cost-cont>div>strong{
+    display: block;
+    font-size: 2.3em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v2 .top-cont .cost-cont .old-cost{
+    position: relative;  
+}
+.top-block-v2 .top-cont .cost-cont .old-cost:after, .top-block-v2 .top-cont .cost-cont .old-cost:before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 15px;
+    top: 50%;
+    right: -30px;
+    margin: -33px 0 0;
+    background: #17b5c4;
+    -webkit-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+.top-block-v2 .top-cont .cost-cont .old-cost:after{
+    margin: 22px 0 0;
+    -webkit-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    -moz-transform: rotate(-75deg);
+    -o-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+}
+.top-block-v2 .top-cont .cost-cont .old-cost>strong{
+    text-decoration: line-through;
+}
+.top-block-v2 .top-cont .cost-cont .new-cost{
+    color: #333;
+    background: #fff;
+}
+.top-block-v2 a.button-m{
+    width: auto;
+    margin: 20px 50px 0;
+}
+.top-block-v2 .ost-col{
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.top-block-v2 .ost-col>span{
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #0eaddc;
+    background: #fff;
+}
+
+/* Шапка-v3 top-block-pic-v3.jpg */
+.top-block-v3{
+    padding: 0;
+}
+.top-block-v3 .top-title{
+    text-align: center;
+    font-weight: 900;
+
+    color: #fff;
+}
+.top-block-v3 .top-title .sub-title{
+    padding: 10px 20px;
+    font-size: 23px;
+    line-height: 1.2em;
+    background: #2a2d33;
+}
+.top-block-v3 .top-title>h1{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: 900;
+    background: #e62117;
+}
+.top-block-v3 .top-img{
+    height: 590px;
+    padding: 488px 0 0;
+    background: url(../img/top-block-pic-v3.jpg) 50% 0 no-repeat;
+}
+.top-block-v3 .cost-cont>div{
+    float: left;
+    width: 190px;
+    padding: 2px 0 0;
+    text-align: center;
+    color: #fff;
+}
+.top-block-v3 .cost-cont .sale-cost{
+    transform: translateY(-10px);
+    width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.top-block-v3 .cost-cont .sale-cost>strong{
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v3 .cost-cont .old-cost>strong, .top-block-v3 .cost-cont .new-cost>strong{
+    display: block;
+    display: block;
+    font-size: 2.3em;
+    line-height: 29px;
+    font-weight: 900;
+}
+.top-block-v3 .cost-cont .old-cost>strong{
+    font-size: 29px;
+    line-height: 29px;
+    text-decoration: line-through;
+}
+.top-block-v3 .top-cont{
+    padding: 0 50px 40px;
+}
+.top-block-v3 .top-cont .list-type-v1{
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.top-block-v3 .timer{
+    margin: 20px auto 0;
+    padding: 15px 20px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px dashed #ccc;
+}
+.top-block-v3 .timer>h4{
+    float: left;
+    width: 110px;
+    padding: 0 0 5px;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.top-block-v3 .timer>h4 strong{
+    font-weight: 900;
+    font-size: 28px;
+}
+.top-block-v3 .timer .timer-action{
+    float: right;
+}
+.top-block-v3 .timer .timer-action .timer-col{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    margin: 0 10px;  
+    text-align: center;
+    line-height: 1em;
+    color: #e62117;
+}
+.top-block-v3 .timer .timer-action .timer-col:after{
+    content: ':';
+    position: absolute;
+    top: 20%;
+    right: -12px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+.top-block-v3 .timer .timer-action .timer-col:last-child:after{
+    display: none;
+}
+.top-block-v3 .timer .timer-action .timer-col>strong{
+    display: inline-block;
+    width: 50px;
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v3 .timer .timer-action .timer-col>span{
+    display: inline-block;
+    font-weight: 400;
+}
+.top-block-v3 a.button-m{
+    width: auto;
+    margin: 20px auto 0;
+}
+.top-block-v3 .ost-col{
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.top-block-v3 .ost-col>span{
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #fff;
+    background: #07a6e0;
+    background: -moz-linear-gradient(-45deg, #32dac3 30%, #07a6e0 100%);
+    background: -webkit-linear-gradient(-45deg, #32dac3 30%,#07a6e0 100%);
+    background: -webkit-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -moz-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -o-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: linear-gradient(135deg, #32dac3 30%,#07a6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32dac3', endColorstr='#07a6e0',GradientType=1 );
+}
+
+/* Шапка-v31 top-block-pic-v31.jpg */
+.top-block-v31{
+    padding: 0;
+}
+.top-block-v31 .top-title{
+    text-align: center;
+    font-weight: 900;
+
+    color: #fff;
+}
+.top-block-v31 .top-title .sub-title{
+    padding: 10px 20px;
+    font-size: 23px;
+    line-height: 1.2em;
+    background: #2a2d33;
+}
+.top-block-v31 .top-title>h1{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: 900;
+    background: #e62117;
+}
+.top-block-v31 .top-img{
+    height: 590px;
+    padding: 488px 0 0;
+    background: url(../img/top-block-pic-v31.jpg) 50% 0 no-repeat;
+}
+.top-block-v31 .cost-cont>div{
+    float: left;
+    width: 190px;
+    padding: 2px 0 0;
+    text-align: center;
+    color: #fff;
+}
+.top-block-v31 .cost-cont .sale-cost{
+     transform: translateY(-10px);
+    width: 100px;
+    padding: 4px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.top-block-v31 .cost-cont .sale-cost>strong{
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v31 .cost-cont .old-cost>strong, .top-block-v31 .cost-cont .new-cost>strong{
+    display: block;
+    display: block;
+    font-size: 2.3em;
+    line-height: 29px;
+    font-weight: 900;
+}
+.top-block-v31 .cost-cont .old-cost>strong{
+    font-size: 29px;
+    line-height: 29px;
+    text-decoration: line-through;
+}
+.top-block-v31 .top-cont{
+    padding: 0 50px 40px;
+}
+.top-block-v31 .top-cont .list-type-v1{
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.top-block-v31 .timer{
+    margin: 20px auto 0;
+    padding: 15px 20px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px dashed #ccc;
+}
+.top-block-v31 .timer>h4{
+    float: left;
+    width: 110px;
+    padding: 0 0 5px;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.top-block-v31 .timer>h4 strong{
+    font-weight: 900;
+    font-size: 28px;
+}
+.top-block-v31 .timer .timer-action{
+    float: right;
+}
+.top-block-v31 .timer .timer-action .timer-col{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    margin: 0 10px;  
+    text-align: center;
+    line-height: 1em;
+    color: #e62117;
+}
+.top-block-v31 .timer .timer-action .timer-col:after{
+    content: ':';
+    position: absolute;
+    top: 20%;
+    right: -12px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+.top-block-v31 .timer .timer-action .timer-col:last-child:after{
+    display: none;
+}
+.top-block-v31 .timer .timer-action .timer-col>strong{
+    display: inline-block;
+    width: 50px;
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 900;
+}
+.top-block-v31 .timer .timer-action .timer-col>span{
+    display: inline-block;
+    font-weight: 400;
+}
+.top-block-v31 a.button-m{
+    width: auto;
+    margin: 20px auto 0;
+}
+.top-block-v31 .ost-col{
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.top-block-v31 .ost-col>span{
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #fff;
+    background: #07a6e0;
+    background: -moz-linear-gradient(-45deg, #32dac3 30%, #07a6e0 100%);
+    background: -webkit-linear-gradient(-45deg, #32dac3 30%,#07a6e0 100%);
+    background: -webkit-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -moz-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: -o-linear-gradient(315deg, #32dac3 30%,#07a6e0 100%);
+    background: linear-gradient(135deg, #32dac3 30%,#07a6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32dac3', endColorstr='#07a6e0',GradientType=1 );
+}
+
+/* problems */
+
+.problems_block .info_block {
+    padding: 30px 30px 0;
+    text-align: center;
+}
+
+.problems_block .info_block img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #4a4c51;
+}
+
+.problems_block .info_block .description {
+    margin: 30px 0 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.problems_block .info_block p {width: 415px;margin:auto;line-height: normal;font-size: 24px;}
+
+/* about */
+
+.about_block p {
+    text-align: center;
+}
+
+.about_block h4 {
+    margin: 20px 0 0;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+}
+
+.about_block ul {
+    margin: 0 0 20px;
+}
+
+/* comparison-block */
+.comparison-block{
+    padding: 40px 5px 20px;
+}
+.comparison-block table{
+    border-spacing: 5px 0;
+    text-align: center;
+}
+.comparison-block table td{
+    width: 50%;
+    padding: 12px 8px;
+    border-bottom: 1px dashed #ccc;
+}
+.comparison-block table tr:last-child td {
+    border-bottom: 0;
+}
+.comparison-block table thead td{
+    padding: 20px 5px;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border-bottom: 0;
+}
+.comparison-block table thead td:nth-child(1){
+    background: #ff9103;
+}
+.comparison-block table thead td:nth-child(1):before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px -3px 0;
+    background: url(../img/comparison-icon.png) 0 0 no-repeat;
+}
+.comparison-block table thead td:nth-child(2){
+    background: #73d514;
+}
+.comparison-block table thead td:nth-child(2):before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px -3px 0;
+    background: url(../img/comparison-icon.png) -18px 0 no-repeat;
+}
+.comparison-block table tbody tr:nth-child(2n){
+    background: #f9f9f9;
+}
+
+.use-block-v1 .list-type-v4>li h4{
+    padding: 18px 0 10px 144px;
+}
+
+.use-block-v2 .list-type-v4>li h4{
+    padding: 18px 0 10px 144px;
+}
+
+.use-block-v3 .use-cont{
+    padding: 0 20px;
+}
+.use-block-v3 .use-cont>li{
+    margin: 25px auto 0;
+    padding: 0 0 25px;
+    border-bottom: 1px dashed #ccc;
+}
+.use-block-v3 .use-cont>li:nth-child(1){
+    margin: 0;
+}
+.use-block-v3 .use-cont>li:last-child{
+    padding: 0;
+    border: 0;
+}
+.use-block-v3 .use-cont>li>span{
+    display: block;
+    float: left;
+    width: 50px;
+    padding: 0 10px 0 0;
+    line-height: 48px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 900;
+    color: #e62117;
+    border-right: 1px solid #eee;
+}
+.use-block-v3 .use-cont>li>p{
+    padding: 0 0 4px 70px;
+}
+.use-block-v3.gradient-theme .use-cont>li{
+    border-color: rgba(255,255,255,.7);
+}
+.use-block-v3.gradient-theme .use-cont>li>span{
+    color: #fff;
+    border-color: rgba(255,255,255,.3);
+}
+.use-block-v3.dark-theme .use-cont>li{
+    border-color: rgba(255,255,255,.2);
+}
+.use-block-v3.dark-theme .use-cont>li>span{
+    color: #fff;
+    border-color: rgba(255,255,255,.12);
+}
+
+/* Эксперт-v1 expert-block-v1.psd */
+.expert-block-v1{
+    padding: 30px 0 20px;
+
+}
+.expert-block-v1 .lvl-title-v1, .expert-block-v1 .lvl-title-v1:after{
+    color: #000000;
+}
+.expert-block-v1 .expert-cont{
+    padding: 10px 30px 0;
+}
+.expert-block-v1 .expert-cont .expert-title{
+    margin: 45px 0 10px;
+    text-align: center;
+}
+.expert-block-v1 .expert-cont .expert-title>strong{
+    display: block;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.expert-block-v1 .expert-cont .expert-text{
+    font-size: 21px;
+	text-align: justify;
+}
+
+/* Эксперт-v2 expert-block-v2.png */
+.expert-block-v2 .expert-cont{
+    position: relative;
+    padding: 75px 25px 0;
+}
+.expert-block-v2 .expert-cont>img{
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: 0;
+}
+.expert-block-v2 .expert-cont .expert-text{
+    padding: 90px 20px 20px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border-bottom: 3px solid #dcdcdc;
+    color: #333;
+    background: #fff;
+}
+
+
+.expert-block-v3{
+}
+.expert-block-v3 .expert-title{
+    height: 290px;
+    padding: 192px 40px 0;
+    color: #fff;
+    background: url(https://big-dreams.ru/massager-3d/img/expert-block-v3.jpg) 50% 0 no-repeat;
+}
+.expert-block-v3 .expert-title>strong{
+    display: block;
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.expert-block-v3 .expert-cont {
+    padding: 20px 30px 0;
+    text-align: center;
+}
+
+/* Подделка-v1 fake-block-v1.psd */
+.fake-block-v1{
+    
+}
+.fake-block-v1 .fake-cont-v1{
+    padding: 0 30px;    
+    text-align: center;
+}
+.fake-block-v1 .fake-cont-v1>img{
+    display: block;
+    margin: 15px auto 30px;
+}
+.fake-block-v1 .fake-cont-v1>h3{
+    margin: 15px auto;
+    font-weight: 700;
+}
+.fake-block-v1 .fake-cont-v1>h3 strong{
+    display: block;
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.fake-block-v1 .fake-cont-v1>p{
+    margin: 15px 0 30px;
+}
+
+/* Доставка/оплата-v1 delivery-block-v1.psd */
+.delivery-block-v1{
+}
+.delivery-block-v1 .delivery-cont{
+    background: url(https://big-dreams.ru/massager-3d/img/delivery-block-v1.jpg) 50% 0 no-repeat;
+}
+.delivery-block-v1 .delivery-cont>li{
+    float: left;
+    width: 50%;
+    height: 236px;
+    margin: 0 0 8px;
+    padding: 186px 10px 0 5px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: #fff;
+}
+.delivery-block-v1 .delivery-cont>li:nth-child(2n){
+    padding: 186px 5px 0 10px;
+}
+
+/* Доставка/оплата-v2 delivery-block-v2.psd*/
+.delivery-block-v2{
+}
+.delivery-block-v2 .delivery-cont{
+    padding: 0 30px;
+}
+.delivery-block-v2 .delivery-cont>li{
+    margin: 20px 0 40px;
+}
+.delivery-block-v2 .delivery-cont>li:last-child{
+    margin: 0;
+}
+.delivery-block-v2 .delivery-cont>li:before{
+    content: '';
+    display: block;
+    float: left;
+    width: 91px;
+    height: 91px;
+    background: url(https://big-dreams.ru/massager-3d/img/delivery-block-v2.png) no-repeat;
+}
+.delivery-block-v2 .delivery-cont>li:nth-child(1):before{
+    background-position: 0 0;
+}
+.delivery-block-v2 .delivery-cont>li:nth-child(2):before{
+    background-position: -91px 0;
+}
+.delivery-block-v2 .delivery-cont>li:nth-child(3):before{
+    background-position: -182px 0;
+}
+.delivery-block-v2 .delivery-cont>li>h4{
+    padding: 10px 0 4px 111px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.delivery-block-v2 .delivery-cont>li>p{
+    padding: 0 0 0 111px;
+}
+
+/* Доставка/оплата-v3 delivery-block-v3.psd */
+.delivery-block-v3{
+}
+.delivery-block-v3 .delivery-cont{
+    background: url(../img/delivery-block-v3.jpg) 50% 0 no-repeat;
+}
+.delivery-block-v3 .delivery-cont>li{
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin: 0 0 12px;
+    padding: 250px 12px 0;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+/* Доставка/оплата-v4 delivery-block-v4.psd */
+.delivery-block-v4{
+}
+.delivery-block-v4 .delivery-cont{
+    padding: 0 10px;
+}
+.delivery-block-v4 .delivery-cont>li{
+    float: left;
+    width: 50%;
+    margin: 30px 0 0;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.delivery-block-v4 .delivery-cont>li:nth-child(1),.delivery-block-v4 .delivery-cont>li:nth-child(2){
+    margin: 0;
+}
+.delivery-block-v4 .delivery-cont>li:before{
+    content: '';
+    display: block;
+    width: 147px;
+    height: 159px;
+    margin: 0 auto 15px;
+    background: url(https://big-dreams.ru/massager-3d/img/delivery-block-v4.png) no-repeat;
+}
+.delivery-block-v4 .delivery-cont>li:nth-child(1):before{
+    background-position: 0 0;
+}
+.delivery-block-v4 .delivery-cont>li:nth-child(2):before{
+    background-position: -147px 0;
+}
+.delivery-block-v4 .delivery-cont>li:nth-child(3):before{
+    background-position: -294px 0;
+}
+.delivery-block-v4 .delivery-cont>li:nth-child(4):before{
+    background-position: -441px 0;
+}
+
+/* Отзывы-v1 rev-block-v1_1.jpg + rev-block-v1-button.psd*/
+.rev-block-v1 .rev-cont{
+    padding: 0px 25px;
+    text-align: center;
+}
+.rev-block-v1 .rev-item>img{
+    display: block;
+    margin: 0 auto 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.rev-block-v1 .rev-item>h4{
+    padding: 10px 0 15px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.rev-block-v1 .rev-item>h4:after{
+    content: '';
+    display: block;
+    width: 94px;
+    height: 14px;
+    margin: 10px auto 0;
+    background: url(../img/star-icon.png) 0 0 repeat-x;
+}
+
+.rev-block-v1 .slick-arrow{
+    display: inline-block;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    z-index: 99;
+    top: 280px;
+    background: url(https://big-dreams.ru/massager-3d/img/rev-block-v1-button.png) no-repeat;
+ }
+.rev-block-v1 .slick-prev{
+    left: 25px;
+    background-position: 0 0;
+}
+.rev-block-v1 .slick-next{
+    background-position: -43px 0;
+    right: 25px;
+}
+
+/* Отзывы-v2 rev-block-v2_1.jpg + rev-block-v2-button.psd*/
+.rev-block-v2{
+}
+.rev-block-v2 .rev-cont{
+    padding: 0 40px;
+    text-align: center;
+}
+.rev-block-v2 .rev-item{
+    margin: 60px 0 0;
+    padding: 12px 20px 20px;
+    text-align: center;
+    color: #333;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border-bottom: 3px solid #dcdcdc;
+    background: #fff;
+}
+.rev-block-v2 .rev-item>img{
+    display: block;
+    margin: -67px auto 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow:         0 0 0 4px rgba(255, 255, 255, 0.25);
+    box-shadow:         0 0 0 4px rgba(255, 255, 255, 0.25);
+}
+.rev-block-v2 .rev-item>h4{
+    padding: 0 0 15px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.rev-block-v2 .rev-item>h4:after{
+    content: '';
+    display: block;
+    width: 94px;
+    height: 14px;
+    margin: 10px auto 0;
+    background: url(../img/star-icon.png) 0 0 repeat-x;
+}
+.rev-block-v2 .slick-arrow{
+    display: inline-block;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    z-index: 99;
+    top: 32px;
+    background: url(https://big-dreams.ru/massager-3d/img/rev-block-v2-button.png) no-repeat;
+ }
+.rev-block-v2 .slick-prev{
+    left: 75px;
+    background-position: 0 0;
+}
+.rev-block-v2 .slick-next{
+    background-position: -56px 0;
+    right: 75px;
+}
+
+/* Отзывы-v3 rev-block-v3_1.jpg + rev-block-v3-button.psd*/
+.rev-block-v3{
+}
+.rev-block-v3 .rev-cont{
+    padding: 0 25px;
+    text-align: center;
+}
+.rev-block-v3 .rev-item{
+    text-align: center;
+}
+.rev-block-v3 .rev-item>img{
+    display: block;
+    margin: 0 auto 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.rev-block-v3 .rev-item>h4{
+    padding: 0 0 15px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.rev-block-v3 .rev-item>h4:after{
+    content: '';
+    display: block;
+    width: 94px;
+    height: 14px;
+    margin: 10px auto 0;
+    background: url(../img/star-icon.png) 0 0 repeat-x;
+}
+.rev-block-v3 .slick-arrow{
+    display: inline-block;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    z-index: 99;
+    top: 70px;
+    background: url(../img/rev-block-v3-button.png) no-repeat;
+ }
+.rev-block-v3 .slick-prev{
+    left: 40px;
+    background-position: 0 0;
+}
+.rev-block-v3 .slick-next{
+    background-position: -54px 0;
+    right: 40px;
+}
+.rev-block-v3 .slick-dots{
+    padding: 20px 0 0;
+    text-align: center;
+}
+.rev-block-v3 .slick-dots button{
+    display: none;
+}
+.rev-block-v3 .slick-dots li{
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    margin: 0 5px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    border-top: 1px solid #ddd;
+    background: #f3f3f3;
+}
+.rev-block-v3 .slick-dots li.slick-active{
+    border: 0;
+    background: #e62117;
+}
+
+/* Реквизиты */
+.copyright{
+    color: #333;
+    padding: 30px 0 20px;
+    text-align: center;
+    font-size: 14px;
+    background: #eee;
+}
+.copyright>div{
+    padding: 0 0 10px;
+    font-size: 40px;
+    line-height: 1em;
+}
+p.limit {
+    text-align: center;
+    color: #ff0606;
+    font-size: 20px;
+    line-height: 17px;
+    margin: auto;
+    width: 380px;
+    padding-top: 10px;
+}
