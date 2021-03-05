@@ -475,7 +475,8 @@
     position: relative;
     display: inline-block;
     width: 55px;
-    margin: 0 10px;  
+    margin: 0 10px; 
+    font-size: 0.8em; 
     text-align: center;
     line-height: 1em;
     color: #e62117;
@@ -634,6 +635,7 @@
     position: relative;
     display: inline-block;
     width: 55px;
+    font-size: 0.8em; 
     margin: 0 10px;  
     text-align: center;
     line-height: 1em;
