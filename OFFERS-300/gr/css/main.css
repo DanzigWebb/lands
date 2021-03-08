@@ -502,6 +502,7 @@
 .top-block-v3 .timer .timer-action .timer-col>span{
     display: inline-block;
     font-weight: 400;
+    font-size: 0.6rem;
 }
 .top-block-v3 a.button-m{
     width: auto;
@@ -662,6 +663,7 @@
 .top-block-v31 .timer .timer-action .timer-col>span{
     display: inline-block;
     font-weight: 400;
+    font-size: 0.6rem;
 }
 .top-block-v31 a.button-m{
     width: auto;
