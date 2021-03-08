@@ -1,0 +1,112 @@
+#form_image {
+    margin: 0 0 -88px 0;
+}
+
+.form_image_wrap_image {
+    margin: 0 auto;
+    max-width: 190px;
+    position: relative;
+}
+.form_image_wrap_image img {width: 100%}
+
+
+
+#form {}
+form {
+    width: 100%;
+}
+
+#form_image {}
+
+
+.form_wrap {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 89px 13px 16px;
+    box-shadow: 0 0 20px 13px #00000026;
+}
+.form_wrap form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.form_wrap label{
+    display: block;
+    margin-top: 13px;
+}
+
+.descount,
+.termina {
+    text-align: center;
+}
+
+.termina {
+    margin-bottom: 10px;
+}
+
+.descount {
+    color: #3578e5;
+    font-size: 27px !important;
+    font-weight: bold;
+}
+
+.horas {
+    display: flex;
+    justify-content: center;
+    color: #80808069;
+}
+
+.horas div{
+    text-align: center;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+#price {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    font-size: 24px;
+}
+#price .price_new {
+    margin: 0px 5px;
+    color: #3578e5;
+    text-shadow: 4px 4px 3px #00000033;
+}
+#price .price_old {
+    margin: 0px 5px;
+    color: #80808069;
+    text-decoration: line-through;
+}
+
+input {
+    border: 1px solid #3578e563;
+    height: 31px;
+    padding-left: 10px;
+}
+
+button.btnn {
+    height: 59px;
+    background: #3580ed;
+    margin: 10px 0;
+    border: 1px solid #3580ed;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.sus {
+    display: flex;}
+.sus_wrwp_img {width: 15px;margin-right: 5px}
+.sus_wrwp_img img {width: 100%}
+.sus_text {
+    color: gray;
+    font-size: 12px;
+}
+
+.comments_repost_img img {
+    transform: scale(1.1);
+}
