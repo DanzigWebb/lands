@@ -1,0 +1,3599 @@
+ 
+.download-offer {
+  background: #00b3be;
+  padding: 100px 0;
+}
+@media (max-width: 767px) {
+  .download-offer .row-1 {
+    margin-bottom: 20px;
+  }
+}
+.download-offer h2 {
+  color: #fff;
+  font: 300 39px "museo-slab", serif;
+  margin: 0 0 30px;
+}
+.download-offer .form-text,
+.download-offer .form-email,
+.download-offer .form-search,
+.download-offer .select2-container .select2-selection--single {
+  border: 1px solid #fff;
+}
+.download-offer .form-text:focus,
+.download-offer .form-email:focus,
+.download-offer .form-search:focus,
+.download-offer .form-textarea:focus {
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+.faq {
+  margin: 60px 0 0 0;
+  padding: 60px 0;
+}
+.faq .container {
+  position: relative;
+}
+.faq .container:after {
+  background: #ececec;
+  content: "";
+  height: 1px;
+  left: 15px;
+  position: absolute;
+  top: -60px;
+  width: calc(100% - 30px);
+}
+.faq .row-1 {
+  margin-bottom: 50px;
+}
+.faq h2 {
+  color: #353735;
+  font: 33px "Gotham Black", serif;
+  margin: 0;
+}
+.faq .questions-buffer {
+  position: relative;
+  left: -20px;
+}
+.faq .questions-buffer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.faq .questions-buffer a {
+  color: #353735;
+  display: block;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.faq .questions-buffer .active a,
+.faq .questions-buffer a:hover {
+  background: #00b3b2;
+  color: #fff;
+  text-shadow: 0 0 0.35px #fff, 0 0 0.35px #fff;
+  transition: all 0.4s ease;
+}
+.faq .faqs-buffer dl {
+  margin: 0;
+}
+.faq .faqs-buffer dt {
+  font: 28px "proxima-nova", sans-serif;
+  margin: 0 0 40px 0;
+}
+.faq .faqs-buffer dd {
+  display: block;
+  font: 16px/24px "proxima-nova", sans-serif;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .find-chiropractor {
+    background: linear-gradient(to left, rgba(53, 196, 181, 0.75) 50%, rgba(0, 148, 179, 0.75) 50%);
+  }
+}
+@media (min-width: 768px) {
+  .find-chiropractor .container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .find-chiropractor .col-1 {
+    background: rgba(0, 148, 179, 0.75);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.find-chiropractor .col-1 h2 {
+  color: #fff;
+  font: 700 24px "museo-slab", serif;
+  margin: 0 0 15px 0;
+}
+.find-chiropractor .col-1 p {
+  color: #fff;
+  font: 16px "proxima-nova", sans-serif;
+  margin: 0 0 15px 0;
+}
+.find-chiropractor .col-1 form {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .find-chiropractor .col-1 form {
+    width: 75%;
+  }
+}
+.find-chiropractor .col-1 input {
+  background: rgba(9, 99, 113, 0.5);
+  border: 0;
+  color: #fff;
+  font: 16px "proxima-nova", sans-serif;
+  height: 50px;
+  padding: 6px 68px 6px 20px;
+  width: 100%;
+}
+.find-chiropractor .col-1 button {
+  background: none;
+  border: 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 28px;
+  position: absolute;
+  right: 20px;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+@media (max-width: 767px) {
+  .find-chiropractor .col-2 {
+    background: rgba(53, 196, 181, 0.7);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.find-chiropractor .col-2 form {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .find-chiropractor .col-2 form {
+    width: 75%;
+  }
+}
+.find-chiropractor .col-2 input {
+  background: rgba(9, 99, 113, 0.5);
+  border: 0;
+  color: #fff;
+  font: 16px "proxima-nova", sans-serif;
+  height: 50px;
+  padding: 6px 68px 6px 20px;
+  width: 100%;
+}
+.find-chiropractor .col-2 button {
+  background: none;
+  border: 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 28px;
+  position: absolute;
+  right: 20px;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+/*Redesign*/
+@media (min-width: 768px) {
+  .new-index .find-chiropractor {
+    background: linear-gradient(to left, #00b3be 50%, #8f8dc8 50%);
+  }
+}
+@media (min-width: 768px) {
+  .new-index .find-chiropractor.black-friday-offer {
+    background: linear-gradient(to left, #8f8dc8 50%, #8f8dc8 50%);
+  }
+}
+@media (min-width: 768px) {
+  .new-index .find-chiropractor.end-of-year-offer {
+    background: linear-gradient(to left, #00b3be 50%, #00b3be 50%);
+  }
+}
+@media (max-width: 767px) {
+  .new-index .col-1 {
+    background: #8f8dc8 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.new-index .col-1 p {
+  font: 16px/1.6em "Gotham Book", sans-serif;
+}
+@media (max-width: 767px) {
+  .new-index .col-1 p {
+    padding-bottom: 15px;
+  }
+}
+.new-index .col-1 input {
+  border-radius: 0;
+  background: #FFF;
+  color: #353735;
+}
+.new-index .col-1 button {
+  font-size: 21.5px;
+  border: 0;
+  padding-left: 13px;
+  color: #8f8dc8;
+  right: 8px;
+  line-height: 48px;
+  border-left: 1px solid #dfdfdf;
+}
+@media (max-width: 767px) {
+  .new-index .end-of-year-offer .col-1 {
+    background: #00b3be !important;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.new-index .end-of-year-offer .col-1 button {
+  color: #9a9b9a;
+}
+@media (max-width: 767px) {
+  .new-index .col-2 {
+    background: #00b3be !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+#main-footer {
+  background: #28282a;
+  padding: 0 0;
+}
+@media (min-width: 768px) {
+  #main-footer {
+    padding: 90px 0;
+  }
+}
+#main-footer .container-1 {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+#main-footer .branding {
+  margin: 0 0 22px 0;
+  padding: 0 0 26px 0;
+  position: relative;
+}
+#main-footer .branding a {
+  display: block;
+  height: 62px;
+  margin: 0 0 25px 0;
+  width: 120px;
+}
+#main-footer .branding p {
+  color: #fff;
+  font: 13px/1.4em "Gotham Book", sans-serif;
+  margin: 0;
+}
+#main-footer .branding:after {
+  border-bottom: 1px solid #616163;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#main-footer #colophon p {
+  color: #8d8d8d;
+  font: 11px/1.4 "Gotham Book", sans-serif;
+  margin: 0 0 5px 0;
+}
+#main-footer #colophon p:last-child {
+  margin: 0;
+}
+#main-footer dl {
+  margin: 0 0 30px 0;
+}
+#main-footer dl:last-child {
+  margin: 0;
+}
+#main-footer dt {
+  color: #fff;
+  font: 300 15px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+#main-footer dd {
+  display: block;
+  list-style-type: none;
+  margin: 0 0 15px 0;
+}
+#main-footer dd:last-child {
+  margin: 0;
+}
+#main-footer a {
+  display: block;
+  color: #8d8d8d;
+  font: 13px "Gotham Book", sans-serif;
+}
+#main-footer #ego {
+  border-top: 1px solid #616163;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+#main-footer #ego ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#main-footer #ego li {
+  float: left;
+  margin: 0 30px 0 0;
+}
+#main-footer #ego li:last-child {
+  margin: 0;
+}
+#main-footer #ego a {
+  display: block;
+  outline: 0;
+  text-indent: -9999px;
+}
+#main-footer #ego .inc-500 a {
+  background: url(../images/inc-500.png) no-repeat;
+  height: 24px;
+  width: 29px;
+}
+#main-footer #ego .ifa a {
+  background: url(../images/ifa.png) no-repeat;
+  height: 24px;
+  width: 128px;
+}
+#main-footer #ego .franchise-registry a {
+  background: url(../images/franchise-registry.png) no-repeat;
+  height: 24px;
+  width: 94px;
+}
+#main-footer #ego .vet-fran a {
+  background: url(../images/vet-fran.png) no-repeat;
+  height: 24px;
+  width: 52px;
+}
+#main-footer #ego .icsc a {
+  background: url(../images/icsc.png) no-repeat;
+  height: 24px;
+  width: 92px;
+}
+#main-footer #copyright ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#main-footer #copyright li {
+  border-right: 1px solid #8d8d8d;
+  color: #8d8d8d;
+  float: left;
+  font: 10px/1.4em "Gotham Book", sans-serif;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+}
+#main-footer #copyright li:last-child {
+  border-right: 0;
+  margin: 0;
+  padding: 0;
+}
+#main-footer #copyright a {
+  display: block;
+  font: 10px "proxima-nova", sans-serif;
+}
+#main-footer #disclaimer {
+  color: #8d8d8d;
+  font: 10px/1.4em "Gotham Book", sans-serif;
+}
+
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=email],
+textarea {
+  outline: none;
+}
+
+input[readonly=readonly] {
+  background: #eee;
+}
+
+form .form-fieldset {
+  margin: 0 0 20px 0;
+}
+form .form-fieldset:last-child {
+  margin: 0;
+}
+form .form-fieldset .form-legend {
+  border-bottom: 1px solid #999;
+  color: #353735;
+  font: 700 30px/36px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+.form-item {
+  margin: 0 0 10px 0;
+}
+.form-item > label {
+  display: block;
+}
+
+.form-item:last-child {
+  margin: 0;
+}
+
+.form-item-3-cols {
+  font-size: 0;
+}
+.form-item-3-cols .form-text {
+  margin: 0 10px 0 0;
+  width: 20%;
+}
+.form-item-3-cols .form-text:last-child {
+  margin: 0;
+}
+
+.form-label {
+  color: #000;
+  display: block;
+  font: 16px/24px "proxima-nova", sans-serif;
+  margin: 0 0 5px 0;
+}
+
+.form-required {
+  color: #c00;
+  display: inline-block;
+  font: 16px/24px "proxima-nova", sans-serif;
+}
+
+.form-text,
+.form-email,
+.form-search {
+  border: 1px solid #999;
+  color: #999;
+  font: 14px "proxima-nova", sans-serif;
+  height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.form-text:focus,
+.form-email:focus,
+.form-search:focus,
+.form-textarea:focus {
+  border: 1px solid #00b3be;
+  box-shadow: inset 0 1px 1px #00b3be, 0 0 8px #00b3be;
+  transition: all 0.4s ease;
+}
+
+.form-text::-webkit-input-placeholder,
+.form-email::-webkit-input-placeholder,
+.form-search::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-text::-moz-placeholder,
+.form-email::-moz-placeholder,
+.form-search::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-text:-ms-input-placeholder,
+.form-email:-ms-input-placeholder,
+.form-search:-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-text:-moz-placeholder,
+.form-email:-moz-placeholder,
+.form-search:-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-textarea {
+  border: 1px solid #999;
+  color: #999;
+  font: 14px "proxima-nova", sans-serif;
+  min-height: 100px;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+}
+
+.form-select {
+  width: 100%;
+}
+
+.form-horizontal .form-item > label {
+  margin: 0;
+  position: relative;
+}
+.form-horizontal .form-item > label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-horizontal .form-label {
+  float: left;
+  left: 0;
+  margin: 0;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: calc(50% - 10px);
+}
+.form-horizontal .form-text,
+.form-horizontal .form-email,
+.form-horizontal .form-search,
+.form-horizontal .form-textarea,
+.form-horizontal .form-select,
+.form-horizontal .select2 {
+  float: right;
+  width: calc(50% - 10px) !important;
+}
+
+.form-item-checkbox > label {
+  margin: 0;
+}
+.form-item-checkbox > label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-item-checkbox .form-checkbox {
+  float: left;
+  margin: 0;
+  width: 40px;
+}
+.form-item-checkbox .form-label {
+  float: left;
+  left: auto;
+  margin: 0;
+  text-align: left;
+  position: static;
+  top: auto;
+  transform: none;
+  width: calc(100% - 40px);
+}
+
+.form-errors,
+.form-errors * {
+  color: #c00;
+}
+
+.reCAPTCHA {
+  margin: 0 auto;
+  width: 440px;
+}
+
+.button-yellow {
+  background: #ffc220;
+  border: 1px solid #ffc220;
+  color: #fff;
+  font: 16px/50px "Gotham Black", sans-serif;
+  height: 50px;
+  text-align: center;
+  transition: all 0.4s ease;
+  display: inline-block;
+  width: 100%;
+}
+
+.button-yellow:hover {
+  background: #f1b71e;
+  border: 1px solid #f1b71e;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-white-reverse {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font: bold 16px/50px "Gotham Black", sans-serif;
+  height: 50px;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: 100%;
+}
+
+.button-white-reverse:hover {
+  background: none;
+  color: #fff;
+}
+
+.button-black {
+  background: #353735;
+  border: 1px solid #353735;
+  color: #fff;
+  font: 15px/50px "Gotham Black", sans-serif;
+  height: 50px;
+  text-align: center;
+  transition: all 0.4s ease;
+  display: inline-block;
+  width: 100%;
+}
+
+.button-black:hover {
+  background: #fff;
+  border: 1px solid #353735;
+  color: #353735;
+  text-decoration: none;
+}
+
+body {
+  color: #353735;
+}
+
+a {
+  color: #00b3be;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+h1 {
+  color: #353735;
+  font: 700 32px/1.3em "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  color: #353735;
+  font: 700 30px/1.3 "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  color: #353735;
+  font: 300 24px/1.3 "Gotham Book", serif;
+  margin: 0 0 20px 0;
+}
+
+p {
+  color: #353735;
+  font: 20px "Gotham Book", sans-serif;
+  margin: 0 0 30px 0;
+}
+
+ul {
+  list-style: outside disc;
+  margin: 0 0 30px 20px;
+  padding: 0;
+}
+ul li {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0 0 20px 0;
+}
+ul li:last-child {
+  margin: 0;
+}
+
+ol {
+  list-style: outside decimal;
+  margin: 0 0 30px 20px;
+  padding: 0;
+}
+ol li {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0 0 20px 0;
+}
+ol li:last-child {
+  margin: 0;
+}
+
+dl {
+  margin: 0 0 30px 20px;
+  padding: 0;
+}
+dl dt {
+  color: #000;
+  font: 15px/18px "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+dl dd {
+  color: #353735;
+  display: list-item;
+  list-style-type: disc;
+  font: 16px/24px "proxima-nova", sans-serif;
+  margin: 0 0 10px 0;
+}
+dl dd:last-child {
+  margin: 0;
+}
+
+blockquote {
+  border: 0;
+  color: #838bc5;
+  font: 300 22px/32px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+blockquote cite {
+  display: block;
+  color: #00b3be;
+  font: 14px "Gotham Book", serif;
+  text-align: right;
+}
+
+blockquote:before,
+blockquote:after {
+  color: #838bc5;
+  display: block;
+  font: 60px "Gotham Black", serif;
+  height: 32px;
+  text-align: center;
+}
+
+blockquote:before {
+  content: "“";
+  margin-bottom: 24px;
+}
+
+blockquote:after {
+  content: "”";
+  margin-top: 24px;
+}
+
+#content {
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  #content {
+    padding: 60px 0;
+  }
+}
+
+.social {
+  border-top: 1px solid #e1e1e1;
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+.social ul {
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.social li {
+  display: table-cell;
+}
+.social a {
+  background: #b8b8b8;
+  color: #fff;
+  display: block;
+  height: 32px;
+  text-align: center;
+  width: 32px;
+}
+.social a:hover {
+  background: #0094b3;
+  transition: all 0.4s ease;
+}
+.social i {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-header {
+  background: #8f8dc8;
+}
+#main-header .container {
+  height: 100px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #main-header .container {
+    height: 190px;
+  }
+}
+#main-header .branding {
+  height: 70px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 136px;
+}
+@media (min-width: 768px) {
+  #main-header .branding {
+    left: 15px;
+    top: 55px;
+    transform: none;
+  }
+}
+#main-header .branding a {
+  display: block;
+}
+#main-header .branding svg {
+  display: block;
+}
+
+#hamburger {
+  left: 15px;
+  position: absolute;
+  top: 15px;
+}
+#hamburger a {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  outline: 0;
+}
+
+@media (max-width: 767px) {
+  #main-nav {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translate(-100%, 0);
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav {
+    border-bottom: 1px solid #44b1c6;
+    position: absolute;
+    right: 15px;
+    top: 55px;
+    width: 70%;
+  }
+}
+#main-nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 1px;
+}
+@media (max-width: 767px) {
+  #main-nav > ul {
+    background: #00b3be;
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px 0;
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav > ul {
+    display: table;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li {
+    margin: 0 0 10px 0;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav > ul > li {
+    border-bottom: 1px solid transparent;
+    display: table-cell;
+    text-align: center;
+    padding: 0 0 0 0;
+    position: relative;
+  }
+}
+#main-nav > ul > li > a {
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li > a {
+    color: #fff;
+    display: block;
+    font: 600 15px/22px "proxima-nova", sans-serif;
+    padding: 0 15px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav > ul > li > a {
+    color: #fff;
+    display: inline-block;
+    font: 13px "proxima-nova", sans-serif;
+    transition: text-shadow 0.3s;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 992px) {
+  #main-nav > ul > li > a {
+    font: 16px "proxima-nova", sans-serif;
+  }
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li > a .fa {
+    display: none;
+  }
+}
+#main-nav > ul > li > a:hover, #main-nav > ul > li > a.active {
+  text-shadow: 0 0 0.35px #fff, 0 0 0.35px #fff;
+}
+#main-nav > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li > ul {
+    margin: 10px 0 0 0;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav > ul > li > ul {
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    left: 50%;
+    list-style: none;
+    margin: 0;
+    min-width: 200px;
+    opacity: 0;
+    padding: 15px 0;
+    position: absolute;
+    top: 100%;
+    transition: all 0.2s ease;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+    z-index: 1000;
+  }
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li > ul > li {
+    margin: 0 0 10px 0;
+  }
+  #main-nav > ul > li > ul > li:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  #main-nav > ul > li > ul > li > a {
+    color: #fff;
+    display: block;
+    font: 600 15px/22px "proxima-nova", sans-serif;
+    padding: 0 15px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav > ul > li > ul > li > a {
+    color: #a3a3a3;
+    display: block;
+    font: 14px "proxima-nova", sans-serif;
+    padding: 8px 25px;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+#main-nav > ul > li > ul > li > a:hover, #main-nav > ul > li > ul > li > a.active {
+  text-shadow: 0 0 0.35px #a3a3a3, 0 0 0.35px #a3a3a3;
+}
+
+@media (max-width: 767px) {
+  .main-nav-open {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav-open #main-nav {
+    transform: translate(0, 0);
+    transition: transform 0.3s;
+    z-index: 9999;
+  }
+}
+
+#location {
+  position: absolute;
+  right: 15px;
+  top: 116px;
+}
+#location a {
+  background: url(../images/pin.png) no-repeat left center;
+  color: #fff;
+  display: inline-block;
+  font: 10px/12px "proxima-nova", sans-serif;
+  margin: 0;
+  padding: 0 0 0 14px;
+  text-decoration: none;
+}
+#location a:hover {
+  text-shadow: 0 0 0.35px #fff, 0 0 0.35px #fff;
+}
+
+.light #main-header {
+  background: none !important;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .light #main-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+/*Redesign*/
+@media (min-width: 768px) {
+  .new-header #main-header .branding {
+    height: 90px;
+    top: 20%;
+  }
+  .new-header #main-header .branding svg {
+    background: #353835;
+    display: block;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .new-header #main-nav {
+    border-bottom: 1px solid transparent;
+  }
+}
+.new-header a.find-a-location {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+
+#main-hero {
+  position: relative;
+}
+#main-hero #main-header {
+  background: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+#main-hero #main-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 768px) {
+  #main-hero .find-chiropractor {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #main-hero .offer {
+    margin: 0 auto 30px auto;
+    width: 80%;
+  }
+}
+
+.hero-1 {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.hero-1 .wrapper {
+  background: rgba(0, 0, 0, 0.15);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero-1 .container {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+}
+@media (min-width: 768px) {
+  .hero-1 .container {
+    padding-bottom: 217px;
+  }
+}
+.hero-1 .row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero-1 .com-sm-12 {
+    padding-left: 40px;
+  }
+}
+.hero-1 h1 {
+  margin: 0 0 20px 0;
+}
+.hero-1 span {
+  display: block;
+}
+.hero-1 .span-1 {
+  color: #fff;
+  font: 700 45px "museo-slab", serif;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .hero-1 .span-1 {
+    font: 700 90px "museo-slab", serif;
+  }
+}
+.hero-1 .span-2 {
+  color: #fff;
+  font: 300 16px "museo-slab", serif;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .hero-1 .span-2 {
+    font: 300 33px "museo-slab", serif;
+  }
+}
+.hero-1 p {
+  color: #fff;
+  font: 12px "proxima-nova", sans-serif;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .hero-1 p {
+    font: 16px "proxima-nova", sans-serif;
+  }
+}
+
+.hero-2,
+.hero-3 {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 560px;
+  position: relative;
+}
+.hero-2 .container,
+.hero-3 .container {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+}
+.hero-2 .row,
+.hero-3 .row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.hero-2 h2,
+.hero-3 h2 {
+  color: #fff;
+  font: 39px/1.4em "Gotham Black", serif;
+  margin: 0 0 30px 0;
+}
+.hero-2 p,
+.hero-3 p {
+  color: #fff;
+  font: 16px/24px "proxima-nova", sans-serif;
+  margin: 0 0 30px 0;
+}
+.hero-2 a,
+.hero-3 a {
+  color: #fff;
+  font: 600 14px "proxima-nova", sans-serif;
+}
+.hero-2:before,
+.hero-3:before {
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-4 {
+  background: #00b3be;
+  height: 560px;
+  position: relative;
+}
+.hero-4 .figure {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-4 .figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}
+.hero-4 .container {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+}
+.hero-4 .row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.hero-4 h2 {
+  color: #fff;
+  font: 300 39px "museo-slab", serif;
+  margin: 0 0 30px 0;
+}
+
+.purple .hero-4 {
+  background: #838bc5;
+}
+
+.blue .hero-4 {
+  background: #0094b3;
+}
+
+.hero-5 {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 560px;
+  position: relative;
+}
+.hero-5 .wrapper {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero-5 .container {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+}
+.hero-5 .row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero-5 .com-sm-12 {
+    padding-left: 40px;
+  }
+}
+.hero-5 h1 {
+  margin: 0;
+}
+.hero-5 span {
+  display: block;
+}
+.hero-5 .span-1 {
+  color: #fff;
+  font: 700 45px "Gotham Black", serif;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+@media (min-width: 768px) {
+  .hero-5 .span-1 {
+    font: 700 62px "Gotham Black", serif;
+  }
+}
+.hero-5 .span-2 {
+  color: #fff;
+  font: 300 16px "museo-slab", serif;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .hero-5 .span-2 {
+    font: 300 33px "museo-slab", serif;
+  }
+}
+
+.hero-6 {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+.hero-6 .wrapper {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*Redesign*/
+@media (min-width: 768px) {
+  .new-index #main-hero .find-chiropractor {
+    position: relative;
+  }
+}
+.new-index #main-hero h2 {
+  font: 700 24px "Gotham Black", sans-serif;
+}
+@media (min-width: 1200px) {
+  .new-index #main-hero .offer {
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+}
+.new-index .hero-1 {
+  background-position: top right;
+  background-image: url(../images/asset-01C.jpg);
+}
+@media (max-width: 767px) {
+  .new-index .hero-1 {
+    background-image: url(../images/asset-01C-mobile.jpg);
+  }
+}
+.new-index .hero-1.hero-1-black-friday {
+  background-image: url(../images/black-friday-asset-01.jpg);
+}
+@media (max-width: 767px) {
+  .new-index .hero-1.hero-1-black-friday {
+    background-image: url(../images/black-friday-asset-01-mobile.jpg);
+  }
+}
+.new-index .hero-1.hero-1-end-of-year {
+  background-image: url(../images/end-of-year-asset-01.jpg);
+}
+@media (max-width: 767px) {
+  .new-index .hero-1.hero-1-end-of-year {
+    background-image: url(../images/end-of-year-asset-01-mobile.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .new-index .hero-1 .container {
+    padding: 200px 0;
+  }
+}
+.new-index .hero-1 .span-1 {
+  color: #fff;
+  font: 700 40px "Gotham Black", sans-serif;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .new-index .hero-1 .span-1 {
+    font: 700 64px "Gotham Black", sans-serif;
+  }
+}
+.new-index .hero-1 .limited-time-offer {
+  margin-bottom: 0px;
+}
+.new-index .hero-1 .limited-time-offer .span-1 {
+  color: #fff;
+  font: lighter 30px "Gotham Book", sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 23px 0;
+}
+@media (max-width: 767px) {
+  .new-index .hero-1 .limited-time-offer .span-1 {
+    font: lighter 20px "Gotham Book", sans-serif;
+    margin: 50px 0 10px 0;
+  }
+}
+.new-index .hero-1 .limited-time-offer .span-2 {
+  color: #fff;
+  font: 200 38px "Gotham Black", sans-serif;
+  margin: 0 0 0 0;
+}
+@media (max-width: 767px) {
+  .new-index .hero-1 .limited-time-offer .span-2 {
+    font: 200 25px "Gotham Black", sans-serif;
+    margin: 0 0 10px 0;
+  }
+}
+.new-index .hero-1 .limited-time-offer .span-3 {
+  color: #fff;
+  font: 200 170px "Gotham Black", sans-serif;
+  margin: 0 0 0 -10px;
+}
+@media (max-width: 767px) {
+  .new-index .hero-1 .limited-time-offer .span-3 {
+    font: 200 110px "Gotham Black", sans-serif;
+    margin: 0 0 0 -8px;
+  }
+}
+.new-index .hero-1 p {
+  font: 15px "Gotham Book", sans-serif;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .new-index .hero-1 p {
+    font: 15px "Gotham Book", sans-serif;
+    line-height: 24px;
+  }
+}
+.new-index .hero-1 a {
+  margin-top: 30px;
+  display: inline-block;
+  color: #fff;
+}
+.new-index .hero-1 a.new-patient-special {
+  text-decoration: none;
+  margin-right: 30px;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+}
+.new-index .hero-1 a.new-patient-special:hover {
+  font-weight: bold;
+}
+.new-index .hero-2 {
+  margin: auto;
+  background-color: #8f8dc8;
+  background-position: top left;
+  background-size: 50% 100%;
+  height: 550px;
+}
+.new-index .hero-2 .figure {
+  display: none;
+}
+@media (min-width: 768px) {
+  .new-index .hero-2 .figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}
+.new-index .hero-2 h2 {
+  font: 500 55px "Gotham Black", sans-serif;
+}
+.new-index .hero-2 p {
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin-bottom: 20px;
+  max-width: 470px;
+}
+.new-index .hero-2 a {
+  font: 400 13px "Gotham Book", sans-serif;
+  color: #353734;
+  display: inline-block;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.new-index .hero-2 a.watch {
+  font: 400 14px "Gotham Book", sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  line-height: 30px;
+  position: relative;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.new-index .hero-2 a.watch:hover {
+  font: 600 14px "Gotham Book", sans-serif;
+}
+.new-index .hero-2 a.watch i {
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+@media (max-width: 767px) {
+  .new-index .hero-2 {
+    height: 470px;
+  }
+}
+.new-index .hero-2:before {
+  background: rgba(0, 0, 0, 0);
+}
+.new-index .hero-3 {
+  background-color: #00b3be;
+  background-position: top right;
+  background-size: 50% 100%;
+  height: 550px;
+}
+.new-index .hero-3 .figure {
+  display: none;
+}
+@media (min-width: 768px) {
+  .new-index .hero-3 .figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}
+.new-index .hero-3 h2 {
+  font: 500 58px "Gotham Black", sans-serif;
+}
+.new-index .hero-3 p {
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+.new-index .hero-3 a {
+  font: 400 14px "Gotham Book", sans-serif;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.new-index .hero-3 a:hover {
+  font: 600 14px "Gotham Book", sans-serif;
+}
+.new-index .hero-3:before {
+  background: rgba(0, 0, 0, 0);
+}
+.new-index .hero-4 {
+  background: #00b3be;
+  height: 300px;
+}
+.new-index .hero-4 .offer a {
+  margin-top: 0px;
+}
+@media (max-width: 767px) {
+  .new-index .hero-4 {
+    height: 150px;
+  }
+}
+
+.latest-articles {
+  background: #fff;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .latest-articles {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .latest-articles .col-sm-3 {
+    margin-bottom: 40px;
+  }
+  .latest-articles .col-sm-3:last-child {
+    margin: 0;
+  }
+}
+.latest-articles h2 {
+  color: #353735;
+  font: 700 28px/1.4em "Gotham Black", sans-serif;
+  margin: 0 0 20px 0;
+}
+@media (min-width: 768px) {
+  .latest-articles h2 {
+    margin: 0 0 10px 0;
+  }
+}
+.latest-articles p {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0;
+}
+.latest-articles article a {
+  display: block;
+}
+.latest-articles article a:hover {
+  text-decoration: none;
+}
+.latest-articles article img {
+  margin: 0 0 20px 0;
+}
+.latest-articles article h3 {
+  color: #353735;
+  font: bold 15px/22px "Gotham Black", sans-serif;
+  margin: 0 0 14px 0;
+}
+.latest-articles article ul {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.latest-articles article li {
+  color: #707070;
+  font: 11px "Gotham Book", sans-serif;
+  margin: 0 0 5px 0;
+}
+.latest-articles article li:last-child {
+  margin: 0;
+}
+.latest-articles article p {
+  color: #353735;
+  font: 14px/1.4em "Gotham Book", sans-serif;
+  margin: 0;
+}
+.latest-articles article .ellipsis {
+  color: #00b3be;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.video-container {
+  background: #000;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+.video-container img {
+  left: 0;
+  position: absolute;
+  top: -16.84%;
+  width: 100%;
+}
+.video-container iframe {
+  height: 100% !important;
+  position: absolute;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+}
+
+.cmt-wrap {
+  margin: 0 0 20px 0;
+}
+.cmt-wrap .cmt-content {
+  width: 100%;
+}
+.cmt-wrap .cmt-section-a {
+  background: #00b3be;
+}
+.cmt-wrap .cmt-section-a h2 {
+  font: 30px/1.3 "Gotham Black", serif;
+}
+.cmt-wrap .cmt-section-d1 {
+  font: 15px/24px "Gotham Black", sans-serif;
+  margin: 0;
+}
+.cmt-wrap .cmt-section-d2 {
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0;
+}
+.cmt-wrap .cmt-product-a .cmt-pa-col,
+.cmt-wrap .cmt-product-a .cmt-pa-col * {
+  font: 14px/1.3em "Gotham Book", sans-serif;
+}
+.cmt-wrap .cmt-product-a .cmt-pa-col1,
+.cmt-wrap .cmt-product-a .cmt-pa-col1 * {
+  font: 16px "Gotham Black", sans-serif;
+}
+.cmt-wrap .cmt-section-b .cmt-pa-col,
+.cmt-wrap .cmt-section-b .cmt-pa-col * {
+  color: #666;
+  font: 16px "proxima-nova", sans-serif;
+}
+.cmt-wrap .cmt-section-b .cmt-pa-col1,
+.cmt-wrap .cmt-section-b .cmt-pa-col1 * {
+  font: bold 16px "proxima-nova", sans-serif;
+}
+.cmt-wrap .cmt-section-b .cmt-pa-col1 *,
+.cmt-wrap .cmt-section-b .cmt-pa-col2 * {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cmt-wrap .cmt-section-b .cmt-pa-col3 {
+  padding-top: 20px;
+}
+.cmt-wrap .cmt-product-a,
+.cmt-wrap .cmt-section-b {
+  border: 0 !important;
+}
+.cmt-wrap .cmt-product-a > div,
+.cmt-wrap .cmt-section-b > div {
+  border: 0 !important;
+}
+.cmt-wrap .cmt-section-b .cmt-sb-left {
+  background: #00b3be;
+}
+.cmt-wrap .cmt-section-b h2 {
+  font: 30px/1.3 "Gotham Black", serif;
+}
+.cmt-wrap .cmt-section-b .cmt-sb-phrase {
+  margin: 0;
+  font: 15px/24px "Gotham Black", sans-serif;
+}
+.cmt-wrap .cmt-sb-right {
+  font: 14px/1.3em "Gotham Book", sans-serif;
+  padding: 0;
+  height: 5em;
+}
+
+.mission {
+  background: #fff;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .mission {
+    padding: 100px 0;
+  }
+}
+.mission .row-1 {
+  margin-bottom: 40px;
+}
+.mission h2 {
+  color: #353735;
+  font: 700 32px "Gotham Black",serif;
+  margin: 0;
+}
+.mission p {
+  color: #353735;
+  font: 15px/24px "Gotham Book",sans-serif;
+  margin: 0 0 50px 0;
+}
+.mission ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.mission li {
+  color: #353735;
+  display: table-cell;
+  font: 12px/1.4em "Gotham Book",sans-serif;
+  text-align: center;
+}
+.mission li span {
+  color: #cccdcc;
+  display: block;
+  font: 500 42px "Gotham Black",sans-serif;
+}
+.mission dl {
+  margin: 0;
+}
+.mission dt {
+  color: #000;
+  font: 300 24px "proxima-nova", sans-serif;
+  margin: 0 0 30px 0;
+}
+.mission dd {
+  color: #000;
+  display: block;
+  font: 700 19px "proxima-nova", sans-serif;
+  list-style-type: none;
+  margin: 0 0 20px 0;
+}
+.mission dd:last-child {
+  margin: 0;
+}
+
+/*Redesign*/
+.new-index .mission {
+  background: #fff;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .new-index .mission {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .new-index .mission {
+    padding: 40px 0;
+  }
+}
+.new-index .mission .row-1 {
+  margin-bottom: 40px;
+}
+.new-index .mission h2 {
+  color: #353735;
+  font: 38px/1.2em "Gotham Black", sans-serif;
+  margin: 0;
+}
+.new-index .mission p {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 30px 0 30px 0;
+}
+.new-index .mission ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.new-index .mission li {
+  font: 12px/1.4em "Gotham Book", sans-serif;
+  color: #353735;
+}
+.new-index .mission li span {
+  color: #cccdcc;
+  font: 500 42px "Gotham Black", sans-serif;
+  margin-bottom: 18px;
+}
+.new-index .mission dl {
+  position: relative;
+  left: 40px;
+  top: 100px;
+}
+.new-index .mission dt {
+  color: #8f8dc8;
+  text-transform: uppercase;
+  font: 300 26px "Gotham Black", sans-serif;
+  margin: 0 0 30px 0;
+}
+.new-index .mission dd {
+  color: #353735;
+  display: block;
+  font: 20px "Gotham Book", sans-serif;
+  list-style-type: none;
+  margin: 0 0 20px 0;
+}
+.new-index .mission dd i {
+  font-size: 24px;
+  font-weight: normal;
+  color: #353735;
+}
+.new-index .mission dd:last-child {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .new-index .mission .xs-paddings {
+    padding: 40px 0 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+  }
+  .new-index .mission dd {
+    color: #353735;
+    display: block;
+    font: 15px "Gotham Book", sans-serif;
+    list-style-type: none;
+    margin: 0 0 20px 0;
+  }
+  .new-index .mission dd i {
+    font-size: 17px;
+    font-weight: normal;
+    color: #353735;
+  }
+}
+.new-index .mission.limited-time-offer .xs-paddings {
+  padding: 0px 0 50px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+}
+.new-index .mission.limited-time-offer h1 {
+  margin-bottom: 0px;
+}
+.new-index .mission.limited-time-offer h2 {
+  color: #353735;
+  font: 30px/1.2em "Gotham Black", sans-serif;
+  margin: 0;
+}
+.new-index .mission.limited-time-offer h3 {
+  color: #353735;
+  font: 30px/1.2em "Gotham Book", sans-serif;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  .new-index .mission.limited-time-offer h3 {
+    font: 20px/1.2em "Gotham Book", sans-serif;
+  }
+}
+.new-index .mission.limited-time-offer .span-1 {
+  display: block;
+  color: #00b3be;
+  font: lighter 30px "Gotham Book", sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 23px 0;
+}
+@media (max-width: 767px) {
+  .new-index .mission.limited-time-offer .span-1 {
+    font: lighter 20px "Gotham Book", sans-serif;
+    margin: 0 0 15px 0;
+  }
+}
+.new-index .mission.limited-time-offer .span-1.gray-color {
+  color: #9a9b9a;
+}
+.new-index .mission.limited-time-offer .span-2 {
+  display: block;
+  color: #353735;
+  font: 200 38px "Gotham Black", sans-serif;
+  margin: 0 0 0 0;
+}
+@media (max-width: 767px) {
+  .new-index .mission.limited-time-offer .span-2 {
+    font: 200 25px "Gotham Black", sans-serif;
+    margin: 0 0 10px 0;
+  }
+}
+.new-index .mission.limited-time-offer .span-3 {
+  display: block;
+  color: #8f8dc8;
+  font: 200 170px "Gotham Black", sans-serif;
+  margin: 0 0 0 -10px;
+}
+@media (max-width: 767px) {
+  .new-index .mission.limited-time-offer .span-3 {
+    font: 200 110px "Gotham Black", sans-serif;
+    margin: 0 0 0 -8px;
+  }
+}
+.new-index .mission.limited-time-offer .span-3.cyan-color {
+  color: #00b3be;
+}
+.new-index .mission.limited-time-offer p {
+  font: 15px "Gotham Book", sans-serif;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .new-index .mission.limited-time-offer p {
+    font: 15px "Gotham Book", sans-serif;
+    line-height: 24px;
+  }
+}
+.new-index .mission.limited-time-offer dt {
+  border-top: 1px solid #9a9b9a;
+  padding-top: 40px;
+  font-size: 22px;
+}
+.new-index .mission.limited-time-offer dt.cyan-color {
+  color: #00b3be;
+}
+.new-index .mission.limited-time-offer dl {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 25px;
+}
+.new-index .mission.limited-time-offer ul {
+  list-style: outside disc;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.new-index .mission.limited-time-offer ul li {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+  display: list-item;
+  text-align: left;
+}
+
+.offer a {
+  display: block;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.offer a span {
+  color: #fff;
+  float: left;
+}
+.offer a .span-1 {
+  font: 700 40px/40px "museo-slab", serif;
+  margin: 0 5px 0 0;
+}
+.offer a .span-2 {
+  font: 700 54px/54px "museo-slab", serif;
+}
+.offer a .span-3 {
+  font: 700 13px/13px "museo-slab", serif;
+  margin: 0 10px 0 0;
+}
+.offer a .span-4 {
+  font: 700 30px/30px "museo-slab", serif;
+}
+.offer a .span-5 {
+  font: 13px/24px "proxima-nova", sans-serif;
+  left: 108px;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+.offer a .span-6 {
+  font-size: 28px;
+  line-height: 28px;
+  position: absolute;
+  right: 0;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+.offer p {
+  color: #fff;
+  font: 9px "Gotham Book", sans-serif;
+  margin: 0;
+}
+
+/*Redesign*/
+.new-index .offer a {
+  margin: 25px 0 0 0;
+}
+@media (max-width: 767px) {
+  .new-index .offer a {
+    margin: 0 0 0 0;
+  }
+  .new-index .offer a img {
+    width: 100%;
+  }
+}
+.new-index .offer a .span-6 {
+  font-size: 34px;
+  line-height: 34px;
+  position: absolute;
+  right: 5px;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+.new-index .offer p {
+  color: #fff;
+  font: 9px "Gotham Book", sans-serif;
+  margin: 0;
+}
+
+.paginator ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.paginator li {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+.paginator li:last-child {
+  margin: 0;
+}
+.paginator a {
+  border: 1px solid #0094b3;
+  color: #0094b3;
+  display: block;
+  font: 14px/28px "proxima-nova", sans-serif;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.paginator a.active, .paginator a:hover {
+  background: #0094b3;
+  color: #fff;
+  text-shadow: 0 0 0.35px #fff, 0 0 0.35px #fff;
+  transition: all 0.4s ease;
+}
+
+.posts-buffer {
+  margin: 0 0 30px 0;
+}
+.posts-buffer .post {
+  margin: 0 0 30px 0;
+}
+.posts-buffer .post:last-child {
+  margin: 0;
+}
+.posts-buffer .post-header {
+  margin: 0 0 10px 0;
+}
+.posts-buffer .post-header h2 a,
+.posts-buffer .post-header h3 a,
+.posts-buffer .post-header h4 a,
+.posts-buffer .post-header h5 a,
+.posts-buffer .post-header h6 a {
+  color: #353735;
+  font: bold 15px/22px "Gotham Black", sans-serif;
+}
+.posts-buffer .post-body {
+  color: #353735;
+  font: 14px/22px "Gotham Book", sans-serif;
+  margin: 0 0 15px 0;
+}
+.posts-buffer .post-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.posts-buffer .post-footer li {
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font: 11px "Gotham Book", sans-serif;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+}
+.posts-buffer .post-footer li a {
+  color: #00b3be;
+}
+.posts-buffer .post-footer li:last-child {
+  border-right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.select2 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: normal;
+}
+
+.select2-container .select2-selection--single {
+  border: 1px solid #999;
+  border-radius: 0;
+  height: 50px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: #999;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 48px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 8px;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 8px;
+}
+
+.select2-results__option {
+  padding: 6px 20px;
+}
+
+.module {
+  margin: 0 0 20px 0;
+}
+.module > :last-child {
+  margin: 0;
+}
+
+.module:last-child {
+  margin: 0;
+}
+
+.module .form-text,
+.module .form-email,
+.module .form-search,
+.module .select2-container .select2-selection--single {
+  border: 1px solid #fff;
+}
+.module .form-text:focus,
+.module .form-email:focus,
+.module .form-search:focus,
+.module .form-textarea:focus {
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+.module-introductory-offer {
+  background: #00b3be;
+  padding: 40px 30px;
+}
+.module-introductory-offer h4 {
+  color: #fff;
+  font: 24px "Gotham Book", sans-serif;
+  margin: 0 0 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.module-introductory-offer .offer {
+  margin: 0 0 40px 0;
+}
+.module-introductory-offer .offer a {
+  margin: 0;
+}
+.module-introductory-offer .offer:last-child {
+  margin: 0;
+}
+.module-introductory-offer form {
+  margin: 0 0 20px 0;
+}
+
+.purple .module-introductory-offer {
+  background: #838bc5;
+}
+
+.blue .module-introductory-offer {
+  background: #00b3be;
+}
+
+.module-find-chiropractor {
+  background: #8f8dc8;
+  padding: 40px 30px;
+}
+.module-find-chiropractor h4 {
+  color: #fff;
+  font: 24px/1.4em "Gotham Black", serif;
+  margin: 0 0 10px 0;
+}
+.module-find-chiropractor label {
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0 0 20px 0;
+}
+.module-find-chiropractor .form-search {
+  float: left;
+  width: 59%;
+}
+.module-find-chiropractor .button-white-reverse {
+  float: right;
+  width: 39%;
+}
+
+.module-latest-articles h4,
+.module-press-inquiries h4,
+.module-interactive-spine h4,
+.corporate-office h4 {
+  color: #00b3be;
+  font: 22px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+.module-latest-articles p,
+.module-press-inquiries p,
+.module-interactive-spine p,
+.corporate-office p {
+  color: #353735;
+  font: 15px/22px "Gotham Book", sans-serif;
+  margin: 0 0 20px 0;
+}
+
+.module-did-you-know .wrapper {
+  border: 1px solid #dbdbdb;
+  margin: 0 0 20px 0;
+  padding: 30px;
+}
+.module-did-you-know .wrapper h4 {
+  color: #353735;
+  font: 18px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+.module-did-you-know .wrapper p {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0;
+}
+.module-did-you-know .reference p {
+  color: #a1a1a1;
+  font: 11px/1.4 "Gotham Book", sans-serif;
+  margin: 0;
+}
+
+.module-fsa {
+  background: #eee;
+  padding: 40px 30px;
+}
+.module-fsa img {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .module-fsa img {
+    width: 100%;
+  }
+}
+
+.module-interactive-spine a {
+  display: block;
+}
+
+.youtube {
+  background: #000;
+  overflow: hidden;
+}
+.youtube a {
+  display: block;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+.youtube img {
+  left: 0;
+  position: absolute;
+  top: -16.84%;
+  width: 100%;
+}
+.youtube i {
+  color: #fff;
+  font-size: 60px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.youtube iframe {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#application .form-text,
+#application .form-email,
+#application .form-search {
+  height: 40px;
+}
+#application .select2-container .select2-selection--single {
+  height: 40px;
+}
+#application .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+}
+
+#intro {
+  background: #f5f5f5;
+  padding: 60px 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  #intro > .container > .row-1 > .col-1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  #intro > .container > .row-1 > .col-1 > .row-1 > .col-1 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #intro > .container > .row-1 > .col-2 .module-introductory-offer {
+    position: absolute;
+    top: -200px;
+    width: calc(100% - 30px);
+  }
+}
+#intro h1 {
+  color: #353735;
+  font: 22px/1.4em "Gotham Black", serif;
+  margin: 0 0 40px 0;
+}
+#intro .map-wrapper {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 5px;
+}
+#intro .map {
+  background: #eee;
+  height: 200px;
+  width: 100%;
+}
+#intro .clinic-metadata h4 {
+  color: #00b3be;
+  font: bold 18px "proxima-nova", sans-serif;
+  margin: 0 0 10px 0;
+}
+#intro .clinic-metadata p {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+#intro .clinic-metadata ul {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#intro .clinic-metadata li {
+  color: #353735;
+  font: 15px/1.3em "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+#intro .clinic-metadata li span {
+  display: inline-block;
+  width: 50%;
+}
+#intro .clinic-metadata li:last-child {
+  margin: 0;
+}
+#intro .clinic-metadata a {
+  color: #00b3be;
+}
+#intro .clinic-metadata .toggle {
+  color: #a3a3a3;
+  display: inline-block;
+  font: 11px/1.3em "Gotham Book", sans-serif;
+  margin: 5px 15px 0 0;
+}
+#intro .clinic-metadata .clinic-number {
+  margin: 0 0 10px 0;
+}
+#intro .clinic-metadata .clinic-number p {
+  color: #a3a3a3;
+  font: 12px "proxima-nova", sans-serif;
+  margin: 0;
+}
+#intro .clinic-metadata .clinic-city-locations {
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  #intro .clinic-metadata .clinic-city-locations {
+    margin: 0 0 20px 0;
+  }
+}
+#intro .clinic-metadata .clinic-city-locations p {
+  margin: 0;
+}
+#intro .clinic-working-hours .header {
+  margin: 0 0 30px 0;
+}
+#intro .clinic-working-hours .header h4 {
+  float: left;
+  font: 16px/22px "Gotham Black", sans-serif;
+  margin: 0;
+}
+#intro .clinic-working-hours .header .toggle {
+  float: right;
+}
+#intro .clinic-working-hours ul {
+  margin: 0;
+}
+#intro .offer a .span-5 {
+  font: 13px "proxima-nova", sans-serif;
+}
+#intro .offer a .span-6 {
+  right: -20px;
+}
+
+#tabs {
+  padding: 50px 0;
+}
+@media (max-width: 767px) {
+  #tabs > .container > .row-1 > .col-1 {
+    margin-bottom: 20px;
+  }
+}
+#tabs .nav-tabs-nostyle {
+  border: 1px solid #ececec;
+  border-collapse: collapse;
+  display: table;
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  width: 100%;
+}
+#tabs .nav-tabs-nostyle li {
+  border-right: 1px solid #ececec;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  #tabs .nav-tabs-nostyle li {
+    padding: 10px;
+  }
+}
+#tabs .nav-tabs-nostyle .active a {
+  color: #00b3be;
+}
+#tabs .nav-tabs-nostyle a {
+  color: #353735;
+  display: block;
+  font: 16px/3.5 "Gotham Book", sans-serif;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #tabs .nav-tabs-nostyle a {
+    font: 14px/1.3em "Gotham Book", sans-serif;
+  }
+}
+#tabs .nav-tabs-nostyle a:hover {
+  text-decoration: none;
+}
+#tabs .tab-content {
+  margin: 0 0 20px 0;
+  /*.tab-pane {
+      @include breakpoint(xs) {
+          display: block !important;
+      }
+  }*/
+}
+#tabs .tab-content .clinic-information h2, #tabs .tab-content .clinic-information h3 {
+  color: #00b3b4;
+  font: 700 28px/1.3 "Gotham Black", serif;
+  margin: 0 0 30px 0;
+}
+#tabs .tab-content .clinic-information p {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0 0 30px 0;
+}
+#tabs .tab-content .clinic-information ul {
+  list-style: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+#tabs .tab-content .clinic-information li {
+  color: #353735;
+  font: 15px/24px "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+#tabs .tab-content .clinic-information li:after {
+  background: #000;
+  border-radius: 3px;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 9.5px;
+  width: 6px;
+}
+#tabs .tab-content .clinic-information li:last-child {
+  margin: 0;
+}
+#tabs .tab-content .doctors-buffer .doctor {
+  margin: 0 0 30px 0;
+}
+#tabs .tab-content .doctors-buffer .doctor:last-child {
+  margin: 0;
+}
+#tabs .tab-content .doctors-buffer .doctor > .row-1 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #tabs .tab-content .doctors-buffer .doctor > .row-1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #tabs .tab-content .doctors-buffer .doctor > .row-1 > .col-1 {
+    margin-bottom: 20px;
+  }
+}
+#tabs .tab-content .doctors-buffer .doctor .doctor-metadata h3 {
+  color: #353735;
+  font: 15px "Gotham Black", sans-serif;
+  margin: 0 0 20px 0;
+}
+#tabs .tab-content .doctors-buffer .doctor .doctor-metadata p {
+  color: #353735;
+  font: 14px/1.4em "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+#tabs .tab-content .doctors-buffer .doctor .doctor-metadata p:last-child {
+  margin: 0;
+}
+#tabs .tab-content .doctors-buffer .doctor .doctor-content {
+  color: #000;
+  font: 14px "proxima-nova", sans-serif;
+}
+#tabs .tab-content .doctors-buffer .doctor .doctor-content :last-child {
+  margin: 0;
+}
+#tabs .tab-content .clinic-media h2 {
+  color: #00b3b4;
+  font: 700 30px/1.3 "museo-slab", serif;
+  margin: 0 0 30px 0;
+}
+#tabs .tab-content .clinic-media .col-sm-6 {
+  margin: 0 0 20px 0;
+}
+#tabs .tab-content .clinic-image {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+#tabs .tab-content .clinic-image img {
+  left: 0;
+  position: absolute;
+  top: -16.84%;
+  width: 100%;
+}
+#tabs .ownership p {
+  color: #707070;
+  font: 12px "proxima-nova", sans-serif;
+  margin: 0;
+}
+#tabs .write-a-review {
+  padding: 25px 0 10px 0;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+#tabs .write-a-review .button-black-disabled {
+  color: #fff;
+  font: 15px/50px "Gotham Black", sans-serif;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: #bebebe;
+  border-color: #bebebe;
+  border: 0px;
+  outline: 0;
+}
+#tabs .write-a-review .write-a-review-form-title {
+  margin: 10px 0 30px 0;
+}
+#tabs .write-a-review input[type=text], #tabs .write-a-review input[type=email], #tabs .write-a-review textarea {
+  border: 1px solid #d7d7d7;
+  border-radius: 0;
+  height: 40px;
+  resize: none;
+}
+#tabs .write-a-review label {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-weight: normal;
+  color: #A2A2A2;
+}
+#tabs ul#reviews li:last-child {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+#tabs .write-a-review-rating {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.rate-base-layer span i {
+  color: #e8e8e8;
+}
+
+#health-benefits {
+  padding: 60px 0 0 0;
+}
+@media (min-width: 768px) {
+  #health-benefits .col-sm-4 {
+    position: relative;
+    top: -200px;
+  }
+}
+#health-benefits h2 {
+  color: #353735;
+  font: 700 32px "Gotham Black", serif;
+  margin: 0 0 20px 0;
+}
+
+#introductory-offer .offer p {
+  color: #000;
+  margin: 0;
+}
+
+#search-controls {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #search-controls > .row-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #search-controls > .row-1 > .col-2 {
+    position: relative;
+  }
+}
+#search-controls .row-1 {
+  margin-bottom: 20px;
+}
+#search-controls .form-item {
+  margin: 0;
+}
+#search-controls .form-search {
+  border: 1px solid #d7d7d7;
+  color: #000;
+  height: 50px;
+  float: left;
+  font: 14px "proxima-nova", sans-serif;
+  padding: 0 20px;
+  width: 69%;
+}
+#search-controls .form-search:focus {
+  border: 1px solid #ffc220;
+  box-shadow: inset 0 1px 1px #ffc220;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#search-controls .form-submit {
+  float: right;
+  width: 30%;
+}
+#search-controls .search-results-message {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0;
+}
+#search-controls .search-regions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#search-controls .search-regions li {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+#search-controls .search-regions li:last-child {
+  margin: 0;
+}
+#search-controls .search-regions li:after {
+  content: normal;
+}
+#search-controls .search-regions a {
+  color: #000;
+  display: inline-block;
+  font: 14px "proxima-nova", sans-serif;
+}
+
+#search-map {
+  margin-bottom: 50px;
+}
+
+#search-map-canvas {
+  background: #eee;
+  height: 560px;
+  width: 100%;
+}
+
+.clinics-buffer-header {
+  border: 1px solid #ececec;
+  padding: 30px;
+}
+.clinic {
+  border: 1px solid #ececec;
+  border-top: 0;
+  padding: 40px;
+}
+.clinic > .row-1 > .col-1 {
+  padding-left: 49px;
+  position: relative;
+}
+.clinic > .row-1 > .col-1 .row-2 {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .clinic > .row-1 > .col-1 .row-2 > .col-1,
+.clinic > .row-1 > .col-1 .row-2 > .col-2 {
+    margin-bottom: 10px;
+  }
+}
+.clinic:nth-child(odd) {
+  background: #fff;
+}
+.clinic:nth-child(even) {
+  background: #f8f8f8;
+}
+.clinic .clinic-location {
+  margin: 0 0 40px 0;
+}
+.clinic .clinic-location h3 {
+  margin: 0;
+}
+.clinic .clinic-location h3 a {
+  color: #0094b3;
+  font: bold 18px "proxima-nova", sans-serif;
+}
+.clinic .clinic-marker {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.clinic .clinic-marker a {
+  display: block;
+  height: 34px;
+  outline: 0;
+  text-indent: -9999px;
+  width: 24px;
+}
+.clinic.clinic-open .clinic-marker a {
+  background: url(../images/clinic-marker.png) no-repeat 0 0/24px 34px;
+}
+.clinic.clinic-closed .clinic-marker a {
+  background: url(../images/clinic-marker-closed.png) no-repeat 0 0/24px 34px;
+}
+.clinic .clinic-number {
+  color: #a3a3a3;
+  font: 12px "proxima-nova", sans-serif;
+  margin: 0 0 20px 0;
+}
+.clinic .clinic-name {
+  margin: 0 0 10px 0;
+}
+.clinic .clinic-name a {
+  color: #353735;
+  font: 15px/1.4em "Gotham Black", sans-serif;
+}
+.clinic .clinic-coming-soon {
+  color: #ffb612;
+  font: bold 16px "Gotham Black", sans-serif;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+.clinic .clinic-address {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+}
+.clinic .clinic-hours {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+.clinic .clinic-hours i {
+  color: #00b3be;
+}
+.clinic .clinic-phone {
+  color: #353735;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+  margin: 0 0 10px 0;
+}
+@media (min-width: 768px) {
+  .clinic .clinic-phone {
+    padding: 0 0 0 20px;
+  }
+}
+.clinic .clinic-directions {
+  margin: 0 0 10px 0;
+}
+.clinic .clinic-directions a {
+  color: #00b3be;
+  font: 15px/1.4em "Gotham Book", sans-serif;
+}
+.clinic .clinic-directions-hints {
+  color: #353735;
+  font: 13px/1.4em "Gotham Book", sans-serif;
+}
+
+.clinic-marker {
+  width: 300px;
+}
+.clinic-marker .clinic-number {
+  color: #a3a3a3;
+  font: 10px "proxima-nova", sans-serif;
+  margin: 0 0 5px 0;
+}
+.clinic-marker .clinic-coming-soon {
+  color: #d38888;
+  font: 10px "proxima-nova", sans-serif;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+}
+.clinic-marker .clinic-name {
+  margin: 0 0 5px 0;
+}
+.clinic-marker .clinic-name a {
+  color: #000;
+  font: bold 16px "proxima-nova", sans-serif;
+}
+.clinic-marker .clinic-address {
+  color: #000;
+  font: 13px "proxima-nova", sans-serif;
+}
+
+#map #usa {
+  background-image: url(../images/default.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#map #usa img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+#map .state {
+  border: 1px solid #ececec;
+  padding: 20px;
+}
+#map .state-name {
+  margin: 0 0 20px 0;
+}
+#map .state-name h2 {
+  color: #0094b3;
+  font: bold 18px "proxima-nova", sans-serif;
+  margin: 0;
+}
+#map .state-open-clinics,
+#map .state-awarded-clinics,
+#map .state-data,
+#map .state-cta {
+  color: #000;
+  font: 16px "proxima-nova", sans-serif;
+  margin: 0 0 10px 0;
+}
+#map .state-cta {
+  margin: 0;
+}
+
+#search form {
+  margin: 0 0 20px 0;
+}
+#search .form-search {
+  border: 1px solid #d7d7d7;
+  color: #000;
+  height: 50px;
+  float: left;
+  font: 14px "proxima-nova", sans-serif;
+  padding: 0 20px;
+  width: 74%;
+}
+#search .form-submit {
+  float: right;
+  width: 25%;
+}
+#search .articles-buffer .article {
+  margin: 0 0 20px 0;
+}
+#search .articles-buffer .article:last-child {
+  margin: 0;
+}
+#search .articles-buffer .article h3 {
+  margin: 0;
+}
+#search .articles-buffer .article h3 a {
+  color: #000;
+  font: bold 18px/24px "proxima-nova", sans-serif;
+}
+#search .articles-buffer .article p {
+  color: #000;
+  font: 14px/20px "proxima-nova", sans-serif;
+  margin: 0;
+}
+
+#spine .row {
+  margin-bottom: 20px;
+}
+#spine .row:last-child {
+  margin-bottom: 0;
+}
+#spine .education p {
+  font: 12px "proxima-nova", sans-serif;
+  margin: 0 0 5px 0;
+}
+
+.vertebraes {
+  position: relative;
+}
+.vertebraes img {
+  display: block;
+  margin: 0 auto;
+}
+
+.vertebraes-buffer {
+  left: 50%;
+  position: absolute;
+  top: 65px;
+  transform: translate(-50%, 0);
+}
+.vertebraes-buffer .vertebrae {
+  background: url(../images/dot.png) no-repeat;
+  display: block;
+  height: 18px;
+  outline: 0;
+  text-indent: -9999px;
+  width: 18px;
+}
+
+.vertebraes-names .vertebraes-name {
+  background: #0094b3;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#the-joint-character {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+#the-joint-character img {
+  width: 200px;
+}
+
+.vertebraes-areas img {
+  display: block;
+  margin: 0 auto;
+}
+
+#vertebrae-area-c1 {
+  position: relative;
+  top: -9px;
+}
+
+.vertebrae-description p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #ailments .form-item {
+    width: 50%;
+  }
+}
+
+#careers .glass-door {
+  background-color: #0caa41;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 180px;
+  position: relative;
+}
+#careers .glass-door span {
+  margin: 5px 5px;
+  display: inline-block;
+}
+#careers .glass-door .title {
+  color: #fff;
+  font: bold 25px "museo-slab", serif;
+}
+#careers .glass-door .stars-icons {
+  position: relative;
+  top: -4px;
+}
+#careers .glass-door .stars-icons .percentage {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 22px;
+  background: #fff;
+}
+#careers .glass-door .stars-icons img {
+  position: relative;
+  z-index: 1;
+}
+#careers .glass-door .stars-text {
+  color: #fff;
+  font: 21px "proxima-nova", sans-serif;
+  font-weight: bold;
+}
+#careers .glass-door .reviews a {
+  color: #fff;
+  font: 18px "proxima-nova", sans-serif;
+  font-weight: normal;
+  padding: 0 5px;
+  text-decoration: underline;
+  white-space: no-wrap;
+}
+#careers .glass-door .container {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+}
+#careers .glass-door .row {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+#careers #content dl {
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#careers #content dl dd {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 15px;
+  float: left;
+}
+#careers #content u {
+  text-decoration: none;
+}
+#careers #content p strong,
+#careers #content u strong {
+  font-size: 24px;
+}
+#careers .submit-application {
+  background: #199ebb;
+  color: #fff;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  font: 26px "proxima-nova", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+#careers .application {
+  font: 16px "proxima-nova", sans-serif;
+}
+#careers .application label {
+  font-weight: normal;
+}
+#careers .application select {
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  border: 1px solid #d7d7d7;
+  height: 40px;
+}
+#careers .application text-area {
+  border-radius: 0;
+  border: 1px solid #d7d7d7;
+}
+#careers .application input[type=text], #careers .application input[type=email], #careers .application input[type=file] {
+  border: 1px solid #d7d7d7;
+  border-radius: 0;
+  height: 40px;
+}
+#careers .hero-1 {
+  height: 822px;
+}
+#careers .hero-1 .container {
+  padding-bottom: 0;
+}
+#careers .hero-1 .span-1 {
+  font: 48px "Gotham Black",serif;
+}
+#careers .hero-1 p {
+  font: 26px "Gotham Book",serif;
+  line-height: 1.4em;
+}
+@media (min-width: 768px) {
+  #careers .descriptions {
+    background: linear-gradient(to right, #8f8dc8 50%, #28282a 50%);
+  }
+}
+#careers .descriptions .col-1 {
+  background-color: #8f8dc8;
+  text-align: left;
+}
+#careers .descriptions .col-1 .icon-wrapper {
+  margin-right: 30px;
+  display: inline-block;
+  background: url(../images/doctors-of-chiropractic-icon.png) 0 34px no-repeat;
+  padding-left: 72px;
+  text-align: left;
+}
+#careers .descriptions .col-2 {
+  background-color: #00b3be;
+  text-align: center;
+}
+#careers .descriptions .col-2 .icon-wrapper {
+  margin: 0 30px;
+  display: inline-block;
+  background: url(../images/wellness-coordinators-icon.png) 0 32px no-repeat;
+  padding-left: 72px;
+  text-align: left;
+}
+#careers .descriptions .col-3 {
+  background-color: #28282a;
+  text-align: right;
+}
+#careers .descriptions .col-3 .icon-wrapper {
+  margin-left: 30px;
+  display: inline-block;
+  background: url(../images/corporate-office-icon.png) 0 28px no-repeat;
+  padding-left: 64px;
+  text-align: left;
+}
+#careers .descriptions p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.4em;
+  font-weight: normal;
+}
+#careers .descriptions p.title {
+  font-size: 22.5px;
+  margin: 30px 0px 8px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+#careers .mission h3 {
+  margin-top: 20px;
+  font: 300 24px/1.3 "Gotham Book",serif;
+}
+#careers .why-joint {
+  max-width: 580px;
+}
+#careers .our-core-values {
+  margin: 25px 0 0 0;
+}
+#careers .hero-2 {
+  height: 434px;
+  background: #00b3be;
+}
+#careers .hero-2:before {
+  background: #00b3be;
+}
+#careers .hero-2.search-result {
+  background: #8f8dc8;
+}
+#careers .hero-2.search-result:before {
+  background: #8f8dc8;
+}
+#careers .hero-2 h2 {
+  font-size: 25px;
+}
+#careers .hero-2 p {
+  font-size: 18px;
+  margin: 0;
+}
+#careers .hero-3 {
+  height: 768px;
+}
+#careers .hero-3 h2 {
+  font: 38px/1.4em "Gotham Book",sans-serif;
+}
+#careers .hero-3 p.title {
+  font-weight: 300;
+  font-size: 18px;
+  position: relative;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+#careers .hero-3 p.title:after {
+  content: " ";
+  width: 42px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  border-bottom: 1px solid #746e69;
+}
+#careers .hero-3 p {
+  font-size: 14px;
+  color: #a29f9b;
+  margin: 0;
+}
+#careers .hero-3 .working-at-the-joint {
+  max-width: 640px;
+}
+#careers .job-list {
+  position: relative;
+}
+#careers .job-list .job-result-container {
+  background: #28282a;
+}
+#careers .job-list .job-result {
+  padding: 30px 10px 55px;
+  color: #fff;
+  font: 18px "proxima-nova", sans-serif;
+}
+#careers .job-list .table-responsive {
+  margin-top: -40px;
+  border: none;
+}
+#careers .job-list .pagination {
+  top: -12px;
+  position: relative;
+}
+#careers .job-list table {
+  margin-bottom: 40px;
+}
+#careers .job-list table thead tr th {
+  padding-bottom: 50px;
+  font: 18px "proxima-nova", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+}
+#careers .job-list table thead tr th a {
+  color: #fff;
+  text-decoration: none;
+}
+#careers .job-list table thead tr th.right {
+  text-align: right;
+}
+#careers .job-list table tbody tr:nth-of-type(2n+1) {
+  background: #fff;
+}
+#careers .job-list table tbody tr:nth-of-type(2n+2) {
+  background: #f8f8f8;
+}
+#careers .job-list table tbody tr:first-of-type td {
+  margin-top: 30px;
+}
+#careers .job-list table tbody tr:last-of-type td {
+  margin-bottom: 30px;
+}
+#careers .job-list table tbody tr td {
+  font: 18px "proxima-nova", sans-serif;
+  border: none;
+}
+
+/* Desktop only */
+@media (min-width: 992px) {
+  #careers .hero-2.search-result {
+    height: 468px !important;
+    padding-top: 100px;
+  }
+  #careers form {
+    margin-top: 40px;
+  }
+  #careers form .form-item {
+    float: left;
+    position: relative;
+    margin-right: 15px;
+    width: auto;
+  }
+  #careers form .form-item:last-of-type {
+    margin-right: 0px;
+  }
+  #careers form .form-search {
+    width: 180px !important;
+  }
+  #careers form select {
+    top: 45px;
+    left: 100px;
+    position: relative;
+  }
+  #careers form input {
+    border: 1px solid #fff;
+  }
+  #careers form .select2-container {
+    width: 205px !important;
+  }
+  #careers form .select2-container .select2-selection {
+    border: 1px solid #fff;
+  }
+  #careers form button {
+    width: 180px !important;
+  }
+}
+/* Tablet only */
+@media (min-width: 768px) {
+  #careers .hero-2.search-result {
+    height: 568px;
+    padding-top: 100px;
+  }
+  #careers form {
+    margin-top: 40px;
+  }
+  #careers form .form-item {
+    position: relative;
+    margin-right: 20px;
+    border-color: #fff;
+  }
+  #careers form .form-search {
+    width: 100%;
+  }
+  #careers form select {
+    top: 45px;
+    left: 50%;
+    position: relative;
+  }
+  #careers form input {
+    border: 1px solid #fff;
+  }
+  #careers form .select2-container .select2-selection {
+    border: 1px solid #fff;
+  }
+  #careers form button {
+    width: 100%;
+  }
+}
+/* Mobile only */
+@media (max-width: 767px) {
+  #careers td {
+    white-space: normal !important;
+  }
+  #careers .search-col-1 {
+    white-space: normal !important;
+    min-width: 135px !important;
+  }
+  #careers .search-col-2 {
+    white-space: normal !important;
+    min-width: 80px !important;
+  }
+  #careers .search-col-3 {
+    white-space: normal !important;
+    min-width: 80px !important;
+  }
+  #careers .glass-door {
+    height: 200px;
+  }
+  #careers .hero-2.search-result {
+    height: 658px;
+    padding-top: 100px;
+  }
+  #careers form {
+    margin-top: 40px;
+  }
+  #careers form .form-item {
+    float: none;
+    position: relative;
+    margin-right: 20px;
+    border-color: #fff;
+  }
+  #careers form .form-search {
+    width: 100%;
+  }
+  #careers form select {
+    top: 45px;
+    left: 50%;
+    position: relative;
+  }
+  #careers form input {
+    border: 1px solid #fff;
+  }
+  #careers form .select2-container .select2-selection {
+    border: 1px solid #fff;
+  }
+  #careers form button {
+    width: 100%;
+  }
+  #careers .descriptions .col-1, #careers .descriptions .col-2, #careers .descriptions .col-3 {
+    text-align: left;
+  }
+  #careers .descriptions .col-1 .icon-wrapper, #careers .descriptions .col-2 .icon-wrapper, #careers .descriptions .col-3 .icon-wrapper {
+    margin: 0 15px 10px;
+  }
+  #careers .our-core-values {
+    margin: 50px auto !important;
+  }
+  #careers .job-list:before {
+    height: 165px;
+  }
+  #careers .mission-hero {
+    height: 668px;
+  }
+  #careers .hero-1 .span-1 {
+    font: 48px "Gotham Black",serif;
+  }
+}
+.stories-hero .hero-1-new {
+  background-image: url(../images/asset-05B.jpg);
+}
+@media (max-width: 767px) {
+  .stories-hero .hero-1-new {
+    background-image: url(../images/asset-05B-mobile.jpg);
+  }
+}
+
+#stories {
+  margin: 50px 0 80px 0;
+}
+@media (max-width: 767px) {
+  #stories {
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  #stories .col-xs-no-padding {
+    padding: 0;
+  }
+}
+#stories .featured-container {
+  margin: 15px 0 15px 0;
+  display: inline-block;
+}
+#stories .featured-container .thumbnail {
+  padding: 0px;
+}
+@media (max-width: 767px) {
+  #stories .featured-container .thumbnail p.treatment {
+    padding-left: 0px !important;
+  }
+}
+#stories .featured-container a.watch {
+  font: 400 14px "Gotham Book", sans-serif;
+  display: inline-block;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  color: #353735;
+  line-height: 30px;
+  position: relative;
+  margin-left: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  #stories .featured-container a.watch {
+    margin-left: 15px;
+  }
+}
+#stories .featured-container a.watch:hover {
+  font: 600 15px "Gotham Book", sans-serif;
+}
+#stories .featured-container a.watch i {
+  position: relative;
+  top: 8px;
+  left: -10px;
+  color: #00b3be;
+}
+#stories .thumbnail {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Gotham Book";
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail {
+    padding: 15px;
+  }
+}
+#stories .thumbnail a {
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail a {
+    margin-top: 0px;
+  }
+}
+#stories .thumbnail p {
+  margin-bottom: 0px;
+}
+#stories .thumbnail .caption {
+  position: relative;
+  padding: 15px 0;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail .caption {
+    padding: 15px 0 0 0;
+  }
+}
+#stories .thumbnail p.treatment {
+  font-family: "Gotham Book";
+  font-size: 14px;
+  color: #c5c5c5;
+  font-weight: 100;
+  position: absolute;
+  top: -7px;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail p.treatment {
+    padding-left: 0px !important;
+  }
+}
+#stories .thumbnail p.featured {
+  font-family: "Gotham Book";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8f8dc8;
+  font-weight: 100;
+  position: absolute;
+  top: -7px;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail p.featured {
+    padding-left: 0px !important;
+  }
+}
+#stories .thumbnail p.patient {
+  font-family: "Gotham Book";
+  font-size: 16px;
+  color: #353735;
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #bfbfbf;
+}
+@media (max-width: 767px) {
+  #stories .thumbnail p.patient {
+    padding-left: 0px !important;
+  }
+}
+#stories .thumbnail p.supporting {
+  font: 15px/24px "Gotham Book", sans-serif;
+}
+#stories .thumbnail p.city {
+  font-family: "Gotham Book";
+  font-size: 12px;
+  font-weight: #353735;
+  font-weight: 300;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
