@@ -1,0 +1,304 @@
+
+/* All devices */
+/* End all devices */
+
+/* Mobile only */
+@media (max-width: 767px) {
+    .mission h2 {margin-top:50px; }
+    .latest-articles { margin-top:50px; margin-bottom:50px; }
+    .mission dl {margin-top:50px; }
+    .mission dd:last-child {margin-bottom:50px; }
+    #main-footer .container-1 { margin-top: 30px; } 
+    .offer p {margin-top: -10px;}
+    .find-chiropractor .col-1 {background: rgba(0,148,179,1)}
+    .find-chiropractor .col-2 {background: rgba(53,196,181,1)}
+    .hero-1 .span-2 {font: 300 28px "museo-slab",serif;}
+    .hero-1 p {font: 300 18px "proxima-nova",sans-serif;}
+    .hero-5 .span-1 {font: 42px "Gotham Black",serif; padding: 0 0 0 0; line-height: 1.2em;}
+    .hero-5 .span-2 {font: 26px "Gotham Book",serif; line-height: 1.2em;}
+    #tabs .nav-tabs-nostyle {border: 1px solid #dbdbdb;}
+    #tabs .nav-tabs-nostyle li {border-right: 1px solid #dbdbdb;}
+    #main-nav>ul>li>ul>li>a {text-transform: none;}
+    .find-chiropractor .col-1 button {right: 5px;}
+    .offer a .span-6 {top: 30%;}
+    .find-chiropractor .col-1 {padding-top: 35px; padding-bottom: 35px;}
+    .find-chiropractor .col-2 {padding-top: 35px; padding-bottom: 35px;}
+    p.blog-legal {color: #a1a1a1; font: 12px/20px "Gotham Book",sans-serif; margin: 40px 0 40px 0;}
+    .module:last-child {margin: 40px 0 10px 0;}
+    .module-did-you-know .wrapper {margin: 50px 0 20px 0;}
+    #main-footer #ego .vet-fran a {margin-top: 20px;}
+    #main-footer #ego .icsc a {margin-top: 20px;}
+    ul li {font: 15px/1.4em "Gotham Book",sans-serif}
+    .posts-buffer .post-header h2 {margin-bottom:5px; margin-top:5px; line-height: 0.8em;}
+    .paginator a {padding: 0 6px;}
+    .map-wrapper {display:none;}
+    #intro h1 {margin:2px; margin:2px; font-size: 16px;}
+    #intro { padding-top:15px;}
+    .download-offer {display:none;}
+    .new_patient_forms {display:none;}
+    #search-map {display:none;}
+	.clinic > .row-1 > .col-1 {padding-left: 0;}
+	.clinic .clinic-location {margin: 0 0 40px -15px;}
+	#intro .clinic-metadata .cstag {font: 700 16px "Gotham Black",sans-serif; color: #ffb612;}
+
+}
+/* End mobile only */
+
+/* Tablet only */
+@media (min-width: 768px) {
+    #tabs .nav-tabs-nostyle {border: 1px solid #dbdbdb;}
+    #tabs .nav-tabs-nostyle li {border-right: 1px solid #dbdbdb;}
+    p.blog-legal {color: #a1a1a1; font: 12px/20px "Gotham Book",sans-serif; margin: 40px 0 40px 0;}
+    ul li {font: 15px/1.4em "Gotham Book",sans-serif}
+    .download-offer {display:none;}
+}
+/* End tablet only */
+
+/* Desktop only */
+@media (min-width: 992px) {
+    .search-regions {margin-top: 25px;}
+    #search-controls .search-regions a { padding-right:25px;}
+    .hero-1 h1 {margin: 100px 0 20px 0;}
+    .hero-1 p {font: 300 18px "proxima-nova",sans-serif;}
+    .hero-1 .span-1 {font: 700 72px "museo-slab",serif;}
+    .hero-5 h1 {margin-top: 100px;}
+    .hero-5 .span-1 {padding: 0 0 0 0}
+    .hero-5 .span-1 {font: 48px "Gotham Black",serif; line-height: 1.2em;}
+    .hero-5 .span-2 {font: 26px "Gotham Book",serif; max-width: 600px; line-height: 1.2em;}
+    #tabs .nav-tabs-nostyle {border: 1px solid #dbdbdb;}
+    #tabs .nav-tabs-nostyle li {border-right: 1px solid #dbdbdb;}
+    #intro .clinic-metadata .cstag {font: 700 16px "Gotham Black",sans-serif; color: #ffb612;}
+    p.blog-legal {color: #a1a1a1; font: 12px/20px "Gotham Book",sans-serif; margin: 40px 0 40px 0;}
+    ul li {font: 15px/1.4em "Gotham Book",sans-serif}
+    .download-offer {display:none;}
+	
+}
+/* End desktop only */
+
+/* Desktop xl only */
+@media (min-width: 1200px) {
+	
+    .search-regions {margin-top: 25px;}
+    #search-controls .search-regions a { padding-right:25px;}
+    .hero-1 h1 {margin: 100px 0 20px 0;}
+    .hero-1 p {font: 300 18px "proxima-nova",sans-serif;}
+    .hero-1 .span-1 {font: 700 72px "museo-slab",serif;}
+    .hero-5 h1 {margin-top: 100px;}
+    .hero-5 .span-1 {padding: 0 0 0 0}
+    .hero-5 .span-1 {font: 48px "Gotham Black",serif; line-height: 1.4em;}
+    .hero-5 .span-2 {font: 26px "Gotham Book",serif; max-width: 600px; line-height: 1.4em;}
+    #tabs .nav-tabs-nostyle {border: 1px solid #dbdbdb;}
+    #tabs .nav-tabs-nostyle li {border-right: 1px solid #dbdbdb;}
+    #intro .clinic-metadata .cstag {font: 700 16px "Gotham Black",sans-serif; color: #ffb612;}
+    p.blog-legal {color: #a1a1a1; font: 12px/20px "Gotham Book",sans-serif; margin: 40px 0 40px 0;}
+    ul li {font: 15px/1.4em "Gotham Book",sans-serif}
+    .download-offer {display:none;}
+}
+/* End desktop xl only */
+.over-all-info {
+    padding-bottom:25px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom:25px;
+}
+.over-all-info .title {
+    margin-right:15px;
+    font: 14px "Gotham Black",sans-serif;
+}
+.over-all-info p {
+    margin-top:18px;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.over-all-info p span{
+    color:#00b3be;
+}
+.stars-info {
+    color: #ffc220;
+    font:bold 18px "proxima-nova",sans-serif;
+    margin-right:15px;
+    margin-left:10px;
+}
+
+.reviews-count {
+    color:#b8b8b8;
+    text-decoration: underline;
+    font:normal 16px "proxima-nova",sans-serif;
+}
+.rating {
+    position:relative;
+    display: inline-block;
+    width: 102px;
+    height: 16px;
+    overflow: hidden;
+}
+.rating .percentage{
+    top:0px;
+    position:absolute;
+    width:0%;
+    background-color: #ffc220;
+    height: 15px;
+    z-index:0;
+}
+.rating img{
+    top:0px;
+    position:absolute;
+    z-index:1;
+}
+
+.reviews .title{
+    margin-bottom:15px;
+    font:16px "Gotham Black",sans-serif;
+}
+.reviews .location{
+    color:#b8b8b8;
+    font: 16px "Gotham Book",sans-serif;
+    margin-left:5px;
+}
+.reviews p{
+    margin-top:15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.reviews ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.reviews ul li{
+    list-style-type: none;
+    padding-bottom:25px;
+    border-bottom: 1px solid #ececec;
+}
+.pagination {
+    text-align: right;
+    width: 100%;
+    margin-top:0px;
+}
+.pagination a{
+    color:#353735;
+    font-size:16px;
+    margin-left:10px;
+}
+.pagination .description{
+    float: left;
+    font-size: 16px "Gotham Black",sans-serif;
+}
+.pagination .separator{
+    margin-right:-10px;
+}
+.pagination a.active{
+    font-weight: bold;
+}
+ul#reviews li:last-child {
+    margin: 0 0 20px 0;
+    padding:0px;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+    a.accordion{
+        color: #fff !important;
+        display: block !important;
+        font: 600 15px/22px "proxima-nova",sans-serif !important;
+        padding: 0 15px !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important; 
+    }
+    a.accordion:hover{
+        text-shadow: 0 0 .35px #fff, 0 0 .35px #fff !important;
+    }
+    .hide-xs{
+        display: none !important;
+    }
+    .parent-hover-menu > .hover-menu{
+        display: block;
+    }
+    .closed > .hover-menu{
+        display: none !important;
+    }
+    ul.hover-menu{
+        list-style-type: none;
+        margin: 15px 0 20px 0;
+    }    
+    ul.hover-menu li a{
+        color: #FFF;
+        display: block;
+        font: 16px "proxima-nova",sans-serif;
+        padding: 5px 0 0 25px;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+        margin:0;
+    }
+    ul.hover-menu li a:hover, ul.hover-menu li a.active{
+        text-shadow: 0 0 .35px #fff, 0 0 .35px #fff !important;
+    }
+    #main-nav>ul{
+        width: 80% !important;
+    }
+}    
+
+/* Tablet only */
+@media (min-width: 768px) {
+
+    .parent-hover-menu{
+        position:relative;
+        background: url(../images/arrow_right.png) 188px 12px no-repeat;
+    }
+
+    .parent-hover-menu:hover{
+        position:relative;
+        background: url(../images/arrow_right_hover.png) 188px 12px no-repeat;
+    }
+
+    .parent-hover-menu:hover > a{
+        text-shadow: 0 0 .35px #a3a3a3, 0 0 .35px #a3a3a3 !important;
+    }
+
+    .parent-hover-menu > .hover-menu{
+        display: none;
+    }
+
+    .parent-hover-menu:hover > .hover-menu{
+        display: block;
+    }
+
+    #main-nav>ul>li>ul>li {
+        padding-right:15px; 
+    }    
+
+    ul.hover-menu{
+        list-style-type: none;
+        position: absolute;
+        z-index: 1000;
+        left: 198px;
+        padding: 15px 0;
+        background: #FFF none repeat scroll 0% 0%;
+        top: -16px;
+        border: 1px solid #D7D7D7;
+        border-left:none;
+    }
+
+    ul.hover-menu li a{
+        color: #A3A3A3;
+        display: block;
+        font: 14px "proxima-nova",sans-serif;
+        padding: 8px 25px;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    ul.hover-menu li a:hover, ul.hover-menu li a.active{
+        text-shadow: 0 0 .35px #a3a3a3, 0 0 .35px #a3a3a3 !important;
+    }
+
+    ul.two-columns {
+        width:432px;
+    }
+    ul.two-columns li {
+        float:left;
+        white-space: nowrap;
+        min-width:215px;
+    }
+}
